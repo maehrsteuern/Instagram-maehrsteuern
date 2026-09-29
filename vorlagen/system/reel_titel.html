@@ -14,6 +14,6 @@ h1{font-family:var(--serif);font-weight:600;font-size:140px;line-height:1.0;marg
 <script>
 const d = window.DATA || {saeule:'Demo',titel:'Ertragsteuer-\n*Ampel*',sub:'3 Sekunden statt 3 Stunden.'};
 $('bg').style.backgroundImage = `url(${d.bild||'../app_9x16.png'})`;
-$('box').innerHTML = `<div class="kicker">${fmt(d.kicker ?? d.saeule+' · Steuern × KI')}</div><h1>${fmt(d.titel)}</h1>
+$('box').innerHTML = `<div class="kicker">${fmt(d.kicker ?? d.saeule+' · Steuern × Code')}</div><h1>${fmt(d.titel)}</h1>
  ${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}<span class="chip">@maehrsteuern</span>`;
 </script></body></html>

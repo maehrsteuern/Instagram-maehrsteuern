@@ -2,5 +2,5 @@
   "bilder": [
     { "vorlage":"story", "datei":"story_countdown.png", "typ":"frage", "kicker":"Ab Donnerstag",
       "titel":"Hier ändert sich *was*.",
-      "text":"Donnerstag, 18:30 Uhr: Neustart von Steuern × KI.\nTipp auf „Erinnern“, damit du's nicht verpasst." }
+      "text":"Donnerstag, 18:30 Uhr: Neustart von Steuern × Code.\nTipp auf „Erinnern“, damit du's nicht verpasst." }
   ] }

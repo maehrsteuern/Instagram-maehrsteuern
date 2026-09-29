@@ -1,19 +1,21 @@
 # 2 · Profil: Name, Bio, Kategorie, Highlights
 
-## Namensfeld (wird bei der Suche gefunden!)
+## Namensfeld
 ```
-Loris | KI für Steuern
+Loris | Steuer-Tools x Code
 ```
-Mit „KI“ und „Steuern“ im Namen findet dich die Instagram-Suche genau bei diesen Begriffen.
+Option für mehr Suchtreffer: `Loris | KI für Steuern`.
 
-## Bio (140 von 150 Zeichen) – gewählt
+## Bio (live seit 29.09.2026)
 ```
-🧠 Steuern × KI – Steuerwissen, das rechnet
-⚙️ Vom Tool bis zum ganzen Prozess
+🧠 Steuern × Code – Steuerwissen, das rechnet
+⚙️ KI-Lösungen, die wirklich laufen
 🎓 Diplom-Finanzwirt · KI-Manager (IHK)
-💬 Schreib „TOOL“ → Demo
+💬 DM mir „TOOL“ → gratis Demo
 ```
-Wer, was, Qualifikation, nächster Schritt – und das echte ×.
+Link: https://app.reclaim.ai/m/maehrsteuern/demo
+
+Warum „Code“ statt „KI“ im Leitspruch: KI und Steuern sagen gerade alle. Der Unterschied ist, dass hier Lösungen gebaut werden, die laufen.
 
 ## Kategorie
 **Empfehlung: „Unternehmensberater“.** Du verkaufst Demo + Erstgespräch + eine passende Lösung, also eine Dienstleistung. „Software“ passt erst, wenn es ein fertiges Produkt zum Kaufen gibt. „Bildung“ zieht weiter die Lern-Zielgruppe an.
@@ -24,7 +26,7 @@ Ein Link zu deinem Terminbuchungs-Tool (z. B. Cal.com oder Calendly, 20-Minuten-
 ## Highlights – neue Reihenfolge
 | # | Titel | Titelbild | Inhalt |
 |---|---|---|---|
-| 1 | **Start 👋** | `assets/highlights/hl_start.png` (neu) | 3 Storys: Wer ich bin · Was ich mache · So läuft Demo + Gespräch → fertig in `assets/storys/start/` |
+| 1 | **Neustart 👋** | `assets/highlights/hl_start.png` (neu) | 3 Storys: Wer ich bin · Was ich mache · So läuft Demo + Gespräch → fertig in `assets/storys/start/` |
 | 2 | **Tools ⚙️** | vorhanden | Reel-Ausschnitte, Screenshots der Demo-Tools |
 | 3 | **Feedbacks 🙏** | vorhanden | Rückmeldungen aus DMs und Gesprächen (Namen schwärzen, vorher fragen) |
 | 4 | **Wissen 📚** | `assets/highlights/hl_wissen.png` (neu) | Jedes Wissen-Karussell einmal als Story teilen und hier sammeln |

@@ -1,7 +1,7 @@
 { "ausgabe": "../../assets/storys/start",
   "bilder": [
     { "vorlage":"story", "datei":"start_1.png", "typ":"info", "kicker":"Start",
-      "titel":"Hi, ich bin *Loris*.", "text":"Diplom-Finanzwirt und\nKI-Manager (IHK).\n\nHier zeige ich, wie KI und Steuern zusammen Zeit sparen." },
+      "titel":"Hi, ich bin *Loris*.", "text":"Diplom-Finanzwirt und\nKI-Manager (IHK).\n\nHier zeige ich KI-Lösungen für Steuern, die wirklich laufen." },
     { "vorlage":"story", "datei":"start_2.png", "typ":"info", "kicker":"Was ich mache",
       "titel":"Steuer-Tools statt *Excel-Chaos*.",
       "punkte":["Ertragsteuer-Berechnung mit Prüfpfad","Ampeln und Dashboard statt 20 Tabellenblätter","Für Steuerabteilungen, Kanzleien und KMU"] },

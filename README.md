@@ -2,7 +2,7 @@
 
 **Autopilot:** `automatik/plan.json` ist der Veröffentlichungsplan. GitHub Actions postet freigegebene Einträge zur geplanten Zeit (`.github/workflows/posten.yml`), holt montags die Statistik und verlängert monatlich den Instagram-Schlüssel. Einrichtung: `EINRICHTUNG.md`.
 
-Leitspruch seit 29.09.2026: „Steuern × KI“ (vorher „Steuern × Code“).
+Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code ist der Unterschied: Lösungen, die wirklich laufen.
 
 ## Struktur (neu)
 | Datei | Inhalt |
@@ -24,7 +24,7 @@ Leitspruch seit 29.09.2026: „Steuern × KI“ (vorher „Steuern × Code“).
 - Ergebnisse landen in `posts/` bzw. `assets/` (`highlights/`, `storys/start/`)
 
 ## Marke
-- Botschaft: **Steuern × KI** – „Steuerwissen, das rechnet.“ Diplom-Finanzwirt und KI-Manager (IHK), baut KI- und Steuer-Tools – vom Tool bis zum ganzen Prozess.
+- Botschaft: **Steuern × Code** – „Steuerwissen, das rechnet.“ Diplom-Finanzwirt und KI-Manager (IHK), baut KI- und Steuer-Tools – vom Tool bis zum ganzen Prozess.
 - Aufruf: **Schreib „TOOL“ per DM**
 - Farben: Hintergrund `#0B110E` (Verlauf nach `#153A31`), Akzent Grün `#53C3A2`, Text `#EAF1EC`, Nebentext `#8FA398`
 - Schriften: IBM Plex Serif (Überschriften), IBM Plex Sans (Text), IBM Plex Mono (Kicker, Handle) – eingebettet in `vorlagen/schriften.css`
@@ -32,7 +32,7 @@ Leitspruch seit 29.09.2026: „Steuern × KI“ (vorher „Steuern × Code“).
 
 ## Profil (Stand)
 - 9 Beiträge, 353 Follower; Reel „Mein eigenes Steuer-Tool“ angepinnt
-- Bio: „Steuern × KI · Bereit für die Zukunft deines Workflows? · Schreib „TOOL“ per DM“
+- Bio: „Steuern × Code · Bereit für die Zukunft deines Workflows? · Schreib „TOOL“ per DM“
 - Highlights: „Tools ⚙️“, „Feedbacks 🙏“ – Titelbilder in `assets/`
 
 ## Dateien

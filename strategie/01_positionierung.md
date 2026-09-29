@@ -1,7 +1,7 @@
 # 1 · Positionierung, Zielgruppen, Säulen
 
 ## Kernsatz
-> **Steuern × KI – Steuerwissen, das rechnet.**
+> **Steuern × Code – Steuerwissen, das rechnet.**
 > Ich bin Diplom-Finanzwirt und KI-Manager (IHK) und baue Lösungen an der Schnittstelle von KI und Steuern – vom kleinen Tool bis zum ganzen Prozess.
 
 Ein Satz für jede Situation (Bio, Reel-Abspann, Erstgespräch):

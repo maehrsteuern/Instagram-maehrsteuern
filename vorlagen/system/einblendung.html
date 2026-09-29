@@ -21,7 +21,7 @@ const d = window.DATA || {typ:'haken',titel:'3 Stunden Excel –\noder *3 Sekund
 document.body.className = document.documentElement.className = d.typ==="leiste" ? "leer" : "voll";
 let h;
 if (d.typ==='leiste') h = `<div class="leiste">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h2>${fmt(d.titel)}</h2></div>`;
-else if (d.typ==='abspann') h = `<div class="mitte"><div class="kicker">Steuern × KI</div><h1>${fmt(d.titel||'Steuerwissen,\ndas *rechnet.*')}</h1>
+else if (d.typ==='abspann') h = `<div class="mitte"><div class="kicker">Steuern × Code</div><h1>${fmt(d.titel||'Steuerwissen,\ndas *rechnet.*')}</h1>
   <div class="line"></div><span class="chip">💬 Schreib „TOOL“ per DM</span><div class="cta">${fmt(d.sub||'@maehrsteuern · Demo mit Beispieldaten')}</div></div>`;
 else h = `<div class="mitte">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}</div>`;
 document.body.insertAdjacentHTML('beforeend', h);
