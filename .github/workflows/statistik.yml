@@ -1,0 +1,25 @@
+name: Instagram-Statistik
+# Montags die Zahlen aller Beiträge abholen und in automatik/statistik/ speichern.
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  statistik:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q requests
+      - name: Abholen
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python automatik/statistik.py
+      - name: Speichern
+        run: |
+          git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+          git add automatik/statistik && git diff --cached --quiet || (git commit -m "Statistik $(date +%F)" && git push)

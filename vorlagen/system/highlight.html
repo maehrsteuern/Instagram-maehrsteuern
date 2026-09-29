@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css">
+<!-- Highlight-Titelbild 1080×1920, Symbol mittig (Instagram schneidet einen Kreis aus der Mitte). Symbole: start | wissen | faq -->
+<style>html,body{width:1080px;height:1920px;background:radial-gradient(60% 40% at 50% 50%,var(--bg2) 0%,var(--bg) 70%)}
+svg{position:absolute;left:0;top:0}</style></head><body>
+<svg width="1080" height="1920" viewBox="-540 -960 1080 1920">
+ <defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+ <g filter="url(#g)" id="icon" fill="none" stroke="#53C3A2" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"></g>
+</svg>
+<script>
+const ICONS = {
+  start: `<circle cy="-80" r="95"/><path d="M-200,215 Q-200,40 0,40 Q200,40 200,215"/>
+          <circle r="250" stroke-width="14" opacity=".35"/>`,
+  wissen: `<path d="M0,-150 Q-110,-205 -240,-170 L-240,170 Q-110,135 0,190 Q110,135 240,170 L240,-170 Q110,-205 0,-150 Z"/>
+           <line x1="0" y1="-150" x2="0" y2="190"/>
+           <line x1="-180" y1="-80" x2="-60" y2="-60" stroke-width="12" opacity=".45"/><line x1="-180" y1="0" x2="-60" y2="20" stroke-width="12" opacity=".45"/>
+           <line x1="60" y1="-60" x2="180" y2="-80" stroke-width="12" opacity=".45"/><line x1="60" y1="20" x2="180" y2="0" stroke-width="12" opacity=".45"/>`,
+  faq: `<circle r="235"/><path d="M-78,-62 Q-78,-150 0,-150 Q82,-150 82,-72 Q82,-18 20,10 Q0,22 0,62"/>
+        <circle cy="130" r="16" fill="#EAF1EC" stroke="#EAF1EC" stroke-width="8"/>`
+};
+document.getElementById('icon').innerHTML = ICONS[(window.DATA||{}).icon || 'start'];
+</script></body></html>

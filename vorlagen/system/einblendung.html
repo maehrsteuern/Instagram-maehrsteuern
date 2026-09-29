@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css"><script src="text.js"></script>
+<!-- Reel-Einblendungen 1080×1920. Typen: haken (volle Karte) | leiste (Textleiste oben, transparent rendern) | abspann (volle Karte) -->
+<style>
+html,body{width:1080px;height:1920px}
+body.voll{background:radial-gradient(110% 65% at 50% 42%,var(--glow) 0%,var(--bg) 65%)}
+html.leer,body.leer{background:transparent}
+.mitte{position:absolute;left:80px;right:80px;top:250px;bottom:420px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.kicker{font-size:34px;margin-bottom:40px}
+h1{font-family:var(--serif);font-weight:600;font-size:124px;line-height:1.04;margin:0}
+.sub{margin-top:44px;font-size:44px;color:var(--text2);line-height:1.4}
+.leiste{position:absolute;left:70px;right:70px;top:250px;padding:34px 44px;border-radius:32px;background:rgba(11,17,14,.86);
+  border:3px solid rgba(83,195,162,.7);box-shadow:0 0 60px rgba(83,195,162,.25)}
+.leiste .kicker{font-size:26px;margin:0 0 12px}
+.leiste h2{font-family:var(--serif);font-weight:600;font-size:64px;line-height:1.1;margin:0}
+.line{width:130px;height:5px;background:var(--gruen);border-radius:3px;margin:64px 0 56px}
+.chip{font-size:50px;color:var(--text)}
+.cta{margin-top:34px;font-size:38px;color:var(--grau)}
+</style></head><body>
+<script>
+const d = window.DATA || {typ:'haken',titel:'3 Stunden Excel –\noder *3 Sekunden*?'};
+document.body.className = document.documentElement.className = d.typ==="leiste" ? "leer" : "voll";
+let h;
+if (d.typ==='leiste') h = `<div class="leiste">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h2>${fmt(d.titel)}</h2></div>`;
+else if (d.typ==='abspann') h = `<div class="mitte"><div class="kicker">Steuern × Code</div><h1>${fmt(d.titel||'Steuerwissen,\ndas *rechnet.*')}</h1>
+  <div class="line"></div><span class="chip">💬 Schreib „TOOL“ per DM</span><div class="cta">${fmt(d.sub||'@maehrsteuern · Demo mit Beispieldaten')}</div></div>`;
+else h = `<div class="mitte">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}</div>`;
+document.body.insertAdjacentHTML('beforeend', h);
+</script></body></html>

@@ -1,0 +1,139 @@
+{
+  "_hinweis": "Status: entwurf → freigegeben → veroeffentlicht. Nur 'freigegeben' geht automatisch online. Zeiten in deutscher Ortszeit.",
+  "eintraege": [
+    {
+      "id": "00-neuvorstellung",
+      "zeit": "2026-10-04 18:30",
+      "typ": "karussell",
+      "ordner": "posts/00_2026-10-04_neuvorstellung",
+      "bilder": [
+        "folie_01.png",
+        "folie_02.png",
+        "folie_03.png",
+        "folie_04.png",
+        "folie_05.png",
+        "folie_06.png",
+        "folie_07.png"
+      ],
+      "text": "bildunterschrift.txt",
+      "status": "entwurf",
+      "danach": "Anpinnen (von Hand)"
+    },
+    {
+      "id": "00-story-teaser",
+      "zeit": "2026-10-04 18:35",
+      "typ": "story",
+      "ordner": "posts/00_2026-10-04_neuvorstellung",
+      "bilder": [
+        "story_so_teaser.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "01-reel-ampel",
+      "zeit": "2026-10-06 18:30",
+      "typ": "reel",
+      "ordner": "posts/01_2026-10-06_reel_ampel",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "musik_fehlt": true,
+      "status": "entwurf"
+    },
+    {
+      "id": "01-story-teaser",
+      "zeit": "2026-10-06 18:35",
+      "typ": "story",
+      "ordner": "posts/01_2026-10-06_reel_ampel",
+      "bilder": [
+        "story_di_teaser.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "02-excel-fehler",
+      "zeit": "2026-10-13 18:30",
+      "typ": "karussell",
+      "ordner": "posts/02_2026-10-13_excel_fehler",
+      "bilder": [
+        "folie_01.png",
+        "folie_02.png",
+        "folie_03.png",
+        "folie_04.png",
+        "folie_05.png",
+        "folie_06.png",
+        "folie_07.png"
+      ],
+      "text": "bildunterschrift.txt",
+      "status": "entwurf"
+    },
+    {
+      "id": "02-story-teaser",
+      "zeit": "2026-10-13 18:35",
+      "typ": "story",
+      "ordner": "posts/02_2026-10-13_excel_fehler",
+      "bilder": [
+        "story_di_teaser.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "03-gewst-hinzurechnung",
+      "zeit": "2026-10-20 18:30",
+      "typ": "karussell",
+      "ordner": "posts/03_2026-10-20_gewst_hinzurechnung",
+      "bilder": [
+        "folie_01.png",
+        "folie_02.png",
+        "folie_03.png",
+        "folie_04.png",
+        "folie_05.png",
+        "folie_06.png",
+        "folie_07.png"
+      ],
+      "text": "bildunterschrift.txt",
+      "status": "entwurf"
+    },
+    {
+      "id": "03-story-teaser",
+      "zeit": "2026-10-20 18:35",
+      "typ": "story",
+      "ordner": "posts/03_2026-10-20_gewst_hinzurechnung",
+      "bilder": [
+        "story_di_teaser.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "03-story-aufloesung",
+      "zeit": "2026-10-23 12:15",
+      "typ": "story",
+      "ordner": "posts/03_2026-10-20_gewst_hinzurechnung",
+      "bilder": [
+        "story_fr_aufloesung.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "04-reel-mein-weg",
+      "zeit": "2026-10-27 18:30",
+      "typ": "reel",
+      "ordner": "posts/04_2026-10-27_reel_mein_weg",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "musik_fehlt": true,
+      "status": "wartet_auf_clips"
+    },
+    {
+      "id": "04-story-teaser",
+      "zeit": "2026-10-27 18:35",
+      "typ": "story",
+      "ordner": "posts/04_2026-10-27_reel_mein_weg",
+      "bilder": [
+        "story_di_teaser.png"
+      ],
+      "status": "entwurf"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+name: Instagram posten
+# Stündlich prüfen, ob in den nächsten 75 Minuten ein freigegebener Beitrag fällig ist (siehe automatik/plan.json).
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+    inputs:
+      jetzt:
+        description: "ID eines freigegebenen Eintrags sofort posten (leer = normal)"
+        required: false
+concurrency:
+  group: instagram-posten
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  posten:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q requests pillow
+      - name: Git-Identität
+        run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - name: Posten
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          if [ -n "${{ inputs.jetzt }}" ]; then python automatik/posten.py --jetzt "${{ inputs.jetzt }}"
+          else python automatik/posten.py; fi

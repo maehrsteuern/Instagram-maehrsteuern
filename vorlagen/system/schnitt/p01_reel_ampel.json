@@ -1,0 +1,14 @@
+{ "ausgabe": "../../posts/01_2026-10-06_reel_ampel/reel.mp4", "fps": 30,
+  "quellen": { "app": { "datei": "../app_9x16.png", "unten_auffuellen": 700 } },
+  "szenen": [
+    { "karte": "../../posts/01_2026-10-06_reel_ampel/bausteine/haken.png", "dauer": 2.6 },
+    { "quelle": "app", "von": [540, 960, 1080], "nach": [540, 960, 1020], "dauer": 3.0,
+      "leiste": "../../posts/01_2026-10-06_reel_ampel/bausteine/leiste_1.png" },
+    { "quelle": "app", "nach": [470, 980, 820], "dauer": 3.4,
+      "leiste": "../../posts/01_2026-10-06_reel_ampel/bausteine/leiste_2.png" },
+    { "quelle": "app", "nach": [790, 1080, 540], "dauer": 3.4,
+      "leiste": "../../posts/01_2026-10-06_reel_ampel/bausteine/leiste_3.png" },
+    { "quelle": "app", "nach": [560, 1780, 640], "dauer": 3.0,
+      "leiste": "../../posts/01_2026-10-06_reel_ampel/bausteine/leiste_4.png" },
+    { "karte": "../../posts/01_2026-10-06_reel_ampel/bausteine/abspann.png", "dauer": 3.2 }
+  ] }
