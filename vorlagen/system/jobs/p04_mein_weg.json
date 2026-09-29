@@ -7,10 +7,10 @@
     { "vorlage":"einblendung", "datei":"leiste_1.png", "typ":"leiste", "transparent":true, "kicker":"Station 1", "titel":"Steuer-*Studium*" },
     { "vorlage":"einblendung", "datei":"leiste_2.png", "typ":"leiste", "transparent":true, "kicker":"Station 2", "titel":"Excel-Listen *ohne Ende*" },
     { "vorlage":"einblendung", "datei":"leiste_3.png", "typ":"leiste", "transparent":true, "kicker":"Station 3", "titel":"Ich fange an zu *coden*" },
-    { "vorlage":"einblendung", "datei":"leiste_4.png", "typ":"leiste", "transparent":true, "kicker":"Heute", "titel":"Steuern *×* Code" },
+    { "vorlage":"einblendung", "datei":"leiste_4.png", "typ":"leiste", "transparent":true, "kicker":"Heute", "titel":"Steuern *×* KI" },
     { "vorlage":"einblendung", "datei":"abspann.png", "typ":"abspann" },
     { "vorlage":"story", "datei":"../story_mo_frage.png", "typ":"frage", "kicker":"Frag mich was",
       "titel":"Was willst du über *mich* wissen?" },
     { "vorlage":"story", "datei":"../story_di_teaser.png", "typ":"teaser", "kicker":"Neues Reel",
-      "titel":"Mein Weg zu *Steuern × Code*.", "bild":"../../posts/04_2026-10-20_reel_mein_weg/titelbild.png" }
+      "titel":"Mein Weg zu *Steuern × KI*.", "bild":"../../posts/04_2026-10-20_reel_mein_weg/titelbild.png" }
   ] }

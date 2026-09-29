@@ -44,7 +44,7 @@ Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründ
 [Aufruf je nach Säule:]
 Demo/Praxis:   💬 Schreib mir „TOOL“ per DM – ich zeig dir die Demo.
 Wissen:        📌 Speichern für den nächsten Abschluss.
-Hinter d. Code: ➕ Folgen, wenn du Steuern × Code sehen willst.
+Hinter d. Code: ➕ Folgen, wenn du Steuern × KI sehen willst.
 
 #steuern #steuerrecht #excel #automatisierung #steuerabteilung
 ```

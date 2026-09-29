@@ -2,25 +2,18 @@
 
 ## Namensfeld (wird bei der Suche gefunden!)
 ```
-Loris | Steuer-Tools × Code
+Loris | KI für Steuern
 ```
-Heute steht dort „Loris | maehrsteuern“ – der Handle steht ohnehin darüber. Mit „Steuer-Tools“ findet dich die Instagram-Suche bei genau diesem Begriff.
+Mit „KI“ und „Steuern“ im Namen findet dich die Instagram-Suche genau bei diesen Begriffen.
 
-## Bio (141 von 150 Zeichen)
+## Bio (140 von 150 Zeichen) – gewählt
 ```
-Steuerexperte, der programmiert 🧠
-Steuer-Tools statt Excel-Chaos ⚙️
-Für Steuerabteilungen, Kanzleien & KMU
-💬 Schreib „TOOL“ → Demo + Gespräch
+🧠 Steuern × KI – Steuerwissen, das rechnet
+⚙️ Vom Tool bis zum ganzen Prozess
+🎓 Diplom-Finanzwirt · KI-Manager (IHK)
+💬 Schreib „TOOL“ → Demo
 ```
-Damit sind die offenen Punkte erledigt: echtes ×, „TOOL“ großgeschrieben, und die Bio sagt jetzt **wer, was, für wen, nächster Schritt**.
-
-Falls dir das zu nüchtern ist – kürzere Variante mit altem Satz:
-```
-🧠 Steuern × Code – Steuerwissen, das rechnet
-⚙️ Eigene Steuer-Tools statt Excel-Chaos
-💬 Schreib „TOOL“ per DM → kostenlose Demo
-```
+Wer, was, Qualifikation, nächster Schritt – und das echte ×.
 
 ## Kategorie
 **Empfehlung: „Unternehmensberater“.** Du verkaufst Demo + Erstgespräch + eine passende Lösung, also eine Dienstleistung. „Software“ passt erst, wenn es ein fertiges Produkt zum Kaufen gibt. „Bildung“ zieht weiter die Lern-Zielgruppe an.

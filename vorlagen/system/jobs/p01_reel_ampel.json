@@ -2,7 +2,7 @@
   "bilder": [
     { "vorlage":"reel_titel", "datei":"../titelbild.png", "saeule":"Demo",
       "titel":"Ertragsteuer-\n*Ampel*", "sub":"3 Sekunden statt 3 Stunden." },
-    { "vorlage":"einblendung", "datei":"haken.png", "typ":"haken", "kicker":"Steuern × Code",
+    { "vorlage":"einblendung", "datei":"haken.png", "typ":"haken", "kicker":"Steuern × KI",
       "titel":"3 Stunden Excel –\noder *3 Sekunden*?", "sub":"Meine Ertragsteuer-Ampel." },
     { "vorlage":"einblendung", "datei":"leiste_1.png", "typ":"leiste", "transparent":true, "kicker":"Demo · Beispieldaten", "titel":"Alle Ertragsteuern auf *einen Blick*" },
     { "vorlage":"einblendung", "datei":"leiste_2.png", "typ":"leiste", "transparent":true, "titel":"Quote, Aufwand, Rückstellung – *live gerechnet*" },

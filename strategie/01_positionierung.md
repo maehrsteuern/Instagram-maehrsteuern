@@ -1,11 +1,11 @@
 # 1 · Positionierung, Zielgruppen, Säulen
 
 ## Kernsatz
-> **Steuern × Code – Steuerwissen, das rechnet.**
-> Ich bin Steuerexperte aus der Praxis und baue eigene Steuer-Tools, die Excel-Chaos ersetzen.
+> **Steuern × KI – Steuerwissen, das rechnet.**
+> Ich bin Diplom-Finanzwirt und KI-Manager (IHK) und baue Lösungen an der Schnittstelle von KI und Steuern – vom kleinen Tool bis zum ganzen Prozess.
 
 Ein Satz für jede Situation (Bio, Reel-Abspann, Erstgespräch):
-„Ich zeige, wie Steuerleute mit eigenen Tools Stunden sparen – und baue sie auf Wunsch für dich.“
+„Ich zeige, wie Steuerleute mit KI und eigenen Tools Stunden sparen – und baue die Lösung auf Wunsch für dich.“
 
 ## Zielgruppen – mit Rangfolge
 Alle vier bleiben an Bord, aber sie haben unterschiedliche Aufgaben:
