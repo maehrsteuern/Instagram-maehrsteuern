@@ -1,16 +1,78 @@
-{ "ausgabe": "../../posts/01_2026-10-04_reel_ampel/bausteine",
+{
+  "ausgabe": "../../posts/01_2026-10-04_reel_ampel/bausteine",
   "bilder": [
-    { "vorlage":"reel_titel", "datei":"../titelbild.png", "saeule":"Demo",
-      "titel":"Ertragsteuer-\n*Ampel*", "sub":"3 Sekunden statt 3 Stunden." },
-    { "vorlage":"einblendung", "datei":"haken.png", "typ":"haken", "kicker":"Steuern × Code",
-      "titel":"3 Stunden Excel –\noder *3 Sekunden*?", "sub":"Meine Ertragsteuer-Ampel." },
-    { "vorlage":"einblendung", "datei":"leiste_1.png", "typ":"leiste", "transparent":true, "kicker":"Demo · Beispieldaten", "titel":"Alle Ertragsteuern auf *einen Blick*" },
-    { "vorlage":"einblendung", "datei":"leiste_2.png", "typ":"leiste", "transparent":true, "titel":"Quote, Aufwand, Rückstellung – *live gerechnet*" },
-    { "vorlage":"einblendung", "datei":"leiste_3.png", "typ":"leiste", "transparent":true, "titel":"Die *Ampel* zeigt, was noch offen ist" },
-    { "vorlage":"einblendung", "datei":"leiste_4.png", "typ":"leiste", "transparent":true, "titel":"Und was noch *zu buchen* ist" },
-    { "vorlage":"einblendung", "datei":"abspann.png", "typ":"abspann" },
-    { "vorlage":"story", "datei":"../story_fr_frage.png", "typ":"frage", "kicker":"Kurze Frage",
-      "titel":"Wie lange dauert bei euch die *Steuerrückstellung*?" },
-    { "vorlage":"story", "datei":"../story_so_teaser.png", "typ":"teaser", "kicker":"Neues Reel",
-      "titel":"Die *Ampel*, die mir Stunden spart.", "bild":"../../posts/01_2026-10-04_reel_ampel/titelbild.png" }
-  ] }
+    {
+      "vorlage": "reel_titel",
+      "datei": "../titelbild.png",
+      "saeule": "Demo",
+      "titel": "Ertragsteuer-\n*Ampel*",
+      "sub": "3 Sekunden statt 3 Stunden."
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "haken.png",
+      "typ": "haken",
+      "kicker": "Steuern × Code",
+      "titel": "3 Stunden Excel –\noder *3 Sekunden*?",
+      "sub": "Meine Ertragsteuer-Ampel."
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "haken_ueber.png",
+      "typ": "haken_ueber",
+      "transparent": true,
+      "kicker": "Steuern × Code",
+      "titel": "3 Stunden Excel –\noder *3 Sekunden*?",
+      "sub": "Meine Ertragsteuer-Ampel."
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "leiste_1.png",
+      "typ": "leiste",
+      "transparent": true,
+      "kicker": "Demo · Beispieldaten",
+      "titel": "Alle Ertragsteuern auf *einen Blick*"
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "leiste_2.png",
+      "typ": "leiste",
+      "transparent": true,
+      "titel": "Quote, Aufwand, Rückstellung – *live gerechnet*"
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "leiste_3.png",
+      "typ": "leiste",
+      "transparent": true,
+      "titel": "Die *Ampel* zeigt, was noch offen ist"
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "leiste_4.png",
+      "typ": "leiste",
+      "transparent": true,
+      "titel": "Und was noch *zu buchen* ist"
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "abspann.png",
+      "typ": "abspann"
+    },
+    {
+      "vorlage": "story",
+      "datei": "../story_fr_frage.png",
+      "typ": "frage",
+      "kicker": "Kurze Frage",
+      "titel": "Wie lange dauert bei euch die *Steuerrückstellung*?"
+    },
+    {
+      "vorlage": "story",
+      "datei": "../story_so_teaser.png",
+      "typ": "teaser",
+      "kicker": "Neues Reel",
+      "titel": "Die *Ampel*, die mir Stunden spart.",
+      "bild": "../../posts/01_2026-10-04_reel_ampel/titelbild.png"
+    }
+  ]
+}

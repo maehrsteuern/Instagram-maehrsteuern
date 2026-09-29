@@ -4,6 +4,9 @@ Szenen laufen nacheinander. Eine Szene ist entweder
   {"karte": "bild.png", "dauer": 2.5}                      – volle Karte (Haken, Abspann), leichter Zoom
   {"quelle": "app", "von": [cx,cy,w], "nach": [cx,cy,w], "dauer": 3, "leiste": "leiste.png"}
                                                            – Kamerafahrt über ein großes Bild (Ausschnitt 9:16, Breite w)
+     optional: "sofort": true  – Einblendung ab dem ersten Bild (für den Haken), sonst sanft eingeblendet
+               "fahrt": 1.6    – Dauer der Kamerafahrt in Sekunden (Standard 0,9)
+               "start": "schnell" – Fahrt beginnt sofort mit Tempo (gegen Wegscrollen im ersten Bild)
 "von" weglassen = weiter ab dem Ende der vorigen Szene. Zwischen Karte und Bild wird kurz überblendet.
 Ton: stumm – Musik in der Instagram-App auswählen.
 """
@@ -55,7 +58,8 @@ for sz in cfg["szenen"]:
     leiste = Image.open(pfad(sz["leiste"])).convert("RGBA") if sz.get("leiste") else None
     von = sz.get("von") or kamera
     nach = sz.get("nach")
-    fahrt = min(0.9 * fps, n)
+    fahrt = min(sz.get("fahrt", 0.9) * fps, n)
+    kurve = (lambda t: 1 - (1 - t) ** 2) if sz.get("start") == "schnell" else glatt
     for i in range(n):
         t = i / fps
         if art == "karte":
@@ -63,13 +67,13 @@ for sz in cfg["szenen"]:
             bild = ausschnitt(karte, W / 2, H / 2, W / z)
         else:
             if i < fahrt:
-                k = glatt(i / fahrt); c = [a + (b - a) * k for a, b in zip(von, nach)]
+                k = kurve(i / fahrt); c = [a + (b - a) * k for a, b in zip(von, nach)]
             else:  # langsames Weiterzoomen
                 k = (i - fahrt) / max(n - fahrt, 1); c = [nach[0], nach[1], nach[2] * (1 - 0.03 * k)]
             kamera = c
             bild = ausschnitt(quellen[sz["quelle"]], *c)
             if leiste is not None:
-                a = min(max((t - 0.25) / 0.3, 0), 1)
+                a = 1 if sz.get("sofort") else min(max((t - 0.25) / 0.3, 0), 1)
                 if a > 0:
                     l = leiste.copy(); l.putalpha(l.getchannel("A").point(lambda v: int(v * a)))
                     bild = bild.convert("RGBA"); bild.alpha_composite(l); bild = bild.convert("RGB")
