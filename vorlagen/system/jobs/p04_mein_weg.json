@@ -1,4 +1,4 @@
-{ "ausgabe": "../../posts/04_2026-10-27_reel_mein_weg/bausteine",
+{ "ausgabe": "../../posts/04_2026-10-20_reel_mein_weg/bausteine",
   "bilder": [
     { "vorlage":"reel_titel", "datei":"../titelbild.png", "saeule":"Hinter dem Code", "kicker":"Hinter dem Code",
       "titel":"Vom Steuer-Studium\nzum *eigenen Tool*", "sub":"Drei Stationen." },
@@ -12,5 +12,5 @@
     { "vorlage":"story", "datei":"../story_mo_frage.png", "typ":"frage", "kicker":"Frag mich was",
       "titel":"Was willst du über *mich* wissen?" },
     { "vorlage":"story", "datei":"../story_di_teaser.png", "typ":"teaser", "kicker":"Neues Reel",
-      "titel":"Mein Weg zu *Steuern × Code*.", "bild":"../../posts/04_2026-10-27_reel_mein_weg/titelbild.png" }
+      "titel":"Mein Weg zu *Steuern × Code*.", "bild":"../../posts/04_2026-10-20_reel_mein_weg/titelbild.png" }
   ] }

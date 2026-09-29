@@ -10,20 +10,20 @@
 
 Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründung in `05_veroeffentlichung.md`. Nach 4 Wochen die Uhrzeit anhand der Statistik prüfen.
 
-**Start:** Neuvorstellung (Karussell) am **So 04.10., 18:30**, danach anpinnen.
+**Startwoche:** Neuvorstellung **Do 01.10.**, Reel Ampel **So 04.10.**, danach jeden Dienstag 18:30.
 
 ## Plan Oktober – November 2026
 
-| Woche | Datum (Di) | Säule | Format | Thema / Haken | Story Montag | Status |
+| Woche | Datum | Säule | Format | Thema / Haken | Story davor | Status |
 |---|---|---|---|---|---|---|
-| 1 | 06.10. | Demo | Reel | **„Ertragsteuer-Ampel: 3 Sekunden statt 3 Stunden“** – Dashboard zeigt Rot/Gelb/Grün je Position | Frage: „Wie lange dauert bei euch die Steuerrückstellung?“ | **fertig** (`posts/01_…`) |
-| 2 | 13.10. | Praxis | Karussell | **„5 Excel-Fehler in deiner Steuerrückstellung“** | Umfrage: „Hattest du schon mal #BEZUG! kurz vor Abgabe?“ | **fertig** (`posts/02_…`) |
-| 3 | 20.10. | Wissen | Karussell | **„Gewerbesteuer-Hinzurechnung in 7 Folien – mit Rechenbeispiel“** (Demo-Zahlen) | Quiz: „Werden Mieten voll hinzugerechnet?“ | **fertig** (`posts/03_…`) |
-| 4 | 27.10. | Hinter dem Code | Reel (Gesicht) | **„Vom Steuer-Studium zum eigenen Tool“** – 3 Stationen in 20 s | Frage: „Was willst du über mich wissen?“ | Bausteine fertig, **Clips von dir bis 22.10.** (`posts/04_…/drehbuch.md`) |
-| 5 | 03.11. | Demo | Reel | **„Prüfpfad: Jede Zahl bis zur Quelle klicken“** | Umfrage: „Wie viele Tabellenblätter hat eure größte Steuer-Datei?“ | offen |
-| 6 | 10.11. | Praxis | Karussell | **„Excel vs. Standardsoftware vs. eigenes Tool – ehrlich verglichen“** (knüpft an die Umfrage im angepinnten Reel an) | Umfrage: „Team Code oder Team Excel?“ | offen |
-| 7 | 17.11. | Wissen | Karussell | **„Jahresabschluss: 7 Steuer-Punkte, die du jetzt schon vorbereiten kannst“** (speichern!) | Frage: „Was ist dein größter Zeitfresser im Abschluss?“ | offen |
-| 8 | 24.11. | Hinter dem Code | Reel | **„Ihr habt abgestimmt – ich baue das Feature“** (Ergebnis aus Woche 6) | Umfrage: „Welches Feature zuerst?“ | offen |
+| 1 | So 04.10. | Demo | Reel | **„Ertragsteuer-Ampel: 3 Sekunden statt 3 Stunden“** – Dashboard zeigt Rot/Gelb/Grün je Position | Frage: „Wie lange dauert bei euch die Steuerrückstellung?“ | **fertig** (`posts/01_…`) |
+| 2 | 06.10. | Praxis | Karussell | **„5 Excel-Fehler in deiner Steuerrückstellung“** | Umfrage: „Hattest du schon mal #BEZUG! kurz vor Abgabe?“ | **fertig** (`posts/02_…`) |
+| 3 | 13.10. | Wissen | Karussell | **„Gewerbesteuer-Hinzurechnung in 7 Folien – mit Rechenbeispiel“** (Demo-Zahlen) | Quiz: „Werden Mieten voll hinzugerechnet?“ | **fertig** (`posts/03_…`) |
+| 4 | 20.10. | Hinter dem Code | Reel (Gesicht) | **„Vom Steuer-Studium zum eigenen Tool“** – 3 Stationen in 20 s | Frage: „Was willst du über mich wissen?“ | Bausteine fertig, **Clips von dir bis 15.10.** (`posts/04_…/drehbuch.md`) |
+| 5 | 27.10. | Demo | Reel | **„Prüfpfad: Jede Zahl bis zur Quelle klicken“** | Umfrage: „Wie viele Tabellenblätter hat eure größte Steuer-Datei?“ | offen |
+| 6 | 03.11. | Praxis | Karussell | **„Excel vs. Standardsoftware vs. eigenes Tool – ehrlich verglichen“** (knüpft an die Umfrage im angepinnten Reel an) | Umfrage: „Team Code oder Team Excel?“ | offen |
+| 7 | 10.11. | Wissen | Karussell | **„Jahresabschluss: 7 Steuer-Punkte, die du jetzt schon vorbereiten kannst“** (speichern!) | Frage: „Was ist dein größter Zeitfresser im Abschluss?“ | offen |
+| 8 | 17.11. | Hinter dem Code | Reel | **„Ihr habt abgestimmt – ich baue das Feature“** (Ergebnis aus Woche 6) | Umfrage: „Welches Feature zuerst?“ | offen |
 
 **Nach Woche 4 und 8:** Kennzahlen aus `01_positionierung.md` eintragen, schwächste Säule anpassen, nächste 4 Wochen planen.
 

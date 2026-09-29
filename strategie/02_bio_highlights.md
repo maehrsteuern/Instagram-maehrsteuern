@@ -44,6 +44,6 @@ Ein Link zu deinem Terminbuchungs-Tool (z. B. Cal.com oder Calendly, 20-Minuten-
 4. **Ersetzt das meine Steuersoftware?** – „Nein. Es schließt die Lücken, die heute in Excel landen.“
 
 ## Angepinnte Beiträge (bis zu 3)
-1. **Neuvorstellung** (ab 04.10.) – wer du bist und was hier kommt
+1. **Neuvorstellung** (ab 01.10.) – wer du bist und was hier kommt
 2. Reel „Mein eigenes Steuer-Tool“ (bleibt) – Demo
-3. Karussell „5 Excel-Fehler in deiner Steuerrückstellung“ (ab 13.10.) – Praxis
+3. Karussell „5 Excel-Fehler in deiner Steuerrückstellung“ (ab 06.10.) – Praxis

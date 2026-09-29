@@ -1,4 +1,4 @@
-{ "ausgabe": "../../posts/00_2026-10-04_neuvorstellung",
+{ "ausgabe": "../../posts/00_2026-10-01_neuvorstellung",
   "bilder": [
     { "vorlage":"karussell", "datei":"folie_01.png", "typ":"titel", "saeule":"Neustart",
       "titel":"Neu hier?\nIch stell mich *neu* vor.", "sub":"Danke, dass du schon da bist. Hier ist, was sich ab jetzt ändert." },
@@ -20,6 +20,6 @@
     { "vorlage":"karussell", "datei":"folie_07.png", "typ":"cta", "saeule":"Neugierig?",
       "titel":"Willst du sehen, wie das *aussieht*?",
       "text":"Kurze Demo mit Beispieldaten, danach 20 Minuten Gespräch – kostenlos und unverbindlich." },
-    { "vorlage":"story", "datei":"story_so_teaser.png", "typ":"teaser", "kicker":"Neustart",
-      "titel":"Ich stell mich *neu* vor.", "bild":"../../posts/00_2026-10-04_neuvorstellung/folie_01.png" }
+    { "vorlage":"story", "datei":"story_do_teaser.png", "typ":"teaser", "kicker":"Neustart",
+      "titel":"Ich stell mich *neu* vor.", "bild":"../../posts/00_2026-10-01_neuvorstellung/folie_01.png" }
   ] }

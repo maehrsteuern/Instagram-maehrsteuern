@@ -12,4 +12,4 @@ Hochkant filmen (9:16), gutes Licht von vorn, Handy auf Augenhöhe. Kein Ton nö
 | 4 | 3 s | Dashboard (Demo) auf Laptop, du drehst dich zur Kamera und lächelst | `leiste_4.png` „Heute · Steuern × Code“ |
 | 5 | 3 s | – | `abspann.png` |
 
-**So geht's weiter:** Clips 1–4 bis **Do 22.10.** über GitHub hochladen (Zweig `claude/instagram`, Ordner `instagram/posts/04_2026-10-27_reel_mein_weg/clips/`, Namen `1.mp4` … `4.mp4`). Ich schneide daraus `reel.mp4` mit Einblendungen und Abspann.
+**So geht's weiter:** Clips 1–4 bis **Do 15.10.** über GitHub hochladen (Zweig `claude/instagram`, Ordner `posts/04_2026-10-20_reel_mein_weg/clips/` im Repo Instagram-maehrsteuern, Namen `1.mp4` … `4.mp4`). Ich schneide daraus `reel.mp4` mit Einblendungen und Abspann.

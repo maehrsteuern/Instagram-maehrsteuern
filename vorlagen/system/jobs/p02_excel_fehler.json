@@ -1,4 +1,4 @@
-{ "ausgabe": "../../posts/02_2026-10-13_excel_fehler",
+{ "ausgabe": "../../posts/02_2026-10-06_excel_fehler",
   "bilder": [
     { "vorlage":"karussell", "datei":"folie_01.png", "typ":"titel", "saeule":"Praxis",
       "titel":"5 Excel-Fehler in deiner\n*Steuerrückstellung*", "sub":"Nummer 3 hat fast jede Abteilung." },
@@ -23,5 +23,5 @@
     { "vorlage":"story", "datei":"story_mo_umfrage.png", "typ":"frage", "kicker":"Umfrage",
       "titel":"Schon mal *#BEZUG!* kurz vor der Abgabe gehabt?" },
     { "vorlage":"story", "datei":"story_di_teaser.png", "typ":"teaser", "kicker":"Neuer Beitrag",
-      "titel":"5 Excel-Fehler, die *jeder* kennt.", "bild":"../../posts/02_2026-10-13_excel_fehler/folie_01.png" }
+      "titel":"5 Excel-Fehler, die *jeder* kennt.", "bild":"../../posts/02_2026-10-06_excel_fehler/folie_01.png" }
   ] }

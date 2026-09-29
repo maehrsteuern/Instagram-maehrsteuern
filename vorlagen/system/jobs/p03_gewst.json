@@ -1,4 +1,4 @@
-{ "ausgabe": "../../posts/03_2026-10-20_gewst_hinzurechnung",
+{ "ausgabe": "../../posts/03_2026-10-13_gewst_hinzurechnung",
   "bilder": [
     { "vorlage":"karussell", "datei":"folie_01.png", "typ":"titel", "saeule":"Wissen",
       "titel":"Gewerbesteuer-\n*Hinzurechnung*", "sub":"In 7 Folien – mit Rechenbeispiel zum Speichern." },
@@ -27,7 +27,7 @@
     { "vorlage":"story", "datei":"story_mo_quiz.png", "typ":"frage", "kicker":"Quiz",
       "titel":"Werden Mieten bei der Gewerbesteuer *voll* hinzugerechnet?" },
     { "vorlage":"story", "datei":"story_di_teaser.png", "typ":"teaser", "kicker":"Neuer Beitrag",
-      "titel":"Hinzurechnung in *7 Folien*.", "bild":"../../posts/03_2026-10-20_gewst_hinzurechnung/folie_01.png" },
+      "titel":"Hinzurechnung in *7 Folien*.", "bild":"../../posts/03_2026-10-13_gewst_hinzurechnung/folie_01.png" },
     { "vorlage":"story", "datei":"story_fr_aufloesung.png", "typ":"info", "kicker":"Auflösung Quiz",
       "titel":"*Nein* – nur ein Teil.",
       "punkte":["Maschinen, Autos: *20 %*","Büro, Halle: *50 %*","Danach: 200.000 € Freibetrag, davon ¼"], "cta":true, "chip":"Rechenweg im Dienstag-Beitrag" }
