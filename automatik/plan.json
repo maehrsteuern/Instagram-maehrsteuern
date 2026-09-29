@@ -16,8 +16,9 @@
         "folie_07.png"
       ],
       "text": "bildunterschrift.txt",
-      "status": "entwurf",
-      "danach": "Anpinnen (von Hand)"
+      "status": "manuell",
+      "danach": "Anpinnen (von Hand)",
+      "hinweis": "In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen"
     },
     {
       "id": "00-story-teaser",
@@ -27,7 +28,8 @@
       "bilder": [
         "story_do_teaser.png"
       ],
-      "status": "entwurf"
+      "status": "entfaellt",
+      "hinweis": "Beitrag wird von Hand in die Story geteilt (antippbar)"
     },
     {
       "id": "01-reel-ampel",
