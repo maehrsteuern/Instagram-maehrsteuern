@@ -1,10 +1,7 @@
 # Autopilot einrichten (einmalig, ca. 30 Minuten)
 
-## 1 · Repo anlegen (2 Min.)
-1. https://github.com/new öffnen
-2. Name: **instagram** · **Public** · *nichts* ankreuzen (kein README) → **Create repository**
-3. Claude Zugriff geben: https://github.com/apps/claude/installations/select_target → **maehrsteuern** → unter *Repository access* das Repo **instagram** hinzufügen (falls dort „Only select repositories“ steht) → *Save*
-4. Mir Bescheid sagen, dann lade ich alles hoch.
+## 1 · Repo ✅ erledigt
+https://github.com/maehrsteuern/Instagram-maehrsteuern (öffentlich)
 
 ## 2 · Instagram-Schnittstelle freischalten (ca. 15 Min.)
 Dein Konto ist schon professionell, das ist die Voraussetzung.
@@ -22,13 +19,13 @@ Dein Konto ist schon professionell, das ist die Voraussetzung.
 Die App bleibt im Entwicklungsmodus. Für dein eigenes Konto reicht das, eine Prüfung durch Meta ist nicht nötig.
 
 ## 3 · Werte sicher bei GitHub hinterlegen (3 Min.)
-Repo **instagram** → **Settings → Secrets and variables → Actions → New repository secret**:
+Repo **Instagram-maehrsteuern** → **Settings → Secrets and variables → Actions → New repository secret**:
 
 | Name | Wert |
 |---|---|
 | `IG_TOKEN` | der Zugriffsschlüssel |
 | `IG_USER_ID` | die Instagram-Konto-ID |
-| `GH_PAT` *(optional, empfohlen)* | ein GitHub-Schlüssel, damit der Instagram-Schlüssel sich selbst erneuert: https://github.com/settings/personal-access-tokens → *Generate new token* → Repository **instagram** → Berechtigung **Secrets: Read and write** |
+| `GH_PAT` *(optional, empfohlen)* | ein GitHub-Schlüssel, damit der Instagram-Schlüssel sich selbst erneuert: https://github.com/settings/personal-access-tokens → *Generate new token* → Repository **Instagram-maehrsteuern** → Berechtigung **Secrets: Read and write** |
 
 Diese Werte sieht niemand, auch nicht im öffentlichen Repo. **Schick sie nie im Chat.**
 
