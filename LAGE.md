@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 15:01 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 15:28 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -73,6 +73,8 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 15:28 📈 Statistik 2026-09-30 ([`a4bab94`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a4bab94532ab349b4f2d5f23572b90447d272c10))
+  - `automatik/statistik`
 - 12:50 ✅ Freigabe #2: stop ([`6f673c3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f673c3f8ae35d0bfbcd75cbed1e447959f9d73b))
   - Plan: `01-reel-ampel` status: entwurf → pause
 - 12:47 🔀 Merge: externer Posten-Takt eingerichtet ([`00f0756`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/00f07568055445b6a012dc4c6e97a299c7798495))
