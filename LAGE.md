@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:15 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:19 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -65,19 +65,28 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | montags ca. 07:17 | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | montags ca. 07:17 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 18:19 🔀 Merge: Reel Ampel testet die Fassung mit Loris' Stimme (reel_stimme.mp4), Status pause bleibt ([`8106eb9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/8106eb9823c4d5e707f40c833010ee30c6050ef1))
+- 18:18 ✍️ Plan: Reel Ampel (04.10.) testet die Fassung mit Loris' Stimme (reel_stimme.mp4) ([`080e966`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/080e96623844e913c20ed71c112e26e1338f4c08))
+  - `automatik/plan.json`
 - 18:15 🤖 Autopilot: Dateien fuer 00-vorfreude vorbereitet ([`de366fa`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/de366fa96f1339ddeac43467097ab50bc0c008a3))
   - `posts/extra_2026-09-30_vorfreude`
+- 17:47 ✍️ Ampel-Reel mit neuer Sprachaufnahme: Untertitel wörtlich, Stimme vorn, Musik und Atmo leise; Learnings in den Reel-Regeln ([`2bff54b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2bff54b9897e26d4431e642caa8fc8b21e191132))
+  - `posts/01_2026-10-04_reel_ampel`, `strategie/09_reel_regeln.md`, `vorlagen/system/schnitt/p01_reel_ampel_stimme.json`
+- 17:31 ✍️ Ampel-Reel: neue Fassung mit Loris' Stimme (Ich-Geschichte, wörtliche Untertitel, keine Lo-Fi-Musik) ([`8860eac`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/8860eac08352f9cfdf258950a3df20d914dd378c))
+  - `posts/01_2026-10-04_reel_ampel`, `vorlagen/system/montage.py`, `vorlagen/system/schnitt/p01_reel_ampel_stimme.json`
+- 17:16 ✍️ Reel-Regeln: Feedback zum Ampel-Reel – zu professionell/generisch, mehr persönliches Drama statt Screen-Demo mit Lo-Fi ([`b10373c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b10373c626e2f520c314bd668296b2b28f2292bf))
+  - `strategie/09_reel_regeln.md`
 - 16:09 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`befde8f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/befde8f42c6c366748595166c8106b10ae22702e))
 - 16:08 🔀 Merge: Reels aus echten Programm-Aufnahmen, Hook-Bibliothek, Reel-Ampel auf reel_hook.mp4 (Status pause bleibt) ([`e048af2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e048af2954e4154ba3bb16ffef04852f9271bf51))
 - 16:07 🔀 Merge: Lage ohne Dauer-Commits ([`e7e5dfa`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e7e5dfabe79cba20f5164613645778ece0cb96ba))
