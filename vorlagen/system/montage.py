@@ -16,6 +16,11 @@ Szene:
    "abdunkeln": 0.35, – Hintergrund abdunkeln, damit Text auf unruhigen Screens lesbar bleibt
    "text": [{"wort": "#BEZUG!", "ab": "0b", "farbe": "rot", "groesse": 190, "y": 700}]}
 Texte ohne "ab" stehen sofort (ohne Aufpoppen) – so bleibt ein Text über mehrere Schnitte stehen.
+
+Ton: mehrere Spuren, jede an ihrer Stelle im Reel (Atmo im Hook, Musik erst ab der Lösung):
+  "ton": [{"datei": "../../musik/x.mp3", "ab": 3.2, "start": 0, "dauer": 2, "lautstaerke": 0.8, "ein": 0.3, "aus": 0.2}]
+  ab = Einsatz im Reel, start = Startsekunde in der Datei, dauer weglassen = bis zum Ende. Am Reel-Ende wird ausgeblendet.
+  "musik" + "musik_start" (wie in reel.py) geht weiterhin als Kurzform.
 """
 import json, math, random, subprocess, sys
 from pathlib import Path
@@ -130,16 +135,28 @@ for sz in szenen: grenzen.append(grenzen[-1] + zeit(sz["dauer"]))
 bilder = [round(b * fps) for b in grenzen]
 dauer = bilder[-1] / fps
 ziel = pfad(cfg["ausgabe"]); ziel.parent.mkdir(parents=True, exist_ok=True)
-if cfg.get("musik"):
-    start = max(cfg.get("musik_start", 0), 0)
-    ton = ["-ss", f"{start:.2f}", "-i", str(pfad(cfg["musik"])), "-af",
-           f"volume={cfg.get('lautstaerke', 0.9)},afade=t=in:d=0.03,afade=t=out:st={max(dauer - 1.0, 0):.2f}:d=1.0", "-shortest"]
+spuren = list(cfg.get("ton", []))
+if cfg.get("musik"):  # Kurzform wie in reel.py: ein Titel ab Sekunde 0
+    spuren.append({"datei": cfg["musik"], "start": cfg.get("musik_start", 0), "lautstaerke": cfg.get("lautstaerke", 0.9)})
+eingaenge, filter_ = [], []
+for k, sp in enumerate(spuren):
+    eingaenge += ["-i", str(pfad(sp["datei"]))]
+    ab = zeit(sp.get("ab", 0)); lang = zeit(sp["dauer"]) if "dauer" in sp else dauer - ab
+    kette = [f"atrim=start={sp.get('start', 0):.3f}:duration={lang:.3f}", "asetpts=PTS-STARTPTS",
+             "aformat=sample_rates=44100:channel_layouts=stereo", f"volume={sp.get('lautstaerke', 0.9)}",
+             f"afade=t=in:d={sp.get('ein', 0.03)}", f"afade=t=out:st={max(lang - sp.get('aus', 0.05), 0):.3f}:d={sp.get('aus', 0.05)}",
+             f"adelay={round(ab * 1000)}|{round(ab * 1000)}"]
+    filter_.append(f"[{k + 1}:a]{','.join(kette)}[s{k}]")
+if spuren:
+    filter_.append("".join(f"[s{k}]" for k in range(len(spuren))) +
+                   f"amix=inputs={len(spuren)}:normalize=0,apad,atrim=duration={dauer:.3f},afade=t=out:st={max(dauer - 0.8, 0):.3f}:d=0.8[ton]")
+    ton = [*eingaenge, "-filter_complex", ";".join(filter_), "-map", "0:v", "-map", "[ton]"]
 else:
     ton = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest"]
 proc = subprocess.Popen([ff, "-loglevel", "error", "-y",
     "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", *ton,
     "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p",
-    "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(ziel)], stdin=subprocess.PIPE)
+    "-c:a", "aac", "-b:a", "192k", "-t", f"{dauer:.3f}", "-movflags", "+faststart", str(ziel)], stdin=subprocess.PIPE)
 
 bild_nr = 0
 for nr, sz in enumerate(szenen):
