@@ -8,7 +8,9 @@ on:
     types: [created]
   workflow_dispatch:
 concurrency:
-  group: instagram-plan
+  # eigene Gruppe: in instagram-plan verdrängt der 15-Min.-Posten-Takt einen wartenden Freigabe-Lauf
+  # (und umgekehrt eine „go“-Antwort einen wartenden Posten-Lauf). plan.json wird per pull --rebase zusammengeführt.
+  group: freigabe
   cancel-in-progress: false
 permissions:
   contents: write
