@@ -25,7 +25,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/13_backlog.md` | Backlog Automatisierung: umgesetzt, Sprint 2, zurückgestellt, abgelehnt |
 | `strategie/12_interaktion.md` | **Zweite Säule Interaktion:** Radar, DM-Entwürfe, Kommentar-Hilfe, Click-to-DM-Anzeige, Collabs, LinkedIn, Grenzen |
 | `vorlagen/hooks/` | Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8–2,8 s), Übersicht in `README.md` |
-| `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
+| `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv`, `tagesbilanz.py` (Tagesbilanz über alle Repos, Befehle `/tagesbilanz` und Wochenbilanz `--woche`, Verlauf in `tagesbilanz.md`) |
 | `automatik/interaktion.json` | Einstellungen Radar/Kommentare (Konten, Hashtags, Grenzen); Stand in `automatik/interaktion/` |
 | `automatik/wochenbericht.py` | Sonntags ein Issue „📊 Woche KW xx“ (Follower, Aufrufe, Top 3, Radar, Trichter); Nachtrag `demos 2` / `manychat 14/6` / `herkunft …`; Werte in `automatik/statistik/woche.csv` |
 | `automatik/apps_script/demo_kopie.gs` | Apps-Script (läuft in Loris' Google-Konto): kopiert Reclaim-Demo-Buchungen ohne Namen/E-Mails in „maehrsteuern Autopilot“ – Quelle für den Wochenbericht |
