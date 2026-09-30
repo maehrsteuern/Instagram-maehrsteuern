@@ -24,7 +24,7 @@ Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründ
 |---|---|---|---|---|---|---|
 | 1 | So 04.10. | Demo | Reel | **„Ertragsteuer-Ampel: 3 Sekunden statt 3 Stunden“** – Dashboard zeigt Rot/Gelb/Grün je Position | Frage: „Wie lange dauert bei euch die Steuerrückstellung?“ | **fertig** (`posts/01_…`) |
 | 2 | 06.10. | Praxis | Karussell | **„5 Excel-Fehler in deiner Steuerrückstellung“** | Umfrage: „Hattest du schon mal #BEZUG! kurz vor Abgabe?“ | **fertig** (`posts/02_…`) |
-| 3 | 13.10. | Wissen | Karussell | **„Gewerbesteuer-Hinzurechnung in 7 Folien – mit Rechenbeispiel“** (Demo-Zahlen) | Quiz: „Werden Mieten voll hinzugerechnet?“ | **fertig** (`posts/03_…`) |
+| 3 | 13.10. | Wissen | Karussell | **„Werden Mieten voll hinzugerechnet?“** – Gewerbesteuer-Hinzurechnung in 7 Folien mit Rechenbeispiel (Demo-Zahlen) | Quiz: „Werden Mieten voll hinzugerechnet?“ | **fertig** (`posts/03_…`) |
 | 4 | 20.10. | Hinter dem Code | Reel (Gesicht) | **„Vom Steuer-Studium zum eigenen Tool“** – 3 Stationen in 20 s | Frage: „Was willst du über mich wissen?“ | Bausteine fertig, **Clips von dir bis 15.10.** (`posts/04_…/drehbuch.md`) |
 | 5 | 27.10. | Demo | Reel | **„Prüfpfad: Jede Zahl bis zur Quelle klicken“** | Umfrage: „Wie viele Tabellenblätter hat eure größte Steuer-Datei?“ | offen |
 | 6 | 03.11. | Praxis | Karussell | **„Excel vs. Standardsoftware vs. eigenes Tool – ehrlich verglichen“** (knüpft an die Umfrage im angepinnten Reel an) | Umfrage: „Team Code oder Team Excel?“ | offen |

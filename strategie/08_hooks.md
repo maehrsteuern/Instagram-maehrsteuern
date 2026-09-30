@@ -67,7 +67,7 @@ Der aktuelle Haken bleibt Standard. Die Varianten sind Optionen für die Content
 |---|---|---|---|
 | 01 Reel Ampel (04.10.) | „3 Stunden Excel – oder 3 Sekunden?“ | „Was wäre, wenn deine Rückstellung in *3 Sekunden* steht?“ (Enthüllung) | „Bye bye *Tabellenchaos*.“ (Kontroverse) |
 | 02 Excel-Fehler (06.10.) | „5 Excel-Fehler, die fast jede Steuerrückstellung hat“ | „5 *red flags* in deiner Steuerrückstellung.“ | „Fehler Nr. 3 macht *fast jeder*.“ (Neugier auf eine Folie) |
-| 03 GewSt-Hinzurechnung (13.10.) | „Gewerbesteuer-Hinzurechnung in 7 Folien“ | „Werden Mieten *voll* hinzugerechnet? Nein.“ (Frage + Enthüllung, knüpft ans Quiz an) | „Maximaler Input: *Hinzurechnung* in 7 Folien.“ |
+| 03 GewSt-Hinzurechnung (13.10.) | **übernommen:** „Werden Mieten *voll* hinzugerechnet?“ (Frage, knüpft ans Montags-Quiz an; Antwort bewusst erst im Karussell und in der Freitags-Auflösung) – vorher „Gewerbesteuer-Hinzurechnung in 7 Folien“ | „Maximaler Input: *Hinzurechnung* in 7 Folien.“ |
 | 04 Reel Mein Weg (20.10.) | „Vom Steuer-Studium zum eigenen Steuer-Tool“ | „Warum ich keine Steuer-Excel *mehr baue*.“ | „Da lag ich *falsch*. Du auch?“ |
 | 05 Reel Prüfpfad (27.10.) | „Prüfpfad: Jede Zahl bis zur Quelle klicken“ | „Woher kommt *diese Zahl*? Ein Klick.“ | „Die Frage jeder Betriebsprüfung – in *1 Sekunde* beantwortet.“ |
 | 06 Excel vs. Software vs. Tool (03.11.) | „… ehrlich verglichen“ | „Wir müssen ehrlich über *Standardsoftware* reden.“ | „Brauchst du wirklich *teure Software* für deine Rückstellung?“ (Frage) |
