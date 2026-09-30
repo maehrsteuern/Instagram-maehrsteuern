@@ -92,6 +92,7 @@ Mit einem Instagram-Automatisierungsdienst wie ManyChat (kostenloser Einstieg) S
 - [ ] **Demo-Video** 1–2 Min. (Drehbuch: `07_demo_video.md`; bis dahin ③ Übergangsversion nutzen) als Bildschirmaufnahme (nur Beispieldaten), z. B. als nicht gelistetes YouTube-Video
 - [x] **Terminlink:** https://app.reclaim.ai/m/maehrsteuern/demo
 - [ ] Schnellantworten anlegen
+- [x] **Sofortantwort** (Meta Business Suite, 30.09.2026) mit Nachricht ① – reagiert auf jede neue Unterhaltung, nicht nur auf „TOOL“. Ab ② läuft alles von Hand mit den Schnellantworten.
 
 ## Nachverfolgen
 Jede Anfrage eine Zeile in `dm_tracking.csv` (Datum, Handle-Kürzel, Gruppe 1–4, Stichwort, Stufe, Termin ja/nein). So siehst du nach 4 Wochen, welcher Beitrag die Anfragen gebracht hat. Keine vollen Namen oder Firmen eintragen.
