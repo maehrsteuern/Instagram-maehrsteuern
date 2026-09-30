@@ -89,11 +89,11 @@
       "zeit": "2026-10-04 19:30",
       "typ": "reel",
       "ordner": "posts/01_2026-10-04_reel_ampel",
-      "video": "reel_musik.mp4",
+      "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "entwurf",
-      "hinweis": "Neu geschnitten 30.09. (Einstieg #BEZUG!, Ampel Rot→Gelb→Grün, 11 s, ohne Abspann); automatisch mit gemeinfreier Musik (musik/02)",
+      "status": "manuell",
+      "hinweis": "Von Hand in der App planen: reel.mp4 (stumm, 11 s) + aktuell beliebter Sound aus der Instagram-Bibliothek; Einstieg #BEZUG!, Ampel Rot→Gelb→Grün",
       "issue": 2
     },
     {
