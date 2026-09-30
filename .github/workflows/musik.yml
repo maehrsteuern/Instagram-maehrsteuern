@@ -1,5 +1,5 @@
 name: Musik holen
-# Einmalig bzw. bei Bedarf: 5 gemeinfreie Titel (CC0) von FreePD nach musik/ holen.
+# Einmalig bzw. bei Bedarf: 5 gemeinfreie Titel (CC0) aus dem Internet Archive nach musik/ holen.
 on:
   workflow_dispatch:
 concurrency:
@@ -19,4 +19,4 @@ jobs:
       - name: Speichern
         run: |
           git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
-          git add musik && git diff --cached --quiet || (git commit -m "Musik: gemeinfreie Titel von FreePD (CC0)" && git pull --rebase -q && git push)
+          git add musik && git diff --cached --quiet || (git commit -m "Musik: gemeinfreie Titel (CC0) aus dem Internet Archive" && git pull --rebase -q && git push)
