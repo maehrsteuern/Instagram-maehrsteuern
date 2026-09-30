@@ -1,0 +1,384 @@
+{
+ "ausgabe": "../../posts/01_2026-10-04_reel_ampel/reel_stimme.mp4",
+ "fps": 30,
+ "ton": [
+  {
+   "datei": "../../posts/01_2026-10-04_reel_ampel/ton/sprachnachricht_2.m4a",
+   "ab": 0,
+   "lautstaerke": 1.0
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 2.2,
+   "start": 0.3,
+   "dauer": 3.6,
+   "lautstaerke": 0.18,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 5.8,
+   "start": 0.3,
+   "dauer": 3.6,
+   "lautstaerke": 0.18,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 9.4,
+   "start": 0.3,
+   "dauer": 3.6,
+   "lautstaerke": 0.18,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 13.0,
+   "start": 0.3,
+   "dauer": 3.6,
+   "lautstaerke": 0.18,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 9.68,
+   "dauer": 0.6,
+   "lautstaerke": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 11.5,
+   "dauer": 0.6,
+   "lautstaerke": 0.22
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 13.24,
+   "dauer": 0.6,
+   "lautstaerke": 0.22
+  },
+  {
+   "datei": "../../musik/atmo/tippen_fehlerton.mp3",
+   "ab": 17.3,
+   "start": 0.8,
+   "dauer": 0.6,
+   "lautstaerke": 0.3
+  },
+  {
+   "datei": "../../musik/06_runway_lofi_ruhig.mp3",
+   "ab": 16.8,
+   "start": 0,
+   "lautstaerke": 0.13,
+   "ein": 1.0
+  }
+ ],
+ "quellen": {
+  "buero": {
+   "video": "../hooks/bausteine/ki_buero_abend.mp4"
+  },
+  "schulter": {
+   "video": "../hooks/bausteine/ki_ueber_schulter.mp4"
+  },
+  "tabelle": {
+   "video": "../hooks/bausteine/karte_oben_tabelle.mp4"
+  },
+  "ampel": {
+   "video": "../../posts/01_2026-10-04_reel_ampel/bausteine/aufnahme_gelb_gruen.mp4"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "buero",
+   "dauer": 5.0,
+   "ab": 0.2,
+   "text": [
+    {
+     "wort": "Also, wer kennt's nicht?",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 1.57,
+     "ab": 0.0
+    },
+    {
+     "wort": "Du bist einfach zwei Tage vor Fristende",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 5.02,
+     "ab": 2.2
+    },
+    {
+     "wort": "2 Tage vor Frist",
+     "farbe": "rot",
+     "groesse": 150,
+     "y": 520,
+     "bis": 5.0,
+     "ab": 2.9
+    }
+   ],
+   "tempo": 0.9,
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    900,
+    900
+   ]
+  },
+  {
+   "quelle": "schulter",
+   "dauer": 3.3,
+   "ab": 0.3,
+   "text": [
+    {
+     "wort": "Du bist einfach zwei Tage vor Fristende",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 0.02
+    },
+    {
+     "wort": "und musst eine riesige Excel-Tabelle abstimmen.",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 3.21,
+     "ab": 0.02
+    }
+   ]
+  },
+  {
+   "quelle": "tabelle",
+   "dauer": 2.8,
+   "ab": 1.25,
+   "text": [
+    {
+     "wort": "Und hast dann irgendwelche Bezugsfehler",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 2.8,
+     "ab": 0.02
+    },
+    {
+     "wort": "oder Namensfehler",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 4.54,
+     "ab": 2.8
+    },
+    {
+     "wort": "#BEZUG!",
+     "farbe": "rot",
+     "groesse": 230,
+     "y": 520,
+     "bis": 2.8,
+     "ab": 1.38
+    }
+   ]
+  },
+  {
+   "quelle": "schulter",
+   "dauer": 3.0,
+   "ab": 1.8,
+   "text": [
+    {
+     "wort": "oder Namensfehler",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 1.74
+    },
+    {
+     "wort": "oder Formelfehler",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 2.98,
+     "ab": 1.74
+    },
+    {
+     "wort": "und suchst dich dumm und dämlich.",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 5.21,
+     "ab": 2.98
+    },
+    {
+     "wort": "#NAME?",
+     "farbe": "rot",
+     "groesse": 230,
+     "y": 520,
+     "bis": 2.14,
+     "ab": 0.4
+    },
+    {
+     "wort": "#WERT!",
+     "farbe": "rot",
+     "groesse": 230,
+     "y": 520,
+     "bis": 3.0,
+     "ab": 2.14
+    }
+   ],
+   "von": [
+    540,
+    800,
+    1000
+   ],
+   "nach": [
+    560,
+    760,
+    820
+   ]
+  },
+  {
+   "quelle": "tabelle",
+   "dauer": 2.7,
+   "ab": 7.0,
+   "text": [
+    {
+     "wort": "und suchst dich dumm und dämlich.",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 2.21
+    },
+    {
+     "wort": "Quelle nicht gefunden.",
+     "farbe": "rot",
+     "groesse": 95,
+     "y": 470,
+     "bis": 2.7,
+     "ab": 1.6
+    }
+   ]
+  },
+  {
+   "quelle": "ampel",
+   "dauer": 3.3,
+   "ab": 8.0,
+   "text": [
+    {
+     "wort": "Aber dafür gibt's jetzt endlich eine Lösung",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 1.84,
+     "ab": 0.06
+    },
+    {
+     "wort": "und das ist Code.",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 2.81,
+     "ab": 1.84
+    },
+    {
+     "wort": "Code.",
+     "farbe": "gruen",
+     "groesse": 200,
+     "y": 380,
+     "bis": 3.3,
+     "ab": 2.28
+    }
+   ],
+   "rein": "whip",
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    1000,
+    1000
+   ]
+  },
+  {
+   "quelle": "ampel",
+   "dauer": 2.0,
+   "ab": 13.5,
+   "text": [
+    {
+     "wort": "Deswegen: Schreib mir eine DM mit „TOOL“",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 2.02,
+     "ab": 0.04
+    },
+    {
+     "wort": "„TOOL“",
+     "farbe": "gruen",
+     "groesse": 220,
+     "y": 720,
+     "bis": 6.2,
+     "ab": 1.52
+    },
+    {
+     "wort": "per DM",
+     "farbe": "weiss",
+     "groesse": 130,
+     "y": 960,
+     "bis": 6.2,
+     "ab": 1.82
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    410,
+    900,
+    820
+   ]
+  },
+  {
+   "quelle": "ampel",
+   "dauer": 4.2,
+   "ab": 16.1,
+   "text": [
+    {
+     "wort": "Deswegen: Schreib mir eine DM mit „TOOL“",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 0.02
+    },
+    {
+     "wort": "und ich zeige dir die Demo.",
+     "groesse": 68,
+     "y": 1330,
+     "bis": 4.2,
+     "ab": 0.02
+    },
+    {
+     "wort": "„TOOL“",
+     "farbe": "gruen",
+     "groesse": 220,
+     "y": 720,
+     "bis": 4.2
+    },
+    {
+     "wort": "per DM",
+     "farbe": "weiss",
+     "groesse": 130,
+     "y": 960,
+     "bis": 4.2
+    }
+   ],
+   "tempo": 0,
+   "von": [
+    410,
+    900,
+    820
+   ],
+   "nach": [
+    540,
+    960,
+    1080
+   ],
+   "abdunkeln": 0.55
+  }
+ ]
+}

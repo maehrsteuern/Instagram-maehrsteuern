@@ -2,6 +2,6 @@
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
 - Externer Takt fürs Posten läuft seit 30.09. 12:47 (cron-job.org, alle 15 Min., Test 204 ✓). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
-- Reel Ampel (04.10.) steht auf **pause** (Freigabe #2: stop). Neue Fassung `reel_hook.mp4` (12,7 s, echte Programm-Aufnahme Gelb → Grün, Lo-Fi) ist eingetragen – zum Posten Freigabe erneut mit „go“ geben.
+- Reel Ampel (04.10.) steht auf **pause** (Freigabe #2: stop). Eingetragen ist jetzt der Test mit Loris' Stimme `reel_stimme.mp4` (26 s, Untertitel wörtlich, Musik ganz leise) – zum Posten Freigabe erneut mit „go“ geben.
 - Begleit-Reels fertig: Post 02 Split-Screen `reel_split.mp4`, Post 03 `reel_hinzurechnung.mp4` (noch nicht im Plan). Hook-Bibliothek: `vorlagen/hooks/`.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
