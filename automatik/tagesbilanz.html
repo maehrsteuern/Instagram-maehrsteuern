@@ -1,0 +1,280 @@
+<title>Tagesbilanz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@80,600;80,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: ein Journalblatt – Kopf mit Datum und Knopf, Summe als Buchungssaldo, darunter Posten je Repo und der Verlauf. */
+:root {
+  --bg: #f5f6f8; --paper: #ffffff; --fg: #1b2030; --muted: #5d6479; --line: #dde0e8;
+  --accent: #2b4c9b; --accent-soft: #e6ebf7;
+  --gruen: #1f7a4d; --gelb: #a8690a; --rot: #b3372f;
+  --gruen-soft: #e3f2ea; --gelb-soft: #fbf0dc; --rot-soft: #f9e3e1;
+  --display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12151d; --paper: #1a1e29; --fg: #e6e8ef; --muted: #9aa1b5; --line: #2c3242;
+  --accent: #8ea8ec; --accent-soft: #232c45;
+  --gruen: #5cc493; --gelb: #e8b24f; --rot: #ef7f75;
+  --gruen-soft: #173326; --gelb-soft: #3a2c12; --rot-soft: #3b1d1b; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12151d; --paper: #1a1e29; --fg: #e6e8ef; --muted: #9aa1b5; --line: #2c3242;
+  --accent: #8ea8ec; --accent-soft: #232c45;
+  --gruen: #5cc493; --gelb: #e8b24f; --rot: #ef7f75;
+  --gruen-soft: #173326; --gelb-soft: #3a2c12; --rot-soft: #3b1d1b; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--body); }
+.wrap { max-width: 760px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 56px; display: grid; gap: 22px; }
+h1, h2 { font-family: var(--display); font-stretch: 80%; margin: 0; text-wrap: balance; }
+h1 { font-size: 2.1rem; font-weight: 800; letter-spacing: -0.01em; }
+h2 { font-size: 1.15rem; font-weight: 600; }
+.eyebrow { font-size: .72rem; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 14px; }
+.steuer { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
+label { display: grid; gap: 4px; font-size: .78rem; color: var(--muted); }
+input { font: 15px var(--body); color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
+input[type=number] { width: 5.5em; }
+button { font: 600 15px var(--body); color: #fff; background: var(--accent); border: 0; border-radius: 6px; padding: 10px 18px; cursor: pointer; }
+:root[data-theme="dark"] button { color: #10131b; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) button { color: #10131b; } }
+button:disabled { opacity: .55; cursor: progress; }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.saldo { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; grid-template-columns: auto 1fr; gap: 8px 24px; align-items: center; }
+.punkte { font-family: var(--display); font-stretch: 80%; font-weight: 800; font-size: 4rem; line-height: 1; }
+.pill { display: inline-block; font-weight: 600; font-size: .85rem; border-radius: 99px; padding: 3px 12px; }
+.pill.gruen { background: var(--gruen-soft); color: var(--gruen); }
+.pill.gelb { background: var(--gelb-soft); color: var(--gelb); }
+.pill.rot { background: var(--rot-soft); color: var(--rot); }
+.pill.leer { background: var(--accent-soft); color: var(--accent); }
+.kennz { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 8px; color: var(--muted); font-size: .9rem; }
+.kennz b { color: var(--fg); font-weight: 500; }
+.formel { grid-column: 1 / -1; font-size: .8rem; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 10px; }
+.status { font-size: .88rem; color: var(--muted); min-height: 1.4em; }
+.status.fehler { color: var(--rot); }
+
+section { display: grid; gap: 10px; }
+.posten { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+details + details { border-top: 1px solid var(--line); }
+summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; font-weight: 500; }
+summary::-webkit-details-marker { display: none; }
+summary .name { min-width: 0; overflow-wrap: anywhere; }
+summary .anz { color: var(--muted); white-space: nowrap; }
+details ul { margin: 0; padding: 0 16px 14px 34px; display: grid; gap: 4px; font-size: .9rem; }
+details li { overflow-wrap: anywhere; }
+.leerzeile { padding: 14px 16px; color: var(--muted); font-size: .9rem; }
+
+.verlauf { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 16px; overflow-x: auto; }
+.balken { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(34px, 1fr); gap: 6px; align-items: end; height: 150px; min-width: min-content; }
+.b { display: grid; grid-template-rows: auto 1fr auto; justify-items: center; height: 100%; gap: 4px; font-size: .72rem; color: var(--muted); }
+.b .saeule { align-self: end; width: 70%; border-radius: 3px 3px 0 0; min-height: 2px; }
+.b.gruen .saeule { background: var(--gruen); } .b.gelb .saeule { background: var(--gelb); } .b.rot .saeule { background: var(--rot); }
+.b.heute { color: var(--fg); font-weight: 600; }
+.hinweis { font-size: .82rem; color: var(--muted); }
+@media (max-width: 480px) { .punkte { font-size: 3.2rem; } .saldo { grid-template-columns: 1fr; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">maehrsteuern · Arbeitsjournal</div>
+      <h1>Tagesbilanz</h1>
+    </div>
+    <form class="steuer" id="form">
+      <label for="datum">Tag<input type="date" id="datum"></label>
+      <label for="chats">Chats extra<input type="number" id="chats" min="0" value="0"></label>
+      <button id="los" type="submit">Bilanz ziehen</button>
+    </form>
+  </header>
+
+  <div class="saldo">
+    <div class="punkte num" id="punkte">–</div>
+    <div>
+      <span class="pill leer" id="ampel">noch nicht gezogen</span>
+      <div class="kennz">
+        <span><b class="num" id="k-commits">–</b> Commits</span>
+        <span><b class="num" id="k-sitzungen">–</b> Sitzungen</span>
+        <span><b class="num" id="k-repos">–</b> Repos bewegt</span>
+      </div>
+    </div>
+    <div class="formel">Punkte: Commit 3 · Sitzung oder Chat 2 · 🟢 ab 60 · 🟡 ab 25. Automatische Commits (Lage, Statistik, Autopilot) und Merges zählen nicht.</div>
+  </div>
+  <div class="status" id="status" role="status">Tippe auf „Bilanz ziehen“. Die Seite liest deine GitHub-Repos und Claude-Code-Sitzungen des Tages.</div>
+
+  <section>
+    <h2>Erledigt je Repo</h2>
+    <div class="posten" id="repos"><div class="leerzeile">Hier stehen nach dem Ziehen die Commits des Tages, gruppiert nach Repo.</div></div>
+  </section>
+
+  <section>
+    <h2>Sitzungen mit Claude</h2>
+    <div class="posten" id="sitzungen"><div class="leerzeile">Hier stehen die Titel der Claude-Code-Sitzungen, die an dem Tag aktiv waren.</div></div>
+  </section>
+
+  <section>
+    <h2>Verlauf</h2>
+    <div class="verlauf"><div class="balken" id="balken"><div class="hinweis">Jede gezogene Bilanz wird hier als Säule gespeichert.</div></div></div>
+    <div class="hinweis">Chats in claude.ai kann die Seite nicht sehen. Trag ihre Zahl oben unter „Chats extra“ ein.</div>
+  </section>
+</div>
+
+<script>
+const GH = "github", CCR = "Claude Code Remote";
+const AUTOMATIK = ["Lage aktualisiert", "Statistik 20", "Autopilot:", "Freigabe angefragt", "Merge "];
+const $ = (id) => document.getElementById(id);
+
+function berlinHeute() {
+  return new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Berlin" }).format(new Date());
+}
+// Beginn und Ende des Berliner Kalendertags als UTC-ISO
+function tagesGrenzen(tag) {
+  const mittag = new Date(tag + "T12:00:00Z");
+  const off = new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Berlin", timeZoneName: "shortOffset" })
+    .formatToParts(mittag).find((p) => p.type === "timeZoneName").value; // "GMT+2"
+  const std = parseInt(off.replace("GMT", "") || "0", 10);
+  const start = new Date(Date.parse(tag + "T00:00:00Z") - std * 3600e3);
+  return { start: start.toISOString().slice(0, 19) + "Z", ende: new Date(start.getTime() + 86400e3 - 1000).toISOString().slice(0, 19) + "Z" };
+}
+function einstufung(p) { return p >= 60 ? ["gruen", "🟢 viel geschafft"] : p >= 25 ? ["gelb", "🟡 okay"] : ["rot", "🔴 wenig"]; }
+function status(text, fehler) { $("status").textContent = text; $("status").className = "status" + (fehler ? " fehler" : ""); }
+
+function fehlertext(e) {
+  const s = e && e.server ? e.server : "Der Connector";
+  switch (e && e.code) {
+    case "server_not_connected": return `${s} ist nicht verbunden. Füge ihn in claude.ai unter Einstellungen → Connectors hinzu.`;
+    case "needs_reauth": return `${s} muss neu verbunden werden (claude.ai → Einstellungen → Connectors).`;
+    case "not_in_manifest": case "consent_required": return `Du hast ${s} für diese Seite nicht freigegeben. Tippe erneut auf „Bilanz ziehen“ und erlaube den Zugriff.`;
+    case "selection_required": return `Wähle in claude.ai aus, welcher ${s}-Connector gilt, und versuche es dann erneut.`;
+    case "server_unavailable": return `${s} antwortet gerade nicht. Versuche es in einer Minute noch einmal.`;
+    case "tool_error": return `${s} meldet einen Fehler: ${e.message}`;
+    default: return `${s}: ${(e && e.message) || "unbekannter Fehler"}`;
+  }
+}
+
+// höchstens n Aufrufe gleichzeitig
+async function parallel(liste, n, fn) {
+  const aus = []; let i = 0;
+  await Promise.all(Array.from({ length: Math.min(n, liste.length) }, async () => {
+    while (i < liste.length) { const k = i++; aus[k] = await fn(liste[k]); }
+  }));
+  return aus;
+}
+
+let mcp = null, db = null;
+
+async function bilanz(tag, chats) {
+  const { start, ende } = tagesGrenzen(tag);
+  const call = async (srv, tool, input) => (await mcp.callTool(srv, tool, input)).payload;
+
+  status("Lese deine Repos …");
+  const rp = await call(CCR, "list_repos", { limit: 200 });
+  const repos = (rp.repos || []).filter((r) => r.pushed_at && r.pushed_at >= start);
+
+  const ergebnis = [];
+  let n = 0;
+  for (const r of repos) {
+    status(`Lese Commits in ${r.full_name} (${++n}/${repos.length}) …`);
+    const [owner, repo] = r.full_name.split("/");
+    const branches = await call(GH, "list_branches", { owner, repo, perPage: 100 });
+    const gesehen = new Map();
+    await parallel(Array.isArray(branches) ? branches : [], 4, async (b) => {
+      const cs = await call(GH, "list_commits", { owner, repo, sha: b.name, since: start, until: ende, perPage: 100, fields: ["sha", "commit"] });
+      for (const c of Array.isArray(cs) ? cs : []) {
+        const betreff = ((c.commit && c.commit.message) || "").split("\n")[0];
+        if (!gesehen.has(c.sha) && !AUTOMATIK.some((a) => betreff.startsWith(a))) gesehen.set(c.sha, betreff);
+      }
+    });
+    if (gesehen.size) ergebnis.push({ name: repo, commits: [...gesehen.values()] });
+  }
+
+  status("Lese deine Sitzungen …");
+  const sp = await call(CCR, "list_sessions", { mine: true, limit: 100 });
+  const alle = (sp && (sp.data || (sp.ccr && sp.ccr.data) || sp.sessions)) || [];
+  const von = Date.parse(start), bis = Date.parse(ende) + 1000;
+  // aktiv = Zeitraum der Sitzung (erstellt bis zuletzt aktiv) überschneidet den Tag
+  const sitzungen = alle.filter((s) => Date.parse(s.created_at) < bis && Date.parse(s.updated_at || s.created_at) >= von)
+    .map((s) => s.title || "(ohne Titel)");
+
+  const commits = ergebnis.reduce((a, r) => a + r.commits.length, 0);
+  const punkte = commits * 3 + (sitzungen.length + chats) * 2;
+  return { datum: tag, commits, sitzungen: sitzungen.length, chats, punkte, repos: ergebnis, titel: sitzungen };
+}
+
+function zeige(b) {
+  const [klasse, text] = einstufung(b.punkte);
+  $("punkte").textContent = b.punkte;
+  $("ampel").className = "pill " + klasse; $("ampel").textContent = text;
+  $("k-commits").textContent = b.commits;
+  $("k-sitzungen").textContent = b.sitzungen + b.chats;
+  $("k-repos").textContent = b.repos.length;
+
+  const rep = $("repos"); rep.replaceChildren();
+  if (!b.repos.length) rep.innerHTML = '<div class="leerzeile">An diesem Tag gab es keine eigenen Commits.</div>';
+  b.repos.sort((x, y) => y.commits.length - x.commits.length).forEach((r, i) => {
+    const d = document.createElement("details"); if (i === 0) d.open = true;
+    const s = document.createElement("summary");
+    s.innerHTML = '<span class="name"></span><span class="anz num"></span>';
+    s.children[0].textContent = r.name; s.children[1].textContent = r.commits.length + " Commits";
+    const ul = document.createElement("ul");
+    r.commits.forEach((c) => { const li = document.createElement("li"); li.textContent = c; ul.append(li); });
+    d.append(s, ul); rep.append(d);
+  });
+
+  const sz = $("sitzungen"); sz.replaceChildren();
+  if (!b.titel.length) { sz.innerHTML = '<div class="leerzeile">Keine Claude-Code-Sitzung an diesem Tag.</div>'; return; }
+  const ul = document.createElement("ul");
+  b.titel.forEach((t) => { const li = document.createElement("li"); li.textContent = t; ul.append(li); });
+  const d = document.createElement("details"); d.open = true;
+  const s = document.createElement("summary"); s.innerHTML = '<span class="name">Aktive Sitzungen</span><span class="anz num"></span>';
+  s.children[1].textContent = b.titel.length;
+  d.append(s, ul); sz.append(d);
+}
+
+function zeigeVerlauf(docs) {
+  const box = $("balken"); box.replaceChildren();
+  if (!docs.length) { box.innerHTML = '<div class="hinweis">Jede gezogene Bilanz wird hier als Säule gespeichert.</div>'; return; }
+  const tage = docs.map((d) => d.data()).filter(Boolean).sort((a, b) => a.datum.localeCompare(b.datum)).slice(-14);
+  const max = Math.max(60, ...tage.map((t) => t.punkte));
+  const heute = $("datum").value;
+  tage.forEach((t) => {
+    const el = document.createElement("div");
+    el.className = "b " + einstufung(t.punkte)[0] + (t.datum === heute ? " heute" : "");
+    el.title = `${t.datum}: ${t.punkte} Punkte, ${t.commits} Commits, ${t.sitzungen + (t.chats || 0)} Sitzungen`;
+    el.innerHTML = '<span class="num"></span><div class="saeule"></div><span class="num"></span>';
+    el.children[0].textContent = t.punkte;
+    el.children[1].style.height = Math.max(2, (t.punkte / max) * 100) + "%";
+    el.children[2].textContent = t.datum.slice(8) + "." + t.datum.slice(5, 7) + ".";
+    box.append(el);
+  });
+}
+
+$("datum").value = berlinHeute();
+$("datum").max = berlinHeute();
+
+$("form").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  if (!mcp) { status("Diese Ansicht kann nicht auf deine Connectors zugreifen. Öffne die Seite in claude.ai, angemeldet mit deinem Konto.", true); return; }
+  const btn = $("los"); btn.disabled = true;
+  try {
+    const tag = $("datum").value || berlinHeute();
+    const b = await bilanz(tag, Math.max(0, parseInt($("chats").value, 10) || 0));
+    zeige(b);
+    if (db) {
+      const { titel, ...zeile } = b;
+      zeile.repos = b.repos.map((r) => ({ name: r.name, commits: r.commits.length }));
+      await db.collection("tage").doc(tag).set(zeile).catch(() => {});
+      status(`Bilanz für ${tag} gezogen und im Verlauf gespeichert.`);
+    } else status(`Bilanz für ${tag} gezogen. Der Verlauf ist in dieser Ansicht nicht verfügbar.`);
+  } catch (e) { status(fehlertext(e), true); }
+  finally { btn.disabled = false; }
+});
+
+const cl = window.claude && window.claude.use ? window.claude : { use: async () => null };
+cl.use("mcp").then((m) => { mcp = m; if (!m) status("Diese Ansicht kann nicht auf deine Connectors zugreifen. Öffne die Seite in claude.ai, angemeldet mit deinem Konto.", true); });
+cl.use("db").then((d) => {
+  db = d; if (!d) return;
+  d.collection("tage").orderBy("datum", "desc").limit(30).onSnapshot((snap) => zeigeVerlauf(snap.docs), () => {});
+});
+</script>

@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 16:09 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 17:42 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -76,6 +76,8 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 17:42 ✍️ Tagesbilanz: Befehl /tagesbilanz wertet Commits aller Repos und Claude-Sitzungen des Tages aus (Punkte + Ampel, Verlauf in automatik/tagesbilanz.md) ([`8e2576c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/8e2576c3924a1afb7cc0f4a7b3c9479fd8ed8c32))
+  - `.claude/skills/tagesbilanz/SKILL.md`, `README.md`, `automatik/tagesbilanz.md`, `automatik/tagesbilanz.py`
 - 16:09 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`befde8f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/befde8f42c6c366748595166c8106b10ae22702e))
 - 16:08 🔀 Merge: Reels aus echten Programm-Aufnahmen, Hook-Bibliothek, Reel-Ampel auf reel_hook.mp4 (Status pause bleibt) ([`e048af2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e048af2954e4154ba3bb16ffef04852f9271bf51))
 - 16:07 🔀 Merge: Lage ohne Dauer-Commits ([`e7e5dfa`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e7e5dfabe79cba20f5164613645778ece0cb96ba))
