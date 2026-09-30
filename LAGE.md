@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 12:37 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 12:47 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -9,7 +9,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Neustart der Seite läuft: Start-Storys Mi 30.09. ab 12:30, Neuvorstellung (Karussell) Do 01.10. von Hand in der App geplant.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
-- GitHub-Zeitplan für „Instagram posten“ unzuverlässig (30.09.: Start-Storys erst 12:35 nach manuellem Start). Lösung: externer Takt über cron-job.org – Einrichtung `EINRICHTUNG.md` Schritt 5, **noch offen**.
+- Externer Takt fürs Posten läuft seit 30.09. 12:47 (cron-job.org, alle 15 Min., Test 204 ✓). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
 
 ## 👉 Braucht dich
 
@@ -63,17 +63,19 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
-| Statistik | montags ca. 07:17 | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
+| Statistik | montags ca. 07:17 | – |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | ✅ ok |
+| Musik holen | nur von Hand | – |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 12:47 ✍️ Externer Posten-Takt eingerichtet (cron-job.org, Test 204), Ablaufdaten notiert ([`a7bd9c1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a7bd9c1d81e5481279a5926985d3ad2e1de686a0))
+  - `EINRICHTUNG.md`, `automatik/lage_notizen.md`
 - 12:37 🔀 Merge: externer Takt fürs Posten (EINRICHTUNG Schritt 5) ([`16bec95`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/16bec95ba152bf98778aca0645155f06b09868f9))
 - 12:37 ✍️ Einrichtung: externer 15-Min.-Takt fürs Posten über cron-job.org (GitHub-Zeitplan fällt aus) ([`3c4f377`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3c4f377564522f803a179e379deef606bd14b87d))
   - `EINRICHTUNG.md`, `automatik/lage_notizen.md`
