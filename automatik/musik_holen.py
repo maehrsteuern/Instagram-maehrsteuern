@@ -15,6 +15,18 @@ CC0 = ['"http://creativecommons.org/publicdomain/zero/1.0/"', '"https://creative
 STILE = ["electronic", "lofi", "chillhop", "beats", "instrumental", "hip hop instrumental"]
 
 
+def sekunden(wert):
+    """Länge aus dem Archiv: '123.4', '01:00' oder '1:02:03' → Sekunden."""
+    try:
+        teile = [float(t) for t in str(wert or 0).split(":")]
+    except ValueError:
+        return 0.0
+    ges = 0.0
+    for t in teile:
+        ges = ges * 60 + t
+    return ges
+
+
 def lautstaerke_anfang(datei):
     """Mittlere Lautstärke der ersten 1,5 s in dB (höher = kräftiger Einstieg) und Gesamtlänge in s."""
     aus = subprocess.run([FF, "-hide_banner", "-t", "1.5", "-i", str(datei), "-af", "volumedetect", "-f", "null", "-"],
@@ -42,11 +54,14 @@ print(f"{len(docs)} Sammlungen gefunden")
 
 kandidaten = []
 for d in docs:
-    meta = requests.get(f"https://archive.org/metadata/{d['identifier']}", headers=KOPF, timeout=60).json()
+    try:
+        meta = requests.get(f"https://archive.org/metadata/{d['identifier']}", headers=KOPF, timeout=60).json()
+    except (requests.RequestException, ValueError):
+        continue
     if "publicdomain/zero" not in str(meta.get("metadata", {}).get("licenseurl", "")):
         continue
     for f in meta.get("files", []):
-        if f.get("name", "").lower().endswith(".mp3") and 20 <= float(f.get("length", 0) or 0) <= 300:
+        if f.get("name", "").lower().endswith(".mp3") and 20 <= sekunden(f.get("length")) <= 300:
             kandidaten.append((d["identifier"], f["name"], meta["metadata"].get("licenseurl")))
             break  # ein Titel je Sammlung, damit es abwechslungsreich bleibt
     if len(kandidaten) >= KANDIDATEN:
