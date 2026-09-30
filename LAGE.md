@@ -1,8 +1,8 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 11:55 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 12:35 Uhr._
 
-**Als Nächstes online:** 📱 Story `00-start-1` am **Mi 30.09. 12:30 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
@@ -12,6 +12,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 👉 Braucht dich
 
+- 👉 **Danach Highlight „Start 👋“ von Hand anlegen** (`00-start-3` (Mi 30.09. 12:32))
 - ✋ **Von Hand posten** `00-neuvorstellung` (Do 01.10. 18:30) – In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen
 - 👉 **Danach:** Anpinnen (von Hand) (`00-neuvorstellung` (Do 01.10. 18:30))
 - 🟡 **Freigeben** `01-reel-ampel` (So 04.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #2](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/2))
@@ -24,9 +25,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Mi 30.09. 12:30 | 📱 Story `00-start-1` | 🟢 freigegeben (geht automatisch online) |  |
-| Mi 30.09. 12:31 | 📱 Story `00-start-2` | 🟢 freigegeben (geht automatisch online) |  |
-| Mi 30.09. 12:32 | 📱 Story `00-start-3` | 🟢 freigegeben (geht automatisch online) | Danach Highlight „Start 👋“ von Hand anlegen |
 | Mi 30.09. 19:30 | 📱 Story `00-vorfreude` | 🟢 freigegeben (geht automatisch online) | Ersetzt die Countdown-Story (Sticker geht nicht über die Schnittstelle) · [Freigabe #1](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/1) |
 | Do 01.10. 18:30 | 🖼️ Karussell `00-neuvorstellung` | ✋ manuell (postest du in der App) | In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen |
 | Fr 02.10. 12:15 | 📱 Story `01-story-frage` | 🟢 freigegeben (geht automatisch online) |  |
@@ -50,7 +48,9 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
-Über den Autopiloten noch nichts veröffentlicht.
+- Mi 30.09. 12:32 · 📱 Story `00-start-3` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997545080966344429) (online 2026-09-30 12:35)
+- Mi 30.09. 12:31 · 📱 Story `00-start-2` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997544897742372327) (online 2026-09-30 12:35)
+- Mi 30.09. 12:30 · 📱 Story `00-start-1` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997544707312529712) (online 2026-09-30 12:35)
 
 ## 📈 Zahlen
 
@@ -73,6 +73,18 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 12:35 🤖 Autopilot: 00-start-3 veroeffentlicht ([`aab43f3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/aab43f30e4bf740fabc2c30ae765cafa24f8d674))
+  - Plan: `00-start-3` status: freigegeben → veroeffentlicht; `00-start-3` online: https://www.instagram.com/stories/maehrsteuern/3997545080966344429
+- 12:35 🤖 Autopilot: Dateien fuer 00-start-3 vorbereitet ([`cc6bd34`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cc6bd342f9607e5d0f875ed3a36cc0a940918a3b))
+  - `assets/storys/start/_jpg/start_3.jpg`
+- 12:35 🤖 Autopilot: 00-start-2 veroeffentlicht ([`2cda9a5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2cda9a5ac7a96d23f9f4cf211043e4a30dc300b7))
+  - Plan: `00-start-2` status: freigegeben → veroeffentlicht; `00-start-2` online: https://www.instagram.com/stories/maehrsteuern/3997544897742372327
+- 12:35 🤖 Autopilot: Dateien fuer 00-start-2 vorbereitet ([`18a5f5d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/18a5f5d5d793d2c6bdae93462eceb706bd347425))
+  - `assets/storys/start/_jpg/start_2.jpg`
+- 12:35 🤖 Autopilot: 00-start-1 veroeffentlicht ([`c104979`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c104979ca545a77571a71aebff738a648c936600))
+  - Plan: `00-start-1` status: freigegeben → veroeffentlicht; `00-start-1` online: https://www.instagram.com/stories/maehrsteuern/3997544707312529712
+- 12:34 🤖 Autopilot: Dateien fuer 00-start-1 vorbereitet ([`422d822`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/422d8223d998e79f7ed7d26cece1437a1029bc4f))
+  - `assets/storys/start/_jpg/start_1.jpg`
 - 11:55 ✍️ Beitrag 03: Hook „Werden Mieten voll hinzugerechnet?“ ([`f4d49f4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f4d49f446f5ca2dff902da7c8efcee75258c7ad3))
   - `posts/03_2026-10-13_gewst_hinzurechnung`, `strategie/03_redaktionsplan.md`, `strategie/08_hooks.md`, `vorlagen/system/jobs/p03_gewst.json`
 - 11:54 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/focused-darwin-3hmeil ([`79b6d5c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/79b6d5c558810a5a458075d41f3d0834c2a09617))
