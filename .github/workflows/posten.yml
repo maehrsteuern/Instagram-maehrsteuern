@@ -8,6 +8,9 @@ on:
       jetzt:
         description: "ID eines freigegebenen Eintrags sofort posten (leer = normal)"
         required: false
+      test:
+        description: "ID für einen Probelauf – lädt hoch, veröffentlicht NICHTS (z. B. 02-excel-fehler)"
+        required: false
 concurrency:
   group: instagram-posten
   cancel-in-progress: false
@@ -29,5 +32,6 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: |
-          if [ -n "${{ inputs.jetzt }}" ]; then python automatik/posten.py --jetzt "${{ inputs.jetzt }}"
+          if [ -n "${{ inputs.test }}" ]; then python automatik/posten.py --test "${{ inputs.test }}"
+          elif [ -n "${{ inputs.jetzt }}" ]; then python automatik/posten.py --jetzt "${{ inputs.jetzt }}"
           else python automatik/posten.py; fi

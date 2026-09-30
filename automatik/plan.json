@@ -51,7 +51,7 @@
       "bilder": [
         "story_so_teaser.png"
       ],
-      "status": "entwurf"
+      "status": "freigegeben"
     },
     {
       "id": "02-excel-fehler",
@@ -68,7 +68,7 @@
         "folie_07.png"
       ],
       "text": "bildunterschrift.txt",
-      "status": "entwurf"
+      "status": "freigegeben"
     },
     {
       "id": "02-story-teaser",
@@ -78,7 +78,7 @@
       "bilder": [
         "story_di_teaser.png"
       ],
-      "status": "entwurf"
+      "status": "freigegeben"
     },
     {
       "id": "03-gewst-hinzurechnung",
@@ -95,7 +95,7 @@
         "folie_07.png"
       ],
       "text": "bildunterschrift.txt",
-      "status": "entwurf"
+      "status": "freigegeben"
     },
     {
       "id": "03-story-teaser",
@@ -105,7 +105,7 @@
       "bilder": [
         "story_di_teaser.png"
       ],
-      "status": "entwurf"
+      "status": "freigegeben"
     },
     {
       "id": "03-story-aufloesung",
@@ -115,7 +115,7 @@
       "bilder": [
         "story_fr_aufloesung.png"
       ],
-      "status": "entwurf"
+      "status": "freigegeben"
     },
     {
       "id": "04-reel-mein-weg",

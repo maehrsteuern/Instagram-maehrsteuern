@@ -4,6 +4,7 @@ Aufruf (läuft stündlich per GitHub Actions):
   python automatik/posten.py            – fällige Einträge (nächste 75 Min.) abwarten und posten
   python automatik/posten.py --probe    – nur anzeigen, was passieren würde (kein API-Aufruf, kein Commit)
   python automatik/posten.py --jetzt ID – einen freigegebenen Eintrag sofort posten
+  python automatik/posten.py --test ID  – Probelauf: Instagram lädt alles hoch, es wird aber NICHTS veröffentlicht
 
 Umgebung: IG_TOKEN, IG_USER_ID (GitHub-Secrets), GITHUB_REPOSITORY (setzt GitHub automatisch).
 Instagram holt die Dateien über öffentliche Links ab; Bilder müssen JPEG sein – das Skript wandelt PNG um,
@@ -109,7 +110,7 @@ def pruefen(e):
     return None
 
 
-def posten(ig, e, sha):
+def posten(ig, e, sha, veroeffentlichen=True):
     text = (WURZEL / e["ordner"] / e["text"]).read_text().strip() if e.get("text") else ""
     if e["typ"] == "karussell":
         kinder = [ig.container(image_url=link(sha, p), is_carousel_item="true") for p in e["_jpg"]]
@@ -125,10 +126,29 @@ def posten(ig, e, sha):
         cid = ig.container(**daten)
     else:
         raise ValueError(f"Unbekannter Typ {e['typ']}")
+    if not veroeffentlichen:
+        return cid, None
     return ig.veroeffentlichen(cid)
 
 
+def probelauf(eid):
+    """Container anlegen und von Instagram verarbeiten lassen, aber nicht veröffentlichen.
+    Nicht veröffentlichte Container verfallen nach 24 Stunden von selbst."""
+    plan = json.loads(PLAN.read_text())
+    e = next(x for x in plan["eintraege"] if x["id"] == eid)
+    grund = pruefen(e)
+    if grund and not grund.startswith("Reel ist noch stumm"):
+        sys.exit(f"✗ {eid}: {grund}")
+    bilder = e.get("bilder") or ([e["titelbild"]] if e.get("titelbild") else [])
+    e["_jpg"] = als_jpeg(e["ordner"], bilder)
+    sha = speichern(plan_ohne_intern(plan), f"Autopilot: Dateien fuer Probelauf {eid} vorbereitet")
+    cid, _ = posten(Instagram(), e, sha, veroeffentlichen=False)
+    print(f"✓ Probelauf {eid}: Instagram hat alles angenommen (Container {cid}). Nichts veröffentlicht.")
+
+
 def main():
+    if "--test" in sys.argv:
+        return probelauf(sys.argv[sys.argv.index("--test") + 1])
     probe = "--probe" in sys.argv
     sofort = sys.argv[sys.argv.index("--jetzt") + 1] if "--jetzt" in sys.argv else None
     plan = json.loads(PLAN.read_text())
