@@ -33,6 +33,17 @@
       "hinweis": "Danach Highlight „Start 👋“ von Hand anlegen"
     },
     {
+      "id": "00-vorfreude",
+      "zeit": "2026-09-30 19:30",
+      "typ": "story",
+      "ordner": "posts/extra_2026-09-30_vorfreude",
+      "bilder": [
+        "story_morgen.png"
+      ],
+      "status": "entwurf",
+      "hinweis": "Ersetzt die Countdown-Story (Sticker geht nicht über die Schnittstelle)"
+    },
+    {
       "id": "00-neuvorstellung",
       "zeit": "2026-10-01 18:30",
       "typ": "karussell",
@@ -77,12 +88,11 @@
       "zeit": "2026-10-04 19:30",
       "typ": "reel",
       "ordner": "posts/01_2026-10-04_reel_ampel",
-      "video": "reel.mp4",
+      "video": "reel_musik.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "musik_fehlt": true,
-      "status": "manuell",
-      "hinweis": "Reel mit Instagram-Musik von Hand in der App einplanen"
+      "status": "entwurf",
+      "hinweis": "Automatisch mit gemeinfreier Musik (musik/02); Alternative: reel.mp4 von Hand mit Instagram-Musik"
     },
     {
       "id": "01-story-teaser",
