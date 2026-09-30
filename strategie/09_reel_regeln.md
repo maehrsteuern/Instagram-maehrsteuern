@@ -3,6 +3,19 @@
 Ergänzt die Formel in `08_demo_reel_formel.md`. Gilt für jedes Reel der Content-Fabrik.
 Vorlage zum Kopieren: `vorlagen/system/schnitt/p01_reel_ampel_hook.json` (Renderer `vorlagen/system/montage.py`).
 
+## Feedback Loris zum Ampel-Reel `reel_hook.mp4` (30.09.)
+- Gut gemacht, aber **zu professionell**: Es wirkt wie ein Produktvideo für eine Website oder Werbung, **nicht wie Instagram**.
+- Der Schmerzpunkt im Einstieg funktioniert halbwegs. **Danach wird es generisch**: Screen-Demo mit Lo-Fi-Musik ist ein
+  Standard-Muster, das man überall sieht, und hält nicht.
+- **Was bei Loris vorher besser lief:** persönlicher Aufhänger, **mehr Drama, mehr Trigger, der Schmerzpunkt
+  bleibt länger und wird persönlich erzählt** („mir ist passiert …“) statt neutral gezeigt.
+- Folgerungen für die nächsten Reels:
+  - Ich-Perspektive, eine echte kleine Geschichte (Situation → Moment, wo es knallt → Wendung), nicht „Problem → Tool-Demo“.
+  - Der Schmerz trägt das Reel, das Tool ist nur die Pointe am Ende, nicht der Hauptteil.
+  - Text als Gedanke oder Zitat („Ich dachte, die Rückstellung passt.“), nicht als Werbezeile („Alles rechnet neu.“).
+  - Keine Hintergrundmusik nach Schema. Lieber Originalton, Stille, Atmo oder einen Trend-Sound aus der Instagram-App (von Hand).
+  - Abwägen: professionell/sauber gegen persönlich/roh – auf Instagram gewinnt eher persönlich.
+
 ## Hook (0–3 s)
 - **Kein Dauerfeuer.** Im Hook 2 Einstellungen, nicht 4–5 Achtel-Schnitte. Jede Einstellung darf 1,4–2 s stehen.
 - **Text ab 0,3 s**, groß mit schwarzer Outline, Wort für Wort bzw. Zeile für Zeile. Der Hook muss **ohne Ton** funktionieren.
