@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 11:54 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 11:55 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-start-1` am **Mi 30.09. 12:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -73,6 +73,11 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 11:55 ✍️ Beitrag 03: Hook „Werden Mieten voll hinzugerechnet?“ ([`f4d49f4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f4d49f446f5ca2dff902da7c8efcee75258c7ad3))
+  - `posts/03_2026-10-13_gewst_hinzurechnung`, `strategie/03_redaktionsplan.md`, `strategie/08_hooks.md`, `vorlagen/system/jobs/p03_gewst.json`
+- 11:54 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/focused-darwin-3hmeil ([`79b6d5c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/79b6d5c558810a5a458075d41f3d0834c2a09617))
+- 11:54 ✍️ Hook-Sammlung: strategie/08_hooks.md ([`ab7ce12`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ab7ce12bc907b5474012662116e864122e104ef6))
+  - `README.md`, `strategie/03_redaktionsplan.md`, `strategie/08_hooks.md`
 - 11:54 🔀 Merge: Lage – laufender Überblick LAGE.md + Skill ([`1a0cc59`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1a0cc5962a47730a3061b5144954ba4d7ebf0e92))
 - 10:55 ✍️ Lage: laufender Überblick LAGE.md (Plan, offene Punkte, Automatik, Protokoll jeder Änderung) + Skill ([`ce1dfd3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ce1dfd370f6ad1e09c2cc8145d38945ddc49219e))
   - `.claude/skills/lage/SKILL.md`, `.github/workflows`, `CLAUDE.md`, `README.md`, `automatik/lage.py`, `automatik/lage_notizen.md`
