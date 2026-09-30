@@ -1,0 +1,47 @@
+# Reel-Regeln aus Feedback (Stand 30.09.2026)
+
+Ergänzt die Formel in `08_demo_reel_formel.md`. Gilt für jedes Reel der Content-Fabrik.
+Vorlage zum Kopieren: `vorlagen/system/schnitt/p01_reel_ampel_hook.json` (Renderer `vorlagen/system/montage.py`).
+
+## Hook (0–3 s)
+- **Kein Dauerfeuer.** Im Hook 2 Einstellungen, nicht 4–5 Achtel-Schnitte. Jede Einstellung darf 1,4–2 s stehen.
+- **Text ab 0,3 s**, groß mit schwarzer Outline, Wort für Wort bzw. Zeile für Zeile. Der Hook muss **ohne Ton** funktionieren.
+- **Fehler-Callout** passt für @maehrsteuern: echter Schmerz („#BEZUG! – 2 Tage vor Abgabe. Kennst du?“), dann Auflösung.
+- Hook-Formulierungen: Sammlung unter „Inspiration“ unten. Keine Behauptungen, die das Reel nicht einlöst.
+
+## KI-Clips (Runway)
+- **Nur einen Ausschnitt nutzen.** KI-Gesichter übertreiben die Mimik (Schreien, Hände an den Kopf). Das wirkt unecht, die Leute mögen es nicht.
+- Gut: der **stille, angespannte Moment** (Blick in den roten Bildschirm, Stirnrunzeln), langsame Kamerafahrt.
+- Clip auf `"tempo": 0.8` verlangsamen, keine Glitch- oder Shake-Effekte drauf.
+- Beim Prompt ruhige Mimik verlangen („subtle, restrained expression“) statt „shock“ oder „disbelief“.
+
+## Ton
+- **Die Musik muss zur Emotion passen.** Schmerz-Moment ≠ Deep House.
+- Im Hook **keine Musik, sondern Atmo**: Tippen → Fehlerton (Text poppt darauf auf) → Uhr-Ticken.
+- **Musik setzt erst mit der Lösung ein** (Schnitt aufs Tool). Der Kontrast Stille → Musik trägt die Erleichterung.
+- Musik für die Lösung: ruhig, souverän (Lo-Fi, Minimal), kein Party-Drop. Beat ab Sekunde 0.
+- Atmo liegt unter `musik/atmo/`, Titel unter `musik/` (Quellen in `musik/QUELLEN.md`).
+
+## Schnitt und Effekte
+- Effekte **sparsam und gezielt**: ein sauberer Whip-Pan beim Wechsel Schmerz → Lösung reicht.
+- Flash, Glitch, Zoom-Punch und Shake (Bau-Montage-Stil) fallen auf, sind aber schnell zu viel und im Feed gesättigt.
+  Höchstens einzeln einsetzen, nie alle gleichzeitig.
+- **Bau-Montagen (Gerba-Stil) funktionieren im Handwerk, nicht für Software.** Dort zeigt jeder Schnitt echten Fortschritt,
+  bei Software wirkt dasselbe Tempo nur hektisch. Unser eigenes Konzept: `10_software_reel_konzept.md`.
+- Unruhige Screens hinter Text abdunkeln (`"abdunkeln": 0.35`).
+
+## Text und Safe-Zone (1080×1920)
+- Nichts über **y ≈ 1500** (Bildunterschrift und Buttons von Instagram) und nichts unter **y ≈ 200** (Kopfzeile).
+- Rechts ca. 150 px frei lassen (Like-, Kommentar- und Teilen-Buttons).
+- Text nie übers Gesicht legen. Beim KI-Clip steht der Text auf Brust bzw. Hemd.
+- Farben: Rot = Fehler/Schmerz, Gelb = Frage, Grün = Lösung, Weiß = Rest.
+
+## Inspiration für Hooks (Fehler/Problem, auf Steuern übertragen)
+- „Diesen Fehler macht jeder bei der Steuerrückstellung – hier ist die Lösung.“
+- „Hör auf, das hier zu tun – es hält dich nur auf.“ (Excel-Verknüpfungen)
+- „Kennst du das, wenn … ?“ (#BEZUG! kurz vor Abgabe)
+- „3 Fehler, die du bestimmt machst, wenn du die GewSt-Hinzurechnung rechnest.“
+- „Das hat mir Stunden gespart – und es ist lächerlich einfach.“
+- „Früher habe ich immer diesen Fehler gemacht.“
+
+Quellen: kontentino.com/de/blog/100-hook-ideen-instagram-reels, speekly.de/blog/100-ugc-hook-beispiele

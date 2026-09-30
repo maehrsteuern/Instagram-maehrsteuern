@@ -27,7 +27,7 @@
       "fahrt": 1.3,
       "start": "schnell",
       "sofort": true,
-      "leiste": "../../posts/01_2026-10-04_reel_ampel/bausteine/haken_stunden.png"
+      "leiste": "../../posts/01_2026-10-04_reel_ampel/bausteine/haken_bezug.png"
     },
     {
       "quelle": "app",
@@ -54,33 +54,38 @@
         980,
         820
       ],
-      "dauer": 3.0,
+      "dauer": 2.0,
       "leiste": "../../posts/01_2026-10-04_reel_ampel/bausteine/leiste_2.png"
     },
     {
-      "quelle": "app",
-      "nach": [
-        790,
-        1080,
-        540
-      ],
-      "dauer": 3.2,
-      "leiste": "../../posts/01_2026-10-04_reel_ampel/bausteine/leiste_3.png"
+      "karte": "../../posts/01_2026-10-04_reel_ampel/bausteine/ampel_rot.png",
+      "dauer": 1.0
+    },
+    {
+      "karte": "../../posts/01_2026-10-04_reel_ampel/bausteine/ampel_gelb.png",
+      "dauer": 0.7
+    },
+    {
+      "karte": "../../posts/01_2026-10-04_reel_ampel/bausteine/ampel_gruen.png",
+      "dauer": 1.5
     },
     {
       "quelle": "app",
-      "nach": [
-        560,
-        1780,
-        640
+      "von": [
+        540,
+        960,
+        1080
       ],
-      "dauer": 2.8,
-      "leiste": "../../posts/01_2026-10-04_reel_ampel/bausteine/leiste_4.png"
-    },
-    {
-      "karte": "../../posts/01_2026-10-04_reel_ampel/bausteine/abspann.png",
-      "dauer": 2.8
+      "nach": [
+        540,
+        1180,
+        1080
+      ],
+      "dauer": 2.4,
+      "fahrt": 2.4,
+      "leiste": "../../posts/01_2026-10-04_reel_ampel/bausteine/leiste_cta.png"
     }
   ],
-  "musik": "../../musik/02_variousartists_tastersvinegar3_03_a_n_k.mp3"
+  "musik": "../../musik/05_runway_deephouse.mp3",
+  "musik_start": 13.27
 }

@@ -1,0 +1,67 @@
+{
+ "ausgabe": "../hooks/h01_bezug_ki.mp4",
+ "fps": 30,
+ "ton": [
+  {
+   "datei": "../../musik/atmo/tippen_fehlerton.mp3",
+   "ab": 0,
+   "start": 0.8,
+   "dauer": 0.35,
+   "lautstaerke": 1.2,
+   "aus": 0.08
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 0.3,
+   "dauer": 0.6,
+   "lautstaerke": 0.85
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 0.6,
+   "start": 0.3,
+   "dauer": 1.2,
+   "lautstaerke": 1.1,
+   "aus": 0.2
+  }
+ ],
+ "quellen": {
+  "ki_blick": {
+   "video": "../../posts/01_2026-10-04_reel_ampel/bausteine/hook_ki.mp4"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "ki_blick",
+   "dauer": 1.8,
+   "ab": 0,
+   "tempo": 0.8,
+   "von": [
+    540,
+    920,
+    1000
+   ],
+   "nach": [
+    540,
+    880,
+    850
+   ],
+   "text": [
+    {
+     "wort": "#BEZUG!",
+     "y": 1150,
+     "ab": 0.3,
+     "farbe": "rot",
+     "groesse": 200
+    },
+    {
+     "wort": "2 Tage vor Abgabe.",
+     "y": 1310,
+     "ab": 0.9,
+     "farbe": "weiss",
+     "groesse": 105
+    }
+   ]
+  }
+ ]
+}

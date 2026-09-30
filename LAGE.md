@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 15:26 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 16:07 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -10,6 +10,9 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
 - Externer Takt fürs Posten läuft seit 30.09. 12:47 (cron-job.org, alle 15 Min., Test 204 ✓). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
+- Reel Ampel (04.10.) steht auf **pause** (Freigabe #2: stop). Neue Fassung `reel_hook.mp4` (12,7 s, echte Programm-Aufnahme Gelb → Grün, Lo-Fi) ist eingetragen – zum Posten Freigabe erneut mit „go“ geben.
+- Begleit-Reels fertig: Post 02 Split-Screen `reel_split.mp4`, Post 03 `reel_hinzurechnung.mp4` (noch nicht im Plan). Hook-Bibliothek: `vorlagen/hooks/`.
+- Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
 
 ## 👉 Braucht dich
 
@@ -28,7 +31,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Mi 30.09. 19:30 | 📱 Story `00-vorfreude` | 🟢 freigegeben (geht automatisch online) | Ersetzt die Countdown-Story (Sticker geht nicht über die Schnittstelle) · [Freigabe #1](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/1) |
 | Do 01.10. 18:30 | 🖼️ Karussell `00-neuvorstellung` | ✋ manuell (postest du in der App) | In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen |
 | Fr 02.10. 12:15 | 📱 Story `01-story-frage` | 🟢 freigegeben (geht automatisch online) |  |
-| So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | pause | Automatisch mit gemeinfreier Musik (musik/02); Alternative: reel.mp4 von Hand mit Instagram-Musik · [Freigabe #2](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/2) |
+| So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | pause | Hook #BEZUG! (KI-Blick + Excel, nur Atmo), dann echte Programm-Aufnahme Gelb → Grün mit ruhiger Lo-Fi-Musik (Runway), CTA TOOL per DM, 12,7 s · [Freigabe #2](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/2) |
 | So 04.10. 19:35 | 📱 Story `01-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
 | Mo 05.10. 12:15 | 📱 Story `02-story-umfrage` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) |  |
@@ -73,6 +76,10 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 16:07 🔀 Merge: Lage ohne Dauer-Commits ([`e7e5dfa`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e7e5dfabe79cba20f5164613645778ece0cb96ba))
+- 16:07 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/admiring-ramanujan-2dwc7k ([`12606f7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/12606f7ff905a81186369517ecdc71cf31772ae8))
+- 15:28 📈 Statistik 2026-09-30 ([`a4bab94`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a4bab94532ab349b4f2d5f23572b90447d272c10))
+  - `automatik/statistik`
 - 15:26 ✍️ Lage: Stand ohne eigene Lage-Commits (verhindert Commit alle 15 Minuten) ([`5c69bdd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5c69bddf24fc338217ec0736bfd5f418bb681b7e))
   - `automatik/lage.py`
 - 12:50 ✅ Freigabe #2: stop ([`6f673c3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f673c3f8ae35d0bfbcd75cbed1e447959f9d73b))

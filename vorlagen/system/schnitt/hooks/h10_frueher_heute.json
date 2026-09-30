@@ -1,0 +1,50 @@
+{
+ "ausgabe": "../hooks/h10_frueher_heute.mp4",
+ "fps": 30,
+ "ton": [
+  {
+   "datei": "../../musik/06_runway_lofi_ruhig.mp3",
+   "ab": 1.0,
+   "lautstaerke": 0.6,
+   "ein": 0.1
+  }
+ ],
+ "quellen": {
+  "ampel": {
+   "video": "../../posts/01_2026-10-04_reel_ampel/bausteine/aufnahme_gelb_gruen.mp4"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "ampel",
+   "dauer": 2.6,
+   "ab": 13.6,
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    410,
+    900,
+    820
+   ],
+   "text": [
+    {
+     "wort": "Früher: 2 Tage.",
+     "y": 330,
+     "ab": 0.3,
+     "farbe": "weiss",
+     "groesse": 120
+    },
+    {
+     "wort": "Heute: abschlussreif.",
+     "y": 470,
+     "ab": 1.0,
+     "farbe": "gruen",
+     "groesse": 105
+    }
+   ]
+  }
+ ]
+}
