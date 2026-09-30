@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:49 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 19:45 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -81,17 +81,20 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | täglich ca. 08:45 | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | täglich ca. 08:45 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 19:45 🔀 Merge: Statistik täglich ca. 08:45 + Tagesbericht ([`b427de9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b427de99d250726c8bfffe750bfd24e6b15513cf))
+- 19:45 📈 Statistik täglich ca. 08:45 (Anstoß über Lage-Lauf, Reserve-Zeitplan) + Tagesbericht in LAGE.md ([`6f3a270`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f3a2708cc7ab144af63059f669c7d49bc5f164a))
+  - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/lage.py`, `automatik/statistik.py`
 - 18:49 ✅ Freigabe: eigene Warteschlange, damit der 15-Min.-Posten-Takt wartende Freigabe-Läufe nicht mehr verdrängt ([`4372d22`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4372d220840705e09262ad0782074a1e59e464f5))
   - `.github/workflows`
 - 18:38 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`0d81948`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0d819486c988f0b002726307f089a428466b688b))
