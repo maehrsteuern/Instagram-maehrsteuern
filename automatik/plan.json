@@ -41,7 +41,8 @@
         "story_morgen.png"
       ],
       "status": "entwurf",
-      "hinweis": "Ersetzt die Countdown-Story (Sticker geht nicht über die Schnittstelle)"
+      "hinweis": "Ersetzt die Countdown-Story (Sticker geht nicht über die Schnittstelle)",
+      "issue": 1
     },
     {
       "id": "00-neuvorstellung",
@@ -92,7 +93,8 @@
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "entwurf",
-      "hinweis": "Automatisch mit gemeinfreier Musik (musik/02); Alternative: reel.mp4 von Hand mit Instagram-Musik"
+      "hinweis": "Automatisch mit gemeinfreier Musik (musik/02); Alternative: reel.mp4 von Hand mit Instagram-Musik",
+      "issue": 2
     },
     {
       "id": "01-story-teaser",
