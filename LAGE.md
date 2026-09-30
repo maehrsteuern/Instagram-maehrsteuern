@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 15:26 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 16:07 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -62,17 +62,21 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | montags ca. 07:17 | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | montags ca. 07:17 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 16:07 🔀 Merge: Lage ohne Dauer-Commits ([`e7e5dfa`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e7e5dfabe79cba20f5164613645778ece0cb96ba))
+- 16:07 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/admiring-ramanujan-2dwc7k ([`12606f7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/12606f7ff905a81186369517ecdc71cf31772ae8))
+- 15:28 📈 Statistik 2026-09-30 ([`a4bab94`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a4bab94532ab349b4f2d5f23572b90447d272c10))
+  - `automatik/statistik`
 - 15:26 ✍️ Lage: Stand ohne eigene Lage-Commits (verhindert Commit alle 15 Minuten) ([`5c69bdd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5c69bddf24fc338217ec0736bfd5f418bb681b7e))
   - `automatik/lage.py`
 - 12:50 ✅ Freigabe #2: stop ([`6f673c3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f673c3f8ae35d0bfbcd75cbed1e447959f9d73b))
