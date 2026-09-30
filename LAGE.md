@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 16:07 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 16:09 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -76,17 +76,27 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 16:09 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`befde8f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/befde8f42c6c366748595166c8106b10ae22702e))
+- 16:08 🔀 Merge: Reels aus echten Programm-Aufnahmen, Hook-Bibliothek, Reel-Ampel auf reel_hook.mp4 (Status pause bleibt) ([`e048af2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e048af2954e4154ba3bb16ffef04852f9271bf51))
 - 16:07 🔀 Merge: Lage ohne Dauer-Commits ([`e7e5dfa`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e7e5dfabe79cba20f5164613645778ece0cb96ba))
 - 16:07 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/admiring-ramanujan-2dwc7k ([`12606f7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/12606f7ff905a81186369517ecdc71cf31772ae8))
 - 15:28 📈 Statistik 2026-09-30 ([`a4bab94`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a4bab94532ab349b4f2d5f23572b90447d272c10))
   - `automatik/statistik`
 - 15:26 ✍️ Lage: Stand ohne eigene Lage-Commits (verhindert Commit alle 15 Minuten) ([`5c69bdd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5c69bddf24fc338217ec0736bfd5f418bb681b7e))
   - `automatik/lage.py`
+- 15:26 ✍️ Plan: Ampel-Reel postet die Hook-Version mit echter Programm-Aufnahme (reel_hook.mp4) ([`4242076`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4242076191ff34c4c5839600bf9c6c6abcde79bd))
+  - `automatik/plan.json`
+- 13:28 ✍️ Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8-2,8 s) mit Bauskript ([`cbfc192`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cbfc1920d55787b310d0bd61918e87fcd7e8b446))
+  - `musik/QUELLEN.md`, `vorlagen/hooks/README.md`, `vorlagen/hooks/bausteine/karte_oben_tabelle.mp4`, `vorlagen/hooks/bausteine/karte_unten_tool.mp4`, `vorlagen/hooks/bausteine/ki_buero_abend.mp4`, `vorlagen/hooks/bausteine/ki_taschenrechner.mp4`, `…`
+- 13:01 ✍️ Post 02: untere Hälfte mit echter Delta-Plakette (+87.500) neu aufgenommen ([`defb906`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/defb9069e7cdf692414b87e0945704638c52ffa9))
+  - `posts/02_2026-10-06_excel_fehler`, `strategie/10_software_reel_konzept.md`, `vorlagen/system/aufnahmen/split_excel_tool.mjs`
 - 12:50 ✅ Freigabe #2: stop ([`6f673c3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f673c3f8ae35d0bfbcd75cbed1e447959f9d73b))
   - Plan: `01-reel-ampel` status: entwurf → pause
 - 12:47 🔀 Merge: externer Posten-Takt eingerichtet ([`00f0756`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/00f07568055445b6a012dc4c6e97a299c7798495))
 - 12:47 ✍️ Externer Posten-Takt eingerichtet (cron-job.org, Test 204), Ablaufdaten notiert ([`258f5fd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/258f5fd049079208bf84903c532f607ba19bc945))
   - `EINRICHTUNG.md`, `automatik/lage_notizen.md`
+- 12:38 ✍️ Post 02: Split-Screen-Reel Tabelle gegen Tool (Hebesatz 400 -> 450) ([`ec1c4df`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ec1c4dff3fb411294c9838cec27393e04e110ea1))
+  - `posts/02_2026-10-06_excel_fehler`, `strategie/10_software_reel_konzept.md`, `vorlagen/system/aufnahmen/excel_attrappe.html`, `vorlagen/system/aufnahmen/rekorder.mjs`, `vorlagen/system/aufnahmen/split_excel_tool.mjs`, `vorlagen/system/schnitt/p02_reel_split.json`
 - 12:37 🔀 Merge: externer Takt fürs Posten (EINRICHTUNG Schritt 5) ([`16bec95`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/16bec95ba152bf98778aca0645155f06b09868f9))
 - 12:37 ✍️ Einrichtung: externer 15-Min.-Takt fürs Posten über cron-job.org (GitHub-Zeitplan fällt aus) ([`3c4f377`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3c4f377564522f803a179e379deef606bd14b87d))
   - `EINRICHTUNG.md`, `automatik/lage_notizen.md`
@@ -102,16 +112,38 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - Plan: `00-start-1` status: freigegeben → veroeffentlicht; `00-start-1` online: https://www.instagram.com/stories/maehrsteuern/3997544707312529712
 - 12:34 🤖 Autopilot: Dateien fuer 00-start-1 vorbereitet ([`422d822`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/422d8223d998e79f7ed7d26cece1437a1029bc4f))
   - `assets/storys/start/_jpg/start_1.jpg`
+- 11:55 ✍️ Post 03: Begleit-Reel GewSt-Hinzurechnung aus echter Programm-Aufnahme ([`c457e10`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c457e10cbc35bac47e0f62590f78929d62552c39))
+  - `posts/03_2026-10-13_gewst_hinzurechnung`, `strategie/10_software_reel_konzept.md`, `vorlagen/system/aufnahmen/ampel_gelb_gruen.mjs`, `vorlagen/system/aufnahmen/gewst_hinzurechnung.mjs`, `vorlagen/system/aufnahmen/rekorder.mjs`, `vorlagen/system/schnitt/p03_reel_hinzurechnung.json`
 - 11:55 ✍️ Beitrag 03: Hook „Werden Mieten voll hinzugerechnet?“ ([`f4d49f4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f4d49f446f5ca2dff902da7c8efcee75258c7ad3))
   - `posts/03_2026-10-13_gewst_hinzurechnung`, `strategie/03_redaktionsplan.md`, `strategie/08_hooks.md`, `vorlagen/system/jobs/p03_gewst.json`
 - 11:54 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/focused-darwin-3hmeil ([`79b6d5c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/79b6d5c558810a5a458075d41f3d0834c2a09617))
 - 11:54 ✍️ Hook-Sammlung: strategie/08_hooks.md ([`ab7ce12`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ab7ce12bc907b5474012662116e864122e104ef6))
   - `README.md`, `strategie/03_redaktionsplan.md`, `strategie/08_hooks.md`
 - 11:54 🔀 Merge: Lage – laufender Überblick LAGE.md + Skill ([`1a0cc59`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1a0cc5962a47730a3061b5144954ba4d7ebf0e92))
+- 11:01 ✍️ Ampel-Reel: echte Programm-Aufnahme Gelb -> Grün statt Standbilder ([`e5d6794`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e5d67948e33f5623a7c741bd68b7ac1f0bbbe4d3))
+  - `posts/01_2026-10-04_reel_ampel`, `strategie/10_software_reel_konzept.md`, `vorlagen/system/aufnahmen/ampel_gelb_gruen.mjs`, `vorlagen/system/montage.py`, `vorlagen/system/schnitt/p01_reel_ampel_hook.json`
 - 10:55 ✍️ Lage: laufender Überblick LAGE.md (Plan, offene Punkte, Automatik, Protokoll jeder Änderung) + Skill ([`ce1dfd3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ce1dfd370f6ad1e09c2cc8145d38945ddc49219e))
   - `.claude/skills/lage/SKILL.md`, `.github/workflows`, `CLAUDE.md`, `README.md`, `automatik/lage.py`, `automatik/lage_notizen.md`
 - 10:50 ✍️ Start-Story 1: Hook „Wir müssen ehrlich über Excel reden.“ ([`d5290d5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d5290d549c6f4af12c5828ce371869601b0313a1))
   - `assets/storys/start/start_1.png`, `vorlagen/system/jobs/start_storys.json`
+- 10:37 ✍️ Strategie: eigenes Reel-Konzept für Software (Split-Screen, Satisfying Software, Gesicht + Screen) ([`457cf54`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/457cf541e93c8ed58913cd587bdd30923cacbed4))
+  - `strategie/09_reel_regeln.md`, `strategie/10_software_reel_konzept.md`
+- 10:34 ✍️ Ampel-Reel: ruhiger Hook mit Atmo statt Musik, Lo-Fi erst ab der Lösung ([`11d8e74`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/11d8e748f39d0af80e9343520d879aa9412326c1))
+  - `musik/06_runway_lofi_ruhig.mp3`, `musik/QUELLEN.md`, `musik/atmo/fehlerton.mp3`, `musik/atmo/tippen_fehlerton.mp3`, `musik/atmo/uhr_ticken.mp3`, `posts/01_2026-10-04_reel_ampel`, `…`
+- 10:26 ✍️ Ampel-Reel: schnelle Hook-Montage mit KI-Clip, Effekten und Outline-Texten ([`74d38e3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/74d38e3c39a438a8b7252a1e4dfa177011827a18))
+  - `posts/01_2026-10-04_reel_ampel`, `vorlagen/system/montage.py`, `vorlagen/system/schnitt/p01_reel_ampel_hook.json`, `vorlagen/system/schriften/Outfit-Bold.ttf`, `vorlagen/system/schriften/Outfit-OFL.txt`
+- 10:09 ✍️ Ampel-Reel: Runway-Deep-House-Titel, Drop auf Schnitt bei 1,3 s ([`ce63bcc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ce63bcc13f7291956e4c402a24d492784d23ae22))
+  - `musik/05_runway_deephouse.mp3`, `musik/QUELLEN.md`, `posts/01_2026-10-04_reel_ampel`, `vorlagen/system/schnitt/p01_reel_ampel_musik.json`
+- 10:02 ✍️ reel.py: Option musik_start (Titel versetzt starten); ungenutzten Workflow entfernt ([`8a81bdb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/8a81bdbb98e89d73aba0c5196c9e917f64034dc3))
+  - `.github/workflows`, `vorlagen/system/reel.py`
+- 09:54 ✍️ Workflow „Musik von URL“; Reel Ampel zurück auf Autopilot ([`177435b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/177435bad3a8aab05af82d211ca5c56b1735985b))
+  - Plan: `01-reel-ampel` status: manuell → entwurf
+- 09:50 ✍️ Reel Ampel: manuell mit Instagram-Musik statt eingebauter Musik ([`48dd8a7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/48dd8a7987a9e8dc62150305b141ef42e41cdd75))
+  - Plan: `01-reel-ampel` status: entwurf → manuell
+- 09:49 ✍️ Reel Ampel: Hinweis „läuft lokal“ in Aufruf-Leiste und Bildunterschrift ([`bc4b807`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/bc4b8073c68cbcc79851ff51be5eb62e847d958a))
+  - `posts/01_2026-10-04_reel_ampel`, `vorlagen/system/jobs/p01_reel_ampel.json`
+- 09:47 ✍️ Reel Ampel: neuer Einstieg #BEZUG!, Ampel Rot→Gelb→Grün, 11 s ohne Abspann ([`d96a6c1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d96a6c176dfac57d3660a520479e0567574c2a13))
+  - `README.md`, `automatik/plan.json`, `posts/01_2026-10-04_reel_ampel`, `strategie/03_redaktionsplan.md`, `strategie/08_demo_reel_formel.md`, `vorlagen/system/ampel.html`, `…`
 - 08:56 📈 Statistik 2026-09-30 ([`068d3fb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/068d3fb9dc3d508d04ffcd6340aee0e4432052db))
   - `automatik/statistik`
 - 07:31 ✅ Freigabe #1: go ([`32bac43`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/32bac432abd6a15141b6d74da0e5516a09bab628))
