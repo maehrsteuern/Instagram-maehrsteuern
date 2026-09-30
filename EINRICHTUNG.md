@@ -70,7 +70,7 @@ Bei Fehlern: 401 = Schlüssel falsch/abgelaufen · 403/404 = Berechtigung „Act
 | direkt danach | GitHub öffnet je Beitrag ein **Freigabe-Issue** mit Vorschau (Bilder, Reel-Link, Text) | Autopilot |
 | **Mo + Do 19:00** | Kalender-Erinnerung → im Issue **`go`** oder **`stop`** antworten | du |
 | Di / Do / So 19:30, täglich 12:15 | Beiträge und Storys gehen automatisch online | Autopilot |
-| **Montag früh** | Statistik wird abgeholt | Autopilot |
+| **täglich ca. 08:45** | Statistik wird abgeholt, Tagesbericht in `LAGE.md` | Autopilot |
 | **1. des Monats** | Monatsbericht, Instagram-Schlüssel wird verlängert (braucht `GH_PAT`) | Claude + Autopilot |
 
 **Freigaben:** https://github.com/maehrsteuern/Instagram-maehrsteuern/issues?q=is%3Aopen+label%3Afreigabe

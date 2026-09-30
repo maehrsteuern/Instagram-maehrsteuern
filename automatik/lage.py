@@ -33,7 +33,7 @@ STATUS = {
 WORKFLOWS = [  # Datei, Name, wann
     ("posten.yml", "Posten", "alle 15 Min. (postet freigegebene Einträge)"),
     ("freigabe.yml", "Freigabe", "bei neuen Entwürfen / Antwort im Issue"),
-    ("statistik.yml", "Statistik", "montags ca. 07:17"),
+    ("statistik.yml", "Statistik", "täglich ca. 08:45"),
     ("token.yml", "Schlüssel verlängern", "am 1. des Monats ca. 06:27"),
     ("musik.yml", "Musik holen", "nur von Hand"),
 ]
@@ -114,19 +114,49 @@ def veroeffentlicht(eintraege):
             + (f" (online {e['veroeffentlicht_am']})" if e.get("veroeffentlicht_am") else "") for e in fertig]
 
 
-def zahlen():
-    if not KONTO.exists():
+def insights_dateien():
+    return sorted((WURZEL / "automatik" / "statistik").glob("insights_*.json"))
+
+
+def lokal(zeitstempel):
+    return datetime.strptime(zeitstempel, "%Y-%m-%dT%H:%M:%S%z").astimezone(ZONE)
+
+
+def zahlen(n):
+    """Tagesbericht aus konto.csv und der neuesten insights_*.json (Abruf täglich ca. 08:45)."""
+    zeilen = list(csv.DictReader(KONTO.open())) if KONTO.exists() else []
+    dateien = insights_dateien()
+    if not zeilen and not dateien:
         return ["Noch keine Statistik."]
-    zeilen = list(csv.DictReader(KONTO.open()))
-    if not zeilen:
-        return ["Noch keine Statistik."]
-    letzte = zeilen[-1]
-    text = f"**{letzte['followers_count']} Follower** · {letzte['media_count']} Beiträge (Stand {letzte['datum']})"
-    frueher = [z for z in zeilen if z["datum"] < letzte["datum"]]
-    if frueher:
-        diff = int(letzte["followers_count"]) - int(frueher[-1]["followers_count"])
-        text += f" · {diff:+d} seit {frueher[-1]['datum']}"
-    return [text, "", "Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`"]
+    aus = []
+    if zeilen:
+        letzte = zeilen[-1]
+        text = f"**{letzte['followers_count']} Follower** · {letzte['media_count']} Beiträge im Profil (Abruf {letzte['datum']})"
+        frueher = [z for z in zeilen if z["datum"] < letzte["datum"]]
+        if frueher:
+            diff = int(letzte["followers_count"]) - int(frueher[-1]["followers_count"])
+            text += f" · **{diff:+d}** seit {frueher[-1]['datum']}" + (" ⚠️" if diff < 0 else "")
+        aus.append(text)
+    if dateien:
+        d = json.loads(dateien[-1].read_text())
+        alt = {b["id"]: b for b in json.loads(dateien[-2].read_text()).get("beitraege", [])} if len(dateien) > 1 else {}
+        tage = sorted((d.get("tageswerte_reichweite") or {}).items())[-4:]
+        if tage:
+            aus.append("Reichweite pro Tag: " + " · ".join(f"{t[8:10]}.{t[5:7]}. **{v}**" for t, v in tage))
+        storys = sorted(d.get("storys_aktiv") or [], key=lambda x: x.get("zeit") or "")
+        if storys:
+            aus += ["", "| Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |", "|---|---|---|---|---|---|"]
+            aus += [f"| {tag(lokal(s['zeit']))} | {s.get('views', '–')} | {s.get('reach', '–')} | {s.get('replies', '–')} | "
+                    f"{s.get('profile_visits', '–')} | {s.get('follows', '–')} |" for s in storys if s.get("zeit")]
+        neu = [b for b in d.get("beitraege", []) if b.get("timestamp") and n - lokal(b["timestamp"]) < timedelta(days=14)]
+        if neu:
+            aus += ["", "| Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |", "|---|---|---|---|---|---|---|"]
+            for b in sorted(neu, key=lambda x: x["timestamp"], reverse=True):
+                plus = f" (+{b['views'] - alt[b['id']]['views']})" if isinstance(alt.get(b["id"], {}).get("views"), int) and isinstance(b.get("views"), int) else ""
+                name = (b.get("caption") or "").split("\n")[0][:40].replace("|", "/")
+                aus.append(f"| {tag(lokal(b['timestamp']))} [{name}]({b.get('permalink', '')}) | {b.get('views', '–')}{plus} | "
+                           f"{b.get('reach', '–')} | {b.get('likes', '–')} | {b.get('comments', '–')} | {b.get('saved', '–')} | {b.get('shares', '–')} |")
+    return aus + ["", "Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`"]
 
 
 def automatik():
@@ -255,7 +285,7 @@ def main():
     if spaeter:
         teile += ["## 🗓️ Danach", "", *tabelle(spaeter), ""]
     teile += ["## ✅ Zuletzt veröffentlicht (Autopilot)", "", *veroeffentlicht(eintraege), ""]
-    teile += ["## 📈 Zahlen", "", *zahlen(), ""]
+    teile += ["## 📈 Zahlen (täglich ca. 08:45)", "", *zahlen(n), ""]
     teile += ["## ⚙️ Automatik", "", *automatik(), ""]
     teile += ["## 📜 Protokoll – jede Änderung", "",
               "🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude", "",
