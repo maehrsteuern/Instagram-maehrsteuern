@@ -35,13 +35,15 @@ Repo → **Actions → Instagram-Statistik → Run workflow**. Grüner Haken = V
 ## Wie es danach läuft
 | Wann | Was passiert | Wer |
 |---|---|---|
-| **Mittwoch** | Ich baue den Beitrag für den übernächsten Dienstag, du bekommst eine Push-Nachricht mit Vorschau | Claude |
-| bis Sonntag | Du schaust drüber und schreibst in der Sitzung **„freigeben“** oder was geändert werden soll | du |
-| **Dienstag 18:30** | Beitrag geht automatisch online, 18:35 die Teaser-Story | Autopilot |
-| Montag / Freitag 12:15 | Kalender-Erinnerung für die Sticker-Story, die du von Hand postest | du |
+| **Mo + Do 08:47** | Content-Fabrik baut die nächsten Beiträge und trägt sie als Entwurf ein | Claude |
+| direkt danach | GitHub öffnet je Beitrag ein **Freigabe-Issue** mit Vorschau (Bilder, Reel-Link, Text) | Autopilot |
+| **Mo + Do 19:00** | Kalender-Erinnerung → im Issue **`go`** oder **`stop`** antworten | du |
+| Di / Do / So 18:30, täglich 12:15 | Beiträge und Storys gehen automatisch online | Autopilot |
 | **Montag früh** | Statistik wird abgeholt | Autopilot |
-| **1. des Monats** | Monatsbericht mit Empfehlungen, Instagram-Schlüssel wird verlängert | Claude + Autopilot |
+| **1. des Monats** | Monatsbericht, Instagram-Schlüssel wird verlängert (braucht `GH_PAT`) | Claude + Autopilot |
 
-**Selbst freigeben ohne Claude:** In `automatik/plan.json` beim Eintrag `"status": "entwurf"` auf `"freigegeben"` ändern (am Handy: Datei öffnen → Stift → *Commit changes*).
-**Notbremse:** Status auf `"pause"` setzen. Oder *Actions → Instagram posten → ⋯ → Disable workflow*.
-**Fehler:** Wenn etwas schiefgeht, steht beim Eintrag `"status": "fehler"` mit Grund, und GitHub schickt dir eine Mail.
+**Freigaben:** https://github.com/maehrsteuern/Instagram-maehrsteuern/issues?q=is%3Aopen+label%3Afreigabe
+Nur deine eigenen Kommentare zählen. `go` = einplanen, `stop` = pausieren, alles andere wird ignoriert.
+**Notbremse:** Actions → *Instagram posten* → ⋯ → *Disable workflow*.
+**Fehler:** stehen in `automatik/plan.json` beim Eintrag (`"status": "fehler"`), GitHub schickt dir eine Mail.
+**Probelauf:** Actions → *Instagram posten* → *Run workflow* → Feld „test“ = Eintrags-ID → lädt hoch, veröffentlicht nichts.

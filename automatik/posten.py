@@ -43,6 +43,7 @@ def speichern(plan, nachricht):
     git("add", "-A")
     if git("status", "--porcelain"):
         git("commit", "-m", nachricht)
+        git("pull", "--rebase", "-q")
         git("push")
     return git("rev-parse", "HEAD")
 

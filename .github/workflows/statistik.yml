@@ -22,4 +22,4 @@ jobs:
       - name: Speichern
         run: |
           git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
-          git add automatik/statistik && git diff --cached --quiet || (git commit -m "Statistik $(date +%F)" && git push)
+          git add automatik/statistik && git diff --cached --quiet || (git commit -m "Statistik $(date +%F)" && git pull --rebase -q && git push)

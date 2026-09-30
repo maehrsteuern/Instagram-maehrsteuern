@@ -8,7 +8,8 @@ Szenen laufen nacheinander. Eine Szene ist entweder
                "fahrt": 1.6    – Dauer der Kamerafahrt in Sekunden (Standard 0,9)
                "start": "schnell" – Fahrt beginnt sofort mit Tempo (gegen Wegscrollen im ersten Bild)
 "von" weglassen = weiter ab dem Ende der vorigen Szene. Zwischen Karte und Bild wird kurz überblendet.
-Ton: stumm – Musik in der Instagram-App auswählen.
+Ton: mit "musik": "../../musik/datei.mp3" wird der Titel fest eingebaut (leise ein-, am Ende ausgeblendet),
+sonst stumm – dann Musik in der Instagram-App auswählen.
 """
 import json, subprocess, sys
 from pathlib import Path
@@ -44,9 +45,14 @@ def ausschnitt(im, cx, cy, w):
 
 ff = imageio_ffmpeg.get_ffmpeg_exe()
 ziel = pfad(cfg["ausgabe"]); ziel.parent.mkdir(parents=True, exist_ok=True)
+dauer = sum(sz["dauer"] for sz in cfg["szenen"])
+if cfg.get("musik"):
+    ton = ["-i", str(pfad(cfg["musik"])), "-af",
+           f"volume={cfg.get('lautstaerke', 0.9)},afade=t=in:d=0.3,afade=t=out:st={max(dauer - 1.2, 0):.2f}:d=1.2", "-shortest"]
+else:
+    ton = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest"]
 proc = subprocess.Popen([ff, "-loglevel", "error", "-y",
-    "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
-    "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest",
+    "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", *ton,
     "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
     "-c:a", "aac", "-movflags", "+faststart", str(ziel)], stdin=subprocess.PIPE)
 

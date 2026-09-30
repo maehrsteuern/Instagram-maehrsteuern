@@ -32,6 +32,16 @@
       "hinweis": "Beitrag wird von Hand in die Story geteilt (antippbar)"
     },
     {
+      "id": "01-story-frage",
+      "zeit": "2026-10-02 12:15",
+      "typ": "story",
+      "ordner": "posts/01_2026-10-04_reel_ampel",
+      "bilder": [
+        "story_fr_frage.png"
+      ],
+      "status": "freigegeben"
+    },
+    {
       "id": "01-reel-ampel",
       "zeit": "2026-10-04 18:30",
       "typ": "reel",
@@ -50,6 +60,16 @@
       "ordner": "posts/01_2026-10-04_reel_ampel",
       "bilder": [
         "story_so_teaser.png"
+      ],
+      "status": "freigegeben"
+    },
+    {
+      "id": "02-story-umfrage",
+      "zeit": "2026-10-05 12:15",
+      "typ": "story",
+      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "bilder": [
+        "story_mo_umfrage.png"
       ],
       "status": "freigegeben"
     },
@@ -77,6 +97,16 @@
       "ordner": "posts/02_2026-10-06_excel_fehler",
       "bilder": [
         "story_di_teaser.png"
+      ],
+      "status": "freigegeben"
+    },
+    {
+      "id": "03-story-quiz",
+      "zeit": "2026-10-12 12:15",
+      "typ": "story",
+      "ordner": "posts/03_2026-10-13_gewst_hinzurechnung",
+      "bilder": [
+        "story_mo_quiz.png"
       ],
       "status": "freigegeben"
     },
@@ -116,6 +146,16 @@
         "story_fr_aufloesung.png"
       ],
       "status": "freigegeben"
+    },
+    {
+      "id": "04-story-frage",
+      "zeit": "2026-10-19 12:15",
+      "typ": "story",
+      "ordner": "posts/04_2026-10-20_reel_mein_weg",
+      "bilder": [
+        "story_mo_frage.png"
+      ],
+      "status": "entwurf"
     },
     {
       "id": "04-reel-mein-weg",

@@ -1,12 +1,18 @@
-# 3 · Redaktionsplan – 1 Beitrag pro Woche
+# 3 · Redaktionsplan – 3 Beiträge pro Woche
 
-## Wochenrhythmus
-| Tag | Was | Aufwand |
+## Wochenrhythmus (ab Oktober 2026)
+| Tag | Was | Wer |
 |---|---|---|
-| **Montag** | Story mit Frage- oder Umfrage-Sticker zum Thema der Woche | 5 Min. |
-| **Dienstag, 18:30** | **Beitrag der Woche** + Story-Teaser „Neuer Beitrag“ | Hauptarbeit |
-| Dienstag bis Donnerstag | Kommentare und DMs beantworten (innerhalb von 24 h) | 10 Min./Tag |
-| **Freitag** | Story: Antworten der Frage vom Montag auflösen oder Blick hinter die Kulissen | 5 Min. |
+| **Montag 08:47** | Content-Fabrik baut die nächsten Beiträge → Freigabe-Issue mit Vorschau | Claude |
+| **Montag 19:00** | Kurzer Check: `go` oder `stop` im Freigabe-Issue (Kalender erinnert) | du, 2 Min. |
+| **Dienstag 18:30** | Karussell (Praxis oder Wissen) + Teaser-Story 18:35 | Autopilot |
+| **Donnerstag 08:47** | Content-Fabrik, zweite Runde | Claude |
+| **Donnerstag 18:30** | Karussell + Teaser-Story; abends Check der neuen Freigaben | Autopilot / du |
+| **Sonntag 18:30** | Reel (Demo aus Screenshots, Musik fest eingebaut) + Teaser | Autopilot |
+| **täglich 12:15** | eine Story: Frage „Antworte auf diese Story“, Auflösung oder Tipp | Autopilot |
+| laufend | Kommentare und DMs beantworten | du |
+
+Säulen rotieren über die drei Slots: Demo (So), Praxis und Wissen (Di/Do), „Hinter dem Code“ alle 2–3 Wochen statt einer Demo.
 
 Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründung in `05_veroeffentlichung.md`. Nach 4 Wochen die Uhrzeit anhand der Statistik prüfen.
 

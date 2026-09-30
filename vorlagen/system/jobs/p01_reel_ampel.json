@@ -62,9 +62,10 @@
     {
       "vorlage": "story",
       "datei": "../story_fr_frage.png",
-      "typ": "frage",
+      "typ": "antwort",
       "kicker": "Kurze Frage",
-      "titel": "Wie lange dauert bei euch die *Steuerrückstellung*?"
+      "titel": "Wie lange dauert bei euch die *Steuerrückstellung*?",
+      "antwort": "↩ Antworte direkt auf diese Story:\nStunden? Tage? Wochen?"
     },
     {
       "vorlage": "story",

@@ -12,7 +12,7 @@ on:
         description: "ID für einen Probelauf – lädt hoch, veröffentlicht NICHTS (z. B. 02-excel-fehler)"
         required: false
 concurrency:
-  group: instagram-posten
+  group: instagram-plan
   cancel-in-progress: false
 permissions:
   contents: write
