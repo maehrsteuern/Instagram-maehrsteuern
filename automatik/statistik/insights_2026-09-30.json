@@ -7,33 +7,33 @@
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
   "followers_count": 352,
   "follows_count": 253,
-  "media_count": 9
+  "media_count": 1
  },
  "konto_verlauf": [
   {
    "von": "2026-08-31",
    "bis": "2026-09-30",
    "reach": {
-    "gesamt": 159,
+    "gesamt": 167,
     "aufgeteilt": {
-     "FOLLOWER": 81,
-     "NON_FOLLOWER": 80
+     "FOLLOWER": 86,
+     "NON_FOLLOWER": 83
     }
    },
    "views": {
-    "gesamt": 617,
+    "gesamt": 668,
     "aufgeteilt": {
-     "FOLLOWER": 356,
+     "FOLLOWER": 400,
      "UNKNOWN": 3,
-     "NON_FOLLOWER": 258
+     "NON_FOLLOWER": 265
     }
    },
    "accounts_engaged": 9,
-   "total_interactions": 21,
+   "total_interactions": 20,
    "likes": 12,
    "comments": 0,
    "shares": 4,
-   "saves": 1,
+   "saves": 0,
    "replies": 0,
    "profile_links_taps": {
     "gesamt": 0,
@@ -98,8 +98,8 @@
     "gesamt": 263,
     "aufgeteilt": {
      "FOLLOWER": 17,
-     "UNKNOWN": 15,
-     "NON_FOLLOWER": 231
+     "NON_FOLLOWER": 231,
+     "UNKNOWN": 15
     }
    },
    "accounts_engaged": 1,
@@ -135,8 +135,8 @@
     "gesamt": 173,
     "aufgeteilt": {
      "UNKNOWN": 2,
-     "FOLLOWER": 21,
-     "NON_FOLLOWER": 150
+     "NON_FOLLOWER": 150,
+     "FOLLOWER": 21
     }
    },
    "accounts_engaged": 5,
@@ -172,8 +172,8 @@
     "gesamt": 176,
     "aufgeteilt": {
      "FOLLOWER": 18,
-     "UNKNOWN": 8,
-     "NON_FOLLOWER": 150
+     "NON_FOLLOWER": 150,
+     "UNKNOWN": 8
     }
    },
    "accounts_engaged": 3,
@@ -386,8 +386,8 @@
    "reach": {
     "gesamt": 78,
     "aufgeteilt": {
-     "FOLLOWER": 7,
-     "NON_FOLLOWER": 72
+     "NON_FOLLOWER": 72,
+     "FOLLOWER": 7
     }
    },
    "views": {
@@ -423,8 +423,8 @@
    "reach": {
     "gesamt": 113,
     "aufgeteilt": {
-     "FOLLOWER": 6,
-     "NON_FOLLOWER": 107
+     "NON_FOLLOWER": 107,
+     "FOLLOWER": 6
     }
    },
    "views": {
@@ -468,8 +468,8 @@
     "gesamt": 503,
     "aufgeteilt": {
      "UNKNOWN": 17,
-     "FOLLOWER": 52,
-     "NON_FOLLOWER": 434
+     "NON_FOLLOWER": 434,
+     "FOLLOWER": 52
     }
    },
    "accounts_engaged": 0,
@@ -501,9 +501,9 @@
    "views": {
     "gesamt": 556,
     "aufgeteilt": {
-     "UNKNOWN": 15,
      "FOLLOWER": 37,
-     "NON_FOLLOWER": 504
+     "NON_FOLLOWER": 504,
+     "UNKNOWN": 15
     }
    },
    "accounts_engaged": 0,
@@ -664,7 +664,7 @@
   "2026-09-26": 3,
   "2026-09-27": 1,
   "2026-09-28": 1,
-  "2026-09-29": 116
+  "2026-09-29": 124
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -823,240 +823,16 @@
    "like_count": 6,
    "comments_count": 0,
    "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
-   "views": 195,
-   "reach": 114,
+   "views": 209,
+   "reach": 122,
    "likes": 6,
    "comments": 0,
    "saved": 1,
    "shares": 3,
    "total_interactions": 10,
-   "ig_reels_avg_watch_time": 7246,
-   "ig_reels_video_view_total_time": 1007296,
-   "reels_skip_rate": 70.1,
-   "_fehlt": [
-    "profile_visits",
-    "profile_activity",
-    "follows",
-    "navigation",
-    "replies"
-   ],
-   "kommentare_text": []
-  },
-  {
-   "id": "18090707839728220",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
-   "timestamp": "2025-07-29T07:58:41+0000",
-   "permalink": "https://www.instagram.com/reel/DMrx4W_od-K/",
-   "like_count": 49,
-   "comments_count": 22,
-   "caption": "Nutzt du schon KI für die Prüfungsvorbereitung?\n\n#SteuerberaterExamen #SteuerExamen #KILernen #LernHacks #Prüfungsvorbereitung #Steuerrecht #Steuerfachwissen #KIFürSteuern #LernStrategie #EffizientLernen #Prüfungsstress #SteuerberaterInSpe #Examen2025 #KIVorteil #LorisMähr #maehrsteuern #FutureOfTax #Digitalisierung #LernMotivation #AchtsamkeitImStudium #StudyGram #Steuerfachangestellte #Wirtschaftsprüfer #Jura #BWL #UniLeben #Examenmodus #SteuerCoach #LernTipps",
-   "views": 2083,
-   "reach": 1339,
-   "likes": 49,
-   "comments": 22,
-   "saved": 10,
-   "shares": 1,
-   "total_interactions": 82,
-   "ig_reels_avg_watch_time": 9240,
-   "ig_reels_video_view_total_time": 13601738,
-   "reels_skip_rate": 62.5,
-   "_fehlt": [
-    "profile_visits",
-    "profile_activity",
-    "follows",
-    "navigation",
-    "replies"
-   ],
-   "kommentare_text": []
-  },
-  {
-   "id": "17978160224894636",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
-   "timestamp": "2025-07-15T09:47:31+0000",
-   "permalink": "https://www.instagram.com/reel/DMH7fYdoTEj/",
-   "like_count": 53,
-   "comments_count": 9,
-   "caption": "🚨 Noch genau 12 Wochen bis zum Steuerberaterexamen!\n✅ Können wir nicht alle ein wenig Motivation gebrauchen?\n\n#künstlicheintelligenz #ki #digitalisierung #maehrsteuern #steuerberater #innovation #prüfungsvorbereitung #produktivität #steuerrecht #steuerberaterexamen #motivation #motivational",
-   "views": 2498,
-   "reach": 1612,
-   "likes": 53,
-   "comments": 9,
-   "saved": 12,
-   "shares": 4,
-   "total_interactions": 78,
-   "ig_reels_avg_watch_time": 7136,
-   "ig_reels_video_view_total_time": 13245296,
-   "reels_skip_rate": 57.4,
-   "_fehlt": [
-    "profile_visits",
-    "profile_activity",
-    "follows",
-    "navigation",
-    "replies"
-   ],
-   "kommentare_text": []
-  },
-  {
-   "id": "18063647648155987",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
-   "timestamp": "2025-07-11T21:42:51+0000",
-   "permalink": "https://www.instagram.com/reel/DL-6DSRobsw/",
-   "like_count": 35,
-   "comments_count": 10,
-   "caption": "✅ IHK Akkreditierung\n\nDanke an alle Wegbereiter und @thekey.academy für die tolle Ausbildung!\n\n#künstlicheintelligenz #ki #kimanager #auszeichnung #97prozent #auszeichnung #maehrsteuern #digitalisierung #innovation",
-   "views": 1230,
-   "reach": 699,
-   "likes": 35,
-   "comments": 10,
-   "saved": 3,
-   "shares": 0,
-   "total_interactions": 48,
-   "ig_reels_avg_watch_time": 5508,
-   "ig_reels_video_view_total_time": 3943973,
-   "reels_skip_rate": 51,
-   "_fehlt": [
-    "profile_visits",
-    "profile_activity",
-    "follows",
-    "navigation",
-    "replies"
-   ],
-   "kommentare_text": []
-  },
-  {
-   "id": "18093110386616837",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
-   "timestamp": "2025-07-04T10:20:22+0000",
-   "permalink": "https://www.instagram.com/reel/DLrqebxovba/",
-   "like_count": 61,
-   "comments_count": 18,
-   "caption": "POV: Du hast noch 4 Fragen bis du ChatGPT Plus kaufen musst. 😂\n\nHabt ein schönes Wochenende!\n\n#chatgpt #ki #künstlicheintelligenz #maehrsteuern #steuerberater #digitalisierung #prüfungsvorbereitung #innovation #produktivität #steuerrecht #steuerberaterexamen",
-   "views": 2355,
-   "reach": 1610,
-   "likes": 61,
-   "comments": 18,
-   "saved": 8,
-   "shares": 4,
-   "total_interactions": 91,
-   "ig_reels_avg_watch_time": 8278,
-   "ig_reels_video_view_total_time": 14885139,
-   "reels_skip_rate": 51.9,
-   "_fehlt": [
-    "profile_visits",
-    "profile_activity",
-    "follows",
-    "navigation",
-    "replies"
-   ],
-   "kommentare_text": []
-  },
-  {
-   "id": "18073785214941814",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
-   "timestamp": "2025-06-30T04:54:24+0000",
-   "permalink": "https://www.instagram.com/reel/DLgwgZPtztw/",
-   "like_count": 37,
-   "comments_count": 12,
-   "caption": "❗Bitte unbedingt teilen - in Zeiten von Deepfakes ist dieses Wissen unerlässlich. ✅\n\n⚠️Disclaimer: Eine Initiative der Telekom für den Schutz von digitaler Privatsphäre von Kindern im Internet. Originalupload: 04.09.2023 - YouTube.com",
-   "views": 14392,
-   "reach": 1013,
-   "likes": 37,
-   "comments": 12,
-   "saved": 62,
-   "shares": 4,
-   "total_interactions": 115,
-   "ig_reels_avg_watch_time": 16658,
-   "ig_reels_video_view_total_time": 62334980,
-   "reels_skip_rate": 20,
-   "_fehlt": [
-    "profile_visits",
-    "profile_activity",
-    "follows",
-    "navigation",
-    "replies"
-   ],
-   "kommentare_text": []
-  },
-  {
-   "id": "18394663792114396",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
-   "timestamp": "2025-06-16T11:47:10+0000",
-   "permalink": "https://www.instagram.com/reel/DK9dlVPtLPd/",
-   "like_count": 17,
-   "comments_count": 0,
-   "caption": "🔎🤖 KI im Büro: Produktivität oder Datenschutz-Falle? Wir klären auf! \n\nDein Büroalltag wird smarter, aber was passiert mit deinen Daten? \nDieses Reel zeigt dir, wie du KI sicher nutzt. \n\nWir beleuchten: \n➡️ Die Vorteile von KI im Arbeitsalltag. \n➡️ Die Risiken für deine sensiblen Daten. \n➡️ Wie die DSGVO deine Daten schützt. \n➡️ Was der neue EU AI Act für dich bedeutet. \n\nWerde zum KI-Experten! \n\nSpeichere dieses Reel jetzt, um deine Daten zu schützen und rechtlich auf der sicheren Seite zu sein. \n\nWelche KI-Frage beschäftigt dich am meisten? \nTeile es in den Kommentaren! \n\n#KIimBüro #Datenschutz #DSGVO #EUAIAct #SichereKI #Maehrsteuern #BusinessTipps #Digitalisierung #Compliance",
-   "views": 1658,
-   "reach": 807,
-   "likes": 17,
-   "comments": 0,
-   "saved": 6,
-   "shares": 2,
-   "total_interactions": 25,
-   "ig_reels_avg_watch_time": 4666,
-   "ig_reels_video_view_total_time": 5044636,
-   "reels_skip_rate": 77.1,
-   "_fehlt": [
-    "profile_visits",
-    "profile_activity",
-    "follows",
-    "navigation",
-    "replies"
-   ],
-   "kommentare_text": []
-  },
-  {
-   "id": "18175109122334869",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
-   "timestamp": "2025-06-13T07:00:27+0000",
-   "permalink": "https://www.instagram.com/reel/DK1PJj4NgQP/",
-   "like_count": 19,
-   "comments_count": 2,
-   "caption": "Meme Time 😂\n\nCredit to @hodl.vision \n\n#künstlicheintelligenz #ki #steuerberater #maehrsteuern #steuern2025 #Steuern #steuerhinterziehung #memes #memefriday #foryou #foryoupage #fy #fypage",
-   "views": 736,
-   "reach": 136,
-   "likes": 19,
-   "comments": 2,
-   "saved": 5,
-   "shares": 0,
-   "total_interactions": 26,
-   "ig_reels_avg_watch_time": 3877,
-   "ig_reels_video_view_total_time": 1081823,
-   "reels_skip_rate": 38,
-   "_fehlt": [
-    "profile_visits",
-    "profile_activity",
-    "follows",
-    "navigation",
-    "replies"
-   ],
-   "kommentare_text": []
-  },
-  {
-   "id": "18045240608203539",
-   "media_product_type": "REELS",
-   "media_type": "VIDEO",
-   "timestamp": "2025-06-02T10:46:56+0000",
-   "permalink": "https://www.instagram.com/reel/DKZSgQTtcpe/",
-   "like_count": 13,
-   "comments_count": 1,
-   "caption": "🔮 KI und Steuern: Ein Blick in die Zukunft – und was das für uns bedeutet! 🚀\n\nStell dir vor, deine Steuererklärung erledigt sich von selbst, Belege werden in Sekundenschnelle digitalisiert, und ein Chatbot beantwortet all deine Fragen zum Steuerrecht. Klingt nach einem Traum? In diesem Reel zeigen wir dir, wie KI die Steuerwelt revolutionieren könnte! 🤩\n - KI-gestützte Belegerkennung: Schluss mit dem lästigen Sortieren von Papierkram! KI scannt deine Belege und ordnet sie automatisch zu. 🧾\n - Automatisierte Steuererklärung: Die KI analysiert deine Daten und füllt deine Steuerformulare aus – präzise und fehlerfrei. 🤖\n - KI-Chatbots für Steuerfragen: Egal, wann du eine Frage hast, ein intelligenter Chatbot steht dir rund um die Uhr zur Verfügung. 💬\n\nAber halt! Bevor du jetzt in Jubel ausbrichst: Das ist noch Zukunftsmusik! 😉 Die gezeigten Technologien sind Visionen, die in den nächsten Jahren Realität werden könnten. Wir sind noch nicht ganz so weit, aber die Entwicklung ist rasant!\n\nWas bedeutet das für uns? Werden wir durch KI ersetzt? Oder wird KI uns helfen, unsere Arbeit effizienter zu gestalten und unseren Mandanten noch besseren Service zu bieten? 🤔\nDeine Meinung ist gefragt! 👇\n - Was hältst du von diesen KI-Anwendungen im Steuerbereich?\n - Welche Chancen und Risiken siehst du?\n - Wünschst du dir mehr KI-Unterstützung bei deinen Steuern?\n\nLass uns in den Kommentaren diskutieren! 👇\n\n#KI #Steuern #Zukunft #Innovation #SteuerTech #FinTech #Digitalisierung #Automatisierung #Steuerberater #ZukunftDerArbeit #maehrsteuern\n(Disclaimer: Dieses Reel dient der Veranschaulichung zukünftiger Entwicklungen und stellt nicht den aktuellen Stand der Technik dar.)#",
-   "views": 940,
-   "reach": 315,
-   "likes": 13,
-   "comments": 1,
-   "saved": 6,
-   "shares": 2,
-   "total_interactions": 22,
-   "ig_reels_avg_watch_time": 11291,
-   "ig_reels_video_view_total_time": 5307011,
-   "reels_skip_rate": 59.2,
+   "ig_reels_avg_watch_time": 7050,
+   "ig_reels_video_view_total_time": 1078684,
+   "reels_skip_rate": 68.2,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -1071,8 +847,8 @@
   {
    "id": "18095615390648240",
    "zeit": "2026-09-29T17:35:49+0000",
-   "views": 40,
-   "reach": 33,
+   "views": 58,
+   "reach": 46,
    "_fehlt": [
     "likes",
     "comments",
@@ -1083,18 +859,18 @@
    ],
    "shares": 0,
    "total_interactions": 1,
-   "profile_visits": 2,
+   "profile_visits": 3,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 36,
+   "navigation": 50,
    "replies": 0,
    "kommentare_text": []
   },
   {
    "id": "18594309703066459",
    "zeit": "2026-09-29T13:52:04+0000",
-   "views": 64,
-   "reach": 56,
+   "views": 74,
+   "reach": 63,
    "_fehlt": [
     "likes",
     "comments",
@@ -1105,18 +881,18 @@
    ],
    "shares": 0,
    "total_interactions": 0,
-   "profile_visits": 1,
+   "profile_visits": 2,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 60,
+   "navigation": 66,
    "replies": 0,
    "kommentare_text": []
   },
   {
    "id": "18151108885561403",
    "zeit": "2026-09-29T13:49:23+0000",
-   "views": 76,
-   "reach": 62,
+   "views": 84,
+   "reach": 69,
    "_fehlt": [
     "likes",
     "comments",
@@ -1130,15 +906,15 @@
    "profile_visits": 0,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 69,
+   "navigation": 75,
    "replies": 0,
    "kommentare_text": []
   },
   {
    "id": "18096507035535780",
    "zeit": "2026-09-29T13:46:25+0000",
-   "views": 88,
-   "reach": 67,
+   "views": 96,
+   "reach": 72,
    "_fehlt": [
     "likes",
     "comments",
@@ -1152,7 +928,7 @@
    "profile_visits": 2,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 71,
+   "navigation": 76,
    "replies": 0,
    "kommentare_text": []
   }
