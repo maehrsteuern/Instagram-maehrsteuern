@@ -51,7 +51,8 @@ def anhaengen(datei, zeilen, felder):
 
 
 if (ORDNER / "konto.csv").exists() and f"\n{heute}," in (ORDNER / "konto.csv").read_text():
-    raise SystemExit(f"Statistik für {heute} ist schon da.")
+    print(f"Statistik für {heute} ist schon da.")
+    raise SystemExit(0)
 
 konto = get(USER, fields="followers_count,follows_count,media_count")
 anhaengen(ORDNER / "konto.csv", [{"datum": heute, **{k: konto.get(k) for k in ("followers_count", "follows_count", "media_count")}}],
