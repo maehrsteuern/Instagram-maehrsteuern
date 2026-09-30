@@ -70,3 +70,13 @@ Das Ertragsteuer-Programm läuft im Browser. Claude kann es selbst bedienen und 
   (150.000 / 100.000 / 400.000 / 80.000 → 390.000 ./. 200.000 → ein Viertel = 47.500 €).
 - **Ehrlichkeit:** Die Ampel des Programms wird bei fehlenden Pflichtangaben **gelb**, rot nur bei echten Fehlern
   (z. B. falscher SAP-Ledger). Wir zeigen nur Zustände, die das Programm wirklich so anzeigt. Rot liefert der Excel-Hook.
+
+### Post 02: Split-Screen (umgesetzt)
+- `posts/02_…/reel_split.mp4` (14 s, Schnitt `schnitt/p02_reel_split.json`), Aufnahme `aufnahmen/split_excel_tool.mjs`.
+- Oben eine **nachgebaute, generische Tabelle** (`aufnahmen/excel_attrappe.html`, kein echtes Programm, kein Logo),
+  unten das echte Ertragsteuer-Programm. Gleiche Aufgabe: Hebesatz 400 → 450. Beide Hälften 1080×640, damit alles
+  zwischen y 210 und 1500 liegt (Safe-Zone). Stoppuhren laufen in Echtzeit: unten „✓ 1,7 s · fertig“, oben läuft sie weiter.
+- Ton: Tippen, Fehlerton bei #BEZUG!, Uhr-Ticken für die Tabelle, Lo-Fi setzt ein, sobald unten „fertig“ steht.
+- Programmfehler gefunden: Das Programm rechnet bei jedem Tastendruck neu, die Delta-Plaketten der Fußleiste vergleichen
+  dann mit dem Zwischenstand („45“) statt dem Ausgangswert („400“) und zeigen +708.750 statt +87.500.
+  In der Aufnahme ausgeblendet, bis es im Programm behoben ist.

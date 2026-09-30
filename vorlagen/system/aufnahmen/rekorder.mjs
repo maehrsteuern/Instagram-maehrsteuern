@@ -9,17 +9,23 @@ import { execFileSync } from "child_process";
 const require = createRequire(process.env.PW_PFAD || import.meta.url);
 const { chromium } = require("playwright");
 
-/* breite: CSS-Breite des Fensters (Höhe 9:16); 540 = Handy-Ansicht, 600 = breite Tabellen passen noch.
+/* breite: CSS-Breite des Fensters; 540 = Handy-Ansicht, 600 = breite Tabellen passen noch.
+   format: Ausgabegröße, [1080, 1920] ganzes Reel oder [1080, 960] eine Hälfte im Split-Screen.
+   seite: statt des Programms eine andere Seite aufnehmen (z. B. excel_attrappe.html).
    vorbereiten(p): setzt die Ausgangslage, bevor die Aufnahme startet. */
-export async function starte({ app, breite = 540, vorbereiten }) {
-  const hoehe = Math.round(breite * 16 / 9);
+export async function starte({ app, seite, breite = 540, format = [1080, 1920], vorbereiten }) {
+  const [ausB, ausH] = format;
+  const hoehe = Math.round(breite * ausH / ausB);
   const tmp = fs.mkdtempSync("/tmp/aufnahme-");
   const b = await chromium.launch(process.env.CHROMIUM ? { executablePath: process.env.CHROMIUM } : {});
-  const p = await b.newPage({ viewport: { width: breite, height: hoehe }, deviceScaleFactor: 1080 / breite, colorScheme: "dark" });
+  const p = await b.newPage({ viewport: { width: breite, height: hoehe }, deviceScaleFactor: ausB / breite, colorScheme: "dark" });
   await p.addInitScript(() => { localStorage.setItem("ertragsteuern.theme", "dark"); localStorage.setItem("ertragsteuern.lang", "de"); });
-  await p.goto("file://" + path.resolve(app) + "?demo=reel");
-  await p.waitForTimeout(1500);
-  await p.locator("#btn-ein-demo").click().catch(() => {});
+  if (seite) await p.goto("file://" + path.resolve(seite));
+  else {
+    await p.goto("file://" + path.resolve(app) + "?demo=reel");
+    await p.waitForTimeout(1500);
+    await p.locator("#btn-ein-demo").click().catch(() => {});
+  }
   if (vorbereiten) await vorbereiten(p);
   // sichtbarer Mauszeiger mit Klick-Welle (headless zeigt keinen)
   await p.evaluate(([x, y]) => {
@@ -50,7 +56,7 @@ export async function starte({ app, breite = 540, vorbereiten }) {
     bilder.push({ datei, t: f.metadata.timestamp });
     await cdp.send("Page.screencastFrameAck", { sessionId: f.sessionId }).catch(() => {});
   });
-  await cdp.send("Page.startScreencast", { format: "jpeg", quality: 92, maxWidth: 1080, maxHeight: 1920, everyNthFrame: 1 });
+  await cdp.send("Page.startScreencast", { format: "jpeg", quality: 92, maxWidth: ausB, maxHeight: ausH, everyNthFrame: 1 });
 
   const warte = ms => p.waitForTimeout(ms);
   const hin = async (loc, steps = 28) => {  // Mauszeiger ruhig zum Element fahren
@@ -71,9 +77,29 @@ export async function starte({ app, breite = 540, vorbereiten }) {
       + `\nfile '${bilder[bilder.length - 1].datei}'\n`;
     fs.writeFileSync(path.join(tmp, "liste.txt"), liste);
     execFileSync(process.env.FFMPEG || "ffmpeg", ["-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", path.join(tmp, "liste.txt"),
-      "-vf", "fps=30,scale=1080:1920,format=yuv420p", "-c:v", "libx264", "-crf", "16", "-preset", "medium", ziel]);
+      "-vf", `fps=30,scale=${ausB}:${ausH},format=yuv420p`, "-c:v", "libx264", "-crf", "16", "-preset", "medium", ziel]);
     fs.rmSync(tmp, { recursive: true, force: true });
     console.log("✓", ziel, bilder.length, "Bilder");
   }
-  return { p, warte, hin, weich, oben, beende };
+  // Stoppuhr oben rechts im Bild: uhr.start(), uhr.stopp("fertig") – läuft in Echtzeit mit der Aufnahme
+  const uhr = {
+    zeige: () => p.evaluate(() => {
+      const u = document.createElement("div"); u.id = "rec-uhr";
+      Object.assign(u.style, { position: "fixed", right: "14px", top: "12px", zIndex: 2147483645, pointerEvents: "none",
+        font: "700 22px/1 ui-monospace, 'DejaVu Sans Mono', monospace", color: "#fff", background: "rgba(20,20,20,.82)",
+        padding: "8px 12px", borderRadius: "10px", border: "2px solid rgba(255,255,255,.25)" });
+      u.textContent = "⏱ 0,0 s"; document.body.appendChild(u);
+    }),
+    start: () => p.evaluate(() => {
+      const u = document.getElementById("rec-uhr"), t0 = performance.now();
+      window._uhr = setInterval(() => { u.textContent = "⏱ " + ((performance.now() - t0) / 1000).toFixed(1).replace(".", ",") + " s"; }, 50);
+    }),
+    stopp: text => p.evaluate(text => {
+      clearInterval(window._uhr);
+      const u = document.getElementById("rec-uhr");
+      u.textContent = "✓ " + u.textContent.slice(2) + (text ? " · " + text : "");
+      Object.assign(u.style, { background: "#53C3A2", color: "#06201a", borderColor: "#53C3A2" });
+    }, text),
+  };
+  return { p, warte, hin, weich, oben, beende, uhr };
 }
