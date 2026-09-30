@@ -1,5 +1,5 @@
 name: Instagram-Statistik
-# Montags die Zahlen aller Beiträge abholen und in automatik/statistik/ speichern.
+# Montags die Zahlen aller Beiträge abholen und in automatik/statistik/ speichern. Manuell startbar.
 on:
   schedule:
     - cron: "17 5 * * 1"
