@@ -3,13 +3,24 @@
 Quelle: `automatik/statistik/insights_2026-09-30.json`, automatisch über die Instagram-API abgerufen. Das Konto gibt es seit Mai 2025.
 Den Abruf wiederholt der Autopilot jeden Montag (Workflow *Instagram-Statistik*).
 
+## ⚠️ Datenqualität: Zahlen von 2025 sind verzerrt
+- In der Startphase 2025 hat Loris die Beiträge mit **5–6 eigenen Zweitkonten** gepusht: geliked, kommentiert, geteilt, repostet.
+- Das **Deepfake-Reel** (14.392 Aufrufe) wurde gegen **20 € von einer indischen Seite** auf großen Seiten geteilt, also gekaufte Reichweite mit fremdem Publikum.
+
+**Deshalb gilt:**
+- Likes, Kommentare und Geteilt-Werte von 2025 sind **nach oben verzerrt**. Die Reichweite ist teilweise gekauft oder von eigenen Konten gekommen.
+- Das Deepfake-Reel ist **kein Maßstab** und bleibt beim Vergleich außen vor.
+- Einen **ehrlichen Ausgangswert** liefern erst die Beiträge ab 29.09.2026 (ohne Eigen-Push; das muss Loris bestätigen).
+- Die Zielgruppe (Alter, Städte) ist trotzdem brauchbar: 5–6 Zweitkonten machen bei 353 Followern unter 2 % aus. Der Anteil aus dem Ausland (etwa 20 %) stammt vermutlich zum großen Teil aus der gekauften Reichweite.
+- **Ab jetzt keine Eigen-Pushes und keine gekaufte Reichweite mehr.** Instagram erkennt Interaktionen von verbundenen Konten (gleiches Gerät, gleiche IP) und kann die Reichweite drosseln. Außerdem verfälscht es jede Auswertung.
+
 ## Kurzfassung
-1. **Das Konto hat 14 Monate geschlafen.** Im Juni und Juli 2025 erreichte es fast 5.000 Konten im Monat. Nach dem letzten Reel am 29.07.2025 fiel die Reichweite auf 40 bis 200 im Monat.
+1. **Das Konto hat 14 Monate geschlafen.** Im Juni und Juli 2025 erreichte es fast 5.000 Konten im Monat, allerdings teilweise gepusht und gekauft (siehe oben). Nach dem letzten Reel am 29.07.2025 fiel die Reichweite auf 40 bis 200 im Monat.
 2. **Die Zielgruppe sind Berufstätige, keine Studierenden.** 62 % sind 25 bis 44 Jahre alt, nur 6 % 18 bis 24. Das passt gut zum Tool-Angebot für Steuerabteilungen und Kanzleien.
 3. **Die Follower sind abends um 20 Uhr am aktivsten**, nicht um 18:30. Den zweiten Höhepunkt gibt es mittags um 12 Uhr, die 12:15-Storys passen also.
-4. **Fragen im Hook bringen Kommentare.** „Nutzt du schon KI für die Prüfungsvorbereitung?“ holte 22 Kommentare, das ist der Bestwert.
+4. **Fragen im Hook bringen Kommentare.** „Nutzt du schon KI für die Prüfungsvorbereitung?“ holte 22 Kommentare, ein Teil davon kam aber vermutlich von eigenen Konten. Wie stark das Prinzip trägt, prüfen wir mit den neuen Beiträgen.
 5. **Den Bio-Link hat im ganzen Jahr niemand angetippt** (0 Klicks). Der Terminlink ist neu, ab jetzt zählt jeder Klick.
-6. **Die Neuvorstellung vom 29.09. ist ordentlich gestartet**: nach einem Tag 114 erreichte Konten, 3× geteilt, 2× gespeichert. Die Überspringrate ist mit 71 % aber hoch, der Einstieg muss schneller packen.
+6. **Die Neuvorstellung vom 29.09. ist der erste saubere Ausgangswert und ist ordentlich gestartet**: nach einem Tag 114 erreichte Konten, 3× geteilt, 2× gespeichert. Die Überspringrate ist mit 71 % aber hoch, der Einstieg muss schneller packen.
 
 ## 1 · Reichweite im Zeitverlauf (erreichte Konten je 30 Tage)
 | Zeitraum | Reichweite | Interaktionen | Neue Follower / Entfolgt | Was war los |
@@ -32,7 +43,7 @@ Interaktionsrate = Interaktionen ÷ erreichte Konten. Überspringrate = Anteil, 
 
 | Datum | Reel | Aufrufe | Erreicht | Likes | Komm. | Gesp. | Geteilt | Interaktionsrate | Ø Zuschauzeit | Überspringrate |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 30.06.25 | Deepfake-Warnung (Telekom, geteilt) | **14.392** | 1.013 | 37 | 12 | **62** | 4 | 11,4 % | **16,7 s** | **20 %** |
+| 30.06.25 | Deepfake-Warnung (Telekom, geteilt) ⚠️ *gekaufte Reichweite* | **14.392** | 1.013 | 37 | 12 | **62** | 4 | 11,4 % | **16,7 s** | **20 %** |
 | 15.07.25 | 12 Wochen bis zum StB-Examen | 2.498 | **1.612** | 53 | 9 | 12 | 4 | 4,8 % | 7,1 s | 57 % |
 | 04.07.25 | POV: noch 4 Fragen bis ChatGPT Plus | 2.355 | 1.610 | **61** | 18 | 8 | 4 | 5,7 % | 8,3 s | 52 % |
 | 29.07.25 | Nutzt du KI für die Prüfungsvorbereitung? | 2.083 | 1.339 | 49 | **22** | 10 | 1 | 6,1 % | 9,2 s | 63 % |
@@ -43,9 +54,10 @@ Interaktionsrate = Interaktionen ÷ erreichte Konten. Überspringrate = Anteil, 
 | **29.09.26** | **Steuern × Code (Neuvorstellung)** | 194 | 114 | 6 | 0 | 2 | 3 | 9,6 % | 7,2 s | 71 % |
 
 *Die Neuvorstellung ist erst einen Tag alt. Neu gewertet wird sie in der Montags-Statistik.*
+*Alle Werte von 2025 enthalten Interaktionen von 5–6 eigenen Zweitkonten. Bei Beiträgen mit rund 1.000 erreichten Konten machen 5–6 Likes, Kommentare oder Geteilt-Klicks einen großen Teil der Interaktionen aus.*
 
 ### Was funktioniert hat
-- **Nützliches, das man speichern oder weitergeben will.** Das Deepfake-Reel hat mit Abstand am meisten Speicherungen (62) und wurde im Schnitt 14× pro Person angesehen (Aufrufe ÷ Reichweite). Es war aber fremder Inhalt. Die Lehre daraus: Warnungen und Checklisten, die man „für später“ braucht, performen. Genau das sind deine geplanten Karussells (Excel-Fehler, GewSt-Hinzurechnung).
+- **Das Deepfake-Reel zählt nicht:** Es war fremder Inhalt mit gekaufter Reichweite über eine indische Seite. Die hohen Aufrufe und Speicherungen sagen nichts über dein eigentliches Publikum.
 - **Examens- und Lern-Themen** („12 Wochen“, „KI für die Prüfung“) hatten die größte Reichweite unter deinen eigenen Inhalten.
 - **Direkte Frage + Humor** (POV-Reel, Prüfungs-Frage) bringen Kommentare, und Kommentare sind das stärkste Signal an den Algorithmus.
 - **Persönlicher Erfolg** (IHK 97 %) liegt im Mittelfeld der Reichweite, hat aber eine gute Interaktionsrate. Deine Leute feiern dich mit.
@@ -62,7 +74,7 @@ Interaktionsrate = Interaktionen ÷ erreichte Konten. Überspringrate = Anteil, 
 | 1 % | 6 % | **35 %** | **28 %** | 19 % | 7 % | 4 % |
 
 **Geschlecht:** 43 % Frauen, 31 % Männer, 26 % ohne Angabe
-**Länder:** Deutschland 77 %, Österreich 4 %, USA 3 %, Italien 2 %; der Rest verteilt sich auf viele Länder, vermutlich Zufalls- und Botkonten
+**Länder:** Deutschland 77 %, Österreich 4 %, USA 3 %, Italien 2 %; der Rest verteilt sich auf viele Länder. Die etwa 20 % aus dem Ausland stammen vermutlich zum großen Teil aus der gekauften Reichweite beim Deepfake-Reel. Das sind keine Kunden, und sie drücken die Interaktionsrate.
 **Städte (Top):** Berlin 17, München 8, Erfurt 8, Hamburg 8, Köln 8, Essen 6. Ein deutlicher **Thüringen-Schwerpunkt** (Erfurt, Ohrdruf, Arnstadt, Gotha, Suhl u. a., zusammen über 30) spricht für dein persönliches Netzwerk.
 
 **Folgerung für die Strategie:**
@@ -102,6 +114,7 @@ Tiefpunkt 01–05 Uhr: 10–33 online.
 | 5 | Examens-Themen nur für Reichweite (etwa 1 von 4) | Reichweite ja, aber Studierende sind nur 6 % der Follower | Redaktionsplan |
 | 6 | Nach jedem Post 30 Min. online bleiben und Kommentare mit Gegenfrage beantworten | Kommentare sind das stärkste Signal | du |
 | 7 | Folge-Liste ausmisten (Ziel < 150) | wirkt als Fachprofil stärker | du |
+| 8 | **Keine Eigen-Pushes mit Zweitkonten, keine gekaufte Reichweite mehr** | Instagram kann die Reichweite drosseln, und die Auswertung wird verfälscht | du |
 
 ## Was die API (noch) nicht liefert
 - **Kommentartexte:** Die Schnittstelle lieferte trotz Kommentaren leere Listen. Vermutlich fehlt die Berechtigung „Kommentare verwalten“ im Zugriffsschlüssel. Das ist für die Auswertung nicht wichtig.
