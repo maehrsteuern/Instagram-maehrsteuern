@@ -41,7 +41,7 @@ Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründ
 **Nach Woche 4 und 8:** Kennzahlen aus `01_positionierung.md` eintragen, schwächste Säule anpassen, nächste 4 Wochen planen.
 
 ## Ablauf pro Beitrag (Checkliste)
-1. Thema aus der Tabelle nehmen, Haken in einem Satz formulieren
+1. Thema aus der Tabelle nehmen, Haken in einem Satz formulieren (Muster und Regeln: `08_hooks.md`)
 2. Texte in eine Job-Datei schreiben, z. B. `vorlagen/system/jobs/p05_….json` (Vorlage: `p02_excel_fehler.json` kopieren)
 3. Bilder erzeugen: im Ordner `vorlagen/system` → `node render.mjs jobs/p05_….json`
 4. Bei Reels aus Screenshots: Schnittliste wie `schnitt/p01_reel_ampel.json`, dann `python3 reel.py schnitt/….json`

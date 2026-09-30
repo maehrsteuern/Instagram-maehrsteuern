@@ -12,6 +12,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/03_redaktionsplan.md` | Wochenrhythmus (1 Beitrag/Woche) und Plan Okt.–Nov. 2026 |
 | `strategie/04_dm_strecke.md` | Nachrichten für „TOOL“ → Demo + Erstgespräch, Technik |
 | `strategie/05_veroeffentlichung.md` | **Fahrplan mit Uhrzeiten, Anleitung zum Einplanen, Prüfliste** |
+| `strategie/08_hooks.md` | Hook-Regeln, angepasste Auswahl nach 6 Bausteinen, Varianten für die geplanten Beiträge |
 | `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
 | `strategie/dm_tracking.csv` | Liste zum Nachverfolgen der Anfragen |
 | `posts/<Nr>_<Datum>_<Thema>/` | fertige Beiträge: Folien bzw. Reel, Titelbild, Storys, `bildunterschrift.txt` |
