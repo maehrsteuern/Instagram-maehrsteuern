@@ -16,6 +16,7 @@ Szene:
    "abdunkeln": 0.35, – Hintergrund abdunkeln, damit Text auf unruhigen Screens lesbar bleibt
    "text": [{"wort": "#BEZUG!", "ab": "0b", "farbe": "rot", "groesse": 190, "y": 700}]}
 Texte ohne "ab" stehen sofort (ohne Aufpoppen) – so bleibt ein Text über mehrere Schnitte stehen.
+"bis" blendet einen Text wieder aus (für Untertitel, die innerhalb einer Szene wechseln).
 
 Ton: mehrere Spuren, jede an ihrer Stelle im Reel (Atmo im Hook, Musik erst ab der Lösung):
   "ton": [{"datei": "../../musik/x.mp3", "ab": 3.2, "start": 0, "dauer": 2, "lautstaerke": 0.8, "ein": 0.3, "aus": 0.2}]
@@ -124,7 +125,7 @@ def text_ebene(eintraege, t):
     ebene = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     for e in eintraege:
         ab = zeit(e["ab"]) if "ab" in e else -1
-        if t < ab: continue
+        if t < ab or ("bis" in e and t >= zeit(e["bis"])): continue
         zeile = e["wort"]
         g = e.get("groesse", 150)
         breit = ImageDraw.Draw(ebene).textbbox((0, 0), zeile, font=font(g), stroke_width=round(g * 0.075))
