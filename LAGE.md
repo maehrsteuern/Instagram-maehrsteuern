@@ -56,21 +56,36 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Mi 30.09. 12:31 · 📱 Story `00-start-2` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997544897742372327) (online 2026-09-30 12:35)
 - Mi 30.09. 12:30 · 📱 Story `00-start-1` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997544707312529712) (online 2026-09-30 12:35)
 
-## 📈 Zahlen
+## 📈 Zahlen (täglich ca. 08:45)
 
-**353 Follower** · 9 Beiträge (Stand 2026-09-30)
+**353 Follower** · 9 Beiträge im Profil (Abruf 2026-09-30)
+Reichweite pro Tag: 27.09. **1** · 28.09. **1** · 29.09. **126** · 30.09. **46**
 
-Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
+| Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
+|---|---|---|---|---|---|
+| Di 29.09. 15:46 | 115 | 85 | 0 | 2 | 0 |
+| Di 29.09. 15:49 | 102 | 80 | 0 | 0 | 0 |
+| Di 29.09. 15:52 | 89 | 72 | 0 | 2 | 0 |
+| Di 29.09. 19:35 | 77 | 58 | 0 | 3 | 0 |
+| Mi 30.09. 12:35 | 41 | 23 | 0 | 0 | 0 |
+| Mi 30.09. 12:35 | 34 | 21 | 0 | 0 | 0 |
+| Mi 30.09. 12:35 | 30 | 21 | 0 | 0 | 0 |
+
+| Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
+|---|---|---|---|---|---|---|
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 242 | 141 | 6 | 0 | 1 | 3 |
+
+Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 ## ⚙️ Automatik
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
-| Statistik | montags ca. 07:17 | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
+| Statistik | täglich ca. 08:45 | – |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | ✅ ok |
+| Musik holen | nur von Hand | – |
 
 ## 📜 Protokoll – jede Änderung
 

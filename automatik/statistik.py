@@ -1,4 +1,4 @@
-"""Statistik abholen (läuft montags per GitHub Actions) und an automatik/statistik/*.csv anhängen.
+"""Statistik abholen (läuft täglich ca. 08:45 per GitHub Actions) und an automatik/statistik/*.csv anhängen.
 
 beitraege.csv – je veröffentlichtem Beitrag: Aufrufe, Reichweite, Likes, Kommentare, Speicherungen, Geteilt
 konto.csv     – Follower und Anzahl Beiträge
