@@ -11,3 +11,5 @@ description: Tagesbilanz für Loris – was wurde heute in allen Repos geschafft
 4. `automatik/tagesbilanz.md` committen („Tagesbilanz JJJJ-MM-TT“) und pushen.
 
 Chats in claude.ai (außerhalb von Claude Code) sind nicht abrufbar – wenn Loris nennt, wie viele es waren, zu `--sitzungen` dazuzählen.
+
+**Ohne Sitzung:** Die Tagesbilanz läuft auch als Artefakt direkt in claude.ai: https://claude.ai/artifact/XfjZPdFSHr37jTXdRd4Woo (Quelle `automatik/tagesbilanz.html`; Verlauf in der Artefakt-Datenbank, Sammlung `tage`). Nach Änderungen die Datei unter derselben URL neu veröffentlichen.
