@@ -63,18 +63,19 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | montags ca. 07:17 | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | montags ca. 07:17 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
-- 12:47 ✍️ Externer Posten-Takt eingerichtet (cron-job.org, Test 204), Ablaufdaten notiert ([`a7bd9c1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a7bd9c1d81e5481279a5926985d3ad2e1de686a0))
+- 12:47 🔀 Merge: externer Posten-Takt eingerichtet ([`00f0756`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/00f07568055445b6a012dc4c6e97a299c7798495))
+- 12:47 ✍️ Externer Posten-Takt eingerichtet (cron-job.org, Test 204), Ablaufdaten notiert ([`258f5fd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/258f5fd049079208bf84903c532f607ba19bc945))
   - `EINRICHTUNG.md`, `automatik/lage_notizen.md`
 - 12:37 🔀 Merge: externer Takt fürs Posten (EINRICHTUNG Schritt 5) ([`16bec95`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/16bec95ba152bf98778aca0645155f06b09868f9))
 - 12:37 ✍️ Einrichtung: externer 15-Min.-Takt fürs Posten über cron-job.org (GitHub-Zeitplan fällt aus) ([`3c4f377`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3c4f377564522f803a179e379deef606bd14b87d))
