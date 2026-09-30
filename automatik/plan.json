@@ -2,6 +2,37 @@
   "_hinweis": "Status: entwurf → freigegeben → veroeffentlicht. Nur 'freigegeben' geht automatisch online. 'manuell' = postest du selbst in der App. Zeiten in deutscher Ortszeit.",
   "eintraege": [
     {
+      "id": "00-start-1",
+      "zeit": "2026-09-30 12:30",
+      "typ": "story",
+      "ordner": "assets/storys/start",
+      "bilder": [
+        "start_1.png"
+      ],
+      "status": "freigegeben"
+    },
+    {
+      "id": "00-start-2",
+      "zeit": "2026-09-30 12:31",
+      "typ": "story",
+      "ordner": "assets/storys/start",
+      "bilder": [
+        "start_2.png"
+      ],
+      "status": "freigegeben"
+    },
+    {
+      "id": "00-start-3",
+      "zeit": "2026-09-30 12:32",
+      "typ": "story",
+      "ordner": "assets/storys/start",
+      "bilder": [
+        "start_3.png"
+      ],
+      "status": "freigegeben",
+      "hinweis": "Danach Highlight „Start 👋“ von Hand anlegen"
+    },
+    {
       "id": "00-neuvorstellung",
       "zeit": "2026-10-01 18:30",
       "typ": "karussell",
