@@ -9,7 +9,8 @@ Szenen laufen nacheinander. Eine Szene ist entweder
                "start": "schnell" – Fahrt beginnt sofort mit Tempo (gegen Wegscrollen im ersten Bild)
 "von" weglassen = weiter ab dem Ende der vorigen Szene. Zwischen Karte und Bild wird kurz überblendet.
 Ton: mit "musik": "../../musik/datei.mp3" wird der Titel fest eingebaut (leise ein-, am Ende ausgeblendet),
-sonst stumm – dann Musik in der Instagram-App auswählen.
+sonst stumm – dann Musik in der Instagram-App auswählen. "musik_start": 4.2 überspringt die ersten Sekunden des Titels
+(so setzt z. B. der Drop genau beim Schnitt ein).
 """
 import json, subprocess, sys
 from pathlib import Path
@@ -47,8 +48,9 @@ ff = imageio_ffmpeg.get_ffmpeg_exe()
 ziel = pfad(cfg["ausgabe"]); ziel.parent.mkdir(parents=True, exist_ok=True)
 dauer = sum(sz["dauer"] for sz in cfg["szenen"])
 if cfg.get("musik"):
-    ton = ["-i", str(pfad(cfg["musik"])), "-af",
-           f"volume={cfg.get('lautstaerke', 0.9)},afade=t=in:d=0.3,afade=t=out:st={max(dauer - 1.2, 0):.2f}:d=1.2", "-shortest"]
+    start = max(cfg.get("musik_start", 0), 0)
+    ton = ["-ss", f"{start:.2f}", "-i", str(pfad(cfg["musik"])), "-af",
+           f"volume={cfg.get('lautstaerke', 0.9)},afade=t=in:d={0.3 if start == 0 else 0.05},afade=t=out:st={max(dauer - 1.2, 0):.2f}:d=1.2", "-shortest"]
 else:
     ton = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest"]
 proc = subprocess.Popen([ff, "-loglevel", "error", "-y",
