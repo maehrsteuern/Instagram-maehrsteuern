@@ -67,11 +67,12 @@ konto = get(USER, fields="username,name,biography,website,followers_count,follow
 ergebnis = {"abgerufen": heute, "konto": {k: konto.get(k) for k in
             ("username", "name", "biography", "website", "followers_count", "follows_count", "media_count")}}
 
-# Konto-Kennzahlen in 30-Tage-Blöcken rückwärts, bis Instagram nichts mehr liefert (max. 2 Jahre)
+# Konto-Kennzahlen in 30-Tage-Blöcken rückwärts bis zum Kontostart (Mai 2025)
+KONTOSTART = datetime(2025, 5, 1, tzinfo=timezone.utc)
 bloecke = []
 ende = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
-for _ in range(25):
-    start = ende - timedelta(days=30)
+while ende > KONTOSTART:
+    start = max(ende - timedelta(days=30), KONTOSTART)
     block = {"von": start.strftime("%Y-%m-%d"), "bis": ende.strftime("%Y-%m-%d")}
     for metrik in KONTO_METRIKEN:
         params = dict(metric=metrik, period="day", metric_type="total_value",
