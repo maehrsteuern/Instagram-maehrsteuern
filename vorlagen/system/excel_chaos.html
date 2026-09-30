@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css">
+<!-- Reel-Einstieg: überladene Excel-Tabelle (Problem-Bild, 1404×2496 als Quelle für eine Kamerafahrt). Nur Beispielwerte. -->
+<style>
+html,body{width:1404px;height:2496px;background:#fff;color:#1f1f1f;font-family:Calibri,"IBM Plex Sans",sans-serif}
+.titel{height:92px;background:#1d6f42;color:#fff;display:flex;align-items:center;padding:0 36px;font-size:36px;gap:24px}
+.titel b{font-weight:600}.titel .x{margin-left:auto;opacity:.8}
+.band{height:64px;background:#f3f3f3;border-bottom:2px solid #d4d4d4;display:flex;align-items:center;padding:0 36px;font-size:28px;gap:36px;color:#444}
+.fx{height:60px;border-bottom:2px solid #d4d4d4;display:flex;align-items:center;font-size:28px;color:#333}
+.fx .n{width:160px;border-right:2px solid #d4d4d4;padding-left:20px}.fx .f{padding-left:20px;font-family:Consolas,monospace;color:#b00}
+table{border-collapse:collapse;font-size:27px}
+td,th{border:1px solid #d9d9d9;height:54px;padding:0 10px;white-space:nowrap;text-align:right}
+th{background:#f3f3f3;color:#555;font-weight:400;text-align:center}
+td.l{text-align:left}
+.err{color:#c00;font-weight:700;background:#fde2e2}
+.gelb{background:#fff2a8}.rot{background:#f8c9c4}.gruen{background:#d8f0d8}
+.kommentar{position:absolute;background:#fffbd0;border:2px solid #c9b400;padding:14px 18px;font-size:26px;width:330px;box-shadow:4px 4px 0 rgba(0,0,0,.15)}
+.tabs{position:absolute;left:0;right:0;bottom:0;height:70px;background:#f3f3f3;border-top:2px solid #ccc;display:flex;align-items:center;gap:6px;padding-left:20px;font-size:25px}
+.tabs span{padding:10px 18px;background:#e6e6e6;border:1px solid #ccc}.tabs span.on{background:#fff;color:#1d6f42;font-weight:700}
+</style></head><body>
+<div class="titel"><b>Steuerrueckstellung_2025_FINAL_v7_neu(2).xlsx</b><span class="x">– Excel</span></div>
+<div class="band"><span>Datei</span><span>Start</span><span>Einfügen</span><span>Formeln</span><span>Daten</span><span>Überprüfen</span></div>
+<div class="fx"><span class="n">G47</span><span class="f">=SVERWEIS(B47;'Mapping alt'!A:F;6;FALSCH)*0,15825+H47/100*Hebesatz_ALT</span></div>
+<table id="t"></table>
+<div class="kommentar" style="left:780px;top:760px">Warum stimmt das nicht mit der Buchhaltung??? – bitte prüfen!!</div>
+<div class="kommentar" style="left:120px;top:1540px">Hebesatz 2025 noch alt → wer hat das geändert?</div>
+<div class="kommentar" style="left:820px;top:2060px">NICHT LÖSCHEN – Formel kaputt</div>
+<div class="tabs"><span>Übersicht</span><span class="on">Rückst_v3</span><span>Rückst_v4 (alt)</span><span>Mapping alt</span><span>Tabelle17</span><span>Kopie von GewSt</span><span>…</span></div>
+<script>
+let s=7;const r=()=>(s=(s*16807)%2147483647)/2147483647;
+const cols="ABCDEFGHIJK".split("");
+const namen=["Körperschaftsteuer","SolZ","Gewerbesteuer","Hinzurechnung §8","Vorauszahlung Q1","Vorauszahlung Q2","Vorauszahlung Q3","Vorauszahlung Q4","Latente Steuern","Verlustvortrag","Zinsschranke","Korrektur VJ","Rückstellung","Abstimmung HB","Differenz ??","Summe"];
+const fehler=["#BEZUG!","#WERT!","#DIV/0!","#NV","#####"];
+let h="<tr><th></th>"+cols.map(c=>`<th>${c}</th>`).join("")+"</tr>";
+for(let z=1;z<=40;z++){
+  h+=`<tr><th>${z}</th>`;
+  cols.forEach((c,i)=>{
+    if(i===0){h+=`<td class="l">${namen[(z-1)%namen.length]}${z>16?" "+(Math.floor(z/16)+1):""}</td>`;return}
+    const x=r();let cls="",v=(Math.round(r()*9e6)/100).toLocaleString("de-DE",{minimumFractionDigits:2});
+    if(x<.09){v=fehler[Math.floor(r()*fehler.length)];cls="err"}
+    else if(x<.16)cls="gelb";else if(x<.21)cls="rot";else if(x<.24)cls="gruen";
+    h+=`<td class="${cls}">${v}</td>`});
+  h+="</tr>";
+}
+document.getElementById("t").innerHTML=h;
+</script></body></html>

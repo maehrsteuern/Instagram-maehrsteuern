@@ -9,6 +9,25 @@
       "sub": "3 Sekunden statt 3 Stunden."
     },
     {
+      "vorlage": "excel_chaos",
+      "datei": "excel_chaos.png"
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "haken_stunden.png",
+      "typ": "haken_ueber",
+      "transparent": true,
+      "titel": "3 Stunden\n*Excel*."
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "haken_sekunden.png",
+      "typ": "haken_ueber",
+      "transparent": true,
+      "titel": "Oder\n*3 Sekunden*.",
+      "sub": "Meine Ertragsteuer-Ampel."
+    },
+    {
       "vorlage": "einblendung",
       "datei": "haken.png",
       "typ": "haken",
