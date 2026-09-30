@@ -1,0 +1,290 @@
+{
+ "ausgabe": "../../posts/01_2026-10-04_reel_ampel/reel_hook.mp4",
+ "fps": 30,
+ "musik": "../../musik/05_runway_deephouse.mp3",
+ "musik_start": 13.27,
+ "takt": {
+  "bpm": 122,
+  "drop": 1.3
+ },
+ "quellen": {
+  "ki": {
+   "video": "../../posts/01_2026-10-04_reel_ampel/bausteine/hook_ki.mp4"
+  },
+  "excel": {
+   "datei": "../../posts/01_2026-10-04_reel_ampel/bausteine/excel_chaos.png"
+  },
+  "app": {
+   "datei": "../app_9x16.png"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "ki",
+   "dauer": 0.6,
+   "ab": 1.35,
+   "tempo": 1.3,
+   "von": [
+    540,
+    1000,
+    900
+   ],
+   "nach": [
+    540,
+    960,
+    700
+   ],
+   "rein": "glitch",
+   "shake": 10,
+   "text": [
+    {
+     "wort": "#BEZUG!",
+     "ab": 0,
+     "farbe": "rot",
+     "groesse": 210,
+     "y": 1110
+    }
+   ]
+  },
+  {
+   "quelle": "excel",
+   "dauer": "1/2b",
+   "von": [
+    406,
+    514,
+    760
+   ],
+   "nach": [
+    406,
+    514,
+    430
+   ],
+   "rein": "glitch",
+   "shake": 16,
+   "text": [
+    {
+     "wort": "#BEZUG!",
+     "farbe": "rot",
+     "groesse": 210,
+     "y": 1110
+    },
+    {
+     "wort": "2 TAGE",
+     "ab": 0,
+     "groesse": 150,
+     "y": 1280
+    }
+   ]
+  },
+  {
+   "quelle": "excel",
+   "dauer": "1/2b",
+   "von": [
+    980,
+    2100,
+    820
+   ],
+   "nach": [
+    980,
+    2100,
+    560
+   ],
+   "rein": "glitch",
+   "shake": 18,
+   "text": [
+    {
+     "wort": "#BEZUG!",
+     "farbe": "rot",
+     "groesse": 210,
+     "y": 1110
+    },
+    {
+     "wort": "2 TAGE",
+     "groesse": 150,
+     "y": 1280
+    },
+    {
+     "wort": "VOR ABGABE.",
+     "ab": 0,
+     "groesse": 130,
+     "y": 1420
+    }
+   ]
+  },
+  {
+   "quelle": "ki",
+   "dauer": "1/2b",
+   "ab": 3.7,
+   "von": [
+    540,
+    1000,
+    1000
+   ],
+   "nach": [
+    540,
+    980,
+    780
+   ],
+   "glitch": 0.6,
+   "shake": 24,
+   "text": [
+    {
+     "wort": "KENNST DU?",
+     "ab": 0,
+     "farbe": "gelb",
+     "groesse": 180,
+     "y": 1300
+    }
+   ]
+  },
+  {
+   "quelle": "app",
+   "dauer": "4b",
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    470,
+    960,
+    860
+   ],
+   "rein": "flash+whip",
+   "punch": 0.07,
+   "text": [
+    {
+     "wort": "ODER",
+     "ab": 0,
+     "groesse": 150,
+     "y": 640
+    },
+    {
+     "wort": "3 SEKUNDEN.",
+     "ab": "1b",
+     "farbe": "gruen",
+     "groesse": 170,
+     "y": 820
+    }
+   ],
+   "abdunkeln": 0.35
+  },
+  {
+   "quelle": "app",
+   "dauer": "2b",
+   "von": [
+    470,
+    960,
+    860
+   ],
+   "nach": [
+    470,
+    980,
+    760
+   ],
+   "punch": 0.07,
+   "text": [
+    {
+     "wort": "LIVE GERECHNET.",
+     "ab": 0,
+     "farbe": "gruen",
+     "groesse": 130,
+     "y": 760
+    }
+   ],
+   "abdunkeln": 0.35
+  },
+  {
+   "karte": "../../posts/01_2026-10-04_reel_ampel/bausteine/ampel_rot.png",
+   "dauer": "2b",
+   "rein": "flash",
+   "punch": 0.06,
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    960,
+    1000
+   ]
+  },
+  {
+   "karte": "../../posts/01_2026-10-04_reel_ampel/bausteine/ampel_gelb.png",
+   "dauer": "1b",
+   "rein": "glitch",
+   "punch": 0.06,
+   "von": [
+    540,
+    960,
+    1040
+   ],
+   "nach": [
+    540,
+    960,
+    980
+   ]
+  },
+  {
+   "karte": "../../posts/01_2026-10-04_reel_ampel/bausteine/ampel_gruen.png",
+   "dauer": "3b",
+   "rein": "flash",
+   "punch": 0.05,
+   "von": [
+    540,
+    960,
+    1040
+   ],
+   "nach": [
+    540,
+    960,
+    940
+   ]
+  },
+  {
+   "quelle": "app",
+   "dauer": "6b",
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    1180,
+    1080
+   ],
+   "rein": "whip",
+   "punch": 0.03,
+   "text": [
+    {
+     "wort": "SCHREIB",
+     "ab": 0,
+     "groesse": 140,
+     "y": 620
+    },
+    {
+     "wort": "„TOOL“",
+     "ab": "1b",
+     "farbe": "gruen",
+     "groesse": 230,
+     "y": 820
+    },
+    {
+     "wort": "PER DM",
+     "ab": "2b",
+     "groesse": 140,
+     "y": 1020
+    },
+    {
+     "wort": "ich zeig dir die Demo",
+     "ab": "3b",
+     "groesse": 72,
+     "y": 1150
+    }
+   ],
+   "abdunkeln": 0.35
+  }
+ ]
+}
