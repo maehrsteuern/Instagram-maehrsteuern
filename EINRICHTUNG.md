@@ -59,6 +59,8 @@ GitHub führt Zeitpläne (`schedule`) bei kleinen Repos oft verspätet oder gar 
    - Request body: `{"ref":"claude/instagram"}`
 5. Speichern → **Test run**: Antwort **204** = passt. Unter Actions → *Instagram posten* erscheint ein neuer Lauf „workflow_dispatch“.
 
+✅ Eingerichtet am 30.09.2026 (Schlüssel gültig bis 29.09.2027). Die API-Version `2022-11-28` gilt laut GitHub noch bis März 2028 – vorher im Header auf eine neuere Version umstellen.
+
 Bei Fehlern: 401 = Schlüssel falsch/abgelaufen · 403/404 = Berechtigung „Actions: Read and write“ oder Repo-Auswahl fehlt · 422 = Body/Branch falsch.
 
 ## Wie es danach läuft
