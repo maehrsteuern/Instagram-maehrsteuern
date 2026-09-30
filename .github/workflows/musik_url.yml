@@ -1,0 +1,31 @@
+name: Musik von URL
+# Einen Titel (z. B. aus Runway) per Link nach musik/ laden und auf demselben Branch speichern.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Direkter Download-Link zur MP3"
+        required: true
+      datei:
+        description: "Dateiname in musik/, z. B. 05_runway_deephouse.mp3"
+        required: true
+concurrency:
+  group: instagram-plan
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Laden
+        env: { URL: "${{ inputs.url }}", DATEI: "${{ inputs.datei }}" }
+        run: |
+          case "$DATEI" in *[!A-Za-z0-9._-]*|*..*|"") echo "Ungültiger Dateiname"; exit 1;; esac
+          curl -fsSL -o "musik/$DATEI" "$URL"
+          file "musik/$DATEI" | grep -qiE "audio|mpeg" || { echo "Keine Audiodatei"; exit 1; }
+      - name: Speichern
+        run: |
+          git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+          git add musik && git diff --cached --quiet || (git commit -m "Musik: ${{ inputs.datei }}" && git pull --rebase -q origin "$GITHUB_REF_NAME" && git push)
