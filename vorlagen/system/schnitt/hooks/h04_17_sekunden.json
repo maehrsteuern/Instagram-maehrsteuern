@@ -1,0 +1,48 @@
+{
+ "ausgabe": "../hooks/h04_17_sekunden.mp4",
+ "fps": 30,
+ "ton": [
+  {
+   "datei": "../../musik/atmo/tippen_fehlerton.mp3",
+   "ab": 0.4,
+   "start": 0.8,
+   "dauer": 0.6,
+   "lautstaerke": 1.2,
+   "aus": 0.08
+  },
+  {
+   "datei": "../../musik/06_runway_lofi_ruhig.mp3",
+   "ab": 1.83,
+   "lautstaerke": 0.6,
+   "ein": 0.1
+  }
+ ],
+ "quellen": {
+  "tool": {
+   "video": "../hooks/bausteine/karte_unten_tool.mp4"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "tool",
+   "dauer": 2.6,
+   "ab": 1.2,
+   "text": [
+    {
+     "wort": "Hebesatz ändern:",
+     "y": 400,
+     "ab": 0.3,
+     "farbe": "weiss",
+     "groesse": 115
+    },
+    {
+     "wort": "1,7 Sekunden.",
+     "y": 1400,
+     "ab": 1.9,
+     "farbe": "gruen",
+     "groesse": 160
+    }
+   ]
+  }
+ ]
+}

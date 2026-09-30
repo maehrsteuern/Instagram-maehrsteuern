@@ -13,3 +13,6 @@ Titel 01–04 aus dem Internet Archive, Lizenz CC0 (gemeinfrei) – frei nutzbar
 - `atmo/uhr_ticken.mp3` ← Runway-Soundeffekt (Task 6fee4b44-0a82-4d52-8909-a50bfa767fcb), Ticken 1× pro Sekunde, erster Tick bei 0,45 s
 
 `05_…noises` entfernt (fast nur Rauschen). Reihenfolge nach Eignung: 02 (klarster Rhythmus), 04, 01, 03.
+
+## Bildmaterial (KI)
+- `vorlagen/hooks/bausteine/ki_*.mp4` – drei Runway-Videoclips (eigene KI-Generierung, 30.09.2026) für die Hook-Bibliothek.
