@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 15:01 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 12:50 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -62,11 +62,11 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
-| Statistik | montags ca. 07:17 | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
+| Statistik | montags ca. 07:17 | – |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | ✅ ok |
+| Musik holen | nur von Hand | – |
 
 ## 📜 Protokoll – jede Änderung
 
