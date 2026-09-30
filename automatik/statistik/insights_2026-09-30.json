@@ -5,7 +5,7 @@
   "name": "Loris | Steuer-Tools x Code",
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
-  "followers_count": 352,
+  "followers_count": 353,
   "follows_count": 253,
   "media_count": 1
  },
@@ -14,18 +14,18 @@
    "von": "2026-08-31",
    "bis": "2026-09-30",
    "reach": {
-    "gesamt": 167,
+    "gesamt": 169,
     "aufgeteilt": {
-     "FOLLOWER": 86,
-     "NON_FOLLOWER": 83
+     "FOLLOWER": 87,
+     "NON_FOLLOWER": 84
     }
    },
    "views": {
-    "gesamt": 668,
+    "gesamt": 676,
     "aufgeteilt": {
-     "FOLLOWER": 400,
      "UNKNOWN": 3,
-     "NON_FOLLOWER": 265
+     "FOLLOWER": 407,
+     "NON_FOLLOWER": 266
     }
    },
    "accounts_engaged": 9,
@@ -135,8 +135,8 @@
     "gesamt": 173,
     "aufgeteilt": {
      "UNKNOWN": 2,
-     "NON_FOLLOWER": 150,
-     "FOLLOWER": 21
+     "FOLLOWER": 21,
+     "NON_FOLLOWER": 150
     }
    },
    "accounts_engaged": 5,
@@ -171,9 +171,9 @@
    "views": {
     "gesamt": 176,
     "aufgeteilt": {
+     "UNKNOWN": 8,
      "FOLLOWER": 18,
-     "NON_FOLLOWER": 150,
-     "UNKNOWN": 8
+     "NON_FOLLOWER": 150
     }
    },
    "accounts_engaged": 3,
@@ -356,8 +356,8 @@
    "views": {
     "gesamt": 393,
     "aufgeteilt": {
-     "FOLLOWER": 33,
      "UNKNOWN": 7,
+     "FOLLOWER": 33,
      "NON_FOLLOWER": 353
     }
    },
@@ -386,15 +386,15 @@
    "reach": {
     "gesamt": 78,
     "aufgeteilt": {
-     "NON_FOLLOWER": 72,
-     "FOLLOWER": 7
+     "FOLLOWER": 7,
+     "NON_FOLLOWER": 72
     }
    },
    "views": {
     "gesamt": 187,
     "aufgeteilt": {
-     "UNKNOWN": 5,
      "FOLLOWER": 19,
+     "UNKNOWN": 5,
      "NON_FOLLOWER": 163
     }
    },
@@ -431,8 +431,8 @@
     "gesamt": 282,
     "aufgeteilt": {
      "UNKNOWN": 12,
-     "FOLLOWER": 39,
-     "NON_FOLLOWER": 231
+     "NON_FOLLOWER": 231,
+     "FOLLOWER": 39
     }
    },
    "accounts_engaged": 0,
@@ -468,8 +468,8 @@
     "gesamt": 503,
     "aufgeteilt": {
      "UNKNOWN": 17,
-     "NON_FOLLOWER": 434,
-     "FOLLOWER": 52
+     "FOLLOWER": 52,
+     "NON_FOLLOWER": 434
     }
    },
    "accounts_engaged": 0,
@@ -501,9 +501,9 @@
    "views": {
     "gesamt": 556,
     "aufgeteilt": {
-     "FOLLOWER": 37,
+     "UNKNOWN": 15,
      "NON_FOLLOWER": 504,
-     "UNKNOWN": 15
+     "FOLLOWER": 37
     }
    },
    "accounts_engaged": 0,
@@ -636,7 +636,6 @@
   }
  ],
  "tageswerte_reichweite": {
-  "2026-09-01": 1,
   "2026-09-02": 1,
   "2026-09-03": 1,
   "2026-09-04": 1,
@@ -664,7 +663,8 @@
   "2026-09-26": 3,
   "2026-09-27": 1,
   "2026-09-28": 1,
-  "2026-09-29": 124
+  "2026-09-29": 126,
+  "2026-09-30": 46
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -785,33 +785,8 @@
   }
  },
  "online_follower": {
-  "2026-09-28": {
-   "0": 84,
-   "1": 84,
-   "2": 98,
-   "3": 107,
-   "4": 104,
-   "5": 99,
-   "6": 94,
-   "7": 106,
-   "8": 100,
-   "9": 105,
-   "10": 115,
-   "11": 123,
-   "12": 115,
-   "13": 95,
-   "14": 59,
-   "15": 39,
-   "16": 19,
-   "17": 10,
-   "18": 13,
-   "19": 20,
-   "20": 33,
-   "21": 55,
-   "22": 93,
-   "23": 88
-  },
-  "2026-09-29": {}
+  "2026-09-29": {},
+  "2026-09-30": {}
  },
  "beitraege": [
   {
@@ -823,16 +798,16 @@
    "like_count": 6,
    "comments_count": 0,
    "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
-   "views": 209,
-   "reach": 122,
+   "views": 242,
+   "reach": 141,
    "likes": 6,
    "comments": 0,
    "saved": 1,
    "shares": 3,
    "total_interactions": 10,
-   "ig_reels_avg_watch_time": 7050,
-   "ig_reels_video_view_total_time": 1078684,
-   "reels_skip_rate": 68.2,
+   "ig_reels_avg_watch_time": 6560,
+   "ig_reels_video_view_total_time": 1200514,
+   "reels_skip_rate": 67.2,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -845,10 +820,10 @@
  ],
  "storys_aktiv": [
   {
-   "id": "18095615390648240",
-   "zeit": "2026-09-29T17:35:49+0000",
-   "views": 58,
-   "reach": 46,
+   "id": "18236605036318357",
+   "zeit": "2026-09-30T10:35:44+0000",
+   "views": 30,
+   "reach": 21,
    "_fehlt": [
     "likes",
     "comments",
@@ -859,61 +834,83 @@
    ],
    "shares": 0,
    "total_interactions": 1,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 27,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18190470130404373",
+   "zeit": "2026-09-30T10:35:22+0000",
+   "views": 34,
+   "reach": 21,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 1,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 32,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18431442943145862",
+   "zeit": "2026-09-30T10:35:00+0000",
+   "views": 41,
+   "reach": 23,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 1,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 33,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18095615390648240",
+   "zeit": "2026-09-29T17:35:49+0000",
+   "views": 77,
+   "reach": 58,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 2,
    "profile_visits": 3,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 50,
+   "navigation": 71,
    "replies": 0,
    "kommentare_text": []
   },
   {
    "id": "18594309703066459",
    "zeit": "2026-09-29T13:52:04+0000",
-   "views": 74,
-   "reach": 63,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 0,
-   "profile_visits": 2,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 66,
-   "replies": 0,
-   "kommentare_text": []
-  },
-  {
-   "id": "18151108885561403",
-   "zeit": "2026-09-29T13:49:23+0000",
-   "views": 84,
-   "reach": 69,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 0,
-   "profile_visits": 0,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 75,
-   "replies": 0,
-   "kommentare_text": []
-  },
-  {
-   "id": "18096507035535780",
-   "zeit": "2026-09-29T13:46:25+0000",
-   "views": 96,
+   "views": 89,
    "reach": 72,
    "_fehlt": [
     "likes",
@@ -924,11 +921,55 @@
     "reels_skip_rate"
    ],
    "shares": 0,
-   "total_interactions": 3,
+   "total_interactions": 1,
    "profile_visits": 2,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 76,
+   "navigation": 82,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18151108885561403",
+   "zeit": "2026-09-29T13:49:23+0000",
+   "views": 102,
+   "reach": 80,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 1,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 93,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18096507035535780",
+   "zeit": "2026-09-29T13:46:25+0000",
+   "views": 115,
+   "reach": 85,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 4,
+   "profile_visits": 2,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 94,
    "replies": 0,
    "kommentare_text": []
   }
