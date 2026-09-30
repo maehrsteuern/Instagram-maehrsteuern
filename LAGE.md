@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:38 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:49 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -66,17 +66,19 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | montags ca. 07:17 | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | montags ca. 07:17 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 18:49 ✅ Freigabe: eigene Warteschlange, damit der 15-Min.-Posten-Takt wartende Freigabe-Läufe nicht mehr verdrängt ([`4372d22`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4372d220840705e09262ad0782074a1e59e464f5))
+  - `.github/workflows`
 - 18:38 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`0d81948`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0d819486c988f0b002726307f089a428466b688b))
   - Plan: `01-reel-ampel` → Freigabe-Issue #7
 - 18:37 🤖 Autopilot: 00-vorfreude veroeffentlicht ([`2ec2f9d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2ec2f9d4eaaccbdc37a9e3f5a93d7f7cf920d167))
