@@ -10,7 +10,7 @@ Den Abruf wiederholt der Autopilot jeden Montag (Workflow *Instagram-Statistik*)
 **Deshalb gilt:**
 - Likes, Kommentare und Geteilt-Werte von 2025 sind **nach oben verzerrt**. Die Reichweite ist teilweise gekauft oder von eigenen Konten gekommen.
 - Das Deepfake-Reel ist **kein Maßstab** und bleibt beim Vergleich außen vor.
-- Einen **ehrlichen Ausgangswert** liefern erst die Beiträge ab 29.09.2026 (ohne Eigen-Push; das muss Loris bestätigen).
+- Auch die Neuvorstellung vom 29.09.2026 wurde noch von **2 Zweitkonten** gepusht, ihre Interaktionen sind also leicht erhöht. Einen **sauberen Ausgangswert** liefern die Beiträge ab 01.10.2026, sobald die Zweitkonten entfolgt haben.
 - Die Zielgruppe (Alter, Städte) ist trotzdem brauchbar: 5–6 Zweitkonten machen bei 353 Followern unter 2 % aus. Der Anteil aus dem Ausland (etwa 20 %) stammt vermutlich zum großen Teil aus der gekauften Reichweite.
 - **Ab jetzt keine Eigen-Pushes und keine gekaufte Reichweite mehr.** Instagram erkennt Interaktionen von verbundenen Konten (gleiches Gerät, gleiche IP) und kann die Reichweite drosseln. Außerdem verfälscht es jede Auswertung.
 
@@ -20,7 +20,7 @@ Den Abruf wiederholt der Autopilot jeden Montag (Workflow *Instagram-Statistik*)
 3. **Die Follower sind abends um 20 Uhr am aktivsten**, nicht um 18:30. Den zweiten Höhepunkt gibt es mittags um 12 Uhr, die 12:15-Storys passen also.
 4. **Fragen im Hook bringen Kommentare.** „Nutzt du schon KI für die Prüfungsvorbereitung?“ holte 22 Kommentare, ein Teil davon kam aber vermutlich von eigenen Konten. Wie stark das Prinzip trägt, prüfen wir mit den neuen Beiträgen.
 5. **Den Bio-Link hat im ganzen Jahr niemand angetippt** (0 Klicks). Der Terminlink ist neu, ab jetzt zählt jeder Klick.
-6. **Die Neuvorstellung vom 29.09. ist der erste saubere Ausgangswert und ist ordentlich gestartet**: nach einem Tag 114 erreichte Konten, 3× geteilt, 2× gespeichert. Die Überspringrate ist mit 71 % aber hoch, der Einstieg muss schneller packen.
+6. **Die Neuvorstellung vom 29.09. ist ordentlich gestartet** (2 Zweitkonten haben mitgeholfen): nach einem Tag 114 erreichte Konten, 3× geteilt, 2× gespeichert. Die Überspringrate ist mit 71 % aber hoch, der Einstieg muss schneller packen.
 
 ## 1 · Reichweite im Zeitverlauf (erreichte Konten je 30 Tage)
 | Zeitraum | Reichweite | Interaktionen | Neue Follower / Entfolgt | Was war los |
@@ -107,7 +107,7 @@ Tiefpunkt 01–05 Uhr: 10–33 online.
 ## 7 · Maßnahmen (nach Wirkung sortiert)
 | # | Maßnahme | Warum | Wer |
 |---|---|---|---|
-| 1 | **Beiträge von 18:30 auf 19:30 verschieben** (Storys bleiben 12:15, Teaser dann 19:35) | Follower-Hoch um 20 Uhr | Claude, nach deinem OK |
+| 1 | ✅ **Beiträge ab 04.10. um 19:30** (Storys bleiben 12:15, Teaser 19:35) | Follower-Hoch um 20 Uhr | erledigt am 30.09. |
 | 2 | **In jeder Bildunterschrift eine konkrete Frage** („Welcher Fehler kostet dich die meiste Zeit? 1–5“) | Frage-Posts hatten die meisten Kommentare (22) | Content-Fabrik |
 | 3 | **Die ersten 1,5 Sekunden mit Ergebnis oder Problem starten**, nicht mit Logo oder Claim | Überspringrate der Neuvorstellung 71 %, bei „KI im Büro“ 77 % | Content-Fabrik (Reel-Vorlagen) |
 | 4 | **Speicherbares vor Allgemeinem:** Checklisten, „5 Fehler“, Vorlagen | Speichern und Teilen trugen das beste Reel | Redaktionsplan |

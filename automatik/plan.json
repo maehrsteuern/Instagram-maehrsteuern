@@ -43,7 +43,7 @@
     },
     {
       "id": "01-reel-ampel",
-      "zeit": "2026-10-04 18:30",
+      "zeit": "2026-10-04 19:30",
       "typ": "reel",
       "ordner": "posts/01_2026-10-04_reel_ampel",
       "video": "reel.mp4",
@@ -55,7 +55,7 @@
     },
     {
       "id": "01-story-teaser",
-      "zeit": "2026-10-04 18:35",
+      "zeit": "2026-10-04 19:35",
       "typ": "story",
       "ordner": "posts/01_2026-10-04_reel_ampel",
       "bilder": [
@@ -75,7 +75,7 @@
     },
     {
       "id": "02-excel-fehler",
-      "zeit": "2026-10-06 18:30",
+      "zeit": "2026-10-06 19:30",
       "typ": "karussell",
       "ordner": "posts/02_2026-10-06_excel_fehler",
       "bilder": [
@@ -92,7 +92,7 @@
     },
     {
       "id": "02-story-teaser",
-      "zeit": "2026-10-06 18:35",
+      "zeit": "2026-10-06 19:35",
       "typ": "story",
       "ordner": "posts/02_2026-10-06_excel_fehler",
       "bilder": [
@@ -112,7 +112,7 @@
     },
     {
       "id": "03-gewst-hinzurechnung",
-      "zeit": "2026-10-13 18:30",
+      "zeit": "2026-10-13 19:30",
       "typ": "karussell",
       "ordner": "posts/03_2026-10-13_gewst_hinzurechnung",
       "bilder": [
@@ -129,7 +129,7 @@
     },
     {
       "id": "03-story-teaser",
-      "zeit": "2026-10-13 18:35",
+      "zeit": "2026-10-13 19:35",
       "typ": "story",
       "ordner": "posts/03_2026-10-13_gewst_hinzurechnung",
       "bilder": [
@@ -159,7 +159,7 @@
     },
     {
       "id": "04-reel-mein-weg",
-      "zeit": "2026-10-20 18:30",
+      "zeit": "2026-10-20 19:30",
       "typ": "reel",
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
       "video": "reel.mp4",
@@ -170,7 +170,7 @@
     },
     {
       "id": "04-story-teaser",
-      "zeit": "2026-10-20 18:35",
+      "zeit": "2026-10-20 19:35",
       "typ": "story",
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
       "bilder": [

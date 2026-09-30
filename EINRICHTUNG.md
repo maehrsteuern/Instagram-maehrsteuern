@@ -38,7 +38,7 @@ Repo → **Actions → Instagram-Statistik → Run workflow**. Grüner Haken = V
 | **Mo + Do 08:47** | Content-Fabrik baut die nächsten Beiträge und trägt sie als Entwurf ein | Claude |
 | direkt danach | GitHub öffnet je Beitrag ein **Freigabe-Issue** mit Vorschau (Bilder, Reel-Link, Text) | Autopilot |
 | **Mo + Do 19:00** | Kalender-Erinnerung → im Issue **`go`** oder **`stop`** antworten | du |
-| Di / Do / So 18:30, täglich 12:15 | Beiträge und Storys gehen automatisch online | Autopilot |
+| Di / Do / So 19:30, täglich 12:15 | Beiträge und Storys gehen automatisch online | Autopilot |
 | **Montag früh** | Statistik wird abgeholt | Autopilot |
 | **1. des Monats** | Monatsbericht, Instagram-Schlüssel wird verlängert (braucht `GH_PAT`) | Claude + Autopilot |
 

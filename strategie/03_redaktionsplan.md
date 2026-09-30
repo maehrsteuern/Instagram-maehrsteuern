@@ -5,10 +5,10 @@
 |---|---|---|
 | **Montag 08:47** | Content-Fabrik baut die nächsten Beiträge → Freigabe-Issue mit Vorschau | Claude |
 | **Montag 19:00** | Kurzer Check: `go` oder `stop` im Freigabe-Issue (Kalender erinnert) | du, 2 Min. |
-| **Dienstag 18:30** | Karussell (Praxis oder Wissen) + Teaser-Story 18:35 | Autopilot |
+| **Dienstag 19:30** | Karussell (Praxis oder Wissen) + Teaser-Story 19:35 | Autopilot |
 | **Donnerstag 08:47** | Content-Fabrik, zweite Runde | Claude |
-| **Donnerstag 18:30** | Karussell + Teaser-Story; abends Check der neuen Freigaben | Autopilot / du |
-| **Sonntag 18:30** | Reel (Demo aus Screenshots, Musik fest eingebaut) + Teaser | Autopilot |
+| **Donnerstag 19:30** | Karussell + Teaser-Story; abends Check der neuen Freigaben | Autopilot / du |
+| **Sonntag 19:30** | Reel (Demo aus Screenshots, Musik fest eingebaut) + Teaser | Autopilot |
 | **täglich 12:15** | eine Story: Frage „Antworte auf diese Story“, Auflösung oder Tipp | Autopilot |
 | laufend | Kommentare und DMs beantworten | du |
 
@@ -16,7 +16,7 @@ Säulen rotieren über die drei Slots: Demo (So), Praxis und Wissen (Di/Do), „
 
 Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründung in `05_veroeffentlichung.md`. Nach 4 Wochen die Uhrzeit anhand der Statistik prüfen.
 
-**Startwoche:** Neuvorstellung **Do 01.10.**, Reel Ampel **So 04.10.**, danach jeden Dienstag 18:30.
+**Startwoche:** Neuvorstellung **Do 01.10.** (18:30, in der App geplant), Reel Ampel **So 04.10.**, danach jeden Dienstag 19:30.
 
 ## Plan Oktober – November 2026
 
@@ -39,7 +39,7 @@ Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründ
 3. Bilder erzeugen: im Ordner `vorlagen/system` → `node render.mjs jobs/p05_….json`
 4. Bei Reels aus Screenshots: Schnittliste wie `schnitt/p01_reel_ampel.json`, dann `python3 reel.py schnitt/….json`
 5. Bildunterschrift nach Muster unten
-6. Beitrag für Di 18:30 einplanen, Story-Teaser direkt danach
+6. Beitrag für Di 19:30 einplanen, Story-Teaser direkt danach
 
 ## Muster Bildunterschrift
 ```
