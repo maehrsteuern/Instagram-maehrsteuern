@@ -49,9 +49,12 @@
       "bilder": [
         "story_morgen.png"
       ],
-      "status": "freigegeben",
+      "status": "veroeffentlicht",
       "hinweis": "Ersetzt die Countdown-Story (Sticker geht nicht über die Schnittstelle)",
-      "issue": 1
+      "issue": 1,
+      "media_id": "18636258832011236",
+      "link": "https://www.instagram.com/stories/maehrsteuern/3997727075650058524",
+      "veroeffentlicht_am": "2026-09-30 18:37"
     },
     {
       "id": "00-neuvorstellung",
