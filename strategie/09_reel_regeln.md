@@ -26,6 +26,8 @@ Vorlage zum Kopieren: `vorlagen/system/schnitt/p01_reel_ampel_hook.json` (Render
 - Effekte **sparsam und gezielt**: ein sauberer Whip-Pan beim Wechsel Schmerz → Lösung reicht.
 - Flash, Glitch, Zoom-Punch und Shake (Bau-Montage-Stil) fallen auf, sind aber schnell zu viel und im Feed gesättigt.
   Höchstens einzeln einsetzen, nie alle gleichzeitig.
+- **Bau-Montagen (Gerba-Stil) funktionieren im Handwerk, nicht für Software.** Dort zeigt jeder Schnitt echten Fortschritt,
+  bei Software wirkt dasselbe Tempo nur hektisch. Unser eigenes Konzept: `10_software_reel_konzept.md`.
 - Unruhige Screens hinter Text abdunkeln (`"abdunkeln": 0.35`).
 
 ## Text und Safe-Zone (1080×1920)
