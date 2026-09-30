@@ -1,8 +1,8 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:24 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:37 Uhr._
 
-**Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
 ## 📝 Gerade in Arbeit
 
@@ -29,7 +29,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Mi 30.09. 19:30 | 📱 Story `00-vorfreude` | 🟢 freigegeben (geht automatisch online) | Ersetzt die Countdown-Story (Sticker geht nicht über die Schnittstelle) · [Freigabe #1](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/1) |
 | Do 01.10. 18:30 | 🖼️ Karussell `00-neuvorstellung` | ✋ manuell (postest du in der App) | In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen |
 | Fr 02.10. 12:15 | 📱 Story `01-story-frage` | 🟢 freigegeben (geht automatisch online) |  |
 | So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | 🟡 Entwurf (wartet auf Freigabe) | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s |
@@ -52,6 +51,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
+- Mi 30.09. 19:30 · 📱 Story `00-vorfreude` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997727075650058524) (online 2026-09-30 18:37)
 - Mi 30.09. 12:32 · 📱 Story `00-start-3` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997545080966344429) (online 2026-09-30 12:35)
 - Mi 30.09. 12:31 · 📱 Story `00-start-2` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997544897742372327) (online 2026-09-30 12:35)
 - Mi 30.09. 12:30 · 📱 Story `00-start-1` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997544707312529712) (online 2026-09-30 12:35)
@@ -77,6 +77,8 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 18:37 🤖 Autopilot: 00-vorfreude veroeffentlicht ([`2ec2f9d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2ec2f9d4eaaccbdc37a9e3f5a93d7f7cf920d167))
+  - Plan: `00-vorfreude` status: freigegeben → veroeffentlicht; `00-vorfreude` online: https://www.instagram.com/stories/maehrsteuern/3997727075650058524
 - 18:24 ✍️ Bildunterschrift Reel Ampel an die Fassung mit Loris' Stimme angepasst (Excel-Fehler, Code, lokal) ([`c371f6f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c371f6fef6723840031efba88ec160c88d9c50f0))
   - `posts/01_2026-10-04_reel_ampel`
 - 18:22 ✍️ Plan: Reel Ampel (Fassung mit Stimme) neu zur Freigabe – Status entwurf, neues Freigabe-Issue ([`9aeceb2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9aeceb2bd9fcd106c0524d3f6fbd161305dae4c9))
