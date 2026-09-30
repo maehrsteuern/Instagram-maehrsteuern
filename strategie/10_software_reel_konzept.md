@@ -77,6 +77,6 @@ Das Ertragsteuer-Programm läuft im Browser. Claude kann es selbst bedienen und 
   unten das echte Ertragsteuer-Programm. Gleiche Aufgabe: Hebesatz 400 → 450. Beide Hälften 1080×640, damit alles
   zwischen y 210 und 1500 liegt (Safe-Zone). Stoppuhren laufen in Echtzeit: unten „✓ 1,7 s · fertig“, oben läuft sie weiter.
 - Ton: Tippen, Fehlerton bei #BEZUG!, Uhr-Ticken für die Tabelle, Lo-Fi setzt ein, sobald unten „fertig“ steht.
-- Programmfehler gefunden: Das Programm rechnet bei jedem Tastendruck neu, die Delta-Plaketten der Fußleiste vergleichen
-  dann mit dem Zwischenstand („45“) statt dem Ausgangswert („400“) und zeigen +708.750 statt +87.500.
-  In der Aufnahme ausgeblendet, bis es im Programm behoben ist.
+- Programmfehler gefunden und behoben (Tax-Calc-Repo, Branch `claude/delta-beim-tippen`): Die Delta-Plakette der
+  Fußleiste verglich beim Tippen mit dem Zwischenstand („45“) statt mit „400“ und zeigte +708.750 statt +87.500.
+  Die untere Hälfte ist mit Reel-Datensatz + Fix aufgenommen und zeigt jetzt die echte Plakette +87.500.
