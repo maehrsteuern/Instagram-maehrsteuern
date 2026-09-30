@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:22 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 18:24 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -66,17 +66,19 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | montags ca. 07:17 | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | montags ca. 07:17 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 18:24 ✍️ Bildunterschrift Reel Ampel an die Fassung mit Loris' Stimme angepasst (Excel-Fehler, Code, lokal) ([`c371f6f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c371f6fef6723840031efba88ec160c88d9c50f0))
+  - `posts/01_2026-10-04_reel_ampel`
 - 18:22 ✍️ Plan: Reel Ampel (Fassung mit Stimme) neu zur Freigabe – Status entwurf, neues Freigabe-Issue ([`9aeceb2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9aeceb2bd9fcd106c0524d3f6fbd161305dae4c9))
   - Plan: `01-reel-ampel` status: pause → entwurf
 - 18:19 🔀 Merge: Reel Ampel testet die Fassung mit Loris' Stimme (reel_stimme.mp4), Status pause bleibt ([`8106eb9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/8106eb9823c4d5e707f40c833010ee30c6050ef1))
