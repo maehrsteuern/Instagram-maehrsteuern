@@ -5,7 +5,7 @@
   "name": "Loris | Steuer-Tools x Code",
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
-  "followers_count": 353,
+  "followers_count": 352,
   "follows_count": 253,
   "media_count": 9
  },
@@ -20,8 +20,13 @@
      "NON_FOLLOWER": 80
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 617,
+    "aufgeteilt": {
+     "FOLLOWER": 356,
+     "UNKNOWN": 3,
+     "NON_FOLLOWER": 258
+    }
    },
    "accounts_engaged": 9,
    "total_interactions": 21,
@@ -52,8 +57,13 @@
      "NON_FOLLOWER": 35
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 129,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "UNKNOWN": 2,
+     "NON_FOLLOWER": 121
+    }
    },
    "accounts_engaged": 0,
    "total_interactions": 0,
@@ -84,8 +94,13 @@
      "NON_FOLLOWER": 71
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 263,
+    "aufgeteilt": {
+     "FOLLOWER": 17,
+     "UNKNOWN": 15,
+     "NON_FOLLOWER": 231
+    }
    },
    "accounts_engaged": 1,
    "total_interactions": 2,
@@ -116,8 +131,13 @@
      "NON_FOLLOWER": 45
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 173,
+    "aufgeteilt": {
+     "UNKNOWN": 2,
+     "FOLLOWER": 21,
+     "NON_FOLLOWER": 150
+    }
    },
    "accounts_engaged": 5,
    "total_interactions": 6,
@@ -148,8 +168,13 @@
      "NON_FOLLOWER": 53
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 176,
+    "aufgeteilt": {
+     "FOLLOWER": 18,
+     "UNKNOWN": 8,
+     "NON_FOLLOWER": 150
+    }
    },
    "accounts_engaged": 3,
    "total_interactions": 8,
@@ -180,8 +205,13 @@
      "NON_FOLLOWER": 54
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 104,
+    "aufgeteilt": {
+     "FOLLOWER": 9,
+     "UNKNOWN": 9,
+     "NON_FOLLOWER": 86
+    }
    },
    "accounts_engaged": 2,
    "total_interactions": 3,
@@ -212,8 +242,13 @@
      "NON_FOLLOWER": 49
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 117,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "UNKNOWN": 3,
+     "NON_FOLLOWER": 112
+    }
    },
    "accounts_engaged": 3,
    "total_interactions": 8,
@@ -244,8 +279,13 @@
      "NON_FOLLOWER": 36
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 98,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "UNKNOWN": 1,
+     "NON_FOLLOWER": 95
+    }
    },
    "accounts_engaged": 0,
    "total_interactions": 6,
@@ -276,8 +316,13 @@
      "NON_FOLLOWER": 102
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 440,
+    "aufgeteilt": {
+     "UNKNOWN": 2,
+     "FOLLOWER": 11,
+     "NON_FOLLOWER": 427
+    }
    },
    "accounts_engaged": 0,
    "total_interactions": 5,
@@ -308,8 +353,13 @@
      "NON_FOLLOWER": 116
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 393,
+    "aufgeteilt": {
+     "FOLLOWER": 33,
+     "UNKNOWN": 7,
+     "NON_FOLLOWER": 353
+    }
    },
    "accounts_engaged": 0,
    "total_interactions": 12,
@@ -340,8 +390,13 @@
      "NON_FOLLOWER": 72
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 187,
+    "aufgeteilt": {
+     "UNKNOWN": 5,
+     "FOLLOWER": 19,
+     "NON_FOLLOWER": 163
+    }
    },
    "accounts_engaged": 0,
    "total_interactions": 1,
@@ -368,12 +423,17 @@
    "reach": {
     "gesamt": 113,
     "aufgeteilt": {
-     "NON_FOLLOWER": 107,
-     "FOLLOWER": 6
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 107
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 282,
+    "aufgeteilt": {
+     "UNKNOWN": 12,
+     "FOLLOWER": 39,
+     "NON_FOLLOWER": 231
+    }
    },
    "accounts_engaged": 0,
    "total_interactions": 4,
@@ -400,12 +460,17 @@
    "reach": {
     "gesamt": 210,
     "aufgeteilt": {
-     "NON_FOLLOWER": 24,
-     "FOLLOWER": 6
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 24
     }
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 503,
+    "aufgeteilt": {
+     "UNKNOWN": 17,
+     "FOLLOWER": 52,
+     "NON_FOLLOWER": 434
+    }
    },
    "accounts_engaged": 0,
    "total_interactions": 20,
@@ -433,8 +498,13 @@
     "gesamt": 632,
     "aufgeteilt": {}
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 556,
+    "aufgeteilt": {
+     "UNKNOWN": 15,
+     "FOLLOWER": 37,
+     "NON_FOLLOWER": 504
+    }
    },
    "accounts_engaged": 0,
    "total_interactions": 11,
@@ -459,8 +529,9 @@
     "gesamt": 4880,
     "aufgeteilt": {}
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
    },
    "accounts_engaged": 0,
    "total_interactions": 0,
@@ -487,8 +558,9 @@
     "gesamt": 4704,
     "aufgeteilt": {}
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
    },
    "accounts_engaged": 0,
    "total_interactions": 0,
@@ -515,8 +587,9 @@
     "gesamt": 1358,
     "aufgeteilt": {}
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
    },
    "accounts_engaged": 0,
    "total_interactions": 0,
@@ -535,14 +608,15 @@
    }
   },
   {
-   "von": "2025-04-08",
+   "von": "2025-05-01",
    "bis": "2025-05-08",
    "reach": {
     "gesamt": 0,
     "aufgeteilt": {}
    },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
    },
    "accounts_engaged": 0,
    "total_interactions": 0,
@@ -558,179 +632,6 @@
    "follows_and_unfollows": {
     "gesamt": null,
     "aufgeteilt": {}
-   }
-  },
-  {
-   "von": "2025-03-09",
-   "bis": "2025-04-08",
-   "reach": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
-   },
-   "accounts_engaged": 0,
-   "total_interactions": 0,
-   "likes": 0,
-   "comments": 0,
-   "shares": 0,
-   "saves": 0,
-   "replies": 0,
-   "profile_links_taps": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "follows_and_unfollows": {
-    "gesamt": null,
-    "aufgeteilt": {}
-   }
-  },
-  {
-   "von": "2025-02-07",
-   "bis": "2025-03-09",
-   "reach": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
-   },
-   "accounts_engaged": 0,
-   "total_interactions": 0,
-   "likes": 0,
-   "comments": 0,
-   "shares": 0,
-   "saves": 0,
-   "replies": 0,
-   "profile_links_taps": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "follows_and_unfollows": {
-    "gesamt": null,
-    "aufgeteilt": {}
-   }
-  },
-  {
-   "von": "2025-01-08",
-   "bis": "2025-02-07",
-   "reach": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
-   },
-   "accounts_engaged": 0,
-   "total_interactions": 0,
-   "likes": 0,
-   "comments": 0,
-   "shares": 0,
-   "saves": 0,
-   "replies": 0,
-   "profile_links_taps": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "follows_and_unfollows": {
-    "gesamt": null,
-    "aufgeteilt": {}
-   }
-  },
-  {
-   "von": "2024-12-09",
-   "bis": "2025-01-08",
-   "reach": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
-   },
-   "accounts_engaged": 0,
-   "total_interactions": 0,
-   "likes": 0,
-   "comments": 0,
-   "shares": 0,
-   "saves": 0,
-   "replies": 0,
-   "profile_links_taps": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "follows_and_unfollows": {
-    "gesamt": null,
-    "aufgeteilt": {}
-   }
-  },
-  {
-   "von": "2024-11-09",
-   "bis": "2024-12-09",
-   "reach": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
-   },
-   "accounts_engaged": 0,
-   "total_interactions": 0,
-   "likes": 0,
-   "comments": 0,
-   "shares": 0,
-   "saves": 0,
-   "replies": 0,
-   "profile_links_taps": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "follows_and_unfollows": {
-    "gesamt": null,
-    "aufgeteilt": {}
-   }
-  },
-  {
-   "von": "2024-10-10",
-   "bis": "2024-11-09",
-   "reach": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "_fehlt": {
-    "views": "400 breakdown[0] must be one of the following values: country, city, age, gender, follow_type, media_product_type, conta"
-   },
-   "accounts_engaged": 0,
-   "total_interactions": 0,
-   "likes": 0,
-   "comments": 0,
-   "shares": 0,
-   "saves": 0,
-   "replies": 0,
-   "profile_links_taps": {
-    "gesamt": 0,
-    "aufgeteilt": {}
-   },
-   "follows_and_unfollows": {
-    "gesamt": null,
-    "aufgeteilt": {}
-   }
-  },
-  {
-   "von": "2024-09-10",
-   "bis": "2024-10-10",
-   "_fehlt": {
-    "reach": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "views": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "accounts_engaged": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "total_interactions": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "likes": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "comments": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "shares": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "saves": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "replies": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "profile_links_taps": "400 since param is not valid. Metrics data is available for the last 2 years",
-    "follows_and_unfollows": "400 since param is not valid. Metrics data is available for the last 2 years"
    }
   }
  ],
@@ -922,16 +823,16 @@
    "like_count": 6,
    "comments_count": 0,
    "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
-   "views": 194,
+   "views": 195,
    "reach": 114,
    "likes": 6,
    "comments": 0,
-   "saved": 2,
+   "saved": 1,
    "shares": 3,
-   "total_interactions": 11,
+   "total_interactions": 10,
    "ig_reels_avg_watch_time": 7246,
    "ig_reels_video_view_total_time": 1007296,
-   "reels_skip_rate": 70.7,
+   "reels_skip_rate": 70.1,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
