@@ -11,8 +11,8 @@ ZIEL = Path(__file__).resolve().parent.parent / "musik"
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 ANZAHL, KANDIDATEN = 5, 20
 KOPF = {"User-Agent": "maehrsteuern-musik/1.0"}
-SUCHE = ('licenseurl:(*publicdomain/zero*) AND mediatype:audio AND '
-         '(subject:(electronic) OR subject:(lofi) OR subject:(lo-fi) OR subject:(chillhop) OR subject:(beats) OR subject:(instrumental))')
+CC0 = ['"http://creativecommons.org/publicdomain/zero/1.0/"', '"https://creativecommons.org/publicdomain/zero/1.0/"']
+STILE = ["electronic", "lofi", "chillhop", "beats", "instrumental", "hip hop instrumental"]
 
 
 def lautstaerke_anfang(datei):
@@ -25,9 +25,19 @@ def lautstaerke_anfang(datei):
     return (float(mittel[1]) if mittel else -99.0), sek
 
 
-treffer = requests.get("https://archive.org/advancedsearch.php", headers=KOPF, timeout=60, params={
-    "q": SUCHE, "fl[]": ["identifier", "title", "licenseurl"], "rows": 60, "sort[]": "downloads desc", "output": "json"}).json()
-docs = treffer["response"]["docs"]
+docs, gesehen = [], set()
+for lizenz in CC0:
+    for stil in STILE:
+        q = f'licenseurl:{lizenz} AND mediatype:audio AND subject:"{stil}"'
+        antwort = requests.get("https://archive.org/advancedsearch.php", headers=KOPF, timeout=60, params={
+            "q": q, "fl[]": ["identifier", "title"], "rows": 25, "sort[]": "downloads desc", "output": "json"})
+        daten = antwort.json() if antwort.ok else {}
+        if "response" not in daten:
+            print("  Suche fehlgeschlagen:", q, antwort.status_code, antwort.text[:200])
+            continue
+        for d in daten["response"]["docs"]:
+            if d["identifier"] not in gesehen:
+                gesehen.add(d["identifier"]); docs.append(d)
 print(f"{len(docs)} Sammlungen gefunden")
 
 kandidaten = []
