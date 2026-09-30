@@ -24,14 +24,20 @@ def lautstaerke_anfang(datei):
     return (float(mittel[1]) if mittel else -99.0), sek
 
 
+KOPF = {"User-Agent": "Mozilla/5.0 (maehrsteuern Musik-Abruf)"}
 links = []
 for seite in SEITEN:
     try:
-        html = requests.get(seite, timeout=30).text
-    except requests.RequestException:
+        antwort = requests.get(seite, timeout=30, headers=KOPF)
+    except requests.RequestException as fehler:
+        print("  ", seite, "nicht erreichbar:", fehler)
         continue
-    for href in re.findall(r'''["']([^"']+?\.mp3)["']''', html):
-        url = urljoin(seite, href)
+    html = antwort.text
+    print("  ", seite, antwort.status_code, len(html), "Zeichen:", re.sub(r"\s+", " ", html[:300]))
+    treffer = re.findall(r"""[^"'\s<>()]+?\.mp3""", html)
+    treffer += ["music/" + n + ".mp3" for n in re.findall(r"""play\(\s*["']([^"']+)["']""", html)]
+    for href in treffer:
+        url = urljoin(seite, href.replace(" ", "%20"))
         if url not in links:
             links.append(url)
 print(f"{len(links)} Titel gefunden")
@@ -41,7 +47,7 @@ bewertet = []
 for url in links[:KANDIDATEN]:
     datei = tmp / Path(url).name.replace("%20", "_")
     try:
-        r = requests.get(url, timeout=60); r.raise_for_status()
+        r = requests.get(url, timeout=60, headers=KOPF); r.raise_for_status()
     except requests.RequestException:
         continue
     datei.write_bytes(r.content)
