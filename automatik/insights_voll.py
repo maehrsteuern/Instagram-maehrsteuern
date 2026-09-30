@@ -40,7 +40,8 @@ def wert(d):
     tv = d.get("total_value") or {}
     if tv.get("breakdowns"):
         return {"gesamt": tv.get("value"),
-                "aufgeteilt": {"/".join(e["dimension_values"]): e["value"] for e in tv["breakdowns"][0]["results"]}}
+                "aufgeteilt": {"/".join(e.get("dimension_values", [])): e.get("value")
+                               for b in tv["breakdowns"] for e in b.get("results", [])}}
     return tv.get("value")
 
 
@@ -50,7 +51,7 @@ def media_insights(m):
         try:
             for d in get(f"{m['id']}/insights", metric=metrik)["data"]:
                 werte[d["name"]] = wert(d)
-        except RuntimeError as e:
+        except (RuntimeError, KeyError, TypeError):
             werte.setdefault("_fehlt", []).append(metrik)
     try:
         werte["kommentare_text"] = [
@@ -80,7 +81,7 @@ for _ in range(25):
         try:
             for d in get(f"{USER}/insights", **params)["data"]:
                 block[d["name"]] = wert(d)
-        except RuntimeError as e:
+        except (RuntimeError, KeyError, TypeError) as e:
             block.setdefault("_fehlt", {})[metrik] = str(e)[:120]
     bloecke.append(block)
     if len(block.get("_fehlt", {})) == len(KONTO_METRIKEN):
