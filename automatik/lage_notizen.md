@@ -1,3 +1,4 @@
 - Neustart der Seite läuft: Start-Storys Mi 30.09. ab 12:30, Neuvorstellung (Karussell) Do 01.10. von Hand in der App geplant.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
+- GitHub-Zeitplan für „Instagram posten“ unzuverlässig (30.09.: Start-Storys erst 12:35 nach manuellem Start). Lösung: externer Takt über cron-job.org – Einrichtung `EINRICHTUNG.md` Schritt 5, **noch offen**.

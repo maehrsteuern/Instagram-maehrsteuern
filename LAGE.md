@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 12:35 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 12:37 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-vorfreude` am **Mi 30.09. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -9,6 +9,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Neustart der Seite läuft: Start-Storys Mi 30.09. ab 12:30, Neuvorstellung (Karussell) Do 01.10. von Hand in der App geplant.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
+- GitHub-Zeitplan für „Instagram posten“ unzuverlässig (30.09.: Start-Storys erst 12:35 nach manuellem Start). Lösung: externer Takt über cron-job.org – Einrichtung `EINRICHTUNG.md` Schritt 5, **noch offen**.
 
 ## 👉 Braucht dich
 
@@ -62,17 +63,19 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
-| Statistik | montags ca. 07:17 | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
+| Statistik | montags ca. 07:17 | – |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | ✅ ok |
+| Musik holen | nur von Hand | – |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
+- 12:37 ✍️ Einrichtung: externer 15-Min.-Takt fürs Posten über cron-job.org (GitHub-Zeitplan fällt aus) ([`da605f4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/da605f4ec07f4e501b5ea84946082c9ef79ead9e))
+  - `EINRICHTUNG.md`, `automatik/lage_notizen.md`
 - 12:35 🤖 Autopilot: 00-start-3 veroeffentlicht ([`aab43f3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/aab43f30e4bf740fabc2c30ae765cafa24f8d674))
   - Plan: `00-start-3` status: freigegeben → veroeffentlicht; `00-start-3` online: https://www.instagram.com/stories/maehrsteuern/3997545080966344429
 - 12:35 🤖 Autopilot: Dateien fuer 00-start-3 vorbereitet ([`cc6bd34`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cc6bd342f9607e5d0f875ed3a36cc0a940918a3b))
