@@ -16,6 +16,15 @@ Vorlage zum Kopieren: `vorlagen/system/schnitt/p01_reel_ampel_hook.json` (Render
   - Keine Hintergrundmusik nach Schema. Lieber Originalton, Stille, Atmo oder einen Trend-Sound aus der Instagram-App (von Hand).
   - Abwägen: professionell/sauber gegen persönlich/roh – auf Instagram gewinnt eher persönlich.
 
+## Learnings Stimme und Ton (Loris, 30.09.)
+- **Eigene Stimme trägt das Reel** (Sprachnachricht vom Handy reicht). Text vorher grob überlegen, locker sprechen.
+- **Untertitel bilden das Gesprochene genau ab** – Wort für Wort, damit das Reel auch ohne Ton verständlich ist.
+  Alle eingeblendeten Texte folgen dieser Logik (Schlagworte wie „#BEZUG!“ nur als Verstärkung des Gesagten).
+  Zeitmarken per Spracherkennung (faster-whisper, Modell „small“), Wortlaut am Ende von Hand gegenlesen.
+- **Sprache hat Vorrang:** Musik höchstens ganz leise im Hintergrund, Geräusche (Uhr, Fehlerton, Tippen) ebenfalls leise.
+  Richtwerte: Stimme ca. −18 LUFS, Musik ~0,13, Atmo 0,2–0,3.
+- Aufnahme: Abstand zum Handy-Mikro halten (sonst klingt es kratzig/übersteuert), ruhiger Raum.
+
 ## Hook (0–3 s)
 - **Kein Dauerfeuer.** Im Hook 2 Einstellungen, nicht 4–5 Achtel-Schnitte. Jede Einstellung darf 1,4–2 s stehen.
 - **Text ab 0,3 s**, groß mit schwarzer Outline, Wort für Wort bzw. Zeile für Zeile. Der Hook muss **ohne Ton** funktionieren.
