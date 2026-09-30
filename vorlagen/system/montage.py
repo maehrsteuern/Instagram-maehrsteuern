@@ -58,15 +58,30 @@ def fuellen(im):  # auf 9:16 zuschneiden (cover)
     return im.crop((x, y, x + W, y + H))
 
 
-def lade_video(datei):
+def lade_video(datei, brauche):
+    """Nur die Bilder behalten, die eine Szene zeigt (ein 16-s-Clip in 1080x1920 wären sonst 3 GB)."""
     r = imageio_ffmpeg.read_frames(str(pfad(datei)), output_params=["-r", str(fps)])
     meta = next(r); w, h = meta["size"]
-    return [fuellen(Image.frombytes("RGB", (w, h), f)) for f in r]
+    bilder, roh = [], None
+    for i, roh in enumerate(r):
+        bilder.append(fuellen(Image.frombytes("RGB", (w, h), roh)) if i in brauche else None)
+    if roh is not None and bilder[-1] is None:  # letztes Bild für Szenen, die über das Clipende hinaus stehen
+        bilder[-1] = fuellen(Image.frombytes("RGB", (w, h), roh))
+    return bilder
+
+
+def gebrauchte_bilder(k):
+    idx = set()
+    for sz in cfg["szenen"]:
+        if sz.get("quelle") != k: continue
+        for i in range(round(zeit(sz["dauer"]) * fps) + 2):
+            idx.add(int((sz.get("ab", 0) + i / fps * sz.get("tempo", 1)) * fps))
+    return idx
 
 
 quellen = {}
 for k, q in cfg["quellen"].items():
-    quellen[k] = lade_video(q["video"]) if "video" in q else Image.open(pfad(q["datei"])).convert("RGB")
+    quellen[k] = lade_video(q["video"], gebrauchte_bilder(k)) if "video" in q else Image.open(pfad(q["datei"])).convert("RGB")
 
 
 def ausschnitt(im, cx, cy, w):
@@ -162,8 +177,8 @@ bild_nr = 0
 for nr, sz in enumerate(szenen):
     n = bilder[nr + 1] - bilder[nr]
     q = Image.open(pfad(sz["karte"])).convert("RGB") if "karte" in sz else quellen[sz["quelle"]]
-    breite = (q[0] if isinstance(q, list) else q).width
-    hoehe = (q[0] if isinstance(q, list) else q).height
+    breite = W if isinstance(q, list) else q.width
+    hoehe = H if isinstance(q, list) else q.height
     von = sz.get("von") or [breite / 2, hoehe / 2, breite]
     nach = sz.get("nach") or von
     rein = sz.get("rein", "")
@@ -179,7 +194,7 @@ for nr, sz in enumerate(szenen):
             cx += zufall.uniform(-a, a); cy += zufall.uniform(-a, a)
         if isinstance(q, list):
             f = min(int((sz.get("ab", 0) + t * sz.get("tempo", 1)) * fps), len(q) - 1)
-            bild = ausschnitt(q[f], cx, cy, w)
+            bild = ausschnitt(q[f] or q[-1], cx, cy, w)
         else:
             bild = ausschnitt(q, cx, cy, w)
         if "whip" in rein and i < 5:

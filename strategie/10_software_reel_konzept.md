@@ -57,3 +57,13 @@ langsame, ruhige Bewegungen (Zooms mache ich im Schnitt). Pro Clip 20–60 s, Na
 
 Ablage: `posts/<post>/clips/` auf Zweig `claude/instagram` (wie beim Drehbuch von Post 04).
 Aufnahme z. B. mit OBS oder Windows+G.
+
+## Automatische Aufnahmen (ohne dass Loris aufnehmen muss)
+Das Ertragsteuer-Programm läuft im Browser. Claude kann es selbst bedienen und aufnehmen:
+- Runder Reel-Datensatz: `steuerberechnung/index.html?demo=reel` (Repo Tax-Calc-App-by-Loris, Branch `claude/reel-demodaten`).
+  Ergebnis vor Steuern 10 Mio., Hebesatz 400 %, KSt 750.000, GewSt 700.000, laufende Steuer 1.491.250.
+- Handy-Ansicht 540×960 bei doppelter Pixeldichte → gestochen scharfe 1080×1920, dunkles Design.
+- Sichtbarer Mauszeiger mit Klick-Welle, echtes Tippen, weiches Scrollen.
+- Skript: `vorlagen/system/aufnahmen/ampel_gelb_gruen.mjs` (Vorlage für weitere Klickstrecken).
+- **Ehrlichkeit:** Die Ampel des Programms wird bei fehlenden Pflichtangaben **gelb**, rot nur bei echten Fehlern
+  (z. B. falscher SAP-Ledger). Wir zeigen nur Zustände, die das Programm wirklich so anzeigt. Rot liefert der Excel-Hook.
