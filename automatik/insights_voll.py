@@ -23,7 +23,7 @@ MEDIA_METRIKEN = ["views", "reach", "likes", "comments", "saved", "shares", "tot
                   "profile_visits", "profile_activity", "follows", "navigation", "replies"]
 KONTO_METRIKEN = ["reach", "views", "accounts_engaged", "total_interactions", "likes", "comments", "shares",
                   "saves", "replies", "profile_links_taps", "follows_and_unfollows"]
-AUFSCHLUESSELUNG = {"reach": "follow_type", "views": "follower_type", "follows_and_unfollows": "follow_type",
+AUFSCHLUESSELUNG = {"reach": "follow_type", "views": "follow_type", "follows_and_unfollows": "follow_type",
                     "profile_links_taps": "contact_button_type"}
 
 
