@@ -10,7 +10,7 @@ Den Abruf wiederholt der Autopilot jeden Montag (Workflow *Instagram-Statistik*)
 **Deshalb gilt:**
 - Likes, Kommentare und Geteilt-Werte von 2025 sind **nach oben verzerrt**. Die Reichweite ist teilweise gekauft oder von eigenen Konten gekommen.
 - Das Deepfake-Reel ist **kein Maßstab** und bleibt beim Vergleich außen vor.
-- Auch die Neuvorstellung vom 29.09.2026 wurde noch von **2 Zweitkonten** gepusht, ihre Interaktionen sind also leicht erhöht. Einen **sauberen Ausgangswert** liefern die Beiträge ab 01.10.2026, sobald die Zweitkonten entfolgt haben.
+- Auch die Neuvorstellung vom 29.09.2026 wurde noch von **2 Zweitkonten** gepusht, ihre Interaktionen sind also leicht erhöht. Am 30.09.2026 hat das letzte eigene Konto entfolgt (353 → 352). **Sauberer Ausgangswert: 352 echte Follower**, gültig für alle Beiträge ab 01.10.2026.
 - Die Zielgruppe (Alter, Städte) ist trotzdem brauchbar: 5–6 Zweitkonten machen bei 353 Followern unter 2 % aus. Der Anteil aus dem Ausland (etwa 20 %) stammt vermutlich zum großen Teil aus der gekauften Reichweite.
 - **Ab jetzt keine Eigen-Pushes und keine gekaufte Reichweite mehr.** Instagram erkennt Interaktionen von verbundenen Konten (gleiches Gerät, gleiche IP) und kann die Reichweite drosseln. Außerdem verfälscht es jede Auswertung.
 
