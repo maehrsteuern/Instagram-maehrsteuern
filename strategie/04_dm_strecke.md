@@ -80,10 +80,24 @@ Danke nochmal für das Gespräch! Darf ich deine Rückmeldung anonym im Highligh
 ```
 
 ## Technik – in zwei Stufen
-**Stufe 1 (jetzt, kostenlos): Schnellantworten**
-Instagram → Einstellungen → *Business-Tools* bzw. *Creator-Tools* → **Schnellantworten**. Pro Nachricht ein Kürzel anlegen:
-`/tool1` (①), `/tool2` (②), `/tool3` (③), `/tool3b` (③b), `/tool4` (④), `/tool5` (⑤).
-Im Chat Kürzel tippen → Text wird eingefügt. Bei unter ~10 DMs pro Woche reicht das völlig und wirkt persönlicher.
+**Stufe 1 (jetzt): Sofortantwort + Schnellantworten**
+- Die **Automatik „TOOL“** läuft über die **Business Suite App** (Stichwort TOOL/tool/Tool, nur Instagram) und schickt Nachricht ①. Im Web sind Automatisierungen gesperrt, bis die Business-Telefonnummer aktualisiert ist.
+- Die Antworten auf 1–4 schickst du **von Hand** mit Schnellantworten. Keine Zahlen als Stichwort-Automatik anlegen: „enthält 1“ würde bei jeder Nachricht mit einer 1 auslösen.
+
+Instagram → Einstellungen → *Business-Tools* → **Gespeicherte Antworten**. Die Kürzel entsprechen der Zahl, die jemand antwortet:
+
+| Kürzel | Wann | Text |
+|---|---|---|
+| `tool1` | Antwort „1“ Steuerabteilung | Top, für Steuerabteilungen baue ich am meisten 🙌 Welche Excel-Liste oder Berechnung kostet dich gerade am meisten Zeit? Ein Stichwort reicht, z. B. „Steuerrückstellung“, „latente Steuern“, „Abstimmung“. |
+| `tool2` | Antwort „2“ Kanzlei | Top, Kanzleien haben genau die wiederkehrenden Rechnungen, die sich lohnen 🙌 Welche Excel-Liste oder Berechnung kostet dich gerade am meisten Zeit? Ein Stichwort reicht, z. B. „Gewerbesteuer“, „Rückstellungen“, „Fristen“. |
+| `tool3` | Antwort „3“ Selbstständig/KMU | Top 🙌 Wo hakt es bei dir am meisten? Ein Stichwort reicht, z. B. „Gewerbesteuer-Vorauszahlung“, „Steuern einplanen“, „Belege“. |
+| `tool4` | Antwort „4“ Studium/Ausbildung | Cool, dann bist du hier richtig! 🎓 Zum Lernen: Schau ins Highlight „Wissen 📚“ – da sammle ich die Rechenbeispiele. Und wenn du sehen willst, wie so ein Tool von innen aussieht oder Fragen hast: einfach schreiben ✌️ |
+| `tool5` | Sonstiges / keine Zahl / kein TOOL-Thema | Danke dir! Erzähl mir kurz, worum es geht – ich melde mich persönlich, meist am selben Tag. |
+| `termin` | nach dem Stichwort (bei 1–3) | Danke, das kenne ich gut. Die Demo zeig ich dir am liebsten live – mit Beispieldaten und direkt an deinem Thema angelehnt. 20 Minuten, kostenlos und unverbindlich 👉 https://app.reclaim.ai/m/maehrsteuern/demo · Wichtig: Bitte schick mir keine echten Mandanten- oder Firmendaten per DM. |
+| `erinnerung` | 2 Tage ohne Buchung, nur einmal | Text ④ |
+| `gebucht` | nach der Buchung | Text ⑤ |
+
+Ablauf: Automatik ① → Zahl → `tool1`–`tool5` → Stichwort → `termin` → ggf. `erinnerung` → `gebucht`. Sobald es das Demo-Video gibt, `termin` gegen Text ③ mit Video-Link tauschen.
 
 **Stufe 2 (ab ca. 10 DMs pro Woche): Automatisierung**
 Mit einem Instagram-Automatisierungsdienst wie ManyChat (kostenloser Einstieg) Stichwort „TOOL“ als Auslöser einrichten – für DMs **und** Kommentare. Kommentar-Auslöser bringt zusätzlich Reichweite, weil jeder Kommentar den Beitrag pusht. Dann in Reels schreiben: „Kommentiere TOOL“.
@@ -91,8 +105,10 @@ Mit einem Instagram-Automatisierungsdienst wie ManyChat (kostenloser Einstieg) S
 ## Was noch fehlt (von dir)
 - [ ] **Demo-Video** 1–2 Min. (Drehbuch: `07_demo_video.md`; bis dahin ③ Übergangsversion nutzen) als Bildschirmaufnahme (nur Beispieldaten), z. B. als nicht gelistetes YouTube-Video
 - [x] **Terminlink:** https://app.reclaim.ai/m/maehrsteuern/demo
-- [ ] Schnellantworten anlegen
-- [x] **Sofortantwort** (Meta Business Suite, 30.09.2026) mit Nachricht ① – reagiert auf jede neue Unterhaltung, nicht nur auf „TOOL“. Ab ② läuft alles von Hand mit den Schnellantworten.
+- [ ] Gespeicherte Antworten `tool1`–`tool5`, `termin`, `erinnerung`, `gebucht` anlegen
+- [ ] Business-Telefonnummer in Meta aktualisieren (sonst bleiben Automatisierungen im Web gesperrt)
+- [x] **Automatik „TOOL“** (Business Suite App, 30.09.2026) mit Nachricht ①. Ab da von Hand mit den gespeicherten Antworten.
+- [ ] Test: „TOOL“ von einem fremden Konto per DM schicken
 
 ## Nachverfolgen
 Jede Anfrage eine Zeile in `dm_tracking.csv` (Datum, Handle-Kürzel, Gruppe 1–4, Stichwort, Stufe, Termin ja/nein). So siehst du nach 4 Wochen, welcher Beitrag die Anfragen gebracht hat. Keine vollen Namen oder Firmen eintragen.
