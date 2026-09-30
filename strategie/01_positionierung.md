@@ -13,11 +13,13 @@ Alle vier bleiben an Bord, aber sie haben unterschiedliche Aufgaben:
 | Rang | Gruppe | Rolle für das Konto | Was sie wollen |
 |---|---|---|---|
 | 1 | **Steuerabteilungen** (Mittelstand, Konzern) | Kunden für Demo + Erstgespräch | Weniger manuelle Excel-Arbeit, Prüfpfad, schneller Abschluss |
-| 2 | **Kanzleien / StB-Mitarbeitende** | Kunden | Wiederkehrende Berechnungen automatisieren, Fehler vermeiden |
+| 2 | **Kanzleien / StB-Mitarbeitende** – inkl. der Examens-Community von 2025, die heute selbst Steuerberater ist | Kunden, Vertrauensvorschuss | Wiederkehrende Berechnungen automatisieren, Fehler vermeiden |
 | 3 | **Selbstständige / KMU** | Gelegentliche Kunden, Reichweite | Verstehen, was steuerlich passiert, einfache Rechner |
 | 4 | **Studierende / Azubis** | Reichweite, Community, Weiterempfehlung | Steuerwissen verständlich, Lernen mit Code |
 
 Folge daraus: **Jeder Beitrag spricht eine Hauptgruppe an.** Kundenbeiträge (Rang 1–2) enden mit „TOOL“-Aufruf, Reichweitenbeiträge (Rang 3–4) mit „Speichern“ oder „Folgen“.
+
+**Examens-Community (neu, 30.09.2026):** Viele Studierende von 2025 sind heute selbst Steuerberater oder Berufsträger (Altersgruppe 25–34 = 35 % der Follower). Sie kennen Loris schon und sind die wärmste Kundengruppe. Brücken-Themen „Examen → Praxis“ (z. B. „Was im Examen keiner sagt: So sieht die Rückstellung in der Kanzlei aus“) zählen deshalb als Kundenbeiträge (Säule 2/3) und nicht zur Examens-Quote.
 
 **Brücke von alt zu neu:** Die alten Lern-Reels (2.000–2.500 Aufrufe) bleiben stehen. Säule 3 und 4 holen diese Leute ab, Säule 1 und 2 verkaufen.
 

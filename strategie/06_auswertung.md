@@ -16,7 +16,7 @@ Den Abruf wiederholt der Autopilot jeden Montag (Workflow *Instagram-Statistik*)
 
 ## Kurzfassung
 1. **Das Konto hat 14 Monate geschlafen.** Im Juni und Juli 2025 erreichte es fast 5.000 Konten im Monat, allerdings teilweise gepusht und gekauft (siehe oben). Nach dem letzten Reel am 29.07.2025 fiel die Reichweite auf 40 bis 200 im Monat.
-2. **Die Zielgruppe sind Berufstätige, keine Studierenden.** 62 % sind 25 bis 44 Jahre alt, nur 6 % 18 bis 24. Das passt gut zum Tool-Angebot für Steuerabteilungen und Kanzleien.
+2. **Die Zielgruppe sind Berufstätige – darunter die Examens-Community von 2025.** 62 % sind 25 bis 44 Jahre alt, nur 6 % 18 bis 24. Laut Loris sind viele der damaligen Studierenden heute selbst Steuerberater: Sie sind nicht weg, sondern in die Kerngruppe hineingewachsen.
 3. **Die Follower sind abends um 20 Uhr am aktivsten**, nicht um 18:30. Den zweiten Höhepunkt gibt es mittags um 12 Uhr, die 12:15-Storys passen also.
 4. **Fragen im Hook bringen Kommentare.** „Nutzt du schon KI für die Prüfungsvorbereitung?“ holte 22 Kommentare, ein Teil davon kam aber vermutlich von eigenen Konten. Wie stark das Prinzip trägt, prüfen wir mit den neuen Beiträgen.
 5. **Den Bio-Link hat im ganzen Jahr niemand angetippt** (0 Klicks). Der Terminlink ist neu, ab jetzt zählt jeder Klick.
@@ -79,7 +79,7 @@ Interaktionsrate = Interaktionen ÷ erreichte Konten. Überspringrate = Anteil, 
 
 **Folgerung für die Strategie:**
 - **Hauptgruppe sind Berufstätige zwischen 25 und 54 (82 %).** Beiträge für Steuerabteilungen und Kanzleien (Excel-Fehler, GewSt, Prüfpfad) treffen den Kern. Das ist auch die Gruppe, die Tools kaufen kann.
-- **Studierende sind kaum noch dabei (6 % im Alter 18–24).** Die Examens-Reels von 2025 hatten zwar Reichweite, aber die Leute sind nicht geblieben. Examens-Themen sollten Reichweiten-Beiträge bleiben (ungefähr 1 von 4), nicht der Kern.
+- **Aktuelle Studierende sind kaum dabei (6 % im Alter 18–24), die Examens-Community von 2025 aber schon:** Viele sind heute Steuerberater (25–34 = 35 %). Reine Examens-Themen bleiben Reichweiten-Beiträge (etwa 1 von 4). Brücken-Themen „Examen → Praxis“ sprechen dagegen genau die Leute an, die dich kennen und jetzt Tools kaufen können – sie zählen als Kundenbeiträge.
 - **Österreich (4 %)**: Allgemeine Tool- und Excel-Themen funktionieren dort auch. Bei Rechtsthemen „(DE)“ dazuschreiben, das vermeidet Rückfragen.
 
 ## 4 · Wann deine Follower online sind
@@ -111,7 +111,7 @@ Tiefpunkt 01–05 Uhr: 10–33 online.
 | 2 | **In jeder Bildunterschrift eine konkrete Frage** („Welcher Fehler kostet dich die meiste Zeit? 1–5“) | Frage-Posts hatten die meisten Kommentare (22) | Content-Fabrik |
 | 3 | **Die ersten 1,5 Sekunden mit Ergebnis oder Problem starten**, nicht mit Logo oder Claim | Überspringrate der Neuvorstellung 71 %, bei „KI im Büro“ 77 % | Content-Fabrik (Reel-Vorlagen) |
 | 4 | **Speicherbares vor Allgemeinem:** Checklisten, „5 Fehler“, Vorlagen | Speichern und Teilen trugen das beste Reel | Redaktionsplan |
-| 5 | Examens-Themen nur für Reichweite (etwa 1 von 4) | Reichweite ja, aber Studierende sind nur 6 % der Follower | Redaktionsplan |
+| 5 | Reine Examens-Themen nur für Reichweite (etwa 1 von 4); Brücken-Themen „Examen → Praxis“ gezielt für die Ex-Examens-Community, die heute berät | Aktuelle Studierende nur 6 %, die Community von 2025 ist in die Kerngruppe hineingewachsen | Redaktionsplan |
 | 6 | Nach jedem Post 30 Min. online bleiben und Kommentare mit Gegenfrage beantworten | Kommentare sind das stärkste Signal | du |
 | 7 | Folge-Liste ausmisten (Ziel < 150) | wirkt als Fachprofil stärker | du |
 | 8 | **Keine Eigen-Pushes mit Zweitkonten, keine gekaufte Reichweite mehr** | Instagram kann die Reichweite drosseln, und die Auswertung wird verfälscht | du |

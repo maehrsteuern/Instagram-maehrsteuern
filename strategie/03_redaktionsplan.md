@@ -31,6 +31,13 @@ Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründ
 | 7 | 10.11. | Wissen | Karussell | **„Jahresabschluss: 7 Steuer-Punkte, die du jetzt schon vorbereiten kannst“** (speichern!) | Frage: „Was ist dein größter Zeitfresser im Abschluss?“ | offen |
 | 8 | 17.11. | Hinter dem Code | Reel | **„Ihr habt abgestimmt – ich baue das Feature“** (Ergebnis aus Woche 6) | Umfrage: „Welches Feature zuerst?“ | offen |
 
+## Themenspeicher (für freie Slots der Content-Fabrik)
+| Säule | Thema / Haken | Zielgruppe | Hinweis |
+|---|---|---|---|
+| Wissen | **„Latente Steuern im Abschluss 2026: Welcher Steuersatz gilt?“** – KSt sinkt ab 2028 jährlich um 1 Punkt (2028: 14 %, 2029: 13 %, 2030: 12 %, 2031: 11 %, ab 2032: 10 %; Investitionssofortprogramm 2025). Differenzen nach dem Jahr ihrer Umkehr bewerten (§ 274 Abs. 2 HGB). Rechenbeispiel Demo-Zahlen, GewSt 400 %: 2027 = 29,83 %, 2032 = 24,55 %. | Steuerabteilungen | Knüpft an Excel-Fehler Nr. 1 („fest eingetippter Steuersatz“) an. Rechtsstand vor Freigabe prüfen. |
+| Praxis | **„Steuersatz-Staffel 2028–2032 in Excel: So baust du sie richtig“** (Parameter-Tabelle statt Festwert) | Steuerabteilungen, Kanzleien | Folgebeitrag, Aufruf „TOOL“ |
+| Praxis | **„Was im Examen keiner sagt: So sieht die Steuerrückstellung in der Praxis aus“** | Ex-Examens-Community, heute Berater | Brücken-Thema, zählt nicht zur Examens-Quote |
+
 **Nach Woche 4 und 8:** Kennzahlen aus `01_positionierung.md` eintragen, schwächste Säule anpassen, nächste 4 Wochen planen.
 
 ## Ablauf pro Beitrag (Checkliste)

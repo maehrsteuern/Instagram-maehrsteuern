@@ -47,6 +47,14 @@ Wenn du sehen willst, wie das für „[Stichwort]“ aussehen könnte:
 Wichtig: Bitte schick mir keine echten Mandanten- oder Firmendaten per DM.
 ```
 
+**③ Übergangsversion, solange es noch kein Demo-Video gibt**
+```
+Danke, das kenne ich gut. Die Demo zeig ich dir am liebsten live – mit Beispieldaten und direkt an „[Stichwort]“ angelehnt.
+20 Minuten, kostenlos und unverbindlich 👉 https://app.reclaim.ai/m/maehrsteuern/demo
+
+Wichtig: Bitte schick mir keine echten Mandanten- oder Firmendaten per DM.
+```
+
 **③b Studium / Ausbildung**
 ```
 Cool, dann bist du hier richtig! Hier die Demo zum Anschauen: [LINK DEMO-VIDEO]
@@ -81,7 +89,7 @@ Im Chat Kürzel tippen → Text wird eingefügt. Bei unter ~10 DMs pro Woche rei
 Mit einem Instagram-Automatisierungsdienst wie ManyChat (kostenloser Einstieg) Stichwort „TOOL“ als Auslöser einrichten – für DMs **und** Kommentare. Kommentar-Auslöser bringt zusätzlich Reichweite, weil jeder Kommentar den Beitrag pusht. Dann in Reels schreiben: „Kommentiere TOOL“.
 
 ## Was noch fehlt (von dir)
-- [ ] **Demo-Video** 1–2 Min. als Bildschirmaufnahme (nur Beispieldaten), z. B. als nicht gelistetes YouTube-Video
+- [ ] **Demo-Video** 1–2 Min. (Drehbuch: `07_demo_video.md`; bis dahin ③ Übergangsversion nutzen) als Bildschirmaufnahme (nur Beispieldaten), z. B. als nicht gelistetes YouTube-Video
 - [x] **Terminlink:** https://app.reclaim.ai/m/maehrsteuern/demo
 - [ ] Schnellantworten anlegen
 
