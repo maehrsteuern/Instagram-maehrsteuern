@@ -18,7 +18,9 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-        run: python automatik/statistik.py
+        run: |
+          python automatik/statistik.py
+          python automatik/insights_voll.py
       - name: Speichern
         run: |
           git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
