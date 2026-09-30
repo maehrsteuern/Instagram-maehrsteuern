@@ -233,7 +233,8 @@ def main():
     aktiv = [e for e in eintraege if e["status"] not in ("veroeffentlicht", "entfaellt")]
     kommend = [e for e in aktiv if zeit(e) >= n - NACHHOLEN]
     naechster = next((e for e in sorted(kommend, key=zeit) if e["status"] in ("freigegeben", "manuell")), None)
-    stand = datetime.fromisoformat(git("log", "-1", "--format=%aI")).astimezone(ZONE)
+    # ohne eigene Lage-Commits, sonst ändert jeder Lauf den Stand und erzeugt den nächsten Commit
+    stand = datetime.fromisoformat(git("log", "-1", "--format=%aI", "--invert-grep", f"--grep=^{LAGE_COMMIT}")).astimezone(ZONE)
 
     teile = [
         "# 🧭 Lage – maehrsteuern auf Instagram",
