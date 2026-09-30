@@ -12,12 +12,13 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/03_redaktionsplan.md` | Wochenrhythmus (1 Beitrag/Woche) und Plan Okt.–Nov. 2026 |
 | `strategie/04_dm_strecke.md` | Nachrichten für „TOOL“ → Demo + Erstgespräch, Technik |
 | `strategie/05_veroeffentlichung.md` | **Fahrplan mit Uhrzeiten, Anleitung zum Einplanen, Prüfliste** |
+| `strategie/08_demo_reel_formel.md` | Aufbau für Demo-Reels (Schmerz → Schnitt → Höhepunkt → Aufruf) |
 | `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
 | `strategie/dm_tracking.csv` | Liste zum Nachverfolgen der Anfragen |
 | `posts/<Nr>_<Datum>_<Thema>/` | fertige Beiträge: Folien bzw. Reel, Titelbild, Storys, `bildunterschrift.txt` |
 
 ## Vorlagen-System (`vorlagen/system/`)
-- `karussell.html` (1080×1350; Typen `titel`, `inhalt` mit Text/Liste/Tabelle, `cta`), `story.html` (1080×1920; `info`, `frage`, `teaser`), `reel_titel.html`, `highlight.html` (`start`, `wissen`, `faq`), `einblendung.html` (Reel: `haken`, `leiste`, `abspann`)
+- `karussell.html` (1080×1350; Typen `titel`, `inhalt` mit Text/Liste/Tabelle, `cta`), `story.html` (1080×1920; `info`, `frage`, `teaser`), `reel_titel.html`, `highlight.html` (`start`, `wissen`, `faq`), `einblendung.html` (Reel: `haken`, `leiste`, `abspann`), `ampel.html` (Ampel-Nahaufnahme `rot`/`gelb`/`gruen`, Stil der App)
 - Farben und Schriften zentral in `basis.css`; `*Wort*` im Text wird grün, `\n` bricht um; zu lange Überschriften werden automatisch verkleinert
 - Texte stehen in Job-Dateien unter `jobs/`. Bilder erzeugen: im Ordner `vorlagen/system` → `node render.mjs jobs/p02_excel_fehler.json`
 - Reels aus Standbildern: Schnittliste in `schnitt/`, dann `python3 reel.py schnitt/p01_reel_ampel.json` (braucht `pip install pillow imageio-ffmpeg`)

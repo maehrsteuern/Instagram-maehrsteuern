@@ -14,6 +14,13 @@
     },
     {
       "vorlage": "einblendung",
+      "datei": "haken_bezug.png",
+      "typ": "haken_ueber",
+      "transparent": true,
+      "titel": "#BEZUG! –\n2 Tage vor *Abgabe*."
+    },
+    {
+      "vorlage": "einblendung",
       "datei": "haken_stunden.png",
       "typ": "haken_ueber",
       "transparent": true,
@@ -25,7 +32,7 @@
       "typ": "haken_ueber",
       "transparent": true,
       "titel": "Oder\n*3 Sekunden*.",
-      "sub": "Meine Ertragsteuer-Ampel."
+      "sub": "Achte auf die *Ampel*."
     },
     {
       "vorlage": "einblendung",
@@ -77,6 +84,29 @@
       "vorlage": "einblendung",
       "datei": "abspann.png",
       "typ": "abspann"
+    },
+    {
+      "vorlage": "einblendung",
+      "datei": "leiste_cta.png",
+      "typ": "leiste",
+      "transparent": true,
+      "kicker": "Demo · Beispieldaten",
+      "titel": "Schreib *TOOL* per DM –\nich zeig dir die Demo"
+    },
+    {
+      "vorlage": "ampel",
+      "datei": "ampel_rot.png",
+      "stand": "rot"
+    },
+    {
+      "vorlage": "ampel",
+      "datei": "ampel_gelb.png",
+      "stand": "gelb"
+    },
+    {
+      "vorlage": "ampel",
+      "datei": "ampel_gruen.png",
+      "stand": "gruen"
     },
     {
       "vorlage": "story",

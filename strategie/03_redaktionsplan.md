@@ -22,7 +22,7 @@ Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründ
 
 | Woche | Datum | Säule | Format | Thema / Haken | Story davor | Status |
 |---|---|---|---|---|---|---|
-| 1 | So 04.10. | Demo | Reel | **„Ertragsteuer-Ampel: 3 Sekunden statt 3 Stunden“** – Dashboard zeigt Rot/Gelb/Grün je Position | Frage: „Wie lange dauert bei euch die Steuerrückstellung?“ | **fertig** (`posts/01_…`) |
+| 1 | So 04.10. | Demo | Reel | **„#BEZUG! – 2 Tage vor Abgabe“ → Ertragsteuer-Ampel** (neu geschnitten 30.09., Formel `08_demo_reel_formel.md`) – Dashboard zeigt Rot/Gelb/Grün je Position | Frage: „Wie lange dauert bei euch die Steuerrückstellung?“ | **fertig** (`posts/01_…`) |
 | 2 | 06.10. | Praxis | Karussell | **„5 Excel-Fehler in deiner Steuerrückstellung“** | Umfrage: „Hattest du schon mal #BEZUG! kurz vor Abgabe?“ | **fertig** (`posts/02_…`) |
 | 3 | 13.10. | Wissen | Karussell | **„Gewerbesteuer-Hinzurechnung in 7 Folien – mit Rechenbeispiel“** (Demo-Zahlen) | Quiz: „Werden Mieten voll hinzugerechnet?“ | **fertig** (`posts/03_…`) |
 | 4 | 20.10. | Hinter dem Code | Reel (Gesicht) | **„Vom Steuer-Studium zum eigenen Tool“** – 3 Stationen in 20 s | Frage: „Was willst du über mich wissen?“ | Bausteine fertig, **Clips von dir bis 15.10.** (`posts/04_…/drehbuch.md`) |

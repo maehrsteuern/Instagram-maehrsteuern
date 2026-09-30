@@ -12,7 +12,7 @@ try { ({ chromium } = await import('playwright')); }
 catch { ({ chromium } = createRequire(execSync('npm root -g').toString().trim()+'/')('playwright')); }
 
 const hier = dirname(fileURLToPath(import.meta.url));
-const GROESSE = { karussell:[1080,1350], story:[1080,1920], reel_titel:[1080,1920], highlight:[1080,1920], einblendung:[1080,1920], excel_chaos:[1404,2496] };
+const GROESSE = { karussell:[1080,1350], story:[1080,1920], reel_titel:[1080,1920], highlight:[1080,1920], einblendung:[1080,1920], excel_chaos:[1404,2496], ampel:[1080,1920] };
 
 const jobs = process.argv.slice(2);
 if (!jobs.length) { console.log('Aufruf: node render.mjs jobs/<datei>.json [...]'); process.exit(1); }
