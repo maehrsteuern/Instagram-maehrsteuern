@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 10:55 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 30.09. 11:54 Uhr._
 
 **Als Nächstes online:** 📱 Story `00-start-1` am **Mi 30.09. 12:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -62,19 +62,22 @@ Details: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | montags ca. 07:17 | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | montags ca. 07:17 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 30.09.2026**
-- 10:55 ✍️ Lage: laufender Überblick LAGE.md (Plan, offene Punkte, Automatik, Protokoll jeder Änderung) + Skill ([`2502ace`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2502ace387137d408288b24411f07873cab418ad))
+- 11:54 🔀 Merge: Lage – laufender Überblick LAGE.md + Skill ([`1a0cc59`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1a0cc5962a47730a3061b5144954ba4d7ebf0e92))
+- 10:55 ✍️ Lage: laufender Überblick LAGE.md (Plan, offene Punkte, Automatik, Protokoll jeder Änderung) + Skill ([`ce1dfd3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ce1dfd370f6ad1e09c2cc8145d38945ddc49219e))
   - `.claude/skills/lage/SKILL.md`, `.github/workflows`, `CLAUDE.md`, `README.md`, `automatik/lage.py`, `automatik/lage_notizen.md`
+- 10:50 ✍️ Start-Story 1: Hook „Wir müssen ehrlich über Excel reden.“ ([`d5290d5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d5290d549c6f4af12c5828ce371869601b0313a1))
+  - `assets/storys/start/start_1.png`, `vorlagen/system/jobs/start_storys.json`
 - 08:56 📈 Statistik 2026-09-30 ([`068d3fb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/068d3fb9dc3d508d04ffcd6340aee0e4432052db))
   - `automatik/statistik`
 - 07:31 ✅ Freigabe #1: go ([`32bac43`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/32bac432abd6a15141b6d74da0e5516a09bab628))
