@@ -19,7 +19,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/09_reel_regeln.md` | Reel-Regeln aus Feedback: Hook, KI-Clips, Ton, Safe-Zone, Farben |
 | `strategie/10_software_reel_konzept.md` | Eigenes Reel-Konzept für Software (Split-Screen, Satisfying Software, Gesicht + Screen), Bildschirmaufnahmen |
 | `vorlagen/hooks/` | Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8–2,8 s), Übersicht in `README.md` |
-| `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
+| `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv`, `tagesbilanz.py` (Tagesbilanz über alle Repos, Befehl `/tagesbilanz`, Verlauf in `tagesbilanz.md`) |
 | `strategie/dm_tracking.csv` | Liste zum Nachverfolgen der Anfragen |
 | `posts/<Nr>_<Datum>_<Thema>/` | fertige Beiträge: Folien bzw. Reel, Titelbild, Storys, `bildunterschrift.txt` |
 
