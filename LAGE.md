@@ -2,25 +2,23 @@
 
 _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 23:42 Uhr._
 
-**Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
+**Als Nächstes online:** 📱 Story `01-story-frage` am **Fr 02.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
-- Neustart der Seite: Start-Storys und Vorfreude-Story am 30.09. online. Neuvorstellung (Karussell) Do 01.10. 18:30 von Hand in der App geplant → danach anpinnen, in Story teilen, Highlight „Start 👋“ anlegen.
-- Reel Ampel (04.10.) mit Loris' Stimme `reel_stimme.mp4` (26 s) am 01.10. freigegeben (Issue #7).
-- Content-Fabrik 01.10.: Karussell latente Steuern (08.10.) + Storys und Split-Reel Excel gegen Tool (11.10.) freigegeben (Issues #12, #13). Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
+- Neustart läuft: Start-Storys + Vorfreude (30.09.) und Neuvorstellung (Do 01.10. 18:30, von Hand) sind online. Nach 2 h: 26 erreicht, 6× geteilt, 0 neue Follower. Offen von Hand: anpinnen, Highlight „Start 👋“.
+- Wochenrhythmus ab Okt. steht im Prompt der Content-Fabrik (Mo + Do 08:47, max. 4 Beiträge pro Lauf): Di/Do Karussell + Teaser, Mi Begleit-Reel, Fr Wissens-Reel oder Stimm-Reel, So Reel + Teaser, täglich 12:15 Story.
+- Bis 10.10. alles freigegeben: Reel Ampel mit Stimme (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
+- Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
+- Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
-- DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
-- Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
+- DM-Strecke: nur Sofortantwort automatisch, Rest von Hand. ManyChat erst bei mehr als ~5 TOOL-DMs pro Tag (Stand 01.10.: 0 DMs).
+- Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
-- Instagram-Wissen: `strategie/11_wissen_instagram.md`. Neu ab Okt.: **3 Reels (Mi, Fr, So 19:30) + 2 Karussells (Di, Do)**. Werbebudget nur für Beiträge, die organisch laufen.
-- Kalender-Feed `kalender.ics` läuft automatisch und ist in Google Kalender abonniert (01.10.). Content-Fabrik-Prompt kennt den neuen Rhythmus noch nicht → Loris gibt den Text in deren Unterhaltung ein.
-- Neue Reel-Slots: Mi 14.10. Begleit-Reel Hinzurechnung (Entwurf, Freigabe folgt). Sprechtexte für Fr 09.10. und Fr 16.10. in `posts/sprechtexte.md` → Loris schickt Sprachnachrichten. Übrige Mi/Fr-Slots füllt die Content-Fabrik (Fr 02.10. bleibt frei).
 
 ## 👉 Braucht dich
 
 - 👉 **Danach Highlight „Start 👋“ von Hand anlegen** (`00-start-3` (Mi 30.09. 12:32))
-- ✋ **Von Hand posten** `00-neuvorstellung` (Do 01.10. 18:30) – In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen
 - 👉 **Danach:** Anpinnen (von Hand) (`00-neuvorstellung` (Do 01.10. 18:30))
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf clips** `04-reel-mein-weg` (Di 20.10. 19:30)
@@ -31,7 +29,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Do 01.10. 18:30 | 🖼️ Karussell `00-neuvorstellung` | ✋ manuell (postest du in der App) | In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen |
 | Fr 02.10. 12:15 | 📱 Story `01-story-frage` | 🟢 freigegeben (geht automatisch online) |  |
 | Sa 03.10. 12:15 | 📱 Story `08-story-tipp` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | 🟢 freigegeben (geht automatisch online) | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
@@ -63,6 +60,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
+- Do 01.10. 18:30 · 🖼️ Karussell `00-neuvorstellung` · [ansehen](https://www.instagram.com/p/Dd9V5HAAhcL/) (online 2026-10-01 18:30)
 - Mi 30.09. 19:30 · 📱 Story `00-vorfreude` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997727075650058524) (online 2026-09-30 18:37)
 - Mi 30.09. 12:32 · 📱 Story `00-start-3` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997545080966344429) (online 2026-09-30 12:35)
 - Mi 30.09. 12:31 · 📱 Story `00-start-2` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997544897742372327) (online 2026-09-30 12:35)
@@ -84,11 +82,11 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
-| Statistik | täglich ca. 08:45 | ✅ ok |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
-| Musik holen | nur von Hand | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
+| Statistik | täglich ca. 08:45 | – |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
+| Musik holen | nur von Hand | – |
 
 ## 📜 Protokoll – jede Änderung
 

@@ -1,10 +1,9 @@
-- Neustart der Seite: Start-Storys und Vorfreude-Story am 30.09. online. Neuvorstellung (Karussell) Do 01.10. 18:30 von Hand in der App geplant → danach anpinnen, in Story teilen, Highlight „Start 👋“ anlegen.
-- Reel Ampel (04.10.) mit Loris' Stimme `reel_stimme.mp4` (26 s) am 01.10. freigegeben (Issue #7).
-- Content-Fabrik 01.10.: Karussell latente Steuern (08.10.) + Storys und Split-Reel Excel gegen Tool (11.10.) freigegeben (Issues #12, #13). Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
+- Neustart läuft: Start-Storys + Vorfreude (30.09.) und Neuvorstellung (Do 01.10. 18:30, von Hand) sind online. Nach 2 h: 26 erreicht, 6× geteilt, 0 neue Follower. Offen von Hand: anpinnen, Highlight „Start 👋“.
+- Wochenrhythmus ab Okt. steht im Prompt der Content-Fabrik (Mo + Do 08:47, max. 4 Beiträge pro Lauf): Di/Do Karussell + Teaser, Mi Begleit-Reel, Fr Wissens-Reel oder Stimm-Reel, So Reel + Teaser, täglich 12:15 Story.
+- Bis 10.10. alles freigegeben: Reel Ampel mit Stimme (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
+- Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
+- Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
-- DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
-- Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
+- DM-Strecke: nur Sofortantwort automatisch, Rest von Hand. ManyChat erst bei mehr als ~5 TOOL-DMs pro Tag (Stand 01.10.: 0 DMs).
+- Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
-- Instagram-Wissen: `strategie/11_wissen_instagram.md`. Neu ab Okt.: **3 Reels (Mi, Fr, So 19:30) + 2 Karussells (Di, Do)**. Werbebudget nur für Beiträge, die organisch laufen.
-- Kalender-Feed `kalender.ics` läuft automatisch und ist in Google Kalender abonniert (01.10.). Content-Fabrik-Prompt kennt den neuen Rhythmus noch nicht → Loris gibt den Text in deren Unterhaltung ein.
-- Neue Reel-Slots: Mi 14.10. Begleit-Reel Hinzurechnung (Entwurf, Freigabe folgt). Sprechtexte für Fr 09.10. und Fr 16.10. in `posts/sprechtexte.md` → Loris schickt Sprachnachrichten. Übrige Mi/Fr-Slots füllt die Content-Fabrik (Fr 02.10. bleibt frei).
