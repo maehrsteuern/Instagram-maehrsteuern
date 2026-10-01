@@ -104,7 +104,7 @@
       "bilder": [
         "story_sa_tipp.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "issue": 15
     },
     {
@@ -215,7 +215,7 @@
       "bilder": [
         "story_fr_heute.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "issue": 15
     },
     {
@@ -226,7 +226,7 @@
       "video": "reel.mp4",
       "titelbild": "reel_titel.png",
       "text": "bildunterschrift.txt",
-      "status": "entwurf",
+      "status": "freigegeben",
       "hinweis": "Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses.",
       "issue": 15
     },
@@ -238,7 +238,7 @@
       "bilder": [
         "story_sa_rueckblick.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "issue": 15
     },
     {
