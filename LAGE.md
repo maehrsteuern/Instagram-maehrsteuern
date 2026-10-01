@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 15:11 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 15:55 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -67,18 +67,15 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 ## 📈 Zahlen (täglich ca. 08:45)
 
 **352 Follower** · 1 Beiträge im Profil (Abruf 2026-10-01) · **-1** seit 2026-09-30 ⚠️
-Reichweite pro Tag: 27.09. **1** · 28.09. **1** · 29.09. **126** · 30.09. **81**
+Reichweite pro Tag: 28.09. **1** · 29.09. **126** · 30.09. **82** · 01.10. **13**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| Mi 30.09. 12:35 | 78 | 57 | 0 | 0 | 0 |
-| Mi 30.09. 12:35 | 66 | 51 | 0 | 0 | 0 |
-| Mi 30.09. 12:35 | 63 | 48 | 0 | 2 | 0 |
-| Mi 30.09. 18:37 | 48 | 36 | 0 | 1 | 0 |
+| Mi 30.09. 18:37 | 61 | 45 | 0 | 2 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 245 (+3) | 144 | 6 | 0 | 1 | 3 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 246 (+4) | 145 | 6 | 0 | 1 | 3 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -97,6 +94,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 15:55 📈 Statistik 2026-10-01 ([`9d77f59`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9d77f59e10b8afeba9e3c83383dceaae114eedc1))
+  - `automatik/statistik`
 - 15:11 ✅ Freigabe #14: go ([`5e2e5d0`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5e2e5d0c889aa1954b0ec25064e0c9edca349afa))
   - Plan: `07-reel-hinzurechnung` status: entwurf → freigegeben
 - 10:22 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`fa3bf2a`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fa3bf2a24cefa9c9f35c72b95661646f609a3e39))
