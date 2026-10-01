@@ -204,7 +204,7 @@
       "video": "reel_split.mp4",
       "titelbild": "reel_split_titel.png",
       "text": "bildunterschrift_reel.txt",
-      "status": "entwurf",
+      "status": "freigegeben",
       "hinweis": "Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop",
       "issue": 13
     },
@@ -216,7 +216,7 @@
       "bilder": [
         "story_so_teaser_reel.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "issue": 13
     },
     {
