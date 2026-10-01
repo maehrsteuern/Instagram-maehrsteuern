@@ -6,7 +6,7 @@
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
   "followers_count": 352,
-  "follows_count": 253,
+  "follows_count": 254,
   "media_count": 1
  },
  "konto_verlauf": [
@@ -21,9 +21,9 @@
     }
    },
    "views": {
-    "gesamt": 1041,
+    "gesamt": 1043,
     "aufgeteilt": {
-     "FOLLOWER": 718,
+     "FOLLOWER": 720,
      "UNKNOWN": 3,
      "NON_FOLLOWER": 320
     }
@@ -209,8 +209,8 @@
     "gesamt": 113,
     "aufgeteilt": {
      "FOLLOWER": 9,
-     "UNKNOWN": 10,
-     "NON_FOLLOWER": 94
+     "NON_FOLLOWER": 94,
+     "UNKNOWN": 10
     }
    },
    "accounts_engaged": 2,
@@ -312,8 +312,8 @@
    "reach": {
     "gesamt": 104,
     "aufgeteilt": {
-     "FOLLOWER": 3,
-     "NON_FOLLOWER": 101
+     "NON_FOLLOWER": 101,
+     "FOLLOWER": 3
     }
    },
    "views": {
@@ -349,15 +349,15 @@
    "reach": {
     "gesamt": 120,
     "aufgeteilt": {
-     "FOLLOWER": 6,
-     "NON_FOLLOWER": 114
+     "NON_FOLLOWER": 114,
+     "FOLLOWER": 6
     }
    },
    "views": {
     "gesamt": 393,
     "aufgeteilt": {
-     "FOLLOWER": 33,
      "UNKNOWN": 6,
+     "FOLLOWER": 33,
      "NON_FOLLOWER": 354
     }
    },
@@ -467,9 +467,9 @@
    "views": {
     "gesamt": 523,
     "aufgeteilt": {
+     "UNKNOWN": 23,
      "FOLLOWER": 52,
-     "NON_FOLLOWER": 448,
-     "UNKNOWN": 23
+     "NON_FOLLOWER": 448
     }
    },
    "accounts_engaged": 0,
@@ -634,7 +634,6 @@
   }
  ],
  "tageswerte_reichweite": {
-  "2026-09-02": 1,
   "2026-09-03": 1,
   "2026-09-04": 1,
   "2026-09-05": 1,
@@ -662,7 +661,8 @@
   "2026-09-27": 1,
   "2026-09-28": 1,
   "2026-09-29": 126,
-  "2026-09-30": 81
+  "2026-09-30": 82,
+  "2026-10-01": 13
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -783,33 +783,8 @@
   }
  },
  "online_follower": {
-  "2026-09-29": {
-   "0": 88,
-   "1": 87,
-   "2": 96,
-   "3": 111,
-   "4": 104,
-   "5": 95,
-   "6": 110,
-   "7": 112,
-   "8": 106,
-   "9": 104,
-   "10": 118,
-   "11": 116,
-   "12": 111,
-   "13": 93,
-   "14": 59,
-   "15": 35,
-   "16": 19,
-   "17": 15,
-   "18": 17,
-   "19": 17,
-   "20": 28,
-   "21": 63,
-   "22": 93,
-   "23": 95
-  },
-  "2026-09-30": {}
+  "2026-09-30": {},
+  "2026-10-01": {}
  },
  "beitraege": [
   {
@@ -821,16 +796,16 @@
    "like_count": 6,
    "comments_count": 0,
    "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
-   "views": 245,
-   "reach": 144,
+   "views": 246,
+   "reach": 145,
    "likes": 6,
    "comments": 0,
    "saved": 1,
    "shares": 3,
    "total_interactions": 10,
    "ig_reels_avg_watch_time": 6471,
-   "ig_reels_video_view_total_time": 1229514,
-   "reels_skip_rate": 67.2,
+   "ig_reels_video_view_total_time": 1242492,
+   "reels_skip_rate": 67.4,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -845,8 +820,8 @@
   {
    "id": "18636258832011236",
    "zeit": "2026-09-30T16:37:20+0000",
-   "views": 48,
-   "reach": 36,
+   "views": 61,
+   "reach": 45,
    "_fehlt": [
     "likes",
     "comments",
@@ -857,76 +832,10 @@
    ],
    "shares": 0,
    "total_interactions": 1,
-   "profile_visits": 1,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 42,
-   "replies": 0,
-   "kommentare_text": []
-  },
-  {
-   "id": "18236605036318357",
-   "zeit": "2026-09-30T10:35:44+0000",
-   "views": 63,
-   "reach": 48,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 2,
    "profile_visits": 2,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 58,
-   "replies": 0,
-   "kommentare_text": []
-  },
-  {
-   "id": "18190470130404373",
-   "zeit": "2026-09-30T10:35:22+0000",
-   "views": 66,
-   "reach": 51,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 2,
-   "profile_visits": 0,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 64,
-   "replies": 0,
-   "kommentare_text": []
-  },
-  {
-   "id": "18431442943145862",
-   "zeit": "2026-09-30T10:35:00+0000",
-   "views": 78,
-   "reach": 57,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 1,
-   "profile_visits": 0,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 70,
+   "navigation": 53,
    "replies": 0,
    "kommentare_text": []
   }
