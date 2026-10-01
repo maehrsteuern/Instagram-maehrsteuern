@@ -1,5 +1,5 @@
 name: Instagram-Schlüssel verlängern
-# Am 1. jedes Monats; ein Schlüssel gilt 60 Tage.
+# Am 1. jedes Monats; ein Schlüssel gilt 60 Tage. Manuell startbar.
 on:
   schedule:
     - cron: "27 4 1 * *"
