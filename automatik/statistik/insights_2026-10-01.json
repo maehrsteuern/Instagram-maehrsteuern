@@ -5,9 +5,9 @@
   "name": "Loris | Steuer-Tools x Code",
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
-  "followers_count": 352,
-  "follows_count": 254,
-  "media_count": 1
+  "followers_count": 351,
+  "follows_count": 255,
+  "media_count": 2
  },
  "konto_verlauf": [
   {
@@ -23,9 +23,9 @@
    "views": {
     "gesamt": 1043,
     "aufgeteilt": {
-     "FOLLOWER": 720,
      "UNKNOWN": 3,
-     "NON_FOLLOWER": 320
+     "NON_FOLLOWER": 320,
+     "FOLLOWER": 720
     }
    },
    "accounts_engaged": 11,
@@ -43,7 +43,7 @@
     "gesamt": null,
     "aufgeteilt": {
      "FOLLOWER": 5,
-     "NON_FOLLOWER": 6
+     "NON_FOLLOWER": 7
     }
    }
   },
@@ -60,8 +60,8 @@
    "views": {
     "gesamt": 127,
     "aufgeteilt": {
-     "FOLLOWER": 6,
      "UNKNOWN": 2,
+     "FOLLOWER": 6,
      "NON_FOLLOWER": 119
     }
    },
@@ -134,9 +134,9 @@
    "views": {
     "gesamt": 172,
     "aufgeteilt": {
-     "UNKNOWN": 2,
      "FOLLOWER": 21,
-     "NON_FOLLOWER": 149
+     "NON_FOLLOWER": 149,
+     "UNKNOWN": 2
     }
    },
    "accounts_engaged": 5,
@@ -282,8 +282,8 @@
    "views": {
     "gesamt": 99,
     "aufgeteilt": {
-     "UNKNOWN": 1,
      "FOLLOWER": 2,
+     "UNKNOWN": 1,
      "NON_FOLLOWER": 96
     }
    },
@@ -312,16 +312,16 @@
    "reach": {
     "gesamt": 104,
     "aufgeteilt": {
-     "NON_FOLLOWER": 101,
-     "FOLLOWER": 3
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 101
     }
    },
    "views": {
     "gesamt": 442,
     "aufgeteilt": {
      "UNKNOWN": 2,
-     "FOLLOWER": 11,
-     "NON_FOLLOWER": 429
+     "NON_FOLLOWER": 429,
+     "FOLLOWER": 11
     }
    },
    "accounts_engaged": 0,
@@ -349,8 +349,8 @@
    "reach": {
     "gesamt": 120,
     "aufgeteilt": {
-     "NON_FOLLOWER": 114,
-     "FOLLOWER": 6
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 114
     }
    },
    "views": {
@@ -430,8 +430,8 @@
    "views": {
     "gesamt": 253,
     "aufgeteilt": {
-     "UNKNOWN": 6,
      "FOLLOWER": 39,
+     "UNKNOWN": 6,
      "NON_FOLLOWER": 208
     }
    },
@@ -467,8 +467,8 @@
    "views": {
     "gesamt": 523,
     "aufgeteilt": {
-     "UNKNOWN": 23,
      "FOLLOWER": 52,
+     "UNKNOWN": 23,
      "NON_FOLLOWER": 448
     }
    },
@@ -486,7 +486,7 @@
    "follows_and_unfollows": {
     "gesamt": null,
     "aufgeteilt": {
-     "FOLLOWER": 4,
+     "FOLLOWER": 3,
      "NON_FOLLOWER": 5
     }
    }
@@ -501,9 +501,9 @@
    "views": {
     "gesamt": 566,
     "aufgeteilt": {
+     "FOLLOWER": 37,
      "UNKNOWN": 15,
-     "NON_FOLLOWER": 514,
-     "FOLLOWER": 37
+     "NON_FOLLOWER": 514
     }
    },
    "accounts_engaged": 0,
@@ -662,7 +662,7 @@
   "2026-09-28": 1,
   "2026-09-29": 126,
   "2026-09-30": 82,
-  "2026-10-01": 13
+  "2026-10-01": 41
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -788,6 +788,34 @@
  },
  "beitraege": [
   {
+   "id": "17965089348198457",
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "timestamp": "2026-10-01T16:30:02+0000",
+   "permalink": "https://www.instagram.com/p/Dd9V5HAAhcL/",
+   "like_count": 4,
+   "comments_count": 2,
+   "caption": "Neu hier? Dann kurz zu mir 👋\n\nIch bin Loris – Diplom-Finanzwirt und IHK-zertifizierter Manager für angewandte KI-Transformation.\n\n2025 habe ich maehrsteuern gestartet: mit Lern-Inhalten und KI-Schulungen rund ums Steuer-Examen. Viele von euch kennen mich daher – und sind heute selbst Beraterinnen und Berater. 🎓➡️💼\n\nJetzt geht's den nächsten Schritt: KI-Lösungen für Steuern, die wirklich laufen – weil ich sie selbst programmiere. Vom kleinen Tool bis zum ganzen Prozess.\n\n📅 Ab jetzt jede Woche neue Beiträge, meist abends um 19:30:\n⚙️ Demos meiner Tools\n📊 Excel-Fehler und Steuerwissen mit Rechenbeispiel\n🧠 Einblicke hinter den Code\n\nWoher kennst du mich – Examen, Kanzlei oder Steuerabteilung? 👇\n\n💬 Schreib mir „TOOL“ per DM, wenn du die Demo sehen willst.\n\n#steuern #steuerrecht #kuenstlicheintelligenz #automatisierung #finanzwirt",
+   "views": 76,
+   "reach": 26,
+   "likes": 4,
+   "comments": 2,
+   "saved": 1,
+   "shares": 6,
+   "total_interactions": 15,
+   "_fehlt": [
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate",
+    "navigation",
+    "replies"
+   ],
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "kommentare_text": []
+  },
+  {
    "id": "18432424948196865",
    "media_product_type": "REELS",
    "media_type": "VIDEO",
@@ -796,16 +824,16 @@
    "like_count": 6,
    "comments_count": 0,
    "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
-   "views": 246,
-   "reach": 145,
+   "views": 248,
+   "reach": 146,
    "likes": 6,
    "comments": 0,
    "saved": 1,
    "shares": 3,
    "total_interactions": 10,
-   "ig_reels_avg_watch_time": 6471,
-   "ig_reels_video_view_total_time": 1242492,
-   "reels_skip_rate": 67.4,
+   "ig_reels_avg_watch_time": 6485,
+   "ig_reels_video_view_total_time": 1258102,
+   "reels_skip_rate": 67.2,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -816,30 +844,7 @@
    "kommentare_text": []
   }
  ],
- "storys_aktiv": [
-  {
-   "id": "18636258832011236",
-   "zeit": "2026-09-30T16:37:20+0000",
-   "views": 61,
-   "reach": 45,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 1,
-   "profile_visits": 2,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 53,
-   "replies": 0,
-   "kommentare_text": []
-  }
- ],
+ "storys_aktiv": [],
  "_fehlt": [
   "engaged_audience_demographics/this_month/age: 400 Not enough users",
   "engaged_audience_demographics/this_month/gender: 400 Not enough users",
