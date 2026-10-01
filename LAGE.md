@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 20:49 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 20:53 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -88,17 +88,19 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | täglich ca. 08:45 | – |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | täglich ca. 08:45 | ✅ ok |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 20:53 ✍️ Content-Fabrik: Wissens-Reel KSt-Staffel (Fr 09.10.) und Mittags-Storys 03./09./10.10. als Entwurf ([`57cc299`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/57cc299dca2fa36a99febde1189bac5ab0d85e5b))
+  - Plan: neu `08-story-tipp` (2026-10-03 12:15, entwurf); neu `08-story-heute` (2026-10-09 12:15, entwurf); neu `08-reel-kst-staffel` (2026-10-09 19:30, entwurf); neu `08-story-rueckblick` (2026-10-10 12:15, entwurf)
 - 20:49 📈 Statistik 2026-10-01 ([`03c29c8`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/03c29c89d0c80c5955295b2a456dd03d72540461))
   - `automatik/statistik`
 - 18:32 ✍️ Kalender: Drehbuch-Link im To-do für fehlende Clips ([`e66ed4c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e66ed4c28a0945cbba3b786ace32c49667f66a4f))
