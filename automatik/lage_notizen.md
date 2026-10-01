@@ -2,10 +2,9 @@
 - Reel Ampel (04.10.) mit Loris' Stimme `reel_stimme.mp4` (26 s) am 01.10. freigegeben (Issue #7).
 - Content-Fabrik 01.10.: Karussell latente Steuern (08.10.) + Storys und Split-Reel Excel gegen Tool (11.10.) freigegeben (Issues #12, #13). Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
-- Begleit-Reel Post 03 `reel_hinzurechnung.mp4` fertig, noch nicht im Plan. Hook-Bibliothek: `vorlagen/hooks/`.
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
 - Instagram-Wissen: `strategie/11_wissen_instagram.md`. Neu ab Okt.: **3 Reels (Mi, Fr, So 19:30) + 2 Karussells (Di, Do)**. Werbebudget nur für Beiträge, die organisch laufen.
-- Kalender-Feed `kalender.ics` (automatisch, Abo: EINRICHTUNG.md Schritt 6) – Loris muss ihn einmal in Google Kalender abonnieren.
+- Kalender-Feed `kalender.ics` läuft automatisch und ist in Google Kalender abonniert (01.10.). Content-Fabrik-Prompt kennt den neuen Rhythmus noch nicht → Loris gibt den Text in deren Unterhaltung ein.
 - Neue Reel-Slots: Mi 14.10. Begleit-Reel Hinzurechnung (Entwurf, Freigabe folgt). Sprechtexte für Fr 09.10. und Fr 16.10. in `posts/sprechtexte.md` → Loris schickt Sprachnachrichten. Übrige Mi/Fr-Slots füllt die Content-Fabrik (Fr 02.10. bleibt frei).
