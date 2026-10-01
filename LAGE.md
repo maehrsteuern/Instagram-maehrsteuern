@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 10:01 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 10:11 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -98,6 +98,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 10:11 ✍️ Plan: 3 Reels pro Woche (Mi/Fr/So) – Begleit-Reel Hinzurechnung Mi 14.10. als Entwurf, Sprechtexte für Fr 09.10. und 16.10. ([`b74ebc3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b74ebc3d4ec29d7655f46b313b584b65ffa66508))
+  - Plan: neu `07-reel-hinzurechnung` (2026-10-14 19:30, entwurf)
 - 10:01 ✍️ Strategie: Video Sebiforce (Verkaufen ohne Kaltakquise) eingearbeitet, Entscheidungen 2–3 Reels/Woche und Werbebudget nur für laufende Beiträge ([`f1b05cc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f1b05ccb0128933da2ecf6638ff3722b84122e9e))
   - `automatik/lage_notizen.md`, `strategie/11_wissen_instagram.md`
 - 09:48 ✍️ Strategie: Instagram-Wissen aus 5 Artikeln gesammelt (Algorithmus, Teilen/Speichern, Suche, Serien, Saison) und in Redaktionsplan/Reel-Regeln verlinkt ([`6398d4e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6398d4e1a4a781a0e285577dacb8d842ebc3313a))

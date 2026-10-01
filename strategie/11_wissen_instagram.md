@@ -98,7 +98,22 @@ und Zahlen aus `06_auswertung.md`.
   (keine erfundenen Ergebnisse, keine Arbeitgeber-Daten).
 - **Kommentar-Stichwort mit Auto-DM** (ManyChat): schon als Option in `04_dm_strecke.md` notiert, nur nach Freigabe.
 
+## Karussell oder Reel am Abend (Input Loris, 01.10.; Zahlen ungeprüft, Herkunft KI-Recherche)
+- **Fachthemen abends → Karussell**, wenn es um Verständnis, Speichern und Anfragen geht: Nach Feierabend (19–22 Uhr)
+  haben Leute Ruhe zum Wischen und speichern Steuer-/Software-Wissen für die Arbeit. Genannt: ~2× so viele
+  Speicherungen, Interaktionsrate ~7–10 % (Reels ~3–6 %).
+- **Zweite Chance nur beim Karussell:** Wer vorbeiscrollt, bekommt den Beitrag später oft erneut gezeigt – mit Folie 2
+  als Titel. → **Folie 2 muss allein als Einstieg funktionieren.**
+- **Reel abends → Reichweite bei Nicht-Followern** (genannt: ~36 % mehr Reichweite außerhalb der Community). Fachreel
+  darf nicht trocken sein: starker Hook in 3 s, Fehler-Format („Mach das nicht“), kurz.
+- **Reel als Teaser, Karussell als Tiefe:** Reel verweist aufs Profil/Karussell („Rechenweg im Karussell“) oder auf
+  ein PDF per DM. Genau unser Muster Di Karussell → Mi Begleit-Reel.
+- Geeignet fürs Karussell: Schritt-für-Schritt, Code-Ausschnitte, Steuertabellen, 5–10 logische Schritte.
+  Geeignet fürs Reel: kurze Kniffe, Fehler-Formate, Branchen-Erkenntnisse.
+- Gegen eigene Zahlen prüfen: Excel-Fehler-Karussell (06.10.) vs. Ampel-Reel (04.10.) in `06_auswertung.md`.
+
 ## Entscheidungen Loris (01.10.2026)
+- Neuvorstellung 01.10. bleibt **Karussell** (richtet sich an bestehende Follower; Reichweiten-Reel gab es schon am 29.09.).
 - **2–3 Reels pro Woche** zusätzlich zu den Karussells (Reels = Reichweite, Karussells = Vertrauen).
 - **Werbebudget:** kein Dauerbudget. Läuft ein Beitrag organisch gut, bewirbt Loris genau diesen (enge Zielgruppe).
 
