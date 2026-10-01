@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 18:02 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 18:32 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -95,6 +95,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 18:32 ✍️ Kalender: Drehbuch-Link im To-do für fehlende Clips ([`e66ed4c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e66ed4c28a0945cbba3b786ace32c49667f66a4f))
+  - `automatik/kalender.py`, `kalender.ics`
 - 18:02 🔀 Merge branch 'claude/busy-shannon-s341nd' into claude/instagram ([`1edc40b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1edc40b064d9335d593884fadc7d23edf2da9b8e))
 - 18:01 ✍️ Kalender-Feed: kalender.ics aus plan.json (Beiträge, Freigaben, fehlende Clips/Musik), wird mit der Lage automatisch neu geschrieben ([`41c3f6e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/41c3f6e6046a45f36542b9dece14a75f99015307))
   - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/kalender.py`, `automatik/lage_notizen.md`, `kalender.ics`
