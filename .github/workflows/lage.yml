@@ -1,5 +1,6 @@
 name: Lage
 # Schreibt LAGE.md neu (automatik/lage.py): nach jedem Push, nach jedem Lauf der anderen Abläufe und jeden Morgen.
+# Schreibt außerdem kalender.ics (automatik/kalender.py) zum Abonnieren in Google Kalender.
 # Committet nur, wenn sich wirklich etwas geändert hat.
 on:
   push:
@@ -44,7 +45,8 @@ jobs:
           for versuch in 1 2 3 4; do
             git pull -q --rebase origin claude/instagram
             python automatik/lage.py
-            git add LAGE.md
+            python automatik/kalender.py
+            git add LAGE.md kalender.ics
             git diff --cached --quiet && exit 0
             git commit -q -m "Lage aktualisiert"
             git push -q origin HEAD:claude/instagram && exit 0

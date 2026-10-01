@@ -63,6 +63,13 @@ GitHub führt Zeitpläne (`schedule`) bei kleinen Repos oft verspätet oder gar 
 
 Bei Fehlern: 401 = Schlüssel falsch/abgelaufen · 403/404 = Berechtigung „Actions: Read and write“ oder Repo-Auswahl fehlt · 422 = Body/Branch falsch.
 
+## 6 · Instagram-Plan im Google Kalender (2 Min., einmalig)
+1. calendar.google.com am Rechner → links **Weitere Kalender +** → **Per URL**
+2. URL einfügen: `https://raw.githubusercontent.com/maehrsteuern/Instagram-maehrsteuern/claude/instagram/kalender.ics` → **Kalender hinzufügen**
+3. Beim neuen Kalender „Instagram maehrsteuern“ → ⋮ → **Einstellungen** → Benachrichtigungen: **0 Minuten vorher** (Google übernimmt Erinnerungen aus Feeds nicht von selbst)
+- Aktualisiert sich automatisch (Google holt den Feed alle paar Stunden, manchmal bis zu 1 Tag Verzögerung).
+- Inhalt: jeder Reel/Karussell-Termin, offene Freigaben, „von Hand posten“, fehlende Clips/Musik/Dateien. Feste Termine (Mo/Do-Check, persönliche To-dos) bleiben im eigenen Kalender.
+
 ## Wie es danach läuft
 | Wann | Was passiert | Wer |
 |---|---|---|

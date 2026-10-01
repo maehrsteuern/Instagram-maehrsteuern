@@ -4,6 +4,8 @@
 
 **Überblick:** `LAGE.md` – was als Nächstes online geht, was du tun musst, Automatik-Status und Protokoll jeder Änderung. Wird automatisch nach jedem Push und jedem Automatik-Lauf neu geschrieben (`automatik/lage.py`, `.github/workflows/lage.yml`); Notizen dazu in `automatik/lage_notizen.md`.
 
+**Kalender:** `kalender.ics` – alle Beiträge (Postzeit, Freigabe offen, von Hand posten) und To-dos (Clips/Musik fehlen) als Kalender-Feed, wird mit LAGE.md neu geschrieben (`automatik/kalender.py`). Abonnieren: `EINRICHTUNG.md` Schritt 6.
+
 Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code ist der Unterschied: Lösungen, die wirklich laufen.
 
 ## Struktur (neu)
