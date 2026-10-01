@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 08:56 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 09:13 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -99,6 +99,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 09:13 🔀 Merge: Freigabe robust gegen fehlgeschlagenes Speichern ([`559aec1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/559aec18abc324cf8b1f9488de5654154fade0e7))
+- 09:12 ✅ Freigabe: push mit Wiederholung, go/stop findet Beiträge auch ohne gespeicherte Issue-Nummer (über den Titel) ([`3070a04`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3070a04173765d6ea35cef39ea0e9c998d095b39))
+  - `automatik/freigabe.py`
 - 08:56 ✍️ Content-Fabrik 01.10.: Karussell latente Steuern (08.10.) mit Storys, Split-Reel Excel gegen Tool (11.10.) als Entwuerfe ([`4646f25`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4646f252f71029dfe7526ee2119864032710affe))
   - Plan: neu `05-story-frage` (2026-10-07 12:15, entwurf); neu `05-latente-steuern` (2026-10-08 19:30, entwurf); neu `05-story-teaser` (2026-10-08 19:35, entwurf); neu `06-reel-split` (2026-10-11 19:30, entwurf); neu `06-story-teaser` (2026-10-11 19:35, entwurf)
 - 08:21 📈 Statistik 2026-10-01 ([`431db3b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/431db3b1b6bbe22e73c56dd1258a827b7ec2d175))
