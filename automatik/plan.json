@@ -163,7 +163,7 @@
       "bilder": [
         "story_mi_frage.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "issue": 12
     },
     {
@@ -181,7 +181,7 @@
         "folie_07.png"
       ],
       "text": "bildunterschrift.txt",
-      "status": "entwurf",
+      "status": "freigegeben",
       "hinweis": "Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen",
       "issue": 12
     },
@@ -193,7 +193,7 @@
       "bilder": [
         "story_do_teaser.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "issue": 12
     },
     {
