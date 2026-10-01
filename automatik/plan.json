@@ -257,6 +257,16 @@
       "status": "freigegeben"
     },
     {
+      "id": "07-reel-hinzurechnung",
+      "zeit": "2026-10-14 19:30",
+      "typ": "reel",
+      "ordner": "posts/03_2026-10-13_gewst_hinzurechnung",
+      "video": "reel_hinzurechnung.mp4",
+      "text": "bildunterschrift_reel.txt",
+      "status": "entwurf",
+      "hinweis": "Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot"
+    },
+    {
       "id": "03-story-aufloesung",
       "zeit": "2026-10-16 12:15",
       "typ": "story",

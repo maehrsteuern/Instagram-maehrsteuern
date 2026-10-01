@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 09:48 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 10:01 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -14,13 +14,15 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
-- Instagram-Wissen gesammelt: `strategie/11_wissen_instagram.md` (5 Artikel + Video Sebiforce). Entschieden: 2–3 Reels/Woche zusätzlich zu Karussells; Werbebudget nur für Beiträge, die organisch laufen. Reel-Slots werden gerade geplant.
+- Instagram-Wissen: `strategie/11_wissen_instagram.md`. Neu ab Okt.: **3 Reels (Mi, Fr, So 19:30) + 2 Karussells (Di, Do)**. Werbebudget nur für Beiträge, die organisch laufen.
+- Neue Reel-Slots: Mi 14.10. Begleit-Reel Hinzurechnung (Entwurf, Freigabe folgt). Sprechtexte für Fr 09.10. und Fr 16.10. in `posts/sprechtexte.md` → Loris schickt Sprachnachrichten. Übrige Mi/Fr-Slots füllt die Content-Fabrik (Fr 02.10. bleibt frei).
 
 ## 👉 Braucht dich
 
 - 👉 **Danach Highlight „Start 👋“ von Hand anlegen** (`00-start-3` (Mi 30.09. 12:32))
 - ✋ **Von Hand posten** `00-neuvorstellung` (Do 01.10. 18:30) – In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen
 - 👉 **Danach:** Anpinnen (von Hand) (`00-neuvorstellung` (Do 01.10. 18:30))
+- 🟡 **Freigeben** `07-reel-hinzurechnung` (Mi 14.10. 19:30) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf clips** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
@@ -50,6 +52,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:30 | 🖼️ Karussell `03-gewst-hinzurechnung` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:35 | 📱 Story `03-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
+| Mi 14.10. 19:30 | 🎬 Reel `07-reel-hinzurechnung` | 🟡 Entwurf (wartet auf Freigabe) | Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot |
 | Fr 16.10. 12:15 | 📱 Story `03-story-aufloesung` | 🟢 freigegeben (geht automatisch online) |  |
 | Mo 19.10. 12:15 | 📱 Story `04-story-frage` | 🟡 Entwurf (wartet auf Freigabe) |  |
 | Di 20.10. 19:30 | 🎬 Reel `04-reel-mein-weg` | ⏳ wartet auf clips |  |
@@ -95,6 +98,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 10:01 ✍️ Strategie: Video Sebiforce (Verkaufen ohne Kaltakquise) eingearbeitet, Entscheidungen 2–3 Reels/Woche und Werbebudget nur für laufende Beiträge ([`f1b05cc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f1b05ccb0128933da2ecf6638ff3722b84122e9e))
+  - `automatik/lage_notizen.md`, `strategie/11_wissen_instagram.md`
 - 09:48 ✍️ Strategie: Instagram-Wissen aus 5 Artikeln gesammelt (Algorithmus, Teilen/Speichern, Suche, Serien, Saison) und in Redaktionsplan/Reel-Regeln verlinkt ([`6398d4e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6398d4e1a4a781a0e285577dacb8d842ebc3313a))
   - `README.md`, `automatik/lage_notizen.md`, `strategie/03_redaktionsplan.md`, `strategie/09_reel_regeln.md`, `strategie/11_wissen_instagram.md`
 - 09:43 ✍️ Lage-Notizen aktualisiert: Ampel-Reel freigegeben, Content-Fabrik 01.10. ergänzt, Neustart-Schritte für heute ([`14ea872`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/14ea8723269b97ca7c0353ad85c3a6985f47e3bd))

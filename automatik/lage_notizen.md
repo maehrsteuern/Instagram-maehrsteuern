@@ -6,4 +6,5 @@
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
-- Instagram-Wissen gesammelt: `strategie/11_wissen_instagram.md` (5 Artikel + Video Sebiforce). Entschieden: 2–3 Reels/Woche zusätzlich zu Karussells; Werbebudget nur für Beiträge, die organisch laufen. Reel-Slots werden gerade geplant.
+- Instagram-Wissen: `strategie/11_wissen_instagram.md`. Neu ab Okt.: **3 Reels (Mi, Fr, So 19:30) + 2 Karussells (Di, Do)**. Werbebudget nur für Beiträge, die organisch laufen.
+- Neue Reel-Slots: Mi 14.10. Begleit-Reel Hinzurechnung (Entwurf, Freigabe folgt). Sprechtexte für Fr 09.10. und Fr 16.10. in `posts/sprechtexte.md` → Loris schickt Sprachnachrichten. Übrige Mi/Fr-Slots füllt die Content-Fabrik (Fr 02.10. bleibt frei).
