@@ -120,7 +120,7 @@ Mit einem Instagram-Automatisierungsdienst wie ManyChat (kostenloser Einstieg) S
 - [x] **Sofortantwort** aktiv (30.09.2026), hat schon bei einer neuen Unterhaltung ausgelöst
 - [x] Gespeicherte Antworten `tool1`–`tool5`, `termin`, `erinnerung`, `gebucht` angelegt (in der App `tool2` noch auf „Berechnungen“ ändern)
 - [ ] Test: „TOOL“ von einem Konto, das noch nie geschrieben hat
-- [ ] Nach 1–2 Wochen auswerten: Anzahl TOOL-DMs, Verteilung 1–5, Termine. Bei viel Aufwand ManyChat Free prüfen (nur nach Freigabe)
+- [ ] Nach 1–2 Wochen auswerten: Anzahl TOOL-DMs, Verteilung 1–5, Termine. Stand 01.10.: 0 DMs → ManyChat erst einrichten, wenn **mehr als ~5 TOOL-DMs pro Tag** kommen oder ein Beitrag deutlich über 5.000 Konten erreicht (Entscheidung Loris 01.10., nur nach Freigabe)
 
 ## Nachverfolgen
 Jede Anfrage eine Zeile in `dm_tracking.csv` (Datum, Handle-Kürzel, Gruppe 1–4, Stichwort, Stufe, Termin ja/nein). So siehst du nach 4 Wochen, welcher Beitrag die Anfragen gebracht hat. Keine vollen Namen oder Firmen eintragen.
