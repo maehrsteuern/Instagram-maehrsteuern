@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 21:39 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 22:55 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -84,17 +84,19 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | täglich ca. 08:45 | – |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | täglich ca. 08:45 | ✅ ok |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 22:55 ✍️ Split-Reel als Begleit-Reel auf Mi 07.10. 19:30 vorgezogen (Teaser 19:35), Bildunterschrift oben/unten korrigiert ([`9c487b5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9c487b500d1fbec910db609568aa549348dfb7e1))
+  - Plan: `06-reel-split` zeit: 2026-10-11 19:30 → 2026-10-07 19:30; `06-story-teaser` zeit: 2026-10-11 19:35 → 2026-10-07 19:35
 - 21:39 ✅ Freigabe #15: go ([`a1c37f2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a1c37f287f46c60263bc0763f2c74dac956146fe))
   - Plan: `08-story-tipp` status: entwurf → freigegeben; `08-story-heute` status: entwurf → freigegeben; `08-reel-kst-staffel` status: entwurf → freigegeben; `08-story-rueckblick` status: entwurf → freigegeben
 - 20:53 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`c9bc6a3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c9bc6a3ea3cace2cbeeaf1eba8b7b2a70df90e0f))

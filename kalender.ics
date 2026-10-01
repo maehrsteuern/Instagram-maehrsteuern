@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:00-neuvorstellung@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261001T163000Z
 DTEND:20261001T171500Z
 SUMMARY:✋ 🖼️ Karussell „neuvorstellung“ – von Hand posten
@@ -25,7 +25,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:01-reel-ampel@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261004T173000Z
 DTEND:20261004T181500Z
 SUMMARY:🎬 Reel „ampel“ live – Kommentare beantworten
@@ -44,7 +44,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:02-excel-fehler@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261006T173000Z
 DTEND:20261006T181500Z
 SUMMARY:🖼️ Karussell „excel fehler“ live – Kommentare beantworte
@@ -61,8 +61,27 @@ TRIGGER:PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:06-reel-split@maehrsteuern
+DTSTAMP:20261001T205604Z
+DTSTART:20261007T173000Z
+DTEND:20261007T181500Z
+SUMMARY:🎬 Reel „split“ live – Kommentare beantworten
+DESCRIPTION:Geht automatisch online. Erste Stunde: jeden Kommentar mit Gege
+ nfrage beantworten\, TOOL-DMs prüfen.\nHebesatz ändert sich von 400 auf 
+ 450 %. 👀\nBegleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-
+ Screen Excel gegen Tool)\, auf Loris' Wunsch am 01.10. von So 11.10. auf M
+ i 07.10. vorgezogen.\nFreigabe: https://github.com/maehrsteuern/Instagram-
+ maehrsteuern/issues/13
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🎬 Reel „split“ live – Kommentare beantworten
+TRIGGER:PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:05-latente-steuern@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261008T173000Z
 DTEND:20261008T181500Z
 SUMMARY:🖼️ Karussell „latente steuern“ live – Kommentare beantwo
@@ -82,7 +101,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:08-reel-kst-staffel@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261009T173000Z
 DTEND:20261009T181500Z
 SUMMARY:🎬 Reel „kst staffel“ live – Kommentare beantworten
@@ -103,26 +122,8 @@ TRIGGER:PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:06-reel-split@maehrsteuern
-DTSTAMP:20261001T193955Z
-DTSTART:20261011T173000Z
-DTEND:20261011T181500Z
-SUMMARY:🎬 Reel „split“ live – Kommentare beantworten
-DESCRIPTION:Geht automatisch online. Erste Stunde: jeden Kommentar mit Gege
- nfrage beantworten\, TOOL-DMs prüfen.\nHebesatz ändert sich von 400 auf 
- 450 %. 👀\nSplit-Screen Excel gegen Tool (fertig aus Post 02)\, ohne Sti
- mme – laut Reel-Regeln eher Demo-Muster\; bei Zweifel stop\nFreigabe: ht
- tps://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:🎬 Reel „split“ live – Kommentare beantworten
-TRIGGER:PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:03-gewst-hinzurechnung@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261013T173000Z
 DTEND:20261013T181500Z
 SUMMARY:🖼️ Karussell „gewst hinzurechnung“ live – Kommentare bea
@@ -140,7 +141,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:07-reel-hinzurechnung@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261014T173000Z
 DTEND:20261014T181500Z
 SUMMARY:🎬 Reel „hinzurechnung“ live – Kommentare beantworten
@@ -158,7 +159,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:04-reel-mein-weg@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261020T173000Z
 DTEND:20261020T181500Z
 SUMMARY:⏳ 🎬 Reel „mein weg“ – wartet auf clips
@@ -173,7 +174,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:04-reel-mein-weg-todo@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261015T170000Z
 DTEND:20261015T172000Z
 SUMMARY:📦 Liefern für 🎬 Reel „mein weg“: clips
@@ -190,7 +191,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:04-reel-mein-weg-musik@maehrsteuern
-DTSTAMP:20261001T193955Z
+DTSTAMP:20261001T205604Z
 DTSTART:20261015T170000Z
 DTEND:20261015T171500Z
 SUMMARY:🎵 Musik fehlt: 🎬 Reel „mein weg“
