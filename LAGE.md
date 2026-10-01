@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 09:29 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 09:38 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -19,11 +19,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - 👉 **Danach Highlight „Start 👋“ von Hand anlegen** (`00-start-3` (Mi 30.09. 12:32))
 - ✋ **Von Hand posten** `00-neuvorstellung` (Do 01.10. 18:30) – In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen
 - 👉 **Danach:** Anpinnen (von Hand) (`00-neuvorstellung` (Do 01.10. 18:30))
-- 🟡 **Freigeben** `05-story-frage` (Mi 07.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12))
-- 🟡 **Freigeben** `05-latente-steuern` (Do 08.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12))
-- 🟡 **Freigeben** `05-story-teaser` (Do 08.10. 19:35) – „go“ oder „stop“ im Issue ([Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12))
-- 🟡 **Freigeben** `06-reel-split` (So 11.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13))
-- 🟡 **Freigeben** `06-story-teaser` (So 11.10. 19:35) – „go“ oder „stop“ im Issue ([Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13))
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf clips** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
@@ -40,16 +35,16 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Mo 05.10. 12:15 | 📱 Story `02-story-umfrage` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:35 | 📱 Story `02-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
-| Mi 07.10. 12:15 | 📱 Story `05-story-frage` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
+| Mi 07.10. 12:15 | 📱 Story `05-story-frage` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 
 ## 🗓️ Danach
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Do 08.10. 19:30 | 🖼️ Karussell `05-latente-steuern` | 🟡 Entwurf (wartet auf Freigabe) | Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
-| Do 08.10. 19:35 | 📱 Story `05-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
-| So 11.10. 19:30 | 🎬 Reel `06-reel-split` | 🟡 Entwurf (wartet auf Freigabe) | Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
-| So 11.10. 19:35 | 📱 Story `06-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
+| Do 08.10. 19:30 | 🖼️ Karussell `05-latente-steuern` | 🟢 freigegeben (geht automatisch online) | Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
+| Do 08.10. 19:35 | 📱 Story `05-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
+| So 11.10. 19:30 | 🎬 Reel `06-reel-split` | 🟢 freigegeben (geht automatisch online) | Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
+| So 11.10. 19:35 | 📱 Story `06-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:30 | 🖼️ Karussell `03-gewst-hinzurechnung` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:35 | 📱 Story `03-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
@@ -98,6 +93,10 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 09:38 ✅ Freigabe #12: go ([`af139c9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/af139c9b3518ba304516edbb193f44d9d6e376ec))
+  - Plan: `05-story-frage` status: entwurf → freigegeben; `05-latente-steuern` status: entwurf → freigegeben; `05-story-teaser` status: entwurf → freigegeben
+- 09:37 ✅ Freigabe #13: go ([`3768a94`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3768a9419c370c50ecd16a89a879e98556b0138d))
+  - Plan: `06-reel-split` status: entwurf → freigegeben; `06-story-teaser` status: entwurf → freigegeben
 - 09:29 ✅ Freigabe angefragt (2 Beitrag/Beiträge) ([`260979f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/260979f24133388d2d7cc77b878d811d9a21e817))
   - Plan: `05-story-frage` → Freigabe-Issue #12; `05-latente-steuern` → Freigabe-Issue #12; `05-story-teaser` → Freigabe-Issue #12; `06-reel-split` → Freigabe-Issue #13; `06-story-teaser` → Freigabe-Issue #13
 - 09:29 ✅ Freigabe #7: go – Reel Ampel (Stimme) So 04.10. 19:30 ([`349ebba`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/349ebbacc7d52731a96720c7d7538bb4a75e6fb4))
