@@ -2,17 +2,76 @@
  "ausgabe": "../../posts/08_2026-10-09_reel_kst_staffel/reel.mp4",
  "fps": 30,
  "ton": [
-  {"datei": "../../musik/atmo/tippen_fehlerton.mp3", "ab": 0.2, "start": 0.8, "dauer": 0.8, "lautstaerke": 1.1, "aus": 0.08},
-  {"datei": "../../musik/atmo/fehlerton.mp3", "ab": 1.3, "dauer": 0.6, "lautstaerke": 0.85},
-  {"datei": "../../musik/06_runway_lofi_ruhig.mp3", "ab": 2.6, "start": 0, "lautstaerke": 0.5, "ein": 0.3}
+  {
+   "datei": "../../musik/atmo/tippen_fehlerton.mp3",
+   "ab": 0.2,
+   "start": 0.8,
+   "dauer": 0.8,
+   "lautstaerke": 1.1,
+   "aus": 0.08
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 1.3,
+   "dauer": 0.6,
+   "lautstaerke": 0.85
+  },
+  {
+   "datei": "../../musik/06_runway_lofi_ruhig.mp3",
+   "ab": 2.6,
+   "start": 0,
+   "lautstaerke": 0.5,
+   "ein": 0.3
+  }
  ],
- "quellen": {"tabelle": {"video": "../hooks/bausteine/karte_oben_tabelle.mp4"}},
+ "quellen": {
+  "tabelle": {
+   "datei": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/tabelle_30prozent.png"
+  }
+ },
  "szenen": [
-  {"quelle": "tabelle", "dauer": 2.6, "ab": 1.2, "abdunkeln": 0.35, "text": [
-    {"wort": "Steuersatz: 30 %.", "y": 420, "ab": 0.2, "farbe": "weiss", "groesse": 115},
-    {"wort": "Ab 2028 falsch.", "y": 1380, "ab": 1.3, "farbe": "rot", "groesse": 140}]},
-  {"karte": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_staffel.png", "dauer": 2.6, "rein": "whip"},
-  {"karte": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_umkehr.png", "dauer": 2.8},
-  {"karte": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_ende.png", "dauer": 2.2}
+  {
+   "quelle": "tabelle",
+   "dauer": 2.6,
+   "text": [
+    {
+     "wort": "Steuersatz: 30 %.",
+     "y": 420,
+     "ab": 0.2,
+     "farbe": "weiss",
+     "groesse": 115
+    },
+    {
+     "wort": "Ab 2028 falsch.",
+     "y": 1440,
+     "ab": 1.3,
+     "farbe": "rot",
+     "groesse": 140
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    700,
+    940,
+    940
+   ]
+  },
+  {
+   "karte": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_staffel.png",
+   "dauer": 2.6,
+   "rein": "whip"
+  },
+  {
+   "karte": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_umkehr.png",
+   "dauer": 2.8
+  },
+  {
+   "karte": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_ende.png",
+   "dauer": 2.2
+  }
  ]
 }
