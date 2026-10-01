@@ -71,6 +71,11 @@ def erste_zeile(e):
     return ""
 
 
+def drehbuch(e):
+    pfad = f"{e['ordner']}/drehbuch.md"
+    return f"Drehbuch: https://github.com/{REPO}/blob/claude/instagram/{pfad}\n" if (WURZEL / pfad).exists() else ""
+
+
 def eintraege_zu_terminen(eintraege, jetzt):
     t = []
     for e in eintraege:
@@ -103,7 +108,7 @@ def eintraege_zu_terminen(eintraege, jetzt):
         if s.startswith("wartet"):
             t.append(termin(f"{e['id']}-todo", frist,
                             20, f"📦 Liefern für {name(e)}: {s.replace('wartet_auf_', '').replace('_', ' ')}",
-                            f"Postzeit {beginn:%d.%m. %H:%M}. Dateien hochladen oder Claude Bescheid geben.\n{info}"))
+                            f"Postzeit {beginn:%d.%m. %H:%M}. Dateien hochladen oder Claude Bescheid geben.\n{drehbuch(e)}{info}"))
         if e.get("musik_fehlt"):
             t.append(termin(f"{e['id']}-musik", frist, 15,
                             f"🎵 Musik fehlt: {name(e)}", f"Postzeit {beginn:%d.%m. %H:%M}. Titel/Stimmung an Claude oder in der App wählen."))
