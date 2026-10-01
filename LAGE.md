@@ -84,11 +84,11 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
-| Statistik | täglich ca. 08:45 | ✅ ok |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
-| Musik holen | nur von Hand | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
+| Statistik | täglich ca. 08:45 | – |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
+| Musik holen | nur von Hand | – |
 
 ## 📜 Protokoll – jede Änderung
 

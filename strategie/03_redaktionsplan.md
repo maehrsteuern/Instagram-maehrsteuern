@@ -16,6 +16,7 @@
 
 **3 Reels + 2 Karussells pro Woche** (Entscheidung 01.10.: Reels = Reichweite, Karussells = Vertrauen, siehe `11_wissen_instagram.md`).
 Säulen rotieren über die Slots: Demo (So), Praxis und Wissen (Di/Do), „Hinter dem Code“ alle 2–3 Wochen statt einer Demo.
+**Regel „Hinter dem Code“ (Feedback 01.10.):** Kein Technik-Jargon für die Steuer-Zielgruppe. Jeder Code-Einblick wird **sofort mit dem Aha-Moment im Kanzlei- bzw. Abteilungsalltag verknüpft** („Diese 10 Zeilen sparen dir das Suchen nach #BEZUG!“), nie Code um des Codes willen. Fachbegriffe aus der Programmierung (API, Parser, Framework …) nur, wenn sie im selben Satz übersetzt werden.
 
 Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründung in `05_veroeffentlichung.md`. Nach 4 Wochen die Uhrzeit anhand der Statistik prüfen.
 
