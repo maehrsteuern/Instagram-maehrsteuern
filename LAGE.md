@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 18:32 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 20:49 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -67,15 +67,12 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 ## 📈 Zahlen (täglich ca. 08:45)
 
 **352 Follower** · 1 Beiträge im Profil (Abruf 2026-10-01) · **-1** seit 2026-09-30 ⚠️
-Reichweite pro Tag: 28.09. **1** · 29.09. **126** · 30.09. **82** · 01.10. **13**
-
-| Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
-|---|---|---|---|---|---|
-| Mi 30.09. 18:37 | 61 | 45 | 0 | 2 | 0 |
+Reichweite pro Tag: 28.09. **1** · 29.09. **126** · 30.09. **82** · 01.10. **41**
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 246 (+4) | 145 | 6 | 0 | 1 | 3 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 76 | 26 | 4 | 2 | 1 | 6 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 248 (+6) | 146 | 6 | 0 | 1 | 3 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -94,6 +91,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 20:49 📈 Statistik 2026-10-01 ([`03c29c8`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/03c29c89d0c80c5955295b2a456dd03d72540461))
+  - `automatik/statistik`
 - 18:32 ✍️ Kalender: Drehbuch-Link im To-do für fehlende Clips ([`e66ed4c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e66ed4c28a0945cbba3b786ace32c49667f66a4f))
   - `automatik/kalender.py`, `kalender.ics`
 - 18:02 🔀 Merge branch 'claude/busy-shannon-s341nd' into claude/instagram ([`1edc40b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1edc40b064d9335d593884fadc7d23edf2da9b8e))
