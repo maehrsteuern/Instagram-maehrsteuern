@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 23:33 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 23:42 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -84,17 +84,19 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | täglich ca. 08:45 | – |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | täglich ca. 08:45 | ✅ ok |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 23:42 ✅ Freigabe 08: go – Wissens-Reel KSt-Staffel Fr 09.10. 19:30 (Einstieg neu mit 30-%-Tabelle) und Storys 03./09./10.10. ([`408aec1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/408aec19b17bf969055638edeb99707edf4cb3b2))
+  - `posts/08_2026-10-09_reel_kst_staffel`, `vorlagen/system/aufnahmen/tabelle_30prozent.html`, `vorlagen/system/schnitt/p08_reel_kst_staffel.json`
 - 23:33 ✍️ DM-Strecke: ManyChat erst ab mehr DMs (Schwelle festgehalten) ([`a24df07`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a24df07835a8e97cc929e291aac789076cad780e))
   - `strategie/04_dm_strecke.md`
 - 23:31 ✍️ Redaktionsplan: Regel fuer Hinter-dem-Code-Beitraege (kein Jargon, immer Aha im Kanzleialltag) ([`1c5285f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1c5285f0548874863ba8d4ae67e3c3f90dc23fb6))
