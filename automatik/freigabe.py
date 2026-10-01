@@ -6,7 +6,7 @@
 Ein Beitrag = alle Einträge mit derselben Nummer vorn in der ID (z. B. 05-karussell, 05-story-teaser).
 Umgebung: GH_TOKEN (GitHub-Token mit issues:write), GITHUB_REPOSITORY.
 """
-import json, os, re, subprocess, sys
+import json, os, re, subprocess, sys, time
 from pathlib import Path
 
 WURZEL = Path(__file__).resolve().parent.parent
@@ -28,8 +28,15 @@ def speichern(plan, nachricht):
     git("add", str(PLAN))
     if git("status", "--porcelain"):
         git("commit", "-m", nachricht)
-        git("pull", "--rebase", "-q")
-        git("push")
+        # andere Abläufe (Posten, Lage) committen parallel – bei Konflikt neu holen und nochmal
+        for versuch in range(5):
+            try:
+                git("pull", "--rebase", "-q")
+                git("push")
+                return
+            except subprocess.CalledProcessError:
+                time.sleep(5 * (versuch + 1))
+        raise RuntimeError("plan.json konnte nicht gespeichert werden (push 5× fehlgeschlagen)")
 
 
 def gruppen(plan):
@@ -98,6 +105,12 @@ def antwort(issue, kommentar):
         return
     plan = json.loads(PLAN.read_text())
     betroffen = [e for e in plan["eintraege"] if e.get("issue") == issue and e["status"] == "entwurf"]
+    if not betroffen:  # Issue-Nummer nie gespeichert (z. B. push nach dem Anlegen fehlgeschlagen) → über den Titel zuordnen
+        nr = re.match(r"Freigabe (\w+):", gh("issue", "view", str(issue), "--json", "title", "--jq", ".title"))
+        betroffen = [e for e in plan["eintraege"] if nr and e["id"].split("-")[0] == nr.group(1)
+                     and e["status"] == "entwurf" and not e.get("issue")]
+        for e in betroffen:
+            e["issue"] = issue
     if not betroffen:
         gh("issue", "comment", str(issue), "--body", "Nichts mehr offen für diese Freigabe.")
         return
