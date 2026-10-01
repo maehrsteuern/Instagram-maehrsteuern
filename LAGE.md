@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 23:31 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 23:33 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -84,17 +84,19 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | täglich ca. 08:45 | – |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | täglich ca. 08:45 | ✅ ok |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 23:33 ✍️ DM-Strecke: ManyChat erst ab mehr DMs (Schwelle festgehalten) ([`a24df07`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a24df07835a8e97cc929e291aac789076cad780e))
+  - `strategie/04_dm_strecke.md`
 - 23:31 ✍️ Redaktionsplan: Regel fuer Hinter-dem-Code-Beitraege (kein Jargon, immer Aha im Kanzleialltag) ([`1c5285f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1c5285f0548874863ba8d4ae67e3c3f90dc23fb6))
   - `strategie/03_redaktionsplan.md`
 - 22:55 ✍️ Split-Reel als Begleit-Reel auf Mi 07.10. 19:30 vorgezogen (Teaser 19:35), Bildunterschrift oben/unten korrigiert ([`9c487b5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9c487b500d1fbec910db609568aa549348dfb7e1))
