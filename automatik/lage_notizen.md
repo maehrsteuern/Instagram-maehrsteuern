@@ -1,7 +1,8 @@
-- Neustart der Seite läuft: Start-Storys Mi 30.09. ab 12:30, Neuvorstellung (Karussell) Do 01.10. von Hand in der App geplant.
-- Reel „Mein Weg“ (20.10.) wartet auf eigene Clips – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
+- Neustart der Seite: Start-Storys und Vorfreude-Story am 30.09. online. Neuvorstellung (Karussell) Do 01.10. 18:30 von Hand in der App geplant → danach anpinnen, in Story teilen, Highlight „Start 👋“ anlegen.
+- Reel Ampel (04.10.) mit Loris' Stimme `reel_stimme.mp4` (26 s) am 01.10. freigegeben (Issue #7).
+- Content-Fabrik 01.10.: Karussell latente Steuern (08.10.) + Storys und Split-Reel Excel gegen Tool (11.10.) freigegeben (Issues #12, #13). Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
+- Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
+- Begleit-Reel Post 03 `reel_hinzurechnung.mp4` fertig, noch nicht im Plan. Hook-Bibliothek: `vorlagen/hooks/`.
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
-- Externer Takt fürs Posten läuft seit 30.09. 12:47 (cron-job.org, alle 15 Min., Test 204 ✓). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
-- Reel Ampel (04.10.): Test mit Loris' Stimme `reel_stimme.mp4` (26 s) – neue Freigabe angefragt (neues Issue), mit „go“ antworten.
-- Begleit-Reels fertig: Post 02 Split-Screen `reel_split.mp4`, Post 03 `reel_hinzurechnung.mp4` (noch nicht im Plan). Hook-Bibliothek: `vorlagen/hooks/`.
+- Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
