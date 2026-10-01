@@ -89,7 +89,7 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
 | Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | 🔴 [fehlgeschlagen](https://github.com/maehrsteuern/Instagram-maehrsteuern/actions/runs/36827461192) Do 01.10. 08:56 |
 | Statistik | täglich ca. 08:45 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
 | Musik holen | nur von Hand | ✅ ok |
