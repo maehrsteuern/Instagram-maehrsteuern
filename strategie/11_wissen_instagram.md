@@ -1,6 +1,6 @@
 # 11 · Wissen Instagram – was Reichweite bringt (Stand 01.10.2026)
 
-Gesammelt aus Artikeln, die Loris geschickt hat (Quellen unten). Übernommen ist **nur, was zu @maehrsteuern passt**
+Gesammelt aus Artikeln und einem Video, die Loris geschickt hat (Quellen unten). Übernommen ist **nur, was zu @maehrsteuern passt**
 (Steuern × Code, kleine Fachnische, ~350 Follower). Gilt für die Content-Fabrik zusätzlich zu
 `08_hooks.md`, `09_reel_regeln.md` und `10_software_reel_konzept.md`. Bei Widerspruch gewinnen unsere eigenen Regeln
 und Zahlen aus `06_auswertung.md`.
@@ -72,12 +72,35 @@ und Zahlen aus `06_auswertung.md`.
 - Statistik nicht nur nach Likes lesen: **Geteilt, Gespeichert, Durchschaurate, Profilbesuche, Follows** zählen –
   und prüfen, ob die Richtigen erreicht werden (deutschsprachig, Steuern).
 
-## Offen – Entscheidung Loris
-- **Mehr als 1 Reel pro Woche?** Mehrere Quellen nennen „nur ein Reel pro Woche“ als Wachstumsbremse.
-  Plan heute: 1 Reel (So) + 1–2 Karussells. Option: Begleit-Reels aus Karussells (z. B. `reel_hinzurechnung.mp4`)
-  als zweites Reel unter der Woche.
-- **Kleines Werbebudget?** impulse.de: rein organisch ist große Reichweite schwer, „täglich ein paar Euro“ mit enger
-  Zielgruppe. Erst sinnvoll, wenn ein Beitrag organisch gut läuft (dann diesen bewerben).
+## Verkaufen ohne Kaltakquise (YouTube Sebiforce, Auswertung per Gemini aus Screenshots)
+- **Keine Cold DMs.** Massen-Nachrichten mit Verkaufsabsicht nerven und beschädigen die Marke, gerade bei Steuer-Profis.
+  Unser Weg bleibt: Leute schreiben **von sich aus** `TOOL` (`04_dm_strecke.md`), Content übernimmt die Vorauswahl.
+- **Sog statt Druck:** Angebot zeigen, Entscheidung beim Kunden lassen. Wer freiwillig mehrere Beiträge konsumiert hat,
+  kommt mit einer ersten Kaufentscheidung in die DM.
+- **Rollen der Formate:**
+  - **Reels = Reichweite** (neue Leute aufs Profil),
+  - **Karussells = Vertrauen und Anfragen** (erreichen vor allem bestehende Follower; im Beispiel ~4× mehr Anfragen
+    je 10.000 Erreichte als Reels),
+  - **Storys = Nähe** (Einblick, Unfertiges zeigen, eigene Meinung).
+  → Darum Reels **zusätzlich** zu den Karussells, nicht statt ihnen.
+- **Vertrauen braucht Monate.** Viel Reichweite ohne Vertrauensaufbau bringt keine Anfragen → Takt halten, eigene
+  Meinung zeigen (Brand Voice), auch wenn das etwas Reichweite kostet.
+- **Evergreen-Inhalte** bauen eine Bibliothek auf, die noch in Jahren funktioniert (Prüfschemata, typische Fehler,
+  Excel-Grundsätze) – aktuelle Themen (KSt 2028) ergänzen, nicht ersetzen.
+- **Emotionaler Aufhänger:** Ängste und Probleme der Zielgruppe ansprechen, dich als Lösung zeigen
+  („Die 3 Fehler, die mich im Abschluss Stunden gekostet haben“). Man muss nicht der Klügste sein, nur ein paar Jahre
+  Vorsprung haben.
+- **Verkaufsphasen in Storys kosten Reichweite** (Zuschauer springen ab). Werbung für das Tool nur dosiert, nie
+  mehrere Tage am Stück – 30–40 % Rückgang sind vertretbar, mehr nicht.
+- **Idee Freebie (später):** etwas Kostenloses mit echtem Nutzen, das auf das Tool verweist – z. B. Excel-Vorlage
+  „KSt-Staffel 2028–2032“ oder Checkliste „7 Punkte Abschluss“ als PDF, per DM-Stichwort. Erst, wenn die DM-Strecke läuft.
+- **Social Proof:** Echte Kundengeschichten schlagen Feature-Listen. **Erst mit echten, freigegebenen Fällen**
+  (keine erfundenen Ergebnisse, keine Arbeitgeber-Daten).
+- **Kommentar-Stichwort mit Auto-DM** (ManyChat): schon als Option in `04_dm_strecke.md` notiert, nur nach Freigabe.
+
+## Entscheidungen Loris (01.10.2026)
+- **2–3 Reels pro Woche** zusätzlich zu den Karussells (Reels = Reichweite, Karussells = Vertrauen).
+- **Werbebudget:** kein Dauerbudget. Läuft ein Beitrag organisch gut, bewirbt Loris genau diesen (enge Zielgruppe).
 
 ## Bewusst nicht übernommen
 - Trends und Trend-Sounds **ohne Bezug zur Nische** – nur, wenn sie sich sauber auf Steuern übertragen lassen.
@@ -91,5 +114,5 @@ und Zahlen aus `06_auswertung.md`.
 - 100partnerprogramme.de/magazin/7-tipps-fuer-professionelle-instagram-reels-so-gehst-du-viral/
 - follower24.de/blog/instagram-viral-gehen/
 - impulse.de/marketing/instagram-strategie/7306688.html
-- YouTube „Die 3 besten Strategien, um Kunden auf Instagram zu gewinnen“ (Sebiforce, O47GvFx6VQ8) – **noch nicht
-  ausgewertet**, YouTube blockt den Abruf aus der Cloud. Kernpunkte nachtragen, sobald Transkript oder Stichworte da sind.
+- YouTube „Die 3 besten Strategien, um Kunden auf Instagram zu gewinnen“ (Sebiforce, O47GvFx6VQ8) – ausgewertet über
+  Gemini-Zusammenfassung der Transkript-Screenshots (Abruf aus der Cloud blockiert).
