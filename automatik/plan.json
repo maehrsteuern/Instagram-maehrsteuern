@@ -104,7 +104,8 @@
       "bilder": [
         "story_sa_tipp.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 15
     },
     {
       "id": "01-reel-ampel",
@@ -214,7 +215,8 @@
       "bilder": [
         "story_fr_heute.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 15
     },
     {
       "id": "08-reel-kst-staffel",
@@ -225,7 +227,8 @@
       "titelbild": "reel_titel.png",
       "text": "bildunterschrift.txt",
       "status": "entwurf",
-      "hinweis": "Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses."
+      "hinweis": "Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses.",
+      "issue": 15
     },
     {
       "id": "08-story-rueckblick",
@@ -235,7 +238,8 @@
       "bilder": [
         "story_sa_rueckblick.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 15
     },
     {
       "id": "06-reel-split",
