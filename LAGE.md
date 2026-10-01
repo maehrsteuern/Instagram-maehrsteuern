@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 09:13 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 09:29 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -87,17 +87,19 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
-| Statistik | täglich ca. 08:45 | – |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
-| Musik holen | nur von Hand | – |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
+| Statistik | täglich ca. 08:45 | ✅ ok |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
+| Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 09:29 ✅ Freigabe #7: go – Reel Ampel (Stimme) So 04.10. 19:30 ([`349ebba`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/349ebbacc7d52731a96720c7d7538bb4a75e6fb4))
+  - Plan: `01-reel-ampel` status: entwurf → freigegeben
 - 09:13 🔀 Merge: Freigabe robust gegen fehlgeschlagenes Speichern ([`559aec1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/559aec18abc324cf8b1f9488de5654154fade0e7))
 - 09:12 ✅ Freigabe: push mit Wiederholung, go/stop findet Beiträge auch ohne gespeicherte Issue-Nummer (über den Titel) ([`3070a04`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3070a04173765d6ea35cef39ea0e9c998d095b39))
   - `automatik/freigabe.py`
