@@ -156,6 +156,65 @@
       "status": "freigegeben"
     },
     {
+      "id": "05-story-frage",
+      "zeit": "2026-10-07 12:15",
+      "typ": "story",
+      "ordner": "posts/05_2026-10-08_latente_steuern",
+      "bilder": [
+        "story_mi_frage.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "05-latente-steuern",
+      "zeit": "2026-10-08 19:30",
+      "typ": "karussell",
+      "ordner": "posts/05_2026-10-08_latente_steuern",
+      "bilder": [
+        "folie_01.png",
+        "folie_02.png",
+        "folie_03.png",
+        "folie_04.png",
+        "folie_05.png",
+        "folie_06.png",
+        "folie_07.png"
+      ],
+      "text": "bildunterschrift.txt",
+      "status": "entwurf",
+      "hinweis": "Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen"
+    },
+    {
+      "id": "05-story-teaser",
+      "zeit": "2026-10-08 19:35",
+      "typ": "story",
+      "ordner": "posts/05_2026-10-08_latente_steuern",
+      "bilder": [
+        "story_do_teaser.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "06-reel-split",
+      "zeit": "2026-10-11 19:30",
+      "typ": "reel",
+      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "video": "reel_split.mp4",
+      "titelbild": "reel_split_titel.png",
+      "text": "bildunterschrift_reel.txt",
+      "status": "entwurf",
+      "hinweis": "Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop"
+    },
+    {
+      "id": "06-story-teaser",
+      "zeit": "2026-10-11 19:35",
+      "typ": "story",
+      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "bilder": [
+        "story_so_teaser_reel.png"
+      ],
+      "status": "entwurf"
+    },
+    {
       "id": "03-story-quiz",
       "zeit": "2026-10-12 12:15",
       "typ": "story",
