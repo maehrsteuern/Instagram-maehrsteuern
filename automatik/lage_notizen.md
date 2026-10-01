@@ -6,3 +6,4 @@
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
+- Instagram-Wissen gesammelt: `strategie/11_wissen_instagram.md` (5 Artikel). Offen: YouTube-Video Sebiforce (Abruf blockiert, Stichworte von Loris nötig); Entscheidung 2. Reel pro Woche / kleines Werbebudget.

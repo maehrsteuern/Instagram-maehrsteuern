@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 09:38 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 09:43 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -14,6 +14,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - DM-Strecke: nur Sofortantwort automatisch, Rest von Hand (`strategie/04_dm_strecke.md`).
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
+- Instagram-Wissen gesammelt: `strategie/11_wissen_instagram.md` (5 Artikel). Offen: YouTube-Video Sebiforce (Abruf blockiert, Stichworte von Loris nötig); Entscheidung 2. Reel pro Woche / kleines Werbebudget.
 
 ## 👉 Braucht dich
 
@@ -94,6 +95,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 09:43 ✍️ Lage-Notizen aktualisiert: Ampel-Reel freigegeben, Content-Fabrik 01.10. ergänzt, Neustart-Schritte für heute ([`14ea872`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/14ea8723269b97ca7c0353ad85c3a6985f47e3bd))
+  - `automatik/lage_notizen.md`
 - 09:38 ✅ Freigabe #12: go ([`af139c9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/af139c9b3518ba304516edbb193f44d9d6e376ec))
   - Plan: `05-story-frage` status: entwurf → freigegeben; `05-latente-steuern` status: entwurf → freigegeben; `05-story-teaser` status: entwurf → freigegeben
 - 09:37 ✅ Freigabe #13: go ([`3768a94`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3768a9419c370c50ecd16a89a879e98556b0138d))

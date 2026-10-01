@@ -1,6 +1,7 @@
 # Reel-Regeln aus Feedback (Stand 30.09.2026)
 
 Ergänzt die Formel in `08_demo_reel_formel.md`. Gilt für jedes Reel der Content-Fabrik.
+Allgemeines Wissen (Algorithmus, Teilen, Länge, Cover, Suche): `11_wissen_instagram.md`.
 Vorlage zum Kopieren: `vorlagen/system/schnitt/p01_reel_ampel_hook.json` (Renderer `vorlagen/system/montage.py`).
 
 ## Feedback Loris zum Ampel-Reel `reel_hook.mp4` (30.09.)

@@ -18,6 +18,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/08_demo_reel_formel.md` | Aufbau für Demo-Reels (Schmerz → Schnitt → Höhepunkt → Aufruf) |
 | `strategie/09_reel_regeln.md` | Reel-Regeln aus Feedback: Hook, KI-Clips, Ton, Safe-Zone, Farben |
 | `strategie/10_software_reel_konzept.md` | Eigenes Reel-Konzept für Software (Split-Screen, Satisfying Software, Gesicht + Screen), Bildschirmaufnahmen |
+| `strategie/11_wissen_instagram.md` | Gesammeltes Instagram-Wissen: Algorithmus-Signale, Teilen/Speichern, Suche, Serien, Saison, offene Entscheidungen |
 | `vorlagen/hooks/` | Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8–2,8 s), Übersicht in `README.md` |
 | `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
 | `strategie/dm_tracking.csv` | Liste zum Nachverfolgen der Anfragen |
