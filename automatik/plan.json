@@ -178,6 +178,29 @@
       "issue": 12
     },
     {
+      "id": "06-reel-split",
+      "zeit": "2026-10-07 19:30",
+      "typ": "reel",
+      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "video": "reel_split.mp4",
+      "titelbild": "reel_split_titel.png",
+      "text": "bildunterschrift_reel.txt",
+      "status": "freigegeben",
+      "hinweis": "Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen.",
+      "issue": 13
+    },
+    {
+      "id": "06-story-teaser",
+      "zeit": "2026-10-07 19:35",
+      "typ": "story",
+      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "bilder": [
+        "story_so_teaser_reel.png"
+      ],
+      "status": "freigegeben",
+      "issue": 13
+    },
+    {
       "id": "05-latente-steuern",
       "zeit": "2026-10-08 19:30",
       "typ": "karussell",
@@ -240,29 +263,6 @@
       ],
       "status": "freigegeben",
       "issue": 15
-    },
-    {
-      "id": "06-reel-split",
-      "zeit": "2026-10-11 19:30",
-      "typ": "reel",
-      "ordner": "posts/02_2026-10-06_excel_fehler",
-      "video": "reel_split.mp4",
-      "titelbild": "reel_split_titel.png",
-      "text": "bildunterschrift_reel.txt",
-      "status": "freigegeben",
-      "hinweis": "Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop",
-      "issue": 13
-    },
-    {
-      "id": "06-story-teaser",
-      "zeit": "2026-10-11 19:35",
-      "typ": "story",
-      "ordner": "posts/02_2026-10-06_excel_fehler",
-      "bilder": [
-        "story_so_teaser_reel.png"
-      ],
-      "status": "freigegeben",
-      "issue": 13
     },
     {
       "id": "03-story-quiz",

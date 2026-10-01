@@ -40,6 +40,8 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Di 06.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:35 | 📱 Story `02-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
 | Mi 07.10. 12:15 | 📱 Story `05-story-frage` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
+| Mi 07.10. 19:30 | 🎬 Reel `06-reel-split` | 🟢 freigegeben (geht automatisch online) | Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen. · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
+| Mi 07.10. 19:35 | 📱 Story `06-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
 | Do 08.10. 19:30 | 🖼️ Karussell `05-latente-steuern` | 🟢 freigegeben (geht automatisch online) | Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Do 08.10. 19:35 | 📱 Story `05-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 
@@ -50,8 +52,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Fr 09.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Fr 09.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟢 freigegeben (geht automatisch online) | Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
-| So 11.10. 19:30 | 🎬 Reel `06-reel-split` | 🟢 freigegeben (geht automatisch online) | Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
-| So 11.10. 19:35 | 📱 Story `06-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:30 | 🖼️ Karussell `03-gewst-hinzurechnung` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:35 | 📱 Story `03-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
@@ -84,11 +84,11 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
-| Statistik | täglich ca. 08:45 | ✅ ok |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
-| Musik holen | nur von Hand | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
+| Statistik | täglich ca. 08:45 | – |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
+| Musik holen | nur von Hand | – |
 
 ## 📜 Protokoll – jede Änderung
 
