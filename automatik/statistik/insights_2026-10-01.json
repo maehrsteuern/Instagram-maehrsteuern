@@ -1,0 +1,944 @@
+{
+ "abgerufen": "2026-10-01",
+ "konto": {
+  "username": "maehrsteuern",
+  "name": "Loris | Steuer-Tools x Code",
+  "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
+  "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
+  "followers_count": 352,
+  "follows_count": 253,
+  "media_count": 1
+ },
+ "konto_verlauf": [
+  {
+   "von": "2026-09-01",
+   "bis": "2026-10-01",
+   "reach": {
+    "gesamt": 195,
+    "aufgeteilt": {
+     "FOLLOWER": 104,
+     "NON_FOLLOWER": 93
+    }
+   },
+   "views": {
+    "gesamt": 1041,
+    "aufgeteilt": {
+     "FOLLOWER": 718,
+     "UNKNOWN": 3,
+     "NON_FOLLOWER": 320
+    }
+   },
+   "accounts_engaged": 11,
+   "total_interactions": 30,
+   "likes": 22,
+   "comments": 0,
+   "shares": 4,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 5,
+     "NON_FOLLOWER": 6
+    }
+   }
+  },
+  {
+   "von": "2026-08-02",
+   "bis": "2026-09-01",
+   "reach": {
+    "gesamt": 36,
+    "aufgeteilt": {
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 33
+    }
+   },
+   "views": {
+    "gesamt": 127,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "UNKNOWN": 2,
+     "NON_FOLLOWER": 119
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 7,
+     "NON_FOLLOWER": 9
+    }
+   }
+  },
+  {
+   "von": "2026-07-03",
+   "bis": "2026-08-02",
+   "reach": {
+    "gesamt": 74,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 72
+    }
+   },
+   "views": {
+    "gesamt": 264,
+    "aufgeteilt": {
+     "FOLLOWER": 17,
+     "UNKNOWN": 15,
+     "NON_FOLLOWER": 232
+    }
+   },
+   "accounts_engaged": 1,
+   "total_interactions": 2,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 7
+    }
+   }
+  },
+  {
+   "von": "2026-06-03",
+   "bis": "2026-07-03",
+   "reach": {
+    "gesamt": 51,
+    "aufgeteilt": {
+     "FOLLOWER": 5,
+     "NON_FOLLOWER": 46
+    }
+   },
+   "views": {
+    "gesamt": 172,
+    "aufgeteilt": {
+     "UNKNOWN": 2,
+     "FOLLOWER": 21,
+     "NON_FOLLOWER": 149
+    }
+   },
+   "accounts_engaged": 5,
+   "total_interactions": 6,
+   "likes": 4,
+   "comments": 2,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 10
+    }
+   }
+  },
+  {
+   "von": "2026-05-04",
+   "bis": "2026-06-03",
+   "reach": {
+    "gesamt": 52,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 50
+    }
+   },
+   "views": {
+    "gesamt": 172,
+    "aufgeteilt": {
+     "FOLLOWER": 18,
+     "UNKNOWN": 7,
+     "NON_FOLLOWER": 147
+    }
+   },
+   "accounts_engaged": 3,
+   "total_interactions": 8,
+   "likes": 8,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 10,
+     "NON_FOLLOWER": 5
+    }
+   }
+  },
+  {
+   "von": "2026-04-04",
+   "bis": "2026-05-04",
+   "reach": {
+    "gesamt": 57,
+    "aufgeteilt": {
+     "FOLLOWER": 1,
+     "NON_FOLLOWER": 56
+    }
+   },
+   "views": {
+    "gesamt": 113,
+    "aufgeteilt": {
+     "FOLLOWER": 9,
+     "UNKNOWN": 10,
+     "NON_FOLLOWER": 94
+    }
+   },
+   "accounts_engaged": 2,
+   "total_interactions": 3,
+   "likes": 1,
+   "comments": 0,
+   "shares": 1,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 14
+    }
+   }
+  },
+  {
+   "von": "2026-03-05",
+   "bis": "2026-04-04",
+   "reach": {
+    "gesamt": 51,
+    "aufgeteilt": {
+     "FOLLOWER": 1,
+     "NON_FOLLOWER": 50
+    }
+   },
+   "views": {
+    "gesamt": 112,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "UNKNOWN": 3,
+     "NON_FOLLOWER": 107
+    }
+   },
+   "accounts_engaged": 2,
+   "total_interactions": 8,
+   "likes": 6,
+   "comments": 0,
+   "shares": 1,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 7,
+     "NON_FOLLOWER": 10
+    }
+   }
+  },
+  {
+   "von": "2026-02-03",
+   "bis": "2026-03-05",
+   "reach": {
+    "gesamt": 37,
+    "aufgeteilt": {
+     "FOLLOWER": 1,
+     "NON_FOLLOWER": 36
+    }
+   },
+   "views": {
+    "gesamt": 99,
+    "aufgeteilt": {
+     "UNKNOWN": 1,
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 96
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 6,
+   "likes": 6,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 7,
+     "NON_FOLLOWER": 14
+    }
+   }
+  },
+  {
+   "von": "2026-01-04",
+   "bis": "2026-02-03",
+   "reach": {
+    "gesamt": 104,
+    "aufgeteilt": {
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 101
+    }
+   },
+   "views": {
+    "gesamt": 442,
+    "aufgeteilt": {
+     "UNKNOWN": 2,
+     "FOLLOWER": 11,
+     "NON_FOLLOWER": 429
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 4,
+   "likes": 7,
+   "comments": 0,
+   "shares": 0,
+   "saves": -3,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 11,
+     "NON_FOLLOWER": 15
+    }
+   }
+  },
+  {
+   "von": "2025-12-05",
+   "bis": "2026-01-04",
+   "reach": {
+    "gesamt": 120,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 114
+    }
+   },
+   "views": {
+    "gesamt": 393,
+    "aufgeteilt": {
+     "FOLLOWER": 33,
+     "UNKNOWN": 6,
+     "NON_FOLLOWER": 354
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 14,
+   "likes": 14,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 10,
+     "NON_FOLLOWER": 16
+    }
+   }
+  },
+  {
+   "von": "2025-11-05",
+   "bis": "2025-12-05",
+   "reach": {
+    "gesamt": 79,
+    "aufgeteilt": {
+     "FOLLOWER": 7,
+     "NON_FOLLOWER": 73
+    }
+   },
+   "views": {
+    "gesamt": 189,
+    "aufgeteilt": {
+     "UNKNOWN": 6,
+     "FOLLOWER": 19,
+     "NON_FOLLOWER": 164
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 3,
+   "comments": 0,
+   "shares": 0,
+   "saves": -2,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 17,
+     "NON_FOLLOWER": 22
+    }
+   }
+  },
+  {
+   "von": "2025-10-06",
+   "bis": "2025-11-05",
+   "reach": {
+    "gesamt": 101,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 95
+    }
+   },
+   "views": {
+    "gesamt": 253,
+    "aufgeteilt": {
+     "UNKNOWN": 6,
+     "FOLLOWER": 39,
+     "NON_FOLLOWER": 208
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 4,
+   "likes": 4,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 21,
+     "NON_FOLLOWER": 18
+    }
+   }
+  },
+  {
+   "von": "2025-09-06",
+   "bis": "2025-10-06",
+   "reach": {
+    "gesamt": 223,
+    "aufgeteilt": {
+     "FOLLOWER": 5,
+     "NON_FOLLOWER": 29
+    }
+   },
+   "views": {
+    "gesamt": 523,
+    "aufgeteilt": {
+     "FOLLOWER": 52,
+     "NON_FOLLOWER": 448,
+     "UNKNOWN": 23
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 20,
+   "likes": 14,
+   "comments": 1,
+   "shares": 2,
+   "saves": 1,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 4,
+     "NON_FOLLOWER": 5
+    }
+   }
+  },
+  {
+   "von": "2025-08-07",
+   "bis": "2025-09-06",
+   "reach": {
+    "gesamt": 628,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 566,
+    "aufgeteilt": {
+     "UNKNOWN": 15,
+     "NON_FOLLOWER": 514,
+     "FOLLOWER": 37
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 11,
+   "likes": 9,
+   "comments": 1,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  },
+  {
+   "von": "2025-07-08",
+   "bis": "2025-08-07",
+   "reach": {
+    "gesamt": 4848,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  },
+  {
+   "von": "2025-06-08",
+   "bis": "2025-07-08",
+   "reach": {
+    "gesamt": 4694,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 2,
+    "aufgeteilt": {
+     "EMAIL": 2
+    }
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  },
+  {
+   "von": "2025-05-09",
+   "bis": "2025-06-08",
+   "reach": {
+    "gesamt": 1428,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  },
+  {
+   "von": "2025-05-01",
+   "bis": "2025-05-09",
+   "reach": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  }
+ ],
+ "tageswerte_reichweite": {
+  "2026-09-02": 1,
+  "2026-09-03": 1,
+  "2026-09-04": 1,
+  "2026-09-05": 1,
+  "2026-09-06": 1,
+  "2026-09-07": 0,
+  "2026-09-08": 1,
+  "2026-09-09": 1,
+  "2026-09-10": 1,
+  "2026-09-11": 1,
+  "2026-09-12": 3,
+  "2026-09-13": 2,
+  "2026-09-14": 2,
+  "2026-09-15": 0,
+  "2026-09-16": 4,
+  "2026-09-17": 1,
+  "2026-09-18": 1,
+  "2026-09-19": 0,
+  "2026-09-20": 4,
+  "2026-09-21": 4,
+  "2026-09-22": 3,
+  "2026-09-23": 1,
+  "2026-09-24": 3,
+  "2026-09-25": 1,
+  "2026-09-26": 3,
+  "2026-09-27": 1,
+  "2026-09-28": 1,
+  "2026-09-29": 126,
+  "2026-09-30": 81
+ },
+ "zielgruppe": {
+  "follower_demographics": {
+   "this_month": {
+    "age": {
+     "13-17": 5,
+     "18-24": 22,
+     "25-34": 122,
+     "35-44": 97,
+     "45-54": 68,
+     "55-64": 24,
+     "65+": 14
+    },
+    "gender": {
+     "F": 152,
+     "M": 108,
+     "U": 92
+    },
+    "city": {
+     "Wölfis, Thüringen": 2,
+     "Jena, Thüringen": 2,
+     "Heidenheim, Baden-Württemberg": 2,
+     "Heidelberg, Baden-Württemberg": 2,
+     "Markt Sankt Florian, Upper Austria": 1,
+     "Munich, Bayern": 8,
+     "Aachen, Nordrhein-Westfalen": 1,
+     "Gotha, Thüringen": 3,
+     "Berlin, Berlin": 17,
+     "Hürth, Nordrhein-Westfalen": 2,
+     "Erfurt, Thüringen": 8,
+     "Suhl, Thüringen": 2,
+     "Hamburg, Hamburg": 8,
+     "Erfurt-Bindersleben, Thüringen": 2,
+     "Düsseldorf, Nordrhein-Westfalen": 2,
+     "Ludwigshafen, Rheinland-Pfalz": 2,
+     "Oberhausen, Nordrhein-Westfalen": 2,
+     "Dortmund, Nordrhein-Westfalen": 2,
+     "Dresden, Sachsen": 2,
+     "Ohrdruf, Thüringen": 5,
+     "Essen, Nordrhein-Westfalen": 6,
+     "Plaue, Thüringen": 2,
+     "Cologne, Nordrhein-Westfalen": 8,
+     "Nuremberg, Bayern": 2,
+     "Shanghai, Shanghai": 3,
+     "Ravensburg, Baden-Württemberg": 2,
+     "Haigerloch, Baden-Württemberg": 1,
+     "Wien, Vienna": 5,
+     "Wernberg-Köblitz, Bayern": 2,
+     "Kokrobite, Greater Accra Region": 1,
+     "Brazzaville, Brazzaville": 1,
+     "Hanover, Niedersachsen": 2,
+     "Schmalkalden, Thüringen": 1,
+     "Leipzig, Sachsen": 3,
+     "Filderstadt, Baden-Württemberg": 2,
+     "Arnstadt, Thüringen": 4,
+     "Frankfurt, Hessen": 3,
+     "Oberasbach, Bayern": 1,
+     "Viersen, Nordrhein-Westfalen": 3,
+     "Flensburg, Schleswig-Holstein": 2,
+     "Niederense, Nordrhein-Westfalen": 1,
+     "Stuttgart, Baden-Württemberg": 2,
+     "Zweibrücken, Rheinland-Pfalz": 1,
+     "Neuss, Nordrhein-Westfalen": 2,
+     "Gera, Thüringen": 2
+    },
+    "country": {
+     "DE": 272,
+     "LR": 1,
+     "BJ": 1,
+     "FR": 2,
+     "BR": 1,
+     "SD": 1,
+     "GB": 3,
+     "ID": 3,
+     "GD": 1,
+     "GE": 1,
+     "CA": 1,
+     "US": 9,
+     "GH": 1,
+     "CG": 1,
+     "CH": 2,
+     "IN": 2,
+     "GM": 1,
+     "CI": 1,
+     "KR": 1,
+     "ZA": 1,
+     "GR": 1,
+     "CN": 4,
+     "IT": 8,
+     "CO": 1,
+     "ES": 5,
+     "AR": 3,
+     "ZM": 1,
+     "XK": 1,
+     "AT": 15,
+     "CY": 1,
+     "CZ": 1,
+     "PH": 2,
+     "PK": 1,
+     "PL": 1,
+     "RO": 1
+    }
+   }
+  },
+  "reached_audience_demographics": {
+   "this_month": {
+    "age": {},
+    "gender": {},
+    "city": {},
+    "country": {}
+   },
+   "this_week": {
+    "age": {},
+    "gender": {},
+    "city": {},
+    "country": {}
+   }
+  }
+ },
+ "online_follower": {
+  "2026-09-29": {
+   "0": 88,
+   "1": 87,
+   "2": 96,
+   "3": 111,
+   "4": 104,
+   "5": 95,
+   "6": 110,
+   "7": 112,
+   "8": 106,
+   "9": 104,
+   "10": 118,
+   "11": 116,
+   "12": 111,
+   "13": 93,
+   "14": 59,
+   "15": 35,
+   "16": 19,
+   "17": 15,
+   "18": 17,
+   "19": 17,
+   "20": 28,
+   "21": 63,
+   "22": 93,
+   "23": 95
+  },
+  "2026-09-30": {}
+ },
+ "beitraege": [
+  {
+   "id": "18432424948196865",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "timestamp": "2026-09-29T13:42:19+0000",
+   "permalink": "https://www.instagram.com/reel/Dd34F9RtucT/",
+   "like_count": 6,
+   "comments_count": 0,
+   "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
+   "views": 245,
+   "reach": 144,
+   "likes": 6,
+   "comments": 0,
+   "saved": 1,
+   "shares": 3,
+   "total_interactions": 10,
+   "ig_reels_avg_watch_time": 6471,
+   "ig_reels_video_view_total_time": 1229514,
+   "reels_skip_rate": 67.2,
+   "_fehlt": [
+    "profile_visits",
+    "profile_activity",
+    "follows",
+    "navigation",
+    "replies"
+   ],
+   "kommentare_text": []
+  }
+ ],
+ "storys_aktiv": [
+  {
+   "id": "18636258832011236",
+   "zeit": "2026-09-30T16:37:20+0000",
+   "views": 48,
+   "reach": 36,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 1,
+   "profile_visits": 1,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 42,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18236605036318357",
+   "zeit": "2026-09-30T10:35:44+0000",
+   "views": 63,
+   "reach": 48,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 2,
+   "profile_visits": 2,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 58,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18190470130404373",
+   "zeit": "2026-09-30T10:35:22+0000",
+   "views": 66,
+   "reach": 51,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 2,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 64,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18431442943145862",
+   "zeit": "2026-09-30T10:35:00+0000",
+   "views": 78,
+   "reach": 57,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 1,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 70,
+   "replies": 0,
+   "kommentare_text": []
+  }
+ ],
+ "_fehlt": [
+  "engaged_audience_demographics/this_month/age: 400 Not enough users",
+  "engaged_audience_demographics/this_month/gender: 400 Not enough users",
+  "engaged_audience_demographics/this_month/city: 400 Not enough users",
+  "engaged_audience_demographics/this_month/country: 400 Not enough users",
+  "engaged_audience_demographics/this_week/age: 400 Not enough users",
+  "engaged_audience_demographics/this_week/gender: 400 Not enough users",
+  "engaged_audience_demographics/this_week/city: 400 Not enough users",
+  "engaged_audience_demographics/this_week/country: 400 Not enough users"
+ ]
+}
