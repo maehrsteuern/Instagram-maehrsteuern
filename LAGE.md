@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 08:18 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 08:21 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -58,22 +58,19 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
-**353 Follower** · 9 Beiträge im Profil (Abruf 2026-09-30)
-Reichweite pro Tag: 27.09. **1** · 28.09. **1** · 29.09. **126** · 30.09. **46**
+**352 Follower** · 1 Beiträge im Profil (Abruf 2026-10-01) · **-1** seit 2026-09-30 ⚠️
+Reichweite pro Tag: 27.09. **1** · 28.09. **1** · 29.09. **126** · 30.09. **81**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| Di 29.09. 15:46 | 115 | 85 | 0 | 2 | 0 |
-| Di 29.09. 15:49 | 102 | 80 | 0 | 0 | 0 |
-| Di 29.09. 15:52 | 89 | 72 | 0 | 2 | 0 |
-| Di 29.09. 19:35 | 77 | 58 | 0 | 3 | 0 |
-| Mi 30.09. 12:35 | 41 | 23 | 0 | 0 | 0 |
-| Mi 30.09. 12:35 | 34 | 21 | 0 | 0 | 0 |
-| Mi 30.09. 12:35 | 30 | 21 | 0 | 0 | 0 |
+| Mi 30.09. 12:35 | 78 | 57 | 0 | 0 | 0 |
+| Mi 30.09. 12:35 | 66 | 51 | 0 | 0 | 0 |
+| Mi 30.09. 12:35 | 63 | 48 | 0 | 2 | 0 |
+| Mi 30.09. 18:37 | 48 | 36 | 0 | 1 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 242 | 141 | 6 | 0 | 1 | 3 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 245 (+3) | 144 | 6 | 0 | 1 | 3 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -92,6 +89,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 08:21 📈 Statistik 2026-10-01 ([`431db3b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/431db3b1b6bbe22e73c56dd1258a827b7ec2d175))
+  - `automatik/statistik`
 - 08:18 ✍️ Schluessel verlaengern: Workflow neu anmelden (war bei GitHub nicht registriert) ([`94eb587`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/94eb5875c40243fdacc3da6695390902f39d463d))
   - `.github/workflows`
 
