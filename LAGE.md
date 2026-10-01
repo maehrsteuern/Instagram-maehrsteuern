@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 10:11 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 01.10. 10:21 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `00-neuvorstellung` am **Do 01.10. 18:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -15,6 +15,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern und bei cron-job.org ersetzen.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
 - Instagram-Wissen: `strategie/11_wissen_instagram.md`. Neu ab Okt.: **3 Reels (Mi, Fr, So 19:30) + 2 Karussells (Di, Do)**. Werbebudget nur für Beiträge, die organisch laufen.
+- Kalender-Feed `kalender.ics` (automatisch, Abo: EINRICHTUNG.md Schritt 6) – Loris muss ihn einmal in Google Kalender abonnieren.
 - Neue Reel-Slots: Mi 14.10. Begleit-Reel Hinzurechnung (Entwurf, Freigabe folgt). Sprechtexte für Fr 09.10. und Fr 16.10. in `posts/sprechtexte.md` → Loris schickt Sprachnachrichten. Übrige Mi/Fr-Slots füllt die Content-Fabrik (Fr 02.10. bleibt frei).
 
 ## 👉 Braucht dich
@@ -98,6 +99,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 01.10.2026**
+- 10:21 ✍️ Strategie: Karussell vs. Reel am Abend ergänzt; Neuvorstellung bleibt Karussell ([`a4d5abd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a4d5abd328a414c99dee685d50a5df6cc87fe857))
+  - `strategie/11_wissen_instagram.md`
 - 10:11 ✍️ Plan: 3 Reels pro Woche (Mi/Fr/So) – Begleit-Reel Hinzurechnung Mi 14.10. als Entwurf, Sprechtexte für Fr 09.10. und 16.10. ([`b74ebc3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b74ebc3d4ec29d7655f46b313b584b65ffa66508))
   - Plan: neu `07-reel-hinzurechnung` (2026-10-14 19:30, entwurf)
 - 10:01 ✍️ Strategie: Video Sebiforce (Verkaufen ohne Kaltakquise) eingearbeitet, Entscheidungen 2–3 Reels/Woche und Werbebudget nur für laufende Beiträge ([`f1b05cc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f1b05ccb0128933da2ecf6638ff3722b84122e9e))
