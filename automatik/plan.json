@@ -163,7 +163,8 @@
       "bilder": [
         "story_mi_frage.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 12
     },
     {
       "id": "05-latente-steuern",
@@ -181,7 +182,8 @@
       ],
       "text": "bildunterschrift.txt",
       "status": "entwurf",
-      "hinweis": "Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen"
+      "hinweis": "Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen",
+      "issue": 12
     },
     {
       "id": "05-story-teaser",
@@ -191,7 +193,8 @@
       "bilder": [
         "story_do_teaser.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 12
     },
     {
       "id": "06-reel-split",
@@ -202,7 +205,8 @@
       "titelbild": "reel_split_titel.png",
       "text": "bildunterschrift_reel.txt",
       "status": "entwurf",
-      "hinweis": "Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop"
+      "hinweis": "Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop",
+      "issue": 13
     },
     {
       "id": "06-story-teaser",
@@ -212,7 +216,8 @@
       "bilder": [
         "story_so_teaser_reel.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 13
     },
     {
       "id": "03-story-quiz",
