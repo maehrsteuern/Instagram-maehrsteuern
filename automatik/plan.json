@@ -97,6 +97,16 @@
       "status": "freigegeben"
     },
     {
+      "id": "08-story-tipp",
+      "zeit": "2026-10-03 12:15",
+      "typ": "story",
+      "ordner": "posts/08_2026-10-09_reel_kst_staffel",
+      "bilder": [
+        "story_sa_tipp.png"
+      ],
+      "status": "entwurf"
+    },
+    {
       "id": "01-reel-ampel",
       "zeit": "2026-10-04 19:30",
       "typ": "reel",
@@ -195,6 +205,37 @@
       ],
       "status": "freigegeben",
       "issue": 12
+    },
+    {
+      "id": "08-story-heute",
+      "zeit": "2026-10-09 12:15",
+      "typ": "story",
+      "ordner": "posts/08_2026-10-09_reel_kst_staffel",
+      "bilder": [
+        "story_fr_heute.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "08-reel-kst-staffel",
+      "zeit": "2026-10-09 19:30",
+      "typ": "reel",
+      "ordner": "posts/08_2026-10-09_reel_kst_staffel",
+      "video": "reel.mp4",
+      "titelbild": "reel_titel.png",
+      "text": "bildunterschrift.txt",
+      "status": "entwurf",
+      "hinweis": "Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses."
+    },
+    {
+      "id": "08-story-rueckblick",
+      "zeit": "2026-10-10 12:15",
+      "typ": "story",
+      "ordner": "posts/08_2026-10-09_reel_kst_staffel",
+      "bilder": [
+        "story_sa_rueckblick.png"
+      ],
+      "status": "entwurf"
     },
     {
       "id": "06-reel-split",

@@ -22,6 +22,10 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - 👉 **Danach Highlight „Start 👋“ von Hand anlegen** (`00-start-3` (Mi 30.09. 12:32))
 - ✋ **Von Hand posten** `00-neuvorstellung` (Do 01.10. 18:30) – In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen
 - 👉 **Danach:** Anpinnen (von Hand) (`00-neuvorstellung` (Do 01.10. 18:30))
+- 🟡 **Freigeben** `08-story-tipp` (Sa 03.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `08-story-heute` (Fr 09.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `08-reel-kst-staffel` (Fr 09.10. 19:30) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `08-story-rueckblick` (Sa 10.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf clips** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
@@ -33,6 +37,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 |---|---|---|---|
 | Do 01.10. 18:30 | 🖼️ Karussell `00-neuvorstellung` | ✋ manuell (postest du in der App) | In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen |
 | Fr 02.10. 12:15 | 📱 Story `01-story-frage` | 🟢 freigegeben (geht automatisch online) |  |
+| Sa 03.10. 12:15 | 📱 Story `08-story-tipp` | 🟡 Entwurf (wartet auf Freigabe) |  |
 | So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | 🟢 freigegeben (geht automatisch online) | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
 | So 04.10. 19:35 | 📱 Story `01-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
 | Mo 05.10. 12:15 | 📱 Story `02-story-umfrage` | 🟢 freigegeben (geht automatisch online) |  |
@@ -46,6 +51,9 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
+| Fr 09.10. 12:15 | 📱 Story `08-story-heute` | 🟡 Entwurf (wartet auf Freigabe) |  |
+| Fr 09.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟡 Entwurf (wartet auf Freigabe) | Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses. |
+| Sa 10.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟡 Entwurf (wartet auf Freigabe) |  |
 | So 11.10. 19:30 | 🎬 Reel `06-reel-split` | 🟢 freigegeben (geht automatisch online) | Split-Screen Excel gegen Tool (fertig aus Post 02), ohne Stimme – laut Reel-Regeln eher Demo-Muster; bei Zweifel stop · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
 | So 11.10. 19:35 | 📱 Story `06-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
@@ -80,11 +88,11 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
-| Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
-| Statistik | täglich ca. 08:45 | ✅ ok |
-| Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
-| Musik holen | nur von Hand | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | – |
+| Freigabe | bei neuen Entwürfen / Antwort im Issue | – |
+| Statistik | täglich ca. 08:45 | – |
+| Schlüssel verlängern | am 1. des Monats ca. 06:27 | – |
+| Musik holen | nur von Hand | – |
 
 ## 📜 Protokoll – jede Änderung
 
