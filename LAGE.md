@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 02.10. 12:15 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 02.10. 13:18 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -99,6 +99,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Fr 02.10.2026**
+- 13:18 🔀 Merge: Zweite Säule Interaktion (Radar, Kommentar-Hilfe, LinkedIn-Pakete) ([`47638f3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/47638f3a174a1652349a3026025805e6a6024553))
+- 13:14 ✍️ Zweite Säule Interaktion: Radar, Kommentar-Hilfe, LinkedIn-Pakete ([`cbe6029`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cbe6029322456f13146cef5c89d2ece58c5b28fb))
+  - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/fb_schluessel_verlaengern.py`, `automatik/interaktion.json`, `automatik/ki.py`, `…`
 - 12:15 🤖 Autopilot: 01-story-frage veroeffentlicht ([`3b2259f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3b2259fe3586af7149a5ff06981c0f95d9e2190c))
   - Plan: `01-story-frage` status: freigegeben → veroeffentlicht; `01-story-frage` online: https://www.instagram.com/stories/maehrsteuern/3998984318181825905
 - 11:00 🤖 Autopilot: Dateien fuer 01-story-frage vorbereitet ([`7789e51`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/7789e5125a87885287c3cc34acbce3910159a8c6))
