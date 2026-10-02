@@ -91,7 +91,7 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 | Statistik | täglich ca. 08:45 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
 | Radar + LinkedIn | täglich ca. 07:00 (Issue mit Arbeitsliste) | – |
-| Kommentare | nach jedem Posten-Takt (Vorschläge ins Issue) | – |
+| Kommentare | nach jedem Posten-Takt (Vorschläge ins Issue) | ✅ ok |
 | Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
