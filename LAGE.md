@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 00:29 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 00:41 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -101,6 +101,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 00:41 📡 Radar: TaxTech-Konten ergänzt, ManyChat-Stichwörter angeglichen ([`399ed14`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/399ed142cfa2d8e65c476fae102f690bada38347))
+  - `automatik/interaktion.json`
 - 00:29 📡 Radar: Excel/DATEV-Konten ergänzt ([`c824346`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c824346653277cd05bbe1e04ac265fe73417cfd1))
   - `automatik/interaktion.json`
 
