@@ -35,6 +35,8 @@ WORKFLOWS = [  # Datei, Name, wann
     ("freigabe.yml", "Freigabe", "bei neuen Entwürfen / Antwort im Issue"),
     ("statistik.yml", "Statistik", "täglich ca. 08:45"),
     ("token.yml", "Schlüssel verlängern", "am 1. des Monats ca. 06:27"),
+    ("radar.yml", "Radar + LinkedIn", "täglich ca. 07:00 (Issue mit Arbeitsliste)"),
+    ("kommentare.yml", "Kommentare", "nach jedem Posten-Takt (Vorschläge ins Issue)"),
     ("musik.yml", "Musik holen", "nur von Hand"),
 ]
 WOCHENTAG = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
@@ -186,7 +188,8 @@ def automatik():
 
 def art(nachricht):
     for anfang, symbol in (("Autopilot", "🤖"), ("Freigabe", "✅"), ("Statistik", "📈"), ("Musik", "🎵"),
-                           ("Schlüssel", "🔑"), ("Merge", "🔀")):
+                           ("Schlüssel", "🔑"), ("Merge", "🔀"),
+                           ("Radar", "📡"), ("Kommentare", "💬"), ("LinkedIn", "💼")):
         if nachricht.startswith(anfang):
             return symbol
     return "✍️"

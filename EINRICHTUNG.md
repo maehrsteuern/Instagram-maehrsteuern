@@ -70,6 +70,26 @@ Bei Fehlern: 401 = Schlüssel falsch/abgelaufen · 403/404 = Berechtigung „Act
 - Aktualisiert sich automatisch (Google holt den Feed alle paar Stunden, manchmal bis zu 1 Tag Verzögerung).
 - Inhalt: jeder Reel/Karussell-Termin, offene Freigaben, „von Hand posten“, fehlende Clips/Musik/Dateien. Feste Termine (Mo/Do-Check, persönliche To-dos) bleiben im eigenen Kalender.
 
+## 7 · Interaktion: Radar, Kommentar-Hilfe, LinkedIn (ca. 25 Min.)
+Erklärung: `strategie/12_interaktion.md`. Alles läuft auch ohne diesen Schritt weiter, nur ohne Radar und Vorschläge.
+
+**a) Claude-Schlüssel (für Kommentar- und DM-Vorschläge, ca. 2–5 €/Monat)**
+https://console.anthropic.com → *Billing* 10 € aufladen, Limit 10 €/Monat setzen → *API Keys → Create Key* → Secret `ANTHROPIC_API_KEY`.
+
+**b) Facebook-Zugang (nur für den Radar – fremde Profile lesen)**
+Die bisherige Instagram-Schnittstelle kann keine fremden Profile lesen. Dafür braucht es den Weg über eine Facebook-Seite:
+1. Facebook-Seite „maehrsteuern“ anlegen (falls noch keine da ist) und in der Instagram-App verbinden: *Profil bearbeiten → Seite → verbinden*.
+2. developers.facebook.com → deine App `maehrsteuern Autopilot` → *Anwendungsfall hinzufügen* → **„Alles auf deiner Seite verwalten“** (oder „Instagram-API mit Facebook-Login“).
+3. *Tools → Graph API Explorer* → oben deine App wählen → *Berechtigungen*: `instagram_basic`, `pages_show_list`, `pages_read_engagement`, `business_management` → **Generate Access Token** → mit Facebook bestätigen.
+4. Im Explorer abfragen: `me/accounts?fields=instagram_business_account` → die Zahl bei `instagram_business_account.id` kopieren → Secret **`FB_IG_USER_ID`**.
+5. Schlüssel langlebig machen: *Tools → Zugriffsschlüssel-Debugger* → Schlüssel einfügen → **„Zugriffsschlüssel verlängern“** → neuen Schlüssel kopieren → Secret **`FB_TOKEN`** (gilt 60 Tage).
+6. Damit er sich selbst verlängert: *App-Einstellungen → Allgemeines* → **App-ID** → Secret `FB_APP_ID`, **App-Geheimcode** → Secret `FB_APP_SECRET` (braucht `GH_PAT` aus Schritt 3).
+7. Konten eintragen: 20–40 Instagram-Namen in `automatik/interaktion.json` → `radar.konten` (oder Claude schicken).
+
+**c) Testen:** Actions → *Radar* → *Run workflow*. Danach liegt ein Issue „📡 Radar …“ da. Actions → *Kommentare* → *Run workflow* legt beim ersten neuen Kommentar das Issue „💬 Kommentare beantworten“ an.
+
+**ManyChat** beantwortet Kommentare mit „TOOL“ und alle DMs. Die Skripte hier schicken nie eine DM.
+
 ## Wie es danach läuft
 | Wann | Was passiert | Wer |
 |---|---|---|
@@ -78,6 +98,8 @@ Bei Fehlern: 401 = Schlüssel falsch/abgelaufen · 403/404 = Berechtigung „Act
 | **Mo + Do 19:00** | Kalender-Erinnerung → im Issue **`go`** oder **`stop`** antworten | du |
 | Di / Do / So 19:30, täglich 12:15 | Beiträge und Storys gehen automatisch online | Autopilot |
 | **täglich ca. 08:45** | Statistik wird abgeholt, Tagesbericht in `LAGE.md` | Autopilot |
+| **täglich ca. 07:00** | Radar-Issue: Beiträge zum Kommentieren, DM-Entwürfe, montags Collab; LinkedIn-Pakete für neue Karussells | Autopilot + du (15 Min.) |
+| alle 15 Min. | neue Kommentare mit Antwortvorschlag ins Issue „💬 Kommentare“ – `K12 ok` postet die Antwort | Autopilot + du |
 | **1. des Monats** | Monatsbericht, Instagram-Schlüssel wird verlängert (braucht `GH_PAT`) | Claude + Autopilot |
 
 **Freigaben:** https://github.com/maehrsteuern/Instagram-maehrsteuern/issues?q=is%3Aopen+label%3Afreigabe

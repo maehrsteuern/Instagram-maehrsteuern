@@ -1,6 +1,6 @@
 # maehrsteuern – Instagram
 
-**Autopilot:** `automatik/plan.json` ist der Veröffentlichungsplan. GitHub Actions postet freigegebene Einträge zur geplanten Zeit (`.github/workflows/posten.yml`), holt täglich ca. 08:45 die Statistik (Tagesbericht in `LAGE.md`) und verlängert monatlich den Instagram-Schlüssel. Einrichtung: `EINRICHTUNG.md`.
+**Autopilot:** `automatik/plan.json` ist der Veröffentlichungsplan. GitHub Actions postet freigegebene Einträge zur geplanten Zeit (`.github/workflows/posten.yml`), holt täglich ca. 08:45 die Statistik (Tagesbericht in `LAGE.md`) verlängert monatlich den Instagram-Schlüssel, legt jeden Morgen ein Radar-Issue zum Kommentieren an und meldet neue Kommentare mit Antwortvorschlag (`strategie/12_interaktion.md`). Einrichtung: `EINRICHTUNG.md`.
 
 **Überblick:** `LAGE.md` – was als Nächstes online geht, was du tun musst, Automatik-Status und Protokoll jeder Änderung. Wird automatisch nach jedem Push und jedem Automatik-Lauf neu geschrieben (`automatik/lage.py`, `.github/workflows/lage.yml`); Notizen dazu in `automatik/lage_notizen.md`.
 
@@ -21,8 +21,11 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/09_reel_regeln.md` | Reel-Regeln aus Feedback: Hook, KI-Clips, Ton, Safe-Zone, Farben |
 | `strategie/10_software_reel_konzept.md` | Eigenes Reel-Konzept für Software (Split-Screen, Satisfying Software, Gesicht + Screen), Bildschirmaufnahmen |
 | `strategie/11_wissen_instagram.md` | Gesammeltes Instagram-Wissen: Algorithmus-Signale, Teilen/Speichern, Suche, Serien, Saison, offene Entscheidungen |
+| `strategie/12_interaktion.md` | **Zweite Säule Interaktion:** Radar, DM-Entwürfe, Kommentar-Hilfe, Click-to-DM-Anzeige, Collabs, LinkedIn, Grenzen |
 | `vorlagen/hooks/` | Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8–2,8 s), Übersicht in `README.md` |
 | `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
+| `automatik/interaktion.json` | Einstellungen Radar/Kommentare (Konten, Hashtags, Grenzen); Stand in `automatik/interaktion/` |
+| `automatik/radar.py`, `kommentare.py`, `linkedin.py`, `ki.py` | Radar-Issue, Kommentar-Hilfe, LinkedIn-Pakete, gemeinsamer Claude-Zugang |
 | `strategie/dm_tracking.csv` | Liste zum Nachverfolgen der Anfragen |
 | `posts/<Nr>_<Datum>_<Thema>/` | fertige Beiträge: Folien bzw. Reel, Titelbild, Storys, `bildunterschrift.txt` |
 

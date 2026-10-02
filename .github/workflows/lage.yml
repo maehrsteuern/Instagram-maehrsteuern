@@ -38,6 +38,13 @@ jobs:
           git show origin/claude/instagram:automatik/statistik/konto.csv 2>/dev/null | grep -q "^$heute," && exit 0
           laeufe=$(gh run list --workflow statistik.yml --created ">=$(date -u -d '-2 hours' +%FT%TZ)" --json databaseId --jq length)
           [ "$laeufe" = 0 ] && gh workflow run statistik.yml --ref claude/instagram && echo "Statistik gestartet" || true
+      - name: Radar anstoßen (07:00–10:00 Uhr, falls heute noch keiner lief)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          uhr=$(TZ=Europe/Berlin date +%H%M); mitternacht=$(date -u -d "$(TZ=Europe/Berlin date +%F) 00:00 $(TZ=Europe/Berlin date +%z)" +%FT%TZ)
+          [ "$uhr" -ge 700 ] && [ "$uhr" -lt 1000 ] || exit 0
+          laeufe=$(gh run list --workflow radar.yml --created ">=$mitternacht" --json databaseId --jq length)
+          [ "$laeufe" = 0 ] && gh workflow run radar.yml --ref claude/instagram && echo "Radar gestartet" || true
       - name: Schreiben und speichern
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |

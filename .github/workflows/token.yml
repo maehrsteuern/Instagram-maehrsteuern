@@ -16,3 +16,11 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: python automatik/schluessel_verlaengern.py
+      - name: Facebook-Schlüssel (Radar)
+        if: always()
+        env:
+          FB_TOKEN: ${{ secrets.FB_TOKEN }}
+          FB_APP_ID: ${{ secrets.FB_APP_ID }}
+          FB_APP_SECRET: ${{ secrets.FB_APP_SECRET }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: python automatik/fb_schluessel_verlaengern.py

@@ -1,0 +1,54 @@
+name: Kommentare
+# Nach jedem Posten-Takt (alle 15 Min.): neue Kommentare unter eigenen Beiträgen mit Antwortvorschlag ins Issue
+# „💬 Kommentare beantworten“. Antwort „K12 ok“ / „K12 eigener Text“ im Issue → wird als Antwort gepostet.
+# Schickt nie DMs – das macht ManyChat. Kommentare mit ManyChat-Stichwort bleiben außen vor.
+on:
+  workflow_run:
+    workflows: ["Instagram posten"]
+    types: [completed]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+concurrency:
+  group: kommentare
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+jobs:
+  pruefen:
+    if: github.event_name != 'issue_comment'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: claude/instagram }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q requests anthropic
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: python automatik/kommentare.py pruefen
+  antwort:
+    # nur Kommentare des Konto-Inhabers im Kommentar-Issue
+    if: >-
+      github.event_name == 'issue_comment' &&
+      github.event.comment.user.login == github.repository_owner &&
+      contains(github.event.issue.labels.*.name, 'kommentare')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: claude/instagram }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q requests
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_TOKEN: ${{ github.token }}
+          KOMMENTAR: ${{ github.event.comment.body }}
+        run: python automatik/kommentare.py antwort "$KOMMENTAR"

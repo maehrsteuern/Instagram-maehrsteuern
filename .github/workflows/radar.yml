@@ -1,0 +1,37 @@
+name: Radar
+# Täglich morgens: Arbeitsliste fürs Kommentieren/DMs/Collab als Issue (automatik/radar.py)
+# und LinkedIn-Pakete für freigegebene Karussells (automatik/linkedin.py). Postet und schreibt nie selbst.
+# Hauptauslöser ist lage.yml (07:00–10:00 Uhr deutscher Zeit, falls heute noch kein Lauf); der Zeitplan hier ist Reserve.
+on:
+  schedule:
+    - cron: "13 5 * * *"
+  workflow_dispatch:
+concurrency:
+  group: radar
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: claude/instagram }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q requests pillow anthropic
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - name: Radar
+        env:
+          FB_TOKEN: ${{ secrets.FB_TOKEN }}
+          FB_IG_USER_ID: ${{ secrets.FB_IG_USER_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: python automatik/radar.py
+      - name: LinkedIn-Pakete
+        if: always()
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: python automatik/linkedin.py

@@ -12,13 +12,13 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
-- DM-Strecke: nur Sofortantwort automatisch, Rest von Hand. ManyChat erst bei mehr als ~5 TOOL-DMs pro Tag (Stand 01.10.: 0 DMs).
+- DM-Strecke läuft jetzt über **ManyChat** (Kommentar „TOOL“ → DM, DM-Fluss). Die eigenen Skripte schicken nie DMs.
+- **Zweite Säule Interaktion gebaut (02.10., Branch `claude/instagram-user-interaction-automation-oji2vl`):** Radar-Issue täglich ca. 07:00 (Kommentieren, DM-Entwürfe für warme Konten, montags Collab), Kommentar-Hilfe (`K12 ok` im Issue), LinkedIn-PDF je Karussell, Click-to-DM-Anzeige als Anleitung – `strategie/12_interaktion.md`. Offen: mergen, Secrets `ANTHROPIC_API_KEY`, `FB_TOKEN`, `FB_IG_USER_ID`, `FB_APP_ID`, `FB_APP_SECRET` (EINRICHTUNG.md Schritt 7), 20–40 Konten in `automatik/interaktion.json` eintragen.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
 
 ## 👉 Braucht dich
 
-- 👉 **Danach Highlight „Start 👋“ von Hand anlegen** (`00-start-3` (Mi 30.09. 12:32))
 - 👉 **Danach:** Anpinnen (von Hand) (`00-neuvorstellung` (Do 01.10. 18:30))
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf clips** `04-reel-mein-weg` (Di 20.10. 19:30)
@@ -41,12 +41,12 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Mi 07.10. 19:35 | 📱 Story `06-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
 | Do 08.10. 19:30 | 🖼️ Karussell `05-latente-steuern` | 🟢 freigegeben (geht automatisch online) | Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Do 08.10. 19:35 | 📱 Story `05-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
+| Fr 09.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 
 ## 🗓️ Danach
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Fr 09.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Fr 09.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟢 freigegeben (geht automatisch online) | Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
@@ -90,6 +90,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 | Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
 | Statistik | täglich ca. 08:45 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
+| Radar + LinkedIn | täglich ca. 07:00 (Issue mit Arbeitsliste) | – |
+| Kommentare | nach jedem Posten-Takt (Vorschläge ins Issue) | – |
 | Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
