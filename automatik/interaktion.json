@@ -32,7 +32,14 @@
       {"name": "steuerazubis", "art": "uni"},
       {"name": "stbverb", "art": "uni"},
       {"name": "steuerseminaregraf", "art": "uni"},
-      {"name": "studienwerkdersteuerberater", "art": "uni"}
+      {"name": "studienwerkdersteuerberater", "art": "uni"},
+      {"name": "dateveg", "art": "software"},
+      {"name": "wirsinddatev", "art": "software"},
+      {"name": "foerster_it", "art": "software"},
+      {"name": "steuertipps.de", "art": "software"},
+      {"name": "novonetgmbh", "art": "software"},
+      {"name": "controllingmitexcel", "art": "creator"},
+      {"name": "vero.bilanzbuchhalter", "art": "creator"}
     ],
     "hashtags": ["steuerberater", "steuerkanzlei", "jahresabschluss", "steuerfachangestellte", "steuerrecht", "bilanzbuchhalter"],
     "schlagwoerter": ["excel", "tool", "automatisierung", "ki", "digitalisierung", "datev", "jahresabschluss", "rückstellung", "gewerbesteuer", "latente steuern", "e-rechnung", "frist", "abschluss", "steuererklärung", "examen"],
