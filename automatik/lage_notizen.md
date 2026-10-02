@@ -7,4 +7,4 @@
 - DM-Strecke läuft jetzt über **ManyChat** (Kommentar „TOOL“ → DM, DM-Fluss). Die eigenen Skripte schicken nie DMs.
 - **Zweite Säule Interaktion gebaut:** Radar-Issue täglich ca. 07:00 (Kommentieren, DM-Entwürfe für warme Konten, montags Collab), Kommentar-Hilfe (`K12 ok` im Issue), LinkedIn-PDF je Karussell, Click-to-DM-Anzeige als Anleitung – `strategie/12_interaktion.md`. Gemergt in `claude/instagram` (02.10.). Offen: Secrets `ANTHROPIC_API_KEY`, `FB_TOKEN`, `FB_IG_USER_ID`, `FB_APP_ID`, `FB_APP_SECRET` (EINRICHTUNG.md Schritt 7), 20–40 Konten in `automatik/interaktion.json` eintragen.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
-- Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
+- Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review. Neu: Steuerlast-Dashboard 2026 (Kontoauszug hochladen → Steuerlast live) im Ordner `steuerlast-dashboard/`, Branch `claude/steuerlast-dashboard-kleinunternehmer-8m7tvk`.
