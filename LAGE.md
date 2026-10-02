@@ -1,18 +1,18 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 02.10. 16:31 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 02.10. 16:36 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
-- Neustart läuft: Start-Storys + Vorfreude (30.09.) und Neuvorstellung (Do 01.10. 18:30, von Hand) sind online. Nach 2 h: 26 erreicht, 6× geteilt, 0 neue Follower. Offen von Hand: anpinnen, Highlight „Start 👋“.
+- Neustart läuft: Start-Storys + Vorfreude (30.09.) und Neuvorstellung (Do 01.10. 18:30, von Hand) sind online. Neuvorstellung ist angepinnt. Alles bis 16.10. ist freigegeben und geht automatisch raus.
 - Wochenrhythmus ab Okt. steht im Prompt der Content-Fabrik (Mo + Do 08:47, max. 4 Beiträge pro Lauf): Di/Do Karussell + Teaser, Mi Begleit-Reel, Fr Wissens-Reel oder Stimm-Reel, So Reel + Teaser, täglich 12:15 Story.
 - Bis 10.10. alles freigegeben: Reel Ampel mit Stimme (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
 - Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
-- DM-Strecke läuft jetzt über **ManyChat** (Kommentar „TOOL“ → DM, DM-Fluss). Die eigenen Skripte schicken nie DMs.
+- DM-Strecke läuft über **ManyChat** (Kommentar „TOOL“ → DM, DM-Fluss) – läuft. Die eigenen Skripte schicken nie DMs.
 - **Zweite Säule Interaktion gebaut:** Radar-Issue täglich ca. 07:00 (Kommentieren, DM-Entwürfe für warme Konten, montags Collab), Kommentar-Hilfe (`K12 ok` im Issue), LinkedIn-PDF je Karussell, Click-to-DM-Anzeige als Anleitung – `strategie/12_interaktion.md`. Gemergt in `claude/instagram` (02.10.). Offen: Secrets `ANTHROPIC_API_KEY`, `FB_TOKEN`, `FB_IG_USER_ID`, `FB_APP_ID`, `FB_APP_SECRET` (EINRICHTUNG.md Schritt 7), 20–40 Konten in `automatik/interaktion.json` eintragen.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
@@ -20,7 +20,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 👉 Braucht dich
 
-- 👉 **Danach:** Anpinnen (von Hand) (`00-neuvorstellung` (Do 01.10. 18:30))
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf clips** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
@@ -102,8 +101,11 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Fr 02.10.2026**
+- 16:36 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/upbeat-goodall-huo6u7 ([`9f1937f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9f1937f8cacd4c46086ac72ebc469ad709bc8d3b))
 - 16:31 ✍️ Bibliothek aus dem Brand Kit (Claude Design): 365 fertige Assets ([`1f6ffc4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1f6ffc4940575300f26391be0fb53ec83b501a21))
   - `README.md`, `assets/bibliothek/README.md`, `assets/bibliothek/bausteine/abspann_copy_paste.png`, `assets/bibliothek/bausteine/abspann_mehr_abschluss.png`, `assets/bibliothek/bausteine/abspann_pruefpfad.png`, `assets/bibliothek/bausteine/abspann_quote.png`, `…`
+- 16:12 ✍️ Auswertung: aktive Zeiten der ganzen Woche (auf deutsche Zeit umgerechnet) – 19:30 passt, Sonntag stärkster Abend ([`a2f31a3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a2f31a30f1fd371ecc9e4895d59dac6e254bc376))
+  - `strategie/06_auswertung.md`
 - 15:11 📈 Statistik 2026-10-02 ([`c3f893b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c3f893b5c2d3bb9f56c0b7b3646ae9679ac7990b))
   - `automatik/statistik`
 - 13:18 ✍️ Lage-Notizen: Interaktion gemergt, offen sind Secrets und Kontenliste ([`a54983d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a54983d43696c5264401b31bfd0d104f40971bbb))

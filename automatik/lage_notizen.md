@@ -1,10 +1,10 @@
-- Neustart läuft: Start-Storys + Vorfreude (30.09.) und Neuvorstellung (Do 01.10. 18:30, von Hand) sind online. Nach 2 h: 26 erreicht, 6× geteilt, 0 neue Follower. Offen von Hand: anpinnen, Highlight „Start 👋“.
+- Neustart läuft: Start-Storys + Vorfreude (30.09.) und Neuvorstellung (Do 01.10. 18:30, von Hand) sind online. Neuvorstellung ist angepinnt. Alles bis 16.10. ist freigegeben und geht automatisch raus.
 - Wochenrhythmus ab Okt. steht im Prompt der Content-Fabrik (Mo + Do 08:47, max. 4 Beiträge pro Lauf): Di/Do Karussell + Teaser, Mi Begleit-Reel, Fr Wissens-Reel oder Stimm-Reel, So Reel + Teaser, täglich 12:15 Story.
 - Bis 10.10. alles freigegeben: Reel Ampel mit Stimme (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
 - Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
-- DM-Strecke läuft jetzt über **ManyChat** (Kommentar „TOOL“ → DM, DM-Fluss). Die eigenen Skripte schicken nie DMs.
+- DM-Strecke läuft über **ManyChat** (Kommentar „TOOL“ → DM, DM-Fluss) – läuft. Die eigenen Skripte schicken nie DMs.
 - **Zweite Säule Interaktion gebaut:** Radar-Issue täglich ca. 07:00 (Kommentieren, DM-Entwürfe für warme Konten, montags Collab), Kommentar-Hilfe (`K12 ok` im Issue), LinkedIn-PDF je Karussell, Click-to-DM-Anzeige als Anleitung – `strategie/12_interaktion.md`. Gemergt in `claude/instagram` (02.10.). Offen: Secrets `ANTHROPIC_API_KEY`, `FB_TOKEN`, `FB_IG_USER_ID`, `FB_APP_ID`, `FB_APP_SECRET` (EINRICHTUNG.md Schritt 7), 20–40 Konten in `automatik/interaktion.json` eintragen.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
