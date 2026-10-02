@@ -99,6 +99,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Fr 02.10.2026**
+- 13:18 ✍️ Lage-Notizen: Interaktion gemergt, offen sind Secrets und Kontenliste ([`a54983d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a54983d43696c5264401b31bfd0d104f40971bbb))
+  - `automatik/lage_notizen.md`
 - 13:18 🔀 Merge: Zweite Säule Interaktion (Radar, Kommentar-Hilfe, LinkedIn-Pakete) ([`47638f3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/47638f3a174a1652349a3026025805e6a6024553))
 - 13:14 ✍️ Zweite Säule Interaktion: Radar, Kommentar-Hilfe, LinkedIn-Pakete ([`cbe6029`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cbe6029322456f13146cef5c89d2ece58c5b28fb))
   - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/fb_schluessel_verlaengern.py`, `automatik/interaktion.json`, `automatik/ki.py`, `…`
