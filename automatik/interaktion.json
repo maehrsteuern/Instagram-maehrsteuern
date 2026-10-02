@@ -1,0 +1,19 @@
+{
+  "_hinweis": "Einstellungen für die zweite Säule (Interaktion). Konten: Instagram-Namen ohne @, nur Business- oder Creator-Konten (private Konten liefert die Schnittstelle nicht). art: kanzlei | creator | steuerabteilung | software | uni. DMs verschickt nur ManyChat – die Skripte hier schicken nie eine DM. Erklärung: strategie/12_interaktion.md",
+  "radar": {
+    "konten": [],
+    "hashtags": ["steuerberater", "steuerkanzlei", "jahresabschluss", "steuerfachangestellte", "steuerrecht", "bilanzbuchhalter"],
+    "schlagwoerter": ["excel", "tool", "automatisierung", "ki", "digitalisierung", "datev", "jahresabschluss", "rückstellung", "gewerbesteuer", "latente steuern", "e-rechnung", "frist", "abschluss", "steuererklärung", "examen"],
+    "max_beitraege": 8,
+    "max_dm_entwuerfe": 3,
+    "max_alter_stunden": 72,
+    "kommentare_vor_dm": 2,
+    "collab_tag": "Mo",
+    "collab_follower": [500, 50000]
+  },
+  "kommentare": {
+    "_hinweis": "Kommentare mit diesen Stichwörtern beantwortet ManyChat (DM + öffentliche Antwort) – die Kommentar-Hilfe lässt sie aus.",
+    "manychat_stichwoerter": ["TOOL"],
+    "beitraege_pruefen": 12
+  }
+}
