@@ -41,12 +41,12 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Do 08.10. 19:30 | 🖼️ Karussell `05-latente-steuern` | 🟢 freigegeben (geht automatisch online) | Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Do 08.10. 19:35 | 📱 Story `05-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Fr 09.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
+| Fr 09.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟢 freigegeben (geht automatisch online) | Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 
 ## 🗓️ Danach
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Fr 09.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟢 freigegeben (geht automatisch online) | Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:30 | 🖼️ Karussell `03-gewst-hinzurechnung` | 🟢 freigegeben (geht automatisch online) |  |
