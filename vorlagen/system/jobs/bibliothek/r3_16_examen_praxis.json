@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Examen → Praxis – „4 Unterschiede“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/examen_praxis/folie_01.png","typ":"titel","saeule":"Examen → Praxis","titel":"Examen vs. Praxis: *4 Unterschiede*.","sub":"Was nach dem Diplom anders ist."},
+    {"vorlage":"karussell","datei":"karussell/examen_praxis/folie_02.png","typ":"inhalt","saeule":"Unterschied 01","titel":"Examen: *ein* Hebesatz.","text":"Praxis: Betriebsstätten in vielen Gemeinden. Der Messbetrag wird in der Regel nach Arbeitslöhnen zerlegt.","boxTitel":"NORM","box":"§§ 28, 29 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/examen_praxis/folie_03.png","typ":"inhalt","saeule":"Unterschied 02","titel":"Examen: Sachverhalt *vollständig*.","text":"Praxis: Zahlen kommen spät, unvollständig, aus fünf Systemen. Was fehlt, muss sichtbar sein.","boxTitel":"LÖSUNG","box":"Ampeln statt Bauchgefühl."},
+    {"vorlage":"karussell","datei":"karussell/examen_praxis/folie_04.png","typ":"inhalt","saeule":"Unterschied 03","titel":"Examen: *ein* Jahr.","text":"Praxis: Vorauszahlungen, Vorjahre, offene Betriebsprüfung und Planung bis 2032 – alles gleichzeitig."},
+    {"vorlage":"karussell","datei":"karussell/examen_praxis/folie_05.png","typ":"inhalt","saeule":"Unterschied 04","titel":"Examen: *Taschenrechner*.","text":"Praxis: Excel mit 20 Blättern – und wer sie gebaut hat, ist gerade im Urlaub."},
+    {"vorlage":"karussell","datei":"karussell/examen_praxis/folie_06.png","typ":"cta","saeule":"Examen → Praxis","titel":"Gerade *fertig* mit dem Studium?","text":"Folg mir – hier geht es um die Praxis, die im Lehrbuch fehlt.","chip":"➕ Folgen"}
+  ] }

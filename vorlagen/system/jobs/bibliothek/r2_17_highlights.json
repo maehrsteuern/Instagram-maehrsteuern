@@ -1,0 +1,7 @@
+{ "titel": "Highlight-Titelbilder · Prüfpfad, Rechner, DM, Excel", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"highlight","datei":"highlights/hl_pruefpfad.png","icon":"lupe"},
+    {"vorlage":"highlight","datei":"highlights/hl_rechner.png","icon":"rechner"},
+    {"vorlage":"highlight","datei":"highlights/hl_dm.png","icon":"dm"},
+    {"vorlage":"highlight","datei":"highlights/hl_excel.png","icon":"tabelle"}
+  ] }

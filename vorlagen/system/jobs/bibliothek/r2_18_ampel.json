@@ -1,0 +1,6 @@
+{ "titel": "Ampel-Nahaufnahmen · Gewerbesteuer-Hinzurechnung (Stil der App)", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"ampel","datei":"bausteine/ampel_hinz_rot.png","stand":"rot","kopf":"Gewerbesteuer","datum":"EZ 2025","kicker":"Hinzurechnung","titel":"2 Posten\n*fehlen*","namen":["Zinsen","Miete beweglich (20 %)","Miete unbeweglich (50 %)","Lizenzen (25 %)","Freibetrag 200.000 €"],"zeilen":[["gruen","ok"],["rot","fehlt"],["gelb","Quote prüfen"],["rot","fehlt"],["gruen","ok"]]},
+    {"vorlage":"ampel","datei":"bausteine/ampel_hinz_gelb.png","stand":"gelb","kopf":"Gewerbesteuer","datum":"EZ 2025","kicker":"Hinzurechnung","titel":"1 Quote\n*prüfen*","namen":["Zinsen","Miete beweglich (20 %)","Miete unbeweglich (50 %)","Lizenzen (25 %)","Freibetrag 200.000 €"],"zeilen":[["gruen","ok"],["gruen","ok"],["gelb","Quote prüfen"],["gruen","ok"],["gruen","ok"]]},
+    {"vorlage":"ampel","datei":"bausteine/ampel_hinz_gruen.png","stand":"gruen","kopf":"Gewerbesteuer","datum":"EZ 2025","kicker":"Hinzurechnung","titel":"Hinzu-\n*gerechnet.*","namen":["Zinsen","Miete beweglich (20 %)","Miete unbeweglich (50 %)","Lizenzen (25 %)","Freibetrag 200.000 €"],"zeilen":[["gruen","ok"],["gruen","ok"],["gruen","ok"],["gruen","ok"],["gruen","abgezogen"]]}
+  ] }

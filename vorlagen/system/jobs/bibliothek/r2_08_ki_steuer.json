@@ -1,0 +1,8 @@
+{ "titel": "Karussell · KI × Steuern – „5 Aufgaben, die KI heute schon übernimmt“", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/ki_steuer/folie_01.png","typ":"titel","saeule":"KI × Steuern","titel":"5 Aufgaben, die *KI* heute schon übernimmt.","sub":"Und wo die Verantwortung bei dir bleibt."},
+    {"vorlage":"karussell","datei":"karussell/ki_steuer/folie_02.png","typ":"inhalt","saeule":"Was heute geht","titel":"Fünf Aufgaben, *sofort* nutzbar.","punkte":["Erläuterungstexte für den Abschluss entwerfen","Formeln und Makros erklären lassen","Abweichungen zum Vorjahr markieren","Normen und Urteile vorrecherchieren","Belege und Listen vorsortieren"]},
+    {"vorlage":"karussell","datei":"karussell/ki_steuer/folie_03.png","typ":"inhalt","saeule":"Die Grenze","titel":"Die KI *entwirft*, du *entscheidest*.","text":"Jede Zahl und jede Fundstelle prüfst du selbst. KI-Antworten klingen sicher – auch wenn sie falsch sind.","boxTitel":"DATENSCHUTZ","box":"Keine echten Mandanten- oder Unternehmensdaten in öffentliche KI-Tools."},
+    {"vorlage":"karussell","datei":"karussell/ki_steuer/folie_04.png","typ":"inhalt","saeule":"Der Unterschied","titel":"Chat hilft einmal. *Code* läuft jeden Monat.","text":"Ein Prompt hilft bei einer Frage. Ein Tool rechnet jeden Abschluss gleich – mit Prüfpfad.","boxTitel":"STEUERN × CODE","box":"KI als Werkzeug, Code als Lösung."},
+    {"vorlage":"karussell","datei":"karussell/ki_steuer/folie_05.png","typ":"cta","saeule":"KI × Steuern","titel":"Willst du sehen, wie das *zusammen* aussieht?","text":"Demo mit Beispieldaten, 20 Minuten."}
+  ] }

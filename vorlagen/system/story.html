@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css"><script src="text.js"></script>
-<!-- Story 1080×1920. Typen: info | frage (Sticker von Hand) | antwort (ohne Sticker, automatisch postbar) | teaser. Oben 250 px und unten 340 px frei (Instagram-Leisten) -->
+<!-- Story 1080×1920. Typen: info | frage (Sticker von Hand) | antwort (ohne Sticker, automatisch postbar) | teaser. punkte mit eigenen Zeichen: marker:['A','B']. Chip: cta:true (+ chip). Oben 250 px und unten 340 px frei (Instagram-Leisten) -->
 <style>
 html,body{width:1080px;height:1920px}
 body{background:radial-gradient(90% 55% at 50% 42%,var(--bg2) 0%,var(--bg) 70%)}
@@ -10,6 +10,8 @@ h1{font-family:var(--serif);font-weight:600;font-size:104px;line-height:1.04;mar
 ul{list-style:none;padding:0;margin:52px 0 0}
 li{font-size:44px;line-height:1.35;margin:0 0 34px;padding-left:64px;position:relative}
 li:before{content:"→";position:absolute;left:0;color:var(--gruen);font-family:var(--mono);font-weight:600}
+li b{position:absolute;left:0;color:var(--gruen);font-family:var(--mono);font-weight:600}
+li.m:before{content:none}
 .slot{margin-top:70px;height:360px;border:3px dashed rgba(83,195,162,.45);border-radius:36px;display:flex;align-items:center;justify-content:center;
   font-family:var(--mono);font-size:28px;color:var(--grau);letter-spacing:.15em}
 .antwort{margin-top:70px;padding:40px 44px;border:3px solid var(--gruen);border-radius:36px;background:var(--gruen-soft);font-size:44px;line-height:1.35;color:var(--text)}
@@ -24,7 +26,7 @@ const d = window.DATA || {typ:'frage',kicker:'Kurze Frage',titel:'Welche *Excel-
 const p = $('pad');
 let h = `<div class="kicker">${fmt(d.kicker)}</div><h1>${fmt(d.titel)}</h1>`;
 if (d.text) h += `<div class="txt">${fmt(d.text)}</div>`;
-if (d.punkte) h += `<ul>${d.punkte.map(x=>`<li>${fmt(x)}</li>`).join('')}</ul>`;
+if (d.punkte) h += `<ul>${d.punkte.map((x,i)=>d.marker?`<li class="m"><b>${fmt(d.marker[i])}</b>${fmt(x)}</li>`:`<li>${fmt(x)}</li>`).join('')}</ul>`;
 if (d.typ==='frage') h += `<div class="slot">STICKER HIER</div>`;
 if (d.typ==='antwort') h += `<div class="antwort">${fmt(d.antwort||'↩ Antworte direkt auf diese Story')}</div>`;
 if (d.typ==='teaser') h += `<div class="card" style="background-image:url(${d.bild||'../app_9x16.png'})"></div><div class="hint">${fmt(d.hint||'Jetzt neu im Profil → @maehrsteuern')}</div>`;

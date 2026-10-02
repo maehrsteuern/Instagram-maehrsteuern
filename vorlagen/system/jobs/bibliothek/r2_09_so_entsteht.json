@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Hinter dem Code – „Von der Excel-Datei zum Tool“", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/so_entsteht/folie_01.png","typ":"titel","saeule":"Hinter dem Code","titel":"Von der Excel-Datei zum *Tool* in 5 Schritten.","sub":"Ohne Fachchinesisch – so läuft es bei mir ab."},
+    {"vorlage":"karussell","datei":"karussell/so_entsteht/folie_02.png","typ":"inhalt","nr":"01","titel":"Die *Excel-Datei* verstehen.","text":"Welche Zahlen kommen rein, welche gehen raus, wo wird von Hand nachgebessert?"},
+    {"vorlage":"karussell","datei":"karussell/so_entsteht/folie_03.png","typ":"inhalt","nr":"02","titel":"Regeln *aufschreiben*.","text":"Jede Formel wird zu einer Regel mit Norm dahinter – z. B. „Miete unbewegliche Wirtschaftsgüter: 50 %“."},
+    {"vorlage":"karussell","datei":"karussell/so_entsteht/folie_04.png","typ":"inhalt","nr":"03","titel":"*Parallel* rechnen.","text":"Tool und alte Excel laufen nebeneinander, bis jede Zahl übereinstimmt."},
+    {"vorlage":"karussell","datei":"karussell/so_entsteht/folie_05.png","typ":"inhalt","nr":"04","titel":"Ampeln *setzen*.","text":"Was fehlt oder auffällig ist, wird rot oder gelb – bevor es jemand anderes findet."},
+    {"vorlage":"karussell","datei":"karussell/so_entsteht/folie_06.png","typ":"inhalt","nr":"05","titel":"*Übergeben*.","text":"Du bekommst eine Oberfläche, keinen Code. Neuer Steuersatz? Ein Feld ändern statt Formeln suchen."},
+    {"vorlage":"karussell","datei":"karussell/so_entsteht/folie_07.png","typ":"cta","saeule":"Hinter dem Code","titel":"*Folgen*, wenn du mehr davon sehen willst.","chip":"➕ Folgen"}
+  ] }

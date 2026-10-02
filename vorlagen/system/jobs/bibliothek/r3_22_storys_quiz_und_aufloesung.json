@@ -1,0 +1,15 @@
+{ "titel": "Storys · Quiz und Auflösung (Runde 3)", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/quiz_geschenke.png","typ":"antwort","kicker":"Quiz","titel":"Bis zu welchem Betrag sind *Geschenke* an Kunden abziehbar?","antwort":"↩ Schätz mal –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_geschenke_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*50 €* pro Person und Jahr.","text":"Seit 2024, netto (§ 4 Abs. 5 Satz 1 Nr. 1 EStG). Ein Euro drüber – und nichts ist abziehbar."},
+    {"vorlage":"story","datei":"storys/quiz_gwg.png","typ":"antwort","kicker":"Quiz","titel":"Bis wann ist ein Wirtschaftsgut ein *GWG*?","antwort":"↩ Antworte mit einem Betrag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_gwg_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"Bis *800 €* netto.","text":"Sofortabzug nach § 6 Abs. 2 EStG. Alternativ: Sammelposten über 250 € bis 1.000 €, verteilt auf 5 Jahre."},
+    {"vorlage":"story","datei":"storys/quiz_belege.png","typ":"antwort","kicker":"Quiz","titel":"Wie lange musst du *Buchungsbelege* aufbewahren?","antwort":"↩ Antworte mit deinem Tipp –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_belege_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*8 Jahre* – seit 2025.","text":"Bücher und Jahresabschlüsse bleiben bei 10 Jahren (§ 147 Abs. 3 AO, § 257 Abs. 4 HGB)."},
+    {"vorlage":"story","datei":"storys/quiz_zinsschranke.png","typ":"antwort","kicker":"Quiz","titel":"Ab welchem Nettozinsaufwand greift die *Zinsschranke*?","antwort":"↩ Schätz mal –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_zinsschranke_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"Ab *3 Mio. €*.","text":"Freigrenze: Ab 3 Mio. € ist der Abzug auf 30 % des steuerlichen EBITDA begrenzt (§ 4h EStG, § 8a KStG)."},
+    {"vorlage":"story","datei":"storys/quiz_saeumnis.png","typ":"antwort","kicker":"Quiz","titel":"Was kostet *eine Woche* zu spät gezahlt?","antwort":"↩ Antworte mit deinem Tipp –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_saeumnis_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*1 %* Säumniszuschlag.","text":"Je angefangenen Monat (§ 240 AO). Bei Überweisung gilt eine Schonfrist von 3 Tagen."},
+    {"vorlage":"story","datei":"storys/quiz_einspruch.png","typ":"antwort","kicker":"Quiz","titel":"Wie lange hast du für einen *Einspruch* Zeit?","antwort":"↩ Antworte mit deinem Tipp –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_einspruch_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*1 Monat*.","text":"Ab Bekanntgabe (§ 355 AO). Bei Post gilt seit 2025: bekannt gegeben am vierten Tag nach Aufgabe."}
+  ] }

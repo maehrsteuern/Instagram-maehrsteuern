@@ -1,0 +1,8 @@
+{ "titel": "Karussell · Wissen – „GWG oder Sammelposten?“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/gwg/folie_01.png","typ":"titel","saeule":"Wissen","titel":"GWG oder Sammelposten: *Wann was*?","sub":"Drei Grenzen, die du kennen musst – alle netto."},
+    {"vorlage":"karussell","datei":"karussell/gwg/folie_02.png","typ":"inhalt","saeule":"Die Grenzen","titel":"Drei *Schwellen*.","zeilen":[["bis 250 €","sofort"],["bis 800 €","GWG"],["250,01 € bis 1.000 €","Pool, 5 Jahre"]],"boxTitel":"NORM","box":"§ 6 Abs. 2 und 2a EStG"},
+    {"vorlage":"karussell","datei":"karussell/gwg/folie_03.png","typ":"inhalt","saeule":"Die Wahl","titel":"*Einheitlich* pro Jahr.","text":"Wer den Sammelposten wählt, muss ihn für alle Wirtschaftsgüter über 250 € bis 1.000 € des Jahres nutzen.","boxTitel":"FOLGE","box":"Dann gilt die 800-€-Grenze in diesem Jahr *nicht*."},
+    {"vorlage":"karussell","datei":"karussell/gwg/folie_04.png","typ":"inhalt","saeule":"Rechenbeispiel · Demo-Zahlen","titel":"Laptop für *1.200 €*","zeilen":[["Kein GWG, kein Sammelposten","> 1.000 €"],["Nutzungsdauer Hardware","1 Jahr"],["AfA im Anschaffungsjahr","1.200 €","summe"]],"boxTitel":"HINWEIS","box":"Computerhardware und Software: Nutzungsdauer 1 Jahr (BMF-Schreiben)."},
+    {"vorlage":"karussell","datei":"karussell/gwg/folie_05.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für die nächste Anschaffung.","chip":"📌 Jetzt speichern"}
+  ] }

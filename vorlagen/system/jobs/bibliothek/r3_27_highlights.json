@@ -1,0 +1,7 @@
+{ "titel": "Highlight-Titelbilder · Quiz, Paragraf, Code, Prozent", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"highlight","datei":"highlights/hl_quiz.png","icon":"text","glyph":"?","fs":300},
+    {"vorlage":"highlight","datei":"highlights/hl_paragraf.png","icon":"text","glyph":"§","fs":300},
+    {"vorlage":"highlight","datei":"highlights/hl_code.png","icon":"text","glyph":"</>","fs":190},
+    {"vorlage":"highlight","datei":"highlights/hl_prozent.png","icon":"text","glyph":"%","fs":280}
+  ] }

@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Die KSt sinkt: 15 % → 10 %“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/kst_staffel/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Die KSt sinkt: *15 % → 10 %*.","sub":"Was die Senkung ab 2028 für eure Steuerquote bedeutet."},
+    {"vorlage":"karussell","datei":"karussell/kst_staffel/folie_02.png","typ":"inhalt","saeule":"Die Staffel","titel":"Ein Punkt *pro Jahr*.","zeilen":[["bis 2027","15 %"],["2028","14 %"],["2029","13 %"],["2030","12 %"],["2031","11 %"],["ab 2032","10 %"]],"boxTitel":"NORM","box":"§ 23 Abs. 1 KStG"},
+    {"vorlage":"karussell","datei":"karussell/kst_staffel/folie_03.png","typ":"inhalt","saeule":"Gesamtsatz · Hebesatz 400 %","titel":"KSt, SolZ und *GewSt*.","zeilen":[["2027","29,825 %"],["2028","28,770 %"],["2029","27,715 %"],["2030","26,660 %"],["2031","25,605 %"],["ab 2032","24,550 %"]]},
+    {"vorlage":"karussell","datei":"karussell/kst_staffel/folie_04.png","typ":"inhalt","saeule":"Rechenbeispiel · Demo-Zahlen","titel":"1 Mio. € Gewinn: *2027 vs. 2032*","zeilen":[["Steuern 2027","298.250 €"],["Steuern 2032","245.500 €"],["Weniger Steuern","52.750 €","summe"]],"boxTitel":"HINWEIS","box":"Die Gewerbesteuer bleibt unverändert."},
+    {"vorlage":"karussell","datei":"karussell/kst_staffel/folie_05.png","typ":"inhalt","saeule":"Folge für den Abschluss","titel":"Latente Steuern *neu bewerten*.","text":"Jede Differenz mit dem Satz ihres Abbaujahres – nicht pauschal mit 30 %.","boxTitel":"NORM","box":"§ 274 Abs. 2 HGB"},
+    {"vorlage":"karussell","datei":"karussell/kst_staffel/folie_06.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für die Planung bis 2032.","chip":"📌 Jetzt speichern"}
+  ] }

@@ -1,0 +1,7 @@
+{ "titel": "Karussell · Wissen – „Warum 15,825 %?“", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/solz/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Warum *15,825 %*?","sub":"Der Solidaritätszuschlag bei Kapitalgesellschaften – in 4 Folien."},
+    {"vorlage":"karussell","datei":"karussell/solz/folie_02.png","typ":"inhalt","saeule":"Die Rechnung","titel":"5,5 % *auf* die KSt.","zeilen":[["Körperschaftsteuer","15,000 %"],["SolZ: 5,5 % × 15 %","0,825 %"],["Zusammen","15,825 %","summe"]],"boxTitel":"NORM","box":"§§ 3, 4 SolZG"},
+    {"vorlage":"karussell","datei":"karussell/solz/folie_03.png","typ":"inhalt","saeule":"Der Unterschied","titel":"Keine *Freigrenze* für die GmbH.","text":"Bei natürlichen Personen entfällt der SolZ für die meisten. Kapitalgesellschaften zahlen ihn auf jeden Euro Körperschaftsteuer."},
+    {"vorlage":"karussell","datei":"karussell/solz/folie_04.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für die nächste Rechnung.","text":"Ab 2028 sinkt die KSt – und mit ihr der SolZ: 2028 sind es zusammen 14,77 %.","chip":"📌 Jetzt speichern"}
+  ] }

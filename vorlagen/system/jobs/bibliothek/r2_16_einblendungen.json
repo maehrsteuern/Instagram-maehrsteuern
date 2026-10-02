@@ -1,0 +1,15 @@
+{ "titel": "Reel-Einblendungen (haken, haken_ueber, leiste, abspann)", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"einblendung","datei":"bausteine/haken_zeile4000.png","typ":"haken","titel":"Zeile *4000*.\nUnd ein Fehler.","sub":"Irgendwo zwischen Blatt 7 und 12."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_von_hand.png","typ":"haken","kicker":"Ehrlich","titel":"Noch *von Hand*?","sub":"Hebesatz für Hebesatz."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_17s.png","typ":"haken","kicker":"Demo","titel":"17 Sekunden.\n*Ganze Rückstellung.*"},
+    {"vorlage":"einblendung","datei":"bausteine/haken_freitag.png","typ":"haken","titel":"Freitag, 18 Uhr.\n*Abschluss offen.*","sub":"Kennst du?"},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_rot.png","typ":"haken_ueber","kicker":"Demo","titel":"Rot heißt:\n*Hebesatz fehlt*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_pruefpfad.png","typ":"haken_ueber","kicker":"Prüfpfad","titel":"Ein Klick.\n*Eine Quelle.*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_einlesen.png","typ":"leiste","kicker":"Schritt 1","titel":"Daten *einlesen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_regeln.png","typ":"leiste","kicker":"Schritt 2","titel":"Regeln *anwenden*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_ampel.png","typ":"leiste","kicker":"Schritt 3","titel":"Ampel *prüfen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_gebucht.png","typ":"leiste","kicker":"Ergebnis","titel":"Rückstellung *gebucht*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_rechnet.png","typ":"abspann","titel":"Steuerwissen,\ndas *rechnet.*"},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_copy_paste.png","typ":"abspann","titel":"Code statt\n*Copy-Paste.*"}
+  ] }

@@ -1,0 +1,8 @@
+{ "titel": "Karussell · Wissen – „Aufbewahrung: 8 Jahre statt 10“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Aufbewahrung: *8 Jahre* statt 10.","sub":"Was sich 2025 geändert hat – und was bleibt."},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung/folie_02.png","typ":"inhalt","saeule":"Die Fristen","titel":"Drei Fristen, *ein Start*.","zeilen":[["Bücher, Inventare, Abschlüsse","10 Jahre"],["Buchungsbelege","8 Jahre"],["Handels- und Geschäftsbriefe","6 Jahre"]],"boxTitel":"NORM","box":"§ 147 Abs. 3 AO · § 257 Abs. 4 HGB"},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung/folie_03.png","typ":"inhalt","saeule":"Der Start","titel":"Ab *Jahresende*.","text":"Die Frist beginnt mit dem Schluss des Kalenderjahres, in dem der Beleg entstanden ist.","boxTitel":"BEISPIEL","box":"Beleg aus 2018: aufbewahren bis 31.12.2026."},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung/folie_04.png","typ":"inhalt","saeule":"Achtung","titel":"Nicht, solange die Steuer *offen* ist.","text":"Die Frist läuft nicht ab, solange die Festsetzungsfrist für die betroffenen Steuern noch läuft.","boxTitel":"NORM","box":"§ 147 Abs. 3 Satz 5 AO"},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung/folie_05.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* vor dem Aufräumen.","chip":"📌 Jetzt speichern"}
+  ] }
