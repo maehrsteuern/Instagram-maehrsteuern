@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 02.10. 13:18 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 02.10. 15:11 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -69,16 +69,18 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 ## 📈 Zahlen (täglich ca. 08:45)
 
 **351 Follower** · 2 Beiträge im Profil (Abruf 2026-10-02) · **-1** seit 2026-10-01 ⚠️
-Reichweite pro Tag: 28.09. **1** · 29.09. **126** · 30.09. **82** · 01.10. **63**
+Reichweite pro Tag: 29.09. **126** · 30.09. **82** · 01.10. **68** · 02.10. **55**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| Do 01.10. 23:58 | 40 | 26 | 0 | 0 | 0 |
+| Do 01.10. 23:58 | 83 | 66 | 1 | 1 | 0 |
+| Fr 02.10. 12:15 | 42 | 29 | 1 | 0 | 0 |
+| Fr 02.10. 12:15 | – | – | – | – | – |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 169 (+93) | 51 | 6 | 2 | 1 | 6 |
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 255 (+7) | 149 | 6 | 0 | 1 | 3 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 243 (+167) | 86 | 6 | 2 | 1 | 6 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 262 (+14) | 156 | 6 | 0 | 1 | 3 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -99,6 +101,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Fr 02.10.2026**
+- 15:11 📈 Statistik 2026-10-02 ([`c3f893b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c3f893b5c2d3bb9f56c0b7b3646ae9679ac7990b))
+  - `automatik/statistik`
 - 13:18 ✍️ Lage-Notizen: Interaktion gemergt, offen sind Secrets und Kontenliste ([`a54983d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a54983d43696c5264401b31bfd0d104f40971bbb))
   - `automatik/lage_notizen.md`
 - 13:18 🔀 Merge: Zweite Säule Interaktion (Radar, Kommentar-Hilfe, LinkedIn-Pakete) ([`47638f3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/47638f3a174a1652349a3026025805e6a6024553))
