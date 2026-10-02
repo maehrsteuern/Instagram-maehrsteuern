@@ -6,7 +6,7 @@
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
   "followers_count": 351,
-  "follows_count": 257,
+  "follows_count": 255,
   "media_count": 2
  },
  "konto_verlauf": [
@@ -14,18 +14,18 @@
    "von": "2026-09-02",
    "bis": "2026-10-02",
    "reach": {
-    "gesamt": 205,
+    "gesamt": 206,
     "aufgeteilt": {
-     "FOLLOWER": 108,
+     "FOLLOWER": 109,
      "NON_FOLLOWER": 99
     }
    },
    "views": {
-    "gesamt": 1282,
+    "gesamt": 1299,
     "aufgeteilt": {
+     "FOLLOWER": 941,
      "UNKNOWN": 3,
-     "NON_FOLLOWER": 355,
-     "FOLLOWER": 924
+     "NON_FOLLOWER": 355
     }
    },
    "accounts_engaged": 14,
@@ -90,16 +90,16 @@
    "reach": {
     "gesamt": 75,
     "aufgeteilt": {
-     "FOLLOWER": 2,
-     "NON_FOLLOWER": 73
+     "NON_FOLLOWER": 73,
+     "FOLLOWER": 2
     }
    },
    "views": {
     "gesamt": 273,
     "aufgeteilt": {
      "FOLLOWER": 17,
-     "UNKNOWN": 15,
-     "NON_FOLLOWER": 241
+     "NON_FOLLOWER": 241,
+     "UNKNOWN": 15
     }
    },
    "accounts_engaged": 1,
@@ -127,8 +127,8 @@
    "reach": {
     "gesamt": 54,
     "aufgeteilt": {
-     "NON_FOLLOWER": 49,
-     "FOLLOWER": 5
+     "FOLLOWER": 5,
+     "NON_FOLLOWER": 49
     }
    },
    "views": {
@@ -164,8 +164,8 @@
    "reach": {
     "gesamt": 46,
     "aufgeteilt": {
-     "FOLLOWER": 1,
-     "NON_FOLLOWER": 45
+     "NON_FOLLOWER": 45,
+     "FOLLOWER": 1
     }
    },
    "views": {
@@ -245,9 +245,9 @@
    "views": {
     "gesamt": 114,
     "aufgeteilt": {
-     "FOLLOWER": 2,
      "UNKNOWN": 3,
-     "NON_FOLLOWER": 109
+     "NON_FOLLOWER": 109,
+     "FOLLOWER": 2
     }
    },
    "accounts_engaged": 1,
@@ -282,8 +282,8 @@
    "views": {
     "gesamt": 96,
     "aufgeteilt": {
-     "FOLLOWER": 2,
      "UNKNOWN": 1,
+     "FOLLOWER": 2,
      "NON_FOLLOWER": 93
     }
    },
@@ -467,8 +467,8 @@
     "gesamt": 532,
     "aufgeteilt": {
      "UNKNOWN": 25,
-     "NON_FOLLOWER": 454,
-     "FOLLOWER": 53
+     "FOLLOWER": 53,
+     "NON_FOLLOWER": 454
     }
    },
    "accounts_engaged": 0,
@@ -501,8 +501,8 @@
     "gesamt": 574,
     "aufgeteilt": {
      "UNKNOWN": 15,
-     "NON_FOLLOWER": 522,
-     "FOLLOWER": 37
+     "FOLLOWER": 37,
+     "NON_FOLLOWER": 522
     }
    },
    "accounts_engaged": 0,
@@ -633,7 +633,6 @@
   }
  ],
  "tageswerte_reichweite": {
-  "2026-09-03": 1,
   "2026-09-04": 1,
   "2026-09-05": 1,
   "2026-09-06": 1,
@@ -661,7 +660,8 @@
   "2026-09-28": 1,
   "2026-09-29": 126,
   "2026-09-30": 82,
-  "2026-10-01": 63
+  "2026-10-01": 68,
+  "2026-10-02": 55
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -768,47 +768,168 @@
   },
   "reached_audience_demographics": {
    "this_month": {
-    "age": {},
-    "gender": {},
-    "city": {},
-    "country": {}
+    "age": {
+     "13-17": 1,
+     "18-24": 19,
+     "25-34": 88,
+     "35-44": 33,
+     "45-54": 16,
+     "55-64": 2
+    },
+    "gender": {
+     "F": 57,
+     "M": 70,
+     "U": 32
+    },
+    "city": {
+     "Wölfis, Thüringen": 1,
+     "Herrieden, Bayern": 1,
+     "Jena, Thüringen": 2,
+     "Halle, Saxony-Anhalt": 1,
+     "Hesel, Niedersachsen": 1,
+     "Ahrensfelde, Brandenburg": 1,
+     "Gotha, Thüringen": 3,
+     "Berlin, Berlin": 5,
+     "Hürth, Nordrhein-Westfalen": 2,
+     "Erfurt, Thüringen": 8,
+     "Hamburg, Hamburg": 5,
+     "Oberwil, Basel-Landschaft": 1,
+     "Düsseldorf, Nordrhein-Westfalen": 2,
+     "Seoul, Seoul": 1,
+     "Dresden, Sachsen": 2,
+     "Luisenthal, Thüringen": 1,
+     "Ohrdruf, Thüringen": 5,
+     "Waldsee, Rheinland-Pfalz": 1,
+     "Neukirchen-Vluyn, Nordrhein-Westfalen": 1,
+     "Pöttmes, Bayern": 1,
+     "Plaue, Thüringen": 2,
+     "Marktbreit, Bayern": 1,
+     "Ravensburg, Baden-Württemberg": 1,
+     "Pößneck, Thüringen": 1,
+     "Weimar, Thüringen": 1,
+     "Wernberg-Köblitz, Bayern": 1,
+     "Recklinghausen, Nordrhein-Westfalen": 1,
+     "Amman, Amman Governorate": 1,
+     "Schmölln, Thüringen": 1,
+     "Chennai, Tamil Nadu": 2,
+     "Simmerath, Nordrhein-Westfalen": 1,
+     "Groningen, Groningen": 1,
+     "Gossel, Thüringen": 2,
+     "Hardheim, Baden-Württemberg": 1,
+     "Frankfurt, Hessen": 2,
+     "Crawinkel, Thüringen": 1,
+     "Grenville, Saint Andrew Parish": 1,
+     "Liebenstein, Thüringen": 2,
+     "Fulda, Hessen": 1,
+     "Maxhütte-Haidhof, Bayern": 1,
+     "Wolfsburg-Unkeroda, Thüringen": 1,
+     "Flensburg, Schleswig-Holstein": 2,
+     "Kempen, Nordrhein-Westfalen": 1,
+     "Semnan, Semnan Province": 1,
+     "Neuss, Nordrhein-Westfalen": 1
+    },
+    "country": {
+     "DE": 131,
+     "CH": 1,
+     "UZ": 1,
+     "JO": 1,
+     "IN": 8,
+     "SY": 1,
+     "KR": 6,
+     "IR": 2,
+     "MX": 1,
+     "FR": 1,
+     "PK": 1,
+     "GB": 1,
+     "GD": 1,
+     "NL": 1,
+     "TR": 2
+    }
    },
    "this_week": {
-    "age": {},
-    "gender": {},
-    "city": {},
-    "country": {}
+    "age": {
+     "13-17": 1,
+     "18-24": 19,
+     "25-34": 87,
+     "35-44": 33,
+     "45-54": 16,
+     "55-64": 1
+    },
+    "gender": {
+     "F": 56,
+     "M": 69,
+     "U": 32
+    },
+    "city": {
+     "Wölfis, Thüringen": 1,
+     "Herrieden, Bayern": 1,
+     "Jena, Thüringen": 2,
+     "Halle, Saxony-Anhalt": 1,
+     "Hesel, Niedersachsen": 1,
+     "Ahrensfelde, Brandenburg": 1,
+     "Gotha, Thüringen": 3,
+     "Berlin, Berlin": 5,
+     "Hürth, Nordrhein-Westfalen": 2,
+     "Erfurt, Thüringen": 8,
+     "Hamburg, Hamburg": 5,
+     "Oberwil, Basel-Landschaft": 1,
+     "Düsseldorf, Nordrhein-Westfalen": 2,
+     "Seoul, Seoul": 1,
+     "Dresden, Sachsen": 2,
+     "Luisenthal, Thüringen": 1,
+     "Ohrdruf, Thüringen": 5,
+     "Waldsee, Rheinland-Pfalz": 1,
+     "Neukirchen-Vluyn, Nordrhein-Westfalen": 1,
+     "Pöttmes, Bayern": 1,
+     "Plaue, Thüringen": 2,
+     "Marktbreit, Bayern": 1,
+     "Ravensburg, Baden-Württemberg": 1,
+     "Pößneck, Thüringen": 1,
+     "Weimar, Thüringen": 1,
+     "Wernberg-Köblitz, Bayern": 1,
+     "Recklinghausen, Nordrhein-Westfalen": 1,
+     "Amman, Amman Governorate": 1,
+     "Schmölln, Thüringen": 1,
+     "Chennai, Tamil Nadu": 2,
+     "Simmerath, Nordrhein-Westfalen": 1,
+     "Groningen, Groningen": 1,
+     "Gossel, Thüringen": 2,
+     "Hardheim, Baden-Württemberg": 1,
+     "Frankfurt, Hessen": 2,
+     "Crawinkel, Thüringen": 1,
+     "Grenville, Saint Andrew Parish": 1,
+     "Liebenstein, Thüringen": 2,
+     "Fulda, Hessen": 1,
+     "Maxhütte-Haidhof, Bayern": 1,
+     "Wolfsburg-Unkeroda, Thüringen": 1,
+     "Flensburg, Schleswig-Holstein": 2,
+     "Kempen, Nordrhein-Westfalen": 1,
+     "Semnan, Semnan Province": 1,
+     "Neuss, Nordrhein-Westfalen": 1
+    },
+    "country": {
+     "DE": 129,
+     "CH": 1,
+     "UZ": 1,
+     "JO": 1,
+     "IN": 8,
+     "SY": 1,
+     "KR": 6,
+     "IR": 2,
+     "MX": 1,
+     "FR": 1,
+     "PK": 1,
+     "GB": 1,
+     "GD": 1,
+     "NL": 1,
+     "TR": 2
+    }
    }
   }
  },
  "online_follower": {
-  "2026-09-30": {
-   "0": 90,
-   "1": 82,
-   "2": 92,
-   "3": 84,
-   "4": 94,
-   "5": 99,
-   "6": 101,
-   "7": 99,
-   "8": 102,
-   "9": 109,
-   "10": 118,
-   "11": 120,
-   "12": 113,
-   "13": 98,
-   "14": 66,
-   "15": 29,
-   "16": 22,
-   "17": 16,
-   "18": 15,
-   "19": 18,
-   "20": 28,
-   "21": 67,
-   "22": 79,
-   "23": 89
-  },
-  "2026-10-01": {}
+  "2026-10-01": {},
+  "2026-10-02": {}
  },
  "beitraege": [
   {
@@ -820,8 +941,8 @@
    "like_count": 6,
    "comments_count": 2,
    "caption": "Neu hier? Dann kurz zu mir 👋\n\nIch bin Loris – Diplom-Finanzwirt und IHK-zertifizierter Manager für angewandte KI-Transformation.\n\n2025 habe ich maehrsteuern gestartet: mit Lern-Inhalten und KI-Schulungen rund ums Steuer-Examen. Viele von euch kennen mich daher – und sind heute selbst Beraterinnen und Berater. 🎓➡️💼\n\nJetzt geht's den nächsten Schritt: KI-Lösungen für Steuern, die wirklich laufen – weil ich sie selbst programmiere. Vom kleinen Tool bis zum ganzen Prozess.\n\n📅 Ab jetzt jede Woche neue Beiträge, meist abends um 19:30:\n⚙️ Demos meiner Tools\n📊 Excel-Fehler und Steuerwissen mit Rechenbeispiel\n🧠 Einblicke hinter den Code\n\nWoher kennst du mich – Examen, Kanzlei oder Steuerabteilung? 👇\n\n💬 Schreib mir „TOOL“ per DM, wenn du die Demo sehen willst.\n\n#steuern #steuerrecht #kuenstlicheintelligenz #automatisierung #finanzwirt",
-   "views": 169,
-   "reach": 51,
+   "views": 243,
+   "reach": 86,
    "likes": 6,
    "comments": 2,
    "saved": 1,
@@ -848,15 +969,15 @@
    "like_count": 6,
    "comments_count": 0,
    "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
-   "views": 255,
-   "reach": 149,
+   "views": 262,
+   "reach": 156,
    "likes": 6,
    "comments": 0,
    "saved": 1,
    "shares": 3,
    "total_interactions": 10,
-   "ig_reels_avg_watch_time": 6484,
-   "ig_reels_video_view_total_time": 1277424,
+   "ig_reels_avg_watch_time": 6469,
+   "ig_reels_video_view_total_time": 1319834,
    "reels_skip_rate": 67.2,
    "_fehlt": [
     "profile_visits",
@@ -870,10 +991,15 @@
  ],
  "storys_aktiv": [
   {
-   "id": "17888471295468269",
-   "zeit": "2026-10-01T21:58:44+0000",
-   "views": 40,
-   "reach": 26,
+   "id": "17905813776657773",
+   "zeit": "2026-10-02T10:15:48+0000",
+   "kommentare_text": []
+  },
+  {
+   "id": "18121622900303109",
+   "zeit": "2026-10-02T10:15:15+0000",
+   "views": 42,
+   "reach": 29,
    "_fehlt": [
     "likes",
     "comments",
@@ -883,12 +1009,34 @@
     "reels_skip_rate"
    ],
    "shares": 0,
-   "total_interactions": 1,
+   "total_interactions": 2,
    "profile_visits": 0,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 25,
-   "replies": 0,
+   "navigation": 38,
+   "replies": 1,
+   "kommentare_text": []
+  },
+  {
+   "id": "17888471295468269",
+   "zeit": "2026-10-01T21:58:44+0000",
+   "views": 83,
+   "reach": 66,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 3,
+   "profile_visits": 1,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 67,
+   "replies": 1,
    "kommentare_text": []
   }
  ],
