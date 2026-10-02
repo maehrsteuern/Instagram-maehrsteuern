@@ -96,6 +96,23 @@ Tiefpunkt 01–05 Uhr: 10–33 online.
 - **12:15 für Storys passt** (107 online).
 - Ab 23 Uhr fällt die Aktivität stark ab.
 
+### Ganze Woche (Screenshot 02.10.2026, deutsche Zeit = angezeigte Westküstenzeit + 9 h)
+| Deutsche Zeit | Mo | Di | Mi | Do | Fr | Sa | So |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 09:00 | 92 | 95 | 93 | 96 | 97 | 96 | 95 |
+| 12:00 | 104 | 102 | 100 | 104 | 106 | 97 | 105 |
+| 15:00 | 104 | 110 | 104 | 108 | 107 | 97 | 106 |
+| **18:00** | **114** | **112** | **115** | **113** | 107 | **103** | **117** |
+| 21:00 | 94 | 94 | 93 | 100 | 95 | 98 | 93 |
+| 00:00 | 24 | 25 | 25 | 25 | 37 | 41 | 26 |
+| 03:00 | 20 | 23 | 21 | 20 | 17 | 17 | 20 |
+| 06:00 | 82 | 81 | 78 | 82 | 61 | 50 | 82 |
+
+- Höhepunkt jeden Tag **um 18 Uhr**, bis 21 Uhr noch hoch → **19:30 passt** (erste Stunde im Hoch). Stärkster Abend: **Sonntag** (117) → Reel-Tag bleibt.
+- **Freitag und Samstag flacher:** abends etwas weniger, dafür länger wach (00 Uhr: 37/41).
+- Storys 12:15 passen an allen Tagen (97–106).
+- Zeitumstellung: 25.10.–01.11. nur 8 h Abstand (Deutschland stellt eine Woche früher um).
+
 ## 5 · Storys (29.09.2026)
 4 Storys, je 56–88 Aufrufe und 33–67 erreichte Konten, zusammen 5 Profilbesuche, keine Antworten.
 **Folgerung:** Deine Storys sehen etwa 15–20 % der Follower, das ist normal. Die Sticker-Storys (Frage, Umfrage, Quiz) sollen Antworten auslösen. Ob das klappt, sehen wir in der Montags-Statistik nach dem 05.10.
