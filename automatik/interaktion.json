@@ -39,7 +39,9 @@
       {"name": "steuertipps.de", "art": "software"},
       {"name": "novonetgmbh", "art": "software"},
       {"name": "controllingmitexcel", "art": "creator"},
-      {"name": "vero.bilanzbuchhalter", "art": "creator"}
+      {"name": "vero.bilanzbuchhalter", "art": "creator"},
+      {"name": "candis.io", "art": "software"},
+      {"name": "wieland_digitalesteuerberatung", "art": "kanzlei"}
     ],
     "hashtags": ["steuerberater", "steuerkanzlei", "jahresabschluss", "steuerfachangestellte", "steuerrecht", "bilanzbuchhalter"],
     "schlagwoerter": ["excel", "tool", "automatisierung", "ki", "digitalisierung", "datev", "jahresabschluss", "rückstellung", "gewerbesteuer", "latente steuern", "e-rechnung", "frist", "abschluss", "steuererklärung", "examen"],
@@ -52,7 +54,7 @@
   },
   "kommentare": {
     "_hinweis": "Kommentare mit diesen Stichwörtern beantwortet ManyChat (DM + öffentliche Antwort) – die Kommentar-Hilfe lässt sie aus.",
-    "manychat_stichwoerter": ["TOOL"],
+    "manychat_stichwoerter": ["TOOL", "tol"],
     "beitraege_pruefen": 12
   }
 }
