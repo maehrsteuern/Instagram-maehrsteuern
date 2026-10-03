@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css">
+<!-- LinkedIn-Titelbild 1584×396. Links unten verdeckt das Profilfoto (Desktop ca. x<480), mobil wird seitlich beschnitten → Inhalt rechts der Mitte. -->
+<style>
+html,body{width:1584px;height:396px;background:radial-gradient(55% 120% at 72% 50%,var(--bg2) 0%,var(--bg) 75%)}
+.raster{position:absolute;inset:0;background-image:linear-gradient(rgba(83,195,162,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(83,195,162,.06) 1px,transparent 1px);background-size:44px 44px;
+  -webkit-mask-image:linear-gradient(90deg,transparent 25%,#000 70%)}
+.box{position:absolute;left:560px;right:72px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.kicker{font-size:20px}
+h1{margin:0;font-family:var(--serif);font-weight:600;font-size:64px;line-height:1.05;letter-spacing:-.01em}
+.unter{font-size:26px;color:var(--text2)}
+.zeile{display:flex;gap:14px;margin-top:6px}
+.chip{font-size:18px;border-width:2px}
+.x{color:var(--gruen);text-shadow:0 0 24px rgba(83,195,162,.7)}
+</style></head><body><div class="raster"></div>
+<div class="box">
+  <div class="kicker" id="k"></div>
+  <h1 id="t"></h1>
+  <div class="unter" id="u"></div>
+  <div class="zeile" id="c"></div>
+</div>
+<script>
+const d = Object.assign({kicker:"maehrsteuern", titel:"Steuern <span class=x>×</span> Code", unter:"Steuerwissen, das rechnet. Tools für Steuerabteilungen und Kanzleien.", chips:["Steuerrückstellung","Excel → Tool","KI, die läuft"]}, window.DATA||{});
+k.textContent=d.kicker; t.innerHTML=d.titel; u.textContent=d.unter;
+c.innerHTML=d.chips.map(x=>`<span class="chip">${x}</span>`).join('');
+</script></body></html>

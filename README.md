@@ -22,7 +22,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/10_software_reel_konzept.md` | Eigenes Reel-Konzept für Software (Split-Screen, Satisfying Software, Gesicht + Screen), Bildschirmaufnahmen |
 | `strategie/11_wissen_instagram.md` | Gesammeltes Instagram-Wissen: Algorithmus-Signale, Teilen/Speichern, Suche, Serien, Saison, offene Entscheidungen |
 | `strategie/13_backlog.md` | Backlog Automatisierung: umgesetzt, Sprint 2, zurückgestellt, abgelehnt |
-| `strategie/linkedin/` | **LinkedIn-Strang (Aufbau):** `01_wissen_linkedin.md` (Algorithmus, Formate, Takt – Entwurf zum Prüfen), `prompts/` (Prompts für Claude in Chrome, nur lesen/vorbereiten) |
+| `strategie/linkedin/` | **LinkedIn-Strang (Aufbau):** `01_wissen_linkedin.md` (Algorithmus, Formate, Takt – Entwurf zum Prüfen), `02_erstanalyse_*.md` (Ausgangswerte), `03_profil.md` (Headline, Info, Erfahrung), `prompts/` (Prompts für Claude in Chrome, nur lesen/vorbereiten); Titelbild `assets/linkedin/` |
 | `strategie/12_interaktion.md` | **Zweite Säule Interaktion:** Radar, DM-Entwürfe, Kommentar-Hilfe, Click-to-DM-Anzeige, Collabs, LinkedIn, Grenzen |
 | `vorlagen/hooks/` | Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8–2,8 s), Übersicht in `README.md` |
 | `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
