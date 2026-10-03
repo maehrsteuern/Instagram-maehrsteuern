@@ -1,0 +1,139 @@
+{
+ "tag": "2026-10-03",
+ "follower": 351,
+ "follower_vortag": 351,
+ "reichweite_gestern": 77,
+ "reichweite_vortag": 68,
+ "nicht_follower_quote": 0.49107142857142855,
+ "link_klicks": 0,
+ "beitraege": [
+  {
+   "name": "00-neuvorstellung",
+   "typ": "Karussell",
+   "zeit": "Do 01.10. 18:30",
+   "link": "https://www.instagram.com/p/Dd9V5HAAhcL/",
+   "views": 269,
+   "reach": 98,
+   "likes": 6,
+   "comments": 2,
+   "saved": 1,
+   "shares": 6,
+   "profil": 5,
+   "follows": 0,
+   "sehdauer": null,
+   "skip": null,
+   "v_views": 243,
+   "v_reach": 86,
+   "v_saved": 1,
+   "v_shares": 6,
+   "v_comments": 2
+  },
+  {
+   "name": "Steuern × Code. ⚡",
+   "typ": "Reel",
+   "zeit": "Di 29.09. 15:42",
+   "link": "https://www.instagram.com/reel/Dd34F9RtucT/",
+   "views": 265,
+   "reach": 157,
+   "likes": 6,
+   "comments": 2,
+   "saved": 1,
+   "shares": 3,
+   "profil": null,
+   "follows": null,
+   "sehdauer": 6.522,
+   "skip": 67,
+   "v_views": 262,
+   "v_reach": 156,
+   "v_saved": 1,
+   "v_shares": 3,
+   "v_comments": 0
+  }
+ ],
+ "storys": [
+  {
+   "id": "18121622900303109",
+   "zeit": "2026-10-02T10:15:15+0000",
+   "views": 81,
+   "reach": 59,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 3,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 70,
+   "replies": 1,
+   "kommentare_text": []
+  }
+ ],
+ "methoden": [
+  {
+   "methode": "Reels bringen Nicht-Follower",
+   "kennzahl": "Anteil Nicht-Follower an der Reichweite (30 Tage)",
+   "ist": "49 %",
+   "ziel": "≥ 50 %",
+   "status": "⚠️"
+  },
+  {
+   "methode": "Hook in den ersten 1,5 s",
+   "kennzahl": "Überspringrate letztes Reel (Steuern × Code. ⚡)",
+   "ist": "67 %",
+   "ziel": "< 60 %",
+   "status": "⚠️"
+  },
+  {
+   "methode": "„Wer schickt das an wen?“",
+   "kennzahl": "Geteilt ÷ Erreicht (00-neuvorstellung)",
+   "ist": "6,1 %",
+   "ziel": "≥ 3 %",
+   "status": "✅"
+  },
+  {
+   "methode": "Speicherbare Inhalte",
+   "kennzahl": "Gespeichert ÷ Erreicht (00-neuvorstellung)",
+   "ist": "1,0 %",
+   "ziel": "≥ 2 %",
+   "status": "⚠️"
+  },
+  {
+   "methode": "Mittags-Story mit Frage",
+   "kennzahl": "Story-Reichweite ÷ Follower · Antworten",
+   "ist": "17 % · 1 Antw.",
+   "ziel": "≥ 15 % · ≥ 1",
+   "status": "✅"
+  },
+  {
+   "methode": "Profil verwandelt Besucher",
+   "kennzahl": "Follows ÷ Profilbesuche (Beiträge seit 29.09.)",
+   "ist": "0 / 5",
+   "ziel": "≥ 10 %",
+   "status": "❌"
+  },
+  {
+   "methode": "TOOL-Aufruf / Bio-Link",
+   "kennzahl": "Link-Klicks in der Bio (30 Tage)",
+   "ist": "0",
+   "ziel": "≥ 1 pro Woche",
+   "status": "❌"
+  },
+  {
+   "methode": "Posten um 19:30",
+   "kennzahl": "Follower online 19–20 Uhr ÷ Spitzenstunde",
+   "ist": "97 %",
+   "ziel": "≥ 85 %",
+   "status": "✅"
+  }
+ ],
+ "heute_online": [
+  "12:15 story 08-story-tipp"
+ ],
+ "fehler": []
+}

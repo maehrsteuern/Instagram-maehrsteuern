@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 08:59 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 09:52 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -102,6 +102,10 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 09:52 ✍️ Tagesbericht als Bild: Kennzahlen, Reichweite pro Tag, Beitraege mit Vortagsvergleich und Methoden-Check ([`ad5c8ad`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ad5c8ad64e3d0c9902b294a4dbe229ef86a858c2))
+  - `automatik/berichte`, `automatik/tagesbericht.py`
+- 09:51 📡 Radar: Häkchen auch in eigenen Kommentaren im Radar-Issue zählen ([`72d79a5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/72d79a53ba0cec60f21f1c2491f1eca24c2d22c5))
+  - `automatik/radar.py`
 - 08:59 ✍️ Auswertung: eigene Frage-Story schlaegt geteilte Story, Karussell waechst ueber 2 Tage ([`f9d3771`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f9d37710e292a1875e55d1d3b1c104ef8db8276d))
   - `strategie/06_auswertung.md`
 - 08:37 🔀 Merge remote-tracking branch 'origin/claude/instagram' into ccr-9d4fa6dd-1kqi9l ([`09d9a7f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/09d9a7f09ee103b9151cea0c4b72ec7d7027113e))
