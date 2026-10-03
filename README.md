@@ -21,6 +21,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/09_reel_regeln.md` | Reel-Regeln aus Feedback: Hook, KI-Clips, Ton, Safe-Zone, Farben |
 | `strategie/10_software_reel_konzept.md` | Eigenes Reel-Konzept für Software (Split-Screen, Satisfying Software, Gesicht + Screen), Bildschirmaufnahmen |
 | `strategie/11_wissen_instagram.md` | Gesammeltes Instagram-Wissen: Algorithmus-Signale, Teilen/Speichern, Suche, Serien, Saison, offene Entscheidungen |
+| `strategie/14_chrome_module.md` | Gesamtprompt für Claude in Chrome (Module A, 1–6: ManyChat-Zahlen, Anzeige, Hashtag-Freigabe, Radar-Konten, LinkedIn-Upload, Wettbewerbs-Check) + Zeitplan |
 | `strategie/13_backlog.md` | Backlog Automatisierung: umgesetzt, Sprint 2, zurückgestellt, abgelehnt |
 | `strategie/12_interaktion.md` | **Zweite Säule Interaktion:** Radar, DM-Entwürfe, Kommentar-Hilfe, Click-to-DM-Anzeige, Collabs, LinkedIn, Grenzen |
 | `vorlagen/hooks/` | Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8–2,8 s), Übersicht in `README.md` |

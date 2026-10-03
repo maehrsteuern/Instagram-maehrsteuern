@@ -15,6 +15,7 @@ from lage import WURZEL, TYP, zeit, dateien_fehlen
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/Instagram-maehrsteuern")
 FEED = ("reel", "karussell", "bild")
+CHROME = f"https://github.com/{REPO}/blob/claude/instagram/strategie/14_chrome_module.md"
 FREIGABEN = f"https://github.com/{REPO}/issues?q=is%3Aopen+label%3Afreigabe"
 RUECKBLICK = timedelta(days=14)
 
@@ -67,6 +68,14 @@ def eintraege_zu_terminen(eintraege, jetzt):
             if e.get("danach"):
                 text += f"\nDanach: {e['danach']}"
             t.append(termin(e["id"], beginn, 45 if e["typ"] in FEED else 15, titel, f"{text}\n{info}".strip()))
+        if e["typ"] == "karussell" and s in ("freigegeben", "veroeffentlicht") \
+                and (WURZEL / e["ordner"] / "linkedin" / "karussell.pdf").exists():
+            li = (beginn + timedelta(days=1)).replace(hour=8, minute=0)
+            while li.weekday() >= 5:  # LinkedIn nie am Wochenende
+                li += timedelta(days=1)
+            t.append(termin(f"{e['id']}-linkedin", li, 15, f"💼 LinkedIn: {name(e)} posten (Chrome Modul 5)",
+                            f"PDF + Text liegen im Issue: https://github.com/{REPO}/issues?q=is%3Aopen+label%3Alinkedin\n"
+                            f"Chrome-Claude: Gesamtprompt aus {CHROME} einfügen, dann „Modul 5“. Absenden nur nach deinem go."))
         if beginn <= jetzt:
             continue
         bald = jetzt.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1)
