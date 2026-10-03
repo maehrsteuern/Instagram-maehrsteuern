@@ -23,3 +23,12 @@ Bild: Gesicht kurz am Anfang (optional Selfie-Clip 2–3 s), dann Aufnahme Staff
 > Wie oft passiert dir das? Schreib's in die Kommentare.
 
 Bild: Gesicht + Bildschirm (Format C), am Ende Prüfpfad-Klick im Tool. Hook-Text: „#BEZUG! – 2 Tage vor Abgabe.“
+
+## Di 20.10. · „Mein Weg rückwärts“ (Reel Mein Weg, Variante B – bis Do 15.10.)
+> Das bin ich. Heute.
+> Davor: ein KI-Porträt, das ich selbst bearbeitet habe.
+> 2025 hat noch ein KI-Avatar für mich gesprochen.
+> Heute stehe ich selbst davor – mit Steuern × Code.
+> Schreib TOOL per DM.
+
+Bild: nur die Karten aus `assets/marke/` (Drehbuch `posts/04_2026-10-20_reel_mein_weg/drehbuch_markenweg.md`), kein eigener Clip nötig. Ca. 18 s, gern in deinen Worten. Hook-Text: „Das bin ich. Heute.“

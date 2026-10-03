@@ -1,0 +1,55 @@
+name: Wochenbericht
+# Sonntags ca. 18:00: EIN Issue „📊 Woche KW xx“ (automatik/wochenbericht.py), Werte auch in automatik/statistik/woche.csv.
+# Hauptauslöser ist lage.yml (So 18:00–21:00 deutscher Zeit, falls heute noch keiner lief); der Zeitplan hier ist Reserve.
+# Nachtrag im Issue („demos 2“, „manychat 14/6“, „herkunft …“) wird still übernommen.
+on:
+  schedule:
+    - cron: "7 16 * * 0"
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  bericht:
+    concurrency: { group: wochenbericht, cancel-in-progress: false }
+    if: github.event_name != 'issue_comment'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with: { ref: claude/instagram }
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automatik/requirements-google.txt
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - run: pip install -q -r automatik/requirements-google.txt
+      - env:
+          GH_TOKEN: "${{ github.token }}"
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+        run: python automatik/wochenbericht.py bericht
+  nachtrag:
+    # je Kommentar eigene Gruppe: in einer gemeinsamen Gruppe verdrängt ein neuer Kommentar einen wartenden
+    # Lauf (GitHub hält nur einen) – dessen Text ginge verloren. Parallel ist ok: Push mit pull --rebase + Wiederholung.
+    concurrency:
+      group: wochenbericht-c${{ github.event.comment.id }}
+      cancel-in-progress: false
+    # nur Kommentare des Konto-Inhabers im Wochenbericht-Issue
+    if: >-
+      github.event_name == 'issue_comment' &&
+      github.event.comment.user.login == github.repository_owner &&
+      contains(github.event.issue.labels.*.name, 'wochenbericht')
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with: { ref: claude/instagram }
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.12" }
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - env:
+          GH_TOKEN: "${{ github.token }}"
+          KOMMENTAR: "${{ github.event.comment.body }}"
+        run: python automatik/wochenbericht.py antwort "${{ github.event.issue.number }}" "$KOMMENTAR"

@@ -13,10 +13,10 @@ permissions:
   contents: write
 jobs:
   statistik:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests
       - name: Abholen
@@ -29,4 +29,11 @@ jobs:
       - name: Speichern
         run: |
           git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
-          git add automatik/statistik && git diff --cached --quiet || (git commit -m "Statistik $(date +%F)" && git pull --rebase -q && git push)
+          git add automatik/statistik && git diff --cached --quiet && exit 0
+          git commit -q -m "Statistik $(date +%F)"
+          # um 08:45 pushen Lage, Posten und Kommentare gleichzeitig – ohne Wiederholung ginge der Tag verloren
+          for versuch in 1 2 3 4 5; do
+            git pull -q --rebase && git push -q && exit 0
+            git rebase --abort 2>/dev/null; sleep $((versuch * 5))
+          done
+          exit 1

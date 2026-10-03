@@ -24,6 +24,12 @@ Einstellungen: `automatik/interaktion.json`, gemerkte Kontakte: `automatik/inter
 4. **Montags:** Collab-Vorschlag ansehen, Anfrage anpassen und schicken.
 5. **Am LinkedIn-Tag:** PDF und Text aus dem Issue hochladen, Issue schließen.
 
+**Radar-Pflege (montags):** Der Radar schlägt ruhige oder kaputte Konten zum Entfernen (🧹) und Leute, die bei dir kommentiert haben und ein Business-/Creator-Konto haben, zum Aufnehmen (➕) vor. Übernommen wird **nur, was du abhakst** – beim nächsten Lauf, in `automatik/interaktion.json`. Neue Konten bekommen `"art": ""` – bei Bedarf von Hand ergänzen.
+
+**Erste Stunde:** Geht ein Karussell/Reel online, kommt eine Checkliste als Kommentar ins Freigabe-Issue (Story teilen, Kommentare beantworten, Radar).
+
+**Stichwörter:** Die Liste in `automatik/interaktion.json` → `kommentare.manychat_stichwoerter` muss zu ManyChat passen. Fordert eine geplante Bildunterschrift zu einem anderen Wort auf (z. B. „Schreib DEMO“), steht eine Warnung in `LAGE.md`. Ändern sich die Stichwörter in ManyChat → hier nachziehen.
+
 Abgehakte Kästchen zählen: Wer 2× kommentiert wurde, bekommt einen DM-Entwurf. Wer eine DM bekommen hat, bekommt keinen zweiten.
 
 ## Konten für den Radar (Pflege: einmalig 20 Min., danach ab und zu)

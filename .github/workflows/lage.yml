@@ -1,6 +1,7 @@
 name: Lage
 # Schreibt LAGE.md neu (automatik/lage.py): nach jedem Push, nach jedem Lauf der anderen Abläufe und jeden Morgen.
-# Schreibt außerdem kalender.ics (automatik/kalender.py) zum Abonnieren in Google Kalender.
+# Gleicht außerdem die Termine aus dem Plan mit dem Google-Kalender „maehrsteuern Autopilot“ ab
+# (automatik/kalender_sync.py, Dienstkonto, nur dieser Kalender).
 # Committet nur, wenn sich wirklich etwas geändert hat.
 on:
   push:
@@ -19,16 +20,20 @@ concurrency:
 permissions:
   contents: write
   actions: write
+  issues: write
 jobs:
   lage:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: claude/instagram
           fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automatik/requirements-google.txt
       - name: Tagesstatistik anstoßen (08:40–10:00 Uhr, falls heute noch keine)
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
@@ -36,7 +41,7 @@ jobs:
           [ "$uhr" -ge 840 ] && [ "$uhr" -lt 1000 ] || exit 0
           git fetch -q origin claude/instagram
           git show origin/claude/instagram:automatik/statistik/konto.csv 2>/dev/null | grep -q "^$heute," && exit 0
-          laeufe=$(gh run list --workflow statistik.yml --created ">=$(date -u -d '-2 hours' +%FT%TZ)" --json databaseId --jq length)
+          laeufe=$(gh run list --workflow statistik.yml --created ">=$(date -u -d '-30 minutes' +%FT%TZ)" --json databaseId --jq length)
           [ "$laeufe" = 0 ] && gh workflow run statistik.yml --ref claude/instagram && echo "Statistik gestartet" || true
       - name: Radar anstoßen (07:00–10:00 Uhr, falls heute noch keiner lief)
         env: { GH_TOKEN: "${{ github.token }}" }
@@ -45,6 +50,25 @@ jobs:
           [ "$uhr" -ge 700 ] && [ "$uhr" -lt 1000 ] || exit 0
           laeufe=$(gh run list --workflow radar.yml --created ">=$mitternacht" --json databaseId --jq length)
           [ "$laeufe" = 0 ] && gh workflow run radar.yml --ref claude/instagram && echo "Radar gestartet" || true
+      - name: Wochenbericht anstoßen (So 18:00–21:00 Uhr, falls heute noch keiner lief)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          [ "$(TZ=Europe/Berlin date +%u)" = 7 ] || exit 0
+          uhr=$(TZ=Europe/Berlin date +%H%M); mitternacht=$(date -u -d "$(TZ=Europe/Berlin date +%F) 00:00 $(TZ=Europe/Berlin date +%z)" +%FT%TZ)
+          [ "$uhr" -ge 1800 ] && [ "$uhr" -lt 2100 ] || exit 0
+          laeufe=$(gh run list --workflow wochenbericht.yml --event workflow_dispatch --created ">=$mitternacht" --json databaseId --jq length)
+          [ "$laeufe" = 0 ] && gh workflow run wochenbericht.yml --ref claude/instagram && echo "Wochenbericht gestartet" || true
+      - name: Schlüssel verlängern anstoßen (Reserve, falls der Monatslauf ausfiel – < 30 Tage, max. 1× am Tag)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          rest=$(python3 -c "import json, datetime as d; a = json.load(open('automatik/schluessel_ablauf.json')); print(min((d.date.fromisoformat(a[k]) - d.date.today()).days for k in ('IG_TOKEN', 'FB_TOKEN') if k in a))" 2>/dev/null || echo 99)
+          [ "$rest" -lt 30 ] || exit 0
+          laeufe=$(gh run list --workflow token.yml --created ">=$(date -u -d '-1 day' +%FT%TZ)" --json databaseId --jq length)
+          [ "$laeufe" = 0 ] && gh workflow run token.yml --ref claude/instagram && echo "Schlüssel-Verlängerung gestartet (noch $rest Tage)" || true
+      - name: Wächter (ein Issue, meldet sich nur bei Problemen)
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: python automatik/waechter.py
       - name: Schreiben und speichern
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
@@ -52,8 +76,7 @@ jobs:
           for versuch in 1 2 3 4; do
             git pull -q --rebase origin claude/instagram
             python automatik/lage.py
-            python automatik/kalender.py
-            git add LAGE.md kalender.ics
+            git add LAGE.md
             git diff --cached --quiet && exit 0
             git commit -q -m "Lage aktualisiert"
             git push -q origin HEAD:claude/instagram && exit 0
@@ -61,3 +84,12 @@ jobs:
             sleep $((versuch * 5))
           done
           exit 1
+      - name: Google-Kalender „maehrsteuern Autopilot“ abgleichen
+        # auch wenn LAGE.md nicht gepusht werden konnte – der Kalender hängt nicht daran
+        if: ${{ !cancelled() }}
+        env:
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+        run: |
+          pip install -q -r automatik/requirements-google.txt
+          python automatik/kalender_sync.py

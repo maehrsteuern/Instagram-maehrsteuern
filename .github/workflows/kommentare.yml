@@ -9,20 +9,18 @@ on:
   issue_comment:
     types: [created]
   workflow_dispatch:
-concurrency:
-  group: kommentare
-  cancel-in-progress: false
 permissions:
   contents: write
   issues: write
 jobs:
   pruefen:
+    concurrency: { group: kommentare, cancel-in-progress: false }
     if: github.event_name != 'issue_comment'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with: { ref: claude/instagram }
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests anthropic
       - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
@@ -33,16 +31,21 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python automatik/kommentare.py pruefen
   antwort:
+    # je Kommentar eigene Gruppe: in einer gemeinsamen Gruppe verdrängt ein neuer Kommentar einen wartenden
+    # Lauf (GitHub hält nur einen) – dessen Text ginge verloren. Parallel ist ok: Push mit pull --rebase + Wiederholung.
+    concurrency:
+      group: kommentare-c${{ github.event.comment.id }}
+      cancel-in-progress: false
     # nur Kommentare des Konto-Inhabers im Kommentar-Issue
     if: >-
       github.event_name == 'issue_comment' &&
       github.event.comment.user.login == github.repository_owner &&
       contains(github.event.issue.labels.*.name, 'kommentare')
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with: { ref: claude/instagram }
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests
       - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"

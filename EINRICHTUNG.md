@@ -63,12 +63,14 @@ GitHub führt Zeitpläne (`schedule`) bei kleinen Repos oft verspätet oder gar 
 
 Bei Fehlern: 401 = Schlüssel falsch/abgelaufen · 403/404 = Berechtigung „Actions: Read and write“ oder Repo-Auswahl fehlt · 422 = Body/Branch falsch.
 
-## 6 · Instagram-Plan im Google Kalender (2 Min., einmalig)
-1. calendar.google.com am Rechner → links **Weitere Kalender +** → **Per URL**
-2. URL einfügen: `https://raw.githubusercontent.com/maehrsteuern/Instagram-maehrsteuern/claude/instagram/kalender.ics` → **Kalender hinzufügen**
-3. Beim neuen Kalender „Instagram maehrsteuern“ → ⋮ → **Einstellungen** → Benachrichtigungen: **0 Minuten vorher** (Google übernimmt Erinnerungen aus Feeds nicht von selbst)
-- Aktualisiert sich automatisch (Google holt den Feed alle paar Stunden, manchmal bis zu 1 Tag Verzögerung).
-- Inhalt: jeder Reel/Karussell-Termin, offene Freigaben, „von Hand posten“, fehlende Clips/Musik/Dateien. Feste Termine (Mo/Do-Check, persönliche To-dos) bleiben im eigenen Kalender.
+## 6 · Instagram-Plan im Google Kalender ✅ eingerichtet (03.10.)
+Direkt-Sync statt Abo: Jeder Lage-Lauf (alle 15 Min.) schreibt die Termine aus dem Plan in den Google-Kalender **„maehrsteuern Autopilot“** (`automatik/kalender_sync.py`). Postzeiten sind „beschäftigt“ → Reclaim legt keine Demo darauf; To-dos (liefern, Musik, Dateien) und LinkedIn-Erinnerungen stehen als „frei“ drin und blocken keine Demo. Farbe und Pop-up-Erinnerung je Art: `ART` in `automatik/kalender.py`.
+- Zugang: Google-Cloud-Projekt `maehrsteuern-autopilot` (nur Calendar API, keine Abrechnung), Dienstkonto `kalender-sync@…` ohne Projekt-Rollen, nur dieser eine Kalender ist mit ihm geteilt („Änderungen an Terminen vornehmen“). Scope im Code: nur `calendar.events`.
+- Secrets: `GOOGLE_SA_KEY` (Dienstkonto-JSON), `GOOGLE_CALENDAR_ID`.
+- Der Sync fasst nur eigene Termine an (Markierung `maehrsteuern=1`), feste Event-IDs → kein Doppeln.
+- **Zugang sperren:** Google Cloud → Dienstkonten → kalender-sync → Schlüssel löschen, oder Freigabe im Kalender entfernen.
+- **Demo-Buchungen für den Wochenbericht:** Reclaim schreibt Buchungen fest in den Hauptkalender. Ein kleines Apps-Script in Loris' eigenem Google-Konto (`automatik/apps_script/demo_kopie.gs`, Projekt „maehrsteuern Demo-Kopie“ auf script.google.com, stündlich) kopiert nur „Demo + Erstgespräch“-Buchungen mit fremdem Gast in „maehrsteuern Autopilot“ – mit Buchungsdatum und Herkunft („Woher kennst du mich?“), ohne Namen und E-Mails. Das Dienstkonto sieht den Hauptkalender nie. Abschalten: script.google.com → Projekt → Auslöser löschen.
+- `kalender.ics` gibt es seit 03.10.2026 nicht mehr (ersetzt durch den Direkt-Sync).
 
 ## 7 · Interaktion: Radar, Kommentar-Hilfe, LinkedIn (ca. 25 Min.)
 Erklärung: `strategie/12_interaktion.md`. Alles läuft auch ohne diesen Schritt weiter, nur ohne Radar und Vorschläge.
@@ -100,6 +102,7 @@ Die bisherige Instagram-Schnittstelle kann keine fremden Profile lesen. Dafür b
 | **täglich ca. 08:45** | Statistik wird abgeholt, Tagesbericht in `LAGE.md` | Autopilot |
 | **täglich ca. 07:00** | Radar-Issue: Beiträge zum Kommentieren, DM-Entwürfe, montags Collab; LinkedIn-Pakete für neue Karussells | Autopilot + du (15 Min.) |
 | alle 15 Min. | neue Kommentare mit Antwortvorschlag ins Issue „💬 Kommentare“ – `K12 ok` postet die Antwort | Autopilot + du |
+| **So ca. 18:00** | Wochenbericht-Issue „📊 Woche KW xx“ – Demos und ManyChat-Zahlen per Kommentar nachtragen (`demos 2`, `manychat 14/6`, `herkunft …`) | Autopilot + du (2 Min.) |
 | **1. des Monats** | Monatsbericht, Instagram-Schlüssel wird verlängert (braucht `GH_PAT`) | Claude + Autopilot |
 
 **Freigaben:** https://github.com/maehrsteuern/Instagram-maehrsteuern/issues?q=is%3Aopen+label%3Afreigabe

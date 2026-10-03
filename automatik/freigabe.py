@@ -35,6 +35,7 @@ def speichern(plan, nachricht):
                 git("push")
                 return
             except subprocess.CalledProcessError:
+                subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)  # sonst scheitern alle Versuche gleich
                 time.sleep(5 * (versuch + 1))
         raise RuntimeError("plan.json konnte nicht gespeichert werden (push 5× fehlgeschlagen)")
 

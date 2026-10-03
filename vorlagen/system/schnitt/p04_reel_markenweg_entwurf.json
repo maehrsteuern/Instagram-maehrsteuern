@@ -1,0 +1,28 @@
+{
+ "ausgabe": "../../posts/04_2026-10-20_reel_mein_weg/reel_markenweg_entwurf.mp4",
+ "fps": 30,
+ "ton": [
+  {"datei": "../../musik/atmo/uhr_ticken.mp3", "ab": 0, "dauer": 11, "lautstaerke": 0.25, "ein": 0.3, "aus": 0.5},
+  {"datei": "../../musik/06_runway_lofi_ruhig.mp3", "ab": 11, "start": 0, "lautstaerke": 0.35, "ein": 0.4}
+ ],
+ "quellen": {},
+ "szenen": [
+  {"karte": "../../assets/marke/karte_1_aktuell_9x16.png", "dauer": 3,
+   "von": [540, 960, 1080], "nach": [540, 900, 960],
+   "text": [{"wort": "Das bin ich.", "ab": 0.3, "y": 1330, "groesse": 96},
+            {"wort": "Heute.", "ab": 1.2, "y": 1450, "groesse": 96, "farbe": "gruen"}]},
+  {"karte": "../../assets/marke/karte_2_ki_portrait_9x16.png", "dauer": 4, "rein": "whip",
+   "von": [540, 960, 1080], "nach": [540, 940, 1010],
+   "text": [{"wort": "Davor: ein KI-Porträt,", "y": 1330, "groesse": 76},
+            {"wort": "das ich selbst bearbeitet habe.", "ab": 1.6, "y": 1440, "groesse": 76}]},
+  {"karte": "../../assets/marke/karte_3_ki_avatar_2025_9x16.png", "dauer": 4,
+   "von": [540, 960, 1080], "nach": [540, 940, 1010],
+   "text": [{"wort": "2025 hat noch ein KI-Avatar", "y": 1330, "groesse": 76},
+            {"wort": "für mich gesprochen.", "ab": 1.6, "y": 1440, "groesse": 76}]},
+  {"karte": "../../assets/marke/karte_1_aktuell_9x16.png", "dauer": 4, "rein": "whip",
+   "von": [540, 900, 960], "nach": [540, 960, 1080],
+   "text": [{"wort": "Heute stehe ich selbst davor –", "y": 1330, "groesse": 76},
+            {"wort": "mit Steuern × Code.", "ab": 1.6, "y": 1440, "groesse": 76, "farbe": "gruen"}]},
+  {"karte": "../../posts/04_2026-10-20_reel_mein_weg/bausteine/abspann.png", "dauer": 3}
+ ]
+}

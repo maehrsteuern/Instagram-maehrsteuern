@@ -4,7 +4,7 @@
 
 **Überblick:** `LAGE.md` – was als Nächstes online geht, was du tun musst, Automatik-Status und Protokoll jeder Änderung. Wird automatisch nach jedem Push und jedem Automatik-Lauf neu geschrieben (`automatik/lage.py`, `.github/workflows/lage.yml`); Notizen dazu in `automatik/lage_notizen.md`.
 
-**Kalender:** `kalender.ics` – alle Beiträge (Postzeit, Freigabe offen, von Hand posten) und To-dos (Clips/Musik fehlen) als Kalender-Feed, wird mit LAGE.md neu geschrieben (`automatik/kalender.py`). Abonnieren: `EINRICHTUNG.md` Schritt 6.
+**Kalender:** Direkt-Sync in den Google-Kalender „maehrsteuern Autopilot“ (`automatik/kalender_sync.py`, jeder Lage-Lauf): Postzeiten, offene Freigaben, von Hand posten, fehlende Clips/Musik, LinkedIn – farbig nach Art; nur Postzeiten „beschäftigt“ für Reclaim, To-dos „frei“. Einrichtung: `EINRICHTUNG.md` Schritt 6.
 
 Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code ist der Unterschied: Lösungen, die wirklich laufen.
 
@@ -21,10 +21,16 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `strategie/09_reel_regeln.md` | Reel-Regeln aus Feedback: Hook, KI-Clips, Ton, Safe-Zone, Farben |
 | `strategie/10_software_reel_konzept.md` | Eigenes Reel-Konzept für Software (Split-Screen, Satisfying Software, Gesicht + Screen), Bildschirmaufnahmen |
 | `strategie/11_wissen_instagram.md` | Gesammeltes Instagram-Wissen: Algorithmus-Signale, Teilen/Speichern, Suche, Serien, Saison, offene Entscheidungen |
+| `strategie/14_chrome_module.md` | Gesamtprompt für Claude in Chrome (Module A, 1–6: ManyChat-Zahlen, Anzeige, Hashtag-Freigabe, Radar-Konten, LinkedIn-Upload, Wettbewerbs-Check) + Zeitplan |
+| `strategie/13_backlog.md` | Backlog Automatisierung: umgesetzt, Sprint 2, zurückgestellt, abgelehnt |
 | `strategie/12_interaktion.md` | **Zweite Säule Interaktion:** Radar, DM-Entwürfe, Kommentar-Hilfe, Click-to-DM-Anzeige, Collabs, LinkedIn, Grenzen |
 | `vorlagen/hooks/` | Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8–2,8 s), Übersicht in `README.md` |
 | `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
 | `automatik/interaktion.json` | Einstellungen Radar/Kommentare (Konten, Hashtags, Grenzen); Stand in `automatik/interaktion/` |
+| `automatik/wochenbericht.py` | Sonntags ein Issue „📊 Woche KW xx“ (Follower, Aufrufe, Top 3, Radar, Trichter); Nachtrag `demos 2` / `manychat 14/6` / `herkunft …`; Werte in `automatik/statistik/woche.csv` |
+| `automatik/apps_script/demo_kopie.gs` | Apps-Script (läuft in Loris' Google-Konto): kopiert Reclaim-Demo-Buchungen ohne Namen/E-Mails in „maehrsteuern Autopilot“ – Quelle für den Wochenbericht |
+| `automatik/kalender_sync.py` | Termine aus dem Plan direkt in den Google-Kalender „maehrsteuern Autopilot“ (Dienstkonto, nur dieser Kalender, idempotent) |
+| `automatik/waechter.py` | Ein Issue „🚨 Wächter“ bei rotem Workflow oder Schlüssel < 14 Tage (Ablaufdaten in `schluessel_ablauf.json`) |
 | `automatik/radar.py`, `kommentare.py`, `linkedin.py`, `ki.py` | Radar-Issue, Kommentar-Hilfe, LinkedIn-Pakete, gemeinsamer Claude-Zugang |
 | `strategie/dm_tracking.csv` | Liste zum Nachverfolgen der Anfragen |
 | `posts/<Nr>_<Datum>_<Thema>/` | fertige Beiträge: Folien bzw. Reel, Titelbild, Storys, `bildunterschrift.txt` |
@@ -57,6 +63,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `assets/maehrsteuern_Highlight_*.png` | Highlight-Symbole |
 | `assets/app_9x16.png` | Dashboard-Screenshot (nur Demo-Daten) |
 | `assets/ende_9x16.png` | Abspann-Karte |
+| `assets/marke/*` | Marken-Bilder: Originale (Freisteller heute, KI-Porträt, KI-Avatar 2025) + 9:16-Karten im Markenstil (Hintergrund `#0B110E` → `#153A31`, Gesicht in der Safe-Zone) |
 | `vorlagen/*.html` + `*.mjs` | Vorlagen; Bild erzeugen mit `node cover.mjs` usw. im Ordner `vorlagen` (Playwright, Chromium unter /opt/pw-browsers) |
 
 ## Regeln

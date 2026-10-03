@@ -16,13 +16,14 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  issues: write
 jobs:
   posten:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests pillow
       - name: Git-Identität
@@ -31,7 +32,11 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_TOKEN: ${{ github.token }}
+          # Eingaben nur als Umgebungsvariable – direkt im Skript könnte eine präparierte ID Befehle ausführen
+          TEST: ${{ inputs.test }}
+          JETZT: ${{ inputs.jetzt }}
         run: |
-          if [ -n "${{ inputs.test }}" ]; then python automatik/posten.py --test "${{ inputs.test }}"
-          elif [ -n "${{ inputs.jetzt }}" ]; then python automatik/posten.py --jetzt "${{ inputs.jetzt }}"
+          if [ -n "$TEST" ]; then python automatik/posten.py --test "$TEST"
+          elif [ -n "$JETZT" ]; then python automatik/posten.py --jetzt "$JETZT"
           else python automatik/posten.py; fi

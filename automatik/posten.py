@@ -39,12 +39,23 @@ def git(*args):
 
 
 def speichern(plan, nachricht):
+    """Committen und pushen – mit Wiederholung: geht der Status „veroeffentlicht“ verloren, würde der nächste
+    Lauf denselben Beitrag noch einmal posten."""
     PLAN.write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n")
     git("add", "-A")
     if git("status", "--porcelain"):
         git("commit", "-m", nachricht)
-        git("pull", "--rebase", "-q")
-        git("push")
+        for versuch in range(6):
+            try:
+                git("pull", "--rebase", "-q")
+                git("push")
+                break
+            except subprocess.CalledProcessError as fehler:
+                subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)
+                print(f"Push-Versuch {versuch + 1} fehlgeschlagen: {fehler.stderr.strip()[:200]}")
+                time.sleep(5 * (versuch + 1))
+        else:
+            raise RuntimeError(f"plan.json nicht gepusht ({nachricht}) – Beitrag ist ggf. schon online, Plan prüfen!")
     return git("rev-parse", "HEAD")
 
 
@@ -70,17 +81,27 @@ class Instagram:
         self.token = os.environ["IG_TOKEN"]
         self.user = os.environ["IG_USER_ID"]
 
-    def _post(self, pfad, **daten):
-        r = requests.post(f"{API}/{pfad}", data={**daten, "access_token": self.token}, timeout=120)
-        if not r.ok:
-            raise RuntimeError(f"{pfad}: {r.status_code} {r.text}")
-        return r.json()
+    def _anfrage(self, methode, pfad, wiederholen=True, **kwargs):
+        """Kurze Aussetzer (Verbindung, Zeitüberschreitung, 5xx) bis zu 3× wiederholen – außer bei media_publish:
+        dort kann eine Zeitüberschreitung heißen, dass der Beitrag schon online ist."""
+        for versuch in range(3 if wiederholen else 1):
+            try:
+                r = requests.request(methode, f"{API}/{pfad}", **kwargs)
+            except (requests.ConnectionError, requests.Timeout):
+                if not wiederholen or versuch == 2:
+                    raise
+            else:
+                if r.ok:
+                    return r.json()
+                if r.status_code < 500 or not wiederholen or versuch == 2:
+                    raise RuntimeError(f"{pfad}: {r.status_code} {r.text}")
+            time.sleep(10 * (versuch + 1))
+
+    def _post(self, pfad, wiederholen=True, **daten):
+        return self._anfrage("POST", pfad, wiederholen, data={**daten, "access_token": self.token}, timeout=120)
 
     def _get(self, pfad, **params):
-        r = requests.get(f"{API}/{pfad}", params={**params, "access_token": self.token}, timeout=60)
-        if not r.ok:
-            raise RuntimeError(f"{pfad}: {r.status_code} {r.text}")
-        return r.json()
+        return self._anfrage("GET", pfad, params={**params, "access_token": self.token}, timeout=60)
 
     def container(self, **daten):
         cid = self._post(f"{self.user}/media", **daten)["id"]
@@ -94,8 +115,12 @@ class Instagram:
         raise RuntimeError(f"Container {cid}: Zeitüberschreitung")
 
     def veroeffentlichen(self, cid):
-        mid = self._post(f"{self.user}/media_publish", creation_id=cid)["id"]
-        return mid, self._get(mid, fields="permalink").get("permalink")
+        mid = self._post(f"{self.user}/media_publish", wiederholen=False, creation_id=cid)["id"]
+        try:  # ab hier ist der Beitrag online – ein fehlender Link darf ihn nicht als „fehler“ markieren
+            return mid, self._get(mid, fields="permalink").get("permalink")
+        except Exception as fehler:
+            print(f"Hinweis: Link zu {mid} nicht abrufbar ({fehler})")
+            return mid, None
 
 
 def pruefen(e):
@@ -160,7 +185,12 @@ def main():
         print("Nichts fällig.", n.strftime("%d.%m. %H:%M"))
         return
     ig = None if probe else Instagram()
+    fehlgeschlagen = []
     for e in sorted(faellig, key=zeit):
+        # immer den Eintrag aus dem aktuellen Plan nehmen (der Plan wird nach dem Warten neu gelesen)
+        e = next((x for x in plan["eintraege"] if x["id"] == e["id"]), None)
+        if not e or e["status"] != "freigegeben":
+            continue
         grund = pruefen(e)
         if grund:
             print(f"✗ {e['id']}: {grund}")
@@ -175,17 +205,54 @@ def main():
         if warten > 0 and not sofort:
             print(f"… warte {int(warten // 60)} Min. bis {e['zeit']} für {e['id']}")
             time.sleep(warten)
+            # während des Wartens kann „stop“, eine neue Zeit oder „entfaellt“ gekommen sein
+            try:
+                git("pull", "--rebase", "-q")
+                plan = json.loads(PLAN.read_text())
+            except subprocess.CalledProcessError as fehler:
+                subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)
+                print(f"Hinweis: Plan nicht neu geladen ({fehler.stderr.strip()[:200]}) – poste mit dem bekannten Stand")
+            aktuell = next((x for x in plan["eintraege"] if x["id"] == e["id"]), None)
+            if not aktuell or aktuell["status"] != "freigegeben" or aktuell["zeit"] != e["zeit"]:
+                print(f"↷ {e['id']}: Plan hat sich beim Warten geändert – übersprungen")
+                continue
+            aktuell["_jpg"], e = e["_jpg"], aktuell
         try:
             mid, permalink = posten(ig, e, sha)
             e.update(status="veroeffentlicht", media_id=mid, link=permalink, veroeffentlicht_am=jetzt().strftime("%Y-%m-%d %H:%M"))
             print(f"✓ {e['id']} online: {permalink}")
+            erste_stunde(e)
         except Exception as fehler:  # Fehler im Plan vermerken, damit er im Repo sichtbar ist
-            e.update(status="fehler", fehler=str(fehler)[:500])
-            print(f"✗ {e['id']}: {fehler}")
+            # Verbindungsfehler enthalten die URL samt access_token – nie ins öffentliche Repo schreiben
+            meldung = str(fehler).replace(ig.token, "***")
+            e.update(status="fehler", fehler=meldung[:500])
+            fehlgeschlagen.append(e["id"])
+            print(f"✗ {e['id']}: {meldung}")
         e.pop("_jpg", None)
         speichern(plan, f"Autopilot: {e['id']} {e['status']}")
-    if any(e["status"] == "fehler" for e in faellig):
+    if fehlgeschlagen:
         sys.exit(1)
+
+
+def erste_stunde(e):
+    """Nach einem Feed-Beitrag: Checkliste als Kommentar ins bestehende Freigabe-Issue (kein neues Issue).
+    Fehler hier stoppen das Posten nie."""
+    if e["typ"] not in ("karussell", "reel", "bild") or not e.get("issue") or not os.environ.get("GH_TOKEN"):
+        return
+    repo = os.environ["GITHUB_REPOSITORY"]
+    suche = f"https://github.com/{repo}/issues?q=is%3Aopen+label%3A"
+    zeilen = [f"Moin, `{e['id']}` ist online 🚀 [Beitrag ansehen]({e.get('link')})", "",
+              "Die erste Stunde zählt doppelt – wie Fristverlängerung, nur ohne Antrag:", "",
+              "- [ ] In die Story teilen (Papierflieger → „Zu deiner Story hinzufügen“), mit Sticker oder kurzer Frage",
+              f"- [ ] Kommentare zügig beantworten → [💬 Kommentare]({suche}kommentare) (`K12 ok` reicht)",
+              f"- [ ] 2–3 Beiträge aus dem [📡 Radar]({suche}radar) kommentieren – bringt Gegenbesuch"]
+    if e["typ"] == "karussell":
+        zeilen.append(f"- [ ] LinkedIn-Paket steht bereit → [💼 LinkedIn]({suche}linkedin)")
+    try:
+        subprocess.run(["gh", "issue", "comment", str(e["issue"]), "--repo", repo, "--body", "\n".join(zeilen)],
+                       check=True, capture_output=True, text=True, timeout=60)
+    except Exception as fehler:
+        print(f"Hinweis: Erste-Stunde-Checkliste nicht gepostet ({fehler})")
 
 
 def plan_ohne_intern(plan):

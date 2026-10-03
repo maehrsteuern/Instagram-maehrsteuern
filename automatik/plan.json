@@ -72,7 +72,9 @@
       ],
       "text": "bildunterschrift.txt",
       "status": "veroeffentlicht",
-      "hinweis": "In der App geplant am 29.09. (mit Musik und Alternativtexten); angepinnt (erledigt, 02.10.)",
+      "danach": "Anpinnen (von Hand)",
+      "danach_erledigt": "2026-10-03",
+      "hinweis": "In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen",
       "media_id": "17965089348198457",
       "link": "https://www.instagram.com/p/Dd9V5HAAhcL/",
       "veroeffentlicht_am": "2026-10-01 18:30"
@@ -109,8 +111,11 @@
       "bilder": [
         "story_sa_tipp.png"
       ],
-      "status": "freigegeben",
-      "issue": 15
+      "status": "veroeffentlicht",
+      "issue": 15,
+      "media_id": "18135919126642955",
+      "link": "https://www.instagram.com/stories/maehrsteuern/3999709094836161880",
+      "veroeffentlicht_am": "2026-10-03 12:15"
     },
     {
       "id": "01-reel-ampel",
@@ -342,11 +347,12 @@
       "zeit": "2026-10-20 19:30",
       "typ": "reel",
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
-      "video": "reel.mp4",
-      "titelbild": "titelbild.png",
-      "text": "bildunterschrift.txt",
+      "video": "reel_markenweg.mp4",
+      "titelbild": "titelbild_markenweg.png",
+      "text": "bildunterschrift_markenweg.txt",
       "musik_fehlt": true,
-      "status": "wartet_auf_clips"
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen"
     },
     {
       "id": "04-story-teaser",
@@ -354,7 +360,7 @@
       "typ": "story",
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
       "bilder": [
-        "story_di_teaser.png"
+        "story_di_teaser_markenweg.png"
       ],
       "status": "entwurf"
     }
