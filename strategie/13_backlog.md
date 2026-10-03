@@ -10,7 +10,7 @@ Stand 03.10.2026. Bewertung und Freigabe durch Loris, Umsetzung durch Claude.
 - Actions auf Node 24, Runner fest `ubuntu-24.04`
 
 ## ✅ Umgesetzt (Sprint 2, 03.10.)
-- **#3 Wochenbericht + #9 Herkunft der Demos** – sonntags ein Issue (`automatik/wochenbericht.py`); Demos/ManyChat/Herkunft per Kommentar von Hand (Variante a), zusätzlich gezählt aus `strategie/dm_tracking.csv` (Variante b, Spalte `termin_gebucht` = ja); Werte in `automatik/statistik/woche.csv`. Automatische Herkunft (Reclaim-Links/UTM, ManyChat-API) erst nach dem Chrome-Check.
+- **#3 Wochenbericht + #9 Herkunft der Demos** – sonntags ein Issue (`automatik/wochenbericht.py`); Demos/ManyChat/Herkunft per Kommentar von Hand (Variante a), zusätzlich gezählt aus `strategie/dm_tracking.csv` (Variante b, Spalte `termin_gebucht` = ja); Werte in `automatik/statistik/woche.csv`. Automatisch: Reclaim-Buchungen „Demo + Erstgespräch“ im Kalender „maehrsteuern Autopilot“ + Buchungsfeld „Woher kennst du mich?“ (sobald Reclaim dort einträgt, Chrome-Check 03.10.). Nicht genutzt: UTM (Reclaim speichert ihn nicht sicher), eigene Links je Quelle (Feld ist genauer), ManyChat-API (nur Pro), Reclaim-Webhooks (nur Business).
 - **`kalender.ics` entfernt** – ersetzt durch den Direkt-Sync
 - **#1 Kalender-Direktsync** – Google-Kalender „maehrsteuern Autopilot“ per Dienstkonto (nur dieser Kalender, Scope `calendar.events`), jeder Lage-Lauf, idempotent, Termine „beschäftigt“ für Reclaim (`automatik/kalender_sync.py`)
 

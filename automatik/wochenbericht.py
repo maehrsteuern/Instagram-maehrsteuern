@@ -8,9 +8,10 @@
      Mehrere Angaben in einem Kommentar gehen auch. Übernommen wird still in den Issue-Text (keine Antwort-Mail).
 
 Quellen: automatik/statistik/konto.csv + beitraege.csv (Instagram), geschlossene Radar-Issues (Haken),
-automatik/interaktion/kommentare.json (Kommentar-Hilfe), strategie/dm_tracking.csv (termin_gebucht = ja).
+automatik/interaktion/kommentare.json (Kommentar-Hilfe), strategie/dm_tracking.csv (termin_gebucht = ja),
+Reclaim-Buchungen „Demo + Erstgespräch“ im Kalender „maehrsteuern Autopilot“ inkl. Feld „Woher kennst du mich?“.
 Alle Werte landen zusätzlich in automatik/statistik/woche.csv.
-Umgebung: GH_TOKEN, GITHUB_REPOSITORY.
+Umgebung: GH_TOKEN, GITHUB_REPOSITORY, GOOGLE_SA_KEY + GOOGLE_CALENDAR_ID (optional, für Demo-Buchungen).
 """
 import csv, json, os, re, subprocess, sys, time
 from datetime import date, datetime, timedelta
@@ -26,7 +27,7 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/Instagram-maehrsteuern"
 LABEL = "wochenbericht"
 FELDER = ["kw", "von", "bis", "follower_start", "follower_ende", "zuwachs", "views_woche", "reichweite_neue",
           "speichern_neue", "teilen_neue", "neue_beitraege", "radar_kommentiert", "radar_dms", "kommentare_beantwortet",
-          "demos_tracking", "demos_hand", "manychat_gesendet", "manychat_klicks", "herkunft"]
+          "demos_tracking", "demos_kalender", "herkunft_kalender", "demos_hand", "manychat_gesendet", "manychat_klicks", "herkunft"]
 HAND = ("demos_hand", "manychat_gesendet", "manychat_klicks", "herkunft")
 
 
@@ -111,6 +112,40 @@ def demos_tracking(von, bis):
                and z.get("termin_gebucht", "").strip().lower() in ("ja", "j", "yes", "x"))
 
 
+def demos_kalender(von, bis):
+    """Reclaim-Buchungen „Demo + Erstgespräch“, die in der Woche gebucht wurden – gelesen aus dem Kalender
+    GOOGLE_CALENDAR_ID („maehrsteuern Autopilot“, Dienstkonto). Klappt, sobald Reclaim Buchungen dort einträgt.
+    Herkunft aus dem Buchungsfeld „Woher kennst du mich?“. Eigene Testbuchungen (nur Loris als Gast) zählen nicht.
+    Gibt (Anzahl, „Instagram 2, LinkedIn 1“) zurück – oder ("", "") ohne Zugang."""
+    if not os.environ.get("GOOGLE_SA_KEY") or not os.environ.get("GOOGLE_CALENDAR_ID"):
+        return "", ""
+    from html import unescape
+    from kalender_sync import MARKE, sitzung
+    s = sitzung()
+    r = s.get(f"https://www.googleapis.com/calendar/v3/calendars/{os.environ['GOOGLE_CALENDAR_ID']}/events",
+              params={"q": "Demo + Erstgespräch", "timeMin": f"{von.isoformat()}T00:00:00Z",
+                      "timeMax": f"{(bis + timedelta(days=70)).isoformat()}T00:00:00Z", "singleEvents": "true",
+                      "maxResults": 250}, timeout=60)
+    r.raise_for_status()
+    anzahl, herkunft = 0, {}
+    for e in r.json().get("items", []):
+        if e.get("extendedProperties", {}).get("private", {}).get(MARKE) or e.get("status") == "cancelled":
+            continue
+        if not von.isoformat() <= e.get("created", "")[:10] <= bis.isoformat():
+            continue
+        veranstalter = e.get("organizer", {}).get("email")
+        gaeste = [a.get("email") for a in e.get("attendees", [])
+                  if not a.get("organizer") and not a.get("self") and a.get("email") != veranstalter]
+        if not gaeste:
+            continue  # niemand außer Loris selbst = Testbuchung
+        anzahl += 1
+        text_ = re.sub(r"<[^>]+>", "\n", unescape(e.get("description", "")))
+        m = re.search(r"Woher kennst du mich\??\s*[:\-–]?\s*\n*\s*([^\n]+)", text_, re.I)
+        quelle = (m.group(1).strip() if m else "unbekannt")[:40] or "unbekannt"
+        herkunft[quelle] = herkunft.get(quelle, 0) + 1
+    return str(anzahl), ", ".join(f"{q} {n}" for q, n in sorted(herkunft.items(), key=lambda x: -x[1]))
+
+
 # ---------- Datei + Issue ----------
 
 def tabelle_laden():
@@ -164,8 +199,10 @@ def text(z, neu, top):
         f"| ManyChat gesendet | {hand('manychat_gesendet')} |",
         f"| Klicks Demo-Link | {hand('manychat_klicks')} |",
         f"| Demos gebucht (von Hand) | {hand('demos_hand')} |",
+        f"| Demos laut Kalender (Reclaim) | {z.get('demos_kalender') or '_noch nicht verbunden_'} |",
         f"| Demos laut `dm_tracking.csv` | {z['demos_tracking']} |",
-        f"| Herkunft | {hand('herkunft', '_offen_')} |",
+        f"| Herkunft (Buchungsfeld) | {z.get('herkunft_kalender') or '–'} |",
+        f"| Herkunft (von Hand) | {hand('herkunft', '_offen_')} |",
         "",
         "**Nachtragen** – einfach hier kommentieren, wird still übernommen:",
         "`demos 2` · `manychat 14/6` (gesendet/Klicks) · `herkunft manychat 1, bio 1`",
@@ -191,6 +228,11 @@ def bericht():
          "teilen_neue": sum(zahl(b["shares"]) for b in neu), "neue_beitraege": len(neu),
          "radar_kommentiert": r_kom, "radar_dms": r_dm, "kommentare_beantwortet": kommentare(von, bis),
          "demos_tracking": demos_tracking(von, bis), **{k: alt.get(k, "") for k in HAND}}
+    try:
+        z["demos_kalender"], z["herkunft_kalender"] = demos_kalender(von, bis)
+    except Exception as fehler:  # Kalender darf den Bericht nie verhindern
+        print(f"Hinweis: Demo-Buchungen nicht lesbar ({fehler})")
+        z["demos_kalender"], z["herkunft_kalender"] = "", ""
     tabelle[kw] = {k: str(v) for k, v in z.items()}
     titel = f"📊 Woche KW {bis.isocalendar()[1]} – {ende} Follower ({ende - start:+d})"
     offen = json.loads(gh("issue", "list", "--label", LABEL, "--state", "open", "--json", "number,title"))
