@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 07:20 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 07:52 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -102,6 +102,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 07:52 ✍️ Demo-Buchungen: Apps-Script kopiert sie anonymisiert in den Autopilot-Kalender ([`eb930d7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/eb930d7d8a6bfb81c9d69653fd01373ce2cfccea))
+  - `EINRICHTUNG.md`, `README.md`, `automatik/apps_script`, `automatik/lage_notizen.md`, `automatik/wochenbericht.py`, `strategie/13_backlog.md`
 - 07:20 ✍️ Wochenbericht: Demo-Buchungen und Herkunft automatisch aus dem Autopilot-Kalender ([`65d201b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/65d201b9befc3f700f2d9c5b9d5508b5e0f3dd17))
   - `.github/workflows`, `automatik/lage_notizen.md`, `automatik/wochenbericht.py`, `strategie/13_backlog.md`
 - 07:05 ✍️ Wochenbericht sonntags + kalender.ics entfernt ([`c91f227`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c91f2275870664f901ed455c62e3a9a6de699df2))
