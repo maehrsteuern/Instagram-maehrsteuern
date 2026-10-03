@@ -84,13 +84,19 @@ def abgehakt_zaehlen(kontakte):
     """Offene Radar-Issues lesen, abgehakte Kästchen in kontakte.json übernehmen.
     Gibt (Issue-Nummern, abgehakte 🧹 entfernen, abgehakte ➕ aufnehmen) zurück."""
     try:
-        offen = json.loads(gh("issue", "list", "--label", LABEL, "--state", "open", "--json", "number,body"))
+        offen = json.loads(gh("issue", "list", "--label", LABEL, "--state", "open", "--json", "number,body,comments"))
     except subprocess.CalledProcessError:
         return [], [], []
     entfernen, aufnehmen = [], []
+    inhaber = REPO.split("/")[0]
     for issue in offen:
-        entfernen += re.findall(r"^- \[[xX]\] 🧹[^@\n]*@([\w.]+)", issue["body"], re.M)
-        aufnehmen += re.findall(r"^- \[[xX]\] ➕[^@\n]*@([\w.]+)", issue["body"], re.M)
+        # Pflege-Vorschläge stehen im Issue-Text (montags) oder in Loris' eigenen Kommentaren (z. B. Konten-Suche
+        # per Chrome) – Häkchen in fremden Kommentaren zählen nicht
+        texte = [issue["body"]] + [c["body"] for c in issue.get("comments", [])
+                                   if c.get("author", {}).get("login") == inhaber]
+        for text in texte:
+            entfernen += re.findall(r"^- \[[xX]\] 🧹[^@\n]*@([\w.]+)", text, re.M)
+            aufnehmen += re.findall(r"^- \[[xX]\] ➕[^@\n]*@([\w.]+)", text, re.M)
         for art, nutzer in re.findall(r"^- \[[xX]\] (💬|✉️|🤝)[^@\n]*@([\w.]+)", issue["body"], re.M):
             k = kontakte.setdefault(nutzer, {"kommentare": 0})
             if art == "💬":
