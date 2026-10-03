@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 08:24 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 08:32 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -102,6 +102,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 08:32 ✍️ Demo-Kopie: Echttest bestanden, Doku nachgezogen ([`cc33a15`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cc33a15b97d6a74a8e99ba1aabddd15415b8a537))
+  - `automatik/lage_notizen.md`, `strategie/13_backlog.md`
 - 08:24 ✍️ Marken-Assets und Drehbuch-Variante B für Reel „Mein Weg“ ([`104945c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/104945c07cee0c65eb3a533c23dff933dc699350))
   - `README.md`, `assets/marke/karte_1_aktuell_9x16.png`, `assets/marke/karte_2_ki_portrait_9x16.png`, `assets/marke/karte_3_ki_avatar_2025_9x16.png`, `assets/marke/loris_aktuell_freisteller.png`, `assets/marke/loris_ki_avatar_2025.jpg`, `…`
 - 08:00 ✍️ Demo-Kopie: Herkunft robuster erkennen ([`40f0db5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/40f0db5b44fba06a7906b2f7624a4443c9d48d94))
