@@ -31,7 +31,18 @@ ORDNER = WURZEL / "automatik" / "interaktion"
 KONTAKTE, GESEHEN = ORDNER / "kontakte.json", ORDNER / "gesehen.json"
 PFLEGE, KOMMENTARE = ORDNER / "pflege.json", ORDNER / "kommentare.json"
 EINSTELLUNGS_DATEI = WURZEL / "automatik" / "interaktion.json"
-FEHLERHAFT = {}  # Konto → Fehlertext aus der Abfrage (umbenannt, privat, gelöscht …)
+FEHLERHAFT = {}
+ARTEN = {}  # Konto → Art aus der Vorschlagszeile („· Kanzlei, …“)
+
+
+def art_aus_text(text):
+    """Art aus „· ca. 2.300 Follower · Kanzlei, Thema …“: nur das erste Wort des letzten Abschnitts zählt."""
+    t = (text.split("·")[-1].strip().split(",")[0].split() or [""])[0].lower()
+    for wort, art in (("kanzlei", "kanzlei"), ("steuerabteilung", "steuerabteilung"), ("software", "software"),
+                      ("creator", "creator"), ("ausbildung", "uni"), ("examen", "uni"), ("uni", "uni")):
+        if wort in t:
+            return art
+    return ""  # Konto → Fehlertext aus der Abfrage (umbenannt, privat, gelöscht …)
 REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/Instagram-maehrsteuern")
 API = "https://graph.facebook.com/v23.0"
 LABEL = "radar"
@@ -96,7 +107,9 @@ def abgehakt_zaehlen(kontakte):
                                    if c.get("author", {}).get("login") == inhaber]
         for text in texte:
             entfernen += re.findall(r"^- \[[xX]\] 🧹[^@\n]*@([\w.]+)", text, re.M)
-            aufnehmen += re.findall(r"^- \[[xX]\] ➕[^@\n]*@([\w.]+)", text, re.M)
+            for nutzer, rest in re.findall(r"^- \[[xX]\] ➕[^@\n]*@([\w.]+)([^\n]*)", text, re.M):
+                aufnehmen.append(nutzer)
+                ARTEN[nutzer] = art_aus_text(rest)
         for art, nutzer in re.findall(r"^- \[[xX]\] (💬|✉️|🤝)[^@\n]*@([\w.]+)", issue["body"], re.M):
             k = kontakte.setdefault(nutzer, {"kommentare": 0})
             if art == "💬":
@@ -116,7 +129,7 @@ def konten_uebernehmen(entfernen, aufnehmen):
     alles = json.loads(EINSTELLUNGS_DATEI.read_text())
     konten = [k for k in alles["radar"]["konten"] if (k["name"] if isinstance(k, dict) else k) not in entfernen]
     vorhanden = {k["name"] if isinstance(k, dict) else k for k in konten}
-    konten += [{"name": n, "art": ""} for n in dict.fromkeys(aufnehmen) if n not in vorhanden]
+    konten += [{"name": n, "art": ARTEN.get(n, "")} for n in dict.fromkeys(aufnehmen) if n not in vorhanden]
     alles["radar"]["konten"] = konten
     text = json.dumps(alles, ensure_ascii=False, indent=2)
     # ein Konto pro Zeile, wie von Hand gepflegt
