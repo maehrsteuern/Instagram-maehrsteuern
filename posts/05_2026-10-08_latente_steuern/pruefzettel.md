@@ -33,7 +33,7 @@ Aussage: 100.000 € Differenz, Umkehr 2030. Fest 29,83 % → 29.825 €, richti
 - ☐ Aktivierungs**wahlrecht** für einen Überhang aktiver latenter Steuern (§ 274 Abs. 1 Satz 2 HGB) wird nicht erwähnt – okay für den Beitrag?
 
 ## 6. Bildunterschrift
-- ☐ „Schon im Abschluss 2026 brauchst du eine Staffel“ → siehe Punkt 2 (ggf. bereits 2025).
+- ✅ 03.10.: geändert zu „Spätestens im Abschluss 2026 …“ (Staffel gilt nach DRS 18 ggf. schon ab Abschluss 2025). Folien unverändert – „im Abschluss 2026 … zählt schon heute“ bleibt richtig.
 - ☐ Fragt „fest 30 % oder schon gestaffelt?“ – passt.
 
 ## Ergebnis
