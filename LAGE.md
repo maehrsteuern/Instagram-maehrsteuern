@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 08:37 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 08:59 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -102,6 +102,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 08:59 ✍️ Auswertung: eigene Frage-Story schlaegt geteilte Story, Karussell waechst ueber 2 Tage ([`f9d3771`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f9d37710e292a1875e55d1d3b1c104ef8db8276d))
+  - `strategie/06_auswertung.md`
 - 08:37 🔀 Merge remote-tracking branch 'origin/claude/instagram' into ccr-9d4fa6dd-1kqi9l ([`09d9a7f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/09d9a7f09ee103b9151cea0c4b72ec7d7027113e))
 - 08:37 ✍️ Reel „Mein Weg“: Variante B über den Autopiloten, KI-Hinweis in der Bildunterschrift ([`7eca616`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/7eca6167f7e62a3493798598751f7d944ef20585))
   - `automatik/lage_notizen.md`, `automatik/plan.json`, `posts/04_2026-10-20_reel_mein_weg`
