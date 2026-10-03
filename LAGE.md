@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 14:02 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 16:35 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `01-reel-ampel` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -108,6 +108,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 16:35 📡 Radar drosselfest, Wochenbericht geprüft, Fristen in Lage + Kalender ([`2598e31`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2598e310de3f079372f545e40dbf050c5415fe85))
+  - `automatik/erinnerungen.json`, `automatik/kalender.py`, `automatik/kalender_sync.py`, `automatik/lage.py`, `automatik/lage_notizen.md`, `automatik/radar.py`, `…`
 - 14:02 📈 Statistik 2026-10-03 ([`4e9a81f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4e9a81f04f6335ce3440326acfdef106dd264738))
   - `automatik/statistik`
 - 12:25 📡 Radar 2026-10-03: 8 Beiträge, 0 DM-Entwürfe, Konten −0/+10 (abgehakt) ([`d9cc42b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d9cc42b16e0f8541602b616f118d6075f54a3430))
