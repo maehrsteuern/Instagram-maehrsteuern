@@ -1,6 +1,6 @@
 # LinkedIn 3 · Profil neu (Stand 03.10.2026)
 
-Entscheidungen Loris (03.10.): Arbeitgeber **nicht** in die Headline · maehrsteuern **wieder aktiv, nebenberuflich** ·
+**Umgesetzt am 03.10.2026** (Claude in Chrome, von Loris gespeichert). Entscheidungen Loris (03.10.): Arbeitgeber **nicht** in die Headline · maehrsteuern **wieder aktiv, nebenberuflich** ·
 Profil **auf Deutsch** · „Offen für Jobangebote“ **aus**. Umsetzung mit Claude in Chrome: `prompts/02_profil_umsetzen.md`.
 
 > **Rechtlicher Rahmen:** Geschäftsmäßige Hilfeleistung in Steuersachen ist Steuerberatern vorbehalten (§§ 2, 5 StBerG).
