@@ -31,18 +31,29 @@ ORDNER = WURZEL / "automatik" / "interaktion"
 KONTAKTE, GESEHEN = ORDNER / "kontakte.json", ORDNER / "gesehen.json"
 PFLEGE, KOMMENTARE = ORDNER / "pflege.json", ORDNER / "kommentare.json"
 EINSTELLUNGS_DATEI = WURZEL / "automatik" / "interaktion.json"
-FEHLERHAFT = {}
 ARTEN = {}  # Konto → Art aus der Vorschlagszeile („· Kanzlei, …“)
 
 
 def art_aus_text(text):
-    """Art aus „· ca. 2.300 Follower · Kanzlei, Thema …“: nur das erste Wort des letzten Abschnitts zählt."""
-    t = (text.split("·")[-1].strip().split(",")[0].split() or [""])[0].lower()
-    for wort, art in (("kanzlei", "kanzlei"), ("steuerabteilung", "steuerabteilung"), ("software", "software"),
-                      ("creator", "creator"), ("ausbildung", "uni"), ("examen", "uni"), ("uni", "uni")):
-        if wort in t:
-            return art
-    return ""  # Konto → Fehlertext aus der Abfrage (umbenannt, privat, gelöscht …)
+    """Art aus „· ca. 2.300 Follower · Kanzlei, Thema …“: zuerst das erste Wort des letzten Abschnitts, sonst
+    Stichwörter im ganzen Abschnitt („Steuerberaterin, Tipps …“ → kanzlei). Nichts erkannt → "" (Hinweis im Issue)."""
+    abschnitt = text.split("·")[-1].strip().lower()
+    erstes = (abschnitt.split(",")[0].split() or [""])[0]
+    for t in (erstes, abschnitt):
+        for wort, art in ART_WOERTER:
+            if wort in t:
+                return art
+    return ""
+
+
+# Stichwort → Art (erlaubt: kanzlei | creator | steuerabteilung | software | uni); Reihenfolge = Vorrang
+ART_WOERTER = (("kanzlei", "kanzlei"), ("steuerberat", "kanzlei"), ("steuerabteilung", "steuerabteilung"),
+               ("konzern", "steuerabteilung"), ("software", "software"), ("tool", "software"),
+               ("creator", "creator"), ("influencer", "creator"), ("ausbildung", "uni"), ("examen", "uni"),
+               ("prüfung", "uni"), ("akademie", "uni"), ("seminar", "uni"), ("studium", "uni"), ("uni", "uni"),
+               ("hochschule", "uni"), ("verband", "uni"))
+ARTEN_ERLAUBT = {"kanzlei", "creator", "steuerabteilung", "software", "uni"}
+FEHLERHAFT = {}  # Konto → Fehlertext, nur bei dauerhaften Fehlern (umbenannt, privat, gelöscht …)
 REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/Instagram-maehrsteuern")
 API = "https://graph.facebook.com/v23.0"
 LABEL = "radar"
@@ -67,12 +78,47 @@ def laden(datei, leer):
     return json.loads(datei.read_text()) if datei.exists() else leer
 
 
+class Gedrosselt(RuntimeError):
+    """Meta drosselt (HTTP 429 oder Fehlercode 4/17/32/613/80002) – auch nach dem Warten noch."""
+
+
+# Meta-Fehlercodes: Drosselung bzw. kurzer Aussetzer – kein Zeichen, dass ein Konto weg ist
+DROSSEL_CODES = {4, 17, 32, 613, 80001, 80002}
+AUSSETZER_CODES = {1, 2}
+WARTEN = (30, 90, 270)  # Sekunden zwischen den Versuchen (Backoff)
+
+
 def api(pfad, **params):
-    r = requests.get(f"{API}/{pfad}", params={**params, "access_token": os.environ["FB_TOKEN"]}, timeout=60)
-    if not r.ok:
-        fehler = r.json().get("error", {}) if r.headers.get("content-type", "").startswith("application/json") else {}
-        raise RuntimeError(f"{fehler.get('code', r.status_code)}: {fehler.get('message', r.text[:200])}")
-    return r.json()
+    """GET auf die Graph-API. Drosselung (429/Code 4, 17, 32, 613, 8000x) und 5xx/Code 1, 2 werden mit Backoff
+    wiederholt; bleibt Meta bei der Drosselung, kommt Gedrosselt – der Lauf hört dann mit dem Abfragen auf."""
+    for versuch in range(len(WARTEN) + 1):
+        try:
+            r = requests.get(f"{API}/{pfad}", params={**params, "access_token": os.environ["FB_TOKEN"]}, timeout=60)
+        except requests.RequestException as e:
+            if versuch == len(WARTEN):
+                raise RuntimeError(f"Verbindung: {type(e).__name__}") from None  # ohne URL – da steht der Schlüssel drin
+            time.sleep(WARTEN[versuch])
+            continue
+        if r.ok:
+            return r.json()
+        fehler = r.json().get("error", {}) if r.headers.get("content-type", "").startswith(("application/json", "text/javascript")) else {}
+        code = fehler.get("code") or r.status_code
+        gedrosselt = r.status_code == 429 or code in DROSSEL_CODES
+        if not (gedrosselt or r.status_code >= 500 or code in AUSSETZER_CODES) or versuch == len(WARTEN):
+            meldung = f"{code}: {fehler.get('message', r.text[:200])}"
+            raise Gedrosselt(meldung) if gedrosselt else RuntimeError(meldung)
+        warte = WARTEN[versuch]
+        if (nach := r.headers.get("Retry-After", "")).isdigit():
+            warte = max(warte, min(int(nach), 600))
+        print(f"Radar: Meta {'drosselt' if gedrosselt else 'hakt'} ({code}) – warte {warte} s")
+        time.sleep(warte)
+
+
+def voruebergehend(meldung):
+    """Fehlertext eines kurzen Aussetzers (nicht: Konto weg)? Nur dauerhafte Fehler führen zu 🧹-Vorschlägen."""
+    code = meldung.split(":", 1)[0].strip()
+    return code.isdigit() and (int(code) in DROSSEL_CODES | AUSSETZER_CODES or int(code) == 429 or int(code) >= 500) \
+        or meldung.startswith("Verbindung")
 
 
 def zeitpunkt(ts):
@@ -166,6 +212,8 @@ def pflege_vorschlaege(profile):
     for name in [n for n in kommentierende if neu_genug(n)][:10]:
         try:  # klappt nur bei Business-/Creator-Konten – genau die, die der Radar lesen kann
             d = api(os.environ["FB_IG_USER_ID"], fields=f"business_discovery.username({name}){{followers_count,media_count}}")
+        except Gedrosselt:
+            break
         except RuntimeError:
             continue
         b = d["business_discovery"]
@@ -182,18 +230,25 @@ def pflege_vorschlaege(profile):
 
 def konten_abfragen(fehler):
     profile = []
-    for eintrag in EINSTELLUNGEN["konten"]:
+    konten = EINSTELLUNGEN["konten"]
+    for nr, eintrag in enumerate(konten):
         name = eintrag["name"] if isinstance(eintrag, dict) else eintrag
         try:
             d = api(os.environ["FB_IG_USER_ID"],
                     fields=f"business_discovery.username({name}){{username,name,followers_count,media_count,"
                            f"media.limit(6){{{FELDER}}}}}")["business_discovery"]
+        except Gedrosselt as e:
+            # weiter abfragen verschlimmert es nur; die übrigen Konten gelten NICHT als kaputt
+            fehler.append(f"Meta drosselt ({e}) – {len(konten) - nr} Konten heute nicht abgefragt, morgen wieder")
+            break
         except RuntimeError as e:
             fehler.append(f"@{name}: {e}")
-            FEHLERHAFT[name] = str(e)
+            if not voruebergehend(str(e)):
+                FEHLERHAFT[name] = str(e)
             continue
         d["art"] = eintrag.get("art", "") if isinstance(eintrag, dict) else ""
         profile.append(d)
+        time.sleep(1)  # sanft: ~50 Abfragen am Stück nicht in einer Sekunde
     return profile
 
 
@@ -207,6 +262,9 @@ def hashtags_abfragen(fehler):
             for m in api(f"{ids[tag]}/recent_media", user_id=os.environ["FB_IG_USER_ID"], fields=FELDER, limit=30)["data"]:
                 m["hashtag"] = tag
                 beitraege.append(m)
+        except Gedrosselt as e:
+            fehler.append(f"Hashtags: Meta drosselt ({e}) – morgen wieder")
+            break
         except (RuntimeError, IndexError, KeyError) as e:
             fehler.append(f"Hashtags noch nicht verfügbar ({e}) – Freischaltung siehe strategie/12_interaktion.md")
             break
@@ -412,7 +470,9 @@ def main():
     alte_issues, entfernen, aufnehmen = ([], [], []) if PROBE else abgehakt_zaehlen(kontakte)
     if entfernen or aufnehmen:
         konten_uebernehmen(entfernen, aufnehmen)
-    fehler = []
+    fehler = [f"@{k['name']}: Art „{k.get('art', '')}“ fehlt/unbekannt – in `automatik/interaktion.json` "
+              f"eine von {', '.join(sorted(ARTEN_ERLAUBT))} eintragen"
+              for k in EINSTELLUNGEN["konten"] if isinstance(k, dict) and k.get("art") not in ARTEN_ERLAUBT]
     profile = konten_abfragen(fehler)
     pflege = pflege_vorschlaege(profile)
     auswahl = auswaehlen(profile, hashtags_abfragen(fehler), kontakte, gesehen)

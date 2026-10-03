@@ -13,7 +13,7 @@ nur Postzeiten blocken Demo-Slots, To-dos und LinkedIn-Erinnerungen stehen als �
 from datetime import timedelta
 import os
 
-from lage import WURZEL, TYP, zeit, dateien_fehlen
+from lage import WURZEL, TYP, zeit, dateien_fehlen, erinnerungen
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/Instagram-maehrsteuern")
 FEED = ("reel", "karussell", "bild")
@@ -33,6 +33,7 @@ ART = {
     "musik":    ("3", [0], False),       # To-do: Musik wählen
     "dateien":  ("11", [0], False),      # To-do: Dateien fehlen
     "linkedin": ("7", [0], False),       # Chrome Modul 5
+    "erinnerung": ("3", [1440, 0], False),  # Frist/Entscheidung aus automatik/erinnerungen.json
 }
 
 
@@ -113,3 +114,9 @@ def eintraege_zu_terminen(eintraege, jetzt):
             t.append(termin(f"{e['id']}-dateien", frist, 15,
                             f"🔴 Dateien fehlen: {name(e)}", ", ".join(fehlt), "dateien"))
     return t
+
+
+def erinnerungen_zu_terminen(jetzt):
+    """Einmalige Erinnerungen aus automatik/erinnerungen.json (nur kalender = true, nicht erledigt)."""
+    return [termin(f"erinnerung-{r['id']}", r["start"], 30, r["titel"], r.get("text", ""), "erinnerung")
+            for r in erinnerungen() if r.get("kalender") and r["start"] >= jetzt - RUECKBLICK]
