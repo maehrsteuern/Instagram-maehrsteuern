@@ -4,7 +4,7 @@
 - Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
-- DM-Strecke läuft jetzt über **ManyChat** (Kommentar „TOOL“ → DM, DM-Fluss). Die eigenen Skripte schicken nie DMs.
-- **Zweite Säule Interaktion gebaut:** Radar-Issue täglich ca. 07:00 (Kommentieren, DM-Entwürfe für warme Konten, montags Collab), Kommentar-Hilfe (`K12 ok` im Issue), LinkedIn-PDF je Karussell, Click-to-DM-Anzeige als Anleitung – `strategie/12_interaktion.md`. Gemergt in `claude/instagram` (02.10.). Offen: Secrets `ANTHROPIC_API_KEY`, `FB_TOKEN`, `FB_IG_USER_ID`, `FB_APP_ID`, `FB_APP_SECRET` (EINRICHTUNG.md Schritt 7), 20–40 Konten in `automatik/interaktion.json` eintragen.
+- DM-Strecke läuft über **ManyChat** (Kommentar/Story-Antwort/DM mit Tool/TOOL/tool/tol → DM mit Demo-Link, Follow-up nach 23 h). Stichwörter nur in `automatik/interaktion.json` pflegen – Abweichungen meldet LAGE.md. Die eigenen Skripte schicken nie DMs.
+- Interaktion läuft (Radar 40 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Sprint 2 wartet auf Freigabe:** Wochenbericht + Demo-Herkunft, Kalender-Direktsync – siehe `strategie/13_backlog.md`.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.

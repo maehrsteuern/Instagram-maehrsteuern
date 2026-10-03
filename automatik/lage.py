@@ -6,7 +6,7 @@ von Posten, Freigabe, Statistik, Schlüssel und Musik. Quellen: plan.json, Git-V
 optional der Workflow-Status über die GitHub-API (GH_TOKEN + GITHUB_REPOSITORY).
 Handnotizen („gerade in Arbeit“, Entscheidungen) stehen in automatik/lage_notizen.md und werden oben eingebunden.
 """
-import csv, json, os, subprocess
+import csv, json, os, re, subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 WURZEL = Path(__file__).resolve().parent.parent
 PLAN = WURZEL / "automatik" / "plan.json"
 NOTIZEN = WURZEL / "automatik" / "lage_notizen.md"
+INTERAKTION = WURZEL / "automatik" / "interaktion.json"
 KONTO = WURZEL / "automatik" / "statistik" / "konto.csv"
 ZIEL = WURZEL / "LAGE.md"
 ZONE = ZoneInfo("Europe/Berlin")
@@ -68,6 +69,31 @@ def dateien_fehlen(e):
     return [n for n in namen if not (WURZEL / e["ordner"] / n).exists()]
 
 
+# Aufforderungen wie „Schreib „TOOL“ per DM“ / „Kommentiere TOOL“ in Bildunterschriften
+AUFRUF = re.compile(r"(?i:schreib\w*|kommentier\w*|antworte?\w*|tipp\w*)\s+(?:(?i:mir|uns|einfach|gern|gerne|jetzt|unten)\s+)*"
+                    r"[„\"»‚'“]?([A-ZÄÖÜ]{3,})\b")
+
+
+def stichwort_abgleich(eintraege):
+    """ManyChat-Stichwörter stehen nur in automatik/interaktion.json. Fordert ein geplanter Beitrag zu einem
+    anderen Wort auf, antwortet weder ManyChat noch passt die Kommentar-Hilfe – das wird hier gemeldet."""
+    try:
+        bekannt = {w.lower() for w in json.loads(INTERAKTION.read_text())["kommentare"]["manychat_stichwoerter"]}
+    except (OSError, KeyError, json.JSONDecodeError):
+        return ["🔴 **Stichwörter:** `automatik/interaktion.json` fehlt oder ist kaputt – ManyChat-Abgleich nicht möglich"]
+    punkte = []
+    for e in eintraege:
+        if e["status"] in ("veroeffentlicht", "entfaellt") or not e.get("text"):
+            continue
+        datei = WURZEL / e["ordner"] / e["text"]
+        fremd = sorted({w for w in AUFRUF.findall(datei.read_text()) if w.lower() not in bekannt}) if datei.exists() else []
+        if fremd:
+            punkte.append(f"⚠️ **Stichwort passt nicht zu ManyChat** `{e['id']}` ({tag(zeit(e))}): "
+                          f"{', '.join(f'„{w}“' for w in fremd)} – in ManyChat anlegen und in `automatik/interaktion.json` "
+                          "(`manychat_stichwoerter`) eintragen, oder Bildunterschrift auf TOOL ändern")
+    return punkte
+
+
 # ---------- Abschnitte ----------
 
 def offene_punkte(eintraege, n):
@@ -96,6 +122,7 @@ def offene_punkte(eintraege, n):
             punkte.append(f"👉 **Danach:** {e['danach']} ({name})")
         if s == "veroeffentlicht" and e.get("hinweis", "").startswith("Danach") and n - t < timedelta(days=2):
             punkte.append(f"👉 **{e['hinweis']}** ({name})")
+    punkte += stichwort_abgleich(eintraege)
     return punkte or ["Nichts offen. 🎉"]
 
 

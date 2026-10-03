@@ -19,6 +19,7 @@ concurrency:
 permissions:
   contents: write
   actions: write
+  issues: write
 jobs:
   lage:
     runs-on: ubuntu-24.04
@@ -45,6 +46,10 @@ jobs:
           [ "$uhr" -ge 700 ] && [ "$uhr" -lt 1000 ] || exit 0
           laeufe=$(gh run list --workflow radar.yml --created ">=$mitternacht" --json databaseId --jq length)
           [ "$laeufe" = 0 ] && gh workflow run radar.yml --ref claude/instagram && echo "Radar gestartet" || true
+      - name: Wächter (ein Issue, meldet sich nur bei Problemen)
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: python automatik/waechter.py
       - name: Schreiben und speichern
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |

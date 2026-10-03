@@ -4,6 +4,9 @@ Kommt ein neuer Schlüssel zurück und ist GH_PAT gesetzt, wird das Secret IG_TO
 import os, subprocess, sys
 import requests
 
+from ablauf import ablauf_merken
+
+
 alt = os.environ["IG_TOKEN"]
 r = requests.get("https://graph.instagram.com/refresh_access_token",
                  params={"grant_type": "ig_refresh_token", "access_token": alt}, timeout=60)
@@ -11,6 +14,8 @@ if not r.ok:
     sys.exit(f"✗ Verlängern fehlgeschlagen: {r.status_code} {r.text}")
 neu, tage = r.json()["access_token"], r.json().get("expires_in", 0) // 86400
 print(f"✓ Schlüssel verlängert, gültig noch {tage} Tage")
+if r.json().get("expires_in"):
+    ablauf_merken("IG_TOKEN", r.json()["expires_in"])
 if neu != alt:
     if os.environ.get("GH_TOKEN"):
         subprocess.run(["gh", "secret", "set", "IG_TOKEN", "--body", neu, "--repo", os.environ["GITHUB_REPOSITORY"]], check=True)

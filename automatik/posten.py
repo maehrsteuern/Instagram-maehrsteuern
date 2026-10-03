@@ -179,6 +179,7 @@ def main():
             mid, permalink = posten(ig, e, sha)
             e.update(status="veroeffentlicht", media_id=mid, link=permalink, veroeffentlicht_am=jetzt().strftime("%Y-%m-%d %H:%M"))
             print(f"✓ {e['id']} online: {permalink}")
+            erste_stunde(e)
         except Exception as fehler:  # Fehler im Plan vermerken, damit er im Repo sichtbar ist
             e.update(status="fehler", fehler=str(fehler)[:500])
             print(f"✗ {e['id']}: {fehler}")
@@ -186,6 +187,27 @@ def main():
         speichern(plan, f"Autopilot: {e['id']} {e['status']}")
     if any(e["status"] == "fehler" for e in faellig):
         sys.exit(1)
+
+
+def erste_stunde(e):
+    """Nach einem Feed-Beitrag: Checkliste als Kommentar ins bestehende Freigabe-Issue (kein neues Issue).
+    Fehler hier stoppen das Posten nie."""
+    if e["typ"] not in ("karussell", "reel", "bild") or not e.get("issue") or not os.environ.get("GH_TOKEN"):
+        return
+    repo = os.environ["GITHUB_REPOSITORY"]
+    suche = f"https://github.com/{repo}/issues?q=is%3Aopen+label%3A"
+    zeilen = [f"Moin, `{e['id']}` ist online 🚀 [Beitrag ansehen]({e.get('link')})", "",
+              "Die erste Stunde zählt doppelt – wie Fristverlängerung, nur ohne Antrag:", "",
+              "- [ ] In die Story teilen (Papierflieger → „Zu deiner Story hinzufügen“), mit Sticker oder kurzer Frage",
+              f"- [ ] Kommentare zügig beantworten → [💬 Kommentare]({suche}kommentare) (`K12 ok` reicht)",
+              f"- [ ] 2–3 Beiträge aus dem [📡 Radar]({suche}radar) kommentieren – bringt Gegenbesuch"]
+    if e["typ"] == "karussell":
+        zeilen.append(f"- [ ] LinkedIn-Paket steht bereit → [💼 LinkedIn]({suche}linkedin)")
+    try:
+        subprocess.run(["gh", "issue", "comment", str(e["issue"]), "--repo", repo, "--body", "\n".join(zeilen)],
+                       check=True, capture_output=True, text=True, timeout=60)
+    except Exception as fehler:
+        print(f"Hinweis: Erste-Stunde-Checkliste nicht gepostet ({fehler})")
 
 
 def plan_ohne_intern(plan):

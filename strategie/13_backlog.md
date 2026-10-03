@@ -1,0 +1,29 @@
+# 13 · Backlog Automatisierung
+
+Stand 03.10.2026. Bewertung und Freigabe durch Loris, Umsetzung durch Claude.
+
+## ✅ Umgesetzt (Sprint 1, 03.10.)
+- **Wächter** – ein offenes Issue „🚨 Wächter“, kommentiert nur bei rotem Workflow oder Schlüssel < 14 Tage (`automatik/waechter.py`, läuft im Lage-Lauf)
+- **Stichwort-Abgleich** – `automatik/interaktion.json` ist die einzige Quelle; Abweichungen in Bildunterschriften erscheinen in `LAGE.md` unter „Braucht dich“
+- **Radar-Pflege** – montags im Radar-Issue: 🧹 entfernen / ➕ aufnehmen, übernommen wird nur, was abgehakt ist
+- **Erste-Stunde-Checkliste** – nach jedem Feed-Beitrag als Kommentar im Freigabe-Issue
+- Actions auf Node 24, Runner fest `ubuntu-24.04`
+
+## 🔜 Sprint 2 – Konzept, wartet auf Freigabe
+- **#3 Wochenbericht + #9 Herkunft der Demos**
+- **#1 Kalender-Direktsync** (Google-Dienstkonto, nur ein eigener Kalender)
+
+## ⏸️ Zurückgestellt bis ca. 15 Beiträge
+Vorher fehlen die Daten, um daraus etwas Belastbares abzuleiten.
+- **#4 Rückmeldung an die Content-Fabrik** – 48 h nach jedem Beitrag Speichern/Teilen pro Reichweite bewerten, Ergebnis in `strategie/was_funktioniert.md`, die Fabrik liest es mit
+- **#5 Themenliste aus Kommentaren und Radar** – wöchentlich Fragen und häufige Begriffe sammeln (Claude, ca. 0,50 €/Monat) → `strategie/themen.md`
+- **#10 Beste Uhrzeiten monatlich** – Empfehlung aus den Aktiv-Zeiten der Follower, nie automatisch umstellen
+- **#11 Collab nachfassen** – 7 Tage nach abgehakter Anfrage ohne Antwort ein Hinweis im Radar
+
+## ❌ Abgelehnt
+- **#12 LinkedIn per API posten** – Dokument-Posts brauchen die freigabepflichtige Community-Management-API; 2 Min. von Hand sind günstiger
+
+## Grundsätze
+- Nie automatisch posten, kommentieren, folgen, liken oder DMs senden. DMs nur über ManyChat.
+- Benachrichtigungen niedrig halten, lieber bündeln (ein Issue je Zweck, Status im Issue-Text statt neuer Kommentare).
+- Kosten, Upgrades, neue Zugänge: erst fragen.

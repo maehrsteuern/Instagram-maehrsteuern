@@ -16,6 +16,7 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  issues: write
 jobs:
   posten:
     runs-on: ubuntu-24.04
@@ -31,6 +32,7 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           if [ -n "${{ inputs.test }}" ]; then python automatik/posten.py --test "${{ inputs.test }}"
           elif [ -n "${{ inputs.jetzt }}" ]; then python automatik/posten.py --jetzt "${{ inputs.jetzt }}"
