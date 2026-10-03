@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 11:00 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 11:18 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -103,6 +103,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 11:18 🔀 Merge: Neuvorstellung angepinnt, Mein Weg umkonzipieren ([`a53f609`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a53f6092c90496057f06f91c320ef6a2118c9b4d))
+- 11:18 ✍️ Neuvorstellung angepinnt (erledigt), Reel „Mein Weg“: Konzept baut Loris um – keine Sprachnachricht anfordern ([`c4e6cbc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c4e6cbc75b479ad12d03f38c4afbbb5e35327d41))
+  - `automatik/lage.py`, `automatik/lage_notizen.md`, `automatik/plan.json`
 - 11:00 🤖 Autopilot: Dateien fuer 08-story-tipp vorbereitet ([`568830e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/568830e81361f28c724dd67e42f296ad2615006a))
   - `posts/08_2026-10-09_reel_kst_staffel`
 - 10:58 ✍️ Latente Steuern: Bildunterschrift „Spätestens im Abschluss 2026“ ([`517eed6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/517eed626f47d00007d4a1c63450ed845d5c2dda))
