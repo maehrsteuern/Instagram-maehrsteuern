@@ -73,6 +73,7 @@
       "text": "bildunterschrift.txt",
       "status": "veroeffentlicht",
       "danach": "Anpinnen (von Hand)",
+      "danach_erledigt": "2026-10-03",
       "hinweis": "In der App geplant am 29.09. (mit Musik und Alternativtexten); danach anpinnen und in Story teilen",
       "media_id": "17965089348198457",
       "link": "https://www.instagram.com/p/Dd9V5HAAhcL/",
@@ -348,7 +349,7 @@
       "text": "bildunterschrift_markenweg.txt",
       "musik_fehlt": true,
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Variante B (drehbuch_markenweg.md), über Autopilot: Sprechtext Di 20.10. aus posts/sprechtexte.md bis Do 15.10.; KI-Hinweis steht in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen"
+      "hinweis": "Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen"
     },
     {
       "id": "04-story-teaser",
