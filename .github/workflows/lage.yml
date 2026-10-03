@@ -101,6 +101,8 @@ jobs:
   seite:
     # LAGE.html → GitHub Pages (index.html). Nur bei neuer Lage, nach einem Push von Hand/Claude oder von Hand gestartet.
     needs: lage
+    # Fehler hier (z. B. Pages noch nicht eingeschaltet) färben die Lage nicht rot – LAGE.md ist schon gespeichert
+    continue-on-error: true
     if: ${{ !cancelled() && (needs.lage.outputs.neu == '1' || github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-24.04
     permissions:
