@@ -7,16 +7,14 @@ on:
   issue_comment:
     types: [created]
   workflow_dispatch:
-concurrency:
-  # eigene Gruppe: in instagram-plan verdrängt der 15-Min.-Posten-Takt einen wartenden Freigabe-Lauf
-  # (und umgekehrt eine „go“-Antwort einen wartenden Posten-Lauf). plan.json wird per pull --rebase zusammengeführt.
-  group: freigabe
-  cancel-in-progress: false
 permissions:
   contents: write
   issues: write
 jobs:
   anfragen:
+    # eigene Gruppe: in instagram-plan verdrängt der 15-Min.-Posten-Takt einen wartenden Freigabe-Lauf.
+    # plan.json wird per pull --rebase zusammengeführt.
+    concurrency: { group: freigabe, cancel-in-progress: false }
     if: github.event_name != 'issue_comment'
     runs-on: ubuntu-24.04
     steps:
@@ -25,6 +23,11 @@ jobs:
       - env: { GH_TOKEN: "${{ github.token }}" }
         run: python3 automatik/freigabe.py anfragen
   antwort:
+    # je Kommentar eigene Gruppe: in einer gemeinsamen Gruppe verdrängt ein neuer Kommentar einen wartenden
+    # Lauf (GitHub hält nur einen) – dessen Text ginge verloren. Parallel ist ok: Push mit pull --rebase + Wiederholung.
+    concurrency:
+      group: freigabe-c${{ github.event.comment.id }}
+      cancel-in-progress: false
     # nur Kommentare des Konto-Inhabers in Freigabe-Issues
     if: >-
       github.event_name == 'issue_comment' &&

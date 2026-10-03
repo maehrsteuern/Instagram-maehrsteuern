@@ -398,6 +398,7 @@ def speichern(nachricht):
             git("push")
             return
         except subprocess.CalledProcessError:
+            subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)  # sonst scheitern alle Versuche gleich
             time.sleep(5 * (versuch + 1))
     raise RuntimeError("Radar-Daten konnten nicht gespeichert werden (push 5× fehlgeschlagen)")
 

@@ -64,7 +64,7 @@ GitHub führt Zeitpläne (`schedule`) bei kleinen Repos oft verspätet oder gar 
 Bei Fehlern: 401 = Schlüssel falsch/abgelaufen · 403/404 = Berechtigung „Actions: Read and write“ oder Repo-Auswahl fehlt · 422 = Body/Branch falsch.
 
 ## 6 · Instagram-Plan im Google Kalender ✅ eingerichtet (03.10.)
-Direkt-Sync statt Abo: Jeder Lage-Lauf (alle 15 Min.) schreibt die Termine aus dem Plan in den Google-Kalender **„maehrsteuern Autopilot“** (`automatik/kalender_sync.py`). Termine sind „beschäftigt“ → Reclaim legt keine Demo darauf.
+Direkt-Sync statt Abo: Jeder Lage-Lauf (alle 15 Min.) schreibt die Termine aus dem Plan in den Google-Kalender **„maehrsteuern Autopilot“** (`automatik/kalender_sync.py`). Postzeiten sind „beschäftigt“ → Reclaim legt keine Demo darauf; To-dos (liefern, Musik, Dateien) und LinkedIn-Erinnerungen stehen als „frei“ drin und blocken keine Demo. Farbe und Pop-up-Erinnerung je Art: `ART` in `automatik/kalender.py`.
 - Zugang: Google-Cloud-Projekt `maehrsteuern-autopilot` (nur Calendar API, keine Abrechnung), Dienstkonto `kalender-sync@…` ohne Projekt-Rollen, nur dieser eine Kalender ist mit ihm geteilt („Änderungen an Terminen vornehmen“). Scope im Code: nur `calendar.events`.
 - Secrets: `GOOGLE_SA_KEY` (Dienstkonto-JSON), `GOOGLE_CALENDAR_ID`.
 - Der Sync fasst nur eigene Termine an (Markierung `maehrsteuern=1`), feste Event-IDs → kein Doppeln.

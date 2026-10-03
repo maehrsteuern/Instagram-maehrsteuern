@@ -1,7 +1,7 @@
 """Termine aus dem Plan direkt in den Google-Kalender „maehrsteuern Autopilot“ schreiben (läuft mit jedem Lage-Lauf).
 
-Termine kommen aus automatik/kalender.py, sofort statt mit Abo-Verzögerung – und als „beschäftigt“, damit Reclaim
-keine Demo auf Postzeiten oder To-dos legt.
+Termine kommen aus automatik/kalender.py, sofort statt mit Abo-Verzögerung. Postzeiten stehen als „beschäftigt“
+drin, damit Reclaim keine Demo darauf legt; To-dos und LinkedIn-Erinnerungen als „frei“ (Art → kalender.ART).
 
 Sicherheit / Rechte:
 - Zugang nur über das Dienstkonto aus GOOGLE_SA_KEY, Scope ausschließlich calendar.events.
@@ -17,7 +17,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from kalender import RUECKBLICK, eintraege_zu_terminen
+from kalender import ART, RUECKBLICK, eintraege_zu_terminen
 from lage import PLAN, ZONE
 
 SCOPE = "https://www.googleapis.com/auth/calendar.events"
@@ -30,13 +30,15 @@ def event_id(uid):
 
 
 def als_event(t):
+    farbe, erinnerungen, beschaeftigt = ART[t["art"]]
     inhalt = {
         "summary": t["titel"],
         "description": t["text"],
         "start": {"dateTime": t["start"].isoformat(), "timeZone": "Europe/Berlin"},
         "end": {"dateTime": t["ende"].isoformat(), "timeZone": "Europe/Berlin"},
-        "transparency": "opaque",  # „beschäftigt“ – Reclaim plant drumherum
-        "reminders": {"useDefault": True},
+        "transparency": "opaque" if beschaeftigt else "transparent",  # opaque = Reclaim plant drumherum
+        "colorId": farbe,
+        "reminders": {"useDefault": False, "overrides": [{"method": "popup", "minutes": m} for m in erinnerungen]},
     }
     pruefsumme = hashlib.sha1(json.dumps(inhalt, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
     return {**inhalt, "id": event_id(t["uid"]), "status": "confirmed",
@@ -91,8 +93,9 @@ def main():
         r.raise_for_status()
     for eid in set(ist) - set(soll):
         r = s.delete(f"{basis}/events/{eid}", params={"sendUpdates": "none"}, timeout=60)
-        if r.status_code not in (200, 204, 404, 410):
-            r.raise_for_status()
+        if r.status_code in (404, 410):
+            continue  # schon weg
+        r.raise_for_status()
         geloescht += 1
     print(f"✓ Kalender-Sync: {len(soll)} Termine – {neu} neu, {geaendert} geändert, {geloescht} gelöscht")
 

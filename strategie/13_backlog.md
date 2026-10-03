@@ -12,7 +12,16 @@ Stand 03.10.2026. Bewertung und Freigabe durch Loris, Umsetzung durch Claude.
 ## ✅ Umgesetzt (Sprint 2, 03.10.)
 - **#3 Wochenbericht + #9 Herkunft der Demos** – sonntags ein Issue (`automatik/wochenbericht.py`); Demos/ManyChat/Herkunft per Kommentar von Hand (Variante a), zusätzlich gezählt aus `strategie/dm_tracking.csv` (Variante b, Spalte `termin_gebucht` = ja); Werte in `automatik/statistik/woche.csv`. Automatisch: Reclaim bucht fest in den Hauptkalender → Apps-Script `automatik/apps_script/demo_kopie.gs` (Loris' Google-Konto) kopiert nur Demo-Buchungen ohne Namen/E-Mails nach „maehrsteuern Autopilot“, Herkunft aus dem Pflichtfeld „Woher kennst du mich?“ (Variante C, 03.10.; Echttest 03.10. bestanden: Kopie „📅 Demo gebucht (Instagram)“ erschienen, nach Absage gelöscht; Herkunft mit allen 5 Optionen gegen das echte Reclaim-Format geprüft). Abgelehnt: Dienstkonto liest Hauptkalender (Variante B, zu weit). Nicht genutzt: UTM (Reclaim speichert ihn nicht sicher), eigene Links je Quelle (Feld ist genauer), ManyChat-API (nur Pro), Reclaim-Webhooks (nur Business).
 - **`kalender.ics` entfernt** – ersetzt durch den Direkt-Sync
-- **#1 Kalender-Direktsync** – Google-Kalender „maehrsteuern Autopilot“ per Dienstkonto (nur dieser Kalender, Scope `calendar.events`), jeder Lage-Lauf, idempotent, Termine „beschäftigt“ für Reclaim (`automatik/kalender_sync.py`)
+- **#1 Kalender-Direktsync** – Google-Kalender „maehrsteuern Autopilot“ per Dienstkonto (nur dieser Kalender, Scope `calendar.events`), jeder Lage-Lauf, idempotent, Postzeiten „beschäftigt“ für Reclaim, To-dos „frei“, Farben je Art (`automatik/kalender_sync.py`)
+
+## ✅ Umgesetzt (Robustheit, 03.10.)
+- **Kein Doppel-Post:** `posten.py` pusht den Status mit Wiederholung; nach dem Warten wird der Plan neu gelesen („stop“, neue Zeit, „entfaellt“ greifen noch); kurze API-Aussetzer (Verbindung, 5xx) 3× wiederholt – `media_publish` nie; fehlender Link nach dem Veröffentlichen markiert den Beitrag nicht mehr als „fehler“
+- **Kein Schlüssel im Repo/Log:** IG_TOKEN wird aus Fehlermeldungen in `plan.json` entfernt; neuer Schlüssel beim Verlängern maskiert und per stdin an `gh secret set`; Ablaufdatum erst nach erfolgreichem Ersetzen
+- **Keine verlorenen Antworten:** „go“/„K12 ok“/Nachträge laufen je Kommentar in eigener Concurrency-Gruppe (vorher konnte ein neuer Kommentar einen wartenden Lauf verdrängen)
+- **Push-Wiederholung** mit `rebase --abort` in allen Skripten, Statistik-Push mit Wiederholung, LinkedIn-Paket bricht ohne Push ab
+- **Reserve-Takt:** Lage stößt die Schlüssel-Verlängerung an, wenn < 30 Tage übrig; Statistik-Neuversuch nach 30 Min.
+- **posten.yml:** Eingaben nur als Umgebungsvariable (keine Befehlseinschleusung)
+- Offen (klein): `insights_voll.py` holt täglich die ganze Historie neu; `lage.py`-Protokoll liest das ganze Git-Log; Push-Schleifen in ein Modul zusammenführen
 
 
 ## ⏸️ Zurückgestellt bis ca. 15 Beiträge

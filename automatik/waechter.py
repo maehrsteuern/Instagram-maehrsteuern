@@ -27,7 +27,7 @@ def gh(*args, eingabe=None):
 
 
 def letzter_lauf(datei):
-    roh = gh("api", f"repos/{REPO}/actions/workflows/{datei}/runs?status=completed&per_page=20", "--jq",
+    roh = gh("api", f"repos/{REPO}/actions/workflows/{datei}/runs?status=completed&per_page=100", "--jq",
              '[.workflow_runs[] | select(.conclusion=="success" or .conclusion=="failure")][0]'
              ' | [.conclusion, .html_url, .updated_at] | @tsv')
     return roh.split("\t") if roh else None

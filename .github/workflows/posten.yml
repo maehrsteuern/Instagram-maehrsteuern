@@ -33,7 +33,10 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           GH_TOKEN: ${{ github.token }}
+          # Eingaben nur als Umgebungsvariable – direkt im Skript könnte eine präparierte ID Befehle ausführen
+          TEST: ${{ inputs.test }}
+          JETZT: ${{ inputs.jetzt }}
         run: |
-          if [ -n "${{ inputs.test }}" ]; then python automatik/posten.py --test "${{ inputs.test }}"
-          elif [ -n "${{ inputs.jetzt }}" ]; then python automatik/posten.py --jetzt "${{ inputs.jetzt }}"
+          if [ -n "$TEST" ]; then python automatik/posten.py --test "$TEST"
+          elif [ -n "$JETZT" ]; then python automatik/posten.py --jetzt "$JETZT"
           else python automatik/posten.py; fi

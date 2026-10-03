@@ -88,7 +88,10 @@ def main():
             git("push")
             break
         except subprocess.CalledProcessError:
+            subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)  # sonst scheitern alle Versuche gleich
             time.sleep(5 * (versuch + 1))
+    else:  # ohne Push zeigen die Issue-Links ins Leere und morgen entstünde ein zweites Paket
+        raise RuntimeError("LinkedIn-Pakete konnten nicht gespeichert werden (push 5× fehlgeschlagen)")
     try:
         gh("label", "create", LABEL, "--color", "0A66C2", "--description", "Karussell auch auf LinkedIn posten")
     except subprocess.CalledProcessError:
