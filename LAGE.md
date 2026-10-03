@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 10:35 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 10:47 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -13,7 +13,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.): **Variante B gewählt** (Markenweg rückwärts, `drehbuch_markenweg.md`, Karten aus `assets/marke/`), geht über den **Autopiloten**. Fehlt nur die Sprachnachricht zum Sprechtext „Di 20.10.“ in `posts/sprechtexte.md` bis **Do 15.10.** → Claude schneidet `reel_markenweg.mp4`. Titelbild, Teaser, Bildunterschrift für B: `*_markenweg.*` (A-Dateien bleiben). **KI:** Karte 2 KI-erzeugt, Karte 3 KI-bearbeitet – die API setzt kein KI-Label, daher KI-Hinweis in der Bildunterschrift; Label nach dem Posten in der App prüfen/nachtragen.
 - DM-Strecke läuft über **ManyChat** (Kommentar/Story-Antwort/DM mit Tool/TOOL/tool/tol → DM mit Demo-Link, Follow-up nach 23 h). Stichwörter nur in `automatik/interaktion.json` pflegen – Abweichungen meldet LAGE.md. Die eigenen Skripte schicken nie DMs.
-- Interaktion läuft (Radar 40 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (Reclaim: beschäftigt). `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Demo-Buchungen + Herkunft: Apps-Script „maehrsteuern Demo-Kopie“ kopiert sie stündlich nach „maehrsteuern Autopilot“ – eingerichtet und per Echttest bestätigt (03.10.). Reclaim: Pflichtfeld „Woher kennst du mich?“, Titel „Demo + Erstgespräch – Name“, nur noch dieser eine Link. ManyChat-Zahlen bleiben von Hand (API nur Pro) – siehe `strategie/13_backlog.md`.
+- Interaktion läuft (Radar 40 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (nur Postzeiten „beschäftigt“ für Reclaim, To-dos/LinkedIn „frei“; Farben + Pop-ups je Art). `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Demo-Buchungen + Herkunft: Apps-Script „maehrsteuern Demo-Kopie“ kopiert sie stündlich nach „maehrsteuern Autopilot“ – eingerichtet und per Echttest bestätigt (03.10.). Reclaim: Pflichtfeld „Woher kennst du mich?“, Titel „Demo + Erstgespräch – Name“, nur noch dieser eine Link. ManyChat-Zahlen bleiben von Hand (API nur Pro) – siehe `strategie/13_backlog.md`.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
 - **Chrome-Claude-Module** (`strategie/14_chrome_module.md`): Erinnerungen im Kalender „maehrsteuern Autopilot“ – So 04.10. 11:00 einmalig A·2·3, jeden So 18:45 Modul 1 (ManyChat → Wochenbericht), 1. Mo im Monat 18:00 Module 4+6, LinkedIn-Upload (Modul 5) automatisch je Karussell am Werktag danach 08:00.
@@ -103,6 +103,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 10:47 ✍️ Kalender-Sync optimiert: nur Postzeiten blocken Reclaim, Farben + Pop-ups je Art ([`0ed7b42`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0ed7b42725646e2f4bf95e63dd5f29f15e9d8128))
+  - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/kalender.py`, `automatik/kalender_sync.py`, `automatik/lage_notizen.md`, `…`
 - 10:35 📡 Radar: Art neuer Konten aus der Vorschlagszeile übernehmen ([`e76ef09`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e76ef095f26b45caeeec04de1ed23659919c17d2))
   - `automatik/radar.py`
 - 10:32 ✍️ Wettbewerbs-Check Oktober 2026 ([`fb00717`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fb007179e4cbbc084bed1e937fc0b81b877835ed))
