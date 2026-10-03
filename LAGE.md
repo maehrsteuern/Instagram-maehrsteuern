@@ -102,10 +102,13 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 08:37 🔀 Merge remote-tracking branch 'origin/claude/instagram' into ccr-9d4fa6dd-1kqi9l ([`09d9a7f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/09d9a7f09ee103b9151cea0c4b72ec7d7027113e))
 - 08:37 ✍️ Reel „Mein Weg“: Variante B über den Autopiloten, KI-Hinweis in der Bildunterschrift ([`7eca616`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/7eca6167f7e62a3493798598751f7d944ef20585))
   - `automatik/lage_notizen.md`, `automatik/plan.json`, `posts/04_2026-10-20_reel_mein_weg`
 - 08:34 ✍️ Zwischenstand: Reel „Mein Weg“ auf Variante B (Markenweg) umgestellt ([`36f5416`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/36f54165c1e7c0e94aca36a544501e686645dad7))
   - Plan: `04-reel-mein-weg` status: wartet_auf_clips → wartet_auf_sprachnachricht
+- 08:32 ✍️ Demo-Kopie: Echttest bestanden, Doku nachgezogen ([`cc33a15`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cc33a15b97d6a74a8e99ba1aabddd15415b8a537))
+  - `automatik/lage_notizen.md`, `strategie/13_backlog.md`
 - 08:24 ✍️ Marken-Assets und Drehbuch-Variante B für Reel „Mein Weg“ ([`104945c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/104945c07cee0c65eb3a533c23dff933dc699350))
   - `README.md`, `assets/marke/karte_1_aktuell_9x16.png`, `assets/marke/karte_2_ki_portrait_9x16.png`, `assets/marke/karte_3_ki_avatar_2025_9x16.png`, `assets/marke/loris_aktuell_freisteller.png`, `assets/marke/loris_ki_avatar_2025.jpg`, `…`
 - 08:00 ✍️ Demo-Kopie: Herkunft robuster erkennen ([`40f0db5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/40f0db5b44fba06a7906b2f7624a4443c9d48d94))
