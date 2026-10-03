@@ -120,7 +120,7 @@ def offene_punkte(eintraege, n):
             punkte.append(f"🔴 **Dateien fehlen** {name}: {', '.join(fehlt)}")
         if e.get("musik_fehlt") and t > n:
             punkte.append(f"🎵 **Musik fehlt** {name}")
-        if e.get("danach") and (s == "veroeffentlicht" and n - t < timedelta(days=2) or s == "manuell" and t > n - timedelta(days=1)):
+        if e.get("danach") and not e.get("danach_erledigt") and (s == "veroeffentlicht" and n - t < timedelta(days=2) or s == "manuell" and t > n - timedelta(days=1)):
             punkte.append(f"👉 **Danach:** {e['danach']} ({name})")
         if s == "veroeffentlicht" and e.get("hinweis", "").startswith("Danach") and n - t < timedelta(days=2):
             punkte.append(f"👉 **{e['hinweis']}** ({name})")
