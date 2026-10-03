@@ -14,6 +14,15 @@ Stand 03.10.2026. Bewertung und Freigabe durch Loris, Umsetzung durch Claude.
 - **`kalender.ics` entfernt** – ersetzt durch den Direkt-Sync
 - **#1 Kalender-Direktsync** – Google-Kalender „maehrsteuern Autopilot“ per Dienstkonto (nur dieser Kalender, Scope `calendar.events`), jeder Lage-Lauf, idempotent, Postzeiten „beschäftigt“ für Reclaim, To-dos „frei“, Farben je Art (`automatik/kalender_sync.py`)
 
+## ✅ Umgesetzt (Robustheit, 03.10.)
+- **Kein Doppel-Post:** `posten.py` pusht den Status mit Wiederholung; nach dem Warten wird der Plan neu gelesen („stop“, neue Zeit, „entfaellt“ greifen noch); kurze API-Aussetzer (Verbindung, 5xx) 3× wiederholt – `media_publish` nie; fehlender Link nach dem Veröffentlichen markiert den Beitrag nicht mehr als „fehler“
+- **Kein Schlüssel im Repo/Log:** IG_TOKEN wird aus Fehlermeldungen in `plan.json` entfernt; neuer Schlüssel beim Verlängern maskiert und per stdin an `gh secret set`; Ablaufdatum erst nach erfolgreichem Ersetzen
+- **Keine verlorenen Antworten:** „go“/„K12 ok“/Nachträge laufen je Kommentar in eigener Concurrency-Gruppe (vorher konnte ein neuer Kommentar einen wartenden Lauf verdrängen)
+- **Push-Wiederholung** mit `rebase --abort` in allen Skripten, Statistik-Push mit Wiederholung, LinkedIn-Paket bricht ohne Push ab
+- **Reserve-Takt:** Lage stößt die Schlüssel-Verlängerung an, wenn < 30 Tage übrig; Statistik-Neuversuch nach 30 Min.
+- **posten.yml:** Eingaben nur als Umgebungsvariable (keine Befehlseinschleusung)
+- Offen (klein): `insights_voll.py` holt täglich die ganze Historie neu; `lage.py`-Protokoll liest das ganze Git-Log; Push-Schleifen in ein Modul zusammenführen
+
 
 ## ⏸️ Zurückgestellt bis ca. 15 Beiträge
 Vorher fehlen die Daten, um daraus etwas Belastbares abzuleiten.

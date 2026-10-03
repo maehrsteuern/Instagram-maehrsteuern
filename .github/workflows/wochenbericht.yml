@@ -8,14 +8,12 @@ on:
   issue_comment:
     types: [created]
   workflow_dispatch:
-concurrency:
-  group: wochenbericht
-  cancel-in-progress: false
 permissions:
   contents: write
   issues: write
 jobs:
   bericht:
+    concurrency: { group: wochenbericht, cancel-in-progress: false }
     if: github.event_name != 'issue_comment'
     runs-on: ubuntu-24.04
     steps:
@@ -34,6 +32,11 @@ jobs:
           GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
         run: python automatik/wochenbericht.py bericht
   nachtrag:
+    # je Kommentar eigene Gruppe: in einer gemeinsamen Gruppe verdrängt ein neuer Kommentar einen wartenden
+    # Lauf (GitHub hält nur einen) – dessen Text ginge verloren. Parallel ist ok: Push mit pull --rebase + Wiederholung.
+    concurrency:
+      group: wochenbericht-c${{ github.event.comment.id }}
+      cancel-in-progress: false
     # nur Kommentare des Konto-Inhabers im Wochenbericht-Issue
     if: >-
       github.event_name == 'issue_comment' &&
