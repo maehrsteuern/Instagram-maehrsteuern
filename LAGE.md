@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 10:32 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 10:35 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -103,6 +103,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 10:35 📡 Radar: Art neuer Konten aus der Vorschlagszeile übernehmen ([`e76ef09`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e76ef095f26b45caeeec04de1ed23659919c17d2))
+  - `automatik/radar.py`
 - 10:32 ✍️ Wettbewerbs-Check Oktober 2026 ([`fb00717`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fb007179e4cbbc084bed1e937fc0b81b877835ed))
   - `strategie/wettbewerb.md`
 - 10:00 ✍️ Chrome-Module: Gesamtprompt im Repo + LinkedIn-Erinnerungen im Kalender ([`4eccdd2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4eccdd2bec52c33150e9a7bfdceb5f5db7fa4660))
