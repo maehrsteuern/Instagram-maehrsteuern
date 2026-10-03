@@ -2,7 +2,7 @@
 
 **Autopilot:** `automatik/plan.json` ist der Veröffentlichungsplan. GitHub Actions postet freigegebene Einträge zur geplanten Zeit (`.github/workflows/posten.yml`), holt täglich ca. 08:45 die Statistik (Tagesbericht in `LAGE.md`) verlängert monatlich den Instagram-Schlüssel, legt jeden Morgen ein Radar-Issue zum Kommentieren an und meldet neue Kommentare mit Antwortvorschlag (`strategie/12_interaktion.md`). Einrichtung: `EINRICHTUNG.md`.
 
-**Überblick:** `LAGE.md` – was als Nächstes online geht, was du tun musst, Automatik-Status und Protokoll jeder Änderung. Wird automatisch nach jedem Push und jedem Automatik-Lauf neu geschrieben (`automatik/lage.py`, `.github/workflows/lage.yml`); Notizen dazu in `automatik/lage_notizen.md`.
+**Überblick:** `LAGE.md` – was als Nächstes online geht, was du tun musst, Automatik-Status und Protokoll jeder Änderung. Wird automatisch nach jedem Push und jedem Automatik-Lauf neu geschrieben (`automatik/lage.py`, `.github/workflows/lage.yml`); Notizen dazu in `automatik/lage_notizen.md`. Dieselbe Lage als grafische Seite: `LAGE.html` (Kacheln, 4-Wochen-Kalender, Diagramme, filterbares Protokoll; `automatik/lage_html.py`), veröffentlicht über GitHub Pages: https://maehrsteuern.github.io/Instagram-maehrsteuern/
 
 **Kalender:** Direkt-Sync in den Google-Kalender „maehrsteuern Autopilot“ (`automatik/kalender_sync.py`, jeder Lage-Lauf): Postzeiten, offene Freigaben, von Hand posten, fehlende Clips/Musik, LinkedIn – farbig nach Art; nur Postzeiten „beschäftigt“ für Reclaim, To-dos „frei“. Einrichtung: `EINRICHTUNG.md` Schritt 6.
 

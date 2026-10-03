@@ -1,12 +1,13 @@
 name: Lage
-# Schreibt LAGE.md neu (automatik/lage.py): nach jedem Push, nach jedem Lauf der anderen Abläufe und jeden Morgen.
+# Schreibt LAGE.md + LAGE.html neu (automatik/lage.py): nach jedem Push, nach jedem Lauf der anderen Abläufe und jeden Morgen.
+# LAGE.html geht als grafische Lage-Seite auf GitHub Pages (Job „seite“, nur wenn sich etwas geändert hat).
 # Gleicht außerdem die Termine aus dem Plan mit dem Google-Kalender „maehrsteuern Autopilot“ ab
 # (automatik/kalender_sync.py, Dienstkonto, nur dieser Kalender).
 # Committet nur, wenn sich wirklich etwas geändert hat.
 on:
   push:
     branches: [claude/instagram]
-    paths-ignore: [LAGE.md]
+    paths-ignore: [LAGE.md, LAGE.html]
   workflow_run:
     workflows: ["Instagram posten", "Freigabe", "Instagram-Statistik", "Instagram-Schlüssel verlängern", "Musik holen"]
     types: [completed]
@@ -24,6 +25,8 @@ permissions:
 jobs:
   lage:
     runs-on: ubuntu-24.04
+    outputs:
+      neu: ${{ steps.speichern.outputs.neu }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -70,16 +73,17 @@ jobs:
         env: { GH_TOKEN: "${{ github.token }}" }
         run: python automatik/waechter.py
       - name: Schreiben und speichern
+        id: speichern
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
           for versuch in 1 2 3 4; do
             git pull -q --rebase origin claude/instagram
             python automatik/lage.py
-            git add LAGE.md
+            git add LAGE.md LAGE.html
             git diff --cached --quiet && exit 0
             git commit -q -m "Lage aktualisiert"
-            git push -q origin HEAD:claude/instagram && exit 0
+            git push -q origin HEAD:claude/instagram && echo "neu=1" >> "$GITHUB_OUTPUT" && exit 0
             git reset -q --hard origin/claude/instagram
             sleep $((versuch * 5))
           done
@@ -93,3 +97,30 @@ jobs:
         run: |
           pip install -q -r automatik/requirements-google.txt
           python automatik/kalender_sync.py
+
+  seite:
+    # LAGE.html → GitHub Pages (index.html). Nur bei neuer Lage, nach einem Push von Hand/Claude oder von Hand gestartet.
+    needs: lage
+    if: ${{ !cancelled() && (needs.lage.outputs.neu == '1' || github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    concurrency:
+      group: lage-seite
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: claude/instagram
+      - name: Seite zusammenstellen
+        run: mkdir _site && cp LAGE.html _site/index.html && touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v5
