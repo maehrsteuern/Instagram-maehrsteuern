@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 08:24 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 08:34 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -11,7 +11,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Bis 10.10. alles freigegeben: Reel Ampel mit Stimme (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
 - Latente Steuern bitte fachlich gegenlesen (KSt-Staffel 2028–2032, § 274 Abs. 2 HGB).
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
-- Reel „Mein Weg“ (20.10.): **zwei Drehbuch-Varianten, Loris entscheidet noch.** A: selbst gefilmte Stationen (`drehbuch.md`, wartet auf Clips + Musik). B: Markenweg rückwärts mit den Karten aus `assets/marke/` (`drehbuch_markenweg.md`, braucht nur eine Sprachnachricht). Bei B: Karte 2 ist KI-erzeugt, Karte 3 KI-bearbeitet → **KI-Label in Instagram einschalten.**
+- Reel „Mein Weg“ (20.10.): **Variante B gewählt** (Markenweg rückwärts, `drehbuch_markenweg.md`, Karten aus `assets/marke/`), geht über den **Autopiloten**. Fehlt nur die Sprachnachricht zum Sprechtext „Di 20.10.“ in `posts/sprechtexte.md` bis **Do 15.10.** → Claude schneidet `reel_markenweg.mp4`. Titelbild, Teaser, Bildunterschrift für B: `*_markenweg.*` (A-Dateien bleiben). **KI:** Karte 2 KI-erzeugt, Karte 3 KI-bearbeitet – die API setzt kein KI-Label, daher KI-Hinweis in der Bildunterschrift; Label nach dem Posten in der App prüfen/nachtragen.
 - DM-Strecke läuft über **ManyChat** (Kommentar/Story-Antwort/DM mit Tool/TOOL/tool/tol → DM mit Demo-Link, Follow-up nach 23 h). Stichwörter nur in `automatik/interaktion.json` pflegen – Abweichungen meldet LAGE.md. Die eigenen Skripte schicken nie DMs.
 - Interaktion läuft (Radar 40 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (Reclaim: beschäftigt). `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Demo-Buchungen + Herkunft: Apps-Script „maehrsteuern Demo-Kopie“ kopiert sie stündlich nach „maehrsteuern Autopilot“ (Einrichtung per Chrome offen), Reclaim-Pflichtfeld „Woher kennst du mich?“ steht. ManyChat-Zahlen bleiben von Hand (API nur Pro) – siehe `strategie/13_backlog.md`.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
@@ -21,7 +21,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 - 👉 **Danach:** Anpinnen (von Hand) (`00-neuvorstellung` (Do 01.10. 18:30))
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
-- ⏳ **Wartet auf clips** `04-reel-mein-weg` (Di 20.10. 19:30)
+- ⏳ **Wartet auf sprachnachricht** `04-reel-mein-weg` (Di 20.10. 19:30) – Variante B (drehbuch_markenweg.md), über Autopilot: Sprechtext Di 20.10. aus posts/sprechtexte.md bis Do 15.10.; KI-Hinweis steht in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🟡 **Freigeben** `04-story-teaser` (Di 20.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 
@@ -54,7 +54,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Mi 14.10. 19:30 | 🎬 Reel `07-reel-hinzurechnung` | 🟢 freigegeben (geht automatisch online) | Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot · [Freigabe #14](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/14) |
 | Fr 16.10. 12:15 | 📱 Story `03-story-aufloesung` | 🟢 freigegeben (geht automatisch online) |  |
 | Mo 19.10. 12:15 | 📱 Story `04-story-frage` | 🟡 Entwurf (wartet auf Freigabe) |  |
-| Di 20.10. 19:30 | 🎬 Reel `04-reel-mein-weg` | ⏳ wartet auf clips |  |
+| Di 20.10. 19:30 | 🎬 Reel `04-reel-mein-weg` | ⏳ wartet auf sprachnachricht | Variante B (drehbuch_markenweg.md), über Autopilot: Sprechtext Di 20.10. aus posts/sprechtexte.md bis Do 15.10.; KI-Hinweis steht in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen |
 | Di 20.10. 19:35 | 📱 Story `04-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
@@ -102,6 +102,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 08:34 ✍️ Zwischenstand: Reel „Mein Weg“ auf Variante B (Markenweg) umgestellt ([`36f5416`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/36f54165c1e7c0e94aca36a544501e686645dad7))
+  - Plan: `04-reel-mein-weg` status: wartet_auf_clips → wartet_auf_sprachnachricht
 - 08:24 ✍️ Marken-Assets und Drehbuch-Variante B für Reel „Mein Weg“ ([`104945c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/104945c07cee0c65eb3a533c23dff933dc699350))
   - `README.md`, `assets/marke/karte_1_aktuell_9x16.png`, `assets/marke/karte_2_ki_portrait_9x16.png`, `assets/marke/karte_3_ki_avatar_2025_9x16.png`, `assets/marke/loris_aktuell_freisteller.png`, `assets/marke/loris_ki_avatar_2025.jpg`, `…`
 - 08:00 ✍️ Demo-Kopie: Herkunft robuster erkennen ([`40f0db5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/40f0db5b44fba06a7906b2f7624a4443c9d48d94))

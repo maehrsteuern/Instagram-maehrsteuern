@@ -348,7 +348,7 @@
       "text": "bildunterschrift_markenweg.txt",
       "musik_fehlt": true,
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Variante B (drehbuch_markenweg.md): Sprechtext Di 20.10. aus posts/sprechtexte.md bis Do 15.10.; Karte 2/3 KI → KI-Label nötig"
+      "hinweis": "Variante B (drehbuch_markenweg.md), über Autopilot: Sprechtext Di 20.10. aus posts/sprechtexte.md bis Do 15.10.; KI-Hinweis steht in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen"
     },
     {
       "id": "04-story-teaser",
