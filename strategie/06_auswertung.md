@@ -117,6 +117,10 @@ Tiefpunkt 01–05 Uhr: 10–33 online.
 4 Storys, je 56–88 Aufrufe und 33–67 erreichte Konten, zusammen 5 Profilbesuche, keine Antworten.
 **Folgerung:** Deine Storys sehen etwa 15–20 % der Follower, das ist normal. Die Sticker-Storys (Frage, Umfrage, Quiz) sollen Antworten auslösen. Ob das klappt, sehen wir in der Montags-Statistik nach dem 05.10.
 
+**Ab 01.10.2026 (Tagesbericht):**
+- Eigene Mittags-Story mit Frage (Fr 02.10. 12:15): 59 erreicht, 1 Antwort. Geteilte Neuvorstellung in der Story (Do 23:58): 26 erreicht, 0 Antworten, fast alle weitergetippt → **eigene Storys mit Frage statt „Beitrag teilen“**.
+- Neuvorstellung (Karussell an Bestandsfollower): 51 erreicht nach 15 h, 98 nach 39 h – Karussells wachsen über 2 Tage nach. Bewertung frühestens nach 48 h.
+
 ## 6 · Profil und Bio
 - **0 Klicks auf den Link in der Bio seit Mai 2025.** Den neuen Terminlink gibt es seit 29.09. Jede Buchung zählt ab jetzt, zusätzlich in `dm_tracking.csv` eintragen.
 - **Folge-Verhältnis 353 : 253.** Du folgst fast so vielen, wie dir folgen. Für ein Fachprofil wirkt das weniger stark. Empfehlung: Inaktiven Konten und Zufallskonten schrittweise entfolgen, Ziel unter 150.
