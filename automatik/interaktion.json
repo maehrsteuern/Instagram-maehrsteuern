@@ -41,7 +41,17 @@
       {"name": "controllingmitexcel", "art": "creator"},
       {"name": "vero.bilanzbuchhalter", "art": "creator"},
       {"name": "candis.io", "art": "software"},
-      {"name": "wieland_digitalesteuerberatung", "art": "kanzlei"}
+      {"name": "wieland_digitalesteuerberatung", "art": "kanzlei"},
+      {"name": "steuerberatung_kern", "art": "kanzlei"},
+      {"name": "steuerberaterin_kathi", "art": "kanzlei"},
+      {"name": "steuerberaterin_maria_maass", "art": "creator"},
+      {"name": "ihk_prueferin", "art": "uni"},
+      {"name": "fastdocs.de", "art": "software"},
+      {"name": "buchhaltung_mit_christina", "art": "creator"},
+      {"name": "steuerxexamen", "art": "uni"},
+      {"name": "gunnar_tetzlaff", "art": "uni"},
+      {"name": "hfmo_steuerberatung", "art": "kanzlei"},
+      {"name": "aysemheigl", "art": "kanzlei"}
     ],
     "hashtags": ["steuerberater", "steuerkanzlei", "jahresabschluss", "steuerfachangestellte", "steuerrecht", "bilanzbuchhalter"],
     "schlagwoerter": ["excel", "tool", "automatisierung", "ki", "digitalisierung", "datev", "jahresabschluss", "rückstellung", "gewerbesteuer", "latente steuern", "e-rechnung", "frist", "abschluss", "steuererklärung", "examen"],
