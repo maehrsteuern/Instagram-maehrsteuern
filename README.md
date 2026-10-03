@@ -4,7 +4,7 @@
 
 **Überblick:** `LAGE.md` – was als Nächstes online geht, was du tun musst, Automatik-Status und Protokoll jeder Änderung. Wird automatisch nach jedem Push und jedem Automatik-Lauf neu geschrieben (`automatik/lage.py`, `.github/workflows/lage.yml`); Notizen dazu in `automatik/lage_notizen.md`.
 
-**Kalender:** Direkt-Sync in den Google-Kalender „maehrsteuern Autopilot“ (`automatik/kalender_sync.py`, jeder Lage-Lauf): Postzeiten, offene Freigaben, von Hand posten, fehlende Clips/Musik – als „beschäftigt“ für Reclaim. Einrichtung: `EINRICHTUNG.md` Schritt 6.
+**Kalender:** Direkt-Sync in den Google-Kalender „maehrsteuern Autopilot“ (`automatik/kalender_sync.py`, jeder Lage-Lauf): Postzeiten, offene Freigaben, von Hand posten, fehlende Clips/Musik, LinkedIn – farbig nach Art; nur Postzeiten „beschäftigt“ für Reclaim, To-dos „frei“. Einrichtung: `EINRICHTUNG.md` Schritt 6.
 
 Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code ist der Unterschied: Lösungen, die wirklich laufen.
 

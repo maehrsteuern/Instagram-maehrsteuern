@@ -12,7 +12,7 @@ Stand 03.10.2026. Bewertung und Freigabe durch Loris, Umsetzung durch Claude.
 ## ✅ Umgesetzt (Sprint 2, 03.10.)
 - **#3 Wochenbericht + #9 Herkunft der Demos** – sonntags ein Issue (`automatik/wochenbericht.py`); Demos/ManyChat/Herkunft per Kommentar von Hand (Variante a), zusätzlich gezählt aus `strategie/dm_tracking.csv` (Variante b, Spalte `termin_gebucht` = ja); Werte in `automatik/statistik/woche.csv`. Automatisch: Reclaim bucht fest in den Hauptkalender → Apps-Script `automatik/apps_script/demo_kopie.gs` (Loris' Google-Konto) kopiert nur Demo-Buchungen ohne Namen/E-Mails nach „maehrsteuern Autopilot“, Herkunft aus dem Pflichtfeld „Woher kennst du mich?“ (Variante C, 03.10.; Echttest 03.10. bestanden: Kopie „📅 Demo gebucht (Instagram)“ erschienen, nach Absage gelöscht; Herkunft mit allen 5 Optionen gegen das echte Reclaim-Format geprüft). Abgelehnt: Dienstkonto liest Hauptkalender (Variante B, zu weit). Nicht genutzt: UTM (Reclaim speichert ihn nicht sicher), eigene Links je Quelle (Feld ist genauer), ManyChat-API (nur Pro), Reclaim-Webhooks (nur Business).
 - **`kalender.ics` entfernt** – ersetzt durch den Direkt-Sync
-- **#1 Kalender-Direktsync** – Google-Kalender „maehrsteuern Autopilot“ per Dienstkonto (nur dieser Kalender, Scope `calendar.events`), jeder Lage-Lauf, idempotent, Termine „beschäftigt“ für Reclaim (`automatik/kalender_sync.py`)
+- **#1 Kalender-Direktsync** – Google-Kalender „maehrsteuern Autopilot“ per Dienstkonto (nur dieser Kalender, Scope `calendar.events`), jeder Lage-Lauf, idempotent, Postzeiten „beschäftigt“ für Reclaim, To-dos „frei“, Farben je Art (`automatik/kalender_sync.py`)
 
 
 ## ⏸️ Zurückgestellt bis ca. 15 Beiträge

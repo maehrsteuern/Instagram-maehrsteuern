@@ -30,7 +30,10 @@ jobs:
           ref: claude/instagram
           fetch-depth: 0
       - uses: actions/setup-python@v7
-        with: { python-version: "3.12" }
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automatik/requirements-google.txt
       - name: Tagesstatistik anstoßen (08:40–10:00 Uhr, falls heute noch keine)
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
@@ -75,9 +78,11 @@ jobs:
           done
           exit 1
       - name: Google-Kalender „maehrsteuern Autopilot“ abgleichen
+        # auch wenn LAGE.md nicht gepusht werden konnte – der Kalender hängt nicht daran
+        if: ${{ !cancelled() }}
         env:
           GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
           GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
         run: |
-          pip install -q google-auth requests
+          pip install -q -r automatik/requirements-google.txt
           python automatik/kalender_sync.py
