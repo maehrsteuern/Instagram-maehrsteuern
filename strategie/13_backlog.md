@@ -23,6 +23,11 @@ Stand 03.10.2026. Bewertung und Freigabe durch Loris, Umsetzung durch Claude.
 - **posten.yml:** Eingaben nur als Umgebungsvariable (keine Befehlseinschleusung)
 - Offen (klein): `insights_voll.py` holt täglich die ganze Historie neu; `lage.py`-Protokoll liest das ganze Git-Log; Push-Schleifen in ein Modul zusammenführen
 
+## ✅ Umgesetzt (Nachträge, 03.10. nachmittags)
+- **Radar:** Backoff bei Meta-Drosselung (HTTP 429, Codes 4/17/32/613/8000x; 30/90/270 s, `Retry-After` beachtet), Abbruch statt Dauerfeuer; nur dauerhafte Fehler führen zu 🧹-Vorschlägen; 1 s Pause je Konto; Art-Erkennung mit mehr Stichwörtern, fehlende/unbekannte Art als Hinweis im Issue
+- **Wochenbericht:** Demo-Kopien ohne `q`-Suche und mit Blättern gelesen, Herkunft-Regex bleibt in der Zeile, Nachträge nur am Zeilenanfang/nach Komma (keine Treffer in Zitaten oder in „Gesamtstand ManyChat …“)
+- **Einmalige Erinnerungen:** `automatik/erinnerungen.json` → „Braucht dich“ in LAGE.md + Termin im Autopilot-Kalender (Art `erinnerung`, „frei“)
+
 
 ## ⏸️ Zurückgestellt bis ca. 15 Beiträge
 Vorher fehlen die Daten, um daraus etwas Belastbares abzuleiten.

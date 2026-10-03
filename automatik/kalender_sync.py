@@ -17,7 +17,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from kalender import ART, RUECKBLICK, eintraege_zu_terminen
+from kalender import ART, RUECKBLICK, eintraege_zu_terminen, erinnerungen_zu_terminen
 from lage import PLAN, ZONE
 
 SCOPE = "https://www.googleapis.com/auth/calendar.events"
@@ -73,7 +73,8 @@ def main():
         print("Kalender-Sync: GOOGLE_SA_KEY / GOOGLE_CALENDAR_ID fehlen – nichts zu tun.")
         return
     jetzt = datetime.now(ZONE)
-    soll = {e["id"]: e for e in map(als_event, eintraege_zu_terminen(json.loads(PLAN.read_text())["eintraege"], jetzt))}
+    termine = eintraege_zu_terminen(json.loads(PLAN.read_text())["eintraege"], jetzt) + erinnerungen_zu_terminen(jetzt)
+    soll = {e["id"]: e for e in map(als_event, termine)}
     s = sitzung()
     basis = f"https://www.googleapis.com/calendar/v3/calendars/{os.environ['GOOGLE_CALENDAR_ID']}"
     ist = eigene_events(s, basis, jetzt - RUECKBLICK)

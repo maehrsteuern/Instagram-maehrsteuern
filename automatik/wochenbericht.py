@@ -120,19 +120,31 @@ def demos_kalender(von, bis):
     if not os.environ.get("GOOGLE_SA_KEY") or not os.environ.get("GOOGLE_CALENDAR_ID"):
         return "", ""
     from kalender_sync import sitzung
-    r = sitzung().get(f"https://www.googleapis.com/calendar/v3/calendars/{os.environ['GOOGLE_CALENDAR_ID']}/events",
-                      params={"q": "maehrsteuern-demo", "timeMin": f"{(von - timedelta(days=14)).isoformat()}T00:00:00Z",
-                              "timeMax": f"{(bis + timedelta(days=100)).isoformat()}T00:00:00Z",
-                              "singleEvents": "true", "maxResults": 250}, timeout=60)
-    r.raise_for_status()
+    s, seite, events = sitzung(), None, []
+    # ohne q-Suche: Googles Volltextsuche zerlegt „maehrsteuern-demo“ unzuverlässig – lieber alle Termine
+    # (blätternd, der Kalender hat Hunderte) holen und unten selbst filtern
+    while True:
+        params = {"timeMin": f"{(von - timedelta(days=14)).isoformat()}T00:00:00Z",
+                  "timeMax": f"{(bis + timedelta(days=100)).isoformat()}T00:00:00Z",
+                  "singleEvents": "true", "maxResults": 250}
+        if seite:
+            params["pageToken"] = seite
+        r = s.get(f"https://www.googleapis.com/calendar/v3/calendars/{os.environ['GOOGLE_CALENDAR_ID']}/events",
+                  params=params, timeout=60)
+        r.raise_for_status()
+        events += r.json().get("items", [])
+        if not (seite := r.json().get("nextPageToken")):
+            break
     anzahl, herkunft = 0, {}
-    for e in r.json().get("items", []):
+    for e in events:
         text_ = e.get("description", "")
-        gebucht = re.search(r"Gebucht:\s*(\d{4}-\d{2}-\d{2})", text_)
-        if "maehrsteuern-demo" not in text_ or not gebucht or not von.isoformat() <= gebucht.group(1) <= bis.isoformat():
+        gebucht = re.search(r"Gebucht:[ \t]*(\d{4}-\d{2}-\d{2})", text_)
+        if e.get("status") == "cancelled" or "maehrsteuern-demo" not in text_ or not gebucht \
+                or not von.isoformat() <= gebucht.group(1) <= bis.isoformat():
             continue
         anzahl += 1
-        quelle = (re.search(r"Herkunft:\s*([^\n]+)", text_) or [None, "unbekannt"])[1].strip() or "unbekannt"
+        # [ \t]* statt \s*: bei leerer Herkunft nicht in die nächste Zeile („(Kopie aus …“) rutschen
+        quelle = (re.search(r"Herkunft:[ \t]*([^\n]*)", text_) or [None, ""])[1].strip() or "unbekannt"
         herkunft[quelle] = herkunft.get(quelle, 0) + 1
     return str(anzahl), ", ".join(f"{q} {n}" for q, n in sorted(herkunft.items(), key=lambda x: -x[1]))
 
@@ -252,11 +264,15 @@ def antwort(nummer, kommentar):
         print("Keine passende Woche gefunden – nichts zu tun.")
         return
     z, vorher = tabelle[kw], dict(tabelle[kw])
-    if m := re.search(r"demos?\s*[:=]?\s*(\d+)", kommentar, re.I):
+    # nur Angaben am Zeilenanfang oder nach Komma/Semikolon – zitierte Issue-Zeilen („> | Demos laut …“) und die
+    # Zeile „Gesamtstand ManyChat: gesendet X / Klicks Y“ aus Chrome-Modul 1 zählen so nicht mit
+    vorne = r"(?:^|[,;]\s*)"
+    zeilen = "\n".join(l for l in kommentar.splitlines() if not l.lstrip().startswith(">"))
+    if m := re.search(vorne + r"demos?\s*[:=]?\s*(\d+)\b", zeilen, re.I | re.M):
         z["demos_hand"] = m.group(1)
-    if m := re.search(r"manychat\s*[:=]?\s*(\d+)\s*/\s*(\d+)", kommentar, re.I):
+    if m := re.search(vorne + r"manychat\s*[:=]?\s*(\d+)\s*/\s*(\d+)", zeilen, re.I | re.M):
         z["manychat_gesendet"], z["manychat_klicks"] = m.group(1), m.group(2)
-    if m := re.search(r"herkunft\s*[:=]?\s*(.+)", kommentar, re.I):
+    if m := re.search(vorne + r"herkunft\s*[:=]?\s*([^\n]+)", zeilen, re.I | re.M):
         z["herkunft"] = m.group(1).strip()[:200]
     if z == vorher:
         print("Nichts erkannt – nichts zu tun.")

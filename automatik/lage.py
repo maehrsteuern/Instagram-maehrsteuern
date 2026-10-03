@@ -16,6 +16,7 @@ PLAN = WURZEL / "automatik" / "plan.json"
 NOTIZEN = WURZEL / "automatik" / "lage_notizen.md"
 INTERAKTION = WURZEL / "automatik" / "interaktion.json"
 KONTO = WURZEL / "automatik" / "statistik" / "konto.csv"
+ERINNERUNGEN = WURZEL / "automatik" / "erinnerungen.json"
 ZIEL = WURZEL / "LAGE.md"
 ZONE = ZoneInfo("Europe/Berlin")
 NACHHOLEN = timedelta(hours=6)  # wie posten.py: danach wird ein verpasster Eintrag nicht mehr nachgeholt
@@ -98,6 +99,17 @@ def stichwort_abgleich(eintraege):
 
 # ---------- Abschnitte ----------
 
+def erinnerungen():
+    """Offene einmalige Erinnerungen aus automatik/erinnerungen.json, mit „start“ als Zeitpunkt (deutsche Zeit)."""
+    if not ERINNERUNGEN.exists():
+        return []
+    aus = []
+    for r in json.loads(ERINNERUNGEN.read_text()).get("erinnerungen", []):
+        if not r.get("erledigt"):
+            aus.append({**r, "start": datetime.fromisoformat(r["wann"]).replace(tzinfo=ZONE)})
+    return aus
+
+
 def offene_punkte(eintraege, n):
     punkte = []
     for e in sorted(eintraege, key=zeit):
@@ -124,6 +136,9 @@ def offene_punkte(eintraege, n):
             punkte.append(f"👉 **Danach:** {e['danach']} ({name})")
         if s == "veroeffentlicht" and e.get("hinweis", "").startswith("Danach") and n - t < timedelta(days=2):
             punkte.append(f"👉 **{e['hinweis']}** ({name})")
+    for r in sorted(erinnerungen(), key=lambda r: r["start"]):
+        if r["start"] - timedelta(days=r.get("zeigen_ab_tagen", 3)) <= n <= r["start"] + timedelta(days=1):
+            punkte.append(f"⏰ **{r['titel']}** ({tag(r['start'])}) – {r.get('text', '').splitlines()[0]}")
     punkte += stichwort_abgleich(eintraege)
     return punkte or ["Nichts offen. 🎉"]
 

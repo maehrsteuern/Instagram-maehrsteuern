@@ -5,7 +5,7 @@ Die festen Zeitpunkte stehen als Erinnerung im Google-Kalender „maehrsteuern A
 
 | Wann | Module |
 |---|---|
-| einmalig (So 04.10. 11:00) | A · 2 · 3 |
+| einmalig (So 04.10. 11:00) | 2 (nur vorbereiten – Start ca. Mo 12.10. nach Reel-Vergleich Ampel/Split) · 3 · A ist erledigt (03.10.) |
 | jeden Sonntag 18:45 (nach dem Wochenbericht) | 1 |
 | 1. Montag im Monat 18:00 | 4 · 6 (Vorschläge aus 4 bis zum nächsten Morgen abhaken) |
 | je Karussell, Werktag nach dem Post 08:00 (automatisch aus dem Plan) | 5 |
