@@ -111,8 +111,11 @@
       "bilder": [
         "story_sa_tipp.png"
       ],
-      "status": "freigegeben",
-      "issue": 15
+      "status": "veroeffentlicht",
+      "issue": 15,
+      "media_id": "18135919126642955",
+      "link": "https://www.instagram.com/stories/maehrsteuern/3999709094836161880",
+      "veroeffentlicht_am": "2026-10-03 12:15"
     },
     {
       "id": "01-reel-ampel",
