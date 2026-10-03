@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 02.10. 17:40 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 19:52 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `01-reel-ampel` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -24,7 +24,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - **Fristen** (`automatik/erinnerungen.json` → „Braucht dich“ + Kalender): LinkedIn #18 Mi 07.10. 08:00 (Termin kommt schon automatisch) · Reel-Vergleich Ampel/Split → Anzeigen-Start ca. Mo 12.10. (Chrome Modul 2 am 04.10. nur vorbereiten) · **ManyChat-Trial endet Fr 16.10.** → Entscheidung Loris (Erinnerung Mi 14.10.).
 - **Meta-App „maehrsteuern Autopilot“** bleibt im Entwicklungsmodus. Die laufenden IG-Schlüssel und die Statistik sind davon nicht betroffen (eigenes Konto mit App-Rolle). Nur die Hashtag-Suche braucht die Freigabe → Checkliste [#26](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/26).
 - **Reclaim-Hinweis:** Claudes Reclaim-Zugang (Connector) zeigt auf **Konto B (Outlook, Lite)**, nicht auf das Demo-Konto. Für die Automatik nicht nutzen; Demo-Buchungen kommen nur über das Apps-Script „maehrsteuern Demo-Kopie“.
-- **Bibliothek aus dem Brand Kit (Claude Design) gebaut (02.10.):** 365 fertige Bilder in `assets/bibliothek/` (Übersicht `README.md` dort), Texte als Job-Dateien in `vorlagen/system/jobs/bibliothek/`. Neue Vorlagen `zahl.html` + `banner.html`, Highlight-Symbole, Vergleichstabelle/Checkliste im Karussell. Nichts davon ist eingeplant – vor Verwendung fachlich gegenlesen (Demo-Zahlen, Rechtsstand).
 
 ## 👉 Braucht dich
 
@@ -108,12 +107,88 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
+**Sa 03.10.2026**
+- 19:52 🔀 Merge: Radar drosselfest, Wochenbericht geprüft, Fristen in Lage + Kalender ([`01b05e7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/01b05e73e2d2ae3c6aef2f8e5390e6d4ea2defbe))
+- 16:35 📡 Radar drosselfest, Wochenbericht geprüft, Fristen in Lage + Kalender ([`2598e31`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2598e310de3f079372f545e40dbf050c5415fe85))
+  - `automatik/erinnerungen.json`, `automatik/kalender.py`, `automatik/kalender_sync.py`, `automatik/lage.py`, `automatik/lage_notizen.md`, `automatik/radar.py`, `…`
+- 14:02 📈 Statistik 2026-10-03 ([`4e9a81f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4e9a81f04f6335ce3440326acfdef106dd264738))
+  - `automatik/statistik`
+- 12:25 📡 Radar 2026-10-03: 8 Beiträge, 0 DM-Entwürfe, Konten −0/+10 (abgehakt) ([`d9cc42b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d9cc42b16e0f8541602b616f118d6075f54a3430))
+  - `automatik/interaktion.json`, `automatik/interaktion`
+- 12:15 🤖 Autopilot: 08-story-tipp veroeffentlicht ([`e36ea97`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e36ea9729d02b9bcd9389c289c388ee439254b91))
+  - Plan: `08-story-tipp` status: freigegeben → veroeffentlicht; `08-story-tipp` online: https://www.instagram.com/stories/maehrsteuern/3999709094836161880
+- 12:01 ✍️ Kalender-Sync optimiert + Automatik gehärtet (#23) ([`c918b6b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c918b6b08d85b6e622d80fee6e6125368bdb0ba1))
+- 11:18 🔀 Merge: Neuvorstellung angepinnt, Mein Weg umkonzipieren ([`a53f609`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a53f6092c90496057f06f91c320ef6a2118c9b4d))
+- 11:18 ✍️ Neuvorstellung angepinnt (erledigt), Reel „Mein Weg“: Konzept baut Loris um – keine Sprachnachricht anfordern ([`c4e6cbc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c4e6cbc75b479ad12d03f38c4afbbb5e35327d41))
+  - `automatik/lage.py`, `automatik/lage_notizen.md`, `automatik/plan.json`
+- 11:00 🤖 Autopilot: Dateien fuer 08-story-tipp vorbereitet ([`568830e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/568830e81361f28c724dd67e42f296ad2615006a))
+  - `posts/08_2026-10-09_reel_kst_staffel`
+- 10:59 🔀 Merge claude/instagram (LAGE.md vom Ziel-Branch übernommen) ([`cec8375`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cec837549e12513f9d9faa1a0c53032f068c0896))
+- 10:58 ✍️ Latente Steuern: Bildunterschrift „Spätestens im Abschluss 2026“ ([`517eed6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/517eed626f47d00007d4a1c63450ed845d5c2dda))
+  - `automatik/lage_notizen.md`, `posts/05_2026-10-08_latente_steuern`
+- 10:55 🔀 Merge claude/instagram ([`f4b8248`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f4b82489c0731ed02aebcf2960f65a244732385f))
+- 10:55 ✍️ Automatik gehärtet: kein Doppel-Post, kein Schlüssel im Repo, keine verlorenen Antworten ([`b90716b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b90716bb466a8a9e959e81d505c6e17df9ad7b83))
+  - `.github/workflows`, `automatik/fb_schluessel_verlaengern.py`, `automatik/freigabe.py`, `automatik/kommentare.py`, `automatik/lage_notizen.md`, `automatik/linkedin.py`, `…`
+- 10:47 ✍️ Kalender-Sync optimiert: nur Postzeiten blocken Reclaim, Farben + Pop-ups je Art ([`0ed7b42`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0ed7b42725646e2f4bf95e63dd5f29f15e9d8128))
+  - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/kalender.py`, `automatik/kalender_sync.py`, `automatik/lage_notizen.md`, `…`
+- 10:44 ✍️ Content-Fabrik: Lernpunkte aus dem Wettbewerbs-Check in die Hook-Regeln ([`639b98d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/639b98dbb2ca0cba0b13f2f590e63e5e6f6d4424))
+  - `automatik/lage_notizen.md`, `strategie/08_hooks.md`, `strategie/wettbewerb.md`
+- 10:35 📡 Radar: Art neuer Konten aus der Vorschlagszeile übernehmen ([`e76ef09`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e76ef095f26b45caeeec04de1ed23659919c17d2))
+  - `automatik/radar.py`
+- 10:32 ✍️ Wettbewerbs-Check Oktober 2026 ([`fb00717`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fb007179e4cbbc084bed1e937fc0b81b877835ed))
+  - `strategie/wettbewerb.md`
+- 10:00 ✍️ Chrome-Module: Gesamtprompt im Repo + LinkedIn-Erinnerungen im Kalender ([`4eccdd2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4eccdd2bec52c33150e9a7bfdceb5f5db7fa4660))
+  - `README.md`, `automatik/kalender.py`, `automatik/lage_notizen.md`, `strategie/14_chrome_module.md`
+- 09:58 🔀 Merge branch 'claude/instagram' of https://github.com/maehrsteuern/Instagram-maehrsteuern into claude/instagram ([`7e9ecfe`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/7e9ecfebcc3690be006282adb22a8b468546884e))
+- 09:58 ✍️ Reel-Entwurf „Mein Weg rückwärts“ zum Review und Prüfzettel latente Steuern ([`ab5fc1f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ab5fc1f8fdd6db7b591e13a8e384c84a61bb1139))
+  - `posts/04_2026-10-20_reel_mein_weg`, `posts/05_2026-10-08_latente_steuern`, `vorlagen/system/schnitt/p04_reel_markenweg_entwurf.json`
+- 09:52 ✍️ Tagesbericht als Bild: Kennzahlen, Reichweite pro Tag, Beitraege mit Vortagsvergleich und Methoden-Check ([`ad5c8ad`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ad5c8ad64e3d0c9902b294a4dbe229ef86a858c2))
+  - `automatik/berichte`, `automatik/tagesbericht.py`
+- 09:51 📡 Radar: Häkchen auch in eigenen Kommentaren im Radar-Issue zählen ([`72d79a5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/72d79a53ba0cec60f21f1c2491f1eca24c2d22c5))
+  - `automatik/radar.py`
+- 08:59 ✍️ Auswertung: eigene Frage-Story schlaegt geteilte Story, Karussell waechst ueber 2 Tage ([`f9d3771`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f9d37710e292a1875e55d1d3b1c104ef8db8276d))
+  - `strategie/06_auswertung.md`
+- 08:37 🔀 Merge remote-tracking branch 'origin/claude/instagram' into ccr-9d4fa6dd-1kqi9l ([`09d9a7f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/09d9a7f09ee103b9151cea0c4b72ec7d7027113e))
+- 08:37 ✍️ Reel „Mein Weg“: Variante B über den Autopiloten, KI-Hinweis in der Bildunterschrift ([`7eca616`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/7eca6167f7e62a3493798598751f7d944ef20585))
+  - `automatik/lage_notizen.md`, `automatik/plan.json`, `posts/04_2026-10-20_reel_mein_weg`
+- 08:34 ✍️ Zwischenstand: Reel „Mein Weg“ auf Variante B (Markenweg) umgestellt ([`36f5416`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/36f54165c1e7c0e94aca36a544501e686645dad7))
+  - Plan: `04-reel-mein-weg` status: wartet_auf_clips → wartet_auf_sprachnachricht
+- 08:32 ✍️ Demo-Kopie: Echttest bestanden, Doku nachgezogen ([`cc33a15`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cc33a15b97d6a74a8e99ba1aabddd15415b8a537))
+  - `automatik/lage_notizen.md`, `strategie/13_backlog.md`
+- 08:24 ✍️ Marken-Assets und Drehbuch-Variante B für Reel „Mein Weg“ ([`104945c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/104945c07cee0c65eb3a533c23dff933dc699350))
+  - `README.md`, `assets/marke/karte_1_aktuell_9x16.png`, `assets/marke/karte_2_ki_portrait_9x16.png`, `assets/marke/karte_3_ki_avatar_2025_9x16.png`, `assets/marke/loris_aktuell_freisteller.png`, `assets/marke/loris_ki_avatar_2025.jpg`, `…`
+- 08:00 ✍️ Demo-Kopie: Herkunft robuster erkennen ([`40f0db5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/40f0db5b44fba06a7906b2f7624a4443c9d48d94))
+  - `automatik/apps_script`
+- 07:52 ✍️ Demo-Buchungen: Apps-Script kopiert sie anonymisiert in den Autopilot-Kalender ([`eb930d7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/eb930d7d8a6bfb81c9d69653fd01373ce2cfccea))
+  - `EINRICHTUNG.md`, `README.md`, `automatik/apps_script`, `automatik/lage_notizen.md`, `automatik/wochenbericht.py`, `strategie/13_backlog.md`
+- 07:20 ✍️ Wochenbericht: Demo-Buchungen und Herkunft automatisch aus dem Autopilot-Kalender ([`65d201b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/65d201b9befc3f700f2d9c5b9d5508b5e0f3dd17))
+  - `.github/workflows`, `automatik/lage_notizen.md`, `automatik/wochenbericht.py`, `strategie/13_backlog.md`
+- 07:05 ✍️ Wochenbericht sonntags + kalender.ics entfernt ([`c91f227`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c91f2275870664f901ed455c62e3a9a6de699df2))
+  - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/kalender.py`, `automatik/kalender_sync.py`, `automatik/lage.py`, `…`
+- 07:02 📡 Radar 2026-10-03: 8 Beiträge, 0 DM-Entwürfe ([`a9e2318`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a9e23183c84d6febc68ee8e5269b4f0f61f183f8))
+  - `automatik/interaktion`
+- 07:01 ✍️ Kalender-Sync: Plan-Termine direkt in den Google-Kalender „maehrsteuern Autopilot“ ([`b471b14`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b471b147904d2f8b5c3b2a9fd65a6330ff54d788))
+  - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/kalender.py`, `automatik/kalender_sync.py`, `automatik/lage.py`, `…`
+- 06:42 🔑 Schlüssel: Ablaufdaten aktualisiert ([`e739f8b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e739f8ba33ac734584bedc573df49d77e48e7a95))
+  - `automatik/schluessel_ablauf.json`
+- 06:41 ✍️ Sprint 1: Wächter, Stichwort-Abgleich, Radar-Pflege, Erste-Stunde-Checkliste ([`76f93ad`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/76f93adf3889d22af2feb576cca9c6ef36037ec8))
+  - `.github/workflows`, `README.md`, `automatik/ablauf.py`, `automatik/fb_schluessel_verlaengern.py`, `automatik/lage.py`, `automatik/lage_notizen.md`, `…`
+- 06:35 📈 Statistik 2026-10-03 ([`c02d4c7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c02d4c7c62bf7bdb390785debd9726ef23a832fe))
+  - `automatik/statistik`
+- 06:33 ✍️ Abläufe: Actions auf Node 24 (checkout@v7, setup-python@v7), Runner fest auf ubuntu-24.04 ([`c31d663`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c31d663ae51d08bb5c2ec6ac6332a84bce42b15f))
+  - `.github/workflows`
+- 00:41 📡 Radar: TaxTech-Konten ergänzt, ManyChat-Stichwörter angeglichen ([`399ed14`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/399ed142cfa2d8e65c476fae102f690bada38347))
+  - `automatik/interaktion.json`
+- 00:29 📡 Radar: Excel/DATEV-Konten ergänzt ([`c824346`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c824346653277cd05bbe1e04ac265fe73417cfd1))
+  - `automatik/interaktion.json`
+
 **Fr 02.10.2026**
-- 17:40 ✍️ Lage: Neuvorstellung angepinnt (erledigt), ManyChat läuft ([`433d9dd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/433d9ddfa08f42fc6450fc6ac72b4538d5d8fbc0))
-  - `automatik/lage_notizen.md`, `automatik/plan.json`
-- 16:36 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/upbeat-goodall-huo6u7 ([`9f1937f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9f1937f8cacd4c46086ac72ebc469ad709bc8d3b))
-- 16:31 ✍️ Bibliothek aus dem Brand Kit (Claude Design): 365 fertige Assets ([`1f6ffc4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1f6ffc4940575300f26391be0fb53ec83b501a21))
-  - `README.md`, `assets/bibliothek/README.md`, `assets/bibliothek/bausteine/abspann_copy_paste.png`, `assets/bibliothek/bausteine/abspann_mehr_abschluss.png`, `assets/bibliothek/bausteine/abspann_pruefpfad.png`, `assets/bibliothek/bausteine/abspann_quote.png`, `…`
+- 21:05 💼 LinkedIn-Pakete: 02-excel-fehler, 05-latente-steuern, 03-gewst-hinzurechnung ([`5214c46`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5214c460db8ac7cc9206d8649a67b97413765715))
+  - `posts/02_2026-10-06_excel_fehler`, `posts/03_2026-10-13_gewst_hinzurechnung`, `posts/05_2026-10-08_latente_steuern`
+- 21:04 📡 Radar 2026-10-02: 8 Beiträge, 0 DM-Entwürfe ([`8955b76`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/8955b76d24593880e98cf6b3035a561c81c4a749))
+  - `automatik/interaktion`
+- 20:55 📡 Radar: Konten eingetragen ([`0e7b547`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0e7b5474da4cf4a29873d372c46e6adc6e14859f))
+  - `automatik/interaktion.json`
 - 16:12 ✍️ Auswertung: aktive Zeiten der ganzen Woche (auf deutsche Zeit umgerechnet) – 19:30 passt, Sonntag stärkster Abend ([`a2f31a3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a2f31a30f1fd371ecc9e4895d59dac6e254bc376))
   - `strategie/06_auswertung.md`
 - 15:11 📈 Statistik 2026-10-02 ([`c3f893b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c3f893b5c2d3bb9f56c0b7b3646ae9679ac7990b))
