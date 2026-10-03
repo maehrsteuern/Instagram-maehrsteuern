@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Globale Mindeststeuer: 15 %“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/mindeststeuer/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Globale Mindeststeuer: *15 %*.","sub":"Pillar Two für Einsteiger – das Mindeststeuergesetz."},
+    {"vorlage":"karussell","datei":"karussell/mindeststeuer/folie_02.png","typ":"inhalt","saeule":"Wer?","titel":"Ab *750 Mio. €* Umsatz.","text":"Unternehmensgruppen mit mindestens 750 Mio. € Umsatz in mindestens zwei der vier vorangegangenen Geschäftsjahre.","boxTitel":"NORM","box":"§ 1 MinStG"},
+    {"vorlage":"karussell","datei":"karussell/mindeststeuer/folie_03.png","typ":"inhalt","saeule":"Was?","titel":"15 % *je Land*.","text":"Liegt die effektive Steuerbelastung in einem Land unter 15 %, wird die Differenz als Ergänzungssteuer erhoben."},
+    {"vorlage":"karussell","datei":"karussell/mindeststeuer/folie_04.png","typ":"inhalt","saeule":"Erleichterungen","titel":"Drei *Entlastungen*.","punkte":["CbCR-Safe-Harbour in der Übergangszeit","De-minimis: unter 10 Mio. € Umsatz und 1 Mio. € Gewinn je Land","Substanzbasierter Freibetrag für Löhne und Sachanlagen"]},
+    {"vorlage":"karussell","datei":"karussell/mindeststeuer/folie_05.png","typ":"inhalt","saeule":"Deutschland","titel":"Bei *29,83 %* kein Thema?","text":"Meist nicht – aber Sondereffekte und Steuervergünstigungen können die effektive Quote drücken. Rechnen muss man trotzdem."},
+    {"vorlage":"karussell","datei":"karussell/mindeststeuer/folie_06.png","typ":"cta","saeule":"Wissen","titel":"Effektivsteuersatz *je Land*?","text":"Klingt nach einem Fall für ein Tool."}
+  ] }

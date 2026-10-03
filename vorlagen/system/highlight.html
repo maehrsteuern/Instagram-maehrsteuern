@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css">
-<!-- Highlight-Titelbild 1080×1920, Symbol mittig (Instagram schneidet einen Kreis aus der Mitte). Symbole: start | wissen | faq -->
+<!-- Highlight-Titelbild 1080×1920, Symbol mittig (Instagram schneidet einen Kreis aus der Mitte). Symbole: start | wissen | faq | demo | termin | ampel | lupe | rechner | dm | tabelle | text (Zeichen: glyph, Größe: fs) -->
 <style>html,body{width:1080px;height:1920px;background:radial-gradient(60% 40% at 50% 50%,var(--bg2) 0%,var(--bg) 70%)}
 svg{position:absolute;left:0;top:0}</style></head><body>
 <svg width="1080" height="1920" viewBox="-540 -960 1080 1920">
@@ -15,7 +15,24 @@ const ICONS = {
            <line x1="-180" y1="-80" x2="-60" y2="-60" stroke-width="12" opacity=".45"/><line x1="-180" y1="0" x2="-60" y2="20" stroke-width="12" opacity=".45"/>
            <line x1="60" y1="-60" x2="180" y2="-80" stroke-width="12" opacity=".45"/><line x1="60" y1="20" x2="180" y2="0" stroke-width="12" opacity=".45"/>`,
   faq: `<circle r="235"/><path d="M-78,-62 Q-78,-150 0,-150 Q82,-150 82,-72 Q82,-18 20,10 Q0,22 0,62"/>
-        <circle cy="130" r="16" fill="#EAF1EC" stroke="#EAF1EC" stroke-width="8"/>`
+        <circle cy="130" r="16" fill="#EAF1EC" stroke="#EAF1EC" stroke-width="8"/>`,
+  demo: `<circle r="235"/><path d="M-62,-105 L118,0 L-62,105 Z" fill="#EAF1EC" stroke="#EAF1EC" stroke-width="10"/>`,
+  termin: `<rect x="-230" y="-190" width="460" height="410" rx="44"/><line x1="-230" y1="-80" x2="230" y2="-80" stroke-width="14" opacity=".45"/>
+           <line x1="-120" y1="-250" x2="-120" y2="-140"/><line x1="120" y1="-250" x2="120" y2="-140"/><path d="M-90,70 L-20,135 L105,10" stroke="#EAF1EC"/>`,
+  ampel: `<rect x="-120" y="-260" width="240" height="520" rx="120"/><circle cy="-140" r="58" stroke-width="14" opacity=".35"/>
+          <circle cy="0" r="58" stroke-width="14" opacity=".35"/><circle cy="140" r="58" fill="#53C3A2"/>`,
+  lupe: `<circle cx="-45" cy="-45" r="175"/><line x1="80" y1="80" x2="225" y2="225"/><path d="M-120,-45 L-60,15 L45,-100" stroke="#EAF1EC"/>`,
+  rechner: `<rect x="-170" y="-240" width="340" height="480" rx="40"/><rect x="-110" y="-180" width="220" height="90" rx="12" stroke-width="14" opacity=".45"/>
+            ${[10,90,170].flatMap(y=>[-80,0,80].map(x=>`<circle cx="${x}" cy="${y}" r="20" fill="${x===80&&y===170?'#EAF1EC':'#53C3A2'}" stroke="${x===80&&y===170?'#EAF1EC':'#53C3A2'}"/>`)).join('')}`,
+  dm: `<g transform="translate(0,-10)"><path d="M-230,-170 Q-260,-170 -260,-140 L-260,100 Q-260,130 -230,130 L-150,130 L-185,215 L-60,130 L230,130 Q260,130 260,100 L260,-140 Q260,-170 230,-170 Z"/>
+       ${[-100,0,100].map(x=>`<circle cx="${x}" cy="-20" r="22" fill="#EAF1EC" stroke="#EAF1EC" stroke-width="6"/>`).join('')}</g>`,
+  tabelle: `<rect x="-240" y="-180" width="480" height="360" rx="30"/><line x1="-240" y1="-60" x2="240" y2="-60" stroke-width="14" opacity=".45"/>
+            <line x1="-240" y1="60" x2="240" y2="60" stroke-width="14" opacity=".45"/><line x1="-80" y1="-180" x2="-80" y2="180" stroke-width="14" opacity=".45"/>
+            <line x1="80" y1="-180" x2="80" y2="180" stroke-width="14" opacity=".45"/><rect x="100" y="80" width="120" height="80" rx="10" fill="#EAF1EC" stroke="none"/>`,
+  text: d => `<circle r="235"/><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="IBM Plex Serif, serif" font-weight="600"
+              font-size="${d.fs||300}" fill="#EAF1EC" stroke="none">${String(d.glyph||'?').replace(/&/g,'&amp;').replace(/</g,'&lt;')}</text>`
 };
-document.getElementById('icon').innerHTML = ICONS[(window.DATA||{}).icon || 'start'];
+const d = window.DATA || {};
+const ic = ICONS[d.icon || 'start'];
+document.getElementById('icon').innerHTML = typeof ic === 'function' ? ic(d) : ic;
 </script></body></html>

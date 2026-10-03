@@ -1,0 +1,6 @@
+{ "titel": "Reel-Einblendungen · W5 „Prüfpfad“ (haken, leiste, abspann)", "runde": 1, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"einblendung","datei":"bausteine/haken_pruefpfad.png","typ":"haken","kicker":"Betriebsprüfung fragt","titel":"Woher kommt\n*diese Zahl*?","sub":"Und du suchst in 12 Tabellenblättern."},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_pruefpfad.png","typ":"leiste","kicker":"Prüfpfad","titel":"Klick auf die Zahl → *Quelle*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_pruefpfad.png","typ":"abspann","titel":"Jede Zahl\n*belegt.*"}
+  ] }

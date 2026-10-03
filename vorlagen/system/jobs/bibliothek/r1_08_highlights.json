@@ -1,0 +1,6 @@
+{ "titel": "Highlight-Titelbilder · neu: Demo, Termin, Ampel", "runde": 1, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"highlight","datei":"highlights/hl_demo.png","icon":"demo"},
+    {"vorlage":"highlight","datei":"highlights/hl_termin.png","icon":"termin"},
+    {"vorlage":"highlight","datei":"highlights/hl_ampel.png","icon":"ampel"}
+  ] }

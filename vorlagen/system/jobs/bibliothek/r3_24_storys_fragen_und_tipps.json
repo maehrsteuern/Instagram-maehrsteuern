@@ -1,0 +1,15 @@
+{ "titel": "Storys · Fragen und Tipps (Runde 3)", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/frage_verfahrensdoku.png","typ":"frage","kicker":"Umfrage","titel":"Habt ihr eine *Verfahrens­dokumentation*?"},
+    {"vorlage":"story","datei":"storys/frage_erechnung.png","typ":"frage","kicker":"Umfrage","titel":"E-Rechnung: Könnt ihr sie schon *auslesen*?"},
+    {"vorlage":"story","datei":"storys/frage_dateiname.png","typ":"antwort","kicker":"Ehrlich","titel":"Wie heißt eure *aktuelle* Steuer-Datei?","antwort":"↩ Antworte mit dem Dateinamen.\nIch verrate keinen."},
+    {"vorlage":"story","datei":"storys/frage_organschaft.png","typ":"frage","kicker":"Umfrage","titel":"*Organschaft* im Konzern: ja oder nein?"},
+    {"vorlage":"story","datei":"storys/frage_reel.png","typ":"antwort","kicker":"Du entscheidest","titel":"Welches Thema soll ich *als Reel* erklären?"},
+    {"vorlage":"story","datei":"storys/frage_dauer.png","typ":"frage","kicker":"Umfrage","titel":"Eure Rückstellung: *Stunden* oder Tage?"},
+    {"vorlage":"story","datei":"storys/tipp_geschenke_konto.png","typ":"info","kicker":"Tipp","titel":"Geschenke *getrennt* buchen.","text":"Auf einem eigenen Konto erfassen – sonst ist der Abzug weg (§ 4 Abs. 7 EStG)."},
+    {"vorlage":"story","datei":"storys/tipp_bewirtungsbeleg.png","typ":"info","kicker":"Tipp","titel":"Bewirtungsbeleg *vollständig*.","text":"Ort, Tag, Teilnehmer, Anlass und Höhe – bei Restaurants ein maschinell erstellter Beleg."},
+    {"vorlage":"story","datei":"storys/tipp_schachtel.png","typ":"info","kicker":"Tipp","titel":"Schachtel­privileg: *Stichtag* beachten.","text":"Für die GewSt-Kürzung braucht es 15 % Beteiligung zu Beginn des Erhebungszeitraums (§ 9 Nr. 2a GewStG)."},
+    {"vorlage":"story","datei":"storys/tipp_eav.png","typ":"info","kicker":"Tipp","titel":"EAV *rechtzeitig* eintragen.","text":"Die Organschaft gilt erstmals für das Jahr, in dem der Vertrag wirksam wird (§ 14 Abs. 1 Satz 2 KStG)."},
+    {"vorlage":"story","datei":"storys/tipp_instandhaltung.png","typ":"info","kicker":"Tipp","titel":"Instandhaltung in *3 Monaten*.","text":"Wird unterlassene Instandhaltung in den ersten 3 Monaten nachgeholt, ist eine Rückstellung Pflicht (§ 249 Abs. 1 Satz 2 Nr. 1 HGB) – auch steuerlich."},
+    {"vorlage":"story","datei":"storys/tipp_grundsteuerwert.png","typ":"info","kicker":"Tipp","titel":"Grundsteuerwert für die *Kürzung*.","text":"Seit 2025: 0,11 % des Grundsteuerwerts statt 1,2 % des Einheitswerts (§ 9 Nr. 1 GewStG)."}
+  ] }

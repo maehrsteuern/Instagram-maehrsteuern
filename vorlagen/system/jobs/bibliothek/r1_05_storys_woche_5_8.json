@@ -1,0 +1,9 @@
+{ "titel": "Storys · Woche 5–8 (Frage, Umfrage, Teaser, Tipp)", "runde": 1, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/w5_umfrage.png","typ":"frage","kicker":"Umfrage","titel":"Wie viele *Tabellenblätter* hat eure größte Steuer-Datei?"},
+    {"vorlage":"story","datei":"storys/w6_umfrage.png","typ":"frage","kicker":"Abstimmung","titel":"Team *Code*\noder Team Excel?"},
+    {"vorlage":"story","datei":"storys/w6_teaser.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Drei Wege, *ehrlich* verglichen.","bild":"../../assets/bibliothek/karussell/vergleich_wege/folie_01.png"},
+    {"vorlage":"story","datei":"storys/w7_frage.png","typ":"antwort","kicker":"Kurze Frage","titel":"Was ist dein größter *Zeitfresser* im Abschluss?"},
+    {"vorlage":"story","datei":"storys/w8_umfrage.png","typ":"frage","kicker":"Du entscheidest","titel":"Welches *Feature* baue ich zuerst?","punkte":["Prüfpfad als PDF-Export","Hebesätze automatisch laden"],"marker":["A","B"]},
+    {"vorlage":"story","datei":"storys/tipp_hebesatz_zelle.png","typ":"info","kicker":"Tipp","titel":"Der Hebesatz gehört in *eine Zelle*.","text":"Nicht in jede Formel einzeln. Ändert die Gemeinde den Satz, passt du ihn einmal an – und alles rechnet mit.","cta":true,"chip":"📌 Mehr im Profil"}
+  ] }

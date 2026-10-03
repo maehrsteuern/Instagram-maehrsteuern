@@ -1,0 +1,8 @@
+{ "titel": "Karussell · Wissen – „Investitionsabzugsbetrag“", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/iab/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Investitions­abzugsbetrag: *50 %* vorziehen.","sub":"§ 7g EStG für kleine und mittlere Betriebe – kompakt."},
+    {"vorlage":"karussell","datei":"karussell/iab/folie_02.png","typ":"inhalt","saeule":"Voraussetzungen","titel":"Wer darf?","punkte":["Gewinn im Jahr des Abzugs höchstens *200.000 €*","Bewegliches Wirtschaftsgut, mindestens *90 %* betrieblich genutzt","Investition innerhalb von *3 Jahren*"],"boxTitel":"NORM","box":"§ 7g Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/iab/folie_03.png","typ":"inhalt","saeule":"Höchstbeträge","titel":"Bis zu *200.000 €* je Betrieb.","zeilen":[["Abzug von den geplanten Kosten","50 %"],["Summe aller IAB","200.000 €"],["Sonderabschreibung danach","40 %"]],"boxTitel":"NORM","box":"§ 7g Abs. 1 und 5 EStG"},
+    {"vorlage":"karussell","datei":"karussell/iab/folie_04.png","typ":"inhalt","saeule":"Achtung","titel":"Nicht investiert? *Rückwirkend* weg.","text":"Wird nicht fristgerecht investiert, wird der IAB im Abzugsjahr rückgängig gemacht – mit Zinsen.","boxTitel":"NORM","box":"§ 7g Abs. 3 EStG · § 233a AO"},
+    {"vorlage":"karussell","datei":"karussell/iab/folie_05.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* vor dem Jahresende.","text":"Fristen und Beträge je Wirtschaftsgut im Blick behalten? Das kann ein Tool für dich.","chip":"📌 Jetzt speichern"}
+  ] }

@@ -1,0 +1,7 @@
+{ "titel": "Storys · Highlight „FAQ ❓“ (Texte aus 02_bio_highlights.md)", "runde": 1, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/faq_1.png","typ":"info","kicker":"FAQ · 1/4","titel":"Was *kostet* das?","text":"Demo und Erstgespräch sind kostenlos. Danach bekommst du ein Angebot, das zu deinem Umfang passt."},
+    {"vorlage":"story","datei":"storys/faq_2.png","typ":"info","kicker":"FAQ · 2/4","titel":"Brauche ich *Programmier­kenntnisse*?","text":"Nein. Du bekommst ein fertiges Tool mit Oberfläche."},
+    {"vorlage":"story","datei":"storys/faq_3.png","typ":"info","kicker":"FAQ · 3/4","titel":"Was passiert mit meinen *Daten*?","text":"In der Demo nur Beispieldaten. Echte Daten bleiben bei dir – bitte nie per DM schicken."},
+    {"vorlage":"story","datei":"storys/faq_4.png","typ":"info","kicker":"FAQ · 4/4","titel":"Ersetzt das meine *Steuersoftware*?","text":"Nein. Es schließt die Lücken, die heute in Excel landen.","cta":true}
+  ] }

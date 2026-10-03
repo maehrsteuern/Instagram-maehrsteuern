@@ -42,6 +42,8 @@ Nach Feierabend sind Berufstätige und Studierende gleichzeitig online, Begründ
 | Praxis | **„Steuersatz-Staffel 2028–2032 in Excel: So baust du sie richtig“** (Parameter-Tabelle statt Festwert) | Steuerabteilungen, Kanzleien | Folgebeitrag, Aufruf „TOOL“ |
 | Praxis | **„Was im Examen keiner sagt: So sieht die Steuerrückstellung in der Praxis aus“** | Ex-Examens-Community, heute Berater | Brücken-Thema, zählt nicht zur Examens-Quote |
 
+**Fertig auf Vorrat:** In `assets/bibliothek/` liegen bereits gerenderte Beiträge zu diesen und vielen weiteren Themen (Hinzurechnung, § 8b KStG, Zinsschranke, Organschaft, E-Rechnung, Fristen, Mindeststeuer, Forschungszulage, Mythen, Glossar u. a.) – Übersicht `assets/bibliothek/README.md`. Für freie Slots zuerst dort schauen, Rechtsstand prüfen, nach `posts/` kopieren und einplanen.
+
 **Nach Woche 4 und 8:** Kennzahlen aus `01_positionierung.md` eintragen, schwächste Säule anpassen, nächste 4 Wochen planen.
 
 ## Ablauf pro Beitrag (Checkliste)
