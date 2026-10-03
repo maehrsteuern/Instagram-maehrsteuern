@@ -1,6 +1,7 @@
 name: Lage
 # Schreibt LAGE.md neu (automatik/lage.py): nach jedem Push, nach jedem Lauf der anderen Abläufe und jeden Morgen.
-# Schreibt außerdem kalender.ics (automatik/kalender.py) zum Abonnieren in Google Kalender.
+# Schreibt außerdem kalender.ics (automatik/kalender.py) und gleicht dieselben Termine direkt mit dem
+# Google-Kalender „maehrsteuern Autopilot“ ab (automatik/kalender_sync.py, Dienstkonto, nur dieser Kalender).
 # Committet nur, wenn sich wirklich etwas geändert hat.
 on:
   push:
@@ -66,3 +67,10 @@ jobs:
             sleep $((versuch * 5))
           done
           exit 1
+      - name: Google-Kalender „maehrsteuern Autopilot“ abgleichen
+        env:
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+        run: |
+          pip install -q google-auth requests
+          python automatik/kalender_sync.py

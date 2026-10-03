@@ -44,16 +44,21 @@ def utc(d):
 
 
 def termin(uid, start, minuten, titel, text):
+    """Ein Termin als Daten – daraus entstehen kalender.ics (ics_zeilen) und der Google-Sync (kalender_sync.py)."""
+    return {"uid": uid, "start": start, "ende": start + timedelta(minutes=minuten), "titel": titel, "text": text}
+
+
+def ics_zeilen(t):
     return [
         "BEGIN:VEVENT",
-        f"UID:{uid}@maehrsteuern",
+        f"UID:{t['uid']}@maehrsteuern",
         f"DTSTAMP:{utc(datetime.now(ZONE))}",
-        f"DTSTART:{utc(start)}",
-        f"DTEND:{utc(start + timedelta(minutes=minuten))}",
-        f"SUMMARY:{esc(titel)}",
-        f"DESCRIPTION:{esc(text)}",
+        f"DTSTART:{utc(t['start'])}",
+        f"DTEND:{utc(t['ende'])}",
+        f"SUMMARY:{esc(t['titel'])}",
+        f"DESCRIPTION:{esc(t['text'])}",
         "TRANSP:TRANSPARENT",
-        "BEGIN:VALARM", "ACTION:DISPLAY", f"DESCRIPTION:{esc(titel)}", "TRIGGER:PT0M", "END:VALARM",
+        "BEGIN:VALARM", "ACTION:DISPLAY", f"DESCRIPTION:{esc(t['titel'])}", "TRIGGER:PT0M", "END:VALARM",
         "END:VEVENT",
     ]
 
@@ -125,7 +130,7 @@ def main():
               "METHOD:PUBLISH", "X-WR-CALNAME:Instagram maehrsteuern", "X-WR-TIMEZONE:Europe/Berlin",
               "REFRESH-INTERVAL;VALUE=DURATION:PT6H", "X-PUBLISHED-TTL:PT6H"]
     for t in eintraege_zu_terminen(eintraege, jetzt):
-        zeilen += t
+        zeilen += ics_zeilen(t)
     zeilen.append("END:VCALENDAR")
     neu = "\r\n".join(falten(z) for z in zeilen) + "\r\n"
     # DTSTAMP ändert sich bei jedem Lauf – nur schreiben, wenn sich inhaltlich etwas geändert hat

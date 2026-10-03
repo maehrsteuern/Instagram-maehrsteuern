@@ -4,7 +4,7 @@
 
 **Überblick:** `LAGE.md` – was als Nächstes online geht, was du tun musst, Automatik-Status und Protokoll jeder Änderung. Wird automatisch nach jedem Push und jedem Automatik-Lauf neu geschrieben (`automatik/lage.py`, `.github/workflows/lage.yml`); Notizen dazu in `automatik/lage_notizen.md`.
 
-**Kalender:** `kalender.ics` – alle Beiträge (Postzeit, Freigabe offen, von Hand posten) und To-dos (Clips/Musik fehlen) als Kalender-Feed, wird mit LAGE.md neu geschrieben (`automatik/kalender.py`). Abonnieren: `EINRICHTUNG.md` Schritt 6.
+**Kalender:** Direkt-Sync in den Google-Kalender „maehrsteuern Autopilot“ (`automatik/kalender_sync.py`, jeder Lage-Lauf); zusätzlich `kalender.ics` – alle Beiträge (Postzeit, Freigabe offen, von Hand posten) und To-dos (Clips/Musik fehlen) als Kalender-Feed, wird mit LAGE.md neu geschrieben (`automatik/kalender.py`). Abonnieren: `EINRICHTUNG.md` Schritt 6.
 
 Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code ist der Unterschied: Lösungen, die wirklich laufen.
 
@@ -26,6 +26,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `vorlagen/hooks/` | Hook-Bibliothek: zehn fertige Reel-Einstiege (1,8–2,8 s), Übersicht in `README.md` |
 | `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
 | `automatik/interaktion.json` | Einstellungen Radar/Kommentare (Konten, Hashtags, Grenzen); Stand in `automatik/interaktion/` |
+| `automatik/kalender_sync.py` | Termine aus dem Plan direkt in den Google-Kalender „maehrsteuern Autopilot“ (Dienstkonto, nur dieser Kalender, idempotent) |
 | `automatik/waechter.py` | Ein Issue „🚨 Wächter“ bei rotem Workflow oder Schlüssel < 14 Tage (Ablaufdaten in `schluessel_ablauf.json`) |
 | `automatik/radar.py`, `kommentare.py`, `linkedin.py`, `ki.py` | Radar-Issue, Kommentar-Hilfe, LinkedIn-Pakete, gemeinsamer Claude-Zugang |
 | `strategie/dm_tracking.csv` | Liste zum Nachverfolgen der Anfragen |

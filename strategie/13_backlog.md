@@ -9,9 +9,11 @@ Stand 03.10.2026. Bewertung und Freigabe durch Loris, Umsetzung durch Claude.
 - **Erste-Stunde-Checkliste** – nach jedem Feed-Beitrag als Kommentar im Freigabe-Issue
 - Actions auf Node 24, Runner fest `ubuntu-24.04`
 
-## 🔜 Sprint 2 – Konzept, wartet auf Freigabe
-- **#3 Wochenbericht + #9 Herkunft der Demos**
-- **#1 Kalender-Direktsync** (Google-Dienstkonto, nur ein eigener Kalender)
+## ✅ Umgesetzt (Sprint 2, 03.10.)
+- **#1 Kalender-Direktsync** – Google-Kalender „maehrsteuern Autopilot“ per Dienstkonto (nur dieser Kalender, Scope `calendar.events`), jeder Lage-Lauf, idempotent, Termine „beschäftigt“ für Reclaim (`automatik/kalender_sync.py`)
+
+## 🔜 Sprint 2 – Konzept, wartet auf Entscheidung
+- **#3 Wochenbericht + #9 Herkunft der Demos** – Demo-Zahlen: a) von Hand im Issue (Empfehlung), b) `strategie/dm_tracking.csv`, c) Outlook-ICS (abgeraten); Chrome-Check zu Reclaim-Links/UTM und ManyChat-Zahlen steht aus
 
 ## ⏸️ Zurückgestellt bis ca. 15 Beiträge
 Vorher fehlen die Daten, um daraus etwas Belastbares abzuleiten.

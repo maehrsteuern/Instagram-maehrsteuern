@@ -32,6 +32,7 @@ STATUS = {
     "entfaellt": "⚪ entfällt",
 }
 WORKFLOWS = [  # Datei, Name, wann
+    ("lage.yml", "Lage + Google-Kalender", "alle 15 Min. (LAGE.md, kalender.ics, Kalender-Sync, Wächter)"),
     ("posten.yml", "Posten", "alle 15 Min. (postet freigegebene Einträge)"),
     ("freigabe.yml", "Freigabe", "bei neuen Entwürfen / Antwort im Issue"),
     ("statistik.yml", "Statistik", "täglich ca. 08:45"),

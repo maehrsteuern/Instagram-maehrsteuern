@@ -63,12 +63,13 @@ GitHub führt Zeitpläne (`schedule`) bei kleinen Repos oft verspätet oder gar 
 
 Bei Fehlern: 401 = Schlüssel falsch/abgelaufen · 403/404 = Berechtigung „Actions: Read and write“ oder Repo-Auswahl fehlt · 422 = Body/Branch falsch.
 
-## 6 · Instagram-Plan im Google Kalender (2 Min., einmalig)
-1. calendar.google.com am Rechner → links **Weitere Kalender +** → **Per URL**
-2. URL einfügen: `https://raw.githubusercontent.com/maehrsteuern/Instagram-maehrsteuern/claude/instagram/kalender.ics` → **Kalender hinzufügen**
-3. Beim neuen Kalender „Instagram maehrsteuern“ → ⋮ → **Einstellungen** → Benachrichtigungen: **0 Minuten vorher** (Google übernimmt Erinnerungen aus Feeds nicht von selbst)
-- Aktualisiert sich automatisch (Google holt den Feed alle paar Stunden, manchmal bis zu 1 Tag Verzögerung).
-- Inhalt: jeder Reel/Karussell-Termin, offene Freigaben, „von Hand posten“, fehlende Clips/Musik/Dateien. Feste Termine (Mo/Do-Check, persönliche To-dos) bleiben im eigenen Kalender.
+## 6 · Instagram-Plan im Google Kalender ✅ eingerichtet (03.10.)
+Direkt-Sync statt Abo: Jeder Lage-Lauf (alle 15 Min.) schreibt die Termine aus dem Plan in den Google-Kalender **„maehrsteuern Autopilot“** (`automatik/kalender_sync.py`). Termine sind „beschäftigt“ → Reclaim legt keine Demo darauf.
+- Zugang: Google-Cloud-Projekt `maehrsteuern-autopilot` (nur Calendar API, keine Abrechnung), Dienstkonto `kalender-sync@…` ohne Projekt-Rollen, nur dieser eine Kalender ist mit ihm geteilt („Änderungen an Terminen vornehmen“). Scope im Code: nur `calendar.events`.
+- Secrets: `GOOGLE_SA_KEY` (Dienstkonto-JSON), `GOOGLE_CALENDAR_ID`.
+- Der Sync fasst nur eigene Termine an (Markierung `maehrsteuern=1`), feste Event-IDs → kein Doppeln.
+- **Zugang sperren:** Google Cloud → Dienstkonten → kalender-sync → Schlüssel löschen, oder Freigabe im Kalender entfernen.
+- `kalender.ics` wird weiter erzeugt (Fallback zum Abonnieren per URL `https://raw.githubusercontent.com/maehrsteuern/Instagram-maehrsteuern/claude/instagram/kalender.ics`); kann entfallen, wenn der Sync zuverlässig läuft.
 
 ## 7 · Interaktion: Radar, Kommentar-Hilfe, LinkedIn (ca. 25 Min.)
 Erklärung: `strategie/12_interaktion.md`. Alles läuft auch ohne diesen Schritt weiter, nur ohne Radar und Vorschläge.
