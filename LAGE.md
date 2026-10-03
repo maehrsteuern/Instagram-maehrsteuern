@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 06:35 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 06:41 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -100,6 +100,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 06:41 ✍️ Sprint 1: Wächter, Stichwort-Abgleich, Radar-Pflege, Erste-Stunde-Checkliste ([`76f93ad`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/76f93adf3889d22af2feb576cca9c6ef36037ec8))
+  - `.github/workflows`, `README.md`, `automatik/ablauf.py`, `automatik/fb_schluessel_verlaengern.py`, `automatik/lage.py`, `automatik/lage_notizen.md`, `…`
 - 06:35 📈 Statistik 2026-10-03 ([`c02d4c7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c02d4c7c62bf7bdb390785debd9726ef23a832fe))
   - `automatik/statistik`
 - 06:33 ✍️ Abläufe: Actions auf Node 24 (checkout@v7, setup-python@v7), Runner fest auf ubuntu-24.04 ([`c31d663`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c31d663ae51d08bb5c2ec6ac6332a84bce42b15f))
