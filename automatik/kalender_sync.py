@@ -1,7 +1,7 @@
 """Termine aus dem Plan direkt in den Google-Kalender „maehrsteuern Autopilot“ schreiben (läuft mit jedem Lage-Lauf).
 
-Gleiche Termine wie kalender.ics (automatik/kalender.py), aber sofort statt mit Abo-Verzögerung – und als
-„beschäftigt“, damit Reclaim keine Demo auf Postzeiten oder To-dos legt.
+Termine kommen aus automatik/kalender.py, sofort statt mit Abo-Verzögerung – und als „beschäftigt“, damit Reclaim
+keine Demo auf Postzeiten oder To-dos legt.
 
 Sicherheit / Rechte:
 - Zugang nur über das Dienstkonto aus GOOGLE_SA_KEY, Scope ausschließlich calendar.events.

@@ -1,7 +1,7 @@
 name: Lage
 # Schreibt LAGE.md neu (automatik/lage.py): nach jedem Push, nach jedem Lauf der anderen Abläufe und jeden Morgen.
-# Schreibt außerdem kalender.ics (automatik/kalender.py) und gleicht dieselben Termine direkt mit dem
-# Google-Kalender „maehrsteuern Autopilot“ ab (automatik/kalender_sync.py, Dienstkonto, nur dieser Kalender).
+# Gleicht außerdem die Termine aus dem Plan mit dem Google-Kalender „maehrsteuern Autopilot“ ab
+# (automatik/kalender_sync.py, Dienstkonto, nur dieser Kalender).
 # Committet nur, wenn sich wirklich etwas geändert hat.
 on:
   push:
@@ -47,6 +47,14 @@ jobs:
           [ "$uhr" -ge 700 ] && [ "$uhr" -lt 1000 ] || exit 0
           laeufe=$(gh run list --workflow radar.yml --created ">=$mitternacht" --json databaseId --jq length)
           [ "$laeufe" = 0 ] && gh workflow run radar.yml --ref claude/instagram && echo "Radar gestartet" || true
+      - name: Wochenbericht anstoßen (So 18:00–21:00 Uhr, falls heute noch keiner lief)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          [ "$(TZ=Europe/Berlin date +%u)" = 7 ] || exit 0
+          uhr=$(TZ=Europe/Berlin date +%H%M); mitternacht=$(date -u -d "$(TZ=Europe/Berlin date +%F) 00:00 $(TZ=Europe/Berlin date +%z)" +%FT%TZ)
+          [ "$uhr" -ge 1800 ] && [ "$uhr" -lt 2100 ] || exit 0
+          laeufe=$(gh run list --workflow wochenbericht.yml --event workflow_dispatch --created ">=$mitternacht" --json databaseId --jq length)
+          [ "$laeufe" = 0 ] && gh workflow run wochenbericht.yml --ref claude/instagram && echo "Wochenbericht gestartet" || true
       - name: Wächter (ein Issue, meldet sich nur bei Problemen)
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
@@ -58,8 +66,7 @@ jobs:
           for versuch in 1 2 3 4; do
             git pull -q --rebase origin claude/instagram
             python automatik/lage.py
-            python automatik/kalender.py
-            git add LAGE.md kalender.ics
+            git add LAGE.md
             git diff --cached --quiet && exit 0
             git commit -q -m "Lage aktualisiert"
             git push -q origin HEAD:claude/instagram && exit 0

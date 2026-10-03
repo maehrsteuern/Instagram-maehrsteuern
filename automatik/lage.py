@@ -32,13 +32,14 @@ STATUS = {
     "entfaellt": "⚪ entfällt",
 }
 WORKFLOWS = [  # Datei, Name, wann
-    ("lage.yml", "Lage + Google-Kalender", "alle 15 Min. (LAGE.md, kalender.ics, Kalender-Sync, Wächter)"),
+    ("lage.yml", "Lage + Google-Kalender", "alle 15 Min. (LAGE.md, Kalender-Sync, Wächter)"),
     ("posten.yml", "Posten", "alle 15 Min. (postet freigegebene Einträge)"),
     ("freigabe.yml", "Freigabe", "bei neuen Entwürfen / Antwort im Issue"),
     ("statistik.yml", "Statistik", "täglich ca. 08:45"),
     ("token.yml", "Schlüssel verlängern", "am 1. des Monats ca. 06:27"),
     ("radar.yml", "Radar + LinkedIn", "täglich ca. 07:00 (Issue mit Arbeitsliste)"),
     ("kommentare.yml", "Kommentare", "nach jedem Posten-Takt (Vorschläge ins Issue)"),
+    ("wochenbericht.yml", "Wochenbericht", "sonntags ca. 18:00 (ein Issue)"),
     ("musik.yml", "Musik holen", "nur von Hand"),
 ]
 WOCHENTAG = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]

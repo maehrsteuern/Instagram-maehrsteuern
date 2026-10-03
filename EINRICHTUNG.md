@@ -69,7 +69,7 @@ Direkt-Sync statt Abo: Jeder Lage-Lauf (alle 15 Min.) schreibt die Termine aus d
 - Secrets: `GOOGLE_SA_KEY` (Dienstkonto-JSON), `GOOGLE_CALENDAR_ID`.
 - Der Sync fasst nur eigene Termine an (Markierung `maehrsteuern=1`), feste Event-IDs → kein Doppeln.
 - **Zugang sperren:** Google Cloud → Dienstkonten → kalender-sync → Schlüssel löschen, oder Freigabe im Kalender entfernen.
-- `kalender.ics` wird weiter erzeugt (Fallback zum Abonnieren per URL `https://raw.githubusercontent.com/maehrsteuern/Instagram-maehrsteuern/claude/instagram/kalender.ics`); kann entfallen, wenn der Sync zuverlässig läuft.
+- `kalender.ics` gibt es seit 03.10.2026 nicht mehr (ersetzt durch den Direkt-Sync).
 
 ## 7 · Interaktion: Radar, Kommentar-Hilfe, LinkedIn (ca. 25 Min.)
 Erklärung: `strategie/12_interaktion.md`. Alles läuft auch ohne diesen Schritt weiter, nur ohne Radar und Vorschläge.
@@ -101,6 +101,7 @@ Die bisherige Instagram-Schnittstelle kann keine fremden Profile lesen. Dafür b
 | **täglich ca. 08:45** | Statistik wird abgeholt, Tagesbericht in `LAGE.md` | Autopilot |
 | **täglich ca. 07:00** | Radar-Issue: Beiträge zum Kommentieren, DM-Entwürfe, montags Collab; LinkedIn-Pakete für neue Karussells | Autopilot + du (15 Min.) |
 | alle 15 Min. | neue Kommentare mit Antwortvorschlag ins Issue „💬 Kommentare“ – `K12 ok` postet die Antwort | Autopilot + du |
+| **So ca. 18:00** | Wochenbericht-Issue „📊 Woche KW xx“ – Demos und ManyChat-Zahlen per Kommentar nachtragen (`demos 2`, `manychat 14/6`, `herkunft …`) | Autopilot + du (2 Min.) |
 | **1. des Monats** | Monatsbericht, Instagram-Schlüssel wird verlängert (braucht `GH_PAT`) | Claude + Autopilot |
 
 **Freigaben:** https://github.com/maehrsteuern/Instagram-maehrsteuern/issues?q=is%3Aopen+label%3Afreigabe

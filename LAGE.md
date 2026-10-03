@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 07:01 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 07:02 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -13,7 +13,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.) wartet auf eigene Clips und Musik – Drehbuch: `posts/04_2026-10-20_reel_mein_weg/drehbuch.md`.
 - DM-Strecke läuft über **ManyChat** (Kommentar/Story-Antwort/DM mit Tool/TOOL/tool/tol → DM mit Demo-Link, Follow-up nach 23 h). Stichwörter nur in `automatik/interaktion.json` pflegen – Abweichungen meldet LAGE.md. Die eigenen Skripte schicken nie DMs.
-- Interaktion läuft (Radar 40 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (Reclaim: beschäftigt). `kalender.ics` bleibt vorerst als Fallback. **Offen:** Wochenbericht + Demo-Herkunft (Entscheidung a/b/c) – siehe `strategie/13_backlog.md`.
+- Interaktion läuft (Radar 40 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (Reclaim: beschäftigt). `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Offen: Chrome-Check (Reclaim-Links/UTM, ManyChat-Zahlen) für automatische Demo-Herkunft – siehe `strategie/13_backlog.md`.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
 
@@ -87,13 +87,14 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
-| Lage + Google-Kalender | alle 15 Min. (LAGE.md, kalender.ics, Kalender-Sync, Wächter) | ✅ ok |
+| Lage + Google-Kalender | alle 15 Min. (LAGE.md, Kalender-Sync, Wächter) | ✅ ok |
 | Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
 | Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
 | Statistik | täglich ca. 08:45 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
 | Radar + LinkedIn | täglich ca. 07:00 (Issue mit Arbeitsliste) | ✅ ok |
 | Kommentare | nach jedem Posten-Takt (Vorschläge ins Issue) | ✅ ok |
+| Wochenbericht | sonntags ca. 18:00 (ein Issue) | – |
 | Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
@@ -101,6 +102,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 07:02 📡 Radar 2026-10-03: 8 Beiträge, 0 DM-Entwürfe ([`a9e2318`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a9e23183c84d6febc68ee8e5269b4f0f61f183f8))
+  - `automatik/interaktion`
 - 07:01 ✍️ Kalender-Sync: Plan-Termine direkt in den Google-Kalender „maehrsteuern Autopilot“ ([`b471b14`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b471b147904d2f8b5c3b2a9fd65a6330ff54d788))
   - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/kalender.py`, `automatik/kalender_sync.py`, `automatik/lage.py`, `…`
 - 06:42 🔑 Schlüssel: Ablaufdaten aktualisiert ([`e739f8b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e739f8ba33ac734584bedc573df49d77e48e7a95))
