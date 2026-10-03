@@ -343,11 +343,12 @@
       "zeit": "2026-10-20 19:30",
       "typ": "reel",
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
-      "video": "reel.mp4",
-      "titelbild": "titelbild.png",
-      "text": "bildunterschrift.txt",
+      "video": "reel_markenweg.mp4",
+      "titelbild": "titelbild_markenweg.png",
+      "text": "bildunterschrift_markenweg.txt",
       "musik_fehlt": true,
-      "status": "wartet_auf_clips"
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "Variante B (drehbuch_markenweg.md): Sprechtext Di 20.10. aus posts/sprechtexte.md bis Do 15.10.; Karte 2/3 KI → KI-Label nötig"
     },
     {
       "id": "04-story-teaser",
@@ -355,7 +356,7 @@
       "typ": "story",
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
       "bilder": [
-        "story_di_teaser.png"
+        "story_di_teaser_markenweg.png"
       ],
       "status": "entwurf"
     }
