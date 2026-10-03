@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 09:58 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 10:00 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -103,6 +103,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 10:00 ✍️ Chrome-Module: Gesamtprompt im Repo + LinkedIn-Erinnerungen im Kalender ([`4eccdd2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4eccdd2bec52c33150e9a7bfdceb5f5db7fa4660))
+  - `README.md`, `automatik/kalender.py`, `automatik/lage_notizen.md`, `strategie/14_chrome_module.md`
 - 09:58 🔀 Merge branch 'claude/instagram' of https://github.com/maehrsteuern/Instagram-maehrsteuern into claude/instagram ([`7e9ecfe`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/7e9ecfebcc3690be006282adb22a8b468546884e))
 - 09:58 ✍️ Reel-Entwurf „Mein Weg rückwärts“ zum Review und Prüfzettel latente Steuern ([`ab5fc1f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ab5fc1f8fdd6db7b591e13a8e384c84a61bb1139))
   - `posts/04_2026-10-20_reel_mein_weg`, `posts/05_2026-10-08_latente_steuern`, `vorlagen/system/schnitt/p04_reel_markenweg_entwurf.json`
