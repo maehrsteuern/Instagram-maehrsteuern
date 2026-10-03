@@ -61,6 +61,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `assets/maehrsteuern_Highlight_*.png` | Highlight-Symbole |
 | `assets/app_9x16.png` | Dashboard-Screenshot (nur Demo-Daten) |
 | `assets/ende_9x16.png` | Abspann-Karte |
+| `assets/marke/*` | Marken-Bilder: Originale (Freisteller heute, KI-Porträt, KI-Avatar 2025) + 9:16-Karten im Markenstil (Hintergrund `#0B110E` → `#153A31`, Gesicht in der Safe-Zone) |
 | `vorlagen/*.html` + `*.mjs` | Vorlagen; Bild erzeugen mit `node cover.mjs` usw. im Ordner `vorlagen` (Playwright, Chromium unter /opt/pw-browsers) |
 
 ## Regeln
