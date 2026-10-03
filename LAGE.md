@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 09:51 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 09:59 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -16,7 +16,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Interaktion läuft (Radar 40 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (Reclaim: beschäftigt). `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Demo-Buchungen + Herkunft: Apps-Script „maehrsteuern Demo-Kopie“ kopiert sie stündlich nach „maehrsteuern Autopilot“ – eingerichtet und per Echttest bestätigt (03.10.). Reclaim: Pflichtfeld „Woher kennst du mich?“, Titel „Demo + Erstgespräch – Name“, nur noch dieser eine Link. ManyChat-Zahlen bleiben von Hand (API nur Pro) – siehe `strategie/13_backlog.md`.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
-- **LinkedIn-Strang (03.10.):** Wissen/Algorithmus neu geschrieben in `strategie/linkedin/01_wissen_linkedin.md` – **Loris prüft**. Nächster Schritt: Erstanalyse des Profils mit Claude in Chrome (`strategie/linkedin/prompts/01_erstanalyse.md`), Bericht hier einfügen → Headline/Info/Startplan. Danach eigener Plan, Freigaben, Lage. Chrome nur lesen/vorbereiten, Loris klickt Posten.
+- **LinkedIn-Strang (03.10.):** Wissen in `strategie/linkedin/01_wissen_linkedin.md` (**Loris prüft**). Erstanalyse ist da (`02_erstanalyse_2026-10-03.md`, Note 4: Profil zeigt nur Arbeitgeber, maehrsteuern „beendet“, 1 Beitrag in 12 Monaten). Nächster Schritt: Profil neu (Headline, Info, Website, Im Fokus, Titelbild) – Entscheidungen von Loris offen. Chrome nur lesen/vorbereiten, Loris klickt Posten.
 
 ## 👉 Braucht dich
 
@@ -103,6 +103,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 09:59 💼 LinkedIn: Algorithmus-Wissen (Entwurf) und Chrome-Prompt für die Erstanalyse des Profils ([`3128ac3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3128ac356030bc7bc4eab61bd79ada2cd4c4e50b))
+  - `README.md`, `automatik/lage_notizen.md`, `strategie/linkedin`
 - 09:51 📡 Radar: Häkchen auch in eigenen Kommentaren im Radar-Issue zählen ([`72d79a5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/72d79a53ba0cec60f21f1c2491f1eca24c2d22c5))
   - `automatik/radar.py`
 - 08:59 ✍️ Auswertung: eigene Frage-Story schlaegt geteilte Story, Karussell waechst ueber 2 Tage ([`f9d3771`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f9d37710e292a1875e55d1d3b1c104ef8db8276d))
