@@ -1,6 +1,7 @@
 # Wettbewerbs-Check
 
 Monatlicher Blick auf die 5 größten Creator-Konten aus dem Radar (interaktion.json, art „creator“): je die 2 Reels mit den meisten Aufrufen der letzten 30 Tage. Hooks sinngemäß, nicht wörtlich.
+Die Content-Fabrik nutzt die Lernpunkte über `08_hooks.md` (Abschnitt „Lernpunkte aus dem Wettbewerbs-Check“).
 
 ## Oktober 2026
 

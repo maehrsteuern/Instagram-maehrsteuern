@@ -60,6 +60,17 @@ Platzhalter `…` durch das Thema ersetzen. In Klammern die Nummer im Original.
 
 Bewusst **nicht** übernommen: „Meine Kundin hat in … Tagen …“ (26), solange es keine echten, freigegebenen Kundenergebnisse gibt; „Fühlst du dich ausgebrannt …“ (24), passt nicht zum Markenton.
 
+## Lernpunkte aus dem Wettbewerbs-Check (für die Content-Fabrik)
+Vor jedem Lauf `strategie/wettbewerb.md` lesen (monatlich aktualisiert von Chrome-Modul 6). Daraus gilt:
+
+- **Pro Lauf mindestens ein Beitrag** mit einem der beiden Muster:
+  - **a) Konkreter Fall als Hook** – ein echter, typischer Fehler aus der Steuerabteilung statt der Tool-Funktion (z. B. „#BEZUG! zwei Tage vor der Frist“).
+  - **b) Prüfer-/Finanzamt-Perspektive** – „Der Prüfer findet …“ / „Das Finanzamt fragt …“, danach zeigen, wie das Tool den Prüfpfad liefert.
+- **Keine Angstmache, keine erfundenen Fälle:** Fälle sind typisch und so gekennzeichnet („passiert ständig“), nie als echte Kundin/echter Kunde ausgegeben. Keine Arbeitgeber-Bezüge.
+- **Im Freigabe-Issue** pro Beitrag kurz notieren, welcher Lernpunkt genutzt wurde (z. B. „Hook-Muster b aus wettbewerb.md, Okt. 2026“) – so sieht der Wochenbericht später, ob es wirkt.
+- Collab-Ideen („Kanzlei vs. Tool“) nur als Vorschlag ins Freigabe-Issue, nie selbst Kontakt aufnehmen.
+- Stichwort im Aufruf bleibt **TOOL** (ManyChat) – kein neues Stichwort erfinden.
+
 ## Vorschläge für die geplanten Beiträge
 Der aktuelle Haken bleibt Standard. Die Varianten sind Optionen für die Content-Fabrik bzw. für fertige Beiträge nur nach Rücksprache.
 
