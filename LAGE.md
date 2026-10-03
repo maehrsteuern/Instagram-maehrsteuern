@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 07:02 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 07:05 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-tipp` am **Sa 03.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -102,6 +102,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 03.10.2026**
+- 07:05 ✍️ Wochenbericht sonntags + kalender.ics entfernt ([`c91f227`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c91f2275870664f901ed455c62e3a9a6de699df2))
+  - `.github/workflows`, `EINRICHTUNG.md`, `README.md`, `automatik/kalender.py`, `automatik/kalender_sync.py`, `automatik/lage.py`, `…`
 - 07:02 📡 Radar 2026-10-03: 8 Beiträge, 0 DM-Entwürfe ([`a9e2318`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a9e23183c84d6febc68ee8e5269b4f0f61f183f8))
   - `automatik/interaktion`
 - 07:01 ✍️ Kalender-Sync: Plan-Termine direkt in den Google-Kalender „maehrsteuern Autopilot“ ([`b471b14`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b471b147904d2f8b5c3b2a9fd65a6330ff54d788))
