@@ -27,6 +27,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `automatik/` | `plan.json` (Plan + Status), `posten.py`, `statistik.py`, `schluessel_verlaengern.py`, `statistik/*.csv` |
 | `automatik/interaktion.json` | Einstellungen Radar/Kommentare (Konten, Hashtags, Grenzen); Stand in `automatik/interaktion/` |
 | `automatik/wochenbericht.py` | Sonntags ein Issue „📊 Woche KW xx“ (Follower, Aufrufe, Top 3, Radar, Trichter); Nachtrag `demos 2` / `manychat 14/6` / `herkunft …`; Werte in `automatik/statistik/woche.csv` |
+| `automatik/apps_script/demo_kopie.gs` | Apps-Script (läuft in Loris' Google-Konto): kopiert Reclaim-Demo-Buchungen ohne Namen/E-Mails in „maehrsteuern Autopilot“ – Quelle für den Wochenbericht |
 | `automatik/kalender_sync.py` | Termine aus dem Plan direkt in den Google-Kalender „maehrsteuern Autopilot“ (Dienstkonto, nur dieser Kalender, idempotent) |
 | `automatik/waechter.py` | Ein Issue „🚨 Wächter“ bei rotem Workflow oder Schlüssel < 14 Tage (Ablaufdaten in `schluessel_ablauf.json`) |
 | `automatik/radar.py`, `kommentare.py`, `linkedin.py`, `ki.py` | Radar-Issue, Kommentar-Hilfe, LinkedIn-Pakete, gemeinsamer Claude-Zugang |

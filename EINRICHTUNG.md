@@ -69,6 +69,7 @@ Direkt-Sync statt Abo: Jeder Lage-Lauf (alle 15 Min.) schreibt die Termine aus d
 - Secrets: `GOOGLE_SA_KEY` (Dienstkonto-JSON), `GOOGLE_CALENDAR_ID`.
 - Der Sync fasst nur eigene Termine an (Markierung `maehrsteuern=1`), feste Event-IDs → kein Doppeln.
 - **Zugang sperren:** Google Cloud → Dienstkonten → kalender-sync → Schlüssel löschen, oder Freigabe im Kalender entfernen.
+- **Demo-Buchungen für den Wochenbericht:** Reclaim schreibt Buchungen fest in den Hauptkalender. Ein kleines Apps-Script in Loris' eigenem Google-Konto (`automatik/apps_script/demo_kopie.gs`, Projekt „maehrsteuern Demo-Kopie“ auf script.google.com, stündlich) kopiert nur „Demo + Erstgespräch“-Buchungen mit fremdem Gast in „maehrsteuern Autopilot“ – mit Buchungsdatum und Herkunft („Woher kennst du mich?“), ohne Namen und E-Mails. Das Dienstkonto sieht den Hauptkalender nie. Abschalten: script.google.com → Projekt → Auslöser löschen.
 - `kalender.ics` gibt es seit 03.10.2026 nicht mehr (ersetzt durch den Direkt-Sync).
 
 ## 7 · Interaktion: Radar, Kommentar-Hilfe, LinkedIn (ca. 25 Min.)

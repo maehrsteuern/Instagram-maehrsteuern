@@ -9,7 +9,7 @@
 
 Quellen: automatik/statistik/konto.csv + beitraege.csv (Instagram), geschlossene Radar-Issues (Haken),
 automatik/interaktion/kommentare.json (Kommentar-Hilfe), strategie/dm_tracking.csv (termin_gebucht = ja),
-Reclaim-Buchungen „Demo + Erstgespräch“ im Kalender „maehrsteuern Autopilot“ inkl. Feld „Woher kennst du mich?“.
+Demo-Buchungen als Kopie im Kalender „maehrsteuern Autopilot“ (Apps-Script automatik/apps_script/demo_kopie.gs).
 Alle Werte landen zusätzlich in automatik/statistik/woche.csv.
 Umgebung: GH_TOKEN, GITHUB_REPOSITORY, GOOGLE_SA_KEY + GOOGLE_CALENDAR_ID (optional, für Demo-Buchungen).
 """
@@ -113,35 +113,26 @@ def demos_tracking(von, bis):
 
 
 def demos_kalender(von, bis):
-    """Reclaim-Buchungen „Demo + Erstgespräch“, die in der Woche gebucht wurden – gelesen aus dem Kalender
-    GOOGLE_CALENDAR_ID („maehrsteuern Autopilot“, Dienstkonto). Klappt, sobald Reclaim Buchungen dort einträgt.
-    Herkunft aus dem Buchungsfeld „Woher kennst du mich?“. Eigene Testbuchungen (nur Loris als Gast) zählen nicht.
+    """Demo-Buchungen der Woche aus dem Kalender GOOGLE_CALENDAR_ID („maehrsteuern Autopilot“). Dort legt das
+    Apps-Script automatik/apps_script/demo_kopie.gs (läuft in Loris' Google-Konto) je echte Reclaim-Buchung
+    eine Kopie an: Beschreibung „maehrsteuern-demo / Gebucht: JJJJ-MM-TT / Herkunft: …“ – ohne Namen und E-Mails.
     Gibt (Anzahl, „Instagram 2, LinkedIn 1“) zurück – oder ("", "") ohne Zugang."""
     if not os.environ.get("GOOGLE_SA_KEY") or not os.environ.get("GOOGLE_CALENDAR_ID"):
         return "", ""
-    from html import unescape
-    from kalender_sync import MARKE, sitzung
-    s = sitzung()
-    r = s.get(f"https://www.googleapis.com/calendar/v3/calendars/{os.environ['GOOGLE_CALENDAR_ID']}/events",
-              params={"q": "Demo + Erstgespräch", "timeMin": f"{von.isoformat()}T00:00:00Z",
-                      "timeMax": f"{(bis + timedelta(days=70)).isoformat()}T00:00:00Z", "singleEvents": "true",
-                      "maxResults": 250}, timeout=60)
+    from kalender_sync import sitzung
+    r = sitzung().get(f"https://www.googleapis.com/calendar/v3/calendars/{os.environ['GOOGLE_CALENDAR_ID']}/events",
+                      params={"q": "maehrsteuern-demo", "timeMin": f"{(von - timedelta(days=14)).isoformat()}T00:00:00Z",
+                              "timeMax": f"{(bis + timedelta(days=100)).isoformat()}T00:00:00Z",
+                              "singleEvents": "true", "maxResults": 250}, timeout=60)
     r.raise_for_status()
     anzahl, herkunft = 0, {}
     for e in r.json().get("items", []):
-        if e.get("extendedProperties", {}).get("private", {}).get(MARKE) or e.get("status") == "cancelled":
+        text_ = e.get("description", "")
+        gebucht = re.search(r"Gebucht:\s*(\d{4}-\d{2}-\d{2})", text_)
+        if "maehrsteuern-demo" not in text_ or not gebucht or not von.isoformat() <= gebucht.group(1) <= bis.isoformat():
             continue
-        if not von.isoformat() <= e.get("created", "")[:10] <= bis.isoformat():
-            continue
-        veranstalter = e.get("organizer", {}).get("email")
-        gaeste = [a.get("email") for a in e.get("attendees", [])
-                  if not a.get("organizer") and not a.get("self") and a.get("email") != veranstalter]
-        if not gaeste:
-            continue  # niemand außer Loris selbst = Testbuchung
         anzahl += 1
-        text_ = re.sub(r"<[^>]+>", "\n", unescape(e.get("description", "")))
-        m = re.search(r"Woher kennst du mich\??\s*[:\-–]?\s*\n*\s*([^\n]+)", text_, re.I)
-        quelle = (m.group(1).strip() if m else "unbekannt")[:40] or "unbekannt"
+        quelle = (re.search(r"Herkunft:\s*([^\n]+)", text_) or [None, "unbekannt"])[1].strip() or "unbekannt"
         herkunft[quelle] = herkunft.get(quelle, 0) + 1
     return str(anzahl), ", ".join(f"{q} {n}" for q, n in sorted(herkunft.items(), key=lambda x: -x[1]))
 
