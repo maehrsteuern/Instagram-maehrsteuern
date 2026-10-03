@@ -15,6 +15,23 @@
 const ZIEL_NAME = 'maehrsteuern Autopilot';
 const SUCHE = 'Demo + Erstgespräch';
 const TAG = 'maehrsteuernDemo';
+// Antworten im Reclaim-Pflichtfeld „Woher kennst du mich?“ (Dropdown) – werden bevorzugt erkannt
+const OPTIONEN = ['Instagram', 'LinkedIn', 'Empfehlung', 'Google', 'Sonstiges'];
+
+/** Herkunft aus der Reclaim-Beschreibung (HTML) lesen: erst die festen Optionen hinter der Frage, sonst die Zeile danach. */
+function herkunftLesen(html) {
+  const text = (html || '').replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '\n')
+    .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  const pos = text.search(/Woher kennst du mich/i);
+  if (pos < 0) return 'unbekannt';
+  const danach = text.slice(pos + 'Woher kennst du mich'.length, pos + 300);
+  const treffer = OPTIONEN.map(o => ({ o, i: danach.search(new RegExp('\\b' + o + '\\b', 'i')) }))
+    .filter(t => t.i >= 0).sort((x, y) => x.i - y.i);
+  if (treffer.length && treffer[0].i < 120) return treffer[0].o;  // erste Option direkt nach der Frage
+  const m = danach.match(/^\??\s*[:\-–]?\s*([^\n]+)/) || danach.match(/\n\s*([^\n]+)/);
+  return m && m[1].trim() ? m[1].trim().slice(0, 40) : 'unbekannt';
+}
 
 function einrichten() {
   ScriptApp.getProjectTriggers()
@@ -42,9 +59,7 @@ function kopieren() {
     if (!gaeste.length) return;                                  // Testbuchung
     const id = Utilities.base64EncodeWebSafe(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_1, e.getId())).slice(0, 16);
     gesehen[id] = true;
-    const klartext = (e.getDescription() || '').replace(/<[^>]+>/g, '\n');
-    const m = klartext.match(/Woher kennst du mich\??\s*[:\-–]?\s*\n*\s*([^\n]+)/i);
-    const herkunft = m ? m[1].trim().slice(0, 40) : 'unbekannt';
+    const herkunft = herkunftLesen(e.getDescription());
     const gebucht = Utilities.formatDate(e.getDateCreated(), 'Europe/Berlin', 'yyyy-MM-dd');
     const beschreibung = 'maehrsteuern-demo\nGebucht: ' + gebucht + '\nHerkunft: ' + herkunft +
                          '\n(Kopie aus dem Hauptkalender, automatisch – nicht bearbeiten)';
