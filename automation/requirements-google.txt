@@ -1,0 +1,3 @@
+# Google-Kalender (kalender_sync.py, wochenbericht.py) – Workflows lage.yml und wochenbericht.yml cachen danach
+google-auth
+requests

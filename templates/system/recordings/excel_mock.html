@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabellen-Attrappe</title>
+<!-- Nachgebautes, generisches Tabellenblatt für die obere Hälfte im Split-Screen-Reel (Post 02).
+     Kein echtes Programm, kein Marken-Logo. Zeigt den typischen Ablauf: Hebesatz ändern ->
+     externe Verknüpfung auf eine verschobene Datei -> #BEZUG!. Zahlen wie im Reel-Datensatz. -->
+<style>
+  :root{ --gitter:#d4d4d4; --kopf:#f3f3f3; --wahl:#1e7145; --text:#222; --fehler:#c00000; }
+  *{box-sizing:border-box}
+  body{margin:0; background:#fff; color:var(--text); font:16px/1.2 "Liberation Sans", Arial, sans-serif; overflow:hidden; user-select:none}
+  .leiste{display:flex; gap:4px; align-items:center; background:#1e7145; color:#fff; padding:8px 12px 0; font-size:15px}
+  .leiste .titel{flex:1; font-weight:700; padding-bottom:8px}
+  .reiter{display:flex; gap:2px; background:#1e7145; padding:6px 8px 0; align-items:flex-end}
+  .reiter .datei{margin-left:auto; color:#fff; font-size:13px; padding:0 4px 8px; white-space:nowrap}
+  .reiter span{color:#e8f3ec; padding:7px 12px; font-size:15px; border-radius:6px 6px 0 0; cursor:default}
+  .reiter span.an{background:#f7f7f7; color:#1e7145; font-weight:700}
+  .band{height:34px; background:#f7f7f7; border-bottom:1px solid var(--gitter); display:flex; align-items:center; gap:10px; padding:0 10px; font-size:14px; color:#555}
+  .band .knopf{border:1px solid #cfcfcf; background:#fff; border-radius:5px; padding:5px 9px}
+  .formel{display:flex; align-items:center; border-bottom:1px solid var(--gitter); height:32px; font-size:15px}
+  .formel .name{width:70px; text-align:center; border-right:1px solid var(--gitter); height:100%; display:flex; align-items:center; justify-content:center}
+  .formel .fx{width:40px; text-align:center; color:#777; font-style:italic; border-right:1px solid var(--gitter)}
+  .formel .inhalt{padding:0 10px; white-space:nowrap; overflow:hidden; font-family:"Liberation Mono", monospace; font-size:14px}
+  table{border-collapse:collapse; table-layout:fixed}
+  th,td{border:1px solid var(--gitter); height:25px; padding:0 7px; white-space:nowrap; overflow:hidden}
+  th{background:var(--kopf); color:#666; font-weight:400; font-size:13px; text-align:center}
+  th.zeile{width:34px}
+  td.b{text-align:right; font-variant-numeric:tabular-nums}
+  td.fett{font-weight:700}
+  td.linie{border-top:2px solid #333}
+  td.wahl{outline:3px solid var(--wahl); outline-offset:-2px}
+  td.err{color:var(--text); position:relative}
+  td.err::before{content:""; position:absolute; left:0; top:0; border-top:9px solid #1e9d4f; border-right:9px solid transparent}
+  td.blitz{animation:blitz .9s ease-out}
+  @keyframes blitz{0%{background:#ffd7d7}100%{background:transparent}}
+  .blaetter{position:fixed; bottom:0; left:0; right:0; height:34px; background:var(--kopf); border-top:1px solid var(--gitter); display:flex; font-size:14px}
+  .blaetter span{padding:8px 14px; border-right:1px solid var(--gitter); color:#555}
+  .blaetter span.an{background:#fff; color:#1e7145; font-weight:700; border-bottom:3px solid #1e7145}
+  .menue{position:absolute; top:40px; left:180px; background:#fff; border:1px solid #bbb; box-shadow:0 6px 18px rgba(0,0,0,.2); font-size:15px; display:none; z-index:5}
+  .menue div{padding:9px 16px}
+  .menue div:hover,.menue div.hell{background:#e6f2ea}
+  dialog{border:1px solid #999; border-radius:6px; padding:0; width:520px; box-shadow:0 12px 40px rgba(0,0,0,.35); font-size:15px}
+  dialog::backdrop{background:rgba(0,0,0,.18)}
+  dialog h3{margin:0; padding:10px 14px; font-size:15px; background:#f3f3f3; border-bottom:1px solid #ccc}
+  dialog .zeile{display:grid; grid-template-columns:1.4fr .9fr 1.3fr; gap:8px; padding:9px 14px; border-bottom:1px solid #eee}
+  dialog .zeile.kopf{color:#666; font-size:13px}
+  dialog .zeile.gewaehlt{background:#dcebf7}
+  dialog .status{color:#444}
+  dialog .status.fehler{color:var(--fehler); font-weight:700}
+  dialog .knoepfe{display:flex; gap:8px; padding:12px 14px; justify-content:flex-end}
+  dialog button{font:inherit; font-size:14px; padding:6px 12px; border:1px solid #aaa; background:#f7f7f7; border-radius:4px}
+</style>
+</head>
+<body>
+<div class="reiter"><span>Datei</span><span class="an">Start</span><span>Einfügen</span><span id="reiter-daten">Daten</span><span>Ansicht</span></div>
+<div class="menue" id="menue"><div id="m-verkn">Verknüpfungen bearbeiten …</div><div>Alle aktualisieren</div></div>
+<div class="formel"><div class="name" id="name">A1</div><div class="fx">fx</div><div class="inhalt" id="inhalt"></div></div>
+<table id="blatt">
+  <colgroup><col style="width:34px"><col style="width:290px"><col style="width:170px"><col style="width:106px"></colgroup>
+</table>
+<dialog id="dlg">
+  <h3>Verknüpfungen bearbeiten</h3>
+  <div class="zeile kopf"><span>Quelle</span><span>Typ</span><span>Status</span></div>
+  <div class="zeile gewaehlt"><span>Final_v3_neu.xlsx</span><span>Arbeitsblatt</span><span class="status" id="dlg-status">Unbekannt</span></div>
+  <div class="knoepfe"><button id="btn-akt" type="button">Werte aktualisieren</button><button type="button">Quelle ändern …</button><button type="button">Schließen</button></div>
+</dialog>
+<script>
+const ALT = "='C:\\Abschluss\\2024\\[Final_v3_neu.xlsx]GewSt'!$C$12";
+const zeilen = [
+  ["Steuerrückstellung 2025", "", {fett:true}],
+  ["Ergebnis vor Steuern", "10.000.000"],
+  ["Hebesatz", "400 %", {id:"hebe"}],
+  ["Gewerbeertrag / zvE", "5.000.000"],
+  ["KSt 15 %", "750.000", {f:"=B4*15%"}],
+  ["SolZ 5,5 %", "41.250", {f:"=B5*5,5%"}],
+  ["GewSt", "700.000", {id:"gewst", f:ALT, fehler:true}],
+  ["Laufende Steuer", "1.491.250", {fett:true, f:"=SUMME(B5:B7)", fehler:true}],
+  ["Vorauszahlungen", "1.027.500"],
+  ["Rückstellung", "463.750", {fett:true, linie:true, f:"=B8-B9", fehler:true}],
+];
+const blatt = document.getElementById("blatt");
+blatt.insertAdjacentHTML("beforeend", `<tr><th></th><th>A</th><th>B</th><th>C</th></tr>`);
+zeilen.forEach(([a, b, o = {}], i) => {
+  const n = i + 1;
+  blatt.insertAdjacentHTML("beforeend", `<tr><th class="zeile">${n}</th>
+    <td class="${o.fett ? "fett" : ""} ${o.linie ? "linie" : ""}" data-adr="A${n}" data-f="${a}">${a}</td>
+    <td class="b ${o.fett ? "fett" : ""} ${o.linie ? "linie" : ""}" data-adr="B${n}" ${o.id ? `id="${o.id}"` : ""} data-f="${(o.f || b).replace(/"/g, "&quot;")}" data-fehler="${o.fehler ? 1 : ""}">${b}</td>
+    <td data-adr="C${n}" data-f=""></td></tr>`);
+});
+let wahl = null, puffer = null;
+function waehle(td){
+  document.querySelectorAll("td.wahl").forEach(x => x.classList.remove("wahl"));
+  wahl = td; puffer = null; td.classList.add("wahl");
+  document.getElementById("name").textContent = td.dataset.adr;
+  document.getElementById("inhalt").textContent = td.dataset.f;
+}
+blatt.addEventListener("mousedown", e => { const td = e.target.closest("td"); if (td) waehle(td); });
+document.addEventListener("keydown", e => {
+  if (!wahl) return;
+  if (/^[0-9]$/.test(e.key)) {
+    puffer = (puffer || "") + e.key;
+    wahl.textContent = puffer; document.getElementById("inhalt").textContent = puffer;
+  } else if (e.key === "Enter" && puffer !== null) {
+    const td = wahl, wert = puffer;
+    td.dataset.f = wert; td.textContent = wert + (td.id === "hebe" ? " %" : "");
+    waehle(document.querySelector(`[data-adr="B${+td.dataset.adr.slice(1) + 1}"]`));
+    // Neuberechnung: die externe Verknüpfung zeigt ins Leere
+    setTimeout(() => document.querySelectorAll('[data-fehler="1"]').forEach(x => {
+      x.textContent = "#BEZUG!"; x.classList.add("err", "blitz");
+    }), 280);
+  }
+});
+document.getElementById("reiter-daten").addEventListener("mousedown", () => { document.getElementById("menue").style.display = "block"; });
+document.getElementById("m-verkn").addEventListener("mousedown", () => { document.getElementById("menue").style.display = "none"; document.getElementById("dlg").showModal(); });
+document.getElementById("btn-akt").addEventListener("mousedown", () => {
+  const s = document.getElementById("dlg-status");
+  s.textContent = "Wird aktualisiert …"; s.className = "status";
+  setTimeout(() => { s.textContent = "Fehler: Quelle nicht gefunden"; s.className = "status fehler"; }, 700);
+});
+waehle(document.querySelector('[data-adr="A1"]'));
+</script>
+</body>
+</html>

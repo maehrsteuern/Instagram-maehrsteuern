@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="text.js"></script>
+<!-- Karussell-Folie 1080×1350 (4:5). Typen: titel | inhalt | cta -->
+<style>
+html,body{width:1080px;height:1350px}
+body{background:radial-gradient(110% 70% at 80% 0%,var(--glow) 0%,var(--bg) 60%)}
+.pad{position:absolute;inset:96px 96px 150px}
+.kicker{font-size:28px}
+h1{font-family:var(--serif);font-weight:600;font-size:112px;line-height:1.02;margin:40px 0 0;letter-spacing:-.01em}
+h2{font-family:var(--serif);font-weight:600;font-size:72px;line-height:1.08;margin:28px 0 0}
+.sub{font-size:40px;line-height:1.4;color:var(--text2);margin-top:44px;max-width:860px}
+.nr{font-family:var(--mono);font-weight:600;font-size:150px;line-height:1;color:var(--gruen);opacity:.9}
+.txt{font-size:38px;line-height:1.5;color:var(--text2);margin-top:36px}
+.box{margin-top:44px;padding:34px 40px;border-left:6px solid var(--gruen);background:var(--gruen-soft);border-radius:0 18px 18px 0;
+  font-size:34px;line-height:1.45;color:var(--text)}
+.box b{font-family:var(--mono);font-size:24px;letter-spacing:.2em;color:var(--gruen);display:block;margin-bottom:10px}
+ul{list-style:none;padding:0;margin:40px 0 0}
+li{font-size:38px;line-height:1.35;margin:0 0 26px;padding-left:58px;position:relative;color:var(--text2)}
+li:before{content:"→";position:absolute;left:0;color:var(--gruen);font-family:var(--mono);font-weight:600}
+table{width:100%;border-collapse:collapse;margin-top:40px;font-size:34px}
+td{padding:18px 0;border-bottom:2px solid rgba(143,163,152,.25);color:var(--text2)}
+td:last-child{text-align:right;font-family:var(--mono);font-weight:600;color:var(--text);white-space:nowrap;padding-left:24px}
+tr.summe td{border-bottom:none;border-top:4px solid var(--gruen);color:var(--text);font-weight:600}
+tr.summe td:last-child{color:var(--gruen)}
+.foot{position:absolute;left:96px;right:96px;bottom:64px;display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--mono);font-size:26px;color:var(--grau)}
+.bar{position:absolute;left:0;bottom:0;height:8px;background:var(--gruen)}
+.swipe{color:var(--gruen);font-weight:600}
+.cta .chip{font-size:46px;margin-top:64px}
+.center{display:flex;flex-direction:column;justify-content:center;height:100%}
+</style></head><body>
+<div class="pad" id="pad"></div>
+<div class="foot"><span>@maehrsteuern</span><span id="seite"></span></div>
+<div class="bar" id="bar"></div>
+<script>
+const d = window.DATA || {typ:'titel',saeule:'Praxis',titel:'5 Excel-Fehler in der\n*Steuerrückstellung*',sub:'Und wie ein Tool sie verhindert.',seite:1,von:7};
+const p = $('pad');
+if (d.typ==='titel') {
+  p.className='pad center';
+  p.innerHTML = `<div class="kicker">${fmt(d.saeule)}</div><h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}`;
+} else if (d.typ==='inhalt') {
+  p.className='pad center';
+  p.innerHTML = `${d.nr?`<div class="nr">${fmt(d.nr)}</div>`:`<div class="kicker">${fmt(d.saeule)}</div>`}<h2>${fmt(d.titel)}</h2>
+   ${d.text?`<div class="txt">${fmt(d.text)}</div>`:''}
+   ${d.punkte?`<ul>${d.punkte.map(x=>`<li>${fmt(x)}</li>`).join('')}</ul>`:''}
+   ${d.zeilen?`<table>${d.zeilen.map(z=>`<tr class="${z[2]||''}"><td>${fmt(z[0])}</td><td>${fmt(z[1])}</td></tr>`).join('')}</table>`:''}
+   ${d.box?`<div class="box"><b>${fmt(d.boxTitel||'LÖSUNG')}</b>${fmt(d.box)}</div>`:''}`;
+} else {
+  p.className='pad center cta';
+  p.innerHTML = `<div class="kicker">${fmt(d.saeule||'Steuern × Code')}</div><h2 style="font-size:88px">${fmt(d.titel)}</h2>
+   ${d.text?`<div class="txt">${fmt(d.text)}</div>`:''}<div><span class="chip">${fmt(d.chip||'💬 Schreib „TOOL“ per DM')}</span></div>`;
+}
+$('seite').innerHTML = d.seite===1 ? `<span class="swipe">Wischen →</span>` : `${d.seite}/${d.von}`;
+$('bar').style.width = (100*d.seite/d.von)+'%';
+</script></body></html>

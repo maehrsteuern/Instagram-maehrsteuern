@@ -1,0 +1,167 @@
+{
+  "ausgabe": "../../posts/03_2026-10-13_gewst_hinzurechnung",
+  "bilder": [
+    {
+      "vorlage": "karussell",
+      "datei": "folie_01.png",
+      "typ": "titel",
+      "saeule": "Wissen",
+      "titel": "Werden Mieten *voll* hinzugerechnet?",
+      "sub": "Gewerbesteuer-Hinzurechnung in 7 Folien – mit Rechenbeispiel zum Speichern."
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_02.png",
+      "typ": "inhalt",
+      "saeule": "Worum geht's?",
+      "titel": "Der Betrieb zählt, nicht die *Finanzierung*.",
+      "text": "Die Gewerbesteuer soll die Ertragskraft erfassen – egal, ob mit eigenem oder fremdem Geld gearbeitet wird. Deshalb kommen Teile der Finanzierungskosten zum Gewinn zurück.",
+      "boxTitel": "NORM",
+      "box": "§ 8 Nr. 1 GewStG"
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_03.png",
+      "typ": "inhalt",
+      "saeule": "Was zählt – und wie viel?",
+      "titel": "Sechs Posten, sechs *Quoten*.",
+      "zeilen": [
+        [
+          "Zinsen und andere Entgelte für Schulden",
+          "100 %"
+        ],
+        [
+          "Renten und dauernde Lasten",
+          "100 %"
+        ],
+        [
+          "Gewinnanteile stiller Gesellschafter",
+          "100 %"
+        ],
+        [
+          "Miete bewegliche Wirtschaftsgüter (Maschinen, Autos)",
+          "20 %"
+        ],
+        [
+          "Miete unbewegliche Wirtschaftsgüter (Büro, Halle)",
+          "50 %"
+        ],
+        [
+          "Lizenzen und Rechte",
+          "25 %"
+        ]
+      ]
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_04.png",
+      "typ": "inhalt",
+      "saeule": "So wird gerechnet",
+      "titel": "Freibetrag, dann ein *Viertel*.",
+      "punkte": [
+        "Alle Posten mit ihrer Quote ansetzen und addieren",
+        "*200.000 €* Freibetrag abziehen",
+        "Vom Rest wird *ein Viertel* hinzugerechnet"
+      ],
+      "boxTitel": "MERKSATZ",
+      "box": "Summe unter 200.000 € → keine Hinzurechnung."
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_05.png",
+      "typ": "inhalt",
+      "saeule": "Rechenbeispiel · Demo-Zahlen",
+      "titel": "Schritt 1: *Posten ansetzen*",
+      "zeilen": [
+        [
+          "Zinsen 150.000 € × 100 %",
+          "150.000 €"
+        ],
+        [
+          "Maschinenmiete 100.000 € × 20 %",
+          "20.000 €"
+        ],
+        [
+          "Büromiete 400.000 € × 50 %",
+          "200.000 €"
+        ],
+        [
+          "Softwarelizenzen 80.000 € × 25 %",
+          "20.000 €"
+        ],
+        [
+          "Summe",
+          "390.000 €",
+          "summe"
+        ]
+      ]
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_06.png",
+      "typ": "inhalt",
+      "saeule": "Rechenbeispiel · Demo-Zahlen",
+      "titel": "Schritt 2: *Ergebnis*",
+      "zeilen": [
+        [
+          "Summe",
+          "390.000 €"
+        ],
+        [
+          "− Freibetrag",
+          "200.000 €"
+        ],
+        [
+          "= Rest",
+          "190.000 €"
+        ],
+        [
+          "Hinzurechnung (¼)",
+          "47.500 €",
+          "summe"
+        ]
+      ],
+      "boxTitel": "MEHR GEWERBESTEUER",
+      "box": "47.500 € × 3,5 % × 400 % Hebesatz = *6.650 €*"
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_07.png",
+      "typ": "cta",
+      "saeule": "Wissen",
+      "titel": "*Speichern* für den nächsten Abschluss.",
+      "text": "Oder rechnen lassen: Mein Tool setzt die Hinzurechnung automatisch an – mit Prüfpfad für jede Zahl. Demo? Schreib „TOOL“.",
+      "chip": "📌 Jetzt speichern"
+    },
+    {
+      "vorlage": "story",
+      "datei": "story_mo_quiz.png",
+      "typ": "antwort",
+      "kicker": "Quiz",
+      "titel": "Werden Mieten bei der Gewerbesteuer *voll* hinzugerechnet?",
+      "antwort": "↩ Antworte mit „Ja“ oder „Nein“ –\nAuflösung am Freitag"
+    },
+    {
+      "vorlage": "story",
+      "datei": "story_di_teaser.png",
+      "typ": "teaser",
+      "kicker": "Neuer Beitrag",
+      "titel": "Hinzurechnung in *7 Folien*.",
+      "bild": "../../posts/03_2026-10-13_gewst_hinzurechnung/folie_01.png"
+    },
+    {
+      "vorlage": "story",
+      "datei": "story_fr_aufloesung.png",
+      "typ": "info",
+      "kicker": "Auflösung Quiz",
+      "titel": "*Nein* – nur ein Teil.",
+      "punkte": [
+        "Maschinen, Autos: *20 %*",
+        "Büro, Halle: *50 %*",
+        "Danach: 200.000 € Freibetrag, davon ¼"
+      ],
+      "cta": true,
+      "chip": "Rechenweg im Dienstag-Beitrag"
+    }
+  ]
+}

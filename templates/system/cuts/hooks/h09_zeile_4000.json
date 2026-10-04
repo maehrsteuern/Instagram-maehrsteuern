@@ -1,0 +1,43 @@
+{
+ "ausgabe": "../hooks/h09_zeile_4000.mp4",
+ "fps": 30,
+ "ton": [
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 0.4,
+   "start": 0.3,
+   "dauer": 2.2,
+   "lautstaerke": 1.1,
+   "aus": 0.2
+  }
+ ],
+ "quellen": {
+  "ki_tabelle": {
+   "video": "../hooks/bausteine/ki_ueber_schulter.mp4"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "ki_tabelle",
+   "dauer": 2.6,
+   "ab": 0.5,
+   "tempo": 0.9,
+   "text": [
+    {
+     "wort": "Irgendwo ist ein Fehler.",
+     "y": 330,
+     "ab": 0.3,
+     "farbe": "weiss",
+     "groesse": 110
+    },
+    {
+     "wort": "Zeile 1 von 4.000.",
+     "y": 480,
+     "ab": 1.0,
+     "farbe": "gelb",
+     "groesse": 115
+    }
+   ]
+  }
+ ]
+}

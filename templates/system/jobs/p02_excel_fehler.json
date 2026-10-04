@@ -1,0 +1,81 @@
+{
+  "ausgabe": "../../posts/02_2026-10-06_excel_fehler",
+  "bilder": [
+    {
+      "vorlage": "karussell",
+      "datei": "folie_01.png",
+      "typ": "titel",
+      "saeule": "Praxis",
+      "titel": "5 Excel-Fehler in deiner\n*Steuerrückstellung*",
+      "sub": "Nummer 3 hat fast jede Abteilung."
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_02.png",
+      "typ": "inhalt",
+      "nr": "01",
+      "titel": "Fest eingetippte Zahlen",
+      "text": "Irgendwo steht 29,83 % statt einer Formel. Ändert sich der Hebesatz, rechnet die Datei falsch – ohne dass es jemand merkt.",
+      "box": "Steuersatz einmal als Parameter, alle Zellen verweisen darauf."
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_03.png",
+      "typ": "inhalt",
+      "nr": "02",
+      "titel": "Verknüpfungen ins Leere",
+      "text": "Bezüge auf „Final_v3_neu.xlsx“, die längst verschoben ist. #BEZUG! fällt erst im Review auf.",
+      "box": "Eine Datenquelle. Import statt Verknüpfung."
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_04.png",
+      "typ": "inhalt",
+      "nr": "03",
+      "titel": "Keine Versionen",
+      "text": "Wer hat Zeile 48 geändert – und warum? In Excel weiß das meistens niemand.",
+      "box": "Änderungsprotokoll mit Datum, Person und Grund."
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_05.png",
+      "typ": "inhalt",
+      "nr": "04",
+      "titel": "Kein Prüfpfad",
+      "text": "Die Zahl stimmt – aber woher kommt sie? Ohne Herleitung wird jede Betriebsprüfung zäh.",
+      "box": "Jede Zahl lässt sich bis zur Quelle zurückverfolgen."
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_06.png",
+      "typ": "inhalt",
+      "nr": "05",
+      "titel": "Zu früh gerundet",
+      "text": "Früh gerundet, spät summiert: Cent-Differenzen, die dann von Hand „glattgezogen“ werden.",
+      "box": "Erst rechnen, am Ende runden – automatisch."
+    },
+    {
+      "vorlage": "karussell",
+      "datei": "folie_07.png",
+      "typ": "cta",
+      "titel": "Ich baue Tools, die das *verhindern*.",
+      "text": "Kurze Demo mit Beispieldaten, danach 20 Minuten Gespräch – unverbindlich."
+    },
+    {
+      "vorlage": "story",
+      "datei": "story_mo_umfrage.png",
+      "typ": "antwort",
+      "kicker": "Umfrage",
+      "titel": "Schon mal *#BEZUG!* kurz vor der Abgabe gehabt?",
+      "antwort": "↩ Antworte mit „Ja“ oder „Zu oft 😅“"
+    },
+    {
+      "vorlage": "story",
+      "datei": "story_di_teaser.png",
+      "typ": "teaser",
+      "kicker": "Neuer Beitrag",
+      "titel": "5 Excel-Fehler, die *jeder* kennt.",
+      "bild": "../../posts/02_2026-10-06_excel_fehler/folie_01.png"
+    }
+  ]
+}

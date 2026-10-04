@@ -1,0 +1,36 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8">
+<!-- Standbild-Attrappe für den Einstieg von Reel 08: latente Steuern mit fest eingetipptem 30-%-Satz. Generisch, kein Programm-Logo, Demo-Zahlen. -->
+<style>
+ :root{--gitter:#d4d4d4;--kopf:#f3f3f3;--wahl:#1e7145;--text:#222}
+ *{box-sizing:border-box}
+ html,body{margin:0;width:540px;height:960px;background:#0b0f0d;font:16px/1.2 "Liberation Sans",Arial,sans-serif;color:var(--text)}
+ .blatt{position:absolute;left:0;right:0;top:300px;background:#fff}
+ .reiter{display:flex;gap:2px;background:#1e7145;padding:6px 8px 0}
+ .reiter span{color:#e8f3ec;padding:7px 12px;font-size:15px;border-radius:6px 6px 0 0}
+ .reiter span.an{background:#f7f7f7;color:#1e7145;font-weight:700}
+ .formel{display:flex;align-items:center;border-bottom:1px solid var(--gitter);height:32px;font-size:15px}
+ .formel .name{width:50px;text-align:center;border-right:1px solid var(--gitter);height:100%;display:flex;align-items:center;justify-content:center}
+ .formel .fx{width:36px;text-align:center;color:#777;font-style:italic;border-right:1px solid var(--gitter)}
+ .formel .inhalt{padding:0 10px;font-family:"Liberation Mono",monospace;font-size:14px}
+ table{border-collapse:collapse;table-layout:fixed;width:100%}
+ th,td{border:1px solid var(--gitter);height:27px;padding:0 7px;white-space:nowrap;overflow:hidden}
+ th{background:var(--kopf);color:#666;font-weight:400;font-size:13px}
+ td.b{text-align:right;font-variant-numeric:tabular-nums}
+ td.fett{font-weight:700}
+ td.fest{background:#ffe1df;color:#b00000;font-weight:700}
+ td.wahl{outline:3px solid var(--wahl);outline-offset:-2px}
+</style></head><body><div class="blatt">
+<div class="reiter"><span>Datei</span><span class="an">Start</span><span>Einfügen</span><span>Daten</span><span>Ansicht</span></div>
+<div class="formel"><div class="name">B3</div><div class="fx">fx</div><div class="inhalt">30%</div></div>
+<table><colgroup><col style="width:30px"><col style="width:300px"><col></colgroup>
+<tr><th></th><th>A</th><th>B</th></tr>
+<tr><th>1</th><td class="fett">Latente Steuern 2026</td><td></td></tr>
+<tr><th>2</th><td>Differenz Rückstellung (Umkehr 2029)</td><td class="b">500.000</td></tr>
+<tr><th>3</th><td>Steuersatz</td><td class="b fest wahl">30 %</td></tr>
+<tr><th>4</th><td>Latente Steuer</td><td class="b">150.000</td></tr>
+<tr><th>5</th><td>Differenz Sachanlagen (Umkehr 2032)</td><td class="b">1.000.000</td></tr>
+<tr><th>6</th><td>Steuersatz</td><td class="b fest">30 %</td></tr>
+<tr><th>7</th><td>Latente Steuer</td><td class="b">300.000</td></tr>
+<tr><th>8</th><td class="fett">Summe</td><td class="b fett">450.000</td></tr>
+<tr><th>9</th><td></td><td></td></tr>
+</table></div></body></html>

@@ -1,0 +1,39 @@
+name: Instagram-Statistik
+# Täglich ca. 08:45 die Zahlen abholen und in automatik/statistik/ speichern. Manuell startbar.
+# Hauptauslöser ist lage.yml (08:40–10:00 Uhr deutscher Zeit, läuft durch den 15-Min.-Takt zuverlässig);
+# der Zeitplan hier ist nur die Reserve, falls GitHub ihn überhaupt ausführt (UTC, im Winter eine Stunde früher).
+on:
+  schedule:
+    - cron: "47 6 * * *"
+  workflow_dispatch:
+concurrency:
+  group: statistik
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  statistik:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.12" }
+      - run: pip install -q requests
+      - name: Abholen
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          python automatik/statistik.py
+          python automatik/insights_voll.py
+      - name: Speichern
+        run: |
+          git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+          git add automatik/statistik && git diff --cached --quiet && exit 0
+          git commit -q -m "Statistik $(date +%F)"
+          # um 08:45 pushen Lage, Posten und Kommentare gleichzeitig – ohne Wiederholung ginge der Tag verloren
+          for versuch in 1 2 3 4 5; do
+            git pull -q --rebase && git push -q && exit 0
+            git rebase --abort 2>/dev/null; sleep $((versuch * 5))
+          done
+          exit 1

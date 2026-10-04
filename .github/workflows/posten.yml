@@ -1,0 +1,42 @@
+name: Instagram posten
+# Alle 15 Minuten prüfen (GitHub lässt geplante Läufe manchmal ausfallen), ob in den nächsten 75 Minuten ein freigegebener Beitrag fällig ist (siehe automatik/plan.json).
+on:
+  schedule:
+    - cron: "4,19,34,49 * * * *"
+  workflow_dispatch:
+    inputs:
+      jetzt:
+        description: "ID eines freigegebenen Eintrags sofort posten (leer = normal)"
+        required: false
+      test:
+        description: "ID für einen Probelauf – lädt hoch, veröffentlicht NICHTS (z. B. 02-excel-fehler)"
+        required: false
+concurrency:
+  group: instagram-plan
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+jobs:
+  posten:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.12" }
+      - run: pip install -q requests pillow
+      - name: Git-Identität
+        run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - name: Posten
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_TOKEN: ${{ github.token }}
+          # Eingaben nur als Umgebungsvariable – direkt im Skript könnte eine präparierte ID Befehle ausführen
+          TEST: ${{ inputs.test }}
+          JETZT: ${{ inputs.jetzt }}
+        run: |
+          if [ -n "$TEST" ]; then python automatik/posten.py --test "$TEST"
+          elif [ -n "$JETZT" ]; then python automatik/posten.py --jetzt "$JETZT"
+          else python automatik/posten.py; fi

@@ -1,0 +1,370 @@
+{
+  "_note": "Status: draft → approved → published. Only 'approved' posts automatically. 'manual' = Loris posts in the app. 'waiting_<reason>' = blocked. Times are US Eastern (America/New_York).",
+  "entries": [
+    {
+      "id": "00-launch-1",
+      "time": "2026-10-11 09:00",
+      "type": "story",
+      "folder": "posts/00_2026-10-11_launch_stories",
+      "images": [
+        "story_launch_1.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "00-launch-2",
+      "time": "2026-10-11 09:01",
+      "type": "story",
+      "folder": "posts/00_2026-10-11_launch_stories",
+      "images": [
+        "story_launch_2.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "00-launch-3",
+      "time": "2026-10-11 09:02",
+      "type": "story",
+      "folder": "posts/00_2026-10-11_launch_stories",
+      "images": [
+        "story_launch_3.png"
+      ],
+      "status": "draft",
+      "note": "Afterwards create the highlight “Start 👋” by hand (cover assets/highlights/hl_start.png)"
+    },
+    {
+      "id": "03-story-poll",
+      "time": "2026-10-12 09:00",
+      "type": "story",
+      "folder": "posts/03_2026-10-13_excel_mistakes",
+      "images": [
+        "story_poll.png"
+      ],
+      "status": "draft",
+      "note": "Add the poll sticker by hand in the app (stickers are not possible via the API) – or post as is"
+    },
+    {
+      "id": "01-reel-ref-error",
+      "time": "2026-10-12 12:30",
+      "type": "reel",
+      "folder": "posts/01_2026-10-12_reel_ref_error",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Launch Reel: 3 days to Oct 15 → #REF!/#NAME?/#VALUE! → tool → green. No voice, on-screen text + music, CTA DM TOOL"
+    },
+    {
+      "id": "00-intro",
+      "time": "2026-10-12 19:30",
+      "type": "carousel",
+      "folder": "posts/00_2026-10-12_intro",
+      "images": [
+        "slide_01.png",
+        "slide_02.png",
+        "slide_03.png",
+        "slide_04.png",
+        "slide_05.png",
+        "slide_06.png",
+        "slide_07.png"
+      ],
+      "caption": "caption.txt",
+      "status": "draft",
+      "after": "Pin to profile (by hand)",
+      "note": "Intro carousel – pin afterwards and share to story"
+    },
+    {
+      "id": "00-story-teaser",
+      "time": "2026-10-12 19:35",
+      "type": "story",
+      "folder": "posts/00_2026-10-12_intro",
+      "images": [
+        "story_teaser.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "02-reel-split",
+      "time": "2026-10-13 12:30",
+      "type": "reel",
+      "folder": "posts/02_2026-10-13_reel_split",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Split screen: spreadsheet (top) vs. tool (bottom) – companion Reel to the carousel at 7:30 PM"
+    },
+    {
+      "id": "03-excel-mistakes",
+      "time": "2026-10-13 19:30",
+      "type": "carousel",
+      "folder": "posts/03_2026-10-13_excel_mistakes",
+      "images": [
+        "slide_01.png",
+        "slide_02.png",
+        "slide_03.png",
+        "slide_04.png",
+        "slide_05.png",
+        "slide_06.png",
+        "slide_07.png"
+      ],
+      "caption": "caption.txt",
+      "status": "draft"
+    },
+    {
+      "id": "03-story-teaser",
+      "time": "2026-10-13 19:35",
+      "type": "story",
+      "folder": "posts/03_2026-10-13_excel_mistakes",
+      "images": [
+        "story_teaser.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "04-story-question",
+      "time": "2026-10-14 09:00",
+      "type": "story",
+      "folder": "posts/04_2026-10-14_reel_hardcoded_rate",
+      "images": [
+        "story_question.png"
+      ],
+      "status": "draft",
+      "note": "Add the question sticker by hand if wanted"
+    },
+    {
+      "id": "04-reel-hardcoded-rate",
+      "time": "2026-10-14 12:30",
+      "type": "reel",
+      "folder": "posts/04_2026-10-14_reel_hardcoded_rate",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Satisfying: 21% typed into 400 cells → one parameter → all cells update"
+    },
+    {
+      "id": "05-story-deadline",
+      "time": "2026-10-15 09:00",
+      "type": "story",
+      "folder": "posts/05_2026-10-15_reel_deadline_night",
+      "images": [
+        "story_deadline.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "05-reel-deadline-night",
+      "time": "2026-10-15 12:30",
+      "type": "reel",
+      "folder": "posts/05_2026-10-15_reel_deadline_night",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Oct 15 deadline day: 11:48 PM spreadsheet chaos → clean"
+    },
+    {
+      "id": "06-163j-ebitda",
+      "time": "2026-10-15 19:30",
+      "type": "carousel",
+      "folder": "posts/06_2026-10-15_163j_ebitda",
+      "images": [
+        "slide_01.png",
+        "slide_02.png",
+        "slide_03.png",
+        "slide_04.png",
+        "slide_05.png",
+        "slide_06.png",
+        "slide_07.png"
+      ],
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Tax law (OBBBA § 163(j)) – read fact_check.md before approving"
+    },
+    {
+      "id": "06-story-teaser",
+      "time": "2026-10-15 19:35",
+      "type": "story",
+      "folder": "posts/06_2026-10-15_163j_ebitda",
+      "images": [
+        "story_teaser.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "06-story-quiz",
+      "time": "2026-10-16 09:00",
+      "type": "story",
+      "folder": "posts/06_2026-10-15_163j_ebitda",
+      "images": [
+        "story_quiz.png"
+      ],
+      "status": "draft",
+      "note": "Add the quiz sticker by hand if wanted"
+    },
+    {
+      "id": "07-reel-163j-number",
+      "time": "2026-10-16 12:30",
+      "type": "reel",
+      "folder": "posts/07_2026-10-16_reel_163j_number",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Number Reel to the 163(j) carousel: +$1,000,000 deductible → $210,000 less federal tax"
+    },
+    {
+      "id": "06-story-answer",
+      "time": "2026-10-17 09:00",
+      "type": "story",
+      "folder": "posts/06_2026-10-15_163j_ebitda",
+      "images": [
+        "story_answer.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "10-story-question",
+      "time": "2026-10-19 09:00",
+      "type": "story",
+      "folder": "posts/10_2026-10-20_174a_deferred_taxes",
+      "images": [
+        "story_question.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "08-reel-4000-rows",
+      "time": "2026-10-19 12:30",
+      "type": "reel",
+      "folder": "posts/08_2026-10-19_reel_4000_rows",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Satisfying loop: 4,000 messy rows → one click → clean"
+    },
+    {
+      "id": "09-reel-my-story",
+      "time": "2026-10-20 12:30",
+      "type": "reel",
+      "folder": "posts/09_2026-10-20_reel_my_story",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "waiting_concept",
+      "music_missing": true,
+      "note": "Personal Reel “From the German tax office to building tax tools” – waits for Loris' concept and an English voice note (script draft in script.md). If AI cards stay: AI hint in caption, check the AI label after posting"
+    },
+    {
+      "id": "10-174a-deferred-taxes",
+      "time": "2026-10-20 19:30",
+      "type": "carousel",
+      "folder": "posts/10_2026-10-20_174a_deferred_taxes",
+      "images": [
+        "slide_01.png",
+        "slide_02.png",
+        "slide_03.png",
+        "slide_04.png",
+        "slide_05.png",
+        "slide_06.png",
+        "slide_07.png"
+      ],
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Tax law (OBBBA § 174A) – read fact_check.md before approving"
+    },
+    {
+      "id": "10-story-teaser",
+      "time": "2026-10-20 19:35",
+      "type": "story",
+      "folder": "posts/10_2026-10-20_174a_deferred_taxes",
+      "images": [
+        "story_teaser.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "12-story-poll",
+      "time": "2026-10-21 09:00",
+      "type": "story",
+      "folder": "posts/12_2026-10-22_reel_ai_vs_code",
+      "images": [
+        "story_poll.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "11-reel-163j-demo",
+      "time": "2026-10-21 12:30",
+      "type": "reel",
+      "folder": "posts/11_2026-10-21_reel_163j_demo",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Screen recording of the demo tool: 163(j) EBIT → EBITDA, 12 s"
+    },
+    {
+      "id": "12-reel-ai-vs-code",
+      "time": "2026-10-22 12:30",
+      "type": "reel",
+      "folder": "posts/12_2026-10-22_reel_ai_vs_code",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Why a chatbot shouldn't do your tax math – AI reads, code calculates"
+    },
+    {
+      "id": "13-automate-first",
+      "time": "2026-10-22 19:30",
+      "type": "carousel",
+      "folder": "posts/13_2026-10-22_automate_first",
+      "images": [
+        "slide_01.png",
+        "slide_02.png",
+        "slide_03.png",
+        "slide_04.png",
+        "slide_05.png",
+        "slide_06.png",
+        "slide_07.png"
+      ],
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Conversion carousel + lead magnet (checklist via DM TOOL)"
+    },
+    {
+      "id": "13-story-teaser",
+      "time": "2026-10-22 19:35",
+      "type": "story",
+      "folder": "posts/13_2026-10-22_automate_first",
+      "images": [
+        "story_teaser.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "13-story-cta",
+      "time": "2026-10-23 09:00",
+      "type": "story",
+      "folder": "posts/13_2026-10-22_automate_first",
+      "images": [
+        "story_cta.png"
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "14-reel-174a-number",
+      "time": "2026-10-23 12:30",
+      "type": "reel",
+      "folder": "posts/14_2026-10-23_reel_174a_number",
+      "video": "reel.mp4",
+      "cover": "cover.png",
+      "caption": "caption.txt",
+      "status": "draft",
+      "note": "Number Reel to the 174A carousel: +$378,000 cash in year 1"
+    }
+  ]
+}
