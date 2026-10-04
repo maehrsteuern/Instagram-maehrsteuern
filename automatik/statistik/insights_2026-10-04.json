@@ -6,8 +6,8 @@
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
   "followers_count": 351,
-  "follows_count": 258,
-  "media_count": 2
+  "follows_count": 259,
+  "media_count": 3
  },
  "konto_verlauf": [
   {
@@ -42,8 +42,8 @@
    "follows_and_unfollows": {
     "gesamt": null,
     "aufgeteilt": {
-     "FOLLOWER": 6,
-     "NON_FOLLOWER": 7
+     "FOLLOWER": 7,
+     "NON_FOLLOWER": 9
     }
    }
   },
@@ -97,8 +97,8 @@
    "views": {
     "gesamt": 284,
     "aufgeteilt": {
-     "FOLLOWER": 17,
      "UNKNOWN": 15,
+     "FOLLOWER": 17,
      "NON_FOLLOWER": 252
     }
    },
@@ -135,8 +135,8 @@
     "gesamt": 183,
     "aufgeteilt": {
      "UNKNOWN": 2,
-     "NON_FOLLOWER": 160,
-     "FOLLOWER": 21
+     "FOLLOWER": 21,
+     "NON_FOLLOWER": 160
     }
    },
    "accounts_engaged": 4,
@@ -164,16 +164,16 @@
    "reach": {
     "gesamt": 47,
     "aufgeteilt": {
-     "NON_FOLLOWER": 46,
-     "FOLLOWER": 1
+     "FOLLOWER": 1,
+     "NON_FOLLOWER": 46
     }
    },
    "views": {
     "gesamt": 146,
     "aufgeteilt": {
-     "FOLLOWER": 1,
      "UNKNOWN": 4,
-     "NON_FOLLOWER": 141
+     "NON_FOLLOWER": 141,
+     "FOLLOWER": 1
     }
    },
    "accounts_engaged": 3,
@@ -392,8 +392,8 @@
    "views": {
     "gesamt": 193,
     "aufgeteilt": {
-     "FOLLOWER": 16,
      "UNKNOWN": 6,
+     "FOLLOWER": 16,
      "NON_FOLLOWER": 171
     }
    },
@@ -422,8 +422,8 @@
    "reach": {
     "gesamt": 84,
     "aufgeteilt": {
-     "FOLLOWER": 7,
-     "NON_FOLLOWER": 77
+     "NON_FOLLOWER": 77,
+     "FOLLOWER": 7
     }
    },
    "views": {
@@ -459,15 +459,15 @@
    "reach": {
     "gesamt": 221,
     "aufgeteilt": {
-     "FOLLOWER": 2,
-     "NON_FOLLOWER": 44
+     "NON_FOLLOWER": 44,
+     "FOLLOWER": 2
     }
    },
    "views": {
     "gesamt": 498,
     "aufgeteilt": {
-     "NON_FOLLOWER": 427,
      "UNKNOWN": 20,
+     "NON_FOLLOWER": 427,
      "FOLLOWER": 51
     }
    },
@@ -501,8 +501,8 @@
     "gesamt": 634,
     "aufgeteilt": {
      "UNKNOWN": 20,
-     "NON_FOLLOWER": 574,
-     "FOLLOWER": 40
+     "FOLLOWER": 40,
+     "NON_FOLLOWER": 574
     }
    },
    "accounts_engaged": 0,
@@ -661,7 +661,7 @@
   "2026-10-01": 68,
   "2026-10-02": 79,
   "2026-10-03": 63,
-  "2026-10-04": 9
+  "2026-10-04": 101
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -933,6 +933,34 @@
  },
  "beitraege": [
   {
+   "id": "17916550404258137",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "timestamp": "2026-10-04T17:30:48+0000",
+   "permalink": "https://www.instagram.com/reel/DeFLK53ALSs/",
+   "like_count": 4,
+   "comments_count": 2,
+   "caption": "5 Dinge, die ich aus Excel rausgeschmissen hab 👇\n\n5️⃣ Listen abgleichen – statt SVERWEIS und #NV ein paar Zeilen Code, egal wie lang die Liste ist\n4️⃣ Doppelte Rechnungsnummern und Lücken finden – in einer Sekunde, nicht erst in der Prüfung\n3️⃣ Sehen, wer was geändert hat – jede Version bleibt gespeichert, kein „final_final_v3“ mehr\n2️⃣ Zeile einfügen, ohne dass die Summe kaputtgeht\n1️⃣ Der Monatsbericht – Daten rein, ein Klick, fertig\n\nExcel bleibt super zum schnellen Rechnen. Aber alles, was sich jeden Monat wiederholt, macht bei mir inzwischen Code.\n\nWelche Nummer soll ich dir Schritt für Schritt zeigen? Schreib die Zahl in die Kommentare 👇\n🔖 Speicher dir das für später.\n\nAlle Zahlen im Video sind Beispieldaten.\n\n#steuern #steuerabteilung #excel #python #automatisierung",
+   "views": 143,
+   "reach": 85,
+   "likes": 4,
+   "comments": 2,
+   "saved": 3,
+   "shares": 0,
+   "total_interactions": 10,
+   "ig_reels_avg_watch_time": 7619,
+   "ig_reels_video_view_total_time": 540971,
+   "reels_skip_rate": 46.4,
+   "_fehlt": [
+    "profile_visits",
+    "profile_activity",
+    "follows",
+    "navigation",
+    "replies"
+   ],
+   "kommentare_text": []
+  },
+  {
    "id": "17965089348198457",
    "media_product_type": "FEED",
    "media_type": "CAROUSEL_ALBUM",
@@ -941,8 +969,8 @@
    "like_count": 7,
    "comments_count": 2,
    "caption": "Neu hier? Dann kurz zu mir 👋\n\nIch bin Loris – Diplom-Finanzwirt und IHK-zertifizierter Manager für angewandte KI-Transformation.\n\n2025 habe ich maehrsteuern gestartet: mit Lern-Inhalten und KI-Schulungen rund ums Steuer-Examen. Viele von euch kennen mich daher – und sind heute selbst Beraterinnen und Berater. 🎓➡️💼\n\nJetzt geht's den nächsten Schritt: KI-Lösungen für Steuern, die wirklich laufen – weil ich sie selbst programmiere. Vom kleinen Tool bis zum ganzen Prozess.\n\n📅 Ab jetzt jede Woche neue Beiträge, meist abends um 19:30:\n⚙️ Demos meiner Tools\n📊 Excel-Fehler und Steuerwissen mit Rechenbeispiel\n🧠 Einblicke hinter den Code\n\nWoher kennst du mich – Examen, Kanzlei oder Steuerabteilung? 👇\n\n💬 Schreib mir „TOOL“ per DM, wenn du die Demo sehen willst.\n\n#steuern #steuerrecht #kuenstlicheintelligenz #automatisierung #finanzwirt",
-   "views": 297,
-   "reach": 106,
+   "views": 298,
+   "reach": 107,
    "likes": 7,
    "comments": 2,
    "saved": 2,
@@ -955,7 +983,7 @@
     "navigation",
     "replies"
    ],
-   "profile_visits": 6,
+   "profile_visits": 7,
    "profile_activity": 0,
    "follows": 0,
    "kommentare_text": []
@@ -989,7 +1017,52 @@
    "kommentare_text": []
   }
  ],
- "storys_aktiv": [],
+ "storys_aktiv": [
+  {
+   "id": "18386911906224507",
+   "zeit": "2026-10-04T17:50:57+0000",
+   "views": 21,
+   "reach": 12,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 1,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 15,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18143214628582116",
+   "zeit": "2026-10-04T17:46:23+0000",
+   "views": 24,
+   "reach": 15,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 0,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 20,
+   "replies": 0,
+   "kommentare_text": []
+  }
+ ],
  "_fehlt": [
   "engaged_audience_demographics/this_month/age: 400 Not enough users",
   "engaged_audience_demographics/this_month/gender: 400 Not enough users",
