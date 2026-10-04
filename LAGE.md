@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 19:48 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 20:38 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -81,11 +81,17 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 ## 📈 Zahlen (täglich ca. 08:45)
 
 **351 Follower** · 2 Beiträge im Profil (Abruf 2026-10-04) · **+0** seit 2026-10-03
-Reichweite pro Tag: 01.10. **68** · 02.10. **79** · 03.10. **63** · 04.10. **9**
+Reichweite pro Tag: 01.10. **68** · 02.10. **79** · 03.10. **63** · 04.10. **101**
+
+| Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
+|---|---|---|---|---|---|
+| So 04.10. 19:46 | 24 | 15 | 0 | 0 | 0 |
+| So 04.10. 19:50 | 21 | 12 | 0 | 0 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 297 (+17) | 106 | 7 | 2 | 2 | 16 |
+| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 143 | 85 | 4 | 2 | 3 | 0 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 298 (+18) | 107 | 7 | 2 | 2 | 16 |
 | Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 278 (+7) | 165 | 6 | 2 | 2 | 7 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
@@ -109,6 +115,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 20:38 📈 Statistik 2026-10-04 ([`1096968`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1096968c6b9b9a9b9156e5f097d3f95312fba9bb))
+  - `automatik/statistik`
 - 19:48 🤖 Autopilot: vor jedem Posten neuesten Plan holen – verhindert Doppel-Posts ([`5738537`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5738537125e7e824964b436914029f8446af3573))
   - `LAGE.html`, `automatik/lage_notizen.md`, `automatik/posten.py`
 - 19:46 🤖 Autopilot: 01-story-teaser-5dinge veroeffentlicht ([`a850704`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a850704aa2a081fcd149efb9a8f2a15bbd8df45a))
