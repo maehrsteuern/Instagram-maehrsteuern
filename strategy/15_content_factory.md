@@ -36,7 +36,8 @@ differs from this prompt, follow the file (it is newer).
 1. git pull on main. Run `python3 automation/status.py`, then read STATUS.md: "Needs you", "Next 7 days",
    automation status (red = error). Note anything red for your final message – do not try to fix workflows.
 2. Read, in this order (they are the rules – if they conflict, 00_us_brief.md wins):
-   strategy/00_us_brief.md · strategy/03_content_calendar.md · strategy/16_us_growth_playbook.md ·
+   strategy/15_content_factory.md (these instructions, current version) · strategy/00_us_brief.md ·
+   strategy/03_content_calendar.md · strategy/16_us_growth_playbook.md ·
    strategy/08_hooks.md · strategy/08_demo_reel_formula.md · strategy/09_reel_rules.md ·
    strategy/10_software_reel_concept.md · strategy/11_instagram_knowledge.md · strategy/competition.md ·
    strategy/06_analytics.md (latest numbers) · automation/status_notes.md · automation/plan.json ·
@@ -48,6 +49,8 @@ differs from this prompt, follow the file (it is newer).
 Weekly rhythm (all ET): Reels Mon–Fri 12:30 PM · carousels Tue + Thu 7:30 PM, each with a teaser story at 7:35 PM ·
 one story 9:00 AM Mon–Sat (sticker/question/quiz/recap) · Sunday free (fill only with a really strong Reel).
 - Window: every slot from 48 hours after now until 7 days after now (ET).
+- Never before the launch: no entries before Sun 10/11/2026 9:00 AM ET (the account is being set up and stays empty
+  until then). If the whole window lies before the launch, say so in one line and commit nothing.
 - A slot is taken if plan.json has any entry at that time with a status other than "cancelled". Never move,
   overwrite or rebuild existing entries (draft, approved, manual, waiting_*, published, error).
 - Max. 6 feed posts (Reels + carousels) per run. Their companion stories (teaser, sticker story) don't count.
@@ -146,13 +149,15 @@ Add one entry per post/story to automation/plan.json → "entries" (keep the fil
 3. Commit everything in ONE commit with a descriptive English message, e.g.
    "Content Factory Mon 10/26: 5 Reels + 1 carousel for Oct 28 – Nov 2 (2× satisfying)", then push to main
    (on a push conflict: pull --rebase and push again; never force-push).
-4. After the push the approval workflow opens one approval issue per new post group. Check in GitHub Actions that it ran.
+4. After the push the approval workflow opens one approval issue per new post group. Check in GitHub Actions that it ran
+   if you have a way to (otherwise say so).
 5. Final message to Loris, in German, max. 10 lines: what you built (date · type · hook), which hook patterns and
    learnings you used, what needs him (fact checks, voice notes, manual stickers), anything red in STATUS.md.
    If every slot in the window was already taken, say so in one line and commit nothing.
 
 ══════════ HARD RULES ══════════
 - Max. 6 feed posts per run. Never publish. Never set "approved". Never touch existing entries.
+- Nothing before the launch (Sun 10/11/2026 9:00 AM ET).
 - No employer data (names, numbers, logos, screenshots, browser tabs). Demo data only.
 - Loris is a "German-trained tax pro" and "Certified AI Manager (IHK, German Chamber of Commerce)" –
   never CPA, EA, tax attorney or former IRS.
