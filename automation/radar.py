@@ -1,503 +1,546 @@
-"""Radar (läuft täglich ca. 07:15 per GitHub Actions): frische Beiträge aus der Nische finden und als
-Arbeitsliste für ca. 15 Minuten von Hand in ein GitHub-Issue schreiben.
+"""Radar (runs daily around 7:00 AM ET via GitHub Actions): find fresh posts in the niche and write them as a
+~15-minute work list for doing by hand into a GitHub issue.
 
-  1. Kommentieren – 5–8 frische Beiträge beobachteter Konten (und Hashtags, sobald freigeschaltet) mit
-     Kommentarvorschlag von Claude. Loris kommentiert von Hand in der App und hakt ab.
-  2. DM-Entwürfe – für Konten, unter denen Loris schon mind. 2× kommentiert hat (abgehakt), ein persönlicher
-     Erstkontakt. Loris schickt ihn von Hand (oder gar nicht).
-  3. Collab – einmal pro Woche (Mo) ein Vorschlag für einen gemeinsamen Beitrag mit einem passenden Konto.
+  1. Comment – 5–8 fresh posts from watched accounts (and hashtags, once unlocked) with a comment suggestion
+     from Claude. Loris comments by hand in the app and ticks the box.
+  2. DM drafts – for accounts where Loris has commented at least 2× (ticked), a personal first message.
+     Loris sends it by hand (or not at all).
+  3. Collab – once a week (Mon) a suggestion for a joint post with a fitting account.
 
-Es wird nie automatisch kommentiert, gefolgt oder geschrieben. Abgehakte Kästchen im Issue vom Vortag werden
-beim nächsten Lauf gezählt (automatik/interaktion/kontakte.json) – so weiß der Radar, wer schon „warm“ ist.
+Nothing is ever commented, followed or sent automatically. Ticked boxes in the previous issue are counted on the
+next run (automation/interaction/contacts.json) – that is how the radar knows who is already "warm".
 
-Umgebung: FB_TOKEN + FB_IG_USER_ID (Zugang über Facebook-Login, nötig für fremde Profile, EINRICHTUNG.md
-Schritt 7), ANTHROPIC_API_KEY (optional, für Vorschläge), GH_TOKEN, GITHUB_REPOSITORY.
-  python automatik/radar.py          – normaler Lauf
-  python automatik/radar.py --probe  – nur abfragen und Issue-Text ausgeben, nichts speichern
+Only radar.accounts in automation/interaction.json is read (verified US accounts). radar.candidates_to_verify is a
+to-do list for Cowork/Loris and is never queried. With an empty account list the radar still works (hashtags,
+upkeep suggestions) and skips everything else with a clear message.
+
+Environment: FB_TOKEN + FB_IG_USER_ID (access via Facebook login, needed for other profiles, see SETUP.md),
+ANTHROPIC_API_KEY (optional, for suggestions), GH_TOKEN, GITHUB_REPOSITORY.
+  python automation/radar.py            – normal run
+  python automation/radar.py --dry-run  – only query and print the issue text, save nothing
 """
 import json, os, re, subprocess, sys, time
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-import requests
-
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import ki
+import ai
 
-WURZEL = Path(__file__).resolve().parent.parent
-EINSTELLUNGEN = json.loads((WURZEL / "automatik" / "interaktion.json").read_text())["radar"]
-ORDNER = WURZEL / "automatik" / "interaktion"
-KONTAKTE, GESEHEN = ORDNER / "kontakte.json", ORDNER / "gesehen.json"
-PFLEGE, KOMMENTARE = ORDNER / "pflege.json", ORDNER / "kommentare.json"
-EINSTELLUNGS_DATEI = WURZEL / "automatik" / "interaktion.json"
-ARTEN = {}  # Konto → Art aus der Vorschlagszeile („· Kanzlei, …“)
+ROOT = Path(__file__).resolve().parent.parent
+SETTINGS_FILE = ROOT / "automation" / "interaction.json"
+SETTINGS = json.loads(SETTINGS_FILE.read_text())["radar"]
+FOLDER = ROOT / "automation" / "interaction"
+CONTACTS, SEEN = FOLDER / "contacts.json", FOLDER / "seen.json"
+UPKEEP, COMMENTS = FOLDER / "upkeep.json", FOLDER / "comments.json"
+KINDS = {}  # account → kind from the suggestion line ("· CPA firm, …")
+
+# keyword → kind (allowed: cpa_firm | creator | tax_team | software | education); order = priority
+KIND_WORDS = (("cpa_firm", "cpa_firm"), ("cpa", "cpa_firm"), ("accounting firm", "cpa_firm"), ("firm", "cpa_firm"),
+              ("enrolled agent", "cpa_firm"), ("preparer", "cpa_firm"), ("tax_team", "tax_team"),
+              ("tax team", "tax_team"), ("in-house", "tax_team"), ("corporate", "tax_team"),
+              ("software", "software"), ("tool", "software"), ("app", "software"), ("saas", "software"),
+              ("creator", "creator"), ("influencer", "creator"), ("education", "education"),
+              ("student", "education"), ("exam", "education"), ("course", "education"), ("academy", "education"),
+              ("university", "education"), ("school", "education"), ("association", "education"))
+KINDS_ALLOWED = {"cpa_firm", "creator", "tax_team", "software", "education"}
+BROKEN = {}  # account → error text, only for permanent errors (renamed, private, deleted …)
+REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/maehrtax---instagram")
+API = "https://graph.facebook.com/v23.0"
+LABEL = "radar"
+ZONE = ZoneInfo("America/New_York")
+NOW = datetime.now(ZONE)
+WEEKDAY = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+DRY_RUN = "--dry-run" in sys.argv
+FIELDS = "id,caption,permalink,timestamp,like_count,comments_count,media_product_type"
+SKIP = "skip"
 
 
-def art_aus_text(text):
-    """Art aus „· ca. 2.300 Follower · Kanzlei, Thema …“: zuerst das erste Wort des letzten Abschnitts, sonst
-    Stichwörter im ganzen Abschnitt („Steuerberaterin, Tipps …“ → kanzlei). Nichts erkannt → "" (Hinweis im Issue)."""
-    abschnitt = text.split("·")[-1].strip().lower()
-    erstes = (abschnitt.split(",")[0].split() or [""])[0]
-    for t in (erstes, abschnitt):
-        for wort, art in ART_WOERTER:
-            if wort in t:
-                return art
+def kind_from_text(text):
+    """Kind from "· about 2,300 followers · CPA firm, topic …": first the first word of the last section, otherwise
+    keywords in the whole section ("Tax preparer, tips …" → cpa_firm). Nothing recognized → "" (note in the issue)."""
+    section = text.split("·")[-1].strip().lower()
+    first = (section.split(",")[0].split() or [""])[0]
+    for t in (first, section):
+        for word, kind in KIND_WORDS:
+            if word in t:
+                return kind
     return ""
 
 
-# Stichwort → Art (erlaubt: kanzlei | creator | steuerabteilung | software | uni); Reihenfolge = Vorrang
-ART_WOERTER = (("kanzlei", "kanzlei"), ("steuerberat", "kanzlei"), ("steuerabteilung", "steuerabteilung"),
-               ("konzern", "steuerabteilung"), ("software", "software"), ("tool", "software"),
-               ("creator", "creator"), ("influencer", "creator"), ("ausbildung", "uni"), ("examen", "uni"),
-               ("prüfung", "uni"), ("akademie", "uni"), ("seminar", "uni"), ("studium", "uni"), ("uni", "uni"),
-               ("hochschule", "uni"), ("verband", "uni"))
-ARTEN_ERLAUBT = {"kanzlei", "creator", "steuerabteilung", "software", "uni"}
-FEHLERHAFT = {}  # Konto → Fehlertext, nur bei dauerhaften Fehlern (umbenannt, privat, gelöscht …)
-REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/Instagram-maehrsteuern")
-API = "https://graph.facebook.com/v23.0"
-LABEL = "radar"
-ZONE = ZoneInfo("Europe/Berlin")
-JETZT = datetime.now(ZONE)
-WOCHENTAG = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
-PROBE = "--probe" in sys.argv
-FELDER = "id,caption,permalink,timestamp,like_count,comments_count,media_product_type"
+def accounts():
+    return SETTINGS.get("accounts") or []
 
 
-# ---------- Hilfen ----------
+def account_name(a):
+    return a["name"] if isinstance(a, dict) else a
 
-def gh(*args, eingabe=None):
-    return subprocess.run(["gh", *args, "--repo", REPO], input=eingabe, check=True, capture_output=True, text=True).stdout.strip()
+
+# ---------- helpers ----------
+
+def gh(*args, stdin=None):
+    return subprocess.run(["gh", *args, "--repo", REPO], input=stdin, check=True, capture_output=True, text=True).stdout.strip()
 
 
 def git(*args):
-    return subprocess.run(["git", *args], cwd=WURZEL, check=True, capture_output=True, text=True).stdout.strip()
+    return subprocess.run(["git", *args], cwd=ROOT, check=True, capture_output=True, text=True).stdout.strip()
 
 
-def laden(datei, leer):
-    return json.loads(datei.read_text()) if datei.exists() else leer
+def load(file, empty):
+    return json.loads(file.read_text()) if file.exists() else empty
 
 
-class Gedrosselt(RuntimeError):
-    """Meta drosselt (HTTP 429 oder Fehlercode 4/17/32/613/80002) – auch nach dem Warten noch."""
+class Throttled(RuntimeError):
+    """Meta throttles (HTTP 429 or error code 4/17/32/613/80002) – even after waiting."""
 
 
-# Meta-Fehlercodes: Drosselung bzw. kurzer Aussetzer – kein Zeichen, dass ein Konto weg ist
-DROSSEL_CODES = {4, 17, 32, 613, 80001, 80002}
-AUSSETZER_CODES = {1, 2}
-WARTEN = (30, 90, 270)  # Sekunden zwischen den Versuchen (Backoff)
+# Meta error codes: throttling or a short hiccup – not a sign that an account is gone
+THROTTLE_CODES = {4, 17, 32, 613, 80001, 80002}
+HICCUP_CODES = {1, 2}
+WAIT = (30, 90, 270)  # seconds between attempts (backoff)
 
 
-def api(pfad, **params):
-    """GET auf die Graph-API. Drosselung (429/Code 4, 17, 32, 613, 8000x) und 5xx/Code 1, 2 werden mit Backoff
-    wiederholt; bleibt Meta bei der Drosselung, kommt Gedrosselt – der Lauf hört dann mit dem Abfragen auf."""
-    for versuch in range(len(WARTEN) + 1):
+def api(path, **params):
+    """GET on the Graph API. Throttling (429/code 4, 17, 32, 613, 8000x) and 5xx/code 1, 2 are retried with backoff;
+    if Meta keeps throttling, Throttled is raised – the run then stops querying."""
+    import requests
+    for attempt in range(len(WAIT) + 1):
         try:
-            r = requests.get(f"{API}/{pfad}", params={**params, "access_token": os.environ["FB_TOKEN"]}, timeout=60)
+            r = requests.get(f"{API}/{path}", params={**params, "access_token": os.environ["FB_TOKEN"]}, timeout=60)
         except requests.RequestException as e:
-            if versuch == len(WARTEN):
-                raise RuntimeError(f"Verbindung: {type(e).__name__}") from None  # ohne URL – da steht der Schlüssel drin
-            time.sleep(WARTEN[versuch])
+            if attempt == len(WAIT):
+                raise RuntimeError(f"Connection: {type(e).__name__}") from None  # without the URL – it contains the key
+            time.sleep(WAIT[attempt])
             continue
         if r.ok:
             return r.json()
-        fehler = r.json().get("error", {}) if r.headers.get("content-type", "").startswith(("application/json", "text/javascript")) else {}
-        code = fehler.get("code") or r.status_code
-        gedrosselt = r.status_code == 429 or code in DROSSEL_CODES
-        if not (gedrosselt or r.status_code >= 500 or code in AUSSETZER_CODES) or versuch == len(WARTEN):
-            meldung = f"{code}: {fehler.get('message', r.text[:200])}"
-            raise Gedrosselt(meldung) if gedrosselt else RuntimeError(meldung)
-        warte = WARTEN[versuch]
-        if (nach := r.headers.get("Retry-After", "")).isdigit():
-            warte = max(warte, min(int(nach), 600))
-        print(f"Radar: Meta {'drosselt' if gedrosselt else 'hakt'} ({code}) – warte {warte} s")
-        time.sleep(warte)
+        try:
+            err = r.json().get("error", {}) if r.headers.get("content-type", "").startswith(("application/json", "text/javascript")) else {}
+        except ValueError:
+            err = {}
+        code = err.get("code") or r.status_code
+        throttled = r.status_code == 429 or code in THROTTLE_CODES
+        if not (throttled or r.status_code >= 500 or code in HICCUP_CODES) or attempt == len(WAIT):
+            message = f"{code}: {err.get('message', r.text[:200])}"
+            raise Throttled(message) if throttled else RuntimeError(message)
+        wait = WAIT[attempt]
+        if (after := r.headers.get("Retry-After", "")).isdigit():
+            wait = max(wait, min(int(after), 600))
+        print(f"Radar: Meta {'throttles' if throttled else 'hiccups'} ({code}) – waiting {wait} s")
+        time.sleep(wait)
 
 
-def voruebergehend(meldung):
-    """Fehlertext eines kurzen Aussetzers (nicht: Konto weg)? Nur dauerhafte Fehler führen zu 🧹-Vorschlägen."""
-    code = meldung.split(":", 1)[0].strip()
-    return code.isdigit() and (int(code) in DROSSEL_CODES | AUSSETZER_CODES or int(code) == 429 or int(code) >= 500) \
-        or meldung.startswith("Verbindung")
+def temporary(message):
+    """Error text of a short hiccup (not: account gone)? Only permanent errors lead to 🧹 suggestions."""
+    code = message.split(":", 1)[0].strip()
+    return code.isdigit() and (int(code) in THROTTLE_CODES | HICCUP_CODES or int(code) == 429 or int(code) >= 500) \
+        or message.startswith("Connection")
 
 
-def zeitpunkt(ts):
+def parse_time(ts):
     return datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S%z").astimezone(ZONE)
 
 
-def kurz(text, n=220):
+def short(text, n=220):
     text = " ".join((text or "").split())
     return text if len(text) <= n else text[:n].rsplit(" ", 1)[0] + " …"
 
 
-def vor(t):
-    h = (JETZT - t).total_seconds() / 3600
-    return f"vor {int(h)} h" if h < 48 else f"vor {int(h // 24)} Tagen"
+def ago(t):
+    h = (NOW - t).total_seconds() / 3600
+    return f"{int(h)} h ago" if h < 48 else f"{int(h // 24)} days ago"
 
 
-# ---------- abgehakte Kästchen vom letzten Mal zählen ----------
+def dump_settings(data):
+    """JSON like the hand-maintained file: one account per line, short lists on one line."""
+    def fmt(v, indent):
+        pad, inner = " " * indent, " " * (indent + 2)
+        if isinstance(v, dict):
+            if v and all(not isinstance(x, (dict, list)) for x in v.values()) and indent >= 6:
+                return "{" + ", ".join(f"{json.dumps(k)}: {json.dumps(x, ensure_ascii=False)}" for k, x in v.items()) + "}"
+            return "{\n" + ",\n".join(f"{inner}{json.dumps(k)}: {fmt(x, indent + 2)}" for k, x in v.items()) + f"\n{pad}}}"
+        if isinstance(v, list):
+            if not v:
+                return "[]"
+            if all(not isinstance(x, (dict, list)) for x in v):
+                return "[" + ", ".join(json.dumps(x, ensure_ascii=False) for x in v) + "]"
+            return "[\n" + ",\n".join(f"{inner}{fmt(x, indent + 2)}" for x in v) + f"\n{pad}]"
+        return json.dumps(v, ensure_ascii=False)
+    return fmt(data, 0) + "\n"
 
-def abgehakt_zaehlen(kontakte):
-    """Offene Radar-Issues lesen, abgehakte Kästchen in kontakte.json übernehmen.
-    Gibt (Issue-Nummern, abgehakte 🧹 entfernen, abgehakte ➕ aufnehmen) zurück."""
+
+# ---------- count ticked boxes from last time ----------
+
+def count_ticks(contacts):
+    """Read open radar issues, transfer ticked boxes into contacts.json.
+    Returns (issue numbers, ticked 🧹 to remove, ticked ➕ to add)."""
     try:
-        offen = json.loads(gh("issue", "list", "--label", LABEL, "--state", "open", "--json", "number,body,comments"))
-    except subprocess.CalledProcessError:
+        found = json.loads(gh("issue", "list", "--label", LABEL, "--state", "open", "--json", "number,body,comments"))
+    except (subprocess.CalledProcessError, OSError):
         return [], [], []
-    entfernen, aufnehmen = [], []
-    inhaber = REPO.split("/")[0]
-    for issue in offen:
-        # Pflege-Vorschläge stehen im Issue-Text (montags) oder in Loris' eigenen Kommentaren (z. B. Konten-Suche
-        # per Chrome) – Häkchen in fremden Kommentaren zählen nicht
-        texte = [issue["body"]] + [c["body"] for c in issue.get("comments", [])
-                                   if c.get("author", {}).get("login") == inhaber]
-        for text in texte:
-            entfernen += re.findall(r"^- \[[xX]\] 🧹[^@\n]*@([\w.]+)", text, re.M)
-            for nutzer, rest in re.findall(r"^- \[[xX]\] ➕[^@\n]*@([\w.]+)([^\n]*)", text, re.M):
-                aufnehmen.append(nutzer)
-                ARTEN[nutzer] = art_aus_text(rest)
-        for art, nutzer in re.findall(r"^- \[[xX]\] (💬|✉️|🤝)[^@\n]*@([\w.]+)", issue["body"], re.M):
-            k = kontakte.setdefault(nutzer, {"kommentare": 0})
-            if art == "💬":
-                k["kommentare"] = k.get("kommentare", 0) + 1
-                k["letzter_kommentar"] = JETZT.strftime("%Y-%m-%d")
-            elif art == "✉️":
-                k["dm"] = JETZT.strftime("%Y-%m-%d")
+    remove, add = [], []
+    owner = REPO.split("/")[0]
+    for issue in found:
+        # upkeep suggestions are in the issue body (Mondays) or in Loris' own comments (e.g. account search
+        # via Chrome) – ticks in other people's comments do not count
+        texts = [issue["body"]] + [c["body"] for c in issue.get("comments", [])
+                                   if c.get("author", {}).get("login") == owner]
+        for text in texts:
+            remove += re.findall(r"^- \[[xX]\] 🧹[^@\n]*@([\w.]+)", text, re.M)
+            for user, rest in re.findall(r"^- \[[xX]\] ➕[^@\n]*@([\w.]+)([^\n]*)", text, re.M):
+                add.append(user)
+                KINDS[user] = kind_from_text(rest)
+        for kind, user in re.findall(r"^- \[[xX]\] (💬|✉️|🤝)[^@\n]*@([\w.]+)", issue["body"], re.M):
+            k = contacts.setdefault(user, {"comments": 0})
+            if kind == "💬":
+                k["comments"] = k.get("comments", 0) + 1
+                k["last_comment"] = NOW.strftime("%Y-%m-%d")
+            elif kind == "✉️":
+                k["dm"] = NOW.strftime("%Y-%m-%d")
             else:
-                k["collab"] = JETZT.strftime("%Y-%m-%d")
-    return [i["number"] for i in offen], entfernen, aufnehmen
+                k["collab"] = NOW.strftime("%Y-%m-%d")
+    return [i["number"] for i in found], remove, add
 
 
-# ---------- Radar-Pflege: nur was Loris abgehakt hat, wird geändert ----------
+# ---------- radar upkeep: only what Loris ticked is changed ----------
 
-def konten_uebernehmen(entfernen, aufnehmen):
-    """Abgehakte Pflege-Vorschläge in interaktion.json übernehmen (das Häkchen ist die Entscheidung)."""
-    alles = json.loads(EINSTELLUNGS_DATEI.read_text())
-    konten = [k for k in alles["radar"]["konten"] if (k["name"] if isinstance(k, dict) else k) not in entfernen]
-    vorhanden = {k["name"] if isinstance(k, dict) else k for k in konten}
-    konten += [{"name": n, "art": ARTEN.get(n, "")} for n in dict.fromkeys(aufnehmen) if n not in vorhanden]
-    alles["radar"]["konten"] = konten
-    text = json.dumps(alles, ensure_ascii=False, indent=2)
-    # ein Konto pro Zeile, wie von Hand gepflegt
-    text = re.sub(r'\{\n\s+"name": ("[^"]*"),\n\s+"art": ("[^"]*")\n\s+\}', r'{"name": \1, "art": \2}', text)
-    # kurze Listen (Hashtags, Schlagwörter, Zahlen) in eine Zeile
-    text = re.sub(r'\[\n\s+((?:(?:"[^"\n]*"|-?\d+),\n\s+)*(?:"[^"\n]*"|-?\d+))\n\s+\]',
-                  lambda m: "[" + re.sub(r",\n\s+", ", ", m.group(1)) + "]", text)
-    EINSTELLUNGS_DATEI.write_text(text + "\n")
-    EINSTELLUNGEN["konten"] = konten
-    print(f"✓ Radar-Pflege übernommen: −{len(entfernen)} / +{len(aufnehmen)}")
+def apply_upkeep(remove, add):
+    """Transfer ticked upkeep suggestions into interaction.json (the tick is the decision)."""
+    data = json.loads(SETTINGS_FILE.read_text())
+    kept = [k for k in data["radar"].get("accounts", []) if account_name(k) not in remove]
+    present = {account_name(k) for k in kept}
+    kept += [{"name": n, "kind": KINDS.get(n, "")} for n in dict.fromkeys(add) if n not in present]
+    data["radar"]["accounts"] = kept
+    SETTINGS_FILE.write_text(dump_settings(data))
+    SETTINGS["accounts"] = kept
+    print(f"✓ Radar upkeep applied: −{len(remove)} / +{len(add)}")
 
 
-def pflege_vorschlaege(profile):
-    """Einmal pro Woche (collab_tag): ruhige oder kaputte Konten zum Entfernen, Kommentierende mit
-    Business-/Creator-Konto zum Aufnehmen. Ein Vorschlag kommt höchstens alle 60 Tage wieder."""
-    if WOCHENTAG[JETZT.weekday()] != EINSTELLUNGEN["collab_tag"]:
+def upkeep_suggestions(profiles):
+    """Once a week (collab_day): quiet or broken accounts to remove, commenters with a business/creator
+    account to add. A suggestion comes back at most every 60 days."""
+    if WEEKDAY[NOW.weekday()] != SETTINGS["collab_day"]:
         return [], []
-    pflege = laden(PFLEGE, {"vorgeschlagen": {}})
-    frisch = (JETZT - timedelta(days=60)).strftime("%Y-%m-%d")
-    neu_genug = lambda n: pflege["vorgeschlagen"].get(n, "") < frisch
-    grenze = JETZT - timedelta(days=30)
-    weg = [(n, f"nicht abrufbar ({kurz(f, 80)})") for n, f in FEHLERHAFT.items()]
-    for p in profile:
-        medien = p.get("media", {}).get("data", [])
-        if not medien:
-            weg.append((p["username"], "noch nie gepostet"))
-        elif zeitpunkt(medien[0]["timestamp"]) < grenze:
-            weg.append((p["username"], f"letzter Beitrag {vor(zeitpunkt(medien[0]['timestamp']))}"))
-    weg = [(n, g) for n, g in weg if neu_genug(n)]
-    vorhanden = {k["name"] if isinstance(k, dict) else k for k in EINSTELLUNGEN["konten"]}
-    kommentierende = sorted({v.get("von") for v in laden(KOMMENTARE, {}).get("kommentare", {}).values()
-                             if v.get("von") and v["datum"] >= grenze.strftime("%Y-%m-%d")} - vorhanden)
-    dazu = []
-    for name in [n for n in kommentierende if neu_genug(n)][:10]:
-        try:  # klappt nur bei Business-/Creator-Konten – genau die, die der Radar lesen kann
+    upkeep = load(UPKEEP, {"suggested": {}})
+    fresh = (NOW - timedelta(days=60)).strftime("%Y-%m-%d")
+    due = lambda n: upkeep["suggested"].get(n, "") < fresh
+    cutoff = NOW - timedelta(days=30)
+    drop = [(n, f"not retrievable ({short(f, 80)})") for n, f in BROKEN.items()]
+    for p in profiles:
+        media = p.get("media", {}).get("data", [])
+        if not media:
+            drop.append((p["username"], "never posted"))
+        elif parse_time(media[0]["timestamp"]) < cutoff:
+            drop.append((p["username"], f"last post {ago(parse_time(media[0]['timestamp']))}"))
+    drop = [(n, g) for n, g in drop if due(n)]
+    present = {account_name(k) for k in accounts()}
+    commenters = sorted({v.get("from") for v in load(COMMENTS, {}).get("comments", {}).values()
+                         if v.get("from") and v.get("date", "") >= cutoff.strftime("%Y-%m-%d")} - present)
+    add = []
+    for name in [n for n in commenters if due(n)][:10]:
+        try:  # only works for business/creator accounts – exactly the ones the radar can read
             d = api(os.environ["FB_IG_USER_ID"], fields=f"business_discovery.username({name}){{followers_count,media_count}}")
-        except Gedrosselt:
+        except Throttled:
             break
         except RuntimeError:
             continue
         b = d["business_discovery"]
         if b.get("media_count"):
-            dazu.append((name, f"hat bei dir kommentiert · {b.get('followers_count')} Follower · {b['media_count']} Beiträge"))
-    for n, _ in weg + dazu:
-        pflege["vorgeschlagen"][n] = JETZT.strftime("%Y-%m-%d")
-    if not PROBE:
-        PFLEGE.write_text(json.dumps(pflege, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
-    return weg, dazu
+            add.append((name, f"commented on your posts · {b.get('followers_count') or 0:,} followers · {b['media_count']} posts"))
+    for n, _ in drop + add:
+        upkeep["suggested"][n] = NOW.strftime("%Y-%m-%d")
+    if not DRY_RUN:
+        UPKEEP.write_text(json.dumps(upkeep, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
+    return drop, add
 
 
-# ---------- Daten holen ----------
+# ---------- fetch data ----------
 
-def konten_abfragen(fehler):
-    profile = []
-    konten = EINSTELLUNGEN["konten"]
-    for nr, eintrag in enumerate(konten):
-        name = eintrag["name"] if isinstance(eintrag, dict) else eintrag
+def query_accounts(notes):
+    profiles = []
+    items = accounts()
+    for nr, item in enumerate(items):
+        name = account_name(item)
         try:
             d = api(os.environ["FB_IG_USER_ID"],
                     fields=f"business_discovery.username({name}){{username,name,followers_count,media_count,"
-                           f"media.limit(6){{{FELDER}}}}}")["business_discovery"]
-        except Gedrosselt as e:
-            # weiter abfragen verschlimmert es nur; die übrigen Konten gelten NICHT als kaputt
-            fehler.append(f"Meta drosselt ({e}) – {len(konten) - nr} Konten heute nicht abgefragt, morgen wieder")
+                           f"media.limit(6){{{FIELDS}}}}}")["business_discovery"]
+        except Throttled as e:
+            # querying on only makes it worse; the remaining accounts do NOT count as broken
+            notes.append(f"Meta throttles ({e}) – {len(items) - nr} accounts not queried today, again tomorrow")
             break
         except RuntimeError as e:
-            fehler.append(f"@{name}: {e}")
-            if not voruebergehend(str(e)):
-                FEHLERHAFT[name] = str(e)
+            notes.append(f"@{name}: {e}")
+            if not temporary(str(e)):
+                BROKEN[name] = str(e)
             continue
-        d["art"] = eintrag.get("art", "") if isinstance(eintrag, dict) else ""
-        profile.append(d)
-        time.sleep(1)  # sanft: ~50 Abfragen am Stück nicht in einer Sekunde
-    return profile
+        d["kind"] = item.get("kind", "") if isinstance(item, dict) else ""
+        profiles.append(d)
+        time.sleep(1)  # gently: ~50 queries in a row not within one second
+    return profiles
 
 
-def hashtags_abfragen(fehler):
-    """Braucht die Meta-Freigabe „Instagram Public Content Access“. Ohne sie: ein Hinweis, sonst nichts."""
-    beitraege, ids = [], laden(ORDNER / "hashtag_ids.json", {})
-    for tag in EINSTELLUNGEN["hashtags"]:
+def query_hashtags(notes):
+    """Needs the Meta feature "Instagram Public Content Access". Without it: one note, nothing else."""
+    posts, ids = [], load(FOLDER / "hashtag_ids.json", {})
+    for tag in SETTINGS.get("hashtags", []):
         try:
             if tag not in ids:
                 ids[tag] = api("ig_hashtag_search", user_id=os.environ["FB_IG_USER_ID"], q=tag)["data"][0]["id"]
-            for m in api(f"{ids[tag]}/recent_media", user_id=os.environ["FB_IG_USER_ID"], fields=FELDER, limit=30)["data"]:
+            for m in api(f"{ids[tag]}/recent_media", user_id=os.environ["FB_IG_USER_ID"], fields=FIELDS, limit=30)["data"]:
                 m["hashtag"] = tag
-                beitraege.append(m)
-        except Gedrosselt as e:
-            fehler.append(f"Hashtags: Meta drosselt ({e}) – morgen wieder")
+                posts.append(m)
+        except Throttled as e:
+            notes.append(f"Hashtags: Meta throttles ({e}) – again tomorrow")
             break
         except (RuntimeError, IndexError, KeyError) as e:
-            fehler.append(f"Hashtags noch nicht verfügbar ({e}) – Freischaltung siehe strategie/12_interaktion.md")
+            notes.append(f"Hashtags not available yet ({e}) – how to unlock: strategy/12_interaction.md")
             break
-    if ids and not PROBE:
-        (ORDNER / "hashtag_ids.json").write_text(json.dumps(ids, indent=1) + "\n")
-    return beitraege
+    if ids and not DRY_RUN:
+        (FOLDER / "hashtag_ids.json").write_text(json.dumps(ids, indent=1) + "\n")
+    return posts
 
 
-# ---------- auswählen ----------
+# ---------- select ----------
 
-def punkte(m, kontakt):
-    alter = (JETZT - zeitpunkt(m["timestamp"])).total_seconds() / 3600
-    text = (m.get("caption") or "").lower()
-    treffer = [w for w in EINSTELLUNGEN["schlagwoerter"] if w in text]
-    p = 10 * max(0.0, 1 - alter / EINSTELLUNGEN["max_alter_stunden"])  # frisch = früh dabei = sichtbar
-    p += 4 * len(treffer)
+def score(m, contact):
+    age = (NOW - parse_time(m["timestamp"])).total_seconds() / 3600
+    text = f" {(m.get('caption') or '').lower()} "
+    hits = [w for w in SETTINGS.get("keywords", []) if w in text]
+    p = 10 * max(0.0, 1 - age / SETTINGS["max_age_hours"])  # fresh = early = visible
+    p += 4 * len(hits)
     p += min(10, (m.get("comments_count") or 0) * 0.5 + (m.get("like_count") or 0) * 0.05)
-    p += 6 if kontakt and kontakt.get("kommentare") and not kontakt.get("dm") else 0  # Beziehung weiter aufbauen
-    return p, treffer
+    p += 6 if contact and contact.get("comments") and not contact.get("dm") else 0  # keep building the relationship
+    return p, [w.strip() for w in hits]
 
 
-def auswaehlen(profile, hashtag_beitraege, kontakte, gesehen):
-    kandidaten = []
-    for p in profile:
+def select(profiles, hashtag_posts, contacts, seen):
+    candidates = []
+    for p in profiles:
         for m in p.get("media", {}).get("data", []):
-            m["konto"], m["art"], m["follower"] = p["username"], p.get("art", ""), p.get("followers_count")
-            kandidaten.append(m)
-    kandidaten += hashtag_beitraege
-    grenze = JETZT - timedelta(hours=EINSTELLUNGEN["max_alter_stunden"])
-    wertung = []
-    for m in kandidaten:
-        if m["id"] in gesehen or zeitpunkt(m["timestamp"]) < grenze:
+            m["account"], m["kind"], m["followers"] = p["username"], p.get("kind", ""), p.get("followers_count")
+            candidates.append(m)
+    candidates += hashtag_posts
+    cutoff = NOW - timedelta(hours=SETTINGS["max_age_hours"])
+    rated = []
+    for m in candidates:
+        if m["id"] in seen or parse_time(m["timestamp"]) < cutoff:
             continue
-        p, treffer = punkte(m, kontakte.get(m.get("konto", "")))
-        wertung.append((p, treffer, m))
-    wertung.sort(key=lambda x: -x[0])
-    auswahl, je_konto = [], {}
-    for p, treffer, m in wertung:  # höchstens 2 Beiträge pro Konto, damit die Liste breit bleibt
-        schluessel = m.get("konto") or m["id"]
-        if je_konto.get(schluessel, 0) >= 2:
+        p, hits = score(m, contacts.get(m.get("account", "")))
+        rated.append((p, hits, m))
+    rated.sort(key=lambda x: -x[0])
+    chosen, per_account = [], {}
+    for p, hits, m in rated:  # at most 2 posts per account, so the list stays broad
+        key = m.get("account") or m["id"]
+        if per_account.get(key, 0) >= 2:
             continue
-        je_konto[schluessel] = je_konto.get(schluessel, 0) + 1
-        m["treffer"] = treffer
-        auswahl.append(m)
-        if len(auswahl) >= EINSTELLUNGEN["max_beitraege"]:
+        per_account[key] = per_account.get(key, 0) + 1
+        m["hits"] = hits
+        chosen.append(m)
+        if len(chosen) >= SETTINGS["max_posts"]:
             break
-    return auswahl
+    return chosen
 
 
-def dm_kandidaten(profile, kontakte):
-    aus = []
-    for p in profile:
-        k = kontakte.get(p["username"], {})
-        if k.get("kommentare", 0) >= EINSTELLUNGEN["kommentare_vor_dm"] and not k.get("dm"):
-            letzte = (p.get("media", {}).get("data") or [{}])[0]
-            aus.append({"konto": p["username"], "name": p.get("name"), "art": p.get("art"),
-                        "follower": p.get("followers_count"), "kommentare_von_loris": k["kommentare"],
-                        "letzter_beitrag": kurz(letzte.get("caption"), 500), "link": letzte.get("permalink")})
-    return aus[:EINSTELLUNGEN["max_dm_entwuerfe"]]
+def dm_candidates(profiles, contacts):
+    out = []
+    for p in profiles:
+        k = contacts.get(p["username"], {})
+        if k.get("comments", 0) >= SETTINGS["comments_before_dm"] and not k.get("dm"):
+            last = (p.get("media", {}).get("data") or [{}])[0]
+            out.append({"account": p["username"], "name": p.get("name"), "kind": p.get("kind"),
+                        "followers": p.get("followers_count"), "comments_by_loris": k["comments"],
+                        "last_post": short(last.get("caption"), 500), "link": last.get("permalink")})
+    return out[:SETTINGS["max_dm_drafts"]]
 
 
-def collab_kandidat(profile, kontakte):
-    if WOCHENTAG[JETZT.weekday()] != EINSTELLUNGEN["collab_tag"]:
+def collab_candidate(profiles, contacts):
+    if WEEKDAY[NOW.weekday()] != SETTINGS["collab_day"]:
         return None
-    unten, oben = EINSTELLUNGEN["collab_follower"]
-    passend = []
-    for p in profile:
-        k, follower = kontakte.get(p["username"], {}), p.get("followers_count") or 0
-        if k.get("collab") or not unten <= follower <= oben:
+    low, high = SETTINGS["collab_followers"]
+    fitting = []
+    for p in profiles:
+        k, followers = contacts.get(p["username"], {}), p.get("followers_count") or 0
+        if k.get("collab") or not low <= followers <= high:
             continue
-        medien = p.get("media", {}).get("data", [])
-        if not medien:
+        media = p.get("media", {}).get("data", [])
+        if not media:
             continue
-        rate = sum((m.get("like_count") or 0) + 3 * (m.get("comments_count") or 0) for m in medien) / len(medien) / follower
-        passend.append((rate + 0.02 * k.get("kommentare", 0), p))
-    if not passend:
+        rate = sum((m.get("like_count") or 0) + 3 * (m.get("comments_count") or 0) for m in media) / len(media) / followers
+        fitting.append((rate + 0.02 * k.get("comments", 0), p))
+    if not fitting:
         return None
-    p = max(passend, key=lambda x: x[0])[1]
-    return {"konto": p["username"], "name": p.get("name"), "art": p.get("art"), "follower": p.get("followers_count"),
-            "letzte_beitraege": [kurz(m.get("caption"), 300) for m in p.get("media", {}).get("data", [])[:4]]}
+    p = max(fitting, key=lambda x: x[0])[1]
+    return {"account": p["username"], "name": p.get("name"), "kind": p.get("kind"), "followers": p.get("followers_count"),
+            "last_posts": [short(m.get("caption"), 300) for m in p.get("media", {}).get("data", [])[:4]]}
 
 
-# ---------- Vorschläge ----------
+# ---------- suggestions ----------
 
 SCHEMA = {
     "type": "object",
     "properties": {
-        "kommentare": {"type": "array", "items": {"type": "object", "properties": {
+        "comments": {"type": "array", "items": {"type": "object", "properties": {
             "nr": {"type": "integer"}, "text": {"type": "string"}}, "required": ["nr", "text"], "additionalProperties": False}},
         "dms": {"type": "array", "items": {"type": "object", "properties": {
-            "konto": {"type": "string"}, "text": {"type": "string"}}, "required": ["konto", "text"], "additionalProperties": False}},
+            "account": {"type": "string"}, "text": {"type": "string"}}, "required": ["account", "text"], "additionalProperties": False}},
         "collab": {"type": "object", "properties": {
-            "idee": {"type": "string"}, "text": {"type": "string"}}, "required": ["idee", "text"], "additionalProperties": False},
+            "idea": {"type": "string"}, "text": {"type": "string"}}, "required": ["idea", "text"], "additionalProperties": False},
     },
-    "required": ["kommentare", "dms", "collab"],
+    "required": ["comments", "dms", "collab"],
     "additionalProperties": False,
 }
 
-AUFGABE = """Schreib Vorschläge, die Loris von Hand in der Instagram-App verwendet.
+TASK = f"""Write suggestions that Loris uses by hand in the Instagram app. US English.
 
-kommentare: zu JEDEM Beitrag (nr) ein Kommentar, 1–2 Sätze, max. 220 Zeichen. Er soll für die Person und ihre
-Follower einen echten Mehrwert haben: eine fachliche Ergänzung, ein Praxisbeispiel aus Steuerabteilung/Kanzlei
-oder eine ehrliche Rückfrage. Gern mit Bezug zu Excel/Automatisierung, wenn es natürlich passt. Ist der Beitrag
-fachlich zu dünn oder nicht deutsch, schreib als text genau „überspringen“.
+comments: for EVERY post (nr) one comment, 1–2 sentences, max. 220 characters. It should add real value for the
+person and their followers: a professional addition, a practical example from an in-house tax team or a CPA firm,
+or an honest follow-up question. A link to spreadsheets/automation is welcome when it fits naturally.
+Never give individual tax advice. If the post is too thin or not in English, write exactly "{SKIP}" as text.
 
-dms: für jedes Konto in dm_kandidaten eine erste Direktnachricht (3–5 Sätze). Loris hat schon mehrmals unter
-deren Beiträgen kommentiert. Anknüpfen am letzten Beitrag, ein konkretes Kompliment, eine echte Frage oder ein
-kleiner Mehrwert (z. B. „ich hab mir dazu mal einen Rechner gebaut, falls du ihn sehen willst“). Kein Verkauf,
-kein Termin, kein Link. Es muss sich lesen wie von einem Kollegen.
+dms: for every account in dm_candidates a first direct message (3–5 sentences). Loris has already commented on
+their posts several times. Pick up on the last post, one specific compliment, one real question or a small piece
+of value (e.g. "I built a little calculator for this – happy to show you if you're curious"). No selling, no
+meeting request, no link. It must read like it comes from a colleague.
 
-collab: falls collab_kandidat gesetzt ist: idee = ein konkreter gemeinsamer Beitrag (1–2 Sätze, z. B.
-Collab-Karussell „Steuerberater vs. Code“, Gast-Folie, gemeinsames Q&A in der Story), text = die Anfrage-DM
-(4–6 Sätze, locker, mit klarem Vorschlag und warum es für beide Follower spannend ist). Sonst beide leer."""
+collab: if collab_candidate is set: idea = one concrete joint post (1–2 sentences, e.g. a collab carousel
+"Spreadsheet vs. code", a guest slide, a joint story Q&A), text = the request DM (4–6 sentences, casual, with a
+clear suggestion and why it is interesting for both audiences). Otherwise both empty."""
 
 
-def vorschlaege(auswahl, dms, collab):
-    daten = {"beitraege": [{"nr": i + 1, "konto": m.get("konto") or f"#{m.get('hashtag')}", "art": m.get("art", ""),
-                            "text": kurz(m.get("caption"), 900)} for i, m in enumerate(auswahl)],
-             "dm_kandidaten": dms, "collab_kandidat": collab}
-    if not auswahl and not dms and not collab:
+def suggestions(chosen, dms, collab):
+    data = {"posts": [{"nr": i + 1, "account": m.get("account") or f"#{m.get('hashtag')}", "kind": m.get("kind", ""),
+                       "text": short(m.get("caption"), 900)} for i, m in enumerate(chosen)],
+            "dm_candidates": dms, "collab_candidate": collab}
+    if not chosen and not dms and not collab:
         return None
-    return ki.json_antwort(AUFGABE, daten, SCHEMA)
+    return ai.json_answer(TASK, data, SCHEMA)
 
 
-# ---------- Issue ----------
+# ---------- issue ----------
 
-def issue_text(auswahl, dms, collab, ki_text, fehler, kontakte, pflege=([], [])):
-    kom = {k["nr"]: k["text"] for k in (ki_text or {}).get("kommentare", [])}
-    dm_text = {d["konto"]: d["text"] for d in (ki_text or {}).get("dms", [])}
-    teile = [f"@{REPO.split('/')[0]} – dein Radar für heute, ca. 15 Min. Alles **von Hand in der App**, "
-             "danach hier abhaken. Abgehakte Kästchen merkt sich der Radar (wer warm ist, bekommt später einen DM-Entwurf).", ""]
-    teile += ["## 💬 Kommentieren (ca. 10 Min.)",
-              "Erst den Beitrag ansehen, Vorschlag anpassen (eigene Worte wirken besser), dann kommentieren.", ""]
-    if not auswahl:
-        teile.append("_Heute nichts Frisches – Konten in `automatik/interaktion.json` ergänzen._")
-    for i, m in enumerate(auswahl, 1):
-        vorschlag = kom.get(i, "")
-        if vorschlag.strip().lower().startswith("überspringen"):
+def issue_text(chosen, dms, collab, ai_text, notes, contacts, upkeep=([], [])):
+    com = {k["nr"]: k["text"] for k in (ai_text or {}).get("comments", [])}
+    dm_text = {d["account"]: d["text"] for d in (ai_text or {}).get("dms", [])}
+    parts = [f"@{REPO.split('/')[0]} – your radar for today, about 15 min. Everything **by hand in the app**, "
+             "then tick it off here. The radar remembers ticked boxes (whoever is warm gets a DM draft later).", ""]
+    parts += ["## 💬 Comment (about 10 min)",
+              "Look at the post first, adapt the suggestion (your own words work better), then comment.", ""]
+    if not chosen:
+        parts.append("_Nothing fresh today – add verified accounts in `automation/interaction.json` (`radar.accounts`)._")
+    for i, m in enumerate(chosen, 1):
+        suggestion = com.get(i, "")
+        if suggestion.strip().lower().startswith(SKIP):
             continue
-        wer = f"@{m['konto']}" if m.get("konto") else f"#{m['hashtag']}"
-        warm = kontakte.get(m.get("konto", ""), {}).get("kommentare", 0)
+        who = f"@{m['account']}" if m.get("account") else f"#{m['hashtag']}"
+        warm = contacts.get(m.get("account", ""), {}).get("comments", 0)
         info = " · ".join(x for x in [
-            vor(zeitpunkt(m["timestamp"])),
-            f"❤️ {m['like_count']}" if m.get("like_count") is not None else "",
+            ago(parse_time(m["timestamp"])),
+            f"❤️ {m['like_count']:,}" if m.get("like_count") is not None else "",
             f"💬 {m.get('comments_count', 0)}",
-            f"🔥 schon {warm}× kommentiert" if warm else "",
-            ("Stichwort: " + ", ".join(m["treffer"])) if m.get("treffer") else ""] if x)
-        teile += [f"- [ ] 💬 kommentiert · {wer} · [Beitrag öffnen]({m['permalink']}) · {info}",
-                  f"  > {kurz(m.get('caption'), 160)}"]
-        if vorschlag:
-            teile += ["", f"  ✍️ {vorschlag}"]
-        teile.append("")
+            f"🔥 commented {warm}× already" if warm else "",
+            ("keyword: " + ", ".join(m["hits"])) if m.get("hits") else ""] if x)
+        parts += [f"- [ ] 💬 commented · {who} · [open post]({m['permalink']}) · {info}",
+                  f"  > {short(m.get('caption'), 160)}"]
+        if suggestion:
+            parts += ["", f"  ✍️ {suggestion}"]
+        parts.append("")
     if dms:
-        teile += ["## ✉️ DM-Entwürfe (ca. 5 Min.)",
-                  "Nur schicken, wenn es sich natürlich anfühlt. Max. eine DM pro Konto, kein Nachhaken, wenn keine Antwort kommt.", ""]
+        parts += ["## ✉️ DM drafts (about 5 min)",
+                  "Only send if it feels natural. Max. one DM per account, no follow-up if there is no answer.", ""]
         for d in dms:
-            teile += [f"- [ ] ✉️ DM geschickt · @{d['konto']} · schon {d['kommentare_von_loris']}× kommentiert"
-                      + (f" · [letzter Beitrag]({d['link']})" if d.get("link") else ""),
-                      "", f"  ✍️ {dm_text.get(d['konto'], '_(kein Vorschlag – eigene Worte)_')}", ""]
-    c = (ki_text or {}).get("collab", {})
+            parts += [f"- [ ] ✉️ DM sent · @{d['account']} · commented {d['comments_by_loris']}× already"
+                      + (f" · [last post]({d['link']})" if d.get("link") else ""),
+                      "", f"  ✍️ {dm_text.get(d['account'], '_(no suggestion – your own words)_')}", ""]
+    c = (ai_text or {}).get("collab", {})
     if collab:
-        teile += ["## 🤝 Collab der Woche", "",
-                  f"- [ ] 🤝 angefragt · @{collab['konto']} · {collab.get('follower')} Follower", "",
-                  f"  💡 {c.get('idee') or 'Idee: gemeinsames Karussell oder Story-Q&A'}", ""]
+        parts += ["## 🤝 Collab of the week", "",
+                  f"- [ ] 🤝 asked · @{collab['account']} · {collab.get('followers') or 0:,} followers", "",
+                  f"  💡 {c.get('idea') or 'Idea: joint carousel or story Q&A'}", ""]
         if c.get("text"):
-            teile += [f"  ✍️ {c['text']}", ""]
-    weg, dazu = pflege
-    if weg or dazu:
-        teile += ["## 🧹 Radar-Pflege (wöchentlich)",
-                  "Nur was du abhakst, wird beim nächsten Lauf in `automatik/interaktion.json` übernommen. "
-                  "Nicht abgehakt = bleibt, wie es ist (der Vorschlag kommt frühestens in 60 Tagen wieder).", ""]
-        teile += [f"- [ ] 🧹 entfernen · @{n} · {g}" for n, g in weg]
-        teile += [f"- [ ] ➕ aufnehmen · @{n} · {g}" for n, g in dazu]
-        teile.append("")
-    if fehler:
-        teile += ["<details><summary>⚠️ Hinweise</summary>", "", *[f"- {f}" for f in fehler], "", "</details>"]
-    teile += ["", "_Regeln: max. ~10 Kommentare und ~5 DMs am Tag, nie kopierte Massennachrichten – sonst drosselt Instagram das Konto._"]
-    return "\n".join(teile)
+            parts += [f"  ✍️ {c['text']}", ""]
+    drop, add = upkeep
+    if drop or add:
+        parts += ["## 🧹 Radar upkeep (weekly)",
+                  "Only what you tick is applied to `automation/interaction.json` on the next run. "
+                  "Not ticked = stays as it is (the suggestion comes back in 60 days at the earliest).", ""]
+        parts += [f"- [ ] 🧹 remove · @{n} · {g}" for n, g in drop]
+        parts += [f"- [ ] ➕ add · @{n} · {g}" for n, g in add]
+        parts.append("")
+    if notes:
+        parts += ["<details><summary>⚠️ Notes</summary>", "", *[f"- {f}" for f in notes], "", "</details>"]
+    parts += ["", "_Rules: max. ~10 comments and ~5 DMs a day, never copy-paste mass messages – otherwise Instagram throttles the account._"]
+    return "\n".join(parts)
 
 
-def speichern(nachricht):
-    git("add", str(ORDNER), str(EINSTELLUNGS_DATEI))
-    if not git("status", "--porcelain", "--", str(ORDNER), str(EINSTELLUNGS_DATEI)):
+def save(message):
+    git("add", str(FOLDER), str(SETTINGS_FILE))
+    if not git("status", "--porcelain", "--", str(FOLDER), str(SETTINGS_FILE)):
         return
-    git("commit", "-m", nachricht)
-    for versuch in range(5):
+    git("commit", "-m", message)
+    for attempt in range(5):
         try:
             git("pull", "--rebase", "-q")
             git("push")
             return
         except subprocess.CalledProcessError:
-            subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)  # sonst scheitern alle Versuche gleich
-            time.sleep(5 * (versuch + 1))
-    raise RuntimeError("Radar-Daten konnten nicht gespeichert werden (push 5× fehlgeschlagen)")
+            subprocess.run(["git", "rebase", "--abort"], cwd=ROOT, capture_output=True)  # otherwise every retry fails the same way
+            time.sleep(5 * (attempt + 1))
+    raise RuntimeError("Radar data could not be saved (push failed 5×)")
 
 
 def main():
     if not os.environ.get("FB_TOKEN") or not os.environ.get("FB_IG_USER_ID"):
-        print("Radar: FB_TOKEN / FB_IG_USER_ID fehlen – Einrichtung siehe EINRICHTUNG.md Schritt 7. Nichts zu tun.")
+        print("Radar: FB_TOKEN / FB_IG_USER_ID missing – setup see SETUP.md (radar section). Nothing to do.")
         return
-    ORDNER.mkdir(parents=True, exist_ok=True)
-    kontakte, gesehen = laden(KONTAKTE, {}), laden(GESEHEN, {})
-    alte_issues, entfernen, aufnehmen = ([], [], []) if PROBE else abgehakt_zaehlen(kontakte)
-    if entfernen or aufnehmen:
-        konten_uebernehmen(entfernen, aufnehmen)
-    fehler = [f"@{k['name']}: Art „{k.get('art', '')}“ fehlt/unbekannt – in `automatik/interaktion.json` "
-              f"eine von {', '.join(sorted(ARTEN_ERLAUBT))} eintragen"
-              for k in EINSTELLUNGEN["konten"] if isinstance(k, dict) and k.get("art") not in ARTEN_ERLAUBT]
-    profile = konten_abfragen(fehler)
-    pflege = pflege_vorschlaege(profile)
-    auswahl = auswaehlen(profile, hashtags_abfragen(fehler), kontakte, gesehen)
-    dms, collab = dm_kandidaten(profile, kontakte), collab_kandidat(profile, kontakte)
-    text = issue_text(auswahl, dms, collab, vorschlaege(auswahl, dms, collab), fehler, kontakte, pflege)
-    titel = (f"📡 Radar {WOCHENTAG[JETZT.weekday()]} {JETZT:%d.%m.} – {len(auswahl)} Beiträge"
-             + (f", {len(dms)} DM-Entwürfe" if dms else "") + (", Collab" if collab else "") + (", Pflege" if any(pflege) else ""))
-    if PROBE:
-        print(titel, "\n", text)
+    FOLDER.mkdir(parents=True, exist_ok=True)
+    contacts, seen = load(CONTACTS, {}), load(SEEN, {})
+    old_issues, remove, add = ([], [], []) if DRY_RUN else count_ticks(contacts)
+    if remove or add:
+        apply_upkeep(remove, add)
+    notes = [f"@{k['name']}: kind “{k.get('kind', '')}” missing/unknown – in `automation/interaction.json` "
+             f"set one of {', '.join(sorted(KINDS_ALLOWED))}"
+             for k in accounts() if isinstance(k, dict) and k.get("kind") not in KINDS_ALLOWED]
+    if not accounts():
+        print("Radar: no verified accounts in interaction.json (radar.accounts is empty) – "
+              "only hashtags and upkeep suggestions. Cowork fills radar.accounts from radar.candidates_to_verify.")
+        notes.append("No verified accounts yet – `radar.accounts` in `automation/interaction.json` is empty "
+                     "(candidates to check: `radar.candidates_to_verify`).")
+    profiles = query_accounts(notes)
+    upkeep = upkeep_suggestions(profiles)
+    chosen = select(profiles, query_hashtags(notes), contacts, seen)
+    dms, collab = dm_candidates(profiles, contacts), collab_candidate(profiles, contacts)
+    title = (f"📡 Radar {WEEKDAY[NOW.weekday()]} {NOW.month}/{NOW.day} – {len(chosen)} posts"
+             + (f", {len(dms)} DM drafts" if dms else "") + (", collab" if collab else "") + (", upkeep" if any(upkeep) else ""))
+    nothing = not chosen and not dms and not collab and not any(upkeep)
+    if nothing and not accounts():
+        # no issue (it would only say "nothing"), but still store what was ticked and close the old issues
+        print("Radar: nothing to show today – no issue created.", *[f"\n  · {n}" for n in notes])
+        if not DRY_RUN:
+            for nr in old_issues:
+                gh("issue", "close", str(nr))
+            CONTACTS.write_text(json.dumps(contacts, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
+            save(f"Radar {NOW:%Y-%m-%d}: no accounts yet")
+        return
+    text = issue_text(chosen, dms, collab, suggestions(chosen, dms, collab), notes, contacts, upkeep)
+    if DRY_RUN:
+        print(title, "\n", text)
         return
     try:
-        gh("label", "create", LABEL, "--color", "8FA398", "--description", "Tägliche Interaktions-Liste")
+        gh("label", "create", LABEL, "--color", "8FA398", "--description", "Daily engagement work list")
     except subprocess.CalledProcessError:
         pass
-    print("✓", titel, gh("issue", "create", "--title", titel, "--label", LABEL, "--body-file", "-", eingabe=text))
-    for nr in alte_issues:
-        gh("issue", "close", str(nr))  # ohne Kommentar – spart eine Benachrichtigung am Tag
-    # gesehene Beiträge 30 Tage merken, damit nichts doppelt kommt
-    gesehen.update({m["id"]: JETZT.strftime("%Y-%m-%d") for m in auswahl})
-    grenze = (JETZT - timedelta(days=30)).strftime("%Y-%m-%d")
-    gesehen = {k: v for k, v in gesehen.items() if v >= grenze}
-    GESEHEN.write_text(json.dumps(gesehen, indent=1, sort_keys=True) + "\n")
-    KONTAKTE.write_text(json.dumps(kontakte, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
-    speichern(f"Radar {JETZT:%Y-%m-%d}: {len(auswahl)} Beiträge, {len(dms)} DM-Entwürfe"
-              + (f", Konten −{len(entfernen)}/+{len(aufnehmen)} (abgehakt)" if entfernen or aufnehmen else ""))
+    print("✓", title, gh("issue", "create", "--title", title, "--label", LABEL, "--body-file", "-", stdin=text))
+    for nr in old_issues:
+        gh("issue", "close", str(nr))  # without a comment – saves one notification a day
+    # remember seen posts for 30 days so nothing comes twice
+    seen.update({m["id"]: NOW.strftime("%Y-%m-%d") for m in chosen})
+    cutoff = (NOW - timedelta(days=30)).strftime("%Y-%m-%d")
+    seen = {k: v for k, v in seen.items() if v >= cutoff}
+    SEEN.write_text(json.dumps(seen, indent=1, sort_keys=True) + "\n")
+    CONTACTS.write_text(json.dumps(contacts, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
+    save(f"Radar {NOW:%Y-%m-%d}: {len(chosen)} posts, {len(dms)} DM drafts"
+         + (f", accounts −{len(remove)}/+{len(add)} (ticked)" if remove or add else ""))
 
 
 if __name__ == "__main__":

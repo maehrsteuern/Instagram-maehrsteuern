@@ -1,5 +1,6 @@
 {
- "FB_TOKEN": "2026-12-01",
- "IG_TOKEN": "2026-12-01",
- "cron-posten (cron-job.org, von Hand erneuern)": "2027-09-29"
+ "_note": "Expiry dates of access keys (only the date, never the key). Written by token.yml; read by the watchdog. Anything that is not a YYYY-MM-DD date is a placeholder and ignored.",
+ "FB_TOKEN": "set after setup",
+ "IG_TOKEN": "set after setup",
+ "cron-post (cron-job.org, renew by hand)": "set after setup"
 }

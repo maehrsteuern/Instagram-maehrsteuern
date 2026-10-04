@@ -1,0 +1,41 @@
+name: Instagram stats
+# Daily around 9:00 AM ET: fetch the numbers and store them in automation/stats/. Can be started by hand.
+# Main trigger is status.yml (8:40–10:00 AM ET, reliable thanks to the 15-min post run);
+# the schedule here is only the backup in case GitHub runs it at all (UTC: 9:47 AM EDT / 8:47 AM EST).
+on:
+  schedule:
+    - cron: "47 13 * * *"
+  workflow_dispatch:
+concurrency:
+  group: stats
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  stats:
+    if: github.repository == 'maehrsteuern/maehrtax---instagram'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.12" }
+      - run: pip install -q requests
+      - name: Fetch
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          python automation/stats.py
+          python automation/insights_full.py
+      - name: Save
+        run: |
+          git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+          mkdir -p automation/stats
+          git add automation/stats && git diff --cached --quiet && exit 0
+          git commit -q -m "Stats $(TZ=America/New_York date +%F)"
+          # around 9:00 AM ET status, post and comments push at the same time – without retries the day would be lost
+          for attempt in 1 2 3 4 5; do
+            git pull -q --rebase && git push -q && exit 0
+            git rebase --abort 2>/dev/null; sleep $((attempt * 5))
+          done
+          exit 1

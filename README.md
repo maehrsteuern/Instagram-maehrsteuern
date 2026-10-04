@@ -10,7 +10,7 @@ Content, strategy and autopilot for **@maehrtax** – "Tax × Code: tax know-how
 New posts come from the **Content Factory** – a Claude routine every Mon + Thu that builds the next posts as drafts (`strategy/15_content_factory.md`). Nothing goes live without Loris' `go`.
 
 ## Status page
-`STATUS.md` – what goes live next, what needs you, automation health and a log of every change. Regenerated after every push and every automation run (`automation/status.py`, `.github/workflows/status.yml`); notes for it in `automation/status_notes.md`. The same status as a visual page: `STATUS.html` (tiles, 4-week calendar, charts, filterable log; `automation/status_html.py`), published on GitHub Pages: https://maehrsteuern.github.io/Instagram-maehrtax/
+`STATUS.md` – what goes live next, what needs you, automation health and a log of every change. Regenerated after every push and every automation run (`automation/status.py`, `.github/workflows/status.yml`); notes for it in `automation/status_notes.md`. The same status as a visual page: `STATUS.html` (tiles, 4-week calendar, charts, filterable log; `automation/status_html.py`), published on GitHub Pages: https://maehrsteuern.github.io/maehrtax---instagram/
 Never edit STATUS.md / STATUS.html by hand.
 
 **Calendar:** direct sync into the Google calendar "maehrtax Autopilot" (`automation/calendar_sync.py`, every status run): post times, open approvals, manual posts, missing clips/music, reminders – colored by kind; post times "busy" for Reclaim, to-dos "free".

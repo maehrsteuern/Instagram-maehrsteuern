@@ -1,0 +1,57 @@
+name: Weekly report
+# Sundays around 6:00 PM ET: ONE issue "📊 Week xx" (automation/weekly_report.py), values also in automation/stats/weeks.csv.
+# Main trigger is status.yml (Sun 6:00–9:00 PM ET, if no run today yet); the schedule here is the backup
+# (UTC Sunday 23:07 = 7:07 PM EDT / 6:07 PM EST).
+# Additions in the issue ("demos 2", "manychat 14/6", "source …") are taken over quietly.
+on:
+  schedule:
+    - cron: "7 23 * * 0"
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  report:
+    concurrency: { group: weekly-report, cancel-in-progress: false }
+    if: github.repository == 'maehrsteuern/maehrtax---instagram' && github.event_name != 'issue_comment'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with: { ref: main }
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/requirements-google.txt
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - run: pip install -q -r automation/requirements-google.txt
+      - env:
+          GH_TOKEN: "${{ github.token }}"
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+        run: python automation/weekly_report.py report
+  reply:
+    # one group per comment: in a shared group a new comment pushes out a waiting run
+    # (GitHub keeps only one) – its text would be lost. Parallel is fine: push with pull --rebase + retries.
+    concurrency:
+      group: weekly-report-c${{ github.event.comment.id }}
+      cancel-in-progress: false
+    # only comments by the account owner in the weekly report issue
+    if: >-
+      github.repository == 'maehrsteuern/maehrtax---instagram' &&
+      github.event_name == 'issue_comment' &&
+      github.event.comment.user.login == github.repository_owner &&
+      contains(github.event.issue.labels.*.name, 'weekly')
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with: { ref: main }
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.12" }
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - env:
+          GH_TOKEN: "${{ github.token }}"
+          COMMENT: "${{ github.event.comment.body }}"
+        run: python automation/weekly_report.py reply "${{ github.event.issue.number }}" "$COMMENT"

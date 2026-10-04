@@ -31,14 +31,14 @@ Below are ground rules, context and 7 modules. First ask me: "Which modules shou
 - At the end of each module: a short report (format given in the module).
 
 ══════════ CONTEXT ══════════
-- Repo: https://github.com/maehrsteuern/Instagram-maehrtax (branch main). Issues:
+- Repo: https://github.com/maehrsteuern/maehrtax---instagram (branch main). Issues:
   "📡 Radar …" (daily, label radar) · "📊 Week …" (Sundays, label weekly) · "💼 LinkedIn …" (label linkedin, optional) ·
   "🚨 Watchdog" (label watchdog) · approval issues (label approval).
 - ManyChat (app.manychat.com, account @maehrtax): automation "TOOL" – keywords TOOL/Tool/tool/tol/tools
   in comments, story replies and DMs → DM with demo video, booking link https://app.reclaim.ai/m/maehrtax/demo
   and the checklist PDF "The Spreadsheet-to-Code Checklist for Tax Teams"; follow-up after 23 h.
-- Radar accounts: https://github.com/maehrsteuern/Instagram-maehrtax/blob/main/automation/interaction.json
-- Ad plan: https://github.com/maehrsteuern/Instagram-maehrtax/blob/main/strategy/12_interaction.md (section 5)
+- Radar accounts: https://github.com/maehrsteuern/maehrtax---instagram/blob/main/automation/interaction.json
+- Ad plan: https://github.com/maehrsteuern/maehrtax---instagram/blob/main/strategy/12_interaction.md (section 5)
 
 ══════════ MODULE A – Pin the intro (once) ══════════
 instagram.com → profile @maehrtax → post "New here? Quick intro 👋" (carousel from Mon 10/12) →

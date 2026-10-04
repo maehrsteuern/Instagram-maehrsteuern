@@ -1,37 +1,40 @@
-name: Instagram-Schlüssel verlängern
-# Am 1. jedes Monats; ein Schlüssel gilt 60 Tage. Manuell startbar.
+name: Refresh Instagram key
+# On the 1st of every month; a key is valid for 60 days. Can be started by hand.
+# Also refreshes the Facebook key for the radar. Without the secrets every step skips cleanly.
 on:
   schedule:
-    - cron: "27 4 1 * *"
+    - cron: "27 10 1 * *"
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
   token:
+    if: github.repository == 'maehrsteuern/maehrtax---instagram'
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests
-      - env:
+      - name: Instagram key
+        env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
-        run: python automatik/schluessel_verlaengern.py
-      - name: Facebook-Schlüssel (Radar)
+        run: python automation/refresh_ig_token.py
+      - name: Facebook key (radar)
         if: always()
         env:
           FB_TOKEN: ${{ secrets.FB_TOKEN }}
           FB_APP_ID: ${{ secrets.FB_APP_ID }}
           FB_APP_SECRET: ${{ secrets.FB_APP_SECRET }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
-        run: python automatik/fb_schluessel_verlaengern.py
-      - name: Ablaufdaten speichern (für den Wächter, ohne Schlüssel)
+        run: python automation/refresh_fb_token.py
+      - name: Save expiry dates (for the watchdog, without keys)
         if: always()
         run: |
           git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
-          git add automatik/schluessel_ablauf.json 2>/dev/null || exit 0
+          git add automation/key_expiry.json 2>/dev/null || exit 0
           git diff --cached --quiet && exit 0
-          git commit -q -m "Schlüssel: Ablaufdaten aktualisiert"
-          for versuch in 1 2 3 4; do git pull -q --rebase && git push -q && exit 0; sleep $((versuch * 5)); done
+          git commit -q -m "Keys: expiry dates updated"
+          for attempt in 1 2 3 4; do git pull -q --rebase && git push -q && exit 0; sleep $((attempt * 5)); done
           exit 1

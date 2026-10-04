@@ -1,5 +1,5 @@
-name: Musik holen
-# Einmalig bzw. bei Bedarf: 5 gemeinfreie Titel (CC0) aus dem Internet Archive nach musik/ holen.
+name: Fetch music
+# One-off / on demand: fetch 5 public-domain tracks (CC0) from the Internet Archive into music/.
 on:
   workflow_dispatch:
 concurrency:
@@ -8,15 +8,16 @@ concurrency:
 permissions:
   contents: write
 jobs:
-  musik:
+  music:
+    if: github.repository == 'maehrsteuern/maehrtax---instagram'
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests imageio-ffmpeg
-      - run: python automatik/musik_holen.py
-      - name: Speichern
+      - run: python automation/fetch_music.py
+      - name: Save
         run: |
           git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
-          git add musik && git diff --cached --quiet || (git commit -m "Musik: gemeinfreie Titel (CC0) aus dem Internet Archive" && git pull --rebase -q && git push)
+          git add music && git diff --cached --quiet || (git commit -m "Music: public-domain tracks (CC0) from the Internet Archive" && git pull --rebase -q && git push)

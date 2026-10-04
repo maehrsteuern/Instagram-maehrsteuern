@@ -5,10 +5,10 @@ Most of the Meta experience comes from the German sister repo `Instagram-maehrst
 **Never paste tokens, keys or passwords into a chat.** They go straight into GitHub secrets.
 
 ## 1 · Create the repo and push this branch as `main`
-1. github.com → **New repository** → owner `maehrsteuern`, name **`Instagram-maehrtax`**, public (needed for free GitHub Pages and Actions minutes), no README/license (the branch brings everything).
+1. github.com → **New repository** → owner `maehrsteuern`, name **`maehrtax---instagram`**, public (needed for free GitHub Pages and Actions minutes), no README/license (the branch brings everything).
 2. Push the prepared branch as `main`:
    ```bash
-   git remote add maehrtax https://github.com/maehrsteuern/Instagram-maehrtax.git
+   git remote add maehrtax https://github.com/maehrsteuern/maehrtax---instagram.git
    git push maehrtax en-neu:main
    ```
 3. Repo → **Settings → General → Default branch** = `main`.
@@ -41,13 +41,13 @@ The Instagram login API can't read other profiles. For the radar (Business Disco
 Hashtag search needs the extra feature "Instagram Public Content Access" (app review) – prepared by Chrome module 3 (`strategy/14_chrome_modules.md`), not needed for launch.
 
 ## 4 · Secrets
-Repo **Instagram-maehrtax** → **Settings → Secrets and variables → Actions → New repository secret**:
+Repo **maehrtax---instagram** → **Settings → Secrets and variables → Actions → New repository secret**:
 
 | Name | Value | Needed for |
 |---|---|---|
 | `IG_TOKEN` | Instagram access token of @maehrtax (step 3a) | posting, stats, comments |
 | `IG_USER_ID` | Instagram account ID of @maehrtax (step 3a) | posting, stats |
-| `GH_PAT` | fine-grained GitHub token: https://github.com/settings/personal-access-tokens → *Generate new token* → repository **Instagram-maehrtax** only → permission **Secrets: Read and write** | token self-refresh |
+| `GH_PAT` | fine-grained GitHub token: https://github.com/settings/personal-access-tokens → *Generate new token* → repository **maehrtax---instagram** only → permission **Secrets: Read and write** | token self-refresh |
 | `FB_TOKEN` | long-lived Facebook token (step 3b) | radar |
 | `FB_IG_USER_ID` | `instagram_business_account.id` of @maehrtax (step 3b) | radar |
 | `FB_APP_ID` | App ID of "maehrsteuern Autopilot" | FB token refresh |
@@ -73,14 +73,14 @@ GitHub often runs `schedule` triggers late or not at all on small repos (on the 
 **a) A new GitHub token only for this** (don't reuse `GH_PAT` – that one may change secrets; don't reuse the German `cron-posten` token – it's scoped to the other repo)
 1. https://github.com/settings/personal-access-tokens → **Generate new token** (fine-grained)
 2. Name `cron-post-maehrtax`, expiration **1 year** (set a calendar reminder to renew)
-3. Repository access: **Only select repositories → Instagram-maehrtax**
+3. Repository access: **Only select repositories → maehrtax---instagram**
 4. Permissions → Repository permissions → **Actions: Read and write** (nothing else)
 5. *Generate token* → copy it (starts with `github_pat_…`) – **never into a chat**
 
 **b) Timer on cron-job.org** (same account as for the German repo)
 1. https://cron-job.org → **Create cronjob**
 2. Title `Instagram post maehrtax`, URL:
-   `https://api.github.com/repos/maehrsteuern/Instagram-maehrtax/actions/workflows/post.yml/dispatches`
+   `https://api.github.com/repos/maehrsteuern/maehrtax---instagram/actions/workflows/post.yml/dispatches`
 3. Execution schedule: **Every 15 minutes**
 4. Tab **Advanced**:
    - Request method: **POST**
@@ -108,7 +108,7 @@ Direct sync instead of a subscription: every status run writes the plan's events
 - **Demo bookings for the weekly report:** Reclaim writes bookings into your main calendar. A small Apps Script in your own Google account (`automation/apps_script/demo_copy.gs`, new project "maehrtax Demo Copy" on script.google.com, hourly trigger) copies only "Demo + Intro Call" bookings with an external guest into "maehrtax Autopilot" – with booking date and source ("How did you find me?"), without names and emails. Adjust the settings at the top of the script (target calendar, booking title). The service account never sees your main calendar. Switch off: script.google.com → project → delete the trigger.
 
 ## 8 · GitHub Pages
-Repo → **Settings → Pages → Build and deployment → Source: "GitHub Actions"**. The status workflow publishes `STATUS.html` to https://maehrsteuern.github.io/Instagram-maehrtax/ after the next run.
+Repo → **Settings → Pages → Build and deployment → Source: "GitHub Actions"**. The status workflow publishes `STATUS.html` to https://maehrsteuern.github.io/maehrtax---instagram/ after the next run.
 
 ## 9 · ManyChat for @maehrtax
 1. app.manychat.com → new account / channel **Instagram** → connect **@maehrtax** (allow access to messages: Instagram → *Settings → Messages and story replies → Message controls → Connected tools → Allow access to messages* = on).
@@ -138,7 +138,7 @@ Plan: start on the free/entry plan; upgrades cost money → decide first (Pro is
 | **Sundays** | weekly report issue "📊 Week …" – add demos and ManyChat numbers as a comment (`demos 2`, `manychat 14/6`) | autopilot + Loris (2 min) |
 | **monthly** | Instagram and Facebook tokens are refreshed (needs `GH_PAT`) | autopilot |
 
-**Approvals:** https://github.com/maehrsteuern/Instagram-maehrtax/issues?q=is%3Aopen+label%3Aapproval
+**Approvals:** https://github.com/maehrsteuern/maehrtax---instagram/issues?q=is%3Aopen+label%3Aapproval
 Only your own comments count. `go` = schedule, `stop` = pause, everything else is ignored.
 **Emergency brake:** Actions → *post* → ⋯ → *Disable workflow* (also stops the cron-job.org triggers).
 **Errors:** shown in `automation/plan.json` at the entry (`"status": "error"`), GitHub emails you, the watchdog issue comments.

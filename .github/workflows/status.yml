@@ -1,0 +1,132 @@
+name: Status
+# Rewrites STATUS.md + STATUS.html (automation/status.py): after every push, after every run of the other
+# workflows and every morning. STATUS.html goes to GitHub Pages as the visual status page (job "page", only when
+# something changed): https://maehrsteuern.github.io/maehrtax---instagram/
+# Also syncs the events from the plan with the Google calendar "maehrtax Autopilot"
+# (automation/calendar_sync.py, service account, only this calendar, only events marked source=maehrtax).
+# Also starts stats, radar, weekly report and the key refresh in their ET time windows (more reliable than cron).
+# Commits only when something really changed.
+on:
+  push:
+    branches: [main]
+    paths-ignore: [STATUS.md, STATUS.html]
+  workflow_run:
+    workflows: ["Instagram post", "Approval", "Instagram stats", "Refresh Instagram key", "Fetch music"]
+    types: [completed]
+  schedule:
+    - cron: "41 11 * * *"
+  workflow_dispatch:
+concurrency:
+  # own group: not in instagram-plan, otherwise a waiting post run could be pushed out
+  group: status
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: write
+  issues: write
+jobs:
+  status:
+    # only in the US repo – never in the German sister repo
+    if: github.repository == 'maehrsteuern/maehrtax---instagram'
+    runs-on: ubuntu-24.04
+    outputs:
+      new: ${{ steps.save.outputs.new }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/requirements-google.txt
+      - name: Start stats (8:40–10:00 AM ET, if none today yet)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          clock=$(TZ=America/New_York date +%-H%M); today=$(TZ=America/New_York date +%F)
+          [ "$clock" -ge 840 ] && [ "$clock" -lt 1000 ] || exit 0
+          git fetch -q origin main
+          git show origin/main:automation/stats/account.csv 2>/dev/null | grep -q "^$today," && exit 0
+          runs=$(gh run list --workflow stats.yml --created ">=$(date -u -d '-30 minutes' +%FT%TZ)" --json databaseId --jq length)
+          [ "$runs" = 0 ] && gh workflow run stats.yml --ref main && echo "Stats started" || true
+      - name: Start radar (7:00–10:00 AM ET, if no run today yet)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          clock=$(TZ=America/New_York date +%-H%M); midnight=$(date -u -d "$(TZ=America/New_York date +%F) 00:00 $(TZ=America/New_York date +%z)" +%FT%TZ)
+          [ "$clock" -ge 700 ] && [ "$clock" -lt 1000 ] || exit 0
+          runs=$(gh run list --workflow radar.yml --created ">=$midnight" --json databaseId --jq length)
+          [ "$runs" = 0 ] && gh workflow run radar.yml --ref main && echo "Radar started" || true
+      - name: Start weekly report (Sun 6:00–9:00 PM ET, if no run today yet)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          [ "$(TZ=America/New_York date +%u)" = 7 ] || exit 0
+          clock=$(TZ=America/New_York date +%-H%M); midnight=$(date -u -d "$(TZ=America/New_York date +%F) 00:00 $(TZ=America/New_York date +%z)" +%FT%TZ)
+          [ "$clock" -ge 1800 ] && [ "$clock" -lt 2100 ] || exit 0
+          runs=$(gh run list --workflow weekly_report.yml --event workflow_dispatch --created ">=$midnight" --json databaseId --jq length)
+          [ "$runs" = 0 ] && gh workflow run weekly_report.yml --ref main && echo "Weekly report started" || true
+      - name: Start key refresh (backup if the monthly run failed – < 30 days left, max. once a day)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          left=$(python3 automation/expiry.py 2>/dev/null || echo 99)
+          [ "$left" -lt 30 ] || exit 0
+          runs=$(gh run list --workflow token.yml --created ">=$(date -u -d '-1 day' +%FT%TZ)" --json databaseId --jq length)
+          [ "$runs" = 0 ] && gh workflow run token.yml --ref main && echo "Key refresh started ($left days left)" || true
+      - name: Watchdog (one issue, only speaks up on problems)
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: python automation/watchdog.py
+      - name: Write and save
+        id: save
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+          for attempt in 1 2 3 4; do
+            git pull -q --rebase origin main
+            python automation/status.py
+            git add STATUS.md STATUS.html
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Status updated"
+            git push -q origin HEAD:main && echo "new=1" >> "$GITHUB_OUTPUT" && exit 0
+            git reset -q --hard origin/main
+            sleep $((attempt * 5))
+          done
+          exit 1
+      - name: Sync Google calendar "maehrtax Autopilot"
+        # even if STATUS.md could not be pushed – the calendar does not depend on it
+        if: ${{ !cancelled() }}
+        env:
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+        run: |
+          pip install -q -r automation/requirements-google.txt
+          python automation/calendar_sync.py
+
+  page:
+    # STATUS.html → GitHub Pages (index.html). Only for a new status, after a push by hand/Claude, or started by hand.
+    needs: status
+    # errors here (e.g. Pages not switched on yet) do not turn the status red – STATUS.md is already saved
+    continue-on-error: true
+    if: ${{ !cancelled() && github.repository == 'maehrsteuern/maehrtax---instagram' && (needs.status.outputs.new == '1' || github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    concurrency:
+      group: status-page
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - name: Build the page
+        run: mkdir _site && cp STATUS.html _site/index.html && touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v5

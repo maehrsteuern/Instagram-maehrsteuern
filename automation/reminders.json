@@ -1,14 +1,23 @@
 {
-  "_hinweis": "Einmalige Erinnerungen/Fristen außerhalb des Plans. Erscheinen in LAGE.md unter „Braucht dich“ (ab 'zeigen_ab_tagen' vorher bis 'wann' + 1 Tag) und – wenn kalender = true – als Termin im Google-Kalender „maehrsteuern Autopilot“ (Art erinnerung, „frei“, Pop-up 1 Tag vorher + zur Zeit). Erledigtes: 'erledigt': true setzen oder Eintrag löschen. Zeiten deutsche Zeit.",
-  "erinnerungen": [
-    {"id": "linkedin-18", "wann": "2026-10-07T08:00", "kalender": false, "zeigen_ab_tagen": 2,
-     "titel": "💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)",
-     "text": "PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5)."},
-    {"id": "anzeige-start", "wann": "2026-10-12T18:00", "kalender": true, "zeigen_ab_tagen": 3,
-     "titel": "📣 Reel-Vergleich Ampel vs. Split → Anzeige starten (ca. 12.10.)",
-     "text": "Ampel (So 04.10.) gegen Split (Mi 07.10.) vergleichen: (Speichern + Teilen) / Reichweite in LAGE.md bzw. im Wochenbericht.\nDas bessere Reel wird die Click-to-DM-Anzeige (strategie/12_interaktion.md Abschnitt 5, Chrome Modul 2): 1 €/Tag, ca. 30 €/Monat – Zahlung und Absenden machst du selbst."},
-    {"id": "manychat-trial", "wann": "2026-10-14T18:00", "kalender": true, "zeigen_ab_tagen": 7,
-     "titel": "💳 ManyChat-Trial endet Fr 16.10. – entscheiden",
-     "text": "Entscheidung Loris: weiter (Kosten?) oder kündigen. Grundlage: ManyChat gesendet/Klicks und Demos aus den Wochenberichten KW 40 + 41.\nOhne Entscheidung läuft die DM-Strecke (TOOL → Demo-Link) evtl. nicht weiter – vor dem 16.10. klären, nichts automatisch buchen."}
+  "_note": "One-time reminders/deadlines outside the plan. Shown in STATUS.md under \"Needs you\" (from 'show_days_before' days ahead until 'when' + 1 day) and – if calendar = true – as an event in the Google calendar \"maehrtax Autopilot\" (kind reminder, \"free\", pop-up 1 day before + at the time). Done: set 'done': true or delete the entry. Times US Eastern (ET).",
+  "reminders": [
+    {"id": "approve-launch", "when": "2026-10-10T18:00", "calendar": true, "show_days_before": 7,
+     "title": "✅ Approve the launch content (posts 00–05)",
+     "text": "Reply \"go\" (or \"stop\") in the approval issues for everything that posts Sun 10/11 – Thu 10/15. Nothing posts without your go."},
+    {"id": "manychat-setup", "when": "2026-10-10T12:00", "calendar": true, "show_days_before": 7,
+     "title": "💬 ManyChat for @maehrtax set up (before launch 10/11)",
+     "text": "Keyword TOOL (+ Tool/tool/tol and typos as in automation/interaction.json) on comments, story replies and DMs → DM with demo video + English booking link, follow-up after 23 h. Test it once with a second account."},
+    {"id": "booking-link", "when": "2026-10-10T12:00", "calendar": true, "show_days_before": 7,
+     "title": "📅 English booking link live (before launch 10/11)",
+     "text": "\"Demo + Intro Call (20 min)\" in Reclaim, US time slots, required field \"How did you hear about me?\". Put it in the bio link and in ManyChat (placeholder: https://app.reclaim.ai/m/maehrtax/demo)."},
+    {"id": "fact-check-163j", "when": "2026-10-14T18:00", "calendar": true, "show_days_before": 4,
+     "title": "🔎 Fact-check the § 163(j) carousel (posts Thu 10/15)",
+     "text": "Check fact_check.md in posts/06_2026-10-15_163j_ebitda: EBITDA-based ATI for tax years beginning after 12/31/2024, demo numbers ($14.0M EBITDA, $4.0M interest → all deductible, $210,000 less federal tax)."},
+    {"id": "fact-check-174a", "when": "2026-10-18T18:00", "calendar": true, "show_days_before": 4,
+     "title": "🔎 Fact-check the § 174A carousel (posts Tue 10/20)",
+     "text": "Check fact_check.md in posts/10_2026-10-20_174a_deferred_taxes: domestic R&E deductible again for tax years beginning after 12/31/2024, foreign R&E still 15 years, demo numbers ($2.0M → $378,000 less federal tax in year 1)."},
+    {"id": "my-story-concept", "when": "2026-10-16T18:00", "calendar": true, "show_days_before": 5,
+     "title": "🎙️ Concept + English voice note for the \"my story\" Reel (posts Tue 10/20)",
+     "text": "Loris: send your concept and an English voice note for 09-reel-my-story (status waiting_concept). Without it, the Reel cannot be cut in time."}
   ]
 }

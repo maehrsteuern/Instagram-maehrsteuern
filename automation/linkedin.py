@@ -1,111 +1,124 @@
-"""LinkedIn-Paket (läuft täglich mit dem Radar): jedes freigegebene Karussell auch für LinkedIn vorbereiten.
+"""LinkedIn package (runs daily with the radar): prepare every approved carousel for LinkedIn as well.
 
-Für jedes Karussell ab heute ohne Paket entsteht in posts/<ordner>/linkedin/:
-  karussell.pdf – die Folien als PDF (LinkedIn zeigt PDFs als blätterbares Dokument, das stärkste Format dort)
-  text.md       – Beitragstext, von Claude für LinkedIn umgeschrieben (Sie/Du neutral, mehr Kontext, Frage am Ende)
-und ein Issue „💼 LinkedIn …“ mit Link und Vorschlag für den Tag (1 Tag nach Instagram, morgens, nie am Wochenende).
-Hochladen von Hand (2 Min.): LinkedIn → Beitrag → Dokument hinzufügen. Per Schnittstelle geht das nur mit
-der freigabepflichtigen Community-Management-API, deshalb bewusst von Hand.
+OFF by default – only runs when automation/interaction.json has "linkedin": {"enabled": true}.
 
-Umgebung: ANTHROPIC_API_KEY (optional), GH_TOKEN, GITHUB_REPOSITORY.
+For every carousel from today on without a package, posts/<folder>/linkedin/ gets:
+  carousel.pdf – the slides as a PDF (LinkedIn shows PDFs as a swipeable document, the strongest format there)
+  text.md      – post text, rewritten for LinkedIn by Claude (more context, question at the end)
+plus an issue "💼 LinkedIn …" with links and a suggested day (1 business day after Instagram, 8:00 AM ET).
+Uploading is done by hand (2 min): LinkedIn → Start a post → Add a document. Doing it via API would need
+the Community Management API (requires approval), so this stays manual on purpose.
+
+Environment: ANTHROPIC_API_KEY (optional), GH_TOKEN, GITHUB_REPOSITORY.
 """
 import json, os, subprocess, sys, time
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from PIL import Image
-
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import ki
 
-WURZEL = Path(__file__).resolve().parent.parent
-PLAN = WURZEL / "automatik" / "plan.json"
-REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/Instagram-maehrsteuern")
+ROOT = Path(__file__).resolve().parent.parent
+PLAN = ROOT / "automation" / "plan.json"
+SETTINGS = ROOT / "automation" / "interaction.json"
+REPO = os.environ.get("GITHUB_REPOSITORY", "maehrsteuern/maehrtax---instagram")
 LABEL = "linkedin"
-HEUTE = datetime.now(ZoneInfo("Europe/Berlin")).strftime("%Y-%m-%d")
-WOCHENTAG = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
+TODAY = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+WEEKDAY = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 SCHEMA = {"type": "object", "properties": {"text": {"type": "string"}}, "required": ["text"], "additionalProperties": False}
-AUFGABE = """Schreib diese Instagram-Bildunterschrift zu einem LinkedIn-Beitrag um, der zu einem PDF-Karussell gehört.
-- Erste Zeile: Haken, der ohne „mehr anzeigen“ funktioniert (max. 120 Zeichen).
-- Danach 4–8 kurze Absätze mit etwas mehr Fachkontext als auf Instagram, Zeilenumbrüche zwischen den Absätzen.
-- Anrede neutral (ohne du/Sie, z. B. „Wer … kennt das:“), professioneller Ton, keine Emojis außer max. einem Pfeil.
-- Ende: eine echte Frage an Steuerleute (Kommentare sind auf LinkedIn das stärkste Signal).
-- „Schreib TOOL per DM“ ersetzen durch: „Demo gefällig? Kurze Nachricht an mich genügt.“
-- Max. 3 Hashtags ganz am Ende (z. B. #Steuern #Excel #Automatisierung).
-In diesem Fall dürfen Hinweise auf Loris' Tools vorkommen, sie stehen ja im Original."""
+TASK = """Rewrite this Instagram caption as a LinkedIn post that goes with a PDF carousel. US English.
+- First line: a hook that works without "see more" (max. 120 characters).
+- Then 4–8 short paragraphs with a bit more professional context than on Instagram, line breaks between paragraphs.
+- Professional, direct tone ("you" is fine), no emojis except at most one arrow.
+- End: a real question to tax professionals (comments are the strongest signal on LinkedIn).
+- Replace "DM TOOL" with: "Want a demo? Just send me a message."
+- Keep the compliance line: "Educational content – not tax, legal or accounting advice."
+- Max. 3 hashtags at the very end (e.g. #Tax #Excel #Automation).
+In this case mentions of Loris' tools are allowed – they are in the original."""
 
 
-def gh(*args, eingabe=None):
-    return subprocess.run(["gh", *args, "--repo", REPO], input=eingabe, check=True, capture_output=True, text=True).stdout.strip()
+def enabled():
+    try:
+        return bool(json.loads(SETTINGS.read_text()).get("linkedin", {}).get("enabled"))
+    except (OSError, ValueError):
+        return False
+
+
+def gh(*args, stdin=None):
+    return subprocess.run(["gh", *args, "--repo", REPO], input=stdin, check=True, capture_output=True, text=True).stdout.strip()
 
 
 def git(*args):
-    return subprocess.run(["git", *args], cwd=WURZEL, check=True, capture_output=True, text=True).stdout.strip()
+    return subprocess.run(["git", *args], cwd=ROOT, check=True, capture_output=True, text=True).stdout.strip()
 
 
-def tag_fuer_linkedin(zeit):
-    t = datetime.strptime(zeit[:10], "%Y-%m-%d") + timedelta(days=1)
+def linkedin_day(time_str):
+    t = datetime.strptime(time_str[:10], "%Y-%m-%d") + timedelta(days=1)
     while t.weekday() >= 5:
         t += timedelta(days=1)
-    return f"{WOCHENTAG[t.weekday()]} {t:%d.%m.} um 08:00"
+    return f"{WEEKDAY[t.weekday()]} {t.month}/{t.day} at 8:00 AM ET"
 
 
-def pdf(ordner, bilder, ziel):
-    seiten = []
-    for b in bilder:
-        jpg = ordner / "_jpg" / (Path(b).stem + ".jpg")  # gibt es meist schon (kleiner)
-        seiten.append(Image.open(jpg if jpg.exists() else ordner / b).convert("RGB"))
-    seiten[0].save(ziel, save_all=True, append_images=seiten[1:], resolution=150, quality=88)
+def pdf(folder, images, target):
+    from PIL import Image
+    pages = []
+    for b in images:
+        jpg = folder / "_jpg" / (Path(b).stem + ".jpg")  # usually exists already (smaller)
+        pages.append(Image.open(jpg if jpg.exists() else folder / b).convert("RGB"))
+    pages[0].save(target, save_all=True, append_images=pages[1:], resolution=150, quality=88)
 
 
 def main():
+    if not enabled():
+        print("LinkedIn: disabled (interaction.json → \"linkedin\": {\"enabled\": false}) – nothing to do.")
+        return
+    import ai
     plan = json.loads(PLAN.read_text())
-    neu = []
-    for e in plan["eintraege"]:
-        if e["typ"] != "karussell" or e["status"] not in ("freigegeben", "veroeffentlicht") or e["zeit"][:10] < HEUTE:
+    new = []
+    for e in plan["entries"]:
+        if e["type"] != "carousel" or e["status"] not in ("approved", "published") or e["time"][:10] < TODAY:
             continue
-        ordner = WURZEL / e["ordner"]
-        paket = ordner / "linkedin"
-        if (paket / "karussell.pdf").exists():
+        folder = ROOT / e["folder"]
+        package = folder / "linkedin"
+        if (package / "carousel.pdf").exists() or not all((folder / b).exists() for b in e.get("images", [])):
             continue
-        paket.mkdir(exist_ok=True)
-        pdf(ordner, e["bilder"], paket / "karussell.pdf")
-        original = (ordner / e["text"]).read_text().strip() if e.get("text") else ""
-        umgeschrieben = (ki.json_antwort(AUFGABE, {"instagram": original}, SCHEMA) or {}).get("text")
-        (paket / "text.md").write_text((umgeschrieben or "⚠️ Ohne KI erzeugt – bitte für LinkedIn anpassen:\n\n" + original) + "\n")
-        neu.append(e)
-        print("✓ LinkedIn-Paket", e["id"])
-    if not neu:
-        print("Keine neuen LinkedIn-Pakete.")
+        package.mkdir(exist_ok=True)
+        pdf(folder, e["images"], package / "carousel.pdf")
+        original = (folder / e["caption"]).read_text().strip() if e.get("caption") and (folder / e["caption"]).exists() else ""
+        rewritten = (ai.json_answer(TASK, {"instagram": original}, SCHEMA) or {}).get("text")
+        (package / "text.md").write_text((rewritten or "⚠️ Created without AI – please adapt for LinkedIn:\n\n" + original) + "\n")
+        new.append(e)
+        print("✓ LinkedIn package", e["id"])
+    if not new:
+        print("No new LinkedIn packages.")
         return
     git("add", "posts")
-    git("commit", "-m", f"LinkedIn-Pakete: {', '.join(e['id'] for e in neu)}")
-    for versuch in range(5):
+    git("commit", "-m", f"LinkedIn packages: {', '.join(e['id'] for e in new)}")
+    for attempt in range(5):
         try:
             git("pull", "--rebase", "-q")
             git("push")
             break
         except subprocess.CalledProcessError:
-            subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)  # sonst scheitern alle Versuche gleich
-            time.sleep(5 * (versuch + 1))
-    else:  # ohne Push zeigen die Issue-Links ins Leere und morgen entstünde ein zweites Paket
-        raise RuntimeError("LinkedIn-Pakete konnten nicht gespeichert werden (push 5× fehlgeschlagen)")
+            subprocess.run(["git", "rebase", "--abort"], cwd=ROOT, capture_output=True)  # otherwise every retry fails the same way
+            time.sleep(5 * (attempt + 1))
+    else:  # without the push the issue links point nowhere and tomorrow a second package would be built
+        raise RuntimeError("LinkedIn packages could not be saved (push failed 5×)")
     try:
-        gh("label", "create", LABEL, "--color", "0A66C2", "--description", "Karussell auch auf LinkedIn posten")
+        gh("label", "create", LABEL, "--color", "0A66C2", "--description", "Post the carousel on LinkedIn too")
     except subprocess.CalledProcessError:
         pass
-    for e in neu:
-        basis = f"https://github.com/{REPO}/blob/claude/instagram/{e['ordner']}/linkedin"
-        text = (f"@{REPO.split('/')[0]} Karussell `{e['id']}` (Instagram {e['zeit']}) ist fertig für LinkedIn.\n\n"
-                f"**Posten:** {tag_fuer_linkedin(e['zeit'])} – LinkedIn → *Beitrag beginnen* → *Dokument hinzufügen* → "
-                f"PDF hochladen, Titel = erste Zeile, Text einfügen.\n\n"
-                f"- 📄 [karussell.pdf]({basis}/karussell.pdf) (auf GitHub → *Download raw file*)\n"
-                f"- ✍️ [text.md]({basis}/text.md)\n\n"
-                "In der ersten Stunde auf jeden Kommentar antworten. Danach dieses Issue schließen.")
-        gh("issue", "create", "--title", f"💼 LinkedIn: {e['id'].split('-', 1)[1].replace('-', ' ')} – {tag_fuer_linkedin(e['zeit'])}",
-           "--label", LABEL, "--body-file", "-", eingabe=text)
+    for e in new:
+        base = f"https://github.com/{REPO}/blob/main/{e['folder']}/linkedin"
+        body = (f"@{REPO.split('/')[0]} Carousel `{e['id']}` (Instagram {e['time']} ET) is ready for LinkedIn.\n\n"
+                f"**Post:** {linkedin_day(e['time'])} – LinkedIn → *Start a post* → *Add a document* → "
+                f"upload the PDF, title = first line, paste the text.\n\n"
+                f"- 📄 [carousel.pdf]({base}/carousel.pdf) (on GitHub → *Download raw file*)\n"
+                f"- ✍️ [text.md]({base}/text.md)\n\n"
+                "Reply to every comment in the first hour. Then close this issue.")
+        gh("issue", "create", "--title", f"💼 LinkedIn: {e['id'].split('-', 1)[1].replace('-', ' ')} – {linkedin_day(e['time'])}",
+           "--label", LABEL, "--body-file", "-", stdin=body)
 
 
 if __name__ == "__main__":

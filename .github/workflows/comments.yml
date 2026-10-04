@@ -1,10 +1,10 @@
-name: Kommentare
-# Nach jedem Posten-Takt (alle 15 Min.): neue Kommentare unter eigenen Beiträgen mit Antwortvorschlag ins Issue
-# „💬 Kommentare beantworten“. Antwort „K12 ok“ / „K12 eigener Text“ im Issue → wird als Antwort gepostet.
-# Schickt nie DMs – das macht ManyChat. Kommentare mit ManyChat-Stichwort bleiben außen vor.
+name: Comments
+# After every post run (every 15 min): new comments under your own posts with a reply suggestion into the issue
+# "💬 Reply to comments". Reply "C12 ok" / "C12 your own text" in the issue → posted as a reply.
+# Never sends DMs – ManyChat does that. Comments with a ManyChat keyword are skipped.
 on:
   workflow_run:
-    workflows: ["Instagram posten"]
+    workflows: ["Instagram post"]
     types: [completed]
   issue_comment:
     types: [created]
@@ -13,13 +13,13 @@ permissions:
   contents: write
   issues: write
 jobs:
-  pruefen:
-    concurrency: { group: kommentare, cancel-in-progress: false }
-    if: github.event_name != 'issue_comment'
+  check:
+    concurrency: { group: comments, cancel-in-progress: false }
+    if: github.repository == 'maehrsteuern/maehrtax---instagram' && github.event_name != 'issue_comment'
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-        with: { ref: claude/instagram }
+        with: { ref: main }
       - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests anthropic
@@ -29,22 +29,23 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GH_TOKEN: ${{ github.token }}
-        run: python automatik/kommentare.py pruefen
-  antwort:
-    # je Kommentar eigene Gruppe: in einer gemeinsamen Gruppe verdrängt ein neuer Kommentar einen wartenden
-    # Lauf (GitHub hält nur einen) – dessen Text ginge verloren. Parallel ist ok: Push mit pull --rebase + Wiederholung.
+        run: python automation/comments.py check
+  reply:
+    # one group per comment: in a shared group a new comment pushes out a waiting run
+    # (GitHub keeps only one) – its text would be lost. Parallel is fine: push with pull --rebase + retries.
     concurrency:
-      group: kommentare-c${{ github.event.comment.id }}
+      group: comments-c${{ github.event.comment.id }}
       cancel-in-progress: false
-    # nur Kommentare des Konto-Inhabers im Kommentar-Issue
+    # only comments by the account owner in the comments issue
     if: >-
+      github.repository == 'maehrsteuern/maehrtax---instagram' &&
       github.event_name == 'issue_comment' &&
       github.event.comment.user.login == github.repository_owner &&
-      contains(github.event.issue.labels.*.name, 'kommentare')
+      contains(github.event.issue.labels.*.name, 'comments')
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-        with: { ref: claude/instagram }
+        with: { ref: main }
       - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests
@@ -53,5 +54,5 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           GH_TOKEN: ${{ github.token }}
-          KOMMENTAR: ${{ github.event.comment.body }}
-        run: python automatik/kommentare.py antwort "$KOMMENTAR"
+          COMMENT: ${{ github.event.comment.body }}
+        run: python automation/comments.py reply "$COMMENT"

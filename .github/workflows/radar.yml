@@ -1,10 +1,11 @@
 name: Radar
-# Täglich morgens: Arbeitsliste fürs Kommentieren/DMs/Collab als Issue (automatik/radar.py)
-# und LinkedIn-Pakete für freigegebene Karussells (automatik/linkedin.py). Postet und schreibt nie selbst.
-# Hauptauslöser ist lage.yml (07:00–10:00 Uhr deutscher Zeit, falls heute noch kein Lauf); der Zeitplan hier ist Reserve.
+# Daily in the morning: work list for commenting/DMs/collabs as an issue (automation/radar.py)
+# and LinkedIn packages for approved carousels (automation/linkedin.py – off unless enabled in interaction.json).
+# Never posts or writes by itself. Main trigger is status.yml (7:00–10:00 AM ET, if no run today yet);
+# the schedule here is the backup (UTC: 8:13 AM EDT / 7:13 AM EST).
 on:
   schedule:
-    - cron: "13 5 * * *"
+    - cron: "13 12 * * *"
   workflow_dispatch:
 concurrency:
   group: radar
@@ -14,10 +15,11 @@ permissions:
   issues: write
 jobs:
   radar:
+    if: github.repository == 'maehrsteuern/maehrtax---instagram'
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-        with: { ref: claude/instagram }
+        with: { ref: main }
       - uses: actions/setup-python@v7
         with: { python-version: "3.12" }
       - run: pip install -q requests pillow anthropic
@@ -28,10 +30,10 @@ jobs:
           FB_IG_USER_ID: ${{ secrets.FB_IG_USER_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GH_TOKEN: ${{ github.token }}
-        run: python automatik/radar.py
-      - name: LinkedIn-Pakete
+        run: python automation/radar.py
+      - name: LinkedIn packages
         if: always()
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GH_TOKEN: ${{ github.token }}
-        run: python automatik/linkedin.py
+        run: python automation/linkedin.py

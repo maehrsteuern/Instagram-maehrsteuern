@@ -38,7 +38,7 @@ Arbeite die Module A–E der Reihe nach ab. Frag mich vor jedem Modul kurz: „M
 Bericht: Benutzername · Kontotyp/Kategorie · Bio übernommen ja/nein · Profilbild ja/nein.
 
 ══════════ MODUL B – Meta-Anbindung für die Automatik (ca. 25 Min.) ══════════
-Anleitung im Detail: SETUP.md im Repo Instagram-maehrtax (oder Branch ccr-acb37e3e-odwjlo im Repo Instagram-maehrsteuern).
+Anleitung im Detail: SETUP.md im Repo maehrtax---instagram (github.com/maehrsteuern/maehrtax---instagram).
 1. facebook.com → neue Facebook-Seite „Loris | Tax × Code“ (Kategorie Business consultant), nichts posten.
    Seite mit @maehrtax verknüpfen (Seiten-Einstellungen → Verknüpfte Konten → Instagram).
 2. developers.facebook.com/apps → vorhandene App „maehrsteuern Autopilot“ → App-Rollen → Rollen →
@@ -52,17 +52,19 @@ Anleitung im Detail: SETUP.md im Repo Instagram-maehrtax (oder Branch ccr-acb37e
    auch hier STOPP, sobald ein Token erscheint.
 Bericht: Facebook-Seite angelegt + verknüpft ja/nein · Tester angenommen ja/nein · Token erzeugt (von mir kopiert) ja/nein.
 
-══════════ MODUL C – Radar-Konten USA finden (ca. 30 Min.) ══════════
+══════════ MODUL C – Radar-Konten USA prüfen und ergänzen (ca. 30 Min.) ══════════
 Ziel: 40 aktive US-Konten aus unserer Nische, die der Radar täglich beobachtet (wir kommentieren dort von Hand).
-1. Auf instagram.com suchen (Suche + Hashtags #taxprofessional #cpa #taxseason #accountingtech #taxtech #asc740
-   #salestax #corporatetax #exceltips #cpaexam). Nur Business-/Creator-Konten (private liefert die Schnittstelle nicht).
-2. Mischung: ca. 12 CPA-Kanzleien/Tax-Preparer mit aktivem Profil · 12 Tax-/Accounting-Creator ·
-   8 Tax-/Accounting-Software & -Tech · 8 Ausbildung (CPA-Exam, Accounting-Studium, Verbände).
-   Bevorzugt 1.000–100.000 Follower, letzter Beitrag < 14 Tage, Sprache Englisch, Sitz USA.
-   Nicht: private Konten, Behörden, reine Werbe-/Gewinnspielkonten, Konten mit Steuer-„Hacks“, die nach Steuerhinterziehung klingen.
-3. Jedes Konto kurz öffnen und prüfen: existiert, öffentlich, aktiv, wirklich Nische.
-Bericht: Tabelle (Benutzername ohne @ · Art: cpa_firm | creator | software | education · Follower ca. · Thema in 5 Wörtern ·
-letzter Beitrag) – und zusätzlich genau dieser JSON-Block zum Einfügen in automation/interaction.json (radar.accounts):
+Claude Code hat schon vorrecherchiert: automation/interaction.json im Repo maehrsteuern/maehrtax---instagram
+→ radar.accounts (40 Konten, Handle per Web belegt) und radar.candidates_to_verify (17 unsichere Kandidaten).
+1. Jedes Konto aus radar.accounts auf instagram.com öffnen und prüfen: existiert, öffentlich, Business/Creator,
+   Sitz USA, letzter Beitrag < 30 Tage, wirklich Nische (Steuern/Accounting/Tax-Tech/CPA-Ausbildung).
+2. Dasselbe für radar.candidates_to_verify.
+3. Lücken auffüllen, bis 40 gute Konten stehen – Mischung ca. 12 CPA-Kanzleien/Tax-Preparer · 12 Creator ·
+   8 Software/Tech · 8 Ausbildung. Suche über #taxprofessional #cpa #taxseason #accountingtech #taxtech #asc740
+   #salestax #corporatetax #cpaexam. Bevorzugt 1.000–100.000 Follower.
+   Nicht: private Konten, Behörden, Werbe-/Gewinnspielkonten, „Tax-Hacks“ Richtung Hinterziehung.
+Bericht: Tabelle (Benutzername · Art: cpa_firm | creator | software | education · Follower ca. · letzter Beitrag ·
+behalten/raus/neu) – und genau diesen JSON-Block mit der fertigen Liste zum Einfügen in radar.accounts:
 [{"name": "beispielkonto", "kind": "creator"}, …]
 
 ══════════ MODUL D – ManyChat für @maehrtax (ca. 20 Min.) ══════════

@@ -6,7 +6,7 @@ The Content Factory is a recurring Claude Code routine that produces the next po
 |---|---|
 | Name | **Content Factory @maehrtax** |
 | Schedule | Mon + Thu 8:47 AM Berlin – cron `CRON_TZ=Europe/Berlin 47 8 * * 1,4` (= 2:47 AM ET) |
-| Mode | fresh session per run, repo `maehrsteuern/Instagram-maehrtax`, branch `main` |
+| Mode | fresh session per run, repo `maehrsteuern/maehrtax---instagram`, branch `main` |
 | Output | up to 6 feed posts as `draft` in `automation/plan.json` → approval issues → Loris answers `go` / `stop` (Mon + Thu 7:00 PM Berlin) |
 
 To change the routine: edit the prompt below **and** update the routine itself (only possible from a Claude session with access to the routine). Keep both in sync.
@@ -15,7 +15,7 @@ To change the routine: edit the prompt below **and** update the routine itself (
 
 ```text
 You are the Content Factory for the Instagram account @maehrtax ("Tax × Code – tax know-how that computes"),
-the US English sister account of the German @maehrsteuern. Owner: Loris. Repo: maehrsteuern/Instagram-maehrtax,
+the US English sister account of the German @maehrsteuern. Owner: Loris. Repo: maehrsteuern/maehrtax---instagram,
 branch main. You produce the next posts as drafts. You NEVER publish, never set a status to "approved",
 never comment on Instagram, never send DMs. Loris approves every post himself in its approval issue.
 

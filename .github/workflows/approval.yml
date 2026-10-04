@@ -1,0 +1,44 @@
+name: Approval
+# New drafts in plan.json → issue with preview. Reply "go"/"stop" in the issue → status in plan.json.
+on:
+  push:
+    branches: [main]
+    paths: [automation/plan.json]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  request:
+    # own group: in instagram-plan the 15-min post run would push out a waiting approval run.
+    # plan.json is merged via pull --rebase.
+    concurrency: { group: approval, cancel-in-progress: false }
+    if: github.repository == 'maehrsteuern/maehrtax---instagram' && github.event_name != 'issue_comment'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - env: { GH_TOKEN: "${{ github.token }}" }
+        run: python3 automation/approval.py request
+  reply:
+    # one group per comment: in a shared group a new comment pushes out a waiting run
+    # (GitHub keeps only one) – its text would be lost. Parallel is fine: push with pull --rebase + retries.
+    concurrency:
+      group: approval-c${{ github.event.comment.id }}
+      cancel-in-progress: false
+    # only comments by the account owner in approval issues
+    if: >-
+      github.repository == 'maehrsteuern/maehrtax---instagram' &&
+      github.event_name == 'issue_comment' &&
+      github.event.comment.user.login == github.repository_owner &&
+      contains(github.event.issue.labels.*.name, 'approval')
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - env:
+          GH_TOKEN: "${{ github.token }}"
+          COMMENT: "${{ github.event.comment.body }}"
+        run: python3 automation/approval.py reply "${{ github.event.issue.number }}" "$COMMENT"

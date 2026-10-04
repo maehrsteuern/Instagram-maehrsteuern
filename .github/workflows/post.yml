@@ -1,0 +1,45 @@
+name: Instagram post
+# Every 15 minutes (GitHub sometimes skips scheduled runs) check whether an approved entry is due within the next
+# 75 minutes (see automation/plan.json, times in ET). An external cron (cron-job.org) can trigger post.yml too.
+on:
+  schedule:
+    - cron: "4,19,34,49 * * * *"
+  workflow_dispatch:
+    inputs:
+      now:
+        description: "ID of an approved entry to post right away (empty = normal)"
+        required: false
+      test:
+        description: "ID for a test run – uploads, publishes NOTHING (e.g. 03-excel-mistakes)"
+        required: false
+concurrency:
+  group: instagram-plan
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+jobs:
+  post:
+    # only in the US repo – never in the German sister repo
+    if: github.repository == 'maehrsteuern/maehrtax---instagram'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.12" }
+      - run: pip install -q requests pillow
+      - name: Git identity
+        run: git config user.name "Loris M." && git config user.email "mkwloris@googlemail.com"
+      - name: Post
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_TOKEN: ${{ github.token }}
+          # inputs only as environment variables – used directly in the script a crafted ID could run commands
+          TEST: ${{ inputs.test }}
+          NOW: ${{ inputs.now }}
+        run: |
+          if [ -n "$TEST" ]; then python automation/post.py --test "$TEST"
+          elif [ -n "$NOW" ]; then python automation/post.py --now "$NOW"
+          else python automation/post.py; fi
