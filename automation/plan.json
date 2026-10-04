@@ -358,7 +358,7 @@
         "slide_07.png"
       ],
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "note": "Conversion carousel + lead magnet (checklist via DM TOOL)",
       "issue": 14
     },
@@ -370,7 +370,7 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 14
     },
     {
@@ -381,7 +381,7 @@
       "images": [
         "story_cta.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 14
     },
     {
