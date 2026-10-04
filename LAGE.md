@@ -1,15 +1,16 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 14:52 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 15:54 Uhr._
 
-**Als Nächstes online:** 🎬 Reel `01-reel-ampel` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 🎬 Reel `01-reel-5dinge` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
 - Neustart läuft: Start-Storys + Vorfreude (30.09.) und Neuvorstellung (Do 01.10. 18:30, von Hand) sind online. Nach 2 h: 26 erreicht, 6× geteilt, 0 neue Follower. Angepinnt ✓ (03.10.). Offen von Hand: Highlight „Start 👋“.
 - Wochenrhythmus ab Okt. steht im Prompt der Content-Fabrik (Mo + Do 08:47, max. 4 Beiträge pro Lauf): Di/Do Karussell + Teaser, Mi Begleit-Reel, Fr Wissens-Reel oder Stimm-Reel, So Reel + Teaser, täglich 12:15 Story.
 - Content-Fabrik nutzt ab Mo 05.10. die Lernpunkte aus `strategie/wettbewerb.md` (über Abschnitt in `08_hooks.md`): pro Lauf ≥ 1 Hook „konkreter Fall“ oder „Prüfer/Finanzamt“, Lernpunkt im Freigabe-Issue vermerkt. Routine-Prompt selbst unverändert (nur aus ihrer eigenen Sitzung änderbar).
-- Bis 10.10. alles freigegeben: Reel Ampel mit Stimme (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
+- **So 04.10. umgebaut:** Statt Ampel-Reel geht 19:30 das Community-Reel „5 Sachen, die ich aus Excel rausgeschmissen hab“ online (Loris' Sprachnachricht, 41 s, keine Werbung, CTA: Zahl 1–5 in die Kommentare) + neue Teaser-Story 19:35. Ampel-Reel und alter Teaser stehen auf `pause` – kann später wieder eingeplant werden. Die Kommentar-Antworten (welche Nummer?) sind die Themen für die nächsten Reels.
+- Bis 10.10. alles freigegeben: 5-Dinge-Reel (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
 - Latente Steuern bitte fachlich gegenlesen (`pruefzettel.md` im Post-Ordner; Bildunterschrift schon auf „Spätestens im Abschluss 2026“ angepasst). Änderungen bis Mi 07.10. abends.
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.): **Loris baut die Konzeption selbst um (03.10.)** – bis dahin gilt Variante B (`drehbuch_markenweg.md`) nicht als gesetzt, keine Sprachnachricht anfordern, nichts schneiden. Status bleibt `wartet_auf_sprachnachricht`, bis das neue Konzept da ist. **KI-Hinweis** (falls KI-Karten bleiben): Hinweis in der Bildunterschrift, Label nach dem Posten in der App prüfen.
@@ -37,8 +38,10 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | 🟢 freigegeben (geht automatisch online) | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
-| So 04.10. 19:35 | 📱 Story `01-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
+| So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | pause | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
+| So 04.10. 19:30 | 🎬 Reel `01-reel-5dinge` | 🟢 freigegeben (geht automatisch online) | Ersetzt Ampel-Reel (Go am 04.10. von Loris direkt im Chat). Community-Reel ohne Werbung: Loris erzählt 5 Dinge, die mit Code besser gehen als mit Excel (Countdown 5→1), Bilder Excel vorher / Code heute, Untertitel wörtlich, Musik ganz leise, CTA Zahl in die Kommentare, 41 s |
+| So 04.10. 19:35 | 📱 Story `01-story-teaser` | pause | 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. |
+| So 04.10. 19:35 | 📱 Story `01-story-teaser-5dinge` | 🟢 freigegeben (geht automatisch online) |  |
 | Mo 05.10. 12:15 | 📱 Story `02-story-umfrage` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:35 | 📱 Story `02-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
@@ -105,6 +108,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 15:54 ✍️ Ampel-Reel und Teaser 04.10. pausiert: Go zurückgenommen, wird durch Reel „5 Dinge mit Code statt Excel“ ersetzt ([`ca552b3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ca552b33fbf7c6500de59b076c41b3ff7e916f09))
+  - Plan: `01-reel-ampel` status: freigegeben → pause; `01-story-teaser` status: freigegeben → pause
 - 14:52 📈 Statistik 2026-10-04 ([`e5a407c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e5a407c19b52d51642910375205b1c48b17183e1))
   - `automatik/statistik`
 - 13:07 📡 Radar 2026-10-04: 8 Beiträge, 0 DM-Entwürfe ([`996fe74`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/996fe74d4dbf888d86c5d28492b53f48b2ec0864))

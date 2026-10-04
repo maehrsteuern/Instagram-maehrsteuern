@@ -141,6 +141,27 @@
       "hinweis": "04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“."
     },
     {
+      "id": "01-reel-5dinge",
+      "zeit": "2026-10-04 19:30",
+      "typ": "reel",
+      "ordner": "posts/01_2026-10-04_reel_5dinge",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "freigegeben",
+      "hinweis": "Ersetzt Ampel-Reel (Go am 04.10. von Loris direkt im Chat). Community-Reel ohne Werbung: Loris erzählt 5 Dinge, die mit Code besser gehen als mit Excel (Countdown 5→1), Bilder Excel vorher / Code heute, Untertitel wörtlich, Musik ganz leise, CTA Zahl in die Kommentare, 41 s"
+    },
+    {
+      "id": "01-story-teaser-5dinge",
+      "zeit": "2026-10-04 19:35",
+      "typ": "story",
+      "ordner": "posts/01_2026-10-04_reel_5dinge",
+      "bilder": [
+        "story_so_teaser.png"
+      ],
+      "status": "freigegeben"
+    },
+    {
       "id": "02-story-umfrage",
       "zeit": "2026-10-05 12:15",
       "typ": "story",

@@ -1,0 +1,80 @@
+{
+  "ausgabe": "../../posts/01_2026-10-04_reel_5dinge/bausteine",
+  "bilder": [
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "hook.png",
+      "bild": "hook"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "5a.png",
+      "bild": "5a"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "5b.png",
+      "bild": "5b"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "4a.png",
+      "bild": "4a"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "4b.png",
+      "bild": "4b"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "3a.png",
+      "bild": "3a"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "3b.png",
+      "bild": "3b"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "2a.png",
+      "bild": "2a"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "2b.png",
+      "bild": "2b"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "1a.png",
+      "bild": "1a"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "1b.png",
+      "bild": "1b"
+    },
+    {
+      "vorlage": "fuenf_dinge",
+      "datei": "ende.png",
+      "bild": "ende"
+    },
+    {
+      "vorlage": "reel_titel",
+      "datei": "../titelbild.png",
+      "saeule": "Wissen",
+      "titel": "5 Sachen –\nraus aus *Excel*",
+      "sub": "Und Nummer 1 spart am meisten Zeit."
+    },
+    {
+      "vorlage": "story",
+      "datei": "../story_so_teaser.png",
+      "typ": "teaser",
+      "kicker": "Neues Reel",
+      "titel": "5 Dinge, die mit *Code* besser gehen als mit Excel.",
+      "bild": "../../posts/01_2026-10-04_reel_5dinge/titelbild.png"
+    }
+  ]
+}

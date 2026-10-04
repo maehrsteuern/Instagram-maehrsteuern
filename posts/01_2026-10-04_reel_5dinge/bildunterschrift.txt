@@ -1,0 +1,16 @@
+5 Dinge, die ich aus Excel rausgeschmissen hab 👇
+
+5️⃣ Listen abgleichen – statt SVERWEIS und #NV ein paar Zeilen Code, egal wie lang die Liste ist
+4️⃣ Doppelte Rechnungsnummern und Lücken finden – in einer Sekunde, nicht erst in der Prüfung
+3️⃣ Sehen, wer was geändert hat – jede Version bleibt gespeichert, kein „final_final_v3“ mehr
+2️⃣ Zeile einfügen, ohne dass die Summe kaputtgeht
+1️⃣ Der Monatsbericht – Daten rein, ein Klick, fertig
+
+Excel bleibt super zum schnellen Rechnen. Aber alles, was sich jeden Monat wiederholt, macht bei mir inzwischen Code.
+
+Welche Nummer soll ich dir Schritt für Schritt zeigen? Schreib die Zahl in die Kommentare 👇
+🔖 Speicher dir das für später.
+
+Alle Zahlen im Video sind Beispieldaten.
+
+#steuern #steuerabteilung #excel #python #automatisierung
