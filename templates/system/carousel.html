@@ -1,54 +1,91 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="text.js"></script>
-<!-- Karussell-Folie 1080×1350 (4:5). Typen: titel | inhalt | cta -->
+<!--
+Carousel slide 1080×1350 (4:5) for @maehrtax.
+Data keys (all optional unless noted; text keys understand *green* and \n):
+  type      string   "title" | "content" | "cta"            (required)
+  pillar    string   kicker on top: "DEMO" | "IN PRACTICE" | "KNOW-HOW" | "BEHIND THE CODE" | "SATISFYING"
+                     (cta default: "TAX × CODE")
+  title     string   headline                                 (required)
+  sub       string   subline under the title (type "title")
+  nr        string   big number above the headline, e.g. "01" (type "content")
+  text      string   body text
+  points    string[] arrow list
+  head      string[] table header row (any number of columns)
+  rows      string[][] table rows; first column = label, all other columns right-aligned mono
+  total     boolean  style the last table row as a total (green line)
+  box       string   highlighted box (e.g. the fix)
+  boxTitle  string   label of the box, default "FIX"
+  chip      string   CTA pill (type "cta"), default '💬 DM “TOOL”'
+  note      string   small muted line at the bottom (e.g. "Simplified example.")
+  photo     string   path to a transparent cutout (relative to this file), shown bottom right (type "title")
+  page, of  number   set automatically by render.mjs (page 1 shows "Swipe →")
+-->
 <style>
 html,body{width:1080px;height:1350px}
 body{background:radial-gradient(110% 70% at 80% 0%,var(--glow) 0%,var(--bg) 60%)}
-.pad{position:absolute;inset:96px 96px 150px}
+.pad{position:absolute;inset:96px 96px 150px;display:flex;flex-direction:column;justify-content:center}
+.pad.photo{right:470px}
 .kicker{font-size:28px}
 h1{font-family:var(--serif);font-weight:600;font-size:112px;line-height:1.02;margin:40px 0 0;letter-spacing:-.01em}
+.photo h1{font-size:88px}
+.photo .sub{font-size:36px}
 h2{font-family:var(--serif);font-weight:600;font-size:72px;line-height:1.08;margin:28px 0 0}
 .sub{font-size:40px;line-height:1.4;color:var(--text2);margin-top:44px;max-width:860px}
-.nr{font-family:var(--mono);font-weight:600;font-size:150px;line-height:1;color:var(--gruen);opacity:.9}
-.txt{font-size:38px;line-height:1.5;color:var(--text2);margin-top:36px}
+.nr{font-family:var(--mono);font-weight:600;font-size:150px;line-height:1;color:var(--gruen);opacity:.9;margin-top:24px}
+.nr + h2{margin-top:16px}
+.txt{font-size:40px;line-height:1.5;color:var(--text2);margin-top:36px}
 .box{margin-top:44px;padding:34px 40px;border-left:6px solid var(--gruen);background:var(--gruen-soft);border-radius:0 18px 18px 0;
-  font-size:34px;line-height:1.45;color:var(--text)}
+  font-size:36px;line-height:1.45;color:var(--text)}
 .box b{font-family:var(--mono);font-size:24px;letter-spacing:.2em;color:var(--gruen);display:block;margin-bottom:10px}
 ul{list-style:none;padding:0;margin:40px 0 0}
-li{font-size:38px;line-height:1.35;margin:0 0 26px;padding-left:58px;position:relative;color:var(--text2)}
+li{font-size:40px;line-height:1.35;margin:0 0 26px;padding-left:58px;position:relative;color:var(--text2)}
+li:last-child{margin-bottom:0}
 li:before{content:"→";position:absolute;left:0;color:var(--gruen);font-family:var(--mono);font-weight:600}
-table{width:100%;border-collapse:collapse;margin-top:40px;font-size:34px}
-td{padding:18px 0;border-bottom:2px solid rgba(143,163,152,.25);color:var(--text2)}
-td:last-child{text-align:right;font-family:var(--mono);font-weight:600;color:var(--text);white-space:nowrap;padding-left:24px}
-tr.summe td{border-bottom:none;border-top:4px solid var(--gruen);color:var(--text);font-weight:600}
-tr.summe td:last-child{color:var(--gruen)}
+table{width:100%;border-collapse:collapse;margin-top:40px;font-size:38px}
+th{font-family:var(--mono);font-size:24px;letter-spacing:.12em;text-transform:uppercase;color:var(--grau);font-weight:600;
+  text-align:right;padding:0 0 14px 24px;border-bottom:2px solid rgba(143,163,152,.45);white-space:nowrap}
+th:first-child{text-align:left;padding-left:0}
+td{padding:22px 0;border-bottom:2px solid rgba(143,163,152,.25);color:var(--text2)}
+td+td{text-align:right;font-family:var(--mono);font-weight:600;color:var(--text);white-space:nowrap;padding-left:24px}
+tr.total td{border-bottom:none;border-top:4px solid var(--gruen);color:var(--text);font-weight:600}
+tr.total td+td{color:var(--gruen)}
+.note{margin-top:36px;font-size:28px;line-height:1.4;color:var(--grau)}
 .foot{position:absolute;left:96px;right:96px;bottom:64px;display:flex;justify-content:space-between;align-items:center;
   font-family:var(--mono);font-size:26px;color:var(--grau)}
 .bar{position:absolute;left:0;bottom:0;height:8px;background:var(--gruen)}
 .swipe{color:var(--gruen);font-weight:600}
-.cta .chip{font-size:46px;margin-top:64px}
-.center{display:flex;flex-direction:column;justify-content:center;height:100%}
+.cta h2{font-size:88px}
+.cta .chip{font-size:46px;margin-top:64px;color:var(--text)}
+.portrait{position:absolute;right:-40px;bottom:130px;height:1000px;
+  -webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent 99%)}
+.halo{position:absolute;right:-120px;bottom:180px;width:760px;height:900px;
+  background:radial-gradient(closest-side,rgba(83,195,162,.22),transparent)}
 </style></head><body>
-<div class="pad" id="pad"></div>
-<div class="foot"><span>@maehrsteuern</span><span id="seite"></span></div>
+<div class="pad fit" id="pad"><div id="inner"></div></div>
+<div class="foot"><span>@maehrtax</span><span id="page"></span></div>
 <div class="bar" id="bar"></div>
 <script>
-const d = window.DATA || {typ:'titel',saeule:'Praxis',titel:'5 Excel-Fehler in der\n*Steuerrückstellung*',sub:'Und wie ein Tool sie verhindert.',seite:1,von:7};
-const p = $('pad');
-if (d.typ==='titel') {
-  p.className='pad center';
-  p.innerHTML = `<div class="kicker">${fmt(d.saeule)}</div><h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}`;
-} else if (d.typ==='inhalt') {
-  p.className='pad center';
-  p.innerHTML = `${d.nr?`<div class="nr">${fmt(d.nr)}</div>`:`<div class="kicker">${fmt(d.saeule)}</div>`}<h2>${fmt(d.titel)}</h2>
-   ${d.text?`<div class="txt">${fmt(d.text)}</div>`:''}
-   ${d.punkte?`<ul>${d.punkte.map(x=>`<li>${fmt(x)}</li>`).join('')}</ul>`:''}
-   ${d.zeilen?`<table>${d.zeilen.map(z=>`<tr class="${z[2]||''}"><td>${fmt(z[0])}</td><td>${fmt(z[1])}</td></tr>`).join('')}</table>`:''}
-   ${d.box?`<div class="box"><b>${fmt(d.boxTitel||'LÖSUNG')}</b>${fmt(d.box)}</div>`:''}`;
+const d = window.DATA || {type:'title',pillar:'IN PRACTICE',title:'5 spreadsheet mistakes\nin your *tax provision*',sub:'And the fix for each one.',page:1,of:7};
+const p = $('pad'), q = $('inner');
+const kicker = `<div class="kicker">${fmt(d.pillar || (d.type==='cta' ? 'TAX × CODE' : ''))}</div>`;
+const table = () => !d.rows ? '' : `<table>${d.head?`<tr>${d.head.map(x=>`<th>${fmt(x)}</th>`).join('')}</tr>`:''}${d.rows.map((r,i)=>
+  `<tr class="${d.total && i===d.rows.length-1 ? 'total' : ''}">${r.map(c=>`<td>${fmt(c)}</td>`).join('')}</tr>`).join('')}</table>`;
+const body = () => `${d.text?`<div class="txt">${fmt(d.text)}</div>`:''}
+   ${d.points?`<ul>${d.points.map(x=>`<li>${fmt(x)}</li>`).join('')}</ul>`:''}
+   ${table()}
+   ${d.box?`<div class="box"><b>${fmt(d.boxTitle||'FIX')}</b>${fmt(d.box)}</div>`:''}`;
+const note = d.note ? `<div class="note">${fmt(d.note)}</div>` : '';
+if (d.type==='title') {
+  q.innerHTML = `${kicker}<h1>${fmt(d.title)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}${body()}${note}`;
+  if (d.photo) { p.classList.add('photo'); document.body.insertAdjacentHTML('afterbegin', `<div class="halo"></div><img class="portrait" src="${d.photo}">`); }
+} else if (d.type==='content') {
+  q.innerHTML = `${kicker}${d.nr?`<div class="nr">${fmt(d.nr)}</div>`:''}<h2>${fmt(d.title)}</h2>${body()}${note}`;
 } else {
-  p.className='pad center cta';
-  p.innerHTML = `<div class="kicker">${fmt(d.saeule||'Steuern × Code')}</div><h2 style="font-size:88px">${fmt(d.titel)}</h2>
-   ${d.text?`<div class="txt">${fmt(d.text)}</div>`:''}<div><span class="chip">${fmt(d.chip||'💬 Schreib „TOOL“ per DM')}</span></div>`;
+  p.classList.add('cta');
+  q.innerHTML = `${kicker}<h2>${fmt(d.title)}</h2>${d.text?`<div class="txt">${fmt(d.text)}</div>`:''}
+   <div><span class="chip">${fmt(d.chip||'💬 DM “TOOL”')}</span></div>${note}`;
 }
-$('seite').innerHTML = d.seite===1 ? `<span class="swipe">Wischen →</span>` : `${d.seite}/${d.von}`;
-$('bar').style.width = (100*d.seite/d.von)+'%';
+const page = d.page || 1, of = d.of || 1;
+$('page').innerHTML = page===1 ? `<span class="swipe">Swipe →</span>` : `${page}/${of}`;
+$('bar').style.width = (100*page/of)+'%';
 </script></body></html>

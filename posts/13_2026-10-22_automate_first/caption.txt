@@ -1,0 +1,12 @@
+3 tax workflows I'd automate first.
+
+1) Provision rollforward & rate reconciliation
+2) Sales-tax nexus tracking (thresholds vary by state)
+3) 1099 vendor checks – before January 31 hits
+The rule behind all three: AI reads, code calculates.
+
+💬 DM me "TOOL" → free Spreadsheet-to-Code Checklist (PDF) + a short demo with sample data.
+
+Educational content – not tax, legal or accounting advice.
+
+#taxtech #automation #salestax #taxprovision #accounting

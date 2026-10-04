@@ -1,0 +1,10 @@
+{ "output": "../../posts/13_2026-10-22_automate_first",
+  "images": [
+    { "template":"story", "file":"story_teaser.png", "type":"teaser", "kicker":"NEW POST",
+      "title":"3 tax workflows I’d *automate first*.",
+      "image":"../../posts/13_2026-10-22_automate_first/slide_01.png" },
+    { "template":"story", "file":"story_cta.png", "type":"teaser", "kicker":"FREE CHECKLIST",
+      "title":"Spreadsheet → *code*: 12 checks.",
+      "image":"../../assets/lead_magnet/checklist_preview.png",
+      "hint":"Free PDF + free demo with sample data", "cta":true, "chip":"💬 DM “TOOL”" }
+  ] }

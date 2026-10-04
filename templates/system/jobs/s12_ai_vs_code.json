@@ -1,0 +1,7 @@
+{ "output": "../../posts/12_2026-10-22_reel_ai_vs_code",
+  "images": [
+    { "template":"story", "file":"story_poll.png", "type":"question", "kicker":"QUICK POLL",
+      "title":"AI or code for your *tax math*?",
+      "text":"Same numbers, deadline night, 11 PM. Which one do you trust?",
+      "slotHint":"Vote below ↓" }
+  ] }

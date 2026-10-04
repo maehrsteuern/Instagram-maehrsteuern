@@ -1,0 +1,10 @@
+{ "output": "../../posts/10_2026-10-20_174a_deferred_taxes",
+  "images": [
+    { "template":"story", "file":"story_question.png", "type":"question", "kicker":"QUICK QUESTION",
+      "title":"Did you capitalize *R&D* in 2022\u2060–\u20602024?",
+      "text":"Tomorrow: what § 174A does to those deferred taxes.",
+      "slotHint":"Vote below ↓" },
+    { "template":"story", "file":"story_teaser.png", "type":"teaser", "kicker":"NEW POST",
+      "title":"§ 174A: R&D expensing *is back*.",
+      "image":"../../posts/10_2026-10-20_174a_deferred_taxes/slide_01.png" }
+  ] }

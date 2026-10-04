@@ -1,5 +1,6 @@
-@import url("../schriften.css");
-/* Marken-Tokens maehrsteuern – hier zentral ändern, alle Vorlagen ziehen mit */
+@import url("../fonts.css"); /* embedded IBM Plex fonts (file was renamed from schriften.css) */
+/* Brand tokens (@maehrtax / @maehrsteuern share one visual family) – change them here, every template follows.
+   Variable names stay as they are (--gruen = accent green, --grau = muted gray, --rot = red) because all templates use them. */
 :root{
   --bg:#0B110E; --bg2:#153A31; --glow:#12302A;
   --gruen:#53C3A2; --gruen-soft:rgba(83,195,162,.12);

@@ -1,0 +1,8 @@
+{ "output": "../../assets/highlights",
+  "images": [
+    { "template":"highlight", "file":"hl_start.png",    "icon":"start" },
+    { "template":"highlight", "file":"hl_tools.png",    "icon":"tools" },
+    { "template":"highlight", "file":"hl_learn.png",    "icon":"learn" },
+    { "template":"highlight", "file":"hl_faq.png",      "icon":"faq" },
+    { "template":"highlight", "file":"hl_feedback.png", "icon":"feedback" }
+  ] }

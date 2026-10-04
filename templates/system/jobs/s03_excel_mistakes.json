@@ -1,0 +1,10 @@
+{ "output": "../../posts/03_2026-10-13_excel_mistakes",
+  "images": [
+    { "template":"story", "file":"story_poll.png", "type":"question", "kicker":"QUICK POLL",
+      "title":"How many spreadsheets feed your *provision*?",
+      "text":"Be honest. Nobody from your audit team is watching.",
+      "slotHint":"Vote below ↓" },
+    { "template":"story", "file":"story_teaser.png", "type":"teaser", "kicker":"NEW POST",
+      "title":"5 spreadsheet mistakes in your *provision*.",
+      "image":"../../posts/03_2026-10-13_excel_mistakes/slide_01.png" }
+  ] }

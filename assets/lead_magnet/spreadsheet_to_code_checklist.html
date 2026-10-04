@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>The Spreadsheet-to-Code Checklist for Tax Teams</title>
+<!-- Lead magnet for @maehrtax (sent via ManyChat keyword "TOOL"). 2 pages, US Letter.
+     Render: node assets/lead_magnet/render_pdf.mjs  → spreadsheet_to_code_checklist.pdf + checklist_preview.png -->
+<link rel="stylesheet" href="../../templates/fonts.css">
+<style>
+@page{size:8.5in 11in;margin:0}
+:root{--bg:#0B110E;--bg2:#153A31;--green:#53C3A2;--soft:rgba(83,195,162,.10);--text:#EAF1EC;--text2:#C9D6CE;--muted:#8FA398;--line:rgba(143,163,152,.28);
+  --serif:"IBM Plex Serif",serif;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans)}
+.page{width:816px;height:1056px;position:relative;overflow:hidden;padding:48px 60px 0;
+  background:radial-gradient(90% 45% at 85% 0%,#12302A 0%,var(--bg) 62%);page-break-after:always;break-after:page}
+.page:last-child{page-break-after:auto;break-after:auto}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--green);font-weight:600}
+h1{font-family:var(--serif);font-weight:600;font-size:38px;line-height:1.08;margin:14px 0 0;letter-spacing:-.005em}
+h1 .a,.a{color:var(--green)}
+.intro{font-size:14px;line-height:1.5;color:var(--text2);margin:12px 0 0;max-width:620px}
+.how{display:flex;gap:22px;margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em}
+.how b{color:var(--green);font-weight:600}
+h2{font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--green);font-weight:600;
+  margin:22px 0 2px;padding-bottom:7px;border-bottom:2px solid var(--green);display:flex;justify-content:space-between}
+h2 span{color:var(--muted);letter-spacing:.1em}
+.item{display:grid;grid-template-columns:26px 30px 1fr;gap:0 12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.box{width:22px;height:22px;border:2px solid var(--green);border-radius:5px;margin-top:2px}
+.nr{font-family:var(--mono);font-weight:600;color:var(--green);font-size:15px;margin-top:3px}
+.item h3{margin:0;font-family:var(--serif);font-size:17px;font-weight:600;line-height:1.25}
+.item p{margin:3px 0 0;font-size:12.5px;line-height:1.42;color:var(--text2)}
+.item .chk{margin-top:3px;font-family:var(--mono);font-size:10.5px;line-height:1.4;color:var(--muted)}
+.item .chk b{color:var(--green);font-weight:600}
+.score{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.score div{border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;font-size:12px;line-height:1.45;color:var(--text2)}
+.score b{display:block;font-family:var(--mono);font-size:15px;color:var(--text);margin-bottom:4px}
+.score div:first-child{border-color:var(--green);background:var(--soft)}
+.cta{margin-top:14px;padding:14px 20px;border-left:5px solid var(--green);background:var(--soft);border-radius:0 12px 12px 0;
+  display:flex;justify-content:space-between;align-items:center;gap:20px}
+.cta p{margin:0;font-size:12.5px;line-height:1.5;color:var(--text)}
+.cta .pill{flex:none;font-family:var(--mono);font-weight:600;font-size:16px;border:2px solid var(--green);border-radius:99px;padding:8px 16px;color:var(--text)}
+.foot{position:absolute;left:60px;right:60px;bottom:30px;display:flex;justify-content:space-between;
+  font-family:var(--mono);font-size:10px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.foot b{color:var(--green);font-weight:600}
+</style></head><body>
+
+<section class="page">
+  <div class="kicker">Tax × Code · Free checklist</div>
+  <h1>The Spreadsheet-to-Code Checklist <span class="a">for Tax Teams</span></h1>
+  <p class="intro">12 checks for the workbooks behind your tax provision, compliance and close. Tick every check you can honestly answer with “yes”. The ones you can’t tick are where errors – and audit questions – come from.</p>
+  <div class="how"><span><b>☐</b> = tick if true</span><span><b>Check:</b> how to test it in 5 minutes</span><span>Score yourself on page 2</span></div>
+
+  <h2>A · Inputs &amp; structure <span>1–3</span></h2>
+  <div class="item"><div class="box"></div><div class="nr">01</div><div><h3>Inputs are parameters</h3>
+    <p>Every rate and threshold – 21% federal, state rates, apportionment factors – lives in one input table. No number is typed into a formula.</p>
+    <div class="chk"><b>Check:</b> search your formulas for typed constants like 0.21 or *21%.</div></div></div>
+  <div class="item"><div class="box"></div><div class="nr">02</div><div><h3>One source of truth</h3>
+    <p>Data comes from one place (trial balance export, ERP, fixed-asset system) and is imported – not linked across files.</p>
+    <div class="chk"><b>Check:</b> Data → Edit Links shows zero external workbooks. No “Provision_Final_v3_NEW.xlsx”.</div></div></div>
+  <div class="item"><div class="box"></div><div class="nr">03</div><div><h3>Inputs, logic and output are separated</h3>
+    <p>Inputs in one place, calculations in another, reports in a third. Nobody types into the calculation area.</p>
+    <div class="chk"><b>Check:</b> could a new team member tell in 30 seconds where to enter data?</div></div></div>
+
+  <h2>B · Calculation <span>4–6</span></h2>
+  <div class="item"><div class="box"></div><div class="nr">04</div><div><h3>Rounding happens at the end</h3>
+    <p>Everything is calculated at full precision and rounded once, for presentation. No $1 differences that someone “fixes” by hand.</p>
+    <div class="chk"><b>Check:</b> no ROUND() in intermediate steps; totals foot without adjustments.</div></div></div>
+  <div class="item"><div class="box"></div><div class="nr">05</div><div><h3>Reconciliation checks are built in</h3>
+    <p>Totals tie to the trial balance, the rate reconciliation ties to total tax expense, deferreds roll forward from last period. Each check shows ✓ or ✗.</p>
+    <div class="chk"><b>Check:</b> is there one place that shows whether everything ties?</div></div></div>
+  <div class="item"><div class="box"></div><div class="nr">06</div><div><h3>No silent plugs</h3>
+    <p>Every manual adjustment has an owner, a reason and a date. A plug without a note is flagged automatically.</p>
+    <div class="chk"><b>Check:</b> count the hard-coded “other” lines. Can you explain each one?</div></div></div>
+
+  <div class="foot"><span><b>@maehrtax</b> · DM “TOOL” for a free demo</span><span>Educational content – not tax, legal or accounting advice.</span><span>1/2</span></div>
+</section>
+
+<section class="page">
+  <h2 style="margin-top:4px">C · Testing &amp; control <span>7–10</span></h2>
+  <div class="item"><div class="box"></div><div class="nr">07</div><div><h3>Test cases with known answers</h3>
+    <p>A few examples whose result you know by heart – rerun after every change. Example §&nbsp;163(j): 30% × $14.0M ATI = $4.2M limit.</p>
+    <div class="chk"><b>Check:</b> when did someone last prove the workbook still gives the right answer?</div></div></div>
+  <div class="item"><div class="box"></div><div class="nr">08</div><div><h3>A real version log</h3>
+    <p>Every change to logic or inputs is logged: date, person, reason. File names like “_v3_FINAL_NEW” don’t count.</p>
+    <div class="chk"><b>Check:</b> who changed row 48 last quarter – and why? Can you answer in 1 minute?</div></div></div>
+  <div class="item"><div class="box"></div><div class="nr">09</div><div><h3>An audit trail for every number</h3>
+    <p>Any figure in the provision can be traced back to its source in one or two clicks. It’s the first thing your SOX auditor asks for.</p>
+    <div class="chk"><b>Check:</b> pick a random deferred tax balance. Trace it to the source data.</div></div></div>
+  <div class="item"><div class="box"></div><div class="nr">10</div><div><h3>Access control</h3>
+    <p>Clear rules on who may change inputs and who may change logic. Logic is locked; changes go through review and sign-off.</p>
+    <div class="chk"><b>Check:</b> could anyone with the file overwrite a formula without anyone noticing?</div></div></div>
+
+  <h2>D · Documentation &amp; AI <span>11–12</span></h2>
+  <div class="item"><div class="box"></div><div class="nr">11</div><div><h3>Documented assumptions</h3>
+    <p>Assumptions, legal basis (e.g. the IRC section) and as-of date are written down next to the calculation – not in one person’s head.</p>
+    <div class="chk"><b>Check:</b> if the owner is out for 3 weeks in close, can someone else run it?</div></div></div>
+  <div class="item"><div class="box"></div><div class="nr">12</div><div><h3>AI reads, code calculates</h3>
+    <p>AI may read documents, classify and draft. The final math is done by tested code: same input, same result – every time.</p>
+    <div class="chk"><b>Check:</b> is any number in your return or provision typed in from a chatbot answer?</div></div></div>
+
+  <div class="score">
+    <div><b>10–12 ✓</b>Solid. You’re ready to turn the workbook into a tool – or you already did.</div>
+    <div><b>6–9 ✓</b>Pick the 3 gaps that hurt most at quarter-end and fix those first.</div>
+    <div><b>0–5 ✓</b>Your workbook is a risk. Start with checks 01, 05 and 09.</div>
+  </div>
+  <div class="cta"><p>Want to see what a workbook looks like as a tool – with parameters, checks and an audit trail? Free demo with sample data + 20-min intro call. Please never send real company data via DM.</p>
+    <span class="pill">DM “TOOL”</span></div>
+
+  <div class="foot"><span><b>@maehrtax</b> · Tax × Code</span><span>Educational content – not tax, legal or accounting advice. As of Oct 2026.</span><span>2/2</span></div>
+</section>
+</body></html>

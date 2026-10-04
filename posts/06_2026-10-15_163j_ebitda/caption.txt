@@ -1,0 +1,12 @@
+§ 163(j) is back on EBITDA – your interest limit just grew.
+
+Demo company: $14.0M EBITDA, $4.0M D&A, $4.0M business interest.
+Old rule (EBIT): 30% × $10.0M = $3.0M limit → $1.0M disallowed.
+New rule (EBITDA, tax years beginning after Dec 31, 2024): 30% × $14.0M = $4.2M → all $4.0M deductible.
++$1,000,000 deduction × 21% = $210,000 less federal tax.
+
+✅ Save this for your next interest calc. Want to see the calculator run it? DM me "TOOL".
+
+Educational content – not tax, legal or accounting advice. Simplified example – talk to your CPA about your case.
+
+#tax #corporatetax #OBBBA #taxplanning #CPA

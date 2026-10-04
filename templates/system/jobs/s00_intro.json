@@ -1,0 +1,6 @@
+{ "output": "../../posts/00_2026-10-12_intro",
+  "images": [
+    { "template":"story", "file":"story_teaser.png", "type":"teaser", "kicker":"NEW POST",
+      "title":"New here? *Quick intro.*",
+      "image":"../../posts/00_2026-10-12_intro/slide_01.png" }
+  ] }

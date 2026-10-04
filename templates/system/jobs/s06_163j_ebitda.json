@@ -1,0 +1,14 @@
+{ "output": "../../posts/06_2026-10-15_163j_ebitda",
+  "images": [
+    { "template":"story", "file":"story_teaser.png", "type":"teaser", "kicker":"NEW POST",
+      "title":"§ 163(j) is back on *EBITDA*.",
+      "image":"../../posts/06_2026-10-15_163j_ebitda/slide_01.png" },
+    { "template":"story", "file":"story_quiz.png", "type":"question", "kicker":"QUIZ",
+      "title":"$4M interest. $14M EBITDA. How much is *deductible*?",
+      "text":"2025 rules · 30% limit · simplified",
+      "slotHint":"Pick one ↓" },
+    { "template":"story", "file":"story_answer.png", "type":"answer", "kicker":"QUIZ ANSWER",
+      "title":"All *$4.0M*.",
+      "text":"Limit: 30% × $14.0M EBITDA = $4.2M.\n$4.0M of interest is below the limit → fully deductible.",
+      "answer":"Under the old EBIT rule: only $3.0M.\n+$1,000,000 deduction = $210,000 less federal tax." }
+  ] }

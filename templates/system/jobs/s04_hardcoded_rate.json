@@ -1,0 +1,7 @@
+{ "output": "../../posts/04_2026-10-14_reel_hardcoded_rate",
+  "images": [
+    { "template":"story", "file":"story_question.png", "type":"question", "kicker":"YOUR TURN",
+      "title":"Your worst *#REF!* story?",
+      "text":"Deadline night, broken link, total that didn’t tie – tell me. Anonymous is fine.",
+      "slotHint":"Answer below ↓" }
+  ] }

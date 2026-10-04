@@ -1,0 +1,7 @@
+{ "output": "../../posts/05_2026-10-15_reel_deadline_night",
+  "images": [
+    { "template":"story", "file":"story_deadline.png", "type":"question", "kicker":"OCT 15 · DEADLINE DAY",
+      "title":"Filing *today*?",
+      "text":"Extended returns are due tonight. Still in Excel – or already done?",
+      "slotHint":"Vote below ↓" }
+  ] }

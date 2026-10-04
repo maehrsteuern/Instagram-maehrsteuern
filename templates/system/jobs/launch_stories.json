@@ -1,0 +1,15 @@
+{ "output": "../../posts/00_2026-10-11_launch_stories",
+  "images": [
+    { "template":"story", "file":"story_launch_1.png", "type":"info", "kicker":"HI, I’M LORIS 👋",
+      "title":"I build *tax tools* that compute.",
+      "text":"Trained by the German tax office. Now building for US tax teams.",
+      "photo":"../../assets/brand/loris_current_cutout.png" },
+    { "template":"story", "file":"story_launch_2.png", "type":"info", "kicker":"WHAT I BUILD",
+      "title":"Tools instead of *spreadsheet chaos*.",
+      "points":["Tax provision & rate rec – with an audit trail","Calculators for new rules like § 163(j) and § 174A","For in-house tax teams & CPA firms"],
+      "text":"Small tools that replace fragile spreadsheets:" },
+    { "template":"story", "file":"story_launch_3.png", "type":"info", "kicker":"HOW THE FREE DEMO WORKS",
+      "title":"Demo + *intro call*.",
+      "points":["DM me “TOOL”","You get a short demo with sample data","20-min call: does it fit your team?"],
+      "text":"Free. No coding skills needed.", "cta":true }
+  ] }

@@ -1,6 +1,0 @@
-{ "ausgabe": "../../assets/highlights",
-  "bilder": [
-    { "vorlage":"highlight", "datei":"hl_start.png",  "icon":"start" },
-    { "vorlage":"highlight", "datei":"hl_wissen.png", "icon":"wissen" },
-    { "vorlage":"highlight", "datei":"hl_faq.png",    "icon":"faq" }
-  ] }

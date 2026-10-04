@@ -1,0 +1,23 @@
+{ "output": "../../assets/stories/faq",
+  "images": [
+    { "template":"story", "file":"faq_1.png", "type":"answer", "kicker":"FAQ 1/5",
+      "title":"What does it *cost*?",
+      "text":"The demo and the 20-min intro call are free.",
+      "answer":"If you want a tool built for your team, you get a quote first. No surprises." },
+    { "template":"story", "file":"faq_2.png", "type":"answer", "kicker":"FAQ 2/5",
+      "title":"Do I need *coding skills*?",
+      "text":"No. You use the tool – the code is my job.",
+      "answer":"If you can use a spreadsheet, you can use the tool." },
+    { "template":"story", "file":"faq_3.png", "type":"answer", "kicker":"FAQ 3/5",
+      "title":"What happens to my *data*?",
+      "text":"The demo runs on sample data only.",
+      "answer":"Never send real company or client data via DM. For a real project, we agree on data handling first." },
+    { "template":"story", "file":"faq_4.png", "type":"answer", "kicker":"FAQ 4/5",
+      "title":"Does this replace my *tax software*?",
+      "text":"No. Your tax software stays.",
+      "answer":"My tools close the gaps that end up in spreadsheets – the calcs, checks and reconciliations around it." },
+    { "template":"story", "file":"faq_5.png", "type":"answer", "kicker":"FAQ 5/5",
+      "title":"Are you a *CPA*?",
+      "text":"No. I was trained in the German tax administration (3-year civil-service tax degree) and I’m a Certified AI Manager (IHK, German Chamber of Commerce).",
+      "answer":"I build the tools. Your CPA or advisor signs off.", "cta":true, "chip":"💬 DM “TOOL” → free demo" }
+  ] }
