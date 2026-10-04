@@ -1,8 +1,8 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 14:52 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 15:54 Uhr._
 
-**Als Nächstes online:** 🎬 Reel `01-reel-ampel` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
@@ -37,8 +37,8 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | 🟢 freigegeben (geht automatisch online) | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
-| So 04.10. 19:35 | 📱 Story `01-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
+| So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | pause | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
+| So 04.10. 19:35 | 📱 Story `01-story-teaser` | pause | 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. |
 | Mo 05.10. 12:15 | 📱 Story `02-story-umfrage` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:35 | 📱 Story `02-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
@@ -105,6 +105,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 15:54 ✍️ Ampel-Reel und Teaser 04.10. pausiert: Go zurückgenommen, wird durch Reel „5 Dinge mit Code statt Excel“ ersetzt ([`ca552b3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ca552b33fbf7c6500de59b076c41b3ff7e916f09))
+  - Plan: `01-reel-ampel` status: freigegeben → pause; `01-story-teaser` status: freigegeben → pause
 - 14:52 📈 Statistik 2026-10-04 ([`e5a407c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e5a407c19b52d51642910375205b1c48b17183e1))
   - `automatik/statistik`
 - 13:07 📡 Radar 2026-10-04: 8 Beiträge, 0 DM-Entwürfe ([`996fe74`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/996fe74d4dbf888d86c5d28492b53f48b2ec0864))
