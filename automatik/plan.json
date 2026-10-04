@@ -125,8 +125,8 @@
       "video": "reel_stimme.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "freigegeben",
-      "hinweis": "Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s",
+      "status": "pause",
+      "hinweis": "Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“.",
       "issue": 7
     },
     {
@@ -137,7 +137,8 @@
       "bilder": [
         "story_so_teaser.png"
       ],
-      "status": "freigegeben"
+      "status": "pause",
+      "hinweis": "04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“."
     },
     {
       "id": "02-story-umfrage",
