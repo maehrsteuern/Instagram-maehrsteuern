@@ -193,7 +193,7 @@
         "slide_07.png"
       ],
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "note": "Tax law (OBBBA § 163(j)) – read fact_check.md before approving",
       "issue": 8
     },
@@ -205,7 +205,7 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 8
     },
     {
@@ -216,7 +216,7 @@
       "images": [
         "story_quiz.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "note": "Add the quiz sticker by hand if wanted",
       "issue": 8
     },
@@ -240,7 +240,7 @@
       "images": [
         "story_answer.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 8
     },
     {
