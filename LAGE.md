@@ -108,6 +108,7 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 16:14 ✍️ Stand claude/instagram übernommen ([`3a8d366`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3a8d36658bc954aed59859eee9526d6a1d691129))
 - 16:14 ✍️ Reel 04.10. umgebaut: „5 Sachen, die ich aus Excel rausgeschmissen hab“ (Community statt Werbung) ([`353300b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/353300b53859ce2859db10a565744c53c84c2d74))
   - Plan: neu `01-reel-5dinge` (2026-10-04 19:30, freigegeben); neu `01-story-teaser-5dinge` (2026-10-04 19:35, freigegeben)
 - 15:54 ✍️ Ampel-Reel und Teaser 04.10. pausiert: Go zurückgenommen, wird durch Reel „5 Dinge mit Code statt Excel“ ersetzt ([`ca552b3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ca552b33fbf7c6500de59b076c41b3ff7e916f09))
