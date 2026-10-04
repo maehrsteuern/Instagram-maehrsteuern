@@ -43,7 +43,7 @@
       "images": [
         "story_poll.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "note": "Add the poll sticker by hand in the app (stickers are not possible via the API) – or post as is",
       "issue": 5
     },
@@ -117,7 +117,7 @@
         "slide_07.png"
       ],
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "issue": 5
     },
     {
@@ -128,7 +128,7 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 5
     },
     {
