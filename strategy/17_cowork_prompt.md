@@ -78,7 +78,9 @@ behalten/raus/neu) – und genau diesen JSON-Block mit der fertigen Liste zum Ei
    🎁 Bonus: The Spreadsheet-to-Code Checklist for Tax Teams.
    Want to see it with your own workflow? Book a free 20-min demo + intro call: <LINK AUS MODUL E>
    (Educational only – not tax advice.)“
-   Button 1: „Book the demo“ → Link aus Modul E · Button 2: „Get the checklist“ → Link folgt (vorerst weglassen, wenn kein Link).
+   Button 1: „Book the demo“ → Link aus Modul E · Button 2: „Get the checklist“ →
+   https://github.com/maehrsteuern/maehrtax---instagram/raw/main/assets/lead_magnet/spreadsheet_to_code_checklist.pdf
+   (vorher im Browser öffnen und prüfen, ob die PDF lädt – sonst Button weglassen und mir sagen).
    Follow-up nach 23 h, falls kein Klick: „Quick one – did the demo make sense? Happy to show it live (20 min, free): <LINK>“
 3. Testen: Es gibt noch keine Beiträge – deshalb nur per DM. Ich schicke von meinem Privatkonto „TOOL“ an @maehrtax,
    du prüfst in ManyChat, ob die Antwort rausging.
