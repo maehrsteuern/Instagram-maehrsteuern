@@ -148,8 +148,11 @@
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "freigegeben",
-      "hinweis": "Ersetzt Ampel-Reel (Go am 04.10. von Loris direkt im Chat). Community-Reel ohne Werbung: Loris erzählt 5 Dinge, die mit Code besser gehen als mit Excel (Countdown 5→1), Bilder Excel vorher / Code heute, Untertitel wörtlich, Musik ganz leise, CTA Zahl in die Kommentare, 41 s"
+      "status": "veroeffentlicht",
+      "hinweis": "Ersetzt Ampel-Reel (Go am 04.10. von Loris direkt im Chat). Community-Reel ohne Werbung: Loris erzählt 5 Dinge, die mit Code besser gehen als mit Excel (Countdown 5→1), Bilder Excel vorher / Code heute, Untertitel wörtlich, Musik ganz leise, CTA Zahl in die Kommentare, 41 s",
+      "media_id": "17916550404258137",
+      "link": "https://www.instagram.com/reel/DeFLK53ALSs/",
+      "veroeffentlicht_am": "2026-10-04 19:30"
     },
     {
       "id": "01-story-teaser-5dinge",
