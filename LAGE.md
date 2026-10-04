@@ -1,8 +1,8 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 19:30 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 19:46 Uhr._
 
-**Als Nächstes online:** 📱 Story `01-story-teaser-5dinge` am **So 04.10. 19:35 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
@@ -40,7 +40,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 |---|---|---|---|
 | So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | pause | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
 | So 04.10. 19:35 | 📱 Story `01-story-teaser` | pause | 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. |
-| So 04.10. 19:35 | 📱 Story `01-story-teaser-5dinge` | 🟢 freigegeben (geht automatisch online) |  |
 | Mo 05.10. 12:15 | 📱 Story `02-story-umfrage` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:35 | 📱 Story `02-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
@@ -68,6 +67,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
+- So 04.10. 19:35 · 📱 Story `01-story-teaser-5dinge` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4000661016565086455) (online 2026-10-04 19:46)
 - So 04.10. 19:30 · 🎬 Reel `01-reel-5dinge` · [ansehen](https://www.instagram.com/reel/DeFLK53ALSs/) (online 2026-10-04 19:30)
 - Sa 03.10. 12:15 · 📱 Story `08-story-tipp` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3999709094836161880) (online 2026-10-03 12:15)
 - Fr 02.10. 12:15 · 📱 Story `01-story-frage` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3998984318181825905) (online 2026-10-02 12:15)
@@ -94,7 +94,7 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
 | Lage + Google-Kalender | alle 15 Min. (LAGE.md, Kalender-Sync, Wächter) | ✅ ok |
-| Posten | alle 15 Min. (postet freigegebene Einträge) | 🔴 [fehlgeschlagen](https://github.com/maehrsteuern/Instagram-maehrsteuern/actions/runs/37220759609) So 04.10. 19:33 |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
 | Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
 | Statistik | täglich ca. 08:45 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
@@ -108,6 +108,10 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 19:46 🤖 Autopilot: 01-story-teaser-5dinge veroeffentlicht ([`a850704`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a850704aa2a081fcd149efb9a8f2a15bbd8df45a))
+  - Plan: `01-story-teaser-5dinge` status: freigegeben → veroeffentlicht; `01-story-teaser-5dinge` online: https://www.instagram.com/stories/maehrsteuern/4000661016565086455
+- 19:46 🤖 Autopilot: Dateien fuer 01-story-teaser-5dinge vorbereitet ([`3b9e1ab`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3b9e1ab11b4c811de1de4d0d4e98ed69cfa2910c))
+  - `posts/01_2026-10-04_reel_5dinge`
 - 19:30 🤖 Autopilot: 01-reel-5dinge veroeffentlicht ([`f6ad3ab`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f6ad3ab088f3b8f0749e5dc1831c69714e06b3b3))
   - Plan: `01-reel-5dinge` status: freigegeben → veroeffentlicht; `01-reel-5dinge` online: https://www.instagram.com/reel/DeFLK53ALSs/
 - 18:01 ✍️ Wochenbericht KW 2026-40 ([`3c6a4f2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3c6a4f232ad9525921acc222113685ad90c9eb41))
