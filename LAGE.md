@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 16:15 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 18:01 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `01-reel-5dinge` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -100,7 +100,7 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
 | Radar + LinkedIn | täglich ca. 07:00 (Issue mit Arbeitsliste) | ✅ ok |
 | Kommentare | nach jedem Posten-Takt (Vorschläge ins Issue) | ✅ ok |
-| Wochenbericht | sonntags ca. 18:00 (ein Issue) | – |
+| Wochenbericht | sonntags ca. 18:00 (ein Issue) | ✅ ok |
 | Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
@@ -108,6 +108,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 18:01 ✍️ Wochenbericht KW 2026-40 ([`3c6a4f2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3c6a4f232ad9525921acc222113685ad90c9eb41))
+  - `automatik/statistik`
 - 16:15 🤖 Autopilot: Dateien fuer Probelauf 01-reel-5dinge vorbereitet ([`2657c66`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2657c66bd11cb4207c840b9cb22841fdc37cee8b))
   - `posts/01_2026-10-04_reel_5dinge`
 - 16:14 ✍️ Stand claude/instagram übernommen ([`3a8d366`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3a8d36658bc954aed59859eee9526d6a1d691129))
