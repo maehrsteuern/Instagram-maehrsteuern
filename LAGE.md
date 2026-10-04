@@ -94,7 +94,7 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
 | Lage + Google-Kalender | alle 15 Min. (LAGE.md, Kalender-Sync, Wächter) | ✅ ok |
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | 🔴 [fehlgeschlagen](https://github.com/maehrsteuern/Instagram-maehrsteuern/actions/runs/37220759609) So 04.10. 19:33 |
 | Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
 | Statistik | täglich ca. 08:45 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
