@@ -6,7 +6,7 @@
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
   "followers_count": 351,
-  "follows_count": 257,
+  "follows_count": 258,
   "media_count": 2
  },
  "konto_verlauf": [
@@ -16,8 +16,8 @@
    "reach": {
     "gesamt": 235,
     "aufgeteilt": {
-     "FOLLOWER": 120,
-     "NON_FOLLOWER": 117
+     "NON_FOLLOWER": 117,
+     "FOLLOWER": 120
     }
    },
    "views": {
@@ -60,8 +60,8 @@
    "views": {
     "gesamt": 100,
     "aufgeteilt": {
-     "UNKNOWN": 3,
      "FOLLOWER": 6,
+     "UNKNOWN": 3,
      "NON_FOLLOWER": 91
     }
    },
@@ -90,15 +90,15 @@
    "reach": {
     "gesamt": 78,
     "aufgeteilt": {
-     "NON_FOLLOWER": 76,
-     "FOLLOWER": 2
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 76
     }
    },
    "views": {
     "gesamt": 284,
     "aufgeteilt": {
-     "UNKNOWN": 15,
      "FOLLOWER": 17,
+     "UNKNOWN": 15,
      "NON_FOLLOWER": 252
     }
    },
@@ -134,9 +134,9 @@
    "views": {
     "gesamt": 183,
     "aufgeteilt": {
-     "FOLLOWER": 21,
      "UNKNOWN": 2,
-     "NON_FOLLOWER": 160
+     "NON_FOLLOWER": 160,
+     "FOLLOWER": 21
     }
    },
    "accounts_engaged": 4,
@@ -164,8 +164,8 @@
    "reach": {
     "gesamt": 47,
     "aufgeteilt": {
-     "FOLLOWER": 1,
-     "NON_FOLLOWER": 46
+     "NON_FOLLOWER": 46,
+     "FOLLOWER": 1
     }
    },
    "views": {
@@ -312,8 +312,8 @@
    "reach": {
     "gesamt": 99,
     "aufgeteilt": {
-     "NON_FOLLOWER": 96,
-     "FOLLOWER": 3
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 96
     }
    },
    "views": {
@@ -355,8 +355,8 @@
    "views": {
     "gesamt": 426,
     "aufgeteilt": {
-     "FOLLOWER": 33,
      "UNKNOWN": 8,
+     "FOLLOWER": 33,
      "NON_FOLLOWER": 385
     }
    },
@@ -393,8 +393,8 @@
     "gesamt": 193,
     "aufgeteilt": {
      "FOLLOWER": 16,
-     "NON_FOLLOWER": 171,
-     "UNKNOWN": 6
+     "UNKNOWN": 6,
+     "NON_FOLLOWER": 171
     }
    },
    "accounts_engaged": 0,
@@ -459,15 +459,15 @@
    "reach": {
     "gesamt": 221,
     "aufgeteilt": {
-     "NON_FOLLOWER": 44,
-     "FOLLOWER": 2
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 44
     }
    },
    "views": {
     "gesamt": 498,
     "aufgeteilt": {
-     "UNKNOWN": 20,
      "NON_FOLLOWER": 427,
+     "UNKNOWN": 20,
      "FOLLOWER": 51
     }
    },
@@ -633,7 +633,6 @@
   }
  ],
  "tageswerte_reichweite": {
-  "2026-09-05": 1,
   "2026-09-06": 1,
   "2026-09-07": 0,
   "2026-09-08": 1,
@@ -661,7 +660,8 @@
   "2026-09-30": 82,
   "2026-10-01": 68,
   "2026-10-02": 79,
-  "2026-10-03": 63
+  "2026-10-03": 63,
+  "2026-10-04": 9
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -928,33 +928,8 @@
   }
  },
  "online_follower": {
-  "2026-10-02": {
-   "0": 99,
-   "1": 89,
-   "2": 92,
-   "3": 108,
-   "4": 108,
-   "5": 101,
-   "6": 98,
-   "7": 96,
-   "8": 103,
-   "9": 96,
-   "10": 93,
-   "11": 108,
-   "12": 108,
-   "13": 92,
-   "14": 73,
-   "15": 52,
-   "16": 29,
-   "17": 21,
-   "18": 23,
-   "19": 19,
-   "20": 13,
-   "21": 30,
-   "22": 55,
-   "23": 71
-  },
-  "2026-10-03": {}
+  "2026-10-03": {},
+  "2026-10-04": {}
  },
  "beitraege": [
   {
@@ -1014,30 +989,7 @@
    "kommentare_text": []
   }
  ],
- "storys_aktiv": [
-  {
-   "id": "18135919126642955",
-   "zeit": "2026-10-03T10:15:14+0000",
-   "views": 61,
-   "reach": 52,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 2,
-   "profile_visits": 2,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 55,
-   "replies": 1,
-   "kommentare_text": []
-  }
- ],
+ "storys_aktiv": [],
  "_fehlt": [
   "engaged_audience_demographics/this_month/age: 400 Not enough users",
   "engaged_audience_demographics/this_month/gender: 400 Not enough users",
