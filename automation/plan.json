@@ -327,7 +327,7 @@
       "video": "reel.mp4",
       "cover": "cover.png",
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "note": "Screen recording of the demo tool: 163(j) EBIT → EBITDA, 12 s · Tax law – see fact_check.md",
       "issue": 12
     },
