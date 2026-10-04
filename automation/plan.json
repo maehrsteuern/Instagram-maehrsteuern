@@ -316,7 +316,7 @@
       "images": [
         "story_poll.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 13
     },
     {
@@ -339,7 +339,7 @@
       "video": "reel.mp4",
       "cover": "cover.png",
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "note": "Why a chatbot shouldn't do your tax math – AI reads, code calculates",
       "issue": 13
     },
