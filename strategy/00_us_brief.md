@@ -19,7 +19,7 @@ Every other file in this repo follows this brief. If something here conflicts wi
 🇩🇪 German-trained tax pro · Certified AI Manager
 💬 DM "TOOL" → free demo
 ```
-Link: English booking page "Demo + Intro Call (20 min)" – placeholder `https://app.reclaim.ai/m/maehrtax/demo` until Cowork has created it.
+Link: English booking page "Demo + Intro Call (20 min)" – `https://app.reclaim.ai/m/maehrsteuern/maehrtax-demo` (live since 10/4/2026; Mon–Fri 3–8 PM Berlin = 9 AM–2 PM ET, required field "How did you hear about me?": Instagram · LinkedIn · Referral · Other).
 
 ### Who Loris is (wording for the US)
 - **Diplom-Finanzwirt (FH)** → "trained in the German tax administration" / "German-trained tax pro" (3-year civil-service tax degree). Never write "CPA", "EA", "tax attorney" or "former IRS".

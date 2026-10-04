@@ -41,7 +41,7 @@ Buttons: `In-house tax team` · `CPA firm` · `Small business / freelancer` · `
 Perfect. Here's the 2-min demo (sample data only): [DEMO VIDEO LINK]
 
 Want to see what that looks like for your workflow?
-20 minutes, free, no strings attached 👉 https://app.reclaim.ai/m/maehrtax/demo
+20 minutes, free, no strings attached 👉 https://app.reclaim.ai/m/maehrsteuern/maehrtax-demo
 
 And here's the free "Spreadsheet-to-Code Checklist for Tax Teams" (PDF): [CHECKLIST LINK]
 
@@ -55,7 +55,7 @@ Variant per button (one line before the demo link):
 **② Interim version, until the demo video exists**
 ```
 Perfect. I'd love to show you the demo live – with sample data and tailored to your workflow.
-20 minutes, free, no strings attached 👉 https://app.reclaim.ai/m/maehrtax/demo
+20 minutes, free, no strings attached 👉 https://app.reclaim.ai/m/maehrsteuern/maehrtax-demo
 
 Meanwhile, here's the free "Spreadsheet-to-Code Checklist for Tax Teams" (PDF): [CHECKLIST LINK]
 
@@ -72,7 +72,7 @@ Questions? Just reply here ✌️
 
 **④ Follow-up – once, 23 h after ② if the booking link wasn't clicked**
 ```
-Quick nudge in case this got buried: the free 20-min demo is here 👉 https://app.reclaim.ai/m/maehrtax/demo
+Quick nudge in case this got buried: the free 20-min demo is here 👉 https://app.reclaim.ai/m/maehrsteuern/maehrtax-demo
 Not the right time? Totally fine – the checklist is yours either way.
 ```
 
@@ -98,7 +98,7 @@ Short, friendly, never pushy. Never individual tax advice.
 | `security` | "Our IT/data rules won't allow it." | Fair. The demo uses sample data only, and tools can run inside your own environment. Let's talk through your IT requirements on the call. |
 | `cpa` | "Are you a CPA?" | No – I'm a German-trained tax pro (3-year tax administration degree) and Certified AI Manager. I build the tools; your CPA or tax advisor makes the calls on your case. |
 | `advice` | someone asks about their own tax case | I can't give advice on individual cases here – please talk to your CPA about that. Happy to show you the tool, though! |
-| `busy` | "Busy season, no time." | Totally get it. Book a slot after the deadline – the link stays open: https://app.reclaim.ai/m/maehrtax/demo |
+| `busy` | "Busy season, no time." | Totally get it. Book a slot after the deadline – the link stays open: https://app.reclaim.ai/m/maehrsteuern/maehrtax-demo |
 | `later` | "Not now." | No worries! The checklist is yours, and the door stays open. |
 | `other` | anything else / no TOOL topic | Thanks! Tell me briefly what it's about – I'll get back to you personally, usually within a day. |
 

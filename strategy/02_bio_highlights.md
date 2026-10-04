@@ -25,7 +25,7 @@ Never add "CPA", "EA", "tax attorney" or "former IRS".
 **"Business consultant".** You sell demo + intro call + a fitting solution, i.e. a service. Switch to "Software" once there is a product to buy. "Education" would pull mostly students.
 
 ## Link in bio
-English booking page **"Demo + Intro Call (20 min)"** on Reclaim – placeholder `https://app.reclaim.ai/m/maehrtax/demo` until Cowork has created it (see `SETUP.md` step 10).
+English booking page **"Demo + Intro Call (20 min)"** on Reclaim – `https://app.reclaim.ai/m/maehrsteuern/maehrtax-demo` (live since 10/4/2026; Mon–Fri 3–8 PM Berlin = 9 AM–2 PM ET, required field "How did you hear about me?": Instagram · LinkedIn · Referral · Other) (see `SETUP.md` step 10).
 If you need more links later, use Instagram's "Add links" (up to 5). Candidates: checklist PDF (lead magnet), demo video. No Linktree needed.
 
 ## Highlights – order
