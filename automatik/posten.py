@@ -205,18 +205,21 @@ def main():
         if warten > 0 and not sofort:
             print(f"… warte {int(warten // 60)} Min. bis {e['zeit']} für {e['id']}")
             time.sleep(warten)
-            # während des Wartens kann „stop“, eine neue Zeit oder „entfaellt“ gekommen sein
-            try:
-                git("pull", "--rebase", "-q")
-                plan = json.loads(PLAN.read_text())
-            except subprocess.CalledProcessError as fehler:
-                subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)
-                print(f"Hinweis: Plan nicht neu geladen ({fehler.stderr.strip()[:200]}) – poste mit dem bekannten Stand")
-            aktuell = next((x for x in plan["eintraege"] if x["id"] == e["id"]), None)
-            if not aktuell or aktuell["status"] != "freigegeben" or aktuell["zeit"] != e["zeit"]:
-                print(f"↷ {e['id']}: Plan hat sich beim Warten geändert – übersprungen")
-                continue
-            aktuell["_jpg"], e = e["_jpg"], aktuell
+        # Direkt vor dem Posten IMMER den neuesten Plan holen – nicht nur nach dem Warten: Ein Lauf startet mit dem
+        # Stand vom Start-Zeitpunkt; hat ein früherer Lauf den Beitrag inzwischen gepostet, steht das nur auf GitHub
+        # (04.10.: Reel doppelt online). Auch „stop“, eine neue Zeit oder „entfaellt“ während des Wartens greifen so.
+        try:
+            git("pull", "--rebase", "-q")
+            plan = json.loads(PLAN.read_text())
+        except subprocess.CalledProcessError as fehler:
+            subprocess.run(["git", "rebase", "--abort"], cwd=WURZEL, capture_output=True)
+            print(f"✗ {e['id']}: Plan nicht neu geladen ({fehler.stderr.strip()[:200]}) – nicht gepostet, nächster Lauf versucht es erneut")
+            continue
+        aktuell = next((x for x in plan["eintraege"] if x["id"] == e["id"]), None)
+        if not aktuell or aktuell["status"] != "freigegeben" or aktuell["zeit"] != e["zeit"]:
+            print(f"↷ {e['id']}: Plan hat sich geändert (schon gepostet, gestoppt oder verschoben) – übersprungen")
+            continue
+        aktuell["_jpg"], e = e["_jpg"], aktuell
         try:
             mid, permalink = posten(ig, e, sha)
             e.update(status="veroeffentlicht", media_id=mid, link=permalink, veroeffentlicht_am=jetzt().strftime("%Y-%m-%d %H:%M"))
