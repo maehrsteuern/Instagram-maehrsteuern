@@ -39,7 +39,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | pause | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
 | So 04.10. 19:35 | 📱 Story `01-story-teaser` | pause | 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. |
 | Mo 05.10. 12:15 | 📱 Story `02-story-umfrage` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) |  |
