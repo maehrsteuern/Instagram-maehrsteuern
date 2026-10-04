@@ -123,7 +123,7 @@ Plan: start on the free/entry plan; upgrades cost money → decide first (Pro is
 2. Language/texts in English; show times in the **invitee's time zone**. Availability: US-friendly hours from Germany, e.g. 6:00–9:00 PM Berlin = 12:00–3:00 PM ET (adjust to your day job).
 3. Required question **"How did you find me?"** with options: `Instagram Reel` · `Instagram ad` · `Instagram DM` · `LinkedIn` · `Other` (the demo copy script reads it for the weekly report).
 4. Description ends with: "Demo with sample data only – please don't bring client data. Educational content – not tax, legal or accounting advice."
-5. Copy the link and replace the placeholder `https://app.reclaim.ai/m/maehrtax/demo` everywhere: Instagram bio link, ManyChat messages, `strategy/02_bio_highlights.md`, `strategy/04_dm_funnel.md`, `strategy/14_chrome_modules.md`, `strategy/12_interaction.md`.
+5. ✅ Done 10/4: link is `https://app.reclaim.ai/m/maehrsteuern/maehrtax-demo`, replaced everywhere: Instagram bio link, ManyChat messages, `strategy/02_bio_highlights.md`, `strategy/04_dm_funnel.md`, `strategy/14_chrome_modules.md`, `strategy/12_interaction.md`.
 
 ## How it runs afterwards
 | When | What happens | Who |

@@ -82,7 +82,7 @@ Issue labels: `approval`, `comments`, `radar`, `weekly`, `watchdog`.
 ## Profile
 - Handle **@maehrtax**, name field `Loris | Tax × Code`, category "Business consultant"
 - Bio: "🧠 Tax × Code – tax know-how that computes · ⚙️ AI + code tools for tax teams that actually run · 🇩🇪 German-trained tax pro · Certified AI Manager · 💬 DM "TOOL" → free demo"
-- Link: English booking page "Demo + Intro Call (20 min)" (`https://app.reclaim.ai/m/maehrtax/demo`, placeholder until live)
+- Link: English booking page "Demo + Intro Call (20 min)" (`https://app.reclaim.ai/m/maehrsteuern/maehrtax-demo`, live since 10/4)
 - Highlights: Start 👋 · Tools ⚙️ · Learn 📚 · FAQ ❓ · Feedback 🙏
 - Launch: Sun 10/11/2026
 
