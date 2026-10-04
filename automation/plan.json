@@ -262,7 +262,7 @@
       "video": "reel.mp4",
       "cover": "cover.png",
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "note": "Satisfying loop: 4,000 messy rows → one click → clean",
       "issue": 10
     },
