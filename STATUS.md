@@ -80,7 +80,7 @@ No stats yet – they start after the Instagram secrets are set and the first st
 | Status + Google Calendar | after every post run, every push, daily (STATUS.md, calendar sync, watchdog) | ✅ ok |
 | Instagram post | every 15 min (posts approved entries) | ✅ ok |
 | Approval | on new drafts / reply in the issue | ✅ ok |
-| Instagram stats | daily around 9:00 AM ET | ✅ ok |
+| Instagram stats | daily around 9:00 AM ET | 🔴 [failed](https://github.com/maehrsteuern/maehrtax---instagram/actions/runs/37222117684) Sun 10/4 1:51 PM ET |
 | Refresh Instagram key | 1st of the month | – |
 | Radar (+ LinkedIn if enabled) | daily around 7:00 AM ET (issue with work list) | ✅ ok |
 | Comments | after every post run (suggestions in the issue) | ✅ ok |
