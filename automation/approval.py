@@ -104,8 +104,9 @@ def request():
         pending = open_for_approval(entries)
         if not pending:
             continue
-        first = min(e["time"] for e in pending)
-        title = f"Approval {nr}: {pending[0]['id'].split('-', 1)[1].replace('-', ' ')} – {et(first)}"
+        # name the issue after the group's feed post (Reel/carousel), not after a story that happens to come first
+        main = next((e for e in pending if e["type"] != "story"), pending[0])
+        title = f"Approval {nr}: {main['id'].split('-', 1)[1].replace('-', ' ')} – {et(main['time'])}"
         body = (f"@{REPO.split('/')[0]} please take a quick look.\n\n"
                 f"**Reply `go`** → goes live automatically at the times below.\n"
                 f"**Reply `stop`** → paused. Tell Claude what to change.\n\n"
