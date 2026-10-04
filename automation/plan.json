@@ -9,7 +9,8 @@
       "images": [
         "story_launch_1.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 1
     },
     {
       "id": "00-launch-2",
@@ -19,7 +20,8 @@
       "images": [
         "story_launch_2.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 1
     },
     {
       "id": "00-launch-3",
@@ -30,7 +32,8 @@
         "story_launch_3.png"
       ],
       "status": "draft",
-      "note": "Afterwards create the highlight “Start 👋” by hand (cover assets/highlights/hl_start.png)"
+      "note": "Afterwards create the highlight “Start 👋” by hand (cover assets/highlights/hl_start.png)",
+      "issue": 1
     },
     {
       "id": "03-story-poll",
@@ -41,7 +44,8 @@
         "story_poll.png"
       ],
       "status": "draft",
-      "note": "Add the poll sticker by hand in the app (stickers are not possible via the API) – or post as is"
+      "note": "Add the poll sticker by hand in the app (stickers are not possible via the API) – or post as is",
+      "issue": 5
     },
     {
       "id": "01-reel-ref-error",
@@ -52,7 +56,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Launch Reel: 3 days to Oct 15 → #REF!/#NAME?/#VALUE! → tool → green. No voice, on-screen text + music, CTA DM TOOL"
+      "note": "Launch Reel: 3 days to Oct 15 → #REF!/#NAME?/#VALUE! → tool → green. No voice, on-screen text + music, CTA DM TOOL",
+      "issue": 3
     },
     {
       "id": "00-intro",
@@ -71,7 +76,8 @@
       "caption": "caption.txt",
       "status": "draft",
       "after": "Pin to profile (by hand)",
-      "note": "Intro carousel – pin afterwards and share to story"
+      "note": "Intro carousel – pin afterwards and share to story",
+      "issue": 1
     },
     {
       "id": "00-story-teaser",
@@ -81,7 +87,8 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 1
     },
     {
       "id": "02-reel-split",
@@ -92,7 +99,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Split screen: spreadsheet (top) vs. tool (bottom) – companion Reel to the carousel at 7:30 PM"
+      "note": "Split screen: spreadsheet (top) vs. tool (bottom) – companion Reel to the carousel at 7:30 PM",
+      "issue": 4
     },
     {
       "id": "03-excel-mistakes",
@@ -109,7 +117,8 @@
         "slide_07.png"
       ],
       "caption": "caption.txt",
-      "status": "draft"
+      "status": "draft",
+      "issue": 5
     },
     {
       "id": "03-story-teaser",
@@ -119,7 +128,8 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 5
     },
     {
       "id": "04-story-question",
@@ -130,7 +140,8 @@
         "story_question.png"
       ],
       "status": "draft",
-      "note": "Add the question sticker by hand if wanted"
+      "note": "Add the question sticker by hand if wanted",
+      "issue": 6
     },
     {
       "id": "04-reel-hardcoded-rate",
@@ -141,7 +152,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Satisfying: 21% typed into 400 cells → one parameter → all cells update"
+      "note": "Satisfying: 21% typed into 400 cells → one parameter → all cells update",
+      "issue": 6
     },
     {
       "id": "05-story-deadline",
@@ -151,7 +163,8 @@
       "images": [
         "story_deadline.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 7
     },
     {
       "id": "05-reel-deadline-night",
@@ -162,7 +175,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Oct 15 deadline day: 11:48 PM spreadsheet chaos → clean · Contains AI-generated footage (Runway office clip) – switch on the AI label after posting"
+      "note": "Oct 15 deadline day: 11:48 PM spreadsheet chaos → clean · Contains AI-generated footage (Runway office clip) – switch on the AI label after posting",
+      "issue": 7
     },
     {
       "id": "06-163j-ebitda",
@@ -180,7 +194,8 @@
       ],
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Tax law (OBBBA § 163(j)) – read fact_check.md before approving"
+      "note": "Tax law (OBBBA § 163(j)) – read fact_check.md before approving",
+      "issue": 8
     },
     {
       "id": "06-story-teaser",
@@ -190,7 +205,8 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 8
     },
     {
       "id": "06-story-quiz",
@@ -201,7 +217,8 @@
         "story_quiz.png"
       ],
       "status": "draft",
-      "note": "Add the quiz sticker by hand if wanted"
+      "note": "Add the quiz sticker by hand if wanted",
+      "issue": 8
     },
     {
       "id": "07-reel-163j-number",
@@ -212,7 +229,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Number Reel to the 163(j) carousel: +$1,000,000 deductible → $210,000 less federal tax · Tax law – see fact_check.md"
+      "note": "Number Reel to the 163(j) carousel: +$1,000,000 deductible → $210,000 less federal tax · Tax law – see fact_check.md",
+      "issue": 9
     },
     {
       "id": "06-story-answer",
@@ -222,7 +240,8 @@
       "images": [
         "story_answer.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 8
     },
     {
       "id": "10-story-question",
@@ -232,7 +251,8 @@
       "images": [
         "story_question.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 11
     },
     {
       "id": "08-reel-4000-rows",
@@ -243,7 +263,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Satisfying loop: 4,000 messy rows → one click → clean"
+      "note": "Satisfying loop: 4,000 messy rows → one click → clean",
+      "issue": 10
     },
     {
       "id": "09-reel-my-story",
@@ -273,7 +294,8 @@
       ],
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Tax law (OBBBA § 174A) – read fact_check.md before approving"
+      "note": "Tax law (OBBBA § 174A) – read fact_check.md before approving",
+      "issue": 11
     },
     {
       "id": "10-story-teaser",
@@ -283,7 +305,8 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 11
     },
     {
       "id": "12-story-poll",
@@ -293,7 +316,8 @@
       "images": [
         "story_poll.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 13
     },
     {
       "id": "11-reel-163j-demo",
@@ -304,7 +328,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Screen recording of the demo tool: 163(j) EBIT → EBITDA, 12 s · Tax law – see fact_check.md"
+      "note": "Screen recording of the demo tool: 163(j) EBIT → EBITDA, 12 s · Tax law – see fact_check.md",
+      "issue": 12
     },
     {
       "id": "12-reel-ai-vs-code",
@@ -315,7 +340,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Why a chatbot shouldn't do your tax math – AI reads, code calculates"
+      "note": "Why a chatbot shouldn't do your tax math – AI reads, code calculates",
+      "issue": 13
     },
     {
       "id": "13-automate-first",
@@ -333,7 +359,8 @@
       ],
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Conversion carousel + lead magnet (checklist via DM TOOL)"
+      "note": "Conversion carousel + lead magnet (checklist via DM TOOL)",
+      "issue": 14
     },
     {
       "id": "13-story-teaser",
@@ -343,7 +370,8 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 14
     },
     {
       "id": "13-story-cta",
@@ -353,7 +381,8 @@
       "images": [
         "story_cta.png"
       ],
-      "status": "draft"
+      "status": "draft",
+      "issue": 14
     },
     {
       "id": "14-reel-174a-number",
@@ -364,7 +393,8 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Number Reel to the 174A carousel: +$378,000 cash in year 1 · Tax law – see fact_check.md"
+      "note": "Number Reel to the 174A carousel: +$378,000 cash in year 1 · Tax law – see fact_check.md",
+      "issue": 15
     }
   ]
 }
