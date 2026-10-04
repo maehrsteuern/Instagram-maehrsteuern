@@ -251,7 +251,7 @@
       "images": [
         "story_question.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 11
     },
     {
@@ -293,7 +293,7 @@
         "slide_07.png"
       ],
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "note": "Tax law (OBBBA § 174A) – read fact_check.md before approving",
       "issue": 11
     },
@@ -305,7 +305,7 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 11
     },
     {
