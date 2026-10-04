@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 15:54 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 16:14 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `01-reel-5dinge` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -108,6 +108,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 16:14 ✍️ Reel 04.10. umgebaut: „5 Sachen, die ich aus Excel rausgeschmissen hab“ (Community statt Werbung) ([`353300b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/353300b53859ce2859db10a565744c53c84c2d74))
+  - Plan: neu `01-reel-5dinge` (2026-10-04 19:30, freigegeben); neu `01-story-teaser-5dinge` (2026-10-04 19:35, freigegeben)
 - 15:54 ✍️ Ampel-Reel und Teaser 04.10. pausiert: Go zurückgenommen, wird durch Reel „5 Dinge mit Code statt Excel“ ersetzt ([`ca552b3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ca552b33fbf7c6500de59b076c41b3ff7e916f09))
   - Plan: `01-reel-ampel` status: freigegeben → pause; `01-story-teaser` status: freigegeben → pause
 - 14:52 📈 Statistik 2026-10-04 ([`e5a407c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e5a407c19b52d51642910375205b1c48b17183e1))
