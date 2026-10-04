@@ -9,7 +9,7 @@
       "images": [
         "story_launch_1.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 1
     },
     {
@@ -20,7 +20,7 @@
       "images": [
         "story_launch_2.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 1
     },
     {
@@ -31,7 +31,7 @@
       "images": [
         "story_launch_3.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "note": "Afterwards create the highlight “Start 👋” by hand (cover assets/highlights/hl_start.png)",
       "issue": 1
     },
@@ -74,7 +74,7 @@
         "slide_07.png"
       ],
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "after": "Pin to profile (by hand)",
       "note": "Intro carousel – pin afterwards and share to story",
       "issue": 1
@@ -87,7 +87,7 @@
       "images": [
         "story_teaser.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 1
     },
     {
