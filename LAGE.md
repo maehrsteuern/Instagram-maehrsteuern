@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 07:02 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 08:47 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `01-reel-ampel` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -76,17 +76,17 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
-**351 Follower** · 2 Beiträge im Profil (Abruf 2026-10-03) · **+0** seit 2026-10-02
-Reichweite pro Tag: 30.09. **82** · 01.10. **68** · 02.10. **79** · 03.10. **20**
+**351 Follower** · 2 Beiträge im Profil (Abruf 2026-10-04) · **+0** seit 2026-10-03
+Reichweite pro Tag: 30.09. **82** · 01.10. **68** · 02.10. **79** · 03.10. **63**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| Sa 03.10. 12:15 | 15 | 13 | 0 | 0 | 0 |
+| Sa 03.10. 12:15 | 61 | 52 | 1 | 2 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 280 (+37) | 102 | 7 | 2 | 2 | 16 |
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 271 (+9) | 161 | 6 | 2 | 2 | 7 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 297 (+17) | 106 | 7 | 2 | 2 | 16 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 278 (+7) | 165 | 6 | 2 | 2 | 7 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -109,6 +109,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 08:47 📈 Statistik 2026-10-04 ([`91fa33b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/91fa33b5962d62e23d7996789d41c1b65de38ed2))
+  - `automatik/statistik`
 - 07:02 📡 Radar 2026-10-04: 8 Beiträge, 0 DM-Entwürfe ([`9ee31d0`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9ee31d0805fd2abb5e1444972821876d9f5f3dd8))
   - `automatik/interaktion`
 - 01:03 ✍️ Lage-Seite: Veröffentlichung darf scheitern, ohne die Lage rot zu färben ([`015c30e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/015c30e3dbcf0bef7616834ed5c397900c529435))

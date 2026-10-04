@@ -19,6 +19,12 @@ if len(sys.argv) > 1:
 heute_f, vor_f = dateien[-1], (dateien[-2] if len(dateien) > 1 else None)
 d = json.loads(heute_f.read_text())
 v = json.loads(vor_f.read_text()) if vor_f else {}
+# Vortag = Stand des letzten Berichts (Morgen-Schnappschuss), nicht die tagsüber überschriebene insights-Datei
+OUT.mkdir(parents=True, exist_ok=True)
+basis = sorted(p for p in OUT.glob("basis_*.json") if p.stem.split("_")[1] < d["abgerufen"])
+if basis:
+    v = json.loads(basis[-1].read_text())
+(OUT / f"basis_{d['abgerufen']}.json").write_text(json.dumps(d, ensure_ascii=False))
 tag = d["abgerufen"]
 plan = json.loads((ROOT / "automatik/plan.json").read_text())["eintraege"]
 
