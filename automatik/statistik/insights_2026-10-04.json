@@ -60,8 +60,8 @@
    "views": {
     "gesamt": 100,
     "aufgeteilt": {
-     "FOLLOWER": 6,
      "UNKNOWN": 3,
+     "FOLLOWER": 6,
      "NON_FOLLOWER": 91
     }
    },
@@ -171,9 +171,9 @@
    "views": {
     "gesamt": 146,
     "aufgeteilt": {
+     "FOLLOWER": 1,
      "UNKNOWN": 4,
-     "NON_FOLLOWER": 141,
-     "FOLLOWER": 1
+     "NON_FOLLOWER": 141
     }
    },
    "accounts_engaged": 3,
@@ -208,8 +208,8 @@
    "views": {
     "gesamt": 136,
     "aufgeteilt": {
-     "FOLLOWER": 26,
      "UNKNOWN": 13,
+     "FOLLOWER": 26,
      "NON_FOLLOWER": 97
     }
    },
@@ -282,8 +282,8 @@
    "views": {
     "gesamt": 101,
     "aufgeteilt": {
-     "FOLLOWER": 2,
      "UNKNOWN": 1,
+     "FOLLOWER": 2,
      "NON_FOLLOWER": 98
     }
    },
@@ -356,8 +356,8 @@
     "gesamt": 426,
     "aufgeteilt": {
      "UNKNOWN": 8,
-     "FOLLOWER": 33,
-     "NON_FOLLOWER": 385
+     "NON_FOLLOWER": 385,
+     "FOLLOWER": 33
     }
    },
    "accounts_engaged": 0,
@@ -422,15 +422,15 @@
    "reach": {
     "gesamt": 84,
     "aufgeteilt": {
-     "NON_FOLLOWER": 77,
-     "FOLLOWER": 7
+     "FOLLOWER": 7,
+     "NON_FOLLOWER": 77
     }
    },
    "views": {
     "gesamt": 221,
     "aufgeteilt": {
-     "UNKNOWN": 4,
      "FOLLOWER": 40,
+     "UNKNOWN": 4,
      "NON_FOLLOWER": 177
     }
    },
@@ -467,8 +467,8 @@
     "gesamt": 498,
     "aufgeteilt": {
      "UNKNOWN": 20,
-     "NON_FOLLOWER": 427,
-     "FOLLOWER": 51
+     "FOLLOWER": 51,
+     "NON_FOLLOWER": 427
     }
    },
    "accounts_engaged": 0,
@@ -500,9 +500,9 @@
    "views": {
     "gesamt": 634,
     "aufgeteilt": {
-     "UNKNOWN": 20,
      "FOLLOWER": 40,
-     "NON_FOLLOWER": 574
+     "NON_FOLLOWER": 574,
+     "UNKNOWN": 20
     }
    },
    "accounts_engaged": 0,
@@ -661,7 +661,7 @@
   "2026-10-01": 68,
   "2026-10-02": 79,
   "2026-10-03": 63,
-  "2026-10-04": 101
+  "2026-10-04": 175
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -941,16 +941,16 @@
    "like_count": 4,
    "comments_count": 2,
    "caption": "5 Dinge, die ich aus Excel rausgeschmissen hab 👇\n\n5️⃣ Listen abgleichen – statt SVERWEIS und #NV ein paar Zeilen Code, egal wie lang die Liste ist\n4️⃣ Doppelte Rechnungsnummern und Lücken finden – in einer Sekunde, nicht erst in der Prüfung\n3️⃣ Sehen, wer was geändert hat – jede Version bleibt gespeichert, kein „final_final_v3“ mehr\n2️⃣ Zeile einfügen, ohne dass die Summe kaputtgeht\n1️⃣ Der Monatsbericht – Daten rein, ein Klick, fertig\n\nExcel bleibt super zum schnellen Rechnen. Aber alles, was sich jeden Monat wiederholt, macht bei mir inzwischen Code.\n\nWelche Nummer soll ich dir Schritt für Schritt zeigen? Schreib die Zahl in die Kommentare 👇\n🔖 Speicher dir das für später.\n\nAlle Zahlen im Video sind Beispieldaten.\n\n#steuern #steuerabteilung #excel #python #automatisierung",
-   "views": 143,
-   "reach": 85,
+   "views": 223,
+   "reach": 160,
    "likes": 4,
    "comments": 2,
    "saved": 3,
    "shares": 0,
    "total_interactions": 10,
-   "ig_reels_avg_watch_time": 7619,
-   "ig_reels_video_view_total_time": 540971,
-   "reels_skip_rate": 46.4,
+   "ig_reels_avg_watch_time": 8002,
+   "ig_reels_video_view_total_time": 1368416,
+   "reels_skip_rate": 67.4,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -1021,8 +1021,8 @@
   {
    "id": "18386911906224507",
    "zeit": "2026-10-04T17:50:57+0000",
-   "views": 21,
-   "reach": 12,
+   "views": 29,
+   "reach": 17,
    "_fehlt": [
     "likes",
     "comments",
@@ -1036,15 +1036,15 @@
    "profile_visits": 0,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 15,
+   "navigation": 22,
    "replies": 0,
    "kommentare_text": []
   },
   {
    "id": "18143214628582116",
    "zeit": "2026-10-04T17:46:23+0000",
-   "views": 24,
-   "reach": 15,
+   "views": 30,
+   "reach": 24,
    "_fehlt": [
     "likes",
     "comments",
@@ -1058,7 +1058,7 @@
    "profile_visits": 0,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 20,
+   "navigation": 24,
    "replies": 0,
    "kommentare_text": []
   }
