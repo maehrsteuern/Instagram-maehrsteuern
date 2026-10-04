@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 19:46 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 19:48 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -109,6 +109,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 19:48 🤖 Autopilot: vor jedem Posten neuesten Plan holen – verhindert Doppel-Posts ([`5738537`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5738537125e7e824964b436914029f8446af3573))
+  - `LAGE.html`, `automatik/lage_notizen.md`, `automatik/posten.py`
 - 19:46 🤖 Autopilot: 01-story-teaser-5dinge veroeffentlicht ([`a850704`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a850704aa2a081fcd149efb9a8f2a15bbd8df45a))
   - Plan: `01-story-teaser-5dinge` status: freigegeben → veroeffentlicht; `01-story-teaser-5dinge` online: https://www.instagram.com/stories/maehrsteuern/4000661016565086455
 - 19:46 🤖 Autopilot: Dateien fuer 01-story-teaser-5dinge vorbereitet ([`3b9e1ab`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3b9e1ab11b4c811de1de4d0d4e98ed69cfa2910c))
