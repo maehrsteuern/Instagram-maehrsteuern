@@ -139,7 +139,7 @@
       "images": [
         "story_question.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "note": "Add the question sticker by hand if wanted",
       "issue": 6
     },
@@ -151,7 +151,7 @@
       "video": "reel.mp4",
       "cover": "cover.png",
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "note": "Satisfying: 21% typed into 400 cells → one parameter → all cells update",
       "issue": 6
     },
