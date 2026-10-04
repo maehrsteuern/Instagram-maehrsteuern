@@ -163,7 +163,7 @@
       "images": [
         "story_deadline.png"
       ],
-      "status": "draft",
+      "status": "approved",
       "issue": 7
     },
     {
@@ -174,7 +174,7 @@
       "video": "reel.mp4",
       "cover": "cover.png",
       "caption": "caption.txt",
-      "status": "draft",
+      "status": "approved",
       "note": "Oct 15 deadline day: 11:48 PM spreadsheet chaos → clean · Contains AI-generated footage (Runway office clip) – switch on the AI label after posting",
       "issue": 7
     },
