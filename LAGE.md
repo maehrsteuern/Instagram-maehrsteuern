@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 21:04 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung So 04.10. 21:28 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -81,16 +81,16 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 ## 📈 Zahlen (täglich ca. 08:45)
 
 **351 Follower** · 2 Beiträge im Profil (Abruf 2026-10-04) · **+0** seit 2026-10-03
-Reichweite pro Tag: 01.10. **68** · 02.10. **79** · 03.10. **63** · 04.10. **101**
+Reichweite pro Tag: 01.10. **68** · 02.10. **79** · 03.10. **63** · 04.10. **175**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| So 04.10. 19:46 | 24 | 15 | 0 | 0 | 0 |
-| So 04.10. 19:50 | 21 | 12 | 0 | 0 | 0 |
+| So 04.10. 19:46 | 30 | 24 | 0 | 0 | 0 |
+| So 04.10. 19:50 | 29 | 17 | 0 | 0 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 143 | 85 | 4 | 2 | 3 | 0 |
+| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 223 | 160 | 4 | 2 | 3 | 0 |
 | Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 298 (+18) | 107 | 7 | 2 | 2 | 16 |
 | Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 278 (+7) | 165 | 6 | 2 | 2 | 7 |
 
@@ -115,6 +115,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **So 04.10.2026**
+- 21:28 📈 Statistik 2026-10-04 ([`1e9ea9e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1e9ea9ea7c92280cb4d24c0b8a6636c28d6fa5fb))
+  - `automatik/statistik`
 - 21:04 ✍️ Reel-Regeln: Listen-Reels hoechstens 3 Punkte, unter 20 s (Erkenntnis 5-Dinge-Reel) ([`4878531`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/48785317faa85863a94d49e61e1aab4b027e1cbe))
   - `strategie/09_reel_regeln.md`
 - 20:38 📈 Statistik 2026-10-04 ([`1096968`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1096968c6b9b9a9b9156e5f097d3f95312fba9bb))
