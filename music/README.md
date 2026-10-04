@@ -1,14 +1,16 @@
-# Musik für automatische Reels
+# Music for automatic Reels
 
-Instagram-Musik lässt sich über die Schnittstelle nicht hinzufügen. Damit Reels trotzdem automatisch online gehen,
-wird ein lizenzfreier Titel fest ins Video eingebaut.
+Instagram music can't be added through the API. So that Reels can still go live automatically, a royalty-free track is baked into the video.
 
-**Automatisch befüllt** über den Workflow „Musik holen“ (gemeinfreie Titel, siehe `QUELLEN.md`). Eigene Titel kannst du jederzeit ergänzen oder ersetzen:
+**Filled automatically** by the workflow "music" (`.github/workflows/music.yml`, `automation/fetch_music.py` – public-domain tracks, see `SOURCES.md`). You can add or replace your own tracks at any time:
 
-**Titel selbst hochladen** (GitHub → dieser Ordner → *Add file → Upload files*):
-- Quelle: https://pixabay.com/music/ (kostenlos, keine Namensnennung, für Social Media erlaubt)
-- Stil: instrumental, Electronic / Tech / Lo-Fi, **Beat ab Sekunde 0**, 15–60 s
-- Namen: `01_tech.mp3`, `02_lofi.mp3`, … (ohne Leerzeichen)
+**Upload a track yourself** (GitHub → this folder → *Add file → Upload files*):
+- Source: https://pixabay.com/music/ (free, no attribution, allowed for social media) – check the license of every track
+- Style: instrumental, electronic / tech / lo-fi, **beat from second 0**, 15–60 s
+- Names: `07_tech.mp3`, `08_lofi.mp3`, … (no spaces), and add a line to `SOURCES.md`
 
-Die Content-Fabrik wechselt die Titel durch. Willst du für ein Reel trotzdem einen Instagram-Trend-Sound,
-steht das Reel im Plan auf `manuell` und du postest es selbst.
+The Content Factory rotates through the tracks. Rules: ambience in the hook, music only from the solution on, music quiet under a voice (`strategy/09_reel_rules.md`).
+
+**Sound effects** are in `ambience/`: `typing_error_beep.mp3` (typing only), `error_beep.mp3`, `clock_ticking.mp3`.
+
+If you want an Instagram trending sound for a Reel anyway, the Reel gets status `manual` in the plan and you post it yourself (`strategy/05_publishing.md`, Plan B).

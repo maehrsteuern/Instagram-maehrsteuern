@@ -1,88 +1,111 @@
-# 8 · Hooks – die erste Zeile entscheidet
+# 8 · Hooks – the first line decides
 
-Quelle der Grundmuster: Lisa Hu, „33 geniale Hooks für Social Media“ (lisahu.de). Hier nur die Auswahl, die zu **Steuern × Code** passt – umgeschrieben auf unsere Themen und Zielgruppen (Steuerabteilungen, Kanzleien, KMU, Steuer-Community).
+US audiences decide in about a second. Every Reel hook lands in **≤ 1.5 s** as on-screen text from frame 1; every carousel hook fits on slide 1 in **≤ 8 words**. The patterns below were proven on the German sister account and rewritten for US topics and audiences (in-house tax teams, CPA firms, small businesses, students).
 
-## Regeln
-1. **Versprechen halten.** Der Beitrag muss liefern, was der Hook ankündigt – sonst ist es Clickbait und kostet Vertrauen (gerade bei Steuer-Profis).
-2. **Konkret statt laut.** Zahlen, Normen, echte Situationen („#BEZUG! kurz vor Abgabe“) schlagen Superlative. „Gamechanger“, „Geheimnis“, „Gold wert“ nur sparsam – passt selten zum ruhigen Markenstil.
-3. **Ungerade Zahlen** (3, 5, 7) wirken glaubwürdiger als runde.
-4. **Eine Zeile, ein Gedanke.** Auf Folie 1 / im Reel-Einblender höchstens ~8 Wörter; ein Wort grün (`*Wort*`).
-5. **Folie 2 löst ein.** Die zweite Folie bzw. Sekunde 2–3 muss den Hook sofort bedienen.
-6. **Testen.** Pro Beitrag eine Hook-Art notieren und nach 4 Wochen in `06_auswertung.md` vergleichen (Reichweite, Verweildauer, Speicherungen).
+## Rules
+1. **Keep the promise.** The post must deliver what the hook announces – otherwise it's clickbait and costs trust (especially with tax pros).
+2. **Concrete beats loud.** Numbers, code sections, real situations ("#REF! three days before Oct 15") beat superlatives. "Game changer", "secret", "insane" only rarely – they don't fit the calm premium brand.
+3. **Odd numbers** (3, 5, 7) feel more credible than round ones. Exact numbers beat round ones ($378,000, 17 seconds).
+4. **One line, one thought.** Max. ~8 words on slide 1 / in the Reel overlay; one word green (`*word*`).
+5. **Second 2 delivers.** Slide 2 or seconds 1.5–3 must pay off the hook immediately.
+6. **Show the transformation early.** For US Reels: the "before" is in the hook, the "after" is visible before second 8.
+7. **Search terms in the hook.** The words people search ("tax provision", "163(j)", "1099") go into the hook or the first caption line.
+8. **Test.** Note the hook pattern for every post and compare after 4 weeks in `06_analytics.md` (reach, watch time, saves, shares, TOOL).
 
-## Die 6 Bausteine
-| Baustein | Wirkung | Passt bei uns für |
+## The 6 building blocks
+| Building block | Effect | Fits for us |
 |---|---|---|
-| Frage | Leser prüft sich selbst | Storys, Praxis |
-| Enthüllung | „Das wusste ich nicht“ | Wissen |
-| Kontroverse | Meinung, Diskussion | Excel vs. Tool, „Hinter dem Code“ |
-| Exklusivität | Einblick, den sonst keiner zeigt | Demo, Code-Einblicke |
-| Geheimnis / Fehler | Neugier auf die Auflösung | Praxis, persönliche Beiträge |
-| Teaser | Lust auf den nächsten Beitrag | Storys vor Beiträgen |
+| Question | The viewer checks themselves | Stories, in practice |
+| Reveal / number | "I didn't know that" | Know-how, number Reels |
+| Controversy | Opinion, discussion | Spreadsheet vs. tool, AI vs. code, behind the code |
+| Exclusivity | A look nobody else shows | Demo, code peeks, "trained by the German tax office" |
+| Mistake / secret | Curiosity about the answer | In practice, personal posts |
+| Teaser | Wants the next post | Stories before posts |
 
-## Auswahl – angepasst
-Platzhalter `…` durch das Thema ersetzen. In Klammern die Nummer im Original.
+## US hook formulas (plus the satisfying ones)
+| Formula | Example |
+|---|---|
+| Deadline + pain | "3 days to Oct 15. Then this: *#REF!*" |
+| Time vs. time | "2 hours in Excel. *17 seconds* in code." |
+| Count + click | "4,000 rows. *One click.*" |
+| Number + change | "+$1,000,000 deductible. *One line* changed." |
+| Stop doing X | "Stop typing *21%* into 400 cells." |
+| Hot take | "ChatGPT shouldn't do your *tax math*." |
+| Auditor angle | "Your auditor asks: *where's this from?*" |
+| Identity callout | "If you own the tax provision, *watch this.*" |
+| German angle | "The German tax office trained me. *Here's what it taught me.*" |
+| Before/after (satisfying, no words needed) | "Before. *After.*" |
 
-### Frage
-- „Steckst du mit deiner Steuerrückstellung fest? Hier kommt die einfache Lösung.“ (14)
-- „Brauchst du wirklich 20 Tabellenblätter für eine Steuerrückstellung?“ (10)
-- „Bin ich der Einzige, der bei #BEZUG! kurz vor Abgabe Puls bekommt?“ (2)
-- „Ich habe gesehen, dass du ‚…‘ gegoogelt hast …“ (20) – gut für Wissensthemen mit Suchbegriff (z. B. „Hinzurechnung Mieten Gewerbesteuer“)
+## Selection – adapted
+Replace `…` with the topic.
 
-### Enthüllung / Zahlen
-- „3 Dinge, die deine Steuer-Excel wirklich braucht.“ (1)
-- „5 Excel-Fehler, die fast jede Steuerrückstellung hat.“ (32 / 5)
-- „7 unerwartete Vorteile eines Prüfpfads.“ (29)
-- „3 unbekannte Wege, den Abschluss schneller zu machen.“ (27)
-- „Was wäre, wenn ich dir sage, dass … ?“ (17) – z. B. „… deine Rückstellung in 3 Sekunden steht?“
+### Question
+- "Stuck with your tax provision? Here's the simple fix."
+- "Do you really need 20 tabs for one provision?"
+- "Am I the only one whose heart rate spikes at #REF! on deadline day?"
+- "You googled '…', didn't you?" – good for know-how with a search term (e.g. "163(j) EBITDA")
 
-### Kontroverse
-- „Wir müssen ehrlich über *Excel* reden.“ (33) – **im Einsatz:** Start-Story
-- „Hör auf, Steuersätze fest einzutippen. Mach es so.“ (11)
-- „Bye bye Tabellenchaos – so läuft die Steuerrückstellung heute.“ (16)
-- „3 red flags in deiner Steuer-Datei.“ (22)
+### Reveal / numbers
+- "3 things your tax spreadsheet actually needs."
+- "5 spreadsheet mistakes almost every tax provision has."
+- "7 unexpected benefits of an audit trail."
+- "3 ways to make your year-end close faster."
+- "What if your provision was done in 3 seconds?"
 
-### Exklusivität / Einblick
-- „Klau dir meine Struktur für …“ (6)
-- „Maximaler Input in 60 Sekunden: …“ (3) – für kurze Wissens-Reels
-- „Du brauchst das, wenn du in einer Steuerabteilung arbeitest.“ (21)
+### Controversy
+- "We need to talk about *Excel*."
+- "Stop hard-coding tax rates. Do this instead."
+- "Bye-bye spreadsheet chaos – this is how the provision runs now."
+- "3 red flags in your tax workbook."
 
-### Fehler / persönlich
-- „Da lag ich falsch. Du auch?“ (23)
-- „Warum ich keine Steuer-Excel mehr baue.“ (13)
-- „Du glaubst nicht, welchen Fehler ich im ersten Abschluss gemacht habe.“ (25)
-- „Ich wollte … automatisieren. Das ist daraus geworden.“ (9)
+### Exclusivity
+- "Steal my structure for …"
+- "Max input in 60 seconds: …" – for short know-how Reels
+- "You need this if you work in a tax department."
 
-### Teaser / Story
-- „Warte kurz – gleich kommt die Lösung für …“ (28)
-- „Wenn du … willst, schau bis zum Ende.“ (19) – nur in Reels mit echter Auflösung am Ende
-- „Das brauchst du heute. Versprochen.“ (31) – nur für einen wirklich sofort nutzbaren Tipp
+### Mistake / personal
+- "I was wrong about this. Were you?"
+- "Why I stopped building tax spreadsheets."
+- "The mistake I made in my first year-end close."
+- "I tried to automate … Here's what happened."
 
-Bewusst **nicht** übernommen: „Meine Kundin hat in … Tagen …“ (26), solange es keine echten, freigegebenen Kundenergebnisse gibt; „Fühlst du dich ausgebrannt …“ (24), passt nicht zum Markenton.
+### Teaser / story
+- "Wait – the fix for … is coming."
+- "If you want …, watch till the end." – only in Reels with a real payoff at the end
+- "You'll need this today. Promise." – only for a tip that's usable right away
 
-## Lernpunkte aus dem Wettbewerbs-Check (für die Content-Fabrik)
-Vor jedem Lauf `strategie/wettbewerb.md` lesen (monatlich aktualisiert von Chrome-Modul 6). Daraus gilt:
+Deliberately **not** used: "My client saved … in … days" (until there are real, approved client results); "Feeling burned out …?" (doesn't fit the brand tone); fear-mongering about the IRS ("The IRS is coming for you").
 
-- **Pro Lauf mindestens ein Beitrag** mit einem der beiden Muster:
-  - **a) Konkreter Fall als Hook** – ein echter, typischer Fehler aus der Steuerabteilung statt der Tool-Funktion (z. B. „#BEZUG! zwei Tage vor der Frist“).
-  - **b) Prüfer-/Finanzamt-Perspektive** – „Der Prüfer findet …“ / „Das Finanzamt fragt …“, danach zeigen, wie das Tool den Prüfpfad liefert.
-- **Keine Angstmache, keine erfundenen Fälle:** Fälle sind typisch und so gekennzeichnet („passiert ständig“), nie als echte Kundin/echter Kunde ausgegeben. Keine Arbeitgeber-Bezüge.
-- **Im Freigabe-Issue** pro Beitrag kurz notieren, welcher Lernpunkt genutzt wurde (z. B. „Hook-Muster b aus wettbewerb.md, Okt. 2026“) – so sieht der Wochenbericht später, ob es wirkt.
-- Collab-Ideen („Kanzlei vs. Tool“) nur als Vorschlag ins Freigabe-Issue, nie selbst Kontakt aufnehmen.
-- Stichwort im Aufruf bleibt **TOOL** (ManyChat) – kein neues Stichwort erfinden.
+## Learnings from the competitor check (for the Content Factory)
+Read `strategy/competition.md` before every run (updated monthly by Chrome module 6). Until US data is in, these patterns apply (proven on the German account):
 
-## Vorschläge für die geplanten Beiträge
-Der aktuelle Haken bleibt Standard. Die Varianten sind Optionen für die Content-Fabrik bzw. für fertige Beiträge nur nach Rücksprache.
+- **At least one post per run** uses one of these two patterns:
+  - **a) A concrete case as the hook** – a real, typical mistake from a tax team instead of the tool feature (e.g. "#REF! three days before Oct 15").
+  - **b) Auditor / reviewer perspective** – "Your auditor finds …" / "The reviewer asks …", then show how the tool delivers the audit trail. Never IRS fear-mongering.
+- **No scare tactics, no invented cases:** cases are typical and labeled as such ("happens all the time"), never presented as a real client. No employer references.
+- **In the approval issue** note per post which learning was used (e.g. "hook pattern b from competition.md, Oct 2026") – so the weekly report can see whether it works.
+- Collab ideas only as a suggestion in the approval issue – never reach out yourself.
+- The CTA keyword stays **TOOL** (ManyChat) – never invent a new keyword.
 
-| Beitrag | Aktueller Haken | Variante A | Variante B |
+## Variants for the launch posts (Oct 12–23)
+The current hook is the default. Variants are options for the Content Factory or – for finished posts – only after checking with Loris.
+
+| Post | Current hook | Variant A | Variant B |
 |---|---|---|---|
-| 01 Reel Ampel (04.10.) | „3 Stunden Excel – oder 3 Sekunden?“ | „Was wäre, wenn deine Rückstellung in *3 Sekunden* steht?“ (Enthüllung) | „Bye bye *Tabellenchaos*.“ (Kontroverse) |
-| 02 Excel-Fehler (06.10.) | „5 Excel-Fehler, die fast jede Steuerrückstellung hat“ | „5 *red flags* in deiner Steuerrückstellung.“ | „Fehler Nr. 3 macht *fast jeder*.“ (Neugier auf eine Folie) |
-| 03 GewSt-Hinzurechnung (13.10.) | **übernommen:** „Werden Mieten *voll* hinzugerechnet?“ (Frage, knüpft ans Montags-Quiz an; Antwort bewusst erst im Karussell und in der Freitags-Auflösung) – vorher „Gewerbesteuer-Hinzurechnung in 7 Folien“ | „Maximaler Input: *Hinzurechnung* in 7 Folien.“ |
-| 04 Reel Mein Weg (20.10.) | „Vom Steuer-Studium zum eigenen Steuer-Tool“ | „Warum ich keine Steuer-Excel *mehr baue*.“ | „Da lag ich *falsch*. Du auch?“ |
-| 05 Reel Prüfpfad (27.10.) | „Prüfpfad: Jede Zahl bis zur Quelle klicken“ | „Woher kommt *diese Zahl*? Ein Klick.“ | „Die Frage jeder Betriebsprüfung – in *1 Sekunde* beantwortet.“ |
-| 06 Excel vs. Software vs. Tool (03.11.) | „… ehrlich verglichen“ | „Wir müssen ehrlich über *Standardsoftware* reden.“ | „Brauchst du wirklich *teure Software* für deine Rückstellung?“ (Frage) |
-| 07 Jahresabschluss 7 Punkte (10.11.) | „7 Steuer-Punkte, die du jetzt schon vorbereiten kannst“ | „7 Dinge, die du *heute* für den Abschluss tun kannst.“ | „Dein Abschluss-Ich im Januar wird dir *danken*.“ |
-| 08 Feature-Reel (17.11.) | „Ihr habt abgestimmt – ich baue das Feature“ | „Ihr wolltet es. *Hier ist es.*“ | „Ich habe versucht, *euer Feature* an einem Wochenende zu bauen.“ |
+| 01 Reel #REF! (10/12) | "3 days to the Oct 15 deadline. Then this: #REF!" | "Oct 12. Provision almost done. *#REF!*" (deadline + pain) | "Your provision, *3 days* before Oct 15." (identity) |
+| 00 Intro (10/12) | "New here? Quick intro 👋" | "The German tax office trained me. *Now I code.*" (German angle) | – |
+| 02 Reel split (10/13) | "Spreadsheet (2 h) vs. tool (17 s)" | "Same task. *2 hours* vs. *17 seconds.*" (time vs. time) | "Who's faster? *Left or right?*" (question) |
+| 03 Excel mistakes (10/13) | "5 spreadsheet mistakes in your tax provision" | "5 *red flags* in your tax provision." (controversy) | "Mistake #3 is in *almost every* workbook." (curiosity) |
+| 04 Reel hard-coded rate (10/14) | "21% typed into 400 cells" | "Stop typing *21%* into 400 cells." (stop doing X) | – |
+| 05 Reel deadline night (10/15) | "Oct 15, 11:48 PM. Still in Excel?" | "11:48 PM. *12 minutes* to file." (deadline + pain) | – |
+| 06 § 163(j) carousel (10/15) | "§ 163(j) is back on EBITDA – your interest limit just grew" | "Your interest limit just got *$1.2M bigger.*" (number) | "163(j) changed. *Did your model?*" (question) |
+| 07 Reel § 163(j) number (10/16) | "+$1,000,000 deductible. One line changed." | "One cell: *EBIT → EBITDA.* +$1M." (number + change) | – |
+| 08 Reel 4,000 rows (10/19) | "4,000 rows. One click." | "Somewhere in here is *one* error." (mistake/secret) | – |
+| 09 Reel my story (10/20) | "From the German tax office to building tax tools" | "Trained by the *most rule-obsessed* tax office on earth." (German angle) | – |
+| 10 § 174A carousel (10/20) | "§ 174A: R&D expensing is back – what it does to your deferred taxes" | "R&D is deductible again. *Your DTA isn't ready.*" (controversy) | – |
+| 11 Reel 163(j) demo (10/21) | 163(j) calculator, EBIT → EBITDA | "Watch the *disallowed* line hit zero." (open loop) | – |
+| 12 Reel AI vs. code (10/22) | "Why ChatGPT shouldn't do your tax math" | "AI reads. *Code calculates.*" (hot take) | – |
+| 13 Automate first (10/22) | "3 tax workflows I'd automate first" | "Automate *these 3* before busy season." (exclusivity) | – |
+| 14 Reel § 174A number (10/23) | "+$378,000 cash in year 1. Same R&D." | "Same R&D. *$378,000* less tax." (number) | – |
 
-**Storys vor Beiträgen:** Frage-Hooks (Baustein „Frage“) behalten – sie liefern die Antworten, auf die der Beitrag dann eingeht. Am Folgetag die Auflösung mit Teaser-Hook („Warte kurz – gleich kommt die Lösung …“).
+**Stories before posts:** keep question hooks (building block "question") – they produce the replies the post then picks up. The next day the answer with a teaser hook ("Wait – the fix is coming …").
