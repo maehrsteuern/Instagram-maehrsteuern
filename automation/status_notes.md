@@ -1,6 +1,9 @@
-- **@maehrtax** (US English sister account of @maehrsteuern) is being created via Cowork – handle, name field, bio and English booking link as in `strategy/00_us_brief.md`.
-- **Repo** `maehrsteuern/maehrtax---instagram` still has to be created (this branch becomes `main`); then turn on GitHub Pages (Settings → Pages → Source "GitHub Actions").
+- **@maehrtax** (US English sister account of @maehrsteuern) is being created via Cowork – prompt in `strategy/17_cowork_prompt.md` (account + profile, Meta connection, radar check, ManyChat, English booking link).
+- **Repo** `maehrsteuern/maehrtax---instagram` is live (`main`). Still to do by hand: Settings → Pages → Source "GitHub Actions".
 - **Secrets missing**: IG_TOKEN, IG_USER_ID, GH_PAT, ANTHROPIC_API_KEY, GOOGLE_SA_KEY, GOOGLE_CALENDAR_ID (calendar "maehrtax Autopilot"); FB_TOKEN, FB_IG_USER_ID, FB_APP_ID, FB_APP_SECRET for the radar. Until then every workflow skips cleanly.
-- **Launch Sun 10/11** (3 stories at 9:00 AM ET), then **Reel-first**: 5 Reels a week (Mon–Fri 12:30 PM ET), 2 carousels (Tue/Thu 7:30 PM ET), daily stories. All 31 launch entries are drafts – nothing posts before "go".
-- **Content Factory** routine for the US account is not created yet.
-- **Radar** has no verified US accounts yet – Cowork checks `radar.candidates_to_verify` in `automation/interaction.json` and moves verified ones to `radar.accounts`. LinkedIn packages are off.
+- **Launch Sun 10/11** (3 stories at 9:00 AM ET), then **Reel-first**: 5 Reels a week (Mon–Fri 12:30 PM ET), 2 carousels (Tue/Thu 7:30 PM ET), daily stories. All launch content is rendered (9 Reels, 5 carousels, 19 stories); all 31 entries are drafts – nothing posts before "go".
+- **Before "go"**: read `fact_check.md` for 163(j) (06, 07, 11) and 174A (10, 14) – OBBBA section numbers, $31M threshold and the Rev. Proc. 2025-28 date are from secondary sources. AI label for Reel 05. Listen to the music of 01, 03 (=Reel 07/14) and 06 once on a phone.
+- **Reel 09 "my story"** waits for Loris' concept and an English voice note (`posts/09_…/script.md`).
+- **Radar**: 40 web-verified US accounts in `radar.accounts` (+17 candidates) – Cowork module C checks activity. LinkedIn packages are off.
+- **Lead magnet** `assets/lead_magnet/spreadsheet_to_code_checklist.pdf` must be behind the ManyChat keyword TOOL before 10/22 (carousel 13 promises it).
+- **Content Factory** routine for the US account is not created yet (prompt in `strategy/15_content_factory.md`).

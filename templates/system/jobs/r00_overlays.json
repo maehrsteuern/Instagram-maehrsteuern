@@ -1,0 +1,5 @@
+{ "output": "../hooks/overlays",
+  "images": [
+    { "template": "overlay", "file": "cta_dm_tool.png", "type": "cta", "transparent": true, "sub": "Free demo with sample data" },
+    { "template": "overlay", "file": "cta_checklist.png", "type": "cta", "transparent": true, "sub": "Free demo + checklist" }
+  ] }

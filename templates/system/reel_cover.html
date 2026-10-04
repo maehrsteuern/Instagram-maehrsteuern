@@ -1,19 +1,36 @@
-<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="text.js"></script>
-<!-- Reel-Titelbild 1080×1920. Text bleibt im mittleren 3:4-Bereich (1080×1440), damit er im Profilraster nicht abgeschnitten wird -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../fonts.css"><script src="text.js"></script>
+<!--
+  Reel cover 1080×1920 (render.mjs template "reel_cover"). Series look for all @maehrtax Reels:
+  blurred frame of the Reel behind a dark glass, pillar kicker, big Outfit headline, one-line sub, handle.
+  All key text stays inside the centred 3:4 area (1080×1440, y 240–1680) so the profile grid doesn't crop it.
+  Data keys:
+    pillar   DEMO | IN PRACTICE | KNOW-HOW | BEHIND THE CODE | SATISFYING   (kicker = "<pillar> · TAX × CODE")
+    kicker   overrides the kicker line            title  headline (*word* = green, \n = line break)
+    sub      line below the headline              image  background (path relative to templates/system; default ../../assets/app_9x16.png)
+    badge    optional small pill above the kicker (e.g. "§ 163(j)")      handle  default "@maehrtax"
+-->
 <style>
-html,body{width:1080px;height:1920px}
-.bg{position:absolute;inset:0;background:center/cover;filter:blur(9px) brightness(.5) saturate(1.1);transform:scale(1.04)}
-.shade{position:absolute;inset:0;background:radial-gradient(90% 55% at 50% 50%,rgba(8,20,16,.35),rgba(8,14,11,.92))}
-.box{position:absolute;left:70px;right:70px;top:50%;transform:translateY(-50%);text-align:center}
-.kicker{font-size:38px;margin-bottom:40px}
-h1{font-family:var(--serif);font-weight:600;font-size:140px;line-height:1.0;margin:0}
-.sub{margin-top:48px;font-size:46px;color:var(--text2);font-weight:500}
-.chip{margin-top:60px;font-size:44px;color:var(--text)}
-</style></head><body><div class="bg" id="bg"></div><div class="shade"></div>
-<div class="box" id="box"></div>
+@font-face{font-family:"Outfit";src:url("fonts/Outfit-Bold.ttf");font-weight:700}
+:root{--bg:#0B110E;--green:#53C3A2;--text:#EAF1EC;--text2:#C9D6CE;--muted:#8FA398;--mono:"IBM Plex Mono",monospace}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans",sans-serif}
+.bg{position:absolute;inset:-30px;background:center/cover;filter:blur(10px) brightness(.55) saturate(1.1)}
+.shade{position:absolute;inset:0;background:radial-gradient(85% 50% at 50% 50%,rgba(8,20,16,.55),rgba(8,14,11,.94))}
+.frame{position:absolute;left:60px;right:60px;top:300px;bottom:300px;border:3px solid rgba(83,195,162,.35);border-radius:48px;
+  box-shadow:inset 0 0 120px rgba(83,195,162,.12)}
+.box{position:absolute;left:110px;right:110px;top:50%;transform:translateY(-50%);text-align:center}
+.badge{display:inline-block;font-family:var(--mono);font-weight:600;font-size:34px;color:var(--bg);background:var(--green);padding:10px 26px;border-radius:14px;margin-bottom:34px}
+.kicker{font-family:var(--mono);letter-spacing:.28em;text-transform:uppercase;color:var(--green);font-weight:600;font-size:34px;margin-bottom:44px}
+h1{font-family:"Outfit",sans-serif;font-weight:700;font-size:136px;line-height:1;margin:0;letter-spacing:-.01em;text-shadow:0 6px 40px rgba(0,0,0,.6)}
+.a{color:var(--green)}
+.sub{margin-top:50px;font-size:50px;color:var(--text2);font-weight:500;line-height:1.3}
+.handle{position:absolute;left:0;right:0;bottom:350px;text-align:center;font-family:var(--mono);font-size:36px;color:var(--muted);letter-spacing:.06em}
+</style></head><body><div class="bg" id="bg"></div><div class="shade"></div><div class="frame"></div>
+<div class="box" id="box"></div><div class="handle" id="handle"></div>
 <script>
-const d = window.DATA || {saeule:'Demo',titel:'Ertragsteuer-\n*Ampel*',sub:'3 Sekunden statt 3 Stunden.'};
-$('bg').style.backgroundImage = `url(${d.bild||'../app_9x16.png'})`;
-$('box').innerHTML = `<div class="kicker">${fmt(d.kicker ?? d.saeule+' · Steuern × Code')}</div><h1>${fmt(d.titel)}</h1>
- ${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}<span class="chip">@maehrsteuern</span>`;
+const d = window.DATA || {pillar:'Demo', title:'Red → *green*\nin one click', sub:'ASC 740 provision check'};
+$('bg').style.backgroundImage = `url(${d.image || '../../assets/app_9x16.png'})`;
+$('box').innerHTML = `${d.badge?`<div class="badge">${fmt(d.badge)}</div><br>`:''}<div class="kicker">${fmt(d.kicker ?? (d.pillar||'Demo') + ' · Tax × Code')}</div>
+  <h1>${fmt(d.title)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}`;
+$('handle').textContent = d.handle || '@maehrtax';
 </script></body></html>

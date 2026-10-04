@@ -1,0 +1,21 @@
+{ "output": "../../posts",
+  "images": [
+    { "template": "reel_cover", "file": "01_2026-10-12_reel_ref_error/cover.png", "pillar": "Demo",
+      "title": "Red → *green*\nin one click", "sub": "3 days to Oct 15. Then #REF!", "image": "../../posts/01_2026-10-12_reel_ref_error/clips/cover_bg.jpg" },
+    { "template": "reel_cover", "file": "02_2026-10-13_reel_split/cover.png", "pillar": "Demo",
+      "title": "2 hours\nvs. *17 sec*", "sub": "Same task. Spreadsheet vs. tool.", "image": "../../posts/02_2026-10-13_reel_split/clips/cover_bg.jpg" },
+    { "template": "reel_cover", "file": "04_2026-10-14_reel_hardcoded_rate/cover.png", "pillar": "Satisfying",
+      "title": "400 cells.\n*1 parameter.*", "sub": "Stop typing 21% by hand.", "image": "../../posts/04_2026-10-14_reel_hardcoded_rate/clips/cover_bg.jpg" },
+    { "template": "reel_cover", "file": "05_2026-10-15_reel_deadline_night/cover.png", "pillar": "Satisfying",
+      "title": "11:48 PM.\nStill in\n*Excel?*", "sub": "Oct 15 deadline night", "image": "../../posts/05_2026-10-15_reel_deadline_night/clips/cover_bg.jpg" },
+    { "template": "reel_cover", "file": "07_2026-10-16_reel_163j_number/cover.png", "pillar": "Know-how", "badge": "§ 163(j)",
+      "title": "*+$1,000,000*\ndeductible", "sub": "EBIT → EBITDA · $210,000 less tax", "image": "../../posts/07_2026-10-16_reel_163j_number/clips/cover_bg.jpg" },
+    { "template": "reel_cover", "file": "08_2026-10-19_reel_4000_rows/cover.png", "pillar": "Satisfying",
+      "title": "4,000 rows.\n*One click.*", "sub": "Messy export → clean data", "image": "../../posts/08_2026-10-19_reel_4000_rows/clips/cover_bg.jpg" },
+    { "template": "reel_cover", "file": "11_2026-10-21_reel_163j_demo/cover.png", "pillar": "Demo", "badge": "§ 163(j)",
+      "title": "Interest limit\njust *grew.*", "sub": "$3.0M → $4.2M in one click", "image": "../../posts/11_2026-10-21_reel_163j_demo/clips/cover_bg.jpg" },
+    { "template": "reel_cover", "file": "12_2026-10-22_reel_ai_vs_code/cover.png", "pillar": "In practice",
+      "title": "AI reads.\n*Code*\n*calculates.*", "sub": "Why a chatbot shouldn't do your tax math", "image": "../../posts/12_2026-10-22_reel_ai_vs_code/clips/cover_bg.jpg" },
+    { "template": "reel_cover", "file": "14_2026-10-23_reel_174a_number/cover.png", "pillar": "Know-how", "badge": "§ 174A",
+      "title": "*+$378,000*\nin year 1", "sub": "Same R&D. New § 174A.", "image": "../../posts/14_2026-10-23_reel_174a_number/clips/cover_bg.jpg" }
+  ] }

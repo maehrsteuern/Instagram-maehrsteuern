@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=540">
+<title>Tax × Code · Provision Check</title>
+<!--
+  Fictional demo web app "Tax × Code · Provision Check" for scripted screen recordings (recorder.mjs).
+  Demo company "Northwind Manufacturing Inc." (fictional), numbers from strategy/00_us_brief.md. No real data.
+  Phone layout: 540×960 CSS px, recorded at 2× → 1080×1920. Key content stays inside the Reel safe zone
+  (CSS y 125–750, right 75 px free in the lower half – the icon rail on the right is decoration only).
+
+  URL parameters:
+    view     provision | 163j | 174a | cleanup | rate        (default provision)
+    state    provision: red | yellow | green · 163j: ebit | ebitda · 174a: old | new · cleanup: messy | clean · rate: hard | linked
+    compact  1 = half-height layout (540×280) for the split-screen Reel
+    auto     1 = play the demo action by itself after 1 s (previews, screenshots)
+  Page API for recording scripts (window.demo):
+    demo.fix()         provision: fix all issues, red → yellow → green (~3 s)
+    demo.basis(b)      163j: "ebit" | "ebitda"         demo.rule(r)  174a: "old" | "new"
+    demo.clean()       cleanup: clean 4,000 rows (~3 s)   demo.mess()  back to messy (loop transition, 0.5 s)
+    demo.link()        rate: link all 400 cells to FED_RATE in a wave (~2.4 s)
+    demo.show(view)    switch view
+  All animations are JavaScript-driven (performance.now / requestAnimationFrame) so the recorder's fake clock can step them.
+-->
+<link rel="stylesheet" href="../../fonts.css">
+<style>
+:root{
+  --bg:#0B110E; --bg2:#153A31; --card:#111A16; --card2:#16211C; --line:#22322B; --line2:#2C3F37;
+  --green:#53C3A2; --green-soft:rgba(83,195,162,.14); --text:#EAF1EC; --text2:#C9D6CE; --muted:#8FA398;
+  --red:#FF6B5E; --red-soft:rgba(255,107,94,.14); --yellow:#F2B84B; --yellow-soft:rgba(242,184,75,.15);
+  --serif:"IBM Plex Serif",Georgia,serif; --sans:"IBM Plex Sans","Liberation Sans",sans-serif; --mono:"IBM Plex Mono","DejaVu Sans Mono",monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:540px;height:960px;overflow:hidden;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+#stage{position:relative;width:540px;height:960px;overflow:hidden;
+  background:radial-gradient(120% 60% at 30% 0%,#163a30 0%,rgba(21,58,49,0) 60%),linear-gradient(180deg,#0E1813 0%,var(--bg) 55%)}
+.num{font-variant-numeric:tabular-nums}
+/* ---------- app chrome ---------- */
+.topbar{position:absolute;left:18px;right:18px;top:20px;height:44px;display:flex;align-items:center;gap:12px}
+.mark{width:44px;height:40px;border-radius:11px;white-space:nowrap;background:linear-gradient(140deg,#1d4a3e,#0f2a23);border:1.5px solid rgba(83,195,162,.55);
+  display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:600;font-size:12.5px;color:var(--text);letter-spacing:-.06em}
+.mark span{color:var(--green)}
+.brand b{display:block;font-family:var(--serif);font-weight:600;font-size:19px;line-height:1.1}
+.brand small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-top:2px}
+.topbar .badge{margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--yellow);background:var(--yellow-soft);
+  border:1px solid rgba(242,184,75,.35);padding:5px 9px;border-radius:7px}
+.company{position:absolute;left:18px;right:18px;top:76px;font-size:13px;color:var(--text2);display:flex;align-items:center;gap:8px}
+.company .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green)}
+.company i{font-style:normal;color:var(--muted)}
+.tabs{position:absolute;left:18px;right:70px;top:128px;height:36px;display:flex;gap:6px;background:#0E1612;border:1px solid var(--line);border-radius:12px;padding:3px}
+.tabs a{flex:1;display:grid;place-items:center;font-size:12.5px;font-weight:600;color:var(--muted);border-radius:9px;cursor:pointer;white-space:nowrap}
+.tabs a.on{background:var(--card2);color:var(--text);box-shadow:inset 0 0 0 1px var(--line2)}
+.rail{position:absolute;right:12px;top:128px;width:44px;display:flex;flex-direction:column;gap:10px}
+.rail div{width:44px;height:44px;border-radius:12px;background:#0E1612;border:1px solid var(--line);display:grid;place-items:center}
+.rail div.on{border-color:rgba(83,195,162,.6);background:var(--green-soft)}
+.rail svg{width:20px;height:20px;stroke:var(--muted);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.rail div.on svg{stroke:var(--green)}
+main{position:absolute;left:18px;width:452px;top:176px;height:584px}
+.audit{position:absolute;left:18px;width:452px;top:784px;font-family:var(--mono);font-size:11.5px;color:var(--muted);display:flex;gap:8px;align-items:center}
+.audit b{color:var(--green);font-weight:600}
+footer{position:absolute;left:18px;right:18px;bottom:22px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:#5f7268;text-align:center}
+/* ---------- building blocks ---------- */
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:14px 16px;position:relative}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:600}
+.kicker.muted{color:var(--muted)}
+.gap{height:9px}
+.row{display:flex;align-items:center;gap:10px}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;height:44px;border-radius:12px;font-weight:600;font-size:15.5px;cursor:pointer;
+  background:var(--green);color:#06201A;box-shadow:0 6px 24px rgba(83,195,162,.28)}
+.btn.ghost{background:transparent;color:var(--green);box-shadow:inset 0 0 0 1.5px rgba(83,195,162,.6)}
+.btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.pill{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.1em;padding:4px 8px;border-radius:7px;white-space:nowrap}
+.p-red{color:var(--red);background:var(--red-soft)} .p-yellow{color:var(--yellow);background:var(--yellow-soft)} .p-green{color:var(--green);background:var(--green-soft)}
+.c-red{color:var(--red)} .c-yellow{color:var(--yellow)} .c-green{color:var(--green)} .c-muted{color:var(--muted)}
+.spin{width:16px;height:16px;border-radius:50%;border:2.5px solid rgba(6,32,26,.3);border-top-color:#06201A}
+/* lamps */
+.lamps{display:flex;gap:9px;padding:9px 12px;border-radius:40px;background:#0A100D;border:1px solid var(--line2)}
+.lamp{width:30px;height:30px;border-radius:50%;opacity:.15}
+.lamp.r{background:var(--red)} .lamp.y{background:var(--yellow)} .lamp.g{background:var(--green)}
+/* tables of numbers */
+.kv{display:flex;align-items:baseline;justify-content:space-between;padding:6px 0;border-top:1px solid var(--line);font-size:14.5px}
+.kv:first-of-type{border-top:0}
+.kv .v{font-family:var(--mono);font-weight:600;font-size:15px}
+.kv.total{border-top:1.5px solid var(--line2);font-weight:600}
+.kv.total .v{font-size:17px}
+.err{color:var(--red)!important}
+/* toggle */
+.toggle{position:relative;display:flex;background:#0A100D;border:1px solid var(--line2);border-radius:13px;padding:4px;height:46px}
+.toggle .thumb{position:absolute;top:4px;bottom:4px;border-radius:10px;background:var(--card2);box-shadow:inset 0 0 0 1.5px rgba(83,195,162,.65),0 0 18px rgba(83,195,162,.18)}
+.toggle a{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted);line-height:1.1}
+.toggle a small{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;font-weight:500;margin-top:2px}
+.toggle a.on{color:var(--text)}
+.toggle a.on small{color:var(--green)}
+/* banner */
+.banner{border-radius:16px;padding:12px 16px;background:linear-gradient(135deg,rgba(83,195,162,.22),rgba(83,195,162,.06));border:1.5px solid rgba(83,195,162,.65);
+  box-shadow:0 0 34px rgba(83,195,162,.22)}
+.banner .big{font-family:var(--serif);font-weight:600;font-size:27px;color:var(--green);line-height:1.1}
+.banner .small{font-size:13.5px;color:var(--text2);margin-top:3px}
+.banner .small b{color:var(--text);font-family:var(--mono)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tile{background:#0F1713;border:1px solid var(--line);border-radius:13px;padding:9px 12px}
+.tile small{display:block;font-size:11.5px;color:var(--muted)}
+.tile b{display:block;font-family:var(--mono);font-size:17px;font-weight:600;margin-top:2px}
+.title{display:flex;align-items:baseline;justify-content:space-between}
+.title .h{font-family:var(--serif);font-weight:600;font-size:21px}
+.title small{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.06em}
+/* ---------- provision ---------- */
+.status{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;align-items:center}
+.status .t{font-family:var(--serif);font-weight:600;font-size:25px;line-height:1.05}
+.status .s{font-size:12.5px;color:var(--muted);margin-top:3px}
+.check{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;padding:4px 0;border-top:1px solid var(--line)}
+.check:first-of-type{border-top:0}
+.check .ic{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;font-family:var(--mono)}
+.check .n{font-size:14px;font-weight:600;line-height:1.15}
+.check .d{font-size:11.5px;color:var(--muted);font-family:var(--mono);margin-top:2px;white-space:nowrap}
+.i-red{background:var(--red-soft);color:var(--red)} .i-yellow{background:var(--yellow-soft);color:var(--yellow)} .i-green{background:var(--green-soft);color:var(--green)}
+/* ---------- 163j / 174a ---------- */
+.bar{position:relative;height:30px;border-radius:9px;background:#0A100D;border:1px solid var(--line2);overflow:visible}
+.bar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:8px;background:linear-gradient(90deg,#2f8f74,var(--green))}
+.bar .over{position:absolute;top:0;bottom:0;border-radius:0 8px 8px 0;
+  background:repeating-linear-gradient(135deg,rgba(255,107,94,.55) 0 6px,rgba(255,107,94,.2) 6px 12px)}
+.bar .mark{position:absolute;top:-7px;bottom:-7px;width:2.5px;background:var(--text);border-radius:2px}
+.axis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:6px}
+.cols{display:flex;align-items:flex-end;gap:10px;height:120px;padding:0 4px}
+.col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.col .b{width:100%;border-radius:7px 7px 3px 3px;background:linear-gradient(180deg,var(--green),#2f8f74)}
+.col .lbl{font-family:var(--mono);font-size:10px;color:var(--text2);margin-bottom:4px;white-space:nowrap}
+.years{display:flex;gap:10px;padding:6px 4px 0}
+.years span{flex:1;text-align:center;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+/* ---------- cleanup ---------- */
+table.grid{width:100%;border-collapse:collapse;table-layout:fixed;font-size:12px}
+table.grid th{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--muted);text-align:left;font-weight:500;padding:0 6px 6px}
+table.grid td{height:25px;padding:0 6px;border-top:1px solid var(--line);white-space:nowrap;overflow:hidden;font-family:var(--mono)}
+table.grid td.r{text-align:right}
+table.grid td.bad{color:var(--red);background:rgba(255,107,94,.08)}
+table.grid td.ok{color:var(--text)}
+table.grid td.n{color:#5f7268}
+.progress{height:8px;border-radius:5px;background:#0A100D;border:1px solid var(--line2);overflow:hidden}
+.progress div{height:100%;background:var(--green);width:0}
+.stat{background:#0F1713;border:1px solid var(--line);border-radius:12px;padding:7px 11px}
+.stat small{display:block;font-size:10.5px;color:var(--muted);font-family:var(--mono);letter-spacing:.06em}
+.stat b{display:block;font-family:var(--mono);font-size:19px;font-weight:600}
+/* ---------- rate grid ---------- */
+.cells{display:grid;grid-template-columns:repeat(16,1fr);gap:2px}
+.cell{height:16px;border-radius:3px;display:grid;place-items:center;font-family:var(--mono);font-size:8.5px;font-weight:600}
+.cell.hard{background:rgba(255,107,94,.16);color:#ff8b80}
+.cell.linked{background:rgba(83,195,162,.18);color:var(--green)}
+.param{display:flex;align-items:center;gap:12px}
+.param .chip{font-family:var(--mono);font-weight:600;font-size:15px;padding:8px 12px;border-radius:10px;background:var(--green-soft);border:1.5px solid rgba(83,195,162,.6);color:var(--text)}
+.param .chip span{color:var(--green)}
+/* ---------- compact (split screen, 540×280) ---------- */
+body.compact,body.compact #stage{height:280px}
+body.compact .company,body.compact .tabs,body.compact .rail,body.compact footer{display:none}
+body.compact .topbar{top:10px;height:34px}
+body.compact .mark{width:32px;height:32px;font-size:12px;border-radius:9px}
+body.compact .brand b{font-size:16px}
+body.compact main{top:50px;height:228px}
+body.compact .audit{display:none}
+body.compact #statusCard{display:flex;align-items:center;gap:12px;padding:10px 12px}
+body.compact #statusCard .gap{display:none}
+body.compact #btnFix{height:42px;padding:0 14px;font-size:14px;margin-left:auto;white-space:nowrap}
+body.compact .status{gap:4px 10px}
+body.compact .status .t{font-size:20px}
+body.compact .status .s{font-size:11.5px}
+body.compact .lamps{gap:6px;padding:7px 9px}
+body.compact .lamp{width:22px;height:22px}
+body.compact .kv{padding:5px 0}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="topbar">
+    <div class="mark">T<span>×</span>C</div>
+    <div class="brand"><b>Tax × Code</b><small id="appname">Provision Check</small></div>
+    <div class="badge">DEMO DATA</div>
+  </div>
+  <div class="company"><span class="dot"></span>Northwind Manufacturing Inc. <i id="period">· FY 2025 · ASC 740</i></div>
+  <nav class="tabs" id="tabs"><a data-v="provision">Provision</a><a data-v="163j">§ 163(j)</a><a data-v="174a">§ 174A</a><a data-v="cleanup">Cleanup</a></nav>
+  <aside class="rail">
+    <div class="on"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></div>
+    <div><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></div>
+    <div><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="8.5"/></svg></div>
+    <div><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></div>
+  </aside>
+  <main id="view"></main>
+  <div class="audit" id="audit"></div>
+  <footer>NORTHWIND MANUFACTURING INC. IS FICTIONAL · SAMPLE NUMBERS · NOT TAX ADVICE</footer>
+</div>
+<script>
+// ---------- helpers ----------
+const Q = new URLSearchParams(location.search);
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const usd = n => (n < 0 ? "-" : "") + "$" + Math.round(Math.abs(n)).toLocaleString("en-US");
+const usdM = n => "$" + (n / 1e6).toFixed(1) + "M";
+const easeOut = k => 1 - Math.pow(1 - k, 3);
+const easeInOut = k => (k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2);
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+function tween(ms, fn, ease = easeOut) {
+  return new Promise(res => { const t0 = performance.now();
+    const step = () => { const k = Math.min((performance.now() - t0) / ms, 1); fn(ease(k), k); k < 1 ? requestAnimationFrame(step) : res(); };
+    requestAnimationFrame(step); });
+}
+const tick = (el, a, b, ms = 900, f = usd) => tween(ms, k => { el.textContent = f(a + (b - a) * k); });
+const pop = (el, amt = .18, ms = 380) => tween(ms, (k, raw) => { el.style.transform = `scale(${1 + amt * Math.sin(Math.PI * raw)})`; }, x => x);
+function glow(el, color = "83,195,162", ms = 900) {      // short glow behind an element (fades out)
+  return tween(ms, (k, raw) => { el.style.boxShadow = `0 0 ${30 * (1 - raw)}px ${8 * (1 - raw)}px rgba(${color},${.55 * (1 - raw)})`; }, x => x);
+}
+const clockStr = () => new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+const ICON_OK = "✓", ICON_X = "✕", ICON_W = "!";
+const SPIN = '<div class="spin" id="spin"></div>';
+let spinOn = false;
+function spinner(on) { spinOn = on; if (!on) return; const t0 = performance.now();
+  const step = () => { const s = $("#spin"); if (!spinOn || !s) return; s.style.transform = `rotate(${(performance.now() - t0) * .6}deg)`; requestAnimationFrame(step); };
+  requestAnimationFrame(step); }
+
+const VIEWS = {};
+const demo = window.demo = {};
+let view = Q.get("view") || "provision";
+if (Q.get("compact") === "1") document.body.classList.add("compact");
+
+// ===================== (a) PROVISION CHECK – ASC 740 =====================
+const P = { pti: 8400000, fed: .21, state: .0395 };
+P.fedTax = P.pti * P.fed;            // 1,764,000
+P.stateTax = P.pti * P.state;        // 331,800
+P.total = P.fedTax + P.stateTax;     // 2,095,800  → ETR 24.95 %
+const CHECKS = [   // [name, detail when broken, detail when fixed, level when broken]
+  ["Pre-tax income ties to TB", "$8,400,000 · TB_Q3.csv", "$8,400,000 · TB_Q3.csv", "green"],
+  ["Federal rate 21%", "hard-coded in 37 cells", "1 parameter · FED_RATE", "red"],
+  ["State apportionment link", "#REF! · source file moved", "linked · State_Q3.csv", "red"],
+  ["State rate, net of federal", "5% × (1 − 21%) = 3.95% · review", "3.95% · confirmed", "yellow"],
+  ["Rate reconciliation", "doesn't tie · off by $331,800", "ties · ETR 24.95%", "red"],
+];
+VIEWS.provision = state => {
+  const st = { red: [0, 1, 1, 1, 1], yellow: [0, 0, 0, 1, 0], green: [0, 0, 0, 0, 0] }[state] || [0, 1, 1, 1, 1];
+  P.open = st.slice();
+  $("#appname").textContent = "Provision Check";
+  $("#period").textContent = "· FY 2025 · ASC 740";
+  const compact = document.body.classList.contains("compact");
+  $("#view").innerHTML = `
+  <div class="card" id="statusCard">
+    <div class="status">
+      <div class="lamps" id="lamps"><div class="lamp r"></div><div class="lamp y"></div><div class="lamp g"></div></div>
+      <div><div class="t" id="stTitle"></div><div class="s" id="stSub"></div></div>
+    </div>
+    <div class="gap"></div>
+    <div class="btn" id="btnFix"></div>
+  </div>
+  ${compact ? "" : `<div class="gap"></div>
+  <div class="card" id="checks"><div class="kicker muted" style="margin-bottom:4px">Checks</div>
+    ${CHECKS.map((c, i) => `<div class="check" id="ck${i}"><div class="ic"></div><div><div class="n">${c[0]}</div><div class="d"></div></div><div class="pill"></div></div>`).join("")}
+  </div>`}
+  <div class="gap"></div>
+  <div class="card" id="nums"><div class="kicker muted" style="margin-bottom:2px">Provision · rate reconciliation</div>
+    <div class="kv"><span>Pre-tax income</span><span class="v num">${usd(P.pti)}</span></div>
+    <div class="kv"><span>Federal @ 21.00%</span><span class="v num" id="vFed">${usd(P.fedTax)}</span></div>
+    <div class="kv"><span>State, net of federal @ 3.95%</span><span class="v num" id="vState"></span></div>
+    <div class="kv total"><span>Total provision · ETR <span id="vEtr" class="num"></span></span><span class="v num" id="vTotal"></span></div>
+  </div>`;
+  CHECKS.forEach((c, i) => paintCheck(i, false));
+  paintNumbers(); paintStatus(false);
+  $("#btnFix").onclick = () => demo.fix();
+  $("#audit").innerHTML = `AUDIT TRAIL · ${st.every(x => !x) ? "<b>all checks passed</b>" : "4 open items"} · ${clockStr()}`;
+};
+function level(i) { return P.open[i] ? CHECKS[i][3] : "green"; }
+function paintCheck(i, anim) {
+  const row = $("#ck" + i); if (!row) return;
+  const lv = level(i), c = CHECKS[i];
+  row.querySelector(".ic").className = "ic i-" + lv;
+  row.querySelector(".ic").textContent = lv === "green" ? ICON_OK : lv === "red" ? ICON_X : ICON_W;
+  row.querySelector(".d").textContent = P.open[i] ? c[1] : c[2];
+  row.querySelector(".d").style.color = lv === "red" ? "var(--red)" : lv === "yellow" ? "var(--yellow)" : "";
+  const pill = row.querySelector(".pill");
+  pill.className = "pill p-" + lv;
+  pill.textContent = lv === "red" ? "ERROR" : lv === "yellow" ? "REVIEW" : (anim ? "FIXED" : "OK");
+  if (anim) { pop(row.querySelector(".ic"), .45); glow(pill); }
+}
+function paintNumbers() {
+  const broken = P.open[2], tieBroken = P.open[4];
+  $("#vState").textContent = broken ? "#REF!" : usd(P.stateTax);
+  $("#vState").classList.toggle("err", !!broken);
+  $("#vTotal").textContent = broken || tieBroken ? "#REF!" : usd(P.total);
+  $("#vTotal").classList.toggle("err", !!(broken || tieBroken));
+  $("#vEtr").textContent = broken || tieBroken ? "—" : "24.95%";
+}
+function statusLevel() { return P.open.some((o, i) => o && CHECKS[i][3] === "red") ? "red" : P.open.some(o => o) ? "yellow" : "green"; }
+function paintStatus(anim) {
+  const lv = statusLevel(), nRed = P.open.filter((o, i) => o && CHECKS[i][3] === "red").length, nOpen = P.open.filter(o => o).length;
+  $$("#lamps .lamp").forEach(l => {
+    const on = l.classList.contains(lv[0]);
+    l.style.opacity = on ? 1 : .15;
+    l.style.boxShadow = on ? `0 0 22px 4px ${lv === "red" ? "rgba(255,107,94,.6)" : lv === "yellow" ? "rgba(242,184,75,.6)" : "rgba(83,195,162,.65)"}` : "none";
+    if (on && anim) pop(l, .35, 420);
+  });
+  const t = $("#stTitle"), s = $("#stSub");
+  if (lv === "red") { t.innerHTML = `<span class="c-red">${nRed} errors</span> found`; s.textContent = `${nOpen - nRed} warning · don't book yet`; }
+  else if (lv === "yellow") { t.innerHTML = `<span class="c-yellow">${nOpen} check</span> open`; s.textContent = "Review before you book"; }
+  else { t.innerHTML = `Ready to <span class="c-green">book.</span>`; s.textContent = "0 issues · audit trail saved"; }
+  const b = $("#btnFix");
+  if (lv === "green") { b.className = "btn ghost"; b.innerHTML = `<svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>${document.body.classList.contains("compact") ? "Done" : "Provision ready · " + usd(P.total)}`; }
+  else { b.className = "btn"; b.innerHTML = `<svg viewBox="0 0 24 24"><path d="M13 3L4 14h7l-1 7 9-11h-7z"/></svg>Fix ${nOpen} issues`; }
+  if (anim && lv === "green") { glow($("#statusCard"), "83,195,162", 1400); pop(t, .1, 500); }
+}
+demo.fix = async () => {
+  if (P.busy || !P.open.some(o => o)) return; P.busy = true;
+  const b = $("#btnFix"); b.innerHTML = SPIN + "Fixing…"; spinner(true);
+  await sleep(250);
+  // 1) hard-coded federal rate → one parameter (count down the cells)
+  if (P.open[1]) { const d = $("#ck1 .d");
+    if (d) await tween(520, k => { d.textContent = `hard-coded in ${Math.round(37 * (1 - k))} cells`; }, x => x);
+    P.open[1] = 0; paintCheck(1, true); await sleep(380); }
+  // 2) broken link → source restored, state tax ticks in
+  if (P.open[2]) { P.open[2] = 0; paintCheck(2, true);
+    const v = $("#vState"); v.classList.remove("err"); await tick(v, 0, P.stateTax, 650); glow(v); await sleep(200); }
+  // 3) rate reconciliation ties → total ticks in, light goes yellow
+  if (P.open[4]) { P.open[4] = 0; paintCheck(4, true);
+    const v = $("#vTotal"); v.classList.remove("err"); $("#vEtr").textContent = "24.95%";
+    paintStatus(true); b.innerHTML = SPIN + "Reviewing…"; spinner(true);
+    await tick(v, P.fedTax, P.total, 650); glow(v); await sleep(520); }
+  // 4) review item confirmed → green
+  if (P.open[3]) { P.open[3] = 0; paintCheck(3, true); }
+  spinner(false); paintNumbers(); paintStatus(true);
+  $("#audit").innerHTML = `AUDIT TRAIL · <b>4 fixes logged</b> · ${clockStr()}`;
+  P.busy = false;
+};
+
+// ===================== (b) § 163(j) – EBIT vs EBITDA =====================
+const J = { ebitda: 14e6, da: 4e6, ebit: 10e6, interest: 4e6, scale: 5e6 };
+const jCalc = b => { const ati = b === "ebitda" ? J.ebitda : J.ebit, limit = .3 * ati, ded = Math.min(J.interest, limit);
+  return { ati, limit, ded, dis: J.interest - ded }; };
+VIEWS["163j"] = state => {
+  J.basis = state === "ebitda" ? "ebitda" : "ebit";
+  $("#appname").textContent = "Interest Limit";
+  $("#period").textContent = "· tax year 2025 · § 163(j)";
+  const r = jCalc(J.basis);
+  $("#view").innerHTML = `
+  <div class="title"><span class="h">§ 163(j) interest limit</span><small>OBBBA · TY 2025</small></div>
+  <div class="gap"></div>
+  <div class="tiles">
+    <div class="tile"><small>EBITDA</small><b class="num">${usd(J.ebitda)}</b></div>
+    <div class="tile"><small>Depreciation &amp; amortization</small><b class="num">${usd(J.da)}</b></div>
+    <div class="tile"><small>EBIT</small><b class="num">${usd(J.ebit)}</b></div>
+    <div class="tile"><small>Business interest expense</small><b class="num">${usd(J.interest)}</b></div>
+  </div>
+  <div class="gap"></div>
+  <div class="toggle" id="tgl"><div class="thumb" id="thumb"></div>
+    <a id="basis-ebit" data-b="ebit">ATI = EBIT<small>2022–2024 RULE</small></a>
+    <a id="basis-ebitda" data-b="ebitda">ATI = EBITDA<small>2025+ · OBBBA</small></a></div>
+  <div class="gap"></div>
+  <div class="card" style="padding-bottom:10px">
+    <div class="row" style="justify-content:space-between"><span class="kicker muted">Limit = 30% × ATI</span><span class="kicker" id="jLimitK"></span></div>
+    <div style="height:12px"></div>
+    <div class="bar" id="jBar"><div class="fill" id="jFill"></div><div class="over" id="jOver"></div><div class="mark" id="jMark"></div></div>
+    <div class="axis"><span>$0</span><span>$1M</span><span>$2M</span><span>$3M</span><span id="jIntLbl" style="color:var(--text)">interest $4.0M</span><span>$5M</span></div>
+  </div>
+  <div class="gap"></div>
+  <div class="card" style="padding-top:8px;padding-bottom:8px">
+    <div class="kv"><span>Adjusted taxable income (ATI)</span><span class="v num" id="jAti"></span></div>
+    <div class="kv"><span>Interest limit (30%)</span><span class="v num" id="jLim"></span></div>
+    <div class="kv"><span>Deductible interest</span><span class="v num c-green" id="jDed"></span></div>
+    <div class="kv"><span>Disallowed · carried forward</span><span class="v num" id="jDis"></span></div>
+  </div>
+  <div class="gap"></div>
+  <div class="banner" id="jBanner"><div class="big num" id="jDelta">+$1,000,000 deductible</div>
+    <div class="small">× 21% federal rate = <b class="num" id="jTax">$210,000</b> less federal tax</div></div>`;
+  $("#basis-ebit").onclick = () => demo.basis("ebit");
+  $("#basis-ebitda").onclick = () => demo.basis("ebitda");
+  jPaint(r, J.basis === "ebitda" ? 1 : 0);
+  $("#jBanner").style.opacity = J.basis === "ebitda" ? 1 : 0;
+  $("#audit").innerHTML = `AUDIT TRAIL · § 163(j)(1)(B), (8) · ${clockStr()}`;
+};
+function jPaint(r, pos) {
+  $("#jAti").textContent = usd(r.ati); $("#jLim").textContent = usd(r.limit); $("#jDed").textContent = usd(r.ded);
+  $("#jDis").textContent = usd(r.dis); $("#jDis").classList.toggle("err", r.dis > 0.5);
+  $("#jLimitK").textContent = usdM(r.limit);
+  const w = 100 * Math.min(r.limit, J.interest) / J.scale, wi = 100 * J.interest / J.scale;
+  $("#jFill").style.width = 100 * r.limit / J.scale + "%";
+  $("#jOver").style.left = w + "%"; $("#jOver").style.width = Math.max(0, wi - w) + "%";
+  $("#jMark").style.left = wi + "%";
+  const th = $("#thumb"); th.style.left = `calc(4px + ${pos} * (50% - 4px))`; th.style.width = "calc(50% - 4px)";
+  $("#basis-ebit").classList.toggle("on", pos < .5); $("#basis-ebitda").classList.toggle("on", pos >= .5);
+}
+demo.basis = async b => {
+  if (J.busy || b === J.basis) return; J.busy = true;
+  const a = jCalc(J.basis), z = jCalc(b), p0 = J.basis === "ebitda" ? 1 : 0, p1 = 1 - p0;
+  J.basis = b;
+  if (b === "ebit") $("#jBanner").style.opacity = 0;
+  await tween(1300, k => {
+    const m = {}; for (const key in a) m[key] = a[key] + (z[key] - a[key]) * k;
+    jPaint(m, p0 + (p1 - p0) * Math.min(k * 2.2, 1));
+  }, easeInOut);
+  if (b === "ebitda") {
+    const ban = $("#jBanner"), d = $("#jDelta"), t = $("#jTax");
+    await tween(260, k => { ban.style.opacity = k; ban.style.transform = `translateY(${12 * (1 - k)}px)`; });
+    tick(d, 0, 1e6, 800, n => "+" + usd(n) + " deductible");
+    await tick(t, 0, 210000, 800);
+    glow(ban, "83,195,162", 1200); pop(ban, .05, 450);
+    $("#jIntLbl").style.color = "var(--green)";
+  }
+  $("#audit").innerHTML = `AUDIT TRAIL · ATI basis → <b>${b.toUpperCase()}</b> · ${clockStr()}`;
+  J.busy = false;
+};
+
+// ===================== (c) § 174 vs § 174A =====================
+const R = { re: 2e6, old: [200000, 400000, 400000, 400000, 400000, 200000], neu: [2e6, 0, 0, 0, 0, 0], years: [2025, 2026, 2027, 2028, 2029, 2030] };
+VIEWS["174a"] = state => {
+  R.rule = state === "new" ? "new" : "old";
+  $("#appname").textContent = "R&E Expensing";
+  $("#period").textContent = "· tax year 2025 · § 174A";
+  $("#view").innerHTML = `
+  <div class="title"><span class="h">§ 174 vs. § 174A</span><small>OBBBA · TY 2025</small></div>
+  <div class="gap"></div>
+  <div class="tile" style="padding:11px 14px"><small>Domestic research &amp; experimental expenditures, 2025</small><b class="num" style="font-size:22px">${usd(R.re)}</b></div>
+  <div class="gap"></div>
+  <div class="toggle" id="tgl"><div class="thumb" id="thumb"></div>
+    <a id="rule-old" data-r="old">Old § 174<small>AMORTIZE 5 YEARS</small></a>
+    <a id="rule-new" data-r="new">New § 174A<small>DEDUCT NOW</small></a></div>
+  <div class="gap"></div>
+  <div class="card">
+    <div class="row" style="justify-content:space-between"><span class="kicker muted">Year-1 deduction</span><span class="kicker" id="rPct"></span></div>
+    <div style="font-family:var(--serif);font-weight:600;font-size:40px;margin:4px 0 8px" class="num" id="rY1"></div>
+    <div class="bar" style="height:16px"><div class="fill" id="rFill"></div></div>
+  </div>
+  <div class="gap"></div>
+  <div class="card" style="padding-bottom:10px"><div class="kicker muted" style="margin-bottom:8px">Deduction by year</div>
+    <div class="cols" id="rCols">${R.years.map((y, i) => `<div class="col"><div class="lbl num" id="rl${i}"></div><div class="b" id="rb${i}"></div></div>`).join("")}</div>
+    <div class="years">${R.years.map(y => `<span>${y}</span>`).join("")}</div>
+  </div>
+  <div class="gap"></div>
+  <div class="banner" id="rBanner"><div class="big num" id="rDelta">+$1,800,000 deduction</div>
+    <div class="small">in year 1 × 21% = <b class="num" id="rTax">$378,000</b> less federal tax</div></div>`;
+  $("#rule-old").onclick = () => demo.rule("old");
+  $("#rule-new").onclick = () => demo.rule("new");
+  rPaint(R.rule === "new" ? 1 : 0);
+  $("#rBanner").style.opacity = R.rule === "new" ? 1 : 0;
+  $("#audit").innerHTML = `AUDIT TRAIL · § 174A (domestic) · ${clockStr()}`;
+};
+const kFmt = n => n < 1000 ? "" : n >= 1e6 ? "$" + (n / 1e6).toFixed(1) + "M" : "$" + Math.round(n / 1000) + "k";
+function rPaint(k) {
+  const y1 = R.old[0] + (R.neu[0] - R.old[0]) * k;
+  $("#rY1").textContent = usd(y1);
+  $("#rPct").textContent = Math.round(100 * y1 / R.re) + "% IN 2025";
+  $("#rFill").style.width = 100 * y1 / R.re + "%";
+  R.years.forEach((y, i) => { const v = R.old[i] + (R.neu[i] - R.old[i]) * k;
+    $("#rb" + i).style.height = Math.max(2, 92 * v / 2e6) + "px"; $("#rl" + i).textContent = kFmt(v); });
+  const th = $("#thumb"); th.style.left = `calc(4px + ${Math.min(k * 2.2, 1)} * (50% - 4px))`; th.style.width = "calc(50% - 4px)";
+  $("#rule-old").classList.toggle("on", k < .5); $("#rule-new").classList.toggle("on", k >= .5);
+}
+demo.rule = async r => {
+  if (R.busy || r === R.rule) return; R.busy = true;
+  const k0 = R.rule === "new" ? 1 : 0, k1 = 1 - k0; R.rule = r;
+  if (r === "old") $("#rBanner").style.opacity = 0;
+  await tween(1400, k => rPaint(k0 + (k1 - k0) * k), easeInOut);
+  if (r === "new") {
+    const ban = $("#rBanner");
+    await tween(260, k => { ban.style.opacity = k; ban.style.transform = `translateY(${12 * (1 - k)}px)`; });
+    tick($("#rDelta"), 0, 1.8e6, 800, n => "+" + usd(n) + " deduction");
+    await tick($("#rTax"), 0, 378000, 800);
+    glow(ban, "83,195,162", 1200); pop(ban, .05, 450);
+  }
+  $("#audit").innerHTML = `AUDIT TRAIL · rule → <b>${r === "new" ? "§ 174A" : "§ 174"}</b> · ${clockStr()}`;
+  R.busy = false;
+};
+
+// ===================== (d) 4,000-ROW CLEANUP =====================
+const C = { n: 4000, rows: 15, issues: 1286 };
+const VENDORS = ["Acme Supply Co", "Bluegate Logistics", "Cedar Metals LLC", "Delta Packaging", "Evergreen Freight", "Fulton Tooling Inc",
+  "Granite Office Supply", "Harbor Steel Corp", "Ironwood Electric", "Juniper Software"];
+const STATES = [["OH", "Ohio", "oh", "OH "], ["MI", "Mich.", "mi", "Michigan"], ["IN", "Ind.", "in ", "Indiana"], ["PA", "Penn.", "pa", "PA."], ["IL", "Ill.", "il", "Illinois"]];
+function rnd(i, k) { let x = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453; return x - Math.floor(x); }
+function rowData(i) {
+  const m = 1 + Math.floor(rnd(i, 1) * 9), d = 1 + Math.floor(rnd(i, 2) * 28), amt = Math.round(rnd(i, 3) * 4800000) / 100 + 40;
+  const neg = rnd(i, 4) < .12, v = VENDORS[Math.floor(rnd(i, 5) * VENDORS.length)], s = STATES[Math.floor(rnd(i, 6) * STATES.length)];
+  const mm = String(m).padStart(2, "0"), dd = String(d).padStart(2, "0");
+  const clean = { date: `${mm}/${dd}/2026`, vendor: v, state: s[0], amt: (neg ? "-" : "") + "$" + amt.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) };
+  const messy = { ...clean }, bad = {};
+  const mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"][m - 1];
+  const dirty = rnd(i, 7) < .62;   // most visible rows are messy – that is the point of the Reel
+  if (dirty) {
+    const f = rnd(i, 8);
+    if (f < .33) { messy.date = [`2026-${mm}-${dd}`, `${m}/${d}/26`, `${mon} ${d}`, `${d}.${m}.2026`][Math.floor(rnd(i, 9) * 4)]; bad.date = 1; }
+    if (f > .2 && f < .7) { messy.vendor = [v.toUpperCase() + " ", v.toLowerCase(), " " + v + ".", v.replace(/ /g, "  ")][Math.floor(rnd(i, 10) * 4)]; bad.vendor = 1; }
+    if (rnd(i, 11) < .45) { messy.state = s[1 + Math.floor(rnd(i, 12) * 3)]; bad.state = 1; }
+    if (f > .55 || rnd(i, 13) < .3) {
+      const a2 = amt.toFixed(2), eu = amt.toLocaleString("de-DE", { minimumFractionDigits: 2 });
+      messy.amt = neg ? `(${amt.toLocaleString("en-US", { minimumFractionDigits: 2 })})` : [a2.replace(/0$/, ""), `USD ${a2}`, eu, ` $${a2} `][Math.floor(rnd(i, 14) * 4)];
+      bad.amt = 1;
+    }
+  }
+  return { clean, messy, bad };
+}
+VIEWS.cleanup = state => {
+  C.cleanTo = state === "clean" ? C.n : 0; C.offset = 0; C.fresh = 0;
+  $("#appname").textContent = "Data Cleanup";
+  $("#period").textContent = "· AP_Export_Q3.csv";
+  $("#view").innerHTML = `
+  <div class="title"><span class="h">AP_Export_Q3.csv</span><small>4,000 ROWS · 5 COLUMNS</small></div>
+  <div class="gap"></div>
+  <div class="row" style="gap:8px">
+    <div class="stat" style="flex:1"><small>ROWS</small><b class="num">4,000</b></div>
+    <div class="stat" style="flex:1"><small>ISSUES</small><b class="num c-red" id="cIss"></b></div>
+    <div class="stat" style="flex:1"><small>CLEAN</small><b class="num c-green" id="cOk"></b></div>
+  </div>
+  <div class="gap"></div>
+  <div class="btn" id="btnClean"></div>
+  <div class="gap"></div>
+  <div class="card" style="padding:10px 8px 6px">
+    <table class="grid"><colgroup><col style="width:44px"><col style="width:92px"><col><col style="width:44px"><col style="width:104px"></colgroup>
+      <thead><tr><th>#</th><th>DATE</th><th>VENDOR</th><th>ST</th><th style="text-align:right">AMOUNT</th></tr></thead>
+      <tbody id="cBody">${Array.from({ length: C.rows }, (_, r) => `<tr><td class="n"></td><td></td><td></td><td></td><td class="r"></td></tr>`).join("")}</tbody></table>
+  </div>
+  <div class="gap"></div>
+  <div class="progress"><div id="cProg"></div></div>`;
+  $("#btnClean").onclick = () => demo.clean();
+  cPaint(); cCounters(C.cleanTo / C.n);
+};
+function cPaint() {
+  const trs = $$("#cBody tr");
+  trs.forEach((tr, r) => {
+    const i = C.offset + r + 1, d = rowData(i), isClean = i <= C.cleanTo, tds = tr.children;
+    tds[0].textContent = i.toLocaleString("en-US");
+    ["date", "vendor", "state", "amt"].forEach((k, j) => {
+      const td = tds[j + 1];
+      td.textContent = isClean ? d.clean[k] : d.messy[k];
+      td.className = (j === 3 ? "r " : "") + (!isClean && d.bad[k] ? "bad" : "ok");
+    });
+    // freshly cleaned rows flash green for a moment
+    const age = C.cleanTo - i;
+    tr.style.background = isClean && C.fresh && age >= 0 && age < 160 ? `rgba(83,195,162,${.28 * (1 - age / 160)})` : "";
+  });
+}
+function cCounters(k) {
+  $("#cIss").textContent = Math.round(C.issues * (1 - k)).toLocaleString("en-US");
+  $("#cOk").textContent = Math.round(C.n - C.issues + C.issues * k).toLocaleString("en-US");
+  $("#cProg").style.width = 100 * k + "%";
+  const b = $("#btnClean");
+  if (k >= 1) { b.className = "btn ghost"; b.innerHTML = `<svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>4,000 rows clean · 0 issues`; }
+  else if (k > 0) { b.className = "btn"; b.innerHTML = `${SPIN}Cleaning… ${Math.round(C.n * k).toLocaleString("en-US")} / 4,000`; }
+  else { b.className = "btn"; b.innerHTML = `<svg viewBox="0 0 24 24"><path d="M13 3L4 14h7l-1 7 9-11h-7z"/></svg>Clean 4,000 rows`; }
+}
+demo.clean = async () => {
+  if (C.busy || C.cleanTo >= C.n) return; C.busy = true; C.fresh = 1; spinner(true);
+  const front = 9;  // the cleaning front sits on visible row 9 while the table races down
+  await tween(2600, k => {
+    C.cleanTo = Math.round(C.n * k);
+    C.offset = Math.max(0, Math.min(C.n - C.rows, C.cleanTo - front));
+    cPaint(); cCounters(k); if ($("#spin")) spinner(true);
+  }, easeInOut);
+  spinner(false); C.cleanTo = C.n; cCounters(1);
+  // glide back to the top: every row is clean
+  const o0 = C.offset;
+  await tween(700, k => { C.offset = Math.round(o0 * (1 - k)); cPaint(); }, easeInOut);
+  C.fresh = 0; cPaint(); glow($("#btnClean"), "83,195,162", 1000); pop($("#cIss"), .3);
+  $("#audit").innerHTML = `AUDIT TRAIL · <b>1,286 changes logged</b> · ${clockStr()}`;
+  C.busy = false;
+};
+demo.mess = async (ms = 450) => {   // loop transition: wipe back to the messy start state (bottom → top)
+  if (C.busy) return; C.busy = true; C.fresh = 0;
+  cCounters(0);   // counters and button jump back first, then the rows wipe back to messy (bottom → top)
+  await tween(ms, k => { C.cleanTo = Math.round(C.rows * (1 - k)); cPaint(); }, x => x);
+  C.cleanTo = 0; cPaint(); cCounters(0); C.busy = false;
+};
+
+// ===================== (e) HARD-CODED RATE → ONE PARAMETER =====================
+const G = { cols: 16, rows: 25 };
+VIEWS.rate = state => {
+  G.linked = state === "linked";
+  $("#appname").textContent = "Rate Audit";
+  $("#period").textContent = "· Provision_Final_v3_NEW.xlsx";
+  $("#view").innerHTML = `
+  <div class="title"><span class="h">Federal rate cells</span><small id="gSub">400 CELLS · 21%</small></div>
+  <div class="gap"></div>
+  <div class="card" style="padding:10px 12px">
+    <div class="param"><span class="chip">FED_RATE = <span>21%</span></span>
+      <div style="flex:1"><div class="kicker muted" style="font-size:9.5px">HARD-CODED</div><div class="num" style="font-family:var(--mono);font-weight:600;font-size:20px" id="gHard"></div></div>
+      <div class="btn" id="btnLink" style="height:40px;padding:0 14px;font-size:14px"></div></div>
+  </div>
+  <div class="gap"></div>
+  <div class="cells" id="gCells">${Array.from({ length: G.cols * G.rows }, (_, i) => `<div class="cell"></div>`).join("")}</div>`;
+  $("#btnLink").onclick = () => demo.link();
+  $$("#gCells .cell").forEach(c => gCell(c, G.linked));
+  gCount(G.linked ? 0 : 400);
+};
+function gCell(c, linked) { c.className = "cell " + (linked ? "linked" : "hard"); c.textContent = linked ? "FED" : "21%"; }
+function gCount(n) {
+  const h = $("#gHard"); h.textContent = n + " / 400"; h.style.color = n ? "var(--red)" : "var(--green)";
+  const b = $("#btnLink");
+  if (n === 0) { b.className = "btn ghost"; b.style.height = "40px"; b.innerHTML = `<svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Linked`; }
+  else { b.className = "btn"; b.innerHTML = `<svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>Link all`; }
+}
+demo.link = async () => {
+  if (G.busy || G.linked) return; G.busy = true;
+  const cells = $$("#gCells .cell"), maxD = G.cols + G.rows - 2, done = new Set();
+  await tween(2200, k => {
+    const front = k * (maxD + 6);
+    cells.forEach((c, i) => {
+      const x = i % G.cols, y = Math.floor(i / G.cols), d = x + y, a = front - d;   // diagonal wave from top-left
+      if (a >= 0 && !done.has(i)) { done.add(i); gCell(c, true); }
+      const s = a >= 0 && a < 3 ? 1 + .35 * Math.sin(Math.PI * a / 3) : 1;
+      c.style.transform = `scale(${s})`;
+      c.style.boxShadow = a >= 0 && a < 4 ? `0 0 ${10 * (1 - a / 4)}px rgba(83,195,162,${.8 * (1 - a / 4)})` : "none";
+    });
+    gCount(400 - done.size);
+  }, x => x);
+  cells.forEach(c => { c.style.transform = ""; c.style.boxShadow = "none"; gCell(c, true); });
+  G.linked = true; gCount(0); $("#gSub").textContent = "400 CELLS · 1 PARAMETER";
+  glow($("#btnLink"));
+  G.busy = false;
+};
+
+// ---------- view switching ----------
+demo.show = v => {
+  view = v in VIEWS ? v : "provision";
+  $$("#tabs a").forEach(a => a.classList.toggle("on", a.dataset.v === view || (view === "rate" && a.dataset.v === "provision")));
+  VIEWS[view](Q.get("view") === v ? Q.get("state") : undefined);
+};
+$$("#tabs a").forEach(a => a.onclick = () => demo.show(a.dataset.v));
+demo.show(view);
+if (Q.get("auto") === "1") setTimeout(() => ({ provision: demo.fix, "163j": () => demo.basis("ebitda"), "174a": () => demo.rule("new"),
+  cleanup: demo.clean, rate: demo.link })[view](), 1000);
+</script>
+</body>
+</html>

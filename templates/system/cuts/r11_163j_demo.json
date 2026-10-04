@@ -1,0 +1,78 @@
+{
+ "output": "../../posts/11_2026-10-21_reel_163j_demo/reel.mp4",
+ "fps": 30,
+ "sources": {
+  "rec": {
+   "video": "../../posts/11_2026-10-21_reel_163j_demo/clips/rec_163j.mp4"
+  }
+ },
+ "audio": [
+  {
+   "file": "../../music/06_runway_lofi_ruhig.mp3",
+   "at": 0,
+   "start": 8,
+   "volume": 0.35,
+   "fade_in": 0.1
+  }
+ ],
+ "scenes": [
+  {
+   "source": "rec",
+   "start": 0,
+   "duration": 1.6,
+   "darken": 0.3,
+   "text": [
+    {
+     "text": "Your interest limit",
+     "y": 820,
+     "color": "white",
+     "size": 100
+    },
+    {
+     "text": "just grew.",
+     "y": 955,
+     "color": "green",
+     "size": 135
+    }
+   ]
+  },
+  {
+   "source": "rec",
+   "start": 1.6,
+   "duration": 3.4,
+   "text": [
+    {
+     "text": "EBIT → EBITDA",
+     "y": 300,
+     "color": "yellow",
+     "size": 90,
+     "at": 0.05,
+     "until": 3.4
+    }
+   ]
+  },
+  {
+   "source": "rec",
+   "start": 5.0,
+   "duration": 3.4
+  },
+  {
+   "source": "rec",
+   "start": 8.4,
+   "duration": 2.0,
+   "overlay": [
+    {
+     "image": "../hooks/overlays/cta_dm_tool.png",
+     "at": 0.0,
+     "fade": 0.25
+    }
+   ]
+  },
+  {
+   "card": "../../assets/end_9x16.png",
+   "duration": 1.8,
+   "in": "fade",
+   "fade": 0.3
+  }
+ ]
+}

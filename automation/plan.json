@@ -162,7 +162,7 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Oct 15 deadline day: 11:48 PM spreadsheet chaos → clean"
+      "note": "Oct 15 deadline day: 11:48 PM spreadsheet chaos → clean · Contains AI-generated footage (Runway office clip) – switch on the AI label after posting"
     },
     {
       "id": "06-163j-ebitda",
@@ -212,7 +212,7 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Number Reel to the 163(j) carousel: +$1,000,000 deductible → $210,000 less federal tax"
+      "note": "Number Reel to the 163(j) carousel: +$1,000,000 deductible → $210,000 less federal tax · Tax law – see fact_check.md"
     },
     {
       "id": "06-story-answer",
@@ -304,7 +304,7 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Screen recording of the demo tool: 163(j) EBIT → EBITDA, 12 s"
+      "note": "Screen recording of the demo tool: 163(j) EBIT → EBITDA, 12 s · Tax law – see fact_check.md"
     },
     {
       "id": "12-reel-ai-vs-code",
@@ -364,7 +364,7 @@
       "cover": "cover.png",
       "caption": "caption.txt",
       "status": "draft",
-      "note": "Number Reel to the 174A carousel: +$378,000 cash in year 1"
+      "note": "Number Reel to the 174A carousel: +$378,000 cash in year 1 · Tax law – see fact_check.md"
     }
   ]
 }

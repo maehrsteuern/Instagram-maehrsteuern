@@ -1,0 +1,11 @@
+4,000 rows. One click.
+
+Dates in 4 formats, vendors in caps and lowercase, "Calif." vs. "CA", amounts in (parentheses) and 1.250,50 –
+cleaned in one pass, every change logged (1,286 of them).
+Watch it twice. 🔁
+
+Follow for more satisfying tax software. 💬 DM me "TOOL" if your AP export looks like the "before".
+
+Demo data, fictional company.
+
+#excel #datacleaning #accountingtech #automation #taxtech

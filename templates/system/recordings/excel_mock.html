@@ -1,125 +1,209 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tabellen-Attrappe</title>
-<!-- Nachgebautes, generisches Tabellenblatt für die obere Hälfte im Split-Screen-Reel (Post 02).
-     Kein echtes Programm, kein Marken-Logo. Zeigt den typischen Ablauf: Hebesatz ändern ->
-     externe Verknüpfung auf eine verschobene Datei -> #BEZUG!. Zahlen wie im Reel-Datensatz. -->
+<meta name="viewport" content="width=540">
+<title>Spreadsheet mock</title>
+<!--
+  Generic, re-built spreadsheet for Reel recordings (no real program, no brand logo). Demo company
+  "Northwind Manufacturing Inc." (fictional), provision numbers from strategy/00_us_brief.md.
+  File "Provision_Final_v3_NEW.xlsx": hard-coded 21 % everywhere, a broken external link, errors piling up.
+
+  URL parameters:
+    compact   1 = top half of the split-screen Reel (540×280, rows 1 and 3–8, no clock pill)
+    clock     deadline | night | none   – floating pill: countdown to Oct 15 · or "Thu, Oct 15 · 11:48 PM"
+    speed     how fast the pill clock runs (1 = real time, 60 = one minute per second)
+    errors    1 = start with all errors already showing
+  Page API for recording scripts (window.mock):
+    mock.next()          reveal the next error cell (#REF!, #VALUE!, #NAME? …); returns the cell address or null
+    mock.all()           reveal all errors at once
+    mock.select(addr)    select a cell (also happens on mouse click)
+    mock.dialog(on)      "We can't find State_Apportionment.xlsx" message box
+    mock.hang(on)        "(Not Responding)" + greyed-out window
+    mock.status(text)    status bar text (e.g. "Calculating (4 threads): 37%")
+  Typing digits into a selected cell and pressing Enter commits the value (as in a real spreadsheet).
+  All animations are JavaScript-driven so the recorder's fake clock can step them.
+-->
 <style>
-  :root{ --gitter:#d4d4d4; --kopf:#f3f3f3; --wahl:#1e7145; --text:#222; --fehler:#c00000; }
-  *{box-sizing:border-box}
-  body{margin:0; background:#fff; color:var(--text); font:16px/1.2 "Liberation Sans", Arial, sans-serif; overflow:hidden; user-select:none}
-  .leiste{display:flex; gap:4px; align-items:center; background:#1e7145; color:#fff; padding:8px 12px 0; font-size:15px}
-  .leiste .titel{flex:1; font-weight:700; padding-bottom:8px}
-  .reiter{display:flex; gap:2px; background:#1e7145; padding:6px 8px 0; align-items:flex-end}
-  .reiter .datei{margin-left:auto; color:#fff; font-size:13px; padding:0 4px 8px; white-space:nowrap}
-  .reiter span{color:#e8f3ec; padding:7px 12px; font-size:15px; border-radius:6px 6px 0 0; cursor:default}
-  .reiter span.an{background:#f7f7f7; color:#1e7145; font-weight:700}
-  .band{height:34px; background:#f7f7f7; border-bottom:1px solid var(--gitter); display:flex; align-items:center; gap:10px; padding:0 10px; font-size:14px; color:#555}
-  .band .knopf{border:1px solid #cfcfcf; background:#fff; border-radius:5px; padding:5px 9px}
-  .formel{display:flex; align-items:center; border-bottom:1px solid var(--gitter); height:32px; font-size:15px}
-  .formel .name{width:70px; text-align:center; border-right:1px solid var(--gitter); height:100%; display:flex; align-items:center; justify-content:center}
-  .formel .fx{width:40px; text-align:center; color:#777; font-style:italic; border-right:1px solid var(--gitter)}
-  .formel .inhalt{padding:0 10px; white-space:nowrap; overflow:hidden; font-family:"Liberation Mono", monospace; font-size:14px}
-  table{border-collapse:collapse; table-layout:fixed}
-  th,td{border:1px solid var(--gitter); height:25px; padding:0 7px; white-space:nowrap; overflow:hidden}
-  th{background:var(--kopf); color:#666; font-weight:400; font-size:13px; text-align:center}
-  th.zeile{width:34px}
-  td.b{text-align:right; font-variant-numeric:tabular-nums}
-  td.fett{font-weight:700}
-  td.linie{border-top:2px solid #333}
-  td.wahl{outline:3px solid var(--wahl); outline-offset:-2px}
-  td.err{color:var(--text); position:relative}
-  td.err::before{content:""; position:absolute; left:0; top:0; border-top:9px solid #1e9d4f; border-right:9px solid transparent}
-  td.blitz{animation:blitz .9s ease-out}
-  @keyframes blitz{0%{background:#ffd7d7}100%{background:transparent}}
-  .blaetter{position:fixed; bottom:0; left:0; right:0; height:34px; background:var(--kopf); border-top:1px solid var(--gitter); display:flex; font-size:14px}
-  .blaetter span{padding:8px 14px; border-right:1px solid var(--gitter); color:#555}
-  .blaetter span.an{background:#fff; color:#1e7145; font-weight:700; border-bottom:3px solid #1e7145}
-  .menue{position:absolute; top:40px; left:180px; background:#fff; border:1px solid #bbb; box-shadow:0 6px 18px rgba(0,0,0,.2); font-size:15px; display:none; z-index:5}
-  .menue div{padding:9px 16px}
-  .menue div:hover,.menue div.hell{background:#e6f2ea}
-  dialog{border:1px solid #999; border-radius:6px; padding:0; width:520px; box-shadow:0 12px 40px rgba(0,0,0,.35); font-size:15px}
-  dialog::backdrop{background:rgba(0,0,0,.18)}
-  dialog h3{margin:0; padding:10px 14px; font-size:15px; background:#f3f3f3; border-bottom:1px solid #ccc}
-  dialog .zeile{display:grid; grid-template-columns:1.4fr .9fr 1.3fr; gap:8px; padding:9px 14px; border-bottom:1px solid #eee}
-  dialog .zeile.kopf{color:#666; font-size:13px}
-  dialog .zeile.gewaehlt{background:#dcebf7}
-  dialog .status{color:#444}
-  dialog .status.fehler{color:var(--fehler); font-weight:700}
-  dialog .knoepfe{display:flex; gap:8px; padding:12px 14px; justify-content:flex-end}
-  dialog button{font:inherit; font-size:14px; padding:6px 12px; border:1px solid #aaa; background:#f7f7f7; border-radius:4px}
+:root{--grid:#d4d4d4;--head:#f3f3f3;--sel:#1e7145;--text:#222;--err:#c00000;--errbg:#ffe3e0}
+*{box-sizing:border-box}
+html,body{margin:0;width:540px;height:960px;overflow:hidden;background:#101512;color:var(--text);font:14px/1.2 "Liberation Sans",Arial,sans-serif;user-select:none}
+#stage{position:relative;width:540px;height:960px;overflow:hidden;background:radial-gradient(90% 40% at 50% 0%,#1d2a24,#0c100e)}
+.win{position:absolute;left:0;right:0;top:128px;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.titlebar{height:34px;background:#1e7145;color:#fff;display:flex;align-items:center;gap:9px;padding:0 10px;font-size:14px}
+.titlebar .ico{width:20px;height:20px;border-radius:4px;background:#fff;display:grid;grid-template-columns:1fr 1fr;gap:2px;padding:3px}
+.titlebar .ico i{background:#1e7145;border-radius:1px}
+.titlebar b{font-weight:700;white-space:nowrap}
+.titlebar .nr{opacity:.85;white-space:nowrap}
+.titlebar .wc{margin-left:auto;display:flex;gap:14px;opacity:.9;font-size:15px}
+.ribbon{height:30px;background:#1e7145;display:flex;align-items:flex-end;gap:2px;padding:0 6px}
+.ribbon span{color:#e8f3ec;padding:6px 10px;font-size:13px;border-radius:5px 5px 0 0}
+.ribbon span.on{background:#f7f7f7;color:#1e7145;font-weight:700}
+.fbar{display:flex;align-items:center;border-bottom:1px solid var(--grid);height:30px;font-size:13.5px;background:#fff}
+.fbar .name{width:56px;text-align:center;border-right:1px solid var(--grid);height:100%;display:grid;place-items:center}
+.fbar .fx{width:34px;text-align:center;color:#777;font-style:italic;border-right:1px solid var(--grid)}
+.fbar .f{padding:0 9px;white-space:nowrap;overflow:hidden;font-family:"Liberation Mono",monospace;font-size:12.5px}
+table{border-collapse:collapse;table-layout:fixed;width:540px;background:#fff}
+th,td{border:1px solid var(--grid);height:26px;padding:0 6px;white-space:nowrap;overflow:hidden;font-size:13.5px}
+th{background:var(--head);color:#666;font-weight:400;font-size:12px;text-align:center}
+td.v{text-align:right;font-variant-numeric:tabular-nums}
+td.b{font-weight:700}
+td.t{color:#555}
+td.f{font-family:"Liberation Mono",monospace;font-size:11.5px;color:#777}
+td.hard{position:relative;color:#b00000;font-weight:700}
+td.hard::after{content:"";position:absolute;right:0;top:0;border-top:8px solid #e53935;border-left:8px solid transparent}
+td.txt{text-align:left;position:relative}
+td.txt::before{content:"";position:absolute;left:0;top:0;border-top:8px solid #1e9d4f;border-right:8px solid transparent}
+td.sel{outline:3px solid var(--sel);outline-offset:-2px}
+td.err{color:var(--err);font-weight:700;background:var(--errbg)}
+.tabs{display:flex;height:30px;background:var(--head);border-top:1px solid var(--grid);font-size:12.5px}
+.tabs span{padding:8px 11px;border-right:1px solid var(--grid);color:#555;white-space:nowrap}
+.tabs span.on{background:#fff;color:#1e7145;font-weight:700;border-bottom:3px solid #1e7145}
+.status{height:26px;background:#1e7145;color:#e8f3ec;display:flex;align-items:center;padding:0 10px;font-size:12.5px;gap:12px}
+.status .e{margin-left:auto;font-weight:700;background:#c00000;color:#fff;padding:2px 8px;border-radius:4px;display:none}
+.pill{position:absolute;right:10px;top:208px;z-index:4;background:rgba(20,20,20,.92);color:#fff;border-radius:12px;padding:8px 12px;
+  font:700 15px/1.15 "DejaVu Sans Mono",monospace;box-shadow:0 6px 20px rgba(0,0,0,.35);border:2px solid #ff5a4e;text-align:right}
+.pill small{display:block;font:700 10px/1.2 "Liberation Sans",Arial,sans-serif;letter-spacing:.12em;color:#ff8a80;margin-bottom:3px}
+.note{position:absolute;z-index:3;background:#fffbd0;border:1px solid #c9b400;padding:7px 9px;font-size:12px;width:170px;box-shadow:3px 3px 0 rgba(0,0,0,.15);color:#333}
+.fog{position:absolute;inset:0;background:rgba(255,255,255,.0);pointer-events:none;z-index:5}
+.dlg{position:absolute;left:40px;right:40px;top:380px;z-index:6;background:#fff;border:1px solid #999;border-radius:8px;box-shadow:0 14px 40px rgba(0,0,0,.4);display:none;font-size:14px}
+.dlg h3{margin:0;padding:9px 12px;font-size:13.5px;background:#f3f3f3;border-bottom:1px solid #ccc;border-radius:8px 8px 0 0}
+.dlg p{margin:14px 14px 6px;display:flex;gap:12px;align-items:flex-start;line-height:1.35}
+.dlg p i{flex:none;width:30px;height:30px;border-radius:50%;background:#c00000;color:#fff;font-style:normal;font-weight:700;display:grid;place-items:center;font-size:18px}
+.dlg .bt{display:flex;justify-content:flex-end;gap:8px;padding:10px 14px 14px}
+.dlg button{font:inherit;font-size:13px;padding:6px 14px;border:1px solid #aaa;background:#f7f7f7;border-radius:4px}
+.dlg button.d{border:2px solid #1e7145}
+/* compact: top half of the split screen */
+body.compact,body.compact #stage{height:280px}
+body.compact .win{top:0}
+body.compact .ribbon,body.compact .tabs,body.compact .status,body.compact .note,body.compact .pill{display:none}
+body.compact .dlg{top:90px}
 </style>
 </head>
 <body>
-<div class="reiter"><span>Datei</span><span class="an">Start</span><span>Einfügen</span><span id="reiter-daten">Daten</span><span>Ansicht</span></div>
-<div class="menue" id="menue"><div id="m-verkn">Verknüpfungen bearbeiten …</div><div>Alle aktualisieren</div></div>
-<div class="formel"><div class="name" id="name">A1</div><div class="fx">fx</div><div class="inhalt" id="inhalt"></div></div>
-<table id="blatt">
-  <colgroup><col style="width:34px"><col style="width:290px"><col style="width:170px"><col style="width:106px"></colgroup>
-</table>
-<dialog id="dlg">
-  <h3>Verknüpfungen bearbeiten</h3>
-  <div class="zeile kopf"><span>Quelle</span><span>Typ</span><span>Status</span></div>
-  <div class="zeile gewaehlt"><span>Final_v3_neu.xlsx</span><span>Arbeitsblatt</span><span class="status" id="dlg-status">Unbekannt</span></div>
-  <div class="knoepfe"><button id="btn-akt" type="button">Werte aktualisieren</button><button type="button">Quelle ändern …</button><button type="button">Schließen</button></div>
-</dialog>
+<div id="stage">
+<div class="win" id="win">
+  <div class="titlebar"><div class="ico"><i></i><i></i><i></i><i></i></div><b>Provision_Final_v3_NEW.xlsx</b><span class="nr" id="nr"></span>
+    <span class="wc"><span>–</span><span>▢</span><span>✕</span></span></div>
+  <div class="ribbon"><span>File</span><span class="on">Home</span><span>Insert</span><span>Formulas</span><span>Data</span><span>Review</span></div>
+  <div class="fbar"><div class="name" id="name">A1</div><div class="fx">fx</div><div class="f" id="formula"></div></div>
+  <table id="sheet"><colgroup><col style="width:30px"><col style="width:220px"><col style="width:108px"><col></colgroup></table>
+  <div class="tabs"><span class="on">Provision</span><span>Provision (2)</span><span>RateRec_OLD</span><span>DTA_v2</span><span>Sheet7</span></div>
+  <div class="status"><span id="st">Ready</span><span class="e" id="ecount"></span></div>
+  <div class="fog" id="fog"></div>
+</div>
+<div class="pill" id="pill"><small id="pillK"></small><span id="pillT"></span></div>
+<div class="note" style="left:364px;top:470px;width:165px">Who changed the state rate?? – M.</div>
+<div class="note" style="left:24px;top:770px;width:200px">DO NOT DELETE – formula broken, ask Mike</div>
+<div class="dlg" id="dlg"><h3>Provision_Final_v3_NEW.xlsx</h3>
+  <p><i>!</i><span>We can't find <b>'State_Apportionment.xlsx'</b>. Was it moved or renamed?</span></p>
+  <div class="bt"><button class="d">Browse…</button><button>Cancel</button></div></div>
+</div>
 <script>
-const ALT = "='C:\\Abschluss\\2024\\[Final_v3_neu.xlsx]GewSt'!$C$12";
-const zeilen = [
-  ["Steuerrückstellung 2025", "", {fett:true}],
-  ["Ergebnis vor Steuern", "10.000.000"],
-  ["Hebesatz", "400 %", {id:"hebe"}],
-  ["Gewerbeertrag / zvE", "5.000.000"],
-  ["KSt 15 %", "750.000", {f:"=B4*15%"}],
-  ["SolZ 5,5 %", "41.250", {f:"=B5*5,5%"}],
-  ["GewSt", "700.000", {id:"gewst", f:ALT, fehler:true}],
-  ["Laufende Steuer", "1.491.250", {fett:true, f:"=SUMME(B5:B7)", fehler:true}],
-  ["Vorauszahlungen", "1.027.500"],
-  ["Rückstellung", "463.750", {fett:true, linie:true, f:"=B8-B9", fehler:true}],
+const Q = new URLSearchParams(location.search);
+const $ = s => document.querySelector(s);
+if (Q.get("compact") === "1") document.body.classList.add("compact");
+// [label, value, formula, flags, error]  – flags: b bold · hard (typed 21 %) · txt (number stored as text) · f (formula text column)
+const ROWS = [
+  ["Northwind Manufacturing Inc. – Tax provision FY 2025", "", "", "b"],
+  ["", "", ""],
+  ["Pre-tax income", "8,400,000", "='TB_Q3'!F212"],
+  ["Federal rate", "21%", "21%", "hard"],
+  ["Current federal tax", "1,764,000", "=B3*21%"],
+  ["State rate, net of federal", "3.95%", "=5%*(1-21%)"],
+  ["State tax", "331,800", "='[State_Apportionment.xlsx]Q3'!C12", "", "#REF!"],
+  ["Total provision", "2,095,800", "=B5+B7", "b", "#REF!"],
+  ["Effective tax rate", "24.95%", "=B8/B3", "", "#REF!"],
+  ["", "", ""],
+  ["Deferred taxes", "", "", "b"],
+  ["Opening DTA", "412,500", "412500"],
+  ["Book-tax differences", "1,250,000 ", "1,250,000 ", "txt"],
+  ["  × 21%", "262,500", "=B13*21%", "", "#VALUE!"],
+  ["Closing DTA", "675,000", "=XLOKUP(A15,DTA_v2!A:A,DTA_v2!F:F)", "", "#NAME?"],
+  ["", "", ""],
+  ["Rate rec check", "OK", "=IF(B9=0.2495,\"OK\",\"CHECK\")", "", "#REF!"],
+  ["Prior-year true-up", "-18,400", "=B3*21%-'PY'!B5"],
+  ["Q3 estimates paid", "1,500,000", "1500000"],
+  ["Taxes payable", "595,800", "=B8-B19", "b", "#REF!"],
+  ["", "", ""],
+  ["Check vs. TB (do not touch)", "0", "=B20-'TB_Q3'!F230"],
 ];
-const blatt = document.getElementById("blatt");
-blatt.insertAdjacentHTML("beforeend", `<tr><th></th><th>A</th><th>B</th><th>C</th></tr>`);
-zeilen.forEach(([a, b, o = {}], i) => {
-  const n = i + 1;
-  blatt.insertAdjacentHTML("beforeend", `<tr><th class="zeile">${n}</th>
-    <td class="${o.fett ? "fett" : ""} ${o.linie ? "linie" : ""}" data-adr="A${n}" data-f="${a}">${a}</td>
-    <td class="b ${o.fett ? "fett" : ""} ${o.linie ? "linie" : ""}" data-adr="B${n}" ${o.id ? `id="${o.id}"` : ""} data-f="${(o.f || b).replace(/"/g, "&quot;")}" data-fehler="${o.fehler ? 1 : ""}">${b}</td>
-    <td data-adr="C${n}" data-f=""></td></tr>`);
+const ORDER = [7, 8, 9, 20, 14, 15, 17];   // rows whose error shows, in the order they pile up
+const sheet = $("#sheet");
+sheet.insertAdjacentHTML("beforeend", `<tr><th></th><th>A</th><th>B</th><th>C</th></tr>`);
+const compactRows = Q.get("compact") === "1";
+ROWS.forEach(([a, b, f, fl = "", e], i) => {
+  const n = i + 1, cls = fl.split(" ");
+  if (compactRows && (n === 2 || n > 8)) return;   // compact: rows 1, 3–8
+  const hint = f.startsWith("=") && /21%|\[/.test(f) ? f : "";
+  if (n === 1) { sheet.insertAdjacentHTML("beforeend", `<tr><th>1</th><td colspan="3" class="b" data-a="A1" data-f="${a}">${a}</td></tr>`); return; }
+  sheet.insertAdjacentHTML("beforeend", `<tr><th>${n}</th>
+    <td class="${cls.includes("b") ? "b" : ""}" data-a="A${n}" data-f="${a.replace(/"/g, "&quot;")}">${a}</td>
+    <td class="v ${cls.includes("b") ? "b" : ""} ${cls.includes("hard") ? "hard" : ""} ${cls.includes("txt") ? "txt" : ""}" data-a="B${n}" data-f="${f.replace(/"/g, "&quot;")}" data-e="${e || ""}" id="B${n}">${b}</td>
+    <td class="f" data-a="C${n}" data-f="">${hint.replace(/</g, "&lt;")}</td></tr>`);
 });
-let wahl = null, puffer = null;
-function waehle(td){
-  document.querySelectorAll("td.wahl").forEach(x => x.classList.remove("wahl"));
-  wahl = td; puffer = null; td.classList.add("wahl");
-  document.getElementById("name").textContent = td.dataset.adr;
-  document.getElementById("inhalt").textContent = td.dataset.f;
-}
-blatt.addEventListener("mousedown", e => { const td = e.target.closest("td"); if (td) waehle(td); });
+const mock = window.mock = {};
+let sel = null, buf = null, shown = 0;
+mock.select = a => {
+  document.querySelectorAll("td.sel").forEach(x => x.classList.remove("sel"));
+  sel = typeof a === "string" ? document.querySelector(`[data-a="${a}"]`) : a; buf = null;
+  if (!sel) return;
+  sel.classList.add("sel"); $("#name").textContent = sel.dataset.a; $("#formula").textContent = sel.dataset.f;
+};
+sheet.addEventListener("mousedown", e => { const td = e.target.closest("td"); if (td) mock.select(td); });
 document.addEventListener("keydown", e => {
-  if (!wahl) return;
-  if (/^[0-9]$/.test(e.key)) {
-    puffer = (puffer || "") + e.key;
-    wahl.textContent = puffer; document.getElementById("inhalt").textContent = puffer;
-  } else if (e.key === "Enter" && puffer !== null) {
-    const td = wahl, wert = puffer;
-    td.dataset.f = wert; td.textContent = wert + (td.id === "hebe" ? " %" : "");
-    waehle(document.querySelector(`[data-adr="B${+td.dataset.adr.slice(1) + 1}"]`));
-    // Neuberechnung: die externe Verknüpfung zeigt ins Leere
-    setTimeout(() => document.querySelectorAll('[data-fehler="1"]').forEach(x => {
-      x.textContent = "#BEZUG!"; x.classList.add("err", "blitz");
-    }), 280);
+  if (!sel) return;
+  if (/^[0-9.,%]$/.test(e.key)) { buf = (buf || "") + e.key; sel.textContent = buf; $("#formula").textContent = buf; }
+  else if (e.key === "Enter" && buf !== null) {
+    sel.dataset.f = buf; sel.textContent = buf; const n = +sel.dataset.a.slice(1);
+    mock.select(document.querySelector(`[data-a="B${n + 1}"]`));
   }
 });
-document.getElementById("reiter-daten").addEventListener("mousedown", () => { document.getElementById("menue").style.display = "block"; });
-document.getElementById("m-verkn").addEventListener("mousedown", () => { document.getElementById("menue").style.display = "none"; document.getElementById("dlg").showModal(); });
-document.getElementById("btn-akt").addEventListener("mousedown", () => {
-  const s = document.getElementById("dlg-status");
-  s.textContent = "Wird aktualisiert …"; s.className = "status";
-  setTimeout(() => { s.textContent = "Fehler: Quelle nicht gefunden"; s.className = "status fehler"; }, 700);
-});
-waehle(document.querySelector('[data-adr="A1"]'));
+function flash(td) {   // short red flash when an error appears
+  const t0 = performance.now();
+  const step = () => { const k = Math.min((performance.now() - t0) / 600, 1);
+    td.style.background = `rgba(255,${80 + 147 * k},${70 + 154 * k},1)`; td.style.transform = `scale(${1 + .12 * Math.sin(Math.PI * Math.min(k * 2, 1))})`;
+    if (k < 1) requestAnimationFrame(step); else { td.style.background = ""; td.style.transform = ""; } };
+  requestAnimationFrame(step);
+}
+function errCount() { const e = $("#ecount"); e.style.display = shown ? "inline-block" : "none"; e.textContent = `⚠ ${shown} error${shown > 1 ? "s" : ""}`; }
+mock.next = () => {
+  while (shown < ORDER.length) {
+    const td = $("#B" + ORDER[shown++]);
+    if (!td) continue;
+    td.textContent = td.dataset.e; td.classList.add("err"); td.classList.remove("txt"); flash(td); errCount();
+    return td.dataset.a;
+  }
+  return null;
+};
+mock.all = () => { while (mock.next()); };
+mock.dialog = on => { $("#dlg").style.display = on ? "block" : "none"; };
+mock.hang = on => { $("#nr").textContent = on ? "(Not Responding)" : ""; $("#fog").style.background = on ? "rgba(255,255,255,.38)" : "rgba(255,255,255,0)"; };
+mock.status = t => { $("#st").textContent = t; };
+// clock pill: countdown to the Oct 15 deadline, or the night-before clock
+const mode = Q.get("clock") || (Q.get("compact") === "1" ? "none" : "deadline"), speed = +(Q.get("speed") || 1);
+const t0 = performance.now();
+const BASE = { deadline: Date.UTC(2026, 9, 12, 23, 47, 0), night: Date.UTC(2026, 9, 15, 23, 48, 0) }[mode];
+const DEADLINE = Date.UTC(2026, 9, 15, 23, 59, 59);
+const two = n => String(n).padStart(2, "0");
+function clockLoop() {
+  if (!BASE) { $("#pill").style.display = "none"; return; }
+  const now = BASE + (performance.now() - t0) * speed;
+  if (mode === "deadline") {
+    let s = Math.max(0, Math.floor((DEADLINE - now) / 1000));
+    const d = Math.floor(s / 86400); s %= 86400;
+    $("#pillK").textContent = "OCT 15 DEADLINE IN";
+    $("#pillT").textContent = `${d}d ${two(Math.floor(s / 3600))}:${two(Math.floor(s / 60) % 60)}:${two(s % 60)}`;
+  } else {
+    const dt = new Date(now), h = dt.getUTCHours(), m = dt.getUTCMinutes();
+    $("#pillK").textContent = dt.getUTCDate() === 15 ? "THU, OCT 15" : "FRI, OCT 16";
+    $("#pillT").textContent = `${(h + 11) % 12 + 1}:${two(m)} ${h < 12 ? "AM" : "PM"}`;
+  }
+  requestAnimationFrame(clockLoop);
+}
+clockLoop();
+if (Q.get("errors") === "1") mock.all();
+mock.select("B4");
 </script>
 </body>
 </html>

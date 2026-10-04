@@ -1,0 +1,203 @@
+{
+ "output": "../../posts/01_2026-10-12_reel_ref_error/reel.mp4",
+ "fps": 30,
+ "sources": {
+  "sheet": {
+   "video": "../../posts/01_2026-10-12_reel_ref_error/clips/rec_spreadsheet.mp4"
+  },
+  "tool": {
+   "video": "../../posts/01_2026-10-12_reel_ref_error/clips/rec_tool.mp4"
+  }
+ },
+ "audio": [
+  {
+   "file": "../../music/ambience/typing_error_beep.mp3",
+   "at": 0,
+   "start": 0.8,
+   "duration": 1.0,
+   "volume": 2.6,
+   "fade_out": 0.08
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 1.2,
+   "duration": 0.6,
+   "volume": 0.55
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 2.2,
+   "duration": 0.6,
+   "volume": 0.45
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 2.6,
+   "duration": 0.6,
+   "volume": 0.45
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 3.0,
+   "duration": 0.6,
+   "volume": 0.45
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 3.4,
+   "duration": 0.6,
+   "volume": 0.45
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 3.8,
+   "duration": 0.6,
+   "volume": 0.45
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 4.2,
+   "duration": 0.6,
+   "volume": 0.45
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 4.8,
+   "duration": 0.6,
+   "volume": 0.7
+  },
+  {
+   "file": "../../music/ambience/clock_ticking.mp3",
+   "at": 0,
+   "start": 0.3,
+   "duration": 3.6,
+   "volume": 1.0,
+   "fade_out": 0.2
+  },
+  {
+   "file": "../../music/ambience/clock_ticking.mp3",
+   "at": 3.6,
+   "start": 0.3,
+   "duration": 2.8,
+   "volume": 1.0,
+   "fade_out": 0.2
+  },
+  {
+   "file": "../../music/06_runway_lofi_ruhig.mp3",
+   "at": 6.4,
+   "start": 0,
+   "volume": 0.35,
+   "fade_in": 0.3
+  }
+ ],
+ "scenes": [
+  {
+   "source": "sheet",
+   "start": 0,
+   "duration": 2.0,
+   "darken": 0.3,
+   "text": [
+    {
+     "text": "3 days to the",
+     "y": 560,
+     "color": "white",
+     "size": 100
+    },
+    {
+     "text": "Oct 15 deadline.",
+     "y": 680,
+     "color": "white",
+     "size": 100
+    },
+    {
+     "text": "Then this: #REF!",
+     "y": 1300,
+     "color": "red",
+     "size": 110
+    }
+   ],
+   "overlay": []
+  },
+  {
+   "source": "sheet",
+   "start": 2.0,
+   "duration": 2.9,
+   "text": [
+    {
+     "text": "7 errors.",
+     "y": 560,
+     "color": "red",
+     "size": 130,
+     "at": 0.7
+    },
+    {
+     "text": "3 days left.",
+     "y": 690,
+     "color": "white",
+     "size": 100,
+     "at": 1.4
+    }
+   ],
+   "overlay": []
+  },
+  {
+   "source": "sheet",
+   "start": 4.9,
+   "duration": 1.5,
+   "text": [
+    {
+     "text": "Sound familiar?",
+     "y": 1340,
+     "color": "yellow",
+     "size": 110,
+     "at": 0.15
+    }
+   ],
+   "overlay": []
+  },
+  {
+   "source": "tool",
+   "start": 0,
+   "duration": 7.4,
+   "in": "whip",
+   "text": [
+    {
+     "text": "Same file.",
+     "y": 830,
+     "color": "white",
+     "size": 100,
+     "at": 0.1,
+     "until": 1.7
+    },
+    {
+     "text": "One click.",
+     "y": 950,
+     "color": "green",
+     "size": 110,
+     "at": 0.35,
+     "until": 1.7
+    }
+   ],
+   "overlay": []
+  },
+  {
+   "source": "tool",
+   "start": 7.4,
+   "duration": 2.0,
+   "overlay": [
+    {
+     "image": "../hooks/overlays/cta_dm_tool.png",
+     "at": 0.0,
+     "fade": 0.25
+    }
+   ]
+  },
+  {
+   "card": "../../assets/end_9x16.png",
+   "duration": 1.8,
+   "in": "fade",
+   "fade": 0.3,
+   "overlay": []
+  }
+ ]
+}

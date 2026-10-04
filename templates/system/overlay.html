@@ -1,34 +1,64 @@
-<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="text.js"></script>
-<!-- Reel-Einblendungen 1080×1920. Typen: haken (volle Karte) | haken_ueber (Haken über laufendem Bild, transparent rendern) | leiste (Textleiste oben, transparent rendern) | abspann (volle Karte) -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../fonts.css"><script src="text.js"></script>
+<!--
+  Reel overlays and cards, 1080×1920 (render.mjs template "overlay").
+  Data keys:
+    type      hook      – full card with headline (opaque)
+              hook_over – headline box over a running video (render with "transparent": true)
+              bar       – text bar at the top of the safe zone (transparent)
+              cta       – call-to-action box 'DM "TOOL"' low in the safe zone (transparent)
+              end       – end card (opaque) → assets/end_9x16.png
+    kicker    small mono line above the title          title  headline (*word* = green, \n = line break)
+    sub       line below the title                     handle default "@maehrtax"
+  Safe zone: nothing important above y 250, below y 1500 or in the right 150 px (Instagram UI).
+-->
 <style>
-html,body{width:1080px;height:1920px}
-body.voll{background:radial-gradient(110% 65% at 50% 42%,var(--glow) 0%,var(--bg) 65%)}
-html.leer,body.leer{background:transparent}
-.mitte{position:absolute;left:80px;right:80px;top:250px;bottom:420px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-.kicker{font-size:34px;margin-bottom:40px}
-h1{font-family:var(--serif);font-weight:600;font-size:124px;line-height:1.04;margin:0}
+:root{--bg:#0B110E;--glow:#12302A;--green:#53C3A2;--green-soft:rgba(83,195,162,.13);--text:#EAF1EC;--text2:#C9D6CE;--muted:#8FA398;
+  --serif:"IBM Plex Serif",serif;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;color:var(--text);font-family:var(--sans)}
+body.full{background:radial-gradient(110% 65% at 50% 42%,var(--glow) 0%,var(--bg) 65%)}
+html.clear,body.clear{background:transparent}
+.a{color:var(--green)}
+.kicker{font-family:var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--green);font-weight:600;font-size:34px;margin-bottom:40px}
+.mid{position:absolute;left:150px;right:150px;top:250px;bottom:420px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+h1{font-family:var(--serif);font-weight:600;font-size:120px;line-height:1.04;margin:0;width:100%}
 .sub{margin-top:44px;font-size:44px;color:var(--text2);line-height:1.4}
-.leiste{position:absolute;left:70px;right:70px;top:250px;padding:34px 44px;border-radius:32px;background:rgba(11,17,14,.86);
+.bar{position:absolute;left:70px;right:150px;top:260px;padding:30px 40px;border-radius:30px;background:rgba(11,17,14,.88);
   border:3px solid rgba(83,195,162,.7);box-shadow:0 0 60px rgba(83,195,162,.25)}
-.leiste .kicker{font-size:26px;margin:0 0 12px}
-.leiste h2{font-family:var(--serif);font-weight:600;font-size:64px;line-height:1.1;margin:0}
-.mitteBox{position:absolute;left:60px;right:60px;top:560px;padding:56px 50px 60px;border-radius:40px;text-align:center;
-  background:rgba(11,17,14,.84);border:4px solid rgba(83,195,162,.85);box-shadow:0 0 90px rgba(83,195,162,.35)}
-.mitteBox .kicker{font-size:30px;margin-bottom:28px}
-.mitteBox h1{font-size:112px}
-.mitteBox .sub{margin-top:30px;font-size:42px}
-.line{width:130px;height:5px;background:var(--gruen);border-radius:3px;margin:64px 0 56px}
-.chip{font-size:50px;color:var(--text)}
-.cta{margin-top:34px;font-size:38px;color:var(--grau)}
+.bar .kicker{font-size:26px;margin:0 0 12px}
+.bar h2{font-family:var(--serif);font-weight:600;font-size:62px;line-height:1.1;margin:0}
+.box{position:absolute;left:90px;right:150px;top:560px;padding:56px 46px 60px;border-radius:40px;text-align:center;
+  background:rgba(11,17,14,.86);border:4px solid rgba(83,195,162,.85);box-shadow:0 0 90px rgba(83,195,162,.35)}
+.box .kicker{font-size:30px;margin-bottom:28px}
+.box h1{font-size:104px}
+.box .sub{margin-top:30px;font-size:42px}
+.cta{position:absolute;left:90px;right:150px;top:1150px;height:300px;border-radius:44px;display:flex;align-items:center;gap:40px;padding:0 50px;
+  background:linear-gradient(135deg,rgba(18,48,42,.96),rgba(11,17,14,.96));border:4px solid var(--green);box-shadow:0 0 80px rgba(83,195,162,.45),0 20px 60px rgba(0,0,0,.5)}
+.cta svg{flex:none;width:130px;height:130px}
+.cta .t{font-family:var(--mono);font-weight:600;font-size:76px;line-height:1;letter-spacing:-.01em;white-space:nowrap}
+.cta .t span{color:var(--green)}
+.cta .s{font-size:36px;color:var(--text2);margin-top:18px;line-height:1.25}
+.line{width:130px;height:5px;background:var(--green);border-radius:3px;margin:60px 0 56px}
+.chip{display:inline-flex;align-items:center;gap:22px;padding:22px 44px;border:4px solid var(--green);border-radius:99px;background:var(--green-soft);
+  font-family:var(--mono);font-weight:600;font-size:56px;color:var(--text)}
+.chip svg{width:64px;height:64px}
+.handle{margin-top:40px;font-size:38px;color:var(--muted)}
 </style></head><body>
 <script>
-const d = window.DATA || {typ:'haken',titel:'3 Stunden Excel –\noder *3 Sekunden*?'};
-document.body.className = document.documentElement.className = (d.typ==="leiste"||d.typ==="haken_ueber") ? "leer" : "voll";
+const d = window.DATA || {type:'end'};
+const clear = ['bar','hook_over','cta'].includes(d.type);
+document.body.className = document.documentElement.className = clear ? 'clear' : 'full';
+const bubble = (stroke='#53C3A2', fill='rgba(83,195,162,.18)') =>
+  `<svg viewBox="0 0 64 64"><path d="M10 14h44a4 4 0 0 1 4 4v24a4 4 0 0 1-4 4H28l-12 10v-10h-6a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z" fill="${fill}" stroke="${stroke}" stroke-width="4" stroke-linejoin="round"/>
+   <path d="M20 26h24M20 34h16" stroke="${stroke}" stroke-width="4" stroke-linecap="round"/></svg>`;
+const handle = d.handle || '@maehrtax';
 let h;
-if (d.typ==='haken_ueber') h = `<div class="mitteBox">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}</div>`;
-else if (d.typ==='leiste') h = `<div class="leiste">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h2>${fmt(d.titel)}</h2></div>`;
-else if (d.typ==='abspann') h = `<div class="mitte"><div class="kicker">Steuern × Code</div><h1>${fmt(d.titel||'Steuerwissen,\ndas *rechnet.*')}</h1>
-  <div class="line"></div><span class="chip">💬 Schreib „TOOL“ per DM</span><div class="cta">${fmt(d.sub||'@maehrsteuern · Demo mit Beispieldaten')}</div></div>`;
-else h = `<div class="mitte">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}</div>`;
+if (d.type==='hook_over') h = `<div class="box">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h1>${fmt(d.title)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}</div>`;
+else if (d.type==='bar') h = `<div class="bar">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h2>${fmt(d.title)}</h2></div>`;
+else if (d.type==='cta') h = `<div class="cta">${bubble()}<div><div class="t">DM <span>"TOOL"</span></div>
+  <div class="s">${fmt(d.sub || 'Free demo with sample data')}</div></div></div>`;
+else if (d.type==='end') h = `<div class="mid"><div class="kicker">${fmt(d.kicker || 'Tax × Code')}</div><h1 style="font-size:104px">${fmt(d.title || 'Tax know\u2011how\nthat *computes.*')}</h1>
+  <div class="line"></div><span class="chip">${bubble()}DM "TOOL"</span><div class="handle">${fmt(d.sub || handle + ' · free demo with sample data')}</div></div>`;
+else h = `<div class="mid">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h1>${fmt(d.title)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}</div>`;
 document.body.insertAdjacentHTML('beforeend', h);
 </script></body></html>

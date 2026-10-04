@@ -1,0 +1,49 @@
+{
+ "output": "../hooks/h05_interest_limit.mp4",
+ "fps": 30,
+ "crf": 20,
+ "audio": [
+  {
+   "file": "../../music/ambience/typing_error_beep.mp3",
+   "at": 0.2,
+   "start": 0.8,
+   "duration": 0.5,
+   "volume": 2.6,
+   "fade_out": 0.08
+  },
+  {
+   "file": "../../music/06_runway_lofi_ruhig.mp3",
+   "at": 0.6,
+   "volume": 0.35,
+   "fade_in": 0.1
+  }
+ ],
+ "sources": {
+  "j163": {
+   "video": "../../posts/11_2026-10-21_reel_163j_demo/clips/rec_163j.mp4"
+  }
+ },
+ "scenes": [
+  {
+   "source": "j163",
+   "duration": 2.4,
+   "start": 1.4,
+   "darken": 0.3,
+   "text": [
+    {
+     "text": "Your interest limit",
+     "y": 820,
+     "color": "white",
+     "size": 100
+    },
+    {
+     "text": "just grew.",
+     "y": 955,
+     "at": 0.6,
+     "color": "green",
+     "size": 135
+    }
+   ]
+  }
+ ]
+}

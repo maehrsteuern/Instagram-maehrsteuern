@@ -1,0 +1,61 @@
+{
+ "output": "../../posts/08_2026-10-19_reel_4000_rows/reel.mp4",
+ "fps": 30,
+ "sources": {
+  "rec": {
+   "video": "../../posts/08_2026-10-19_reel_4000_rows/clips/rec_cleanup.mp4"
+  }
+ },
+ "audio": [
+  {
+   "file": "../../music/02_variousartists_tastersvinegar3_03_a_n_k.mp3",
+   "at": 0,
+   "start": 30,
+   "volume": 0.2,
+   "fade_in": 0.05
+  }
+ ],
+ "scenes": [
+  {
+   "source": "rec",
+   "start": 0,
+   "duration": 1.1,
+   "text": [
+    {
+     "text": "4,000 rows.",
+     "y": 900,
+     "color": "white",
+     "size": 140
+    },
+    {
+     "text": "One click.",
+     "y": 1060,
+     "color": "green",
+     "size": 140
+    }
+   ]
+  },
+  {
+   "source": "rec",
+   "start": 1.1,
+   "duration": 3.5
+  },
+  {
+   "source": "rec",
+   "start": 4.6,
+   "duration": 2.9,
+   "overlay": [
+    {
+     "image": "../hooks/overlays/cta_dm_tool.png",
+     "at": 0.1,
+     "fade": 0.25
+    }
+   ]
+  },
+  {
+   "source": "rec",
+   "start": 7.5,
+   "duration": 0.83
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+3 days to the Oct 15 deadline. Then this: #REF!
+
+One moved file and the whole provision turns red – state tax, total, ETR, taxes payable.
+Same numbers in a small tool: it flags the broken link and the hard-coded 21%, fixes them, and the check goes red → yellow → green.
+Demo company, sample numbers – Northwind Manufacturing is fictional.
+
+💬 DM me "TOOL" – free demo with sample data.
+
+Educational content – not tax, legal or accounting advice.
+
+#taxprovision #ASC740 #excel #taxtech #CPA

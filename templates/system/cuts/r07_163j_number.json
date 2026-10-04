@@ -1,0 +1,31 @@
+{
+ "output": "../../posts/07_2026-10-16_reel_163j_number/reel.mp4",
+ "fps": 30,
+ "sources": {
+  "rec": {
+   "video": "../../posts/07_2026-10-16_reel_163j_number/clips/rec_number.mp4"
+  }
+ },
+ "audio": [
+  {
+   "file": "../../music/03_plantasia_garfield_park_conservatory_02.mp3",
+   "at": 0,
+   "start": 6,
+   "volume": 0.45,
+   "fade_in": 0.2
+  }
+ ],
+ "scenes": [
+  {
+   "source": "rec",
+   "start": 0,
+   "duration": 9.7
+  },
+  {
+   "card": "../../assets/end_9x16.png",
+   "duration": 1.6,
+   "in": "fade",
+   "fade": 0.3
+  }
+ ]
+}

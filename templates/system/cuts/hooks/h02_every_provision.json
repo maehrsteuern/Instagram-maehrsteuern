@@ -1,0 +1,54 @@
+{
+ "output": "../hooks/h02_every_provision.mp4",
+ "fps": 30,
+ "crf": 20,
+ "audio": [
+  {
+   "file": "../../music/ambience/typing_error_beep.mp3",
+   "at": 0,
+   "start": 0.8,
+   "duration": 0.4,
+   "volume": 2.6,
+   "fade_out": 0.08
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 0.2,
+   "duration": 0.6,
+   "volume": 0.6
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 0.9,
+   "duration": 0.6,
+   "volume": 0.6
+  }
+ ],
+ "sources": {
+  "table": {
+   "video": "../hooks/clips/card_top_table.mp4"
+  }
+ },
+ "scenes": [
+  {
+   "source": "table",
+   "duration": 2.6,
+   "start": 2.2,
+   "text": [
+    {
+     "text": "This error is in",
+     "y": 420,
+     "color": "white",
+     "size": 110
+    },
+    {
+     "text": "almost every provision.",
+     "y": 545,
+     "at": 0.6,
+     "color": "yellow",
+     "size": 100
+    }
+   ]
+  }
+ ]
+}

@@ -1,50 +1,54 @@
-<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="text.js"></script>
-<!-- Ampel-Nahaufnahme für Reels 1080×1920, nachgebaut im Stil der App (nur Beispieldaten). stand: rot | gelb | gruen -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../fonts.css"><script src="text.js"></script>
+<!--
+  Traffic-light close-up for Reels, 1080×1920 (render.mjs template "traffic_light"), styled like the demo tool
+  (recordings/demo_tool.html). Demo company "Northwind Manufacturing Inc." (fictional), ASC 740 provision checks.
+  Data keys:  state  red | yellow | green
+-->
 <style>
-html,body{width:1080px;height:1920px}
-body{background:radial-gradient(110% 60% at 50% 40%,var(--glow) 0%,var(--bg) 68%)}
-:root{--gelb:#E8B04A}
-.kopf{position:absolute;left:70px;right:70px;top:150px;display:flex;align-items:center;gap:26px}
-.kopf b{font-family:var(--serif);font-size:46px;font-weight:600}
-.kopf span{font-family:var(--mono);font-size:30px;color:var(--grau);letter-spacing:.08em}
-.kopf i{font-style:normal;font-family:var(--mono);font-size:26px;letter-spacing:.14em;color:var(--gelb);
-  background:rgba(232,176,74,.14);padding:8px 18px;border-radius:10px}
-.titel{position:absolute;left:70px;right:70px;top:290px;text-align:center}
-.titel .kicker{font-size:30px;margin-bottom:22px}
-h1{font-family:var(--serif);font-weight:600;font-size:108px;line-height:1.05;margin:0}
-.lampen{position:absolute;left:50%;top:640px;transform:translateX(-50%);display:flex;gap:46px;padding:34px 52px;
-  border-radius:120px;background:#101714;border:3px solid #26342D}
-.lampe{width:130px;height:130px;border-radius:50%;opacity:.16}
-.lampe.an{opacity:1}
-.l-rot{background:var(--rot)} .l-rot.an{box-shadow:0 0 70px 14px rgba(224,122,107,.6)}
-.l-gelb{background:var(--gelb)} .l-gelb.an{box-shadow:0 0 70px 14px rgba(232,176,74,.6)}
-.l-gruen{background:var(--gruen)} .l-gruen.an{box-shadow:0 0 70px 14px rgba(83,195,162,.6)}
-.karte{position:absolute;left:60px;right:60px;top:900px;padding:30px 46px;border-radius:26px;background:#141B18;border:3px solid #26342D}
-.karte .kicker{font-size:26px;color:var(--grau);margin:10px 0 10px;letter-spacing:.2em}
-.zeile{display:flex;align-items:center;gap:26px;padding:24px 0;border-top:2px solid #212C27;font-size:38px}
-.zeile:nth-of-type(2){border-top:0}
-.punkt{width:26px;height:26px;border-radius:50%;flex:none}
-.zeile .name{flex:1}
-.zeile .st{font-family:var(--mono);font-size:32px;font-weight:600}
-.rot{color:var(--rot)} .gelb{color:var(--gelb)} .gruen{color:var(--gruen)}
-.p-rot{background:var(--rot)} .p-gelb{background:var(--gelb)} .p-gruen{background:var(--gruen)}
-.fuss{position:absolute;left:0;right:0;top:1580px;text-align:center;font-family:var(--mono);font-size:28px;color:var(--grau);letter-spacing:.12em}
+:root{--bg:#0B110E;--glow:#12302A;--green:#53C3A2;--red:#FF6B5E;--yellow:#F2B84B;--text:#EAF1EC;--muted:#8FA398;
+  --serif:"IBM Plex Serif",serif;--mono:"IBM Plex Mono",monospace}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;color:var(--text);font-family:"IBM Plex Sans",sans-serif;
+  background:radial-gradient(110% 60% at 50% 40%,var(--glow) 0%,var(--bg) 68%)}
+.head{position:absolute;left:70px;right:150px;top:270px;display:flex;align-items:center;gap:24px}
+.head b{font-family:var(--serif);font-size:44px;font-weight:600}
+.head span{font-family:var(--mono);font-size:28px;color:var(--muted);letter-spacing:.06em}
+.head i{font-style:normal;font-family:var(--mono);font-size:24px;letter-spacing:.14em;color:var(--yellow);background:rgba(242,184,75,.14);padding:8px 16px;border-radius:10px}
+.title{position:absolute;left:70px;right:150px;top:390px;text-align:center}
+.title .k{font-family:var(--mono);font-size:30px;letter-spacing:.24em;color:var(--green);font-weight:600;margin-bottom:22px}
+h1{font-family:var(--serif);font-weight:600;font-size:104px;line-height:1.05;margin:0}
+.lamps{position:absolute;left:430px;top:690px;transform:translateX(-50%);display:flex;gap:46px;padding:34px 52px;border-radius:120px;background:#0A100D;border:3px solid #2C3F37}
+.lamp{width:120px;height:120px;border-radius:50%;opacity:.15}
+.lamp.on{opacity:1}
+.l-red{background:var(--red)} .l-red.on{box-shadow:0 0 70px 14px rgba(255,107,94,.6)}
+.l-yellow{background:var(--yellow)} .l-yellow.on{box-shadow:0 0 70px 14px rgba(242,184,75,.6)}
+.l-green{background:var(--green)} .l-green.on{box-shadow:0 0 70px 14px rgba(83,195,162,.6)}
+.card{position:absolute;left:60px;right:150px;top:930px;padding:26px 40px;border-radius:26px;background:#141B18;border:3px solid #22322B}
+.card .k{font-family:var(--mono);font-size:24px;color:var(--muted);margin:6px 0 8px;letter-spacing:.2em}
+.row{display:flex;align-items:center;gap:22px;padding:20px 0;border-top:2px solid #212C27;font-size:34px}
+.row:nth-of-type(2){border-top:0}
+.dot{width:24px;height:24px;border-radius:50%;flex:none}
+.row .name{flex:1}
+.row .st{font-family:var(--mono);font-size:28px;font-weight:600}
+.red{color:var(--red)} .yellow{color:var(--yellow)} .green{color:var(--green)}
+.d-red{background:var(--red)} .d-yellow{background:var(--yellow)} .d-green{background:var(--green)}
+.foot{position:absolute;left:0;right:0;top:1600px;text-align:center;font-family:var(--mono);font-size:26px;color:var(--muted);letter-spacing:.12em}
 </style></head><body>
 <script>
-const d = window.DATA || {stand:'rot'};
-const STAENDE = {
-  rot:   {titel:'2 Punkte\n*kritisch*', farbe:'rot', zeilen:[['gruen','ok'],['rot','Hebesatz fehlt'],['gelb','Satz prüfen'],['gruen','ok'],['rot','nicht gebucht']]},
-  gelb:  {titel:'1 Hinweis\n*offen*', farbe:'gelb', zeilen:[['gruen','ok'],['gruen','ok'],['gelb','Satz prüfen'],['gruen','ok'],['gruen','gebucht']]},
-  gruen: {titel:'Abschluss-\n*reif.*', farbe:'gruen', zeilen:[['gruen','ok'],['gruen','ok'],['gruen','ok'],['gruen','ok'],['gruen','gebucht']]},
+const d = window.DATA || {state:'red'};
+const STATES = {
+  red:    {title:'3 errors\n*found*', color:'red', rows:[['green','ok'],['red','hard-coded'],['red','#REF!'],['yellow','review'],['red','off']]},
+  yellow: {title:'1 check\n*open*', color:'yellow', rows:[['green','ok'],['green','fixed'],['green','fixed'],['yellow','review'],['green','ties']]},
+  green:  {title:'Ready to\n*book.*', color:'green', rows:[['green','ok'],['green','fixed'],['green','fixed'],['green','ok'],['green','ties']]},
 };
-const NAMEN = ['Körperschaftsteuer + SolZ','Gewerbesteuer','Latente Steuern','Vorauszahlungen','Steuerrückstellung'];
-const s = STAENDE[d.stand] || STAENDE.rot;
-const titel = fmt(s.titel).replace(/class="a"/g, `class="${s.farbe}"`);
+const NAMES = ['Pre-tax income ties to TB','Federal rate 21%','State apportionment link','State rate, net of federal','Rate reconciliation'];
+const s = STATES[d.state] || STATES.red;
+const title = fmt(s.title).replace(/class="a"/g, `class="${s.color}"`);
 document.body.insertAdjacentHTML('beforeend', `
-<div class="kopf"><b>Ertragsteuern</b><span>JA 2025-12-31</span><i>DEMODATEN</i></div>
-<div class="titel"><div class="kicker">Abschlussreife</div><h1>${titel}</h1></div>
-<div class="lampen">${['rot','gelb','gruen'].map(f => `<div class="lampe l-${f}${f===s.farbe?' an':''}"></div>`).join('')}</div>
-<div class="karte"><div class="kicker">Prüfpunkte</div>${NAMEN.map((n,i) => { const [f,t] = s.zeilen[i];
-  return `<div class="zeile"><div class="punkt p-${f}"></div><div class="name">${n}</div><div class="st ${f}">${t}</div></div>`; }).join('')}</div>
-<div class="fuss">DEMO · BEISPIELDATEN</div>`);
+<div class="head"><b>Provision Check</b><span>FY 2025</span><i>DEMO DATA</i></div>
+<div class="title"><div class="k">NORTHWIND MANUFACTURING INC.</div><h1>${title}</h1></div>
+<div class="lamps">${['red','yellow','green'].map(f => `<div class="lamp l-${f}${f===s.color?' on':''}"></div>`).join('')}</div>
+<div class="card"><div class="k">ASC 740 CHECKS</div>${NAMES.map((n,i) => { const [f,t] = s.rows[i];
+  return `<div class="row"><div class="dot d-${f}"></div><div class="name">${n}</div><div class="st ${f}">${t}</div></div>`; }).join('')}</div>
+<div class="foot">DEMO · FICTIONAL COMPANY · SAMPLE NUMBERS</div>`);
 </script></body></html>

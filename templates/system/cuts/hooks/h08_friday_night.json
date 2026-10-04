@@ -1,0 +1,43 @@
+{
+ "output": "../hooks/h08_friday_night.mp4",
+ "fps": 30,
+ "crf": 20,
+ "audio": [
+  {
+   "file": "../../music/ambience/clock_ticking.mp3",
+   "at": 0,
+   "start": 0.3,
+   "duration": 2.6,
+   "volume": 1.0,
+   "fade_out": 0.2
+  }
+ ],
+ "sources": {
+  "ai_office": {
+   "video": "../hooks/clips/ai_office_evening.mp4"
+  }
+ },
+ "scenes": [
+  {
+   "source": "ai_office",
+   "duration": 2.6,
+   "start": 0.5,
+   "speed": 0.9,
+   "text": [
+    {
+     "text": "Friday, 9:45 PM.",
+     "y": 340,
+     "color": "white",
+     "size": 125
+    },
+    {
+     "text": "Due Monday, 8 AM.",
+     "y": 480,
+     "at": 1.0,
+     "color": "red",
+     "size": 110
+    }
+   ]
+  }
+ ]
+}

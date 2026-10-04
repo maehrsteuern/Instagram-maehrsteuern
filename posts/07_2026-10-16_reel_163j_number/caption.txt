@@ -1,0 +1,12 @@
+§ 163(j) is back on EBITDA. +$1,000,000 deductible – one line changed.
+
+Demo company: EBITDA $14.0M, D&A $4.0M, business interest $4.0M.
+Old rule (ATI = EBIT): 30% × $10.0M = $3.0M limit → $1.0M disallowed.
+New rule (ATI = EBITDA, tax years beginning after Dec 31, 2024, OBBBA): 30% × $14.0M = $4.2M → all $4.0M deductible.
++$1,000,000 × 21% = $210,000 less federal tax.
+
+✅ Save this for your 2025 provision. Full walk-through in yesterday's carousel.
+
+Educational content – not tax, legal or accounting advice. Simplified example – talk to your CPA about your case.
+
+#tax #corporatetax #OBBBA #taxplanning #CPA

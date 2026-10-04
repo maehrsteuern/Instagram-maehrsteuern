@@ -1,0 +1,40 @@
+{
+ "output": "../hooks/h10_one_click.mp4",
+ "fps": 30,
+ "crf": 20,
+ "audio": [
+  {
+   "file": "../../music/06_runway_lofi_ruhig.mp3",
+   "at": 0.8,
+   "volume": 0.35,
+   "fade_in": 0.1
+  }
+ ],
+ "sources": {
+  "cleanup": {
+   "video": "../../posts/08_2026-10-19_reel_4000_rows/clips/rec_cleanup.mp4"
+  }
+ },
+ "scenes": [
+  {
+   "source": "cleanup",
+   "duration": 2.8,
+   "start": 0.3,
+   "text": [
+    {
+     "text": "4,000 messy rows.",
+     "y": 900,
+     "color": "white",
+     "size": 120
+    },
+    {
+     "text": "One click.",
+     "y": 1040,
+     "at": 0.8,
+     "color": "green",
+     "size": 140
+    }
+   ]
+  }
+ ]
+}

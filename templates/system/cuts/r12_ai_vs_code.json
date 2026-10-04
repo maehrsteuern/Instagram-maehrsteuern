@@ -1,0 +1,65 @@
+{
+ "output": "../../posts/12_2026-10-22_reel_ai_vs_code/reel.mp4",
+ "fps": 30,
+ "sources": {
+  "rec": {
+   "video": "../../posts/12_2026-10-22_reel_ai_vs_code/clips/rec_ai_vs_code.mp4"
+  }
+ },
+ "audio": [
+  {
+   "file": "../../music/ambience/clock_ticking.mp3",
+   "at": 0,
+   "start": 0.3,
+   "duration": 3.0,
+   "volume": 0.8,
+   "fade_out": 0.2
+  },
+  {
+   "file": "../../music/ambience/typing_error_beep.mp3",
+   "at": 2.9,
+   "start": 0.8,
+   "duration": 2.4,
+   "volume": 2.2,
+   "fade_out": 0.08
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 5.7,
+   "duration": 0.6,
+   "volume": 0.7
+  },
+  {
+   "file": "../../music/01_productionloopsandsamplesvol12009_2011_0.mp3",
+   "at": 7.2,
+   "start": 4,
+   "volume": 0.3,
+   "fade_in": 0.3
+  }
+ ],
+ "scenes": [
+  {
+   "source": "rec",
+   "start": 0,
+   "duration": 13.0
+  },
+  {
+   "source": "rec",
+   "start": 13.0,
+   "duration": 1.6,
+   "overlay": [
+    {
+     "image": "../hooks/overlays/cta_dm_tool.png",
+     "at": 0.0,
+     "fade": 0.25
+    }
+   ]
+  },
+  {
+   "card": "../../assets/end_9x16.png",
+   "duration": 1.8,
+   "in": "fade",
+   "fade": 0.3
+  }
+ ]
+}

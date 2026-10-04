@@ -1,0 +1,40 @@
+{
+ "output": "../hooks/h06_ready_to_book.mp4",
+ "fps": 30,
+ "crf": 20,
+ "audio": [
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 0.9,
+   "duration": 0.6,
+   "volume": 0.6
+  }
+ ],
+ "sources": {
+  "provision": {
+   "video": "../../posts/01_2026-10-12_reel_ref_error/clips/rec_tool.mp4"
+  }
+ },
+ "scenes": [
+  {
+   "source": "provision",
+   "duration": 2.5,
+   "start": 0.2,
+   "text": [
+    {
+     "text": "Ready to book?",
+     "y": 830,
+     "color": "white",
+     "size": 120
+    },
+    {
+     "text": "Not yet.",
+     "y": 960,
+     "at": 0.9,
+     "color": "red",
+     "size": 140
+    }
+   ]
+  }
+ ]
+}

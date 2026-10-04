@@ -1,0 +1,57 @@
+{
+ "output": "../hooks/h01_ref_deadline.mp4",
+ "fps": 30,
+ "crf": 20,
+ "audio": [
+  {
+   "file": "../../music/ambience/typing_error_beep.mp3",
+   "at": 0,
+   "start": 0.8,
+   "duration": 0.2,
+   "volume": 2.6,
+   "fade_out": 0.08
+  },
+  {
+   "file": "../../music/ambience/error_beep.mp3",
+   "at": 0.2,
+   "duration": 0.6,
+   "volume": 0.6
+  },
+  {
+   "file": "../../music/ambience/clock_ticking.mp3",
+   "at": 0.6,
+   "start": 0.3,
+   "duration": 1.4,
+   "volume": 1.0,
+   "fade_out": 0.2
+  }
+ ],
+ "sources": {
+  "sheet": {
+   "video": "../../posts/01_2026-10-12_reel_ref_error/clips/rec_spreadsheet.mp4"
+  }
+ },
+ "scenes": [
+  {
+   "source": "sheet",
+   "duration": 2.0,
+   "start": 1.0,
+   "darken": 0.25,
+   "text": [
+    {
+     "text": "#REF!",
+     "y": 600,
+     "color": "red",
+     "size": 210
+    },
+    {
+     "text": "3 days before the deadline.",
+     "y": 760,
+     "at": 0.5,
+     "color": "white",
+     "size": 95
+    }
+   ]
+  }
+ ]
+}

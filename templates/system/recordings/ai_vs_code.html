@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=540">
+<title>AI vs. code</title>
+<!--
+  Reel 12 "Why ChatGPT shouldn't do your tax math" – timeline page for recorder.mjs (540×960 CSS → 1080×1920), ~14.5 s.
+  A GENERIC, neutral chat bubble (no real chatbot UI, no logo) gives a confident but outdated § 163(j) answer ($3.0M limit,
+  old EBIT rule), then code with an audit trail computes the 2025 rule ($4.2M limit, all $4.0M deductible).
+  Numbers exactly as in strategy/00_us_brief.md. The hook is fully visible in frame 1. End card is added in the cut.
+  URL parameters:  still = <seconds> (freeze at that time – covers, previews)
+-->
+<link rel="stylesheet" href="../../fonts.css">
+<style>
+@font-face{font-family:"Outfit";src:url("../fonts/Outfit-Bold.ttf");font-weight:700}
+:root{--bg:#0B110E;--green:#53C3A2;--red:#FF6B5E;--text:#EAF1EC;--text2:#C9D6CE;--muted:#8FA398;--line:#22322B;
+  --mono:"IBM Plex Mono",monospace;--hook:"Outfit","IBM Plex Sans",sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;width:540px;height:960px;overflow:hidden;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans",sans-serif}
+#stage{position:relative;width:540px;height:960px;overflow:hidden;background:radial-gradient(110% 60% at 50% 42%,#12302A 0%,var(--bg) 68%)}
+.L{position:absolute;left:30px;width:440px;opacity:0}
+.k{font-family:var(--mono);font-size:13px;letter-spacing:.24em;color:var(--green);font-weight:600;text-align:center}
+.hook{font-family:var(--hook);font-weight:700;line-height:1.03;text-align:center}
+.g{color:var(--green)} .r{color:var(--red)} .m{color:var(--muted)}
+.chat{background:#15191A;border:1.5px solid #2A3133;border-radius:20px;padding:16px;font-size:21px;line-height:1.4}
+.chat .hd{display:flex;align-items:center;gap:9px;font-size:12.5px;color:#9AA3A6;margin-bottom:10px}
+.chat .av{width:24px;height:24px;border-radius:50%;background:#3A4245}
+.u{margin-left:56px;background:#2A3235;border-radius:16px 16px 4px 16px;padding:10px 13px;color:#E4E8EA}
+.a{margin-top:10px;margin-right:30px;background:#1E2426;border-radius:16px 16px 16px 4px;padding:10px 13px;color:#E4E8EA;min-height:44px}
+.a b{color:#fff}
+.dots span{display:inline-block;width:8px;height:8px;border-radius:50%;background:#8C9598;margin-right:5px}
+.stamp{position:absolute;left:60px;right:60px;text-align:center;border:4px solid var(--red);color:var(--red);border-radius:14px;padding:8px 10px;
+  font-family:var(--hook);font-weight:700;font-size:34px;background:rgba(11,17,14,.88);box-shadow:0 0 40px rgba(255,107,94,.35)}
+.stamp small{display:block;font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:14px;color:#ffb3ab;margin-top:2px}
+.ed{background:#0A100D;border:1.5px solid #2C3F37;border-radius:16px;overflow:hidden}
+.ed .bar{display:flex;gap:6px;align-items:center;padding:9px 12px;background:#101A15;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)}
+.ed .bar i{width:9px;height:9px;border-radius:50%;background:#2C3F37}
+.ed pre{margin:0;padding:14px 12px;font-family:var(--mono);font-size:14px;line-height:1.9;color:var(--text)}
+.ed .c{color:#6f8a7e}
+.ed .ln{display:block;opacity:0}
+.ed .v{color:var(--green);font-weight:600}
+.trail{display:flex;flex-direction:column;gap:9px;margin-top:14px}
+.trail div{display:flex;gap:9px;align-items:center;font-size:15px;color:var(--text2);background:#0F1713;border:1px solid var(--line);border-radius:10px;padding:7px 10px;opacity:0}
+.trail b{color:var(--green);font-family:var(--mono)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cmp div{border-radius:16px;padding:14px;text-align:center}
+.cmp .x{border:2px solid rgba(255,107,94,.7);background:rgba(255,107,94,.08)}
+.cmp .y{border:2px solid rgba(83,195,162,.8);background:rgba(83,195,162,.1);box-shadow:0 0 30px rgba(83,195,162,.2)}
+.cmp small{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.18em;color:var(--muted)}
+.cmp b{display:block;font-family:var(--hook);font-size:46px;line-height:1.1;margin:4px 0}
+.cmp span{font-size:13.5px;color:var(--text2)}
+.foot{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em;text-align:center}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="L" id="kick" style="top:150px"><div class="k">AI × TAX · ILLUSTRATION</div></div>
+  <div class="L" id="hook" style="top:186px"><div class="hook" style="font-size:52px">Why ChatGPT<br>shouldn't do your<br><span class="r">tax math.</span></div></div>
+  <div class="L" id="chat" style="top:420px"><div class="chat">
+    <div class="hd"><div class="av"></div>Chat assistant · generic</div>
+    <div class="u">What's our 2025 § 163(j) interest limit? EBITDA $14M, D&amp;A $4M, interest expense $4M.</div>
+    <div class="a" id="ans"></div></div></div>
+  <div class="stamp L" id="stamp" style="top:520px;left:60px;width:420px">WRONG FOR 2025<small>old EBIT rule · no source · no audit trail</small></div>
+  <div class="L" id="code" style="top:150px"><div class="ed">
+    <div class="bar"><i></i><i></i><i></i>&nbsp;provision/interest_limit.py</div>
+<pre><span class="ln c"># § 163(j) · TY beginning after 12/31/2024</span><span class="ln">ati        = ebitda                <span class="c">#</span> <span class="v">14,000,000</span></span><span class="ln">limit      = 0.30 * ati            <span class="c">#</span> <span class="v"> 4,200,000</span></span><span class="ln">deductible = min(interest, limit)  <span class="c">#</span> <span class="v"> 4,000,000</span></span><span class="ln">disallowed = interest - deductible <span class="c">#</span> <span class="v">         0</span></span></pre></div>
+    <div class="trail" id="trail">
+      <div><b>RULE</b> IRC § 163(j) as amended by OBBBA (7/4/2025)</div>
+      <div><b>INPUT</b> TB_Q3.csv · EBITDA, D&amp;A, interest</div>
+      <div><b>TESTS</b> 12 cases pass · same input → same output</div>
+      <div><b>LOG</b> every number traceable to its source</div>
+    </div></div>
+  <div class="L" id="cmp" style="top:200px"><div class="cmp">
+    <div class="x"><small>CHAT</small><b class="r">$3.0M</b><span>limit · no source</span></div>
+    <div class="y"><small>CODE</small><b class="g">$4.2M</b><span>limit · audit trail</span></div></div></div>
+  <div class="L" id="tag" style="top:400px"><div class="hook" style="font-size:56px">AI reads.<br><span class="g">Code calculates.</span></div></div>
+  <div class="L foot" id="foot" style="top:712px">Illustration – not a real chat transcript · demo numbers</div>
+</div>
+<script>
+const Q = new URLSearchParams(location.search);
+const $ = s => document.querySelector(s);
+const ease = k => 1 - Math.pow(1 - k, 3);
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const ANSWER = "Sure! The limit is 30% of EBIT: 30% × $10M = <b>$3.0M</b>. So <b>$1.0M</b> of your interest is disallowed this year.";
+const PLAIN = ANSWER.replace(/<[^>]+>/g, "");
+// [id, in, out, from-y offset]  in = 0 → visible in frame 1
+const SHOW = [["kick", 0, 7.0], ["hook", 0, 2.5], ["chat", 0, 7.0], ["stamp", 5.7, 7.0], ["code", 7.2, 11.6], ["cmp", 11.7, 99], ["tag", 12.2, 99], ["foot", 0, 99]];
+let t0 = performance.now();
+window.play = () => { t0 = performance.now(); };
+const still = Q.has("still") ? +Q.get("still") : null;
+function render() {
+  const t = still ?? (performance.now() - t0) / 1000;
+  for (const [id, a, b] of SHOW) {
+    const e = $("#" + id), vin = a === 0 ? 1 : clamp((t - a) / .3), vout = clamp((b - t) / .25), v = Math.min(vin, vout);
+    e.style.opacity = v; e.style.display = v <= 0 ? "none" : "block";
+    if (id === "stamp") e.style.transform = `rotate(-4deg) scale(${1.6 - .6 * ease(vin)})`;
+    else e.style.transform = `translateY(${(1 - ease(vin)) * 24}px)`;
+  }
+  // chat card glides up after the hook
+  const up = ease(clamp((t - 2.4) / .5));
+  $("#chat").style.top = 420 - 250 * up + "px";
+  // assistant: typing dots, then the confident answer streams in
+  const ans = $("#ans");
+  if (t < 2.9) ans.innerHTML = `<span class="dots">${[0, 1, 2].map(i => `<span style="opacity:${.35 + .65 * Math.abs(Math.sin(t * 6 - i))}"></span>`).join("")}</span>`;
+  else {
+    const n = Math.floor(clamp((t - 2.9) / 2.4) * PLAIN.length);
+    let out = "", c = 0;   // stream characters but keep the <b> tags intact
+    for (const part of ANSWER.split(/(<[^>]+>)/)) { if (part.startsWith("<")) { out += part; continue; } const take = Math.max(0, Math.min(part.length, n - c)); out += part.slice(0, take); c += part.length; }
+    ans.innerHTML = out;
+  }
+  // code lines + audit trail
+  document.querySelectorAll(".ln").forEach((l, i) => { const k = clamp((t - 7.6 - i * .45) / .25); l.style.opacity = k; l.style.transform = `translateX(${(1 - k) * 12}px)`; });
+  document.querySelectorAll("#trail div").forEach((d, i) => { const k = clamp((t - 9.9 - i * .3) / .25); d.style.opacity = k; d.style.transform = `translateY(${(1 - k) * 10}px)`; });
+  if (still === null) requestAnimationFrame(render);
+}
+render();
+</script>
+</body>
+</html>

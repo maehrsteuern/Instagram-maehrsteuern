@@ -1,0 +1,10 @@
+21% typed into 400 cells. Now link them all to one parameter.
+
+Every hard-coded rate is a cell somebody has to find when the rate, the state or the reviewer changes.
+One parameter, 400 links, zero hunting – and the audit trail shows where the number comes from.
+
+Follow for more satisfying tax software. Want this for your own workbook? 💬 DM me "TOOL".
+
+Educational content – not tax, legal or accounting advice.
+
+#excel #taxprovision #ASC740 #automation #taxtech

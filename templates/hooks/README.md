@@ -1,35 +1,44 @@
-# Hook-Bibliothek
+# Hook library (English, @maehrtax)
 
-Fertige Einstiege für Reels: je **1,8–2,8 s**, 1080×1920, Outline-Text ab 0,3 s, **nur Atmo, keine Musik**.
-Sie passen vor jedes Reel; die Musik setzt dann mit dem eigentlichen Inhalt ein (Regeln: `strategie/09_reel_regeln.md`).
-Alle zehn am Stück: `uebersicht.mp4` (25 s).
+Ready-made Reel openers: **1.8–2.8 s**, 1080×1920, 30 fps, outline text (Outfit Bold). The first line is readable in
+frame 1, the second pops in by ~1 s. **Ambience only** (typing, error beep, clock) – music only where the hook already
+shows the solution – so a hook fits in front of any Reel (rules: `strategy/09_reel_rules.md`, brief: `strategy/00_us_brief.md`).
+All text sits inside the safe zone (y 250–1500, right 150 px free). Demo data only (fictional "Northwind Manufacturing Inc.").
 
-| Datei | Länge | Text | Typ | Bild | passt zu |
-|---|---|---|---|---|---|
-| `h01_bezug_ki.mp4` | 1.8 s | #BEZUG! / 2 Tage vor Abgabe. | Fehler-Callout | KI-Clip (Runway): ruhiger Blick | 01 Ampel, 02 Excel-Fehler |
-| `h02_fehler_jede.mp4` | 2.6 s | Diesen Fehler hat / fast jede / Steuerrückstellung. | Fehler-Callout | Tabellen-Attrappe (Karte) | 02 Excel-Fehler, Steuerrückstellung allgemein |
-| `h03_hebesatz_excel.mp4` | 2.8 s | Hebesatz geändert. / Und jetzt? | Frage / Spannung | Tabellen-Attrappe (Karte) | 02 Excel-Fehler, Split-Screen |
-| `h04_17_sekunden.mp4` | 2.6 s | Hebesatz ändern: / 1,7 Sekunden. | Zahl / Ergebnis | Programm-Aufnahme (Karte, Stoppuhr) | 01 Ampel, 02 Split-Screen, Tool-Demo |
-| `h05_hinzurechnung.mp4` | 2.4 s | GewSt-Hinzurechnung / ohne Excel? | Frage | Programm-Aufnahme GewSt | 03 GewSt-Hinzurechnung |
-| `h06_noch_nicht.mp4` | 2.5 s | Abschluss fertig? / Noch nicht. | Frage / Status | Programm-Aufnahme Dashboard | 01 Ampel, Abschluss-Checkliste |
-| `h07_von_hand.mp4` | 2.6 s | Rechnest du das / noch von Hand? | Frage / Schmerz | KI-Clip (Runway): Hände, Taschenrechner | 03 GewSt, 02 Excel-Fehler, allgemein |
-| `h08_freitagabend.mp4` | 2.6 s | Freitagabend. / Abgabe Montag, 8 Uhr. | Deadline / Schmerz | KI-Clip (Runway): leeres Büro abends | 01 Ampel, 04 Mein Weg |
-| `h09_zeile_4000.mp4` | 2.6 s | Irgendwo ist ein Fehler. / Zeile 1 von 4.000. | Schmerz / Suche | KI-Clip (Runway): über die Schulter auf Tabelle | 02 Excel-Fehler (kein Prüfpfad, #BEZUG!) |
-| `h10_frueher_heute.mp4` | 2.6 s | Früher: 2 Tage. / Heute: abschlussreif. | Vorher / Nachher | Programm-Aufnahme Dashboard | 01 Ampel, 04 Mein Weg |
+| File | Length | Hook text | Pattern | Picture | Use for pillar | AI footage |
+|---|---|---|---|---|---|---|
+| `h01_ref_deadline.mp4` | 2.0 s | #REF! / 3 days before the deadline. | Error callout | Spreadsheet mock, errors piling up | 1 Demo · 2 In practice | no |
+| `h02_every_provision.mp4` | 2.6 s | This error is in / almost every provision. | Error callout | Spreadsheet half of the split screen (card) | 2 In practice | no |
+| `h03_400_cells.mp4` | 2.4 s | 21% typed / into 400 cells. | Number / pain | Demo tool, rate view (400 red cells) | 5 Satisfying · 2 In practice | no |
+| `h04_17_seconds.mp4` | 2.7 s | Full provision check: / 17 seconds. | Number / result | Tool half of the split screen, stopwatch "✓ 17 s" | 1 Demo | no |
+| `h05_interest_limit.mp4` | 2.4 s | Your interest limit / just grew. | Reveal | Demo tool, § 163(j) view | 3 Know-how · 1 Demo | no |
+| `h06_ready_to_book.mp4` | 2.5 s | Ready to book? / Not yet. | Question / status | Demo tool, provision check on red | 1 Demo | no |
+| `h07_by_hand.mp4` | 2.6 s | Still doing this / by hand? | Question / pain | Runway clip: hands, calculator | 2 In practice · 3 Know-how | **yes** |
+| `h08_friday_night.mp4` | 2.6 s | Friday, 9:45 PM. / Due Monday, 8 AM. | Deadline / pain | Runway clip: empty office at night (wall clock ≈ 9:45) | 2 In practice · 4 Behind the code | **yes** |
+| `h09_row_4000.mp4` | 2.6 s | There's an error somewhere. / Row 1 of 4,000. | Pain / search | Runway clip: over the shoulder onto a spreadsheet | 2 In practice | **yes** |
+| `h10_one_click.mp4` | 2.8 s | 4,000 messy rows. / One click. | Before / after | Demo tool, cleanup view | 5 Satisfying | no |
 
-## Verwenden
-Hook als erste Quelle in eine Schnittdatei (`vorlagen/system/montage.py`) übernehmen, z. B.
-`"quellen": {"hook": {"video": "../hooks/h04_17_sekunden.mp4"}, …}` und als erste Szene
-`{"quelle": "hook", "dauer": 2.6, "ab": 0}`. Den Ton des Hooks in `"ton"` mit `"ab": 0` übernehmen
-(Atmo liegt unter `musik/atmo/`, die Spuren stehen in `vorlagen/system/schnitt/hooks/<name>.json`).
+**AI footage = yes:** the clip is an own Runway generation with a realistic person or scene → switch on Instagram's AI label
+("AI info") when posting and add `Contains AI-generated footage.` to the caption. The clips show no faces on purpose
+(AI facial expressions look exaggerated). On-screen text is never AI-generated – it is set by `montage.py`.
 
-## Ändern und neu bauen
-Alle Hooks sind in `vorlagen/system/hooks_bauen.py` beschrieben (Quelle, Ausschnitt, Text, Ton).
-`python3 hooks_bauen.py` baut alle, `python3 hooks_bauen.py h04 h07` nur einzelne.
+## Use a hook in a Reel
+Take the hook as the first source of a cut list (`templates/system/montage.py`), e.g.
+`"sources": {"hook": {"video": "../hooks/h04_17_seconds.mp4"}, …}` with the first scene
+`{"source": "hook", "duration": 2.7, "start": 0}`. Copy the hook's audio tracks from `templates/system/cuts/hooks/<name>.json`
+into the Reel's `"audio"` (with `"at"` unchanged). Or rebuild the hook text inside the Reel's own first scene.
 
-## Bausteine (`bausteine/`)
-- `karte_*.mp4`: die Hälften aus dem Split-Screen von Post 02, mittig auf dunklem Grund (y 620–1260).
-- `ki_*.mp4`: drei Runway-Clips (eigene KI-Generierung, 30.09.2026), bewusst **ohne Gesichter** –
-  KI-Mimik wirkt übertrieben. `ki_buero_abend.mp4`: die Wanduhr zeigt etwa 21:45, deshalb „Freitagabend“ statt Uhrzeit;
-  auf dem Monitor ist klein ein Herstellerlogo zu sehen.
-- Programm-Aufnahmen stammen aus dem Reel-Datensatz (nur Demozahlen), die Tabelle ist eine Attrappe.
+## Change and rebuild
+All hooks are described in `templates/system/build_hooks.py` (source, crop, text, audio).
+`cd templates/system && python3 build_hooks.py` builds all, `python3 build_hooks.py h04 h07` only some.
+The cut lists land in `templates/system/cuts/hooks/`.
+
+## Sources
+- `clips/ai_office_evening.mp4`, `clips/ai_calculator.mp4`, `clips/ai_over_shoulder.mp4` – three Runway video clips
+  (own AI generation, Sept 30, 2026), no faces. `ai_office_evening`: the wall clock shows about 9:45 PM, a small
+  monitor brand logo is visible – crop it (`"from"/"to"`) if that matters.
+- `clips/card_top_table.mp4`, `clips/card_bottom_tool.mp4` – the halves of the English split-screen recording
+  (`posts/02_…/clips/rec_split.mp4`), centred on the dark background (y 654–1266).
+- Demo-tool and spreadsheet recordings live in the Reel folders (`posts/<reel>/clips/rec_*.mp4`) and can be re-recorded any time:
+  `templates/system/recordings/*.mjs` (deterministic Playwright recorder, see `recorder.mjs`).
+- `overlays/cta_dm_tool.png`, `overlays/cta_checklist.png` – transparent CTA boxes 'DM "TOOL"' (render job `templates/system/jobs/r00_overlays.json`).

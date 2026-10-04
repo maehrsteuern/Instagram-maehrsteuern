@@ -1,0 +1,43 @@
+{
+ "output": "../hooks/h03_400_cells.mp4",
+ "fps": 30,
+ "crf": 20,
+ "audio": [
+  {
+   "file": "../../music/ambience/typing_error_beep.mp3",
+   "at": 0,
+   "start": 0.8,
+   "duration": 1.0,
+   "volume": 2.6,
+   "fade_out": 0.08
+  }
+ ],
+ "sources": {
+  "rate": {
+   "video": "../../posts/04_2026-10-14_reel_hardcoded_rate/clips/rec_rate.mp4"
+  }
+ },
+ "scenes": [
+  {
+   "source": "rate",
+   "duration": 2.4,
+   "start": 0,
+   "darken": 0.3,
+   "text": [
+    {
+     "text": "21% typed",
+     "y": 820,
+     "color": "white",
+     "size": 135
+    },
+    {
+     "text": "into 400 cells.",
+     "y": 965,
+     "at": 0.6,
+     "color": "red",
+     "size": 115
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{ "output": "../../assets",
+  "images": [
+    { "template": "overlay", "file": "end_9x16.png", "type": "end" }
+  ] }

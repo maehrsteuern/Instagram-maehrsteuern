@@ -1,0 +1,48 @@
+{
+ "output": "../hooks/h04_17_seconds.mp4",
+ "fps": 30,
+ "crf": 20,
+ "audio": [
+  {
+   "file": "../../music/ambience/clock_ticking.mp3",
+   "at": 0,
+   "start": 0.3,
+   "duration": 2.4,
+   "volume": 1.0,
+   "fade_out": 0.2
+  },
+  {
+   "file": "../../music/06_runway_lofi_ruhig.mp3",
+   "at": 2.4,
+   "volume": 0.35,
+   "fade_in": 0.1
+  }
+ ],
+ "sources": {
+  "tool": {
+   "video": "../hooks/clips/card_bottom_tool.mp4"
+  }
+ },
+ "scenes": [
+  {
+   "source": "tool",
+   "duration": 2.7,
+   "start": 2.3,
+   "text": [
+    {
+     "text": "Full provision check:",
+     "y": 420,
+     "color": "white",
+     "size": 105
+    },
+    {
+     "text": "17 seconds.",
+     "y": 1400,
+     "at": 2.55,
+     "color": "green",
+     "size": 150
+    }
+   ]
+  }
+ ]
+}

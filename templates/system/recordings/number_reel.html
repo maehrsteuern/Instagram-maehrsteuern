@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=540">
+<title>Number Reel</title>
+<!--
+  Kinetic "number Reel" (pillar 3: one thesis + one number, 8–12 s) for recorder.mjs, 540×960 CSS → 1080×1920.
+  URL parameters:  reel = 163j | 174a     still = <seconds> (freeze at that time – covers, previews)
+  The timeline starts at load (t = 0 is the first frame, the hook is fully visible in frame 1) and runs ~9.6 s;
+  the end card is added in the cut (montage.py). Numbers exactly as in strategy/00_us_brief.md.
+  Everything inside the Reel safe zone: CSS y 125–750, x 30–465 for key text.
+-->
+<link rel="stylesheet" href="../../fonts.css">
+<style>
+@font-face{font-family:"Outfit";src:url("../fonts/Outfit-Bold.ttf");font-weight:700}
+:root{--bg:#0B110E;--green:#53C3A2;--red:#FF6B5E;--yellow:#F2B84B;--text:#EAF1EC;--text2:#C9D6CE;--muted:#8FA398;--line:#22322B;
+  --serif:"IBM Plex Serif",serif;--mono:"IBM Plex Mono",monospace;--hook:"Outfit","IBM Plex Sans",sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;width:540px;height:960px;overflow:hidden;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans",sans-serif}
+#stage{position:relative;width:540px;height:960px;overflow:hidden;background:radial-gradient(110% 60% at 50% 42%,#12302A 0%,var(--bg) 68%)}
+.L{position:absolute;left:36px;right:36px;text-align:center;opacity:0;will-change:transform,opacity}
+.k{font-family:var(--mono);font-size:13px;letter-spacing:.24em;color:var(--green);font-weight:600}
+.hook{font-family:var(--hook);font-weight:700;line-height:1.02;letter-spacing:-.01em}
+.g{color:var(--green)} .r{color:var(--red)} .m{color:var(--muted)}
+.big{font-family:var(--hook);font-weight:700;font-size:74px;line-height:1;color:var(--green);text-shadow:0 0 40px rgba(83,195,162,.35)}
+.sub{font-size:21px;color:var(--text2);line-height:1.3}
+.code{font-family:var(--mono);font-size:22px;background:#0A100D;border:1.5px solid var(--line);border-radius:14px;padding:14px 18px;text-align:left;display:inline-block}
+.code s{color:var(--red);text-decoration-thickness:3px}
+.bars{text-align:left}
+.bars .lab{display:flex;justify-content:space-between;font-size:16px;margin:12px 0 6px;color:var(--text2)}
+.bars .lab b{font-family:var(--mono);color:var(--text)}
+.track{position:relative;height:26px;border-radius:8px;background:#0A100D;border:1px solid #2C3F37}
+.fill{position:absolute;left:0;top:0;bottom:0;border-radius:7px;background:linear-gradient(90deg,#2f8f74,var(--green))}
+.fill.old{background:linear-gradient(90deg,#6b4a44,#b7675d)}
+.mk{position:absolute;top:-6px;bottom:-6px;width:3px;background:var(--text);border-radius:2px}
+.save{display:inline-flex;align-items:center;gap:12px;font-family:var(--hook);font-weight:700;font-size:46px;padding:12px 26px;border-radius:99px;border:3px solid var(--green);background:rgba(83,195,162,.12)}
+.save svg{width:36px;height:36px;fill:none;stroke:var(--green);stroke-width:2.4;stroke-linejoin:round}
+.foot{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.06em;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const Q = new URLSearchParams(location.search);
+const usd = n => "$" + Math.round(n).toLocaleString("en-US");
+const M = n => "$" + (n / 1e6).toFixed(1) + "M";
+const ease = k => 1 - Math.pow(1 - k, 3);
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const prog = (t, a, d) => ease(clamp((t - a) / d));
+// layer: [html, top(px), in(s), out(s)] – fades/slides in over .3 s, out over .25 s; in = 0 → visible in frame 1
+const REELS = {
+  "163j": {
+    layers: [
+      [`<div class="k">§ 163(j) · TAX YEAR 2025</div>`, 150, 0, 9.7],
+      [`<div class="hook" style="font-size:52px">§ 163(j) is back<br>on <span class="g">EBITDA.</span></div>`, 196, 0, 2.6],
+      [`<div class="big" id="h1" style="font-size:62px">+$1,000,000</div><div class="hook" style="font-size:36px;margin-top:8px">deductible.</div>`, 360, 0, 2.6],
+      [`<div class="sub m" style="font-size:18px">One line changed:</div><div style="height:10px"></div>
+        <div class="code"><span class="m">ATI =</span> <s id="cOld">EBIT</s> <span class="g" id="cNew"></span></div>`, 200, 2.6, 9.7],
+      [`<div class="bars">
+          <div class="lab"><span>Interest limit = 30% × ATI</span><b id="lim">$3.0M</b></div>
+          <div class="track"><div class="fill" id="fl"></div><div class="mk" style="left:80%"></div></div>
+          <div class="lab" style="margin-top:8px"><span>Business interest expense</span><b>$4.0M</b></div>
+          <div class="lab"><span>Disallowed</span><b id="dis" class="r">$1,000,000</b></div></div>`, 330, 3.1, 6.2],
+      [`<div class="hook" style="font-size:42px">All <span class="g">$4.0M</span> interest<br>deductible.</div>`, 500, 5.0, 6.2],
+      [`<div class="big" id="d1">+$1,000,000</div><div class="sub" style="margin-top:8px">deductible interest</div>`, 330, 6.2, 9.7],
+      [`<div class="sub" style="font-size:19px">× 21% federal rate =</div><div class="big" id="d2" style="font-size:58px;margin-top:6px">$210,000</div>
+        <div class="sub" style="margin-top:6px">less federal tax</div>`, 470, 6.9, 9.7],
+      [`<div class="save"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Save this</div>`, 606, 8.3, 9.7],
+    ],
+    tick(t, $) {
+      const k = prog(t, 3.0, .45);
+      $("#cOld") && ($("#cOld").style.opacity = 1 - .45 * k);
+      const typed = "EBITDA".slice(0, Math.floor(clamp((t - 3.0) / .5) * 6));
+      $("#cNew") && ($("#cNew").textContent = typed);
+      const g = prog(t, 3.8, 1.3), lim = 3e6 + 1.2e6 * g;
+      if ($("#lim")) { $("#lim").textContent = M(lim); $("#fl").style.width = lim / 5e6 * 100 + "%";
+        $("#dis").textContent = usd(Math.max(0, 4e6 - lim)); $("#dis").className = lim >= 4e6 ? "g" : "r"; }
+      $("#d1").textContent = "+" + usd(1e6 * prog(t, 6.2, .9));
+      $("#d2").textContent = usd(210000 * prog(t, 6.9, .9));
+      if (t < 2.6) $("#h1").textContent = "+$1,000,000";
+    },
+    foot: "OBBBA: ATI is EBITDA-based again for tax years beginning after 12/31/2024 · demo numbers",
+  },
+  "174a": {
+    layers: [
+      [`<div class="k">§ 174A · DOMESTIC R&amp;E · 2025</div>`, 150, 0, 9.7],
+      [`<div class="big" style="font-size:70px">+$378,000</div><div class="hook" style="font-size:44px;margin-top:10px">cash in year 1.</div>`, 200, 0, 2.6],
+      [`<div class="hook" style="font-size:52px">Same <span class="g">R&amp;D.</span></div>`, 380, 0, 2.6],
+      [`<div class="sub m" style="font-size:18px">Domestic R&amp;E spent in 2025</div><div class="hook" style="font-size:54px;margin-top:4px">$2,000,000</div>`, 196, 2.6, 9.7],
+      [`<div class="bars">
+          <div class="lab"><span>Old § 174 · amortize over 5 years</span><b id="o1">$200,000</b></div>
+          <div class="track"><div class="fill old" id="fo"></div></div>
+          <div class="lab" style="margin-top:18px"><span>New § 174A · deduct now</span><b id="n1" class="g">$0</b></div>
+          <div class="track"><div class="fill" id="fn"></div></div>
+          <div class="lab" style="margin-top:8px;font-size:13px"><span class="m">year-1 deduction</span></div></div>`, 320, 3.0, 6.2],
+      [`<div class="hook" style="font-size:42px"><span class="g">10×</span> the deduction<br>in year 1.</div>`, 500, 5.3, 6.2],
+      [`<div class="big" id="d1">+$1,800,000</div><div class="sub" style="margin-top:8px">more deduction in year 1</div>`, 330, 6.2, 9.7],
+      [`<div class="sub" style="font-size:19px">× 21% federal rate =</div><div class="big" id="d2" style="font-size:58px;margin-top:6px">$378,000</div>
+        <div class="sub" style="margin-top:6px">less federal tax in year 1</div>`, 470, 6.9, 9.7],
+      [`<div class="save"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Save this</div>`, 606, 8.3, 9.7],
+    ],
+    tick(t, $) {
+      if ($("#fo")) { $("#fo").style.width = 10 * prog(t, 3.3, .7) + "%";
+        const n = prog(t, 4.1, 1.4); $("#fn").style.width = 100 * n + "%"; $("#n1").textContent = usd(2e6 * n); }
+      $("#d1").textContent = "+" + usd(1.8e6 * prog(t, 6.2, .9));
+      $("#d2").textContent = usd(378000 * prog(t, 6.9, .9));
+    },
+    foot: "OBBBA: domestic R&amp;E deductible again for tax years beginning after 12/31/2024 · foreign R&amp;E: still 15 years · demo numbers",
+  },
+};
+const R = REELS[Q.get("reel")] || REELS["163j"];
+const stage = document.getElementById("stage");
+const els = R.layers.map(([html, top, a, b]) => {
+  const d = document.createElement("div"); d.className = "L"; d.style.top = top + "px"; d.innerHTML = html; d._a = a; d._b = b;
+  stage.appendChild(d); return d;
+});
+const foot = document.createElement("div"); foot.className = "L foot"; foot.style.top = "712px"; foot.style.opacity = 1; foot.innerHTML = R.foot; stage.appendChild(foot);
+const $ = s => stage.querySelector(s);
+const still = Q.has("still") ? +Q.get("still") : null;
+let t0 = performance.now();
+window.play = () => { t0 = performance.now(); };   // recorder.mjs calls play() right before the first frame
+function render() {
+  const t = still ?? (performance.now() - t0) / 1000;
+  for (const e of els) {
+    const vin = e._a === 0 ? 1 : clamp((t - e._a) / .3), vout = clamp((e._b - t) / .25);
+    const v = Math.min(vin, vout);
+    e.style.opacity = v;
+    e.style.transform = `translateY(${(1 - ease(vin)) * 26}px) scale(${.96 + .04 * ease(vin)})`;
+    e.style.display = v <= 0 ? "none" : "block";
+  }
+  R.tick(t, $);
+  if (still === null) requestAnimationFrame(render);
+}
+render();
+</script>
+</body>
+</html>

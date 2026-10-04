@@ -1,0 +1,86 @@
+{
+ "output": "../../posts/04_2026-10-14_reel_hardcoded_rate/reel.mp4",
+ "fps": 30,
+ "sources": {
+  "rate": {
+   "video": "../../posts/04_2026-10-14_reel_hardcoded_rate/clips/rec_rate.mp4"
+  }
+ },
+ "audio": [
+  {
+   "file": "../../music/02_variousartists_tastersvinegar3_03_a_n_k.mp3",
+   "at": 0,
+   "start": 4,
+   "volume": 0.2,
+   "fade_in": 0.05
+  }
+ ],
+ "scenes": [
+  {
+   "source": "rate",
+   "start": 0,
+   "duration": 2.2,
+   "darken": 0.35,
+   "text": [
+    {
+     "text": "21% typed",
+     "y": 820,
+     "color": "white",
+     "size": 135
+    },
+    {
+     "text": "into 400 cells.",
+     "y": 965,
+     "color": "red",
+     "size": 115
+    }
+   ]
+  },
+  {
+   "source": "rate",
+   "start": 2.2,
+   "duration": 2.8,
+   "text": [
+    {
+     "text": "One parameter.",
+     "y": 310,
+     "color": "green",
+     "size": 100,
+     "at": 0.05
+    }
+   ]
+  },
+  {
+   "source": "rate",
+   "start": 5.0,
+   "duration": 2.6,
+   "text": [
+    {
+     "text": "Hard-coded: 400 → 0",
+     "y": 1380,
+     "color": "green",
+     "size": 100,
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "source": "rate",
+   "start": 7.6,
+   "duration": 2.0,
+   "overlay": [
+    {
+     "image": "../hooks/overlays/cta_dm_tool.png",
+     "at": 0.0,
+     "fade": 0.25
+    }
+   ]
+  },
+  {
+   "card": "../../assets/end_9x16.png",
+   "duration": 1.8,
+   "in": "fade",
+   "fade": 0.3
+  }
+ ]
+}

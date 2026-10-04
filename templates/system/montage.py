@@ -1,27 +1,33 @@
-"""Schnelle Hook-Montage im Takt der Musik:  python3 montage.py schnitt/p01_reel_ampel_hook.json
+"""Cut a Reel from recordings, clips and stills:  python3 montage.py cuts/r01_ref_error.json
 
-Wie reel.py, aber für harte Schnitte, Effekte und große Outline-Texte (Wort für Wort).
-Zeiten dürfen in Takten stehen: "dauer": "2b" = 2 Schläge, "1/2b" = Achtel. Schlaglänge aus "takt": {"bpm": 122}.
-"takt": {"drop": 1.3} legt das Schlagraster fest (ein Schlag liegt genau auf dem Drop).
+Hard cuts, camera moves, big outline hook text (Outfit Bold), PNG overlays (CTA bar, end card) and several audio tracks.
+Output: 1080x1920, H.264 + AAC, 30 fps. Times are seconds or beats ("2b" = 2 beats, "1/2b" = an eighth),
+beat length from "beat": {"bpm": 122, "drop": 1.3} (the drop sits exactly on a beat).
 
-Quellen: {"datei": "bild.png"} (Standbild) oder {"video": "clip.mp4"} (wird auf 1080x1920 zugeschnitten).
-Szene:
-  {"quelle": "app" | "karte": "bild.png", "dauer": "2b",
-   "von": [cx,cy,w], "nach": [cx,cy,w],   – Kamerafahrt (weglassen = ganzes Bild)
-   "ab": 1.2, "tempo": 1.0,                – nur Video: Startsekunde im Clip, Abspieltempo
-   "rein": "flash" | "whip" | "glitch" | "flash+whip",   – Übergang am Szenenanfang
-   "punch": 0.08,     – Zoom-Stoß auf jedem Schlag (Stärke)
-   "shake": 14,       – Wackeln in Pixeln
-   "glitch": 0.3,     – Anteil Bilder mit Glitch (RGB-Versatz, verschobene Streifen)
-   "abdunkeln": 0.35, – Hintergrund abdunkeln, damit Text auf unruhigen Screens lesbar bleibt
-   "text": [{"wort": "#BEZUG!", "ab": "0b", "farbe": "rot", "groesse": 190, "y": 700}]}
-Texte ohne "ab" stehen sofort (ohne Aufpoppen) – so bleibt ein Text über mehrere Schnitte stehen.
-"bis" blendet einen Text wieder aus (für Untertitel, die innerhalb einer Szene wechseln).
-
-Ton: mehrere Spuren, jede an ihrer Stelle im Reel (Atmo im Hook, Musik erst ab der Lösung):
-  "ton": [{"datei": "../../musik/x.mp3", "ab": 3.2, "start": 0, "dauer": 2, "lautstaerke": 0.8, "ein": 0.3, "aus": 0.2}]
-  ab = Einsatz im Reel, start = Startsekunde in der Datei, dauer weglassen = bis zum Ende. Am Reel-Ende wird ausgeblendet.
-  "musik" + "musik_start" (wie in reel.py) geht weiterhin als Kurzform.
+Cut-list schema (all keys English):
+{
+  "output": "../../posts/<reel>/reel.mp4",
+  "fps": 30, "crf": 19,
+  "font": "fonts/Outfit-Bold.ttf",          – hook font (default)
+  "text_width": 780,                        – max. text width in px; centred at x 540 → keeps the right ~150 px (IG buttons) free
+  "sources": {"rec": {"video": "clip.mp4"}, "still": {"image": "frame.png"}},   – videos are cropped/scaled to 9:16 (cover)
+  "audio": [{"file": "../../music/x.mp3", "at": 3.2, "start": 0, "duration": 2, "volume": 0.8, "fade_in": 0.3, "fade_out": 0.2}],
+           at = position in the Reel, start = start second in the file, no duration = until the end. The whole mix fades out at the end.
+  "music": "../../music/x.mp3", "music_start": 4.2, "volume": 0.9   – short form: one track from second 0
+  "scenes": [{
+     "source": "rec" | "card": "image.png",   – a source key or a still image (e.g. the end card)
+     "duration": 2.5,
+     "start": 1.2, "speed": 1.0,              – video only: start second in the clip, playback speed
+     "from": [cx, cy, w], "to": [cx, cy, w],  – camera move in 1080x1920 space (omit = full frame)
+     "in": "fade" | "flash" | "whip" | "glitch" | "flash+whip",  "fade": 0.3   – transition at the start of the scene
+     "punch": 0.08, "shake": 14, "glitch": 0.3,   – effects (use sparingly, see strategy/09_reel_rules.md)
+     "darken": 0.35,                          – darken busy screens behind text
+     "text": [{"text": "#REF!", "at": 0.3, "until": 2.0, "color": "red", "size": 150, "y": 700, "x": 540}],
+              no "at" = visible from the first frame of the scene, no pop (use this for the hook in frame 1)
+              colors: white | red | green | yellow | any CSS hex
+     "overlay": [{"image": "cta.png", "at": 0.2, "until": 3.0, "fade": 0.25}]   – transparent 1080x1920 PNG on top
+  }]
+}
 """
 import json, math, random, subprocess, sys
 from pathlib import Path
@@ -29,189 +35,218 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 import imageio_ffmpeg
 
 W, H = 1080, 1920
-hier = Path(__file__).parent
+here = Path(__file__).parent
 cfg = json.loads(Path(sys.argv[1]).read_text())
 fps = cfg.get("fps", 30)
-pfad = lambda p: (hier / p).resolve()
+path = lambda p: (here / p).resolve()
 ff = imageio_ffmpeg.get_ffmpeg_exe()
-takt = cfg.get("takt", {})
-schlag = 60 / takt.get("bpm", 120)
-drop = takt.get("drop", 0)
-FARBEN = {"weiss": "#FFFFFF", "rot": "#FF4B3E", "gruen": "#53C3A2", "gelb": "#F2B84B"}
-schrift = str(pfad(cfg.get("schrift", "schriften/Outfit-Bold.ttf")))
-zufall = random.Random(7)
+beat_cfg = cfg.get("beat", {})
+beat = 60 / beat_cfg.get("bpm", 120)
+drop = beat_cfg.get("drop", 0)
+COLORS = {"white": "#FFFFFF", "red": "#FF4B3E", "green": "#53C3A2", "yellow": "#F2B84B"}
+font_file = str(path(cfg.get("font", "fonts/Outfit-Bold.ttf")))
+text_width = cfg.get("text_width", 780)
+rng = random.Random(7)
 
 
-def zeit(v):
-    """Sekunden oder Takte ("2b", "1/2b")."""
+def secs(v):
+    """Seconds or beats ("2b", "1/2b")."""
     if isinstance(v, str) and v.endswith("b"):
         z = v[:-1]
         if "/" in z:
-            a, b = z.split("/"); return float(a) / float(b) * schlag
-        return float(z) * schlag
+            a, b = z.split("/"); return float(a) / float(b) * beat
+        return float(z) * beat
     return float(v)
 
 
-def fuellen(im):  # auf 9:16 zuschneiden (cover)
+def cover(im):  # scale + crop to 9:16
     s = max(W / im.width, H / im.height)
-    im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+    if abs(s - 1) > 1e-6:
+        im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
     x, y = (im.width - W) // 2, (im.height - H) // 2
-    return im.crop((x, y, x + W, y + H))
+    return im.crop((x, y, x + W, y + H)) if (x or y or im.size != (W, H)) else im
 
 
-def lade_video(datei, brauche):
-    """Nur die Bilder behalten, die eine Szene zeigt (ein 16-s-Clip in 1080x1920 wären sonst 3 GB)."""
-    r = imageio_ffmpeg.read_frames(str(pfad(datei)), output_params=["-r", str(fps)])
-    meta = next(r); w, h = meta["size"]
-    bilder, roh = [], None
-    for i, roh in enumerate(r):
-        bilder.append(fuellen(Image.frombytes("RGB", (w, h), roh)) if i in brauche else None)
-    if roh is not None and bilder[-1] is None:  # letztes Bild für Szenen, die über das Clipende hinaus stehen
-        bilder[-1] = fuellen(Image.frombytes("RGB", (w, h), roh))
-    return bilder
+class VideoReader:
+    """Streams one scene's frames from a clip (memory stays small even for long recordings)."""
+    def __init__(self, file, start, speed):
+        self.speed = speed
+        self.gen = imageio_ffmpeg.read_frames(str(path(file)), input_params=["-ss", f"{start:.3f}"], output_params=["-r", str(fps)])
+        meta = next(self.gen); self.size = meta["size"]
+        self.idx, self.cur = -1, None
+
+    def frame(self, t):
+        want = int(t * self.speed * fps + 1e-6)
+        while self.idx < want:
+            try:
+                raw = next(self.gen)
+            except StopIteration:
+                break   # clip ended: hold the last frame
+            self.idx += 1; self.cur = raw
+        if self.cur is None:
+            raise SystemExit("no frames read – check start/clip length")
+        return cover(Image.frombytes("RGB", self.size, self.cur))
 
 
-def gebrauchte_bilder(k):
-    idx = set()
-    for sz in cfg["szenen"]:
-        if sz.get("quelle") != k: continue
-        for i in range(round(zeit(sz["dauer"]) * fps) + 2):
-            idx.add(int((sz.get("ab", 0) + i / fps * sz.get("tempo", 1)) * fps))
-    return idx
+stills = {k: cover(Image.open(path(q["image"])).convert("RGB")) for k, q in cfg["sources"].items() if "image" in q}
 
 
-quellen = {}
-for k, q in cfg["quellen"].items():
-    quellen[k] = lade_video(q["video"], gebrauchte_bilder(k)) if "video" in q else Image.open(pfad(q["datei"])).convert("RGB")
-
-
-def ausschnitt(im, cx, cy, w):
+def crop(im, cx, cy, w):
+    if (cx, cy, w) == (W / 2, H / 2, W):
+        return im
     h = w * H / W
-    x0 = min(max(cx - w / 2, 0), im.width - w)
-    y0 = min(max(cy - h / 2, 0), im.height - h)
+    x0 = min(max(cx - w / 2, 0), W - w)
+    y0 = min(max(cy - h / 2, 0), H - h)
     return im.transform((W, H), Image.EXTENT, (x0, y0, x0 + w, y0 + h), Image.BICUBIC)
 
 
-def rgb_versatz(im, d):
+def rgb_shift(im, d):
     r, g, b = im.split()
     return Image.merge("RGB", (ImageChops.offset(r, d, 0), g, ImageChops.offset(b, -d, 0)))
 
 
-def glitch(im, staerke):
-    im = rgb_versatz(im, int(18 * staerke) + 4)
-    for _ in range(int(3 + 5 * staerke)):  # verschobene Streifen
-        y = zufall.randrange(0, H - 40); h = zufall.randrange(12, 90)
-        streifen = im.crop((0, y, W, min(y + h, H)))
-        im.paste(ImageChops.offset(streifen, zufall.randint(-80, 80), 0), (0, y))
+def glitch(im, strength):
+    im = rgb_shift(im, int(18 * strength) + 4)
+    for _ in range(int(3 + 5 * strength)):  # shifted stripes
+        y = rng.randrange(0, H - 40); h = rng.randrange(12, 90)
+        stripe = im.crop((0, y, W, min(y + h, H)))
+        im.paste(ImageChops.offset(stripe, rng.randint(-80, 80), 0), (0, y))
     return im
 
 
-def wisch(im, versatz, unschaerfe):  # Whip-Pan: seitlich hereinziehen mit Bewegungsunschärfe
-    bild = ImageChops.offset(im, int(versatz), 0)
+def whip(im, offset, blur):  # whip pan: slide in sideways with motion blur
+    out = ImageChops.offset(im, int(offset), 0)
     n = 6
     for k in range(1, n):
-        bild = Image.blend(bild, ImageChops.offset(im, int(versatz + unschaerfe * k / n), 0), 1 / (k + 1))
-    return bild
+        out = Image.blend(out, ImageChops.offset(im, int(offset + blur * k / n), 0), 1 / (k + 1))
+    return out
 
 
 _fonts = {}
-def font(g):
-    if g not in _fonts: _fonts[g] = ImageFont.truetype(schrift, g)
-    return _fonts[g]
+def font(size):
+    if size not in _fonts: _fonts[size] = ImageFont.truetype(font_file, size)
+    return _fonts[size]
 
 
-def text_ebene(eintraege, t):
-    """Zeilen untereinander, jede mit schwarzer Outline; neue Zeilen poppen kurz groß auf."""
-    ebene = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    for e in eintraege:
-        ab = zeit(e["ab"]) if "ab" in e else -1
-        if t < ab or ("bis" in e and t >= zeit(e["bis"])): continue
-        zeile = e["wort"]
-        g = e.get("groesse", 150)
-        breit = ImageDraw.Draw(ebene).textbbox((0, 0), zeile, font=font(g), stroke_width=round(g * 0.075))
-        g = min(g, int(g * (W - 90) / (breit[2] - breit[0])))  # nie breiter als das Bild
-        k = min((t - ab) / 0.15, 1) if ab >= 0 else 1
-        skala = 0.6 + 0.4 * k + 0.3 * math.sin(math.pi * k)  # klein rein, kurz überschwingen
-        f = font(max(round(g * skala), 8))
-        rand = max(round(g * skala * 0.075), 4)
-        box = ImageDraw.Draw(ebene).textbbox((0, 0), zeile, font=f, stroke_width=rand)
+def text_layer(entries, t):
+    """Each line centred, black outline + soft shadow; new lines pop in (small → overshoot → normal)."""
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    for e in entries:
+        at = secs(e["at"]) if "at" in e else -1
+        if t < at or ("until" in e and t >= secs(e["until"])): continue
+        line = e["text"]
+        g = e.get("size", 150)
+        wide = ImageDraw.Draw(layer).textbbox((0, 0), line, font=font(g), stroke_width=round(g * 0.075))
+        g = min(g, int(g * e.get("width", text_width) / (wide[2] - wide[0])))  # never wider than the safe width
+        k = min((t - at) / 0.15, 1) if at >= 0 else 1
+        scale = 0.6 + 0.4 * k + 0.3 * math.sin(math.pi * k)
+        f = font(max(round(g * scale), 8))
+        edge = max(round(g * scale * 0.075), 4)
+        box = ImageDraw.Draw(layer).textbbox((0, 0), line, font=f, stroke_width=edge)
         bw, bh = box[2] - box[0], box[3] - box[1]
-        x, y = (W - bw) / 2 - box[0], e.get("y", 760) - bh / 2 - box[1]
-        schatten = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        ImageDraw.Draw(schatten).text((x + 8, y + 12), zeile, font=f, fill=(0, 0, 0, 150), stroke_width=rand, stroke_fill=(0, 0, 0, 150))
-        ebene.alpha_composite(schatten.filter(ImageFilter.GaussianBlur(10)))
-        ImageDraw.Draw(ebene).text((x, y), zeile, font=f, fill=FARBEN.get(e.get("farbe", "weiss"), e.get("farbe")),
-                                   stroke_width=rand, stroke_fill="#000000")
-    return ebene
+        x, y = e.get("x", W / 2) - bw / 2 - box[0], e.get("y", 760) - bh / 2 - box[1]
+        shadow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(shadow).text((x + 8, y + 12), line, font=f, fill=(0, 0, 0, 150), stroke_width=edge, stroke_fill=(0, 0, 0, 150))
+        layer.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(10)))
+        ImageDraw.Draw(layer).text((x, y), line, font=f, fill=COLORS.get(e.get("color", "white"), e.get("color")),
+                                   stroke_width=edge, stroke_fill="#000000")
+    return layer
 
 
-szenen = cfg["szenen"]
-grenzen = [0]  # Schnittpunkte aus der absoluten Zeit runden, damit die Schnitte nicht vom Takt wegdriften
-for sz in szenen: grenzen.append(grenzen[-1] + zeit(sz["dauer"]))
-bilder = [round(b * fps) for b in grenzen]
-dauer = bilder[-1] / fps
-ziel = pfad(cfg["ausgabe"]); ziel.parent.mkdir(parents=True, exist_ok=True)
-spuren = list(cfg.get("ton", []))
-if cfg.get("musik"):  # Kurzform wie in reel.py: ein Titel ab Sekunde 0
-    spuren.append({"datei": cfg["musik"], "start": cfg.get("musik_start", 0), "lautstaerke": cfg.get("lautstaerke", 0.9)})
-eingaenge, filter_ = [], []
-for k, sp in enumerate(spuren):
-    eingaenge += ["-i", str(pfad(sp["datei"]))]
-    ab = zeit(sp.get("ab", 0)); lang = zeit(sp["dauer"]) if "dauer" in sp else dauer - ab
-    kette = [f"atrim=start={sp.get('start', 0):.3f}:duration={lang:.3f}", "asetpts=PTS-STARTPTS",
-             "aformat=sample_rates=44100:channel_layouts=stereo", f"volume={sp.get('lautstaerke', 0.9)}",
-             f"afade=t=in:d={sp.get('ein', 0.03)}", f"afade=t=out:st={max(lang - sp.get('aus', 0.05), 0):.3f}:d={sp.get('aus', 0.05)}",
-             f"adelay={round(ab * 1000)}|{round(ab * 1000)}"]
-    filter_.append(f"[{k + 1}:a]{','.join(kette)}[s{k}]")
-if spuren:
-    filter_.append("".join(f"[s{k}]" for k in range(len(spuren))) +
-                   f"amix=inputs={len(spuren)}:normalize=0,apad,atrim=duration={dauer:.3f},afade=t=out:st={max(dauer - 0.8, 0):.3f}:d=0.8[ton]")
-    ton = [*eingaenge, "-filter_complex", ";".join(filter_), "-map", "0:v", "-map", "[ton]"]
+_overlays = {}
+def overlay_img(p):
+    if p not in _overlays: _overlays[p] = Image.open(path(p)).convert("RGBA")
+    return _overlays[p]
+
+
+scenes = cfg["scenes"]
+bounds = [0]  # cut points from absolute time, so cuts don't drift off the beat
+for sc in scenes: bounds.append(bounds[-1] + secs(sc["duration"]))
+frames = [round(b * fps) for b in bounds]
+total = frames[-1] / fps
+target = path(cfg["output"]); target.parent.mkdir(parents=True, exist_ok=True)
+tracks = list(cfg.get("audio", []))
+if cfg.get("music"):
+    tracks.append({"file": cfg["music"], "start": cfg.get("music_start", 0), "volume": cfg.get("volume", 0.9)})
+inputs, filters = [], []
+for k, tr in enumerate(tracks):
+    inputs += ["-i", str(path(tr["file"]))]
+    at = secs(tr.get("at", 0)); length = secs(tr["duration"]) if "duration" in tr else total - at
+    # resample first, then trim and renumber the samples: clean timestamps from 0 even for files that start at 0.023 s
+    chain = ["aresample=44100", "aformat=sample_rates=44100:channel_layouts=stereo",
+             f"atrim=start={tr.get('start', 0):.3f}:duration={length:.3f}", "asetpts=N/SR/TB", f"volume={tr.get('volume', 0.9)}",
+             f"afade=t=in:d={tr.get('fade_in', 0.03)}", f"afade=t=out:st={max(length - tr.get('fade_out', 0.05), 0):.3f}:d={tr.get('fade_out', 0.05)}",
+             f"adelay=delays={round(at * 1000)}:all=1", "asetpts=N/SR/TB"]   # renumber again: ffmpeg 7 adelay can emit broken pts
+    filters.append(f"[{k + 1}:a]{','.join(chain)}[s{k}]")
+if tracks:
+    filters.append("".join(f"[s{k}]" for k in range(len(tracks))) +
+                   f"amix=inputs={len(tracks)}:normalize=0,apad=whole_dur={total:.3f},afade=t=out:st={max(total - 0.8, 0):.3f}:d=0.8[mix]")
+    audio = [*inputs, "-filter_complex", ";".join(filters), "-map", "0:v", "-map", "[mix]"]
 else:
-    ton = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest"]
+    audio = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest"]
 proc = subprocess.Popen([ff, "-loglevel", "error", "-y",
-    "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", *ton,
-    "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p",
-    "-c:a", "aac", "-b:a", "192k", "-t", f"{dauer:.3f}", "-movflags", "+faststart", str(ziel)], stdin=subprocess.PIPE)
+    "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-", *audio,
+    "-c:v", "libx264", "-preset", "medium", "-crf", str(cfg.get("crf", 19)), "-pix_fmt", "yuv420p", "-r", str(fps),
+    "-c:a", "aac", "-b:a", "160k", "-t", f"{total:.3f}", "-movflags", "+faststart", str(target)], stdin=subprocess.PIPE)
 
-bild_nr = 0
-for nr, sz in enumerate(szenen):
-    n = bilder[nr + 1] - bilder[nr]
-    q = Image.open(pfad(sz["karte"])).convert("RGB") if "karte" in sz else quellen[sz["quelle"]]
-    breite = W if isinstance(q, list) else q.width
-    hoehe = H if isinstance(q, list) else q.height
-    von = sz.get("von") or [breite / 2, hoehe / 2, breite]
-    nach = sz.get("nach") or von
-    rein = sz.get("rein", "")
+frame_no, prev_last = 0, None
+for nr, sc in enumerate(scenes):
+    n = frames[nr + 1] - frames[nr]
+    reader = None
+    if "card" in sc:
+        still = cover(Image.open(path(sc["card"])).convert("RGB"))
+    elif sc["source"] in stills:
+        still = stills[sc["source"]]
+    else:
+        still = None
+        reader = VideoReader(cfg["sources"][sc["source"]]["video"], sc.get("start", 0), sc.get("speed", 1))
+    frm = sc.get("from") or [W / 2, H / 2, W]
+    to = sc.get("to") or frm
+    trans = sc.get("in", "")
+    fade_n = max(1, round(sc.get("fade", 0.3) * fps))
+    last = None
     for i in range(n):
-        t = i / fps; t_abs = bild_nr / fps; k = i / max(n - 1, 1)
-        k = 1 - (1 - k) ** 3  # schnell los, weich aus
-        cx, cy, w = [a + (b - a) * k for a, b in zip(von, nach)]
-        if sz.get("punch"):  # Zoom-Stoß auf dem letzten Schlag
-            seit = (t_abs - drop) % schlag
-            w /= 1 + sz["punch"] * math.exp(-seit / 0.09)
-        if sz.get("shake"):
-            a = sz["shake"] * w / W
-            cx += zufall.uniform(-a, a); cy += zufall.uniform(-a, a)
-        if isinstance(q, list):
-            f = min(int((sz.get("ab", 0) + t * sz.get("tempo", 1)) * fps), len(q) - 1)
-            bild = ausschnitt(q[f] or q[-1], cx, cy, w)
-        else:
-            bild = ausschnitt(q, cx, cy, w)
-        if "whip" in rein and i < 5:
+        t = i / fps; t_abs = frame_no / fps; k = i / max(n - 1, 1)
+        k = 1 - (1 - k) ** 3  # fast start, soft landing
+        cx, cy, w = [a + (b - a) * k for a, b in zip(frm, to)]
+        if sc.get("punch"):  # zoom punch on every beat
+            since = (t_abs - drop) % beat
+            w /= 1 + sc["punch"] * math.exp(-since / 0.09)
+        if sc.get("shake"):
+            a = sc["shake"] * w / W
+            cx += rng.uniform(-a, a); cy += rng.uniform(-a, a)
+        base = reader.frame(t) if reader else still
+        img = crop(base, cx, cy, w)
+        if "whip" in trans and i < 5:
             r = (1 - i / 5) ** 2
-            bild = wisch(bild, -W * 0.35 * r, W * 0.25 * r)
-        if ("glitch" in rein and i < 4) or (sz.get("glitch") and zufall.random() < sz["glitch"]):
-            bild = glitch(bild, 1 - i / 6 if i < 4 else 0.5)
-        if sz.get("punch") and (t_abs - drop) % schlag < 1.5 / fps:
-            bild = rgb_versatz(bild, 10)
-        if sz.get("abdunkeln"):
-            bild = Image.blend(bild, Image.new("RGB", (W, H), "black"), sz["abdunkeln"])
-        if sz.get("text"):
-            bild = bild.convert("RGBA"); bild.alpha_composite(text_ebene(sz["text"], t)); bild = bild.convert("RGB")
-        if "flash" in rein and i < 4:
-            bild = Image.blend(bild, Image.new("RGB", (W, H), "white"), [0.95, 0.6, 0.3, 0.1][i])
-        proc.stdin.write(bild.tobytes())
-        bild_nr += 1
+            img = whip(img, -W * 0.35 * r, W * 0.25 * r)
+        if ("glitch" in trans and i < 4) or (sc.get("glitch") and rng.random() < sc["glitch"]):
+            img = glitch(img, 1 - i / 6 if i < 4 else 0.5)
+        if sc.get("punch") and (t_abs - drop) % beat < 1.5 / fps:
+            img = rgb_shift(img, 10)
+        if sc.get("darken"):
+            img = Image.blend(img, Image.new("RGB", (W, H), "black"), sc["darken"])
+        if sc.get("overlay"):
+            img = img.convert("RGBA")
+            for o in sc["overlay"]:
+                at = secs(o.get("at", 0)); until = secs(o["until"]) if "until" in o else 1e9
+                if t < at or t >= until: continue
+                fd = o.get("fade", 0.25)
+                alpha = min(1, (t - at) / fd if fd and at > 0 else 1, (until - t) / fd if fd and until < 1e9 else 1)
+                ov = overlay_img(o["image"])
+                if alpha < 1:
+                    ov = ov.copy(); ov.putalpha(ov.getchannel("A").point(lambda v: int(v * alpha)))
+                img.alpha_composite(ov)
+            img = img.convert("RGB")
+        if sc.get("text"):
+            img = img.convert("RGBA"); img.alpha_composite(text_layer(sc["text"], t)); img = img.convert("RGB")
+        if trans == "fade" and prev_last is not None and i < fade_n:
+            img = Image.blend(prev_last, img, (i + 1) / (fade_n + 1))
+        if "flash" in trans and i < 4:
+            img = Image.blend(img, Image.new("RGB", (W, H), "white"), [0.95, 0.6, 0.3, 0.1][i])
+        proc.stdin.write(img.tobytes())
+        last = img
+        frame_no += 1
+    prev_last = last
 proc.stdin.close(); proc.wait()
-print("✓", ziel, f"{dauer:.2f} s")
+print("✓", target, f"{total:.2f} s")

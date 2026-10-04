@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=540">
+<title>Split screen</title>
+<!--
+  Split-screen frame for Reel 02 (540×960 CSS → 1080×1920): same task, two stopwatches.
+  Top: excel_mock.html?compact=1 (spreadsheet) · bottom: demo_tool.html?compact=1 (Tax × Code tool).
+  Both halves sit inside the Reel safe zone (CSS y 128–744 → 256–1488 px).
+  The stopwatches are TIME-LAPSE displays (labelled as such): top runs 720× (10 s → 2 h), bottom 5× (3.4 s → 17 s).
+  Page API (window.split): split.top(on) · split.bottom(on) – start/stop the stopwatches; split.done() – bottom shows "✓ 17 s · done".
+  URL parameters: none. The iframes' own APIs (window.mock / window.demo) are reached via Playwright frames.
+-->
+<link rel="stylesheet" href="../../fonts.css">
+<style>
+:root{--bg:#0B110E;--green:#53C3A2;--red:#FF6B5E;--text:#EAF1EC;--muted:#8FA398;--mono:"IBM Plex Mono","DejaVu Sans Mono",monospace;--sans:"IBM Plex Sans",sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;width:540px;height:960px;overflow:hidden;background:var(--bg);color:var(--text);font-family:var(--sans)}
+#stage{position:relative;width:540px;height:960px;overflow:hidden;background:radial-gradient(110% 55% at 50% 45%,#12302A 0%,var(--bg) 70%)}
+iframe{position:absolute;left:0;width:540px;height:280px;border:0;display:block}
+#top{top:152px} #bottom{top:464px}
+.lbl{position:absolute;left:12px;right:12px;height:22px;display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.14em}
+.lbl .w{margin-left:auto;font-size:15px;letter-spacing:.02em;padding:1px 9px;border-radius:7px}
+.lbl small{font-size:9.5px;letter-spacing:.12em;color:var(--muted);font-weight:500}
+#lt{top:127px;color:#ff8f86} #lt .w{background:rgba(255,107,94,.16);color:var(--red)}
+#lb{top:439px;color:var(--green)} #lb .w{background:rgba(83,195,162,.16);color:var(--green)}
+.foot{position:absolute;left:0;right:0;top:760px;text-align:center;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted)}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="lbl" id="lt">SPREADSHEET <small>TIME-LAPSE</small><span class="w" id="wt">⏱ 0:00:00</span></div>
+  <iframe id="top" src="excel_mock.html?compact=1"></iframe>
+  <div class="lbl" id="lb">TAX × CODE TOOL <small>TIME-LAPSE</small><span class="w" id="wb">⏱ 0.0 s</span></div>
+  <iframe id="bottom" src="demo_tool.html?compact=1"></iframe>
+  <div class="foot">SAME TASK · Q3 PROVISION UPDATE · DEMO DATA</div>
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const two = n => String(n).padStart(2, "0");
+const W = { top: { on: false, t0: 0, acc: 0, speed: 720 }, bottom: { on: false, t0: 0, acc: 0, speed: 5 } };
+const el = k => W[k].acc + (W[k].on ? (performance.now() - W[k].t0) / 1000 * W[k].speed : 0);
+function set(k, on) { const w = W[k]; if (on === w.on) return; if (on) w.t0 = performance.now(); else w.acc = el(k); w.on = on; }
+let done = false;
+function loop() {
+  const s = Math.floor(el("top"));
+  $("#wt").textContent = `⏱ ${Math.floor(s / 3600)}:${two(Math.floor(s / 60) % 60)}:${two(s % 60)}`;
+  if (!done) $("#wb").textContent = `⏱ ${el("bottom").toFixed(1)} s`;
+  requestAnimationFrame(loop);
+}
+loop();
+window.split = {
+  top: on => set("top", on),
+  bottom: on => set("bottom", on),
+  done: () => { set("bottom", false); W.bottom.acc = 17; done = true;
+    const w = $("#wb"); w.textContent = "✓ 17 s · done"; w.style.background = "var(--green)"; w.style.color = "#06201A";
+    const t0 = performance.now(); const step = () => { const k = Math.min((performance.now() - t0) / 400, 1);
+      w.style.transform = `scale(${1 + .25 * Math.sin(Math.PI * k)})`; if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); },
+};
+</script>
+</body>
+</html>
