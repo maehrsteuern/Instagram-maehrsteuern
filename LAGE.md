@@ -12,7 +12,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - **So 04.10. umgebaut:** Statt Ampel-Reel geht 19:30 das Community-Reel „5 Sachen, die ich aus Excel rausgeschmissen hab“ online (Loris' Sprachnachricht, 41 s, keine Werbung, CTA: Zahl 1–5 in die Kommentare) + neue Teaser-Story 19:35. Ampel-Reel und alter Teaser stehen auf `pause` – kann später wieder eingeplant werden. Die Kommentar-Antworten (welche Nummer?) sind die Themen für die nächsten Reels.
 - **Doppel-Post 04.10. behoben:** Das 5-Dinge-Reel ging zweimal raus (DeFLK53ALSs = im Plan, DeFLSBNFUXy = Duplikat, von Loris am 04.10. gelöscht ✓). Ursache: Ein Lauf startet mit dem Stand vom Startzeitpunkt und hat den Plan nur nach dem Warten neu geladen. `posten.py` holt jetzt direkt vor jedem Posten den neuesten Plan; klappt das nicht, wird nicht gepostet (nächster Lauf holt nach).
 - Bis 10.10. alles freigegeben: 5-Dinge-Reel (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
-- Latente Steuern bitte fachlich gegenlesen (`pruefzettel.md` im Post-Ordner; „Abschluss 2026“ am 05.10. überall auf „spätestens jetzt“ geändert – Folien 1+7, Bildunterschrift, Teaser, LinkedIn-Text + PDF). Änderungen bis Mi 07.10. abends.
+- Latente Steuern: Prüfzettel Punkte 1–3 (KSt-Staffel, § 274 Abs. 2 HGB, Gesamtsatz) am 05.10. mit Quellen geprüft ✓ – offen nur noch Punkte 4–5 (`pruefzettel.md` im Post-Ordner; „Abschluss 2026“ am 05.10. überall auf „spätestens jetzt“ geändert – Folien 1+7, Bildunterschrift, Teaser, LinkedIn-Text + PDF). Änderungen bis Mi 07.10. abends.
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.): **Loris baut die Konzeption selbst um (03.10.)** – bis dahin gilt Variante B (`drehbuch_markenweg.md`) nicht als gesetzt, keine Sprachnachricht anfordern, nichts schneiden. Status bleibt `wartet_auf_sprachnachricht`, bis das neue Konzept da ist. **KI-Hinweis** (falls KI-Karten bleiben): Hinweis in der Bildunterschrift, Label nach dem Posten in der App prüfen.
 - DM-Strecke läuft über **ManyChat** (Kommentar/Story-Antwort/DM mit Tool/TOOL/tool/tol → DM mit Demo-Link, Follow-up nach 23 h). Stichwörter nur in `automatik/interaktion.json` pflegen – Abweichungen meldet LAGE.md. Die eigenen Skripte schicken nie DMs.
@@ -80,19 +80,19 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
-**351 Follower** · 2 Beiträge im Profil (Abruf 2026-10-04) · **+0** seit 2026-10-03
-Reichweite pro Tag: 01.10. **68** · 02.10. **79** · 03.10. **63** · 04.10. **175**
+**352 Follower** · 3 Beiträge im Profil (Abruf 2026-10-05) · **+1** seit 2026-10-04
+Reichweite pro Tag: 01.10. **68** · 02.10. **79** · 03.10. **63** · 04.10. **418**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| So 04.10. 19:46 | 30 | 24 | 0 | 0 | 0 |
-| So 04.10. 19:50 | 29 | 17 | 0 | 0 | 0 |
+| So 04.10. 19:46 | 51 | 44 | 0 | 0 | 0 |
+| So 04.10. 19:50 | 53 | 40 | 0 | 1 | 1 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 223 | 160 | 4 | 2 | 3 | 0 |
-| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 298 (+18) | 107 | 7 | 2 | 2 | 16 |
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 278 (+7) | 165 | 6 | 2 | 2 | 7 |
+| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 519 (+296) | 406 | 5 | 2 | 8 | 3 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 302 (+4) | 110 | 8 | 2 | 2 | 16 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 281 (+3) | 167 | 6 | 2 | 2 | 7 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -115,6 +115,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 08:47 📈 Statistik 2026-10-05 ([`db0069d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/db0069da35cb6b2d766db3757f07a80d67c9001c))
+  - `automatik/statistik`
 - 08:47 🔀 Merge: Bibliothek gegengelesen (10 Korrekturen, Prüfbericht) ([`686ac1b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/686ac1bfb2362e5b9bf0745eb19ff13b6ac1c796))
 - 08:39 ✍️ Bibliothek gegengelesen: 10 Korrekturen, 25 Zweifelsfälle im Prüfbericht ([`d3ee26f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d3ee26f6780915231a438dacbce0b5cddb704709))
   - `LAGE.html`, `assets/bibliothek/PRUEFBERICHT.md`, `assets/bibliothek/einzelposts/zahl_zinsen.png`, `assets/bibliothek/karussell/e_rechnung/folie_03.png`, `assets/bibliothek/karussell/forschungszulage/folie_03.png`, `assets/bibliothek/karussell/gewst_zahlen/folie_04.png`, `…`
