@@ -8,7 +8,7 @@ Nach § 274 Abs. 2 HGB sind latente Steuern mit den unternehmensindividuellen St
 
 Zur Größenordnung bei einem Hebesatz von 400 %: Heute ergibt sich inklusive Soli ein Kombisatz von etwa 29,8 %. Ab 2032 sind es nur noch rund 24,6 %.
 
-Für den Abschluss 2026 heißt das: Differenzen müssen nach ihrem voraussichtlichen Abbauzeitpunkt aufgeteilt und jahresweise bewertet werden. Ein Festwert führt sonst zu einem systematisch zu hohen Ansatz.
+Spätestens jetzt heißt das für den Abschluss: Differenzen müssen nach ihrem voraussichtlichen Abbauzeitpunkt aufgeteilt und jahresweise bewertet werden. Ein Festwert führt sonst zu einem systematisch zu hohen Ansatz.
 
 Im PDF-Karussell steht ein Rechenbeispiel mit Demo-Zahlen, das zeigt, wie sich eine solche Staffel sauber abbilden lässt → Demo gefällig? Kurze Nachricht an mich genügt.
 
