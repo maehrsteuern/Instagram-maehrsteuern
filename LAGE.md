@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 18:20 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 21:39 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `02-excel-fehler` am **Di 06.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -118,7 +118,7 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 | Ablauf | Wann | Letzter Lauf |
 |---|---|---|
 | Lage + Google-Kalender | alle 15 Min. (LAGE.md, Kalender-Sync, Wächter) | ✅ ok |
-| Posten | alle 15 Min. (postet freigegebene Einträge) | ✅ ok |
+| Posten | alle 15 Min. (postet freigegebene Einträge) | 🔴 [fehlgeschlagen](https://github.com/maehrsteuern/Instagram-maehrsteuern/actions/runs/37363826032) Mo 05.10. 21:45 |
 | Freigabe | bei neuen Entwürfen / Antwort im Issue | ✅ ok |
 | Statistik | täglich ca. 08:45 | ✅ ok |
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
@@ -132,6 +132,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 21:39 ✍️ Monatsbericht-Reel auf Mi 07.10. vorgezogen (Follow-up zum 5-Dinge-Reel), Split-Reel auf So 11.10. ([`4f65efd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4f65efdd295d4130154d8206b85409f2f38b638f))
+  - Plan: `11-reel-monatsbericht` zeit: 2026-10-11 19:30 → 2026-10-07 19:30; `11-story-teaser` zeit: 2026-10-11 19:35 → 2026-10-07 19:35; `06-reel-split` zeit: 2026-10-07 19:30 → 2026-10-11 19:30; `06-story-teaser` zeit: 2026-10-07 19:35 → 2026-10-11 19:35
 - 18:20 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`c745b43`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c745b43fac15981b8c5d90711dbc29ab11892ee6))
   - Plan: `11-reel-monatsbericht` → Freigabe-Issue #36; `11-story-teaser` → Freigabe-Issue #36
 - 18:18 ✍️ Reel Monatsbericht auf Nummer 11 umbenannt (Kollision mit Fabrik-Beitrag 09 Rückstellung) ([`b194a17`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b194a1754ae37fc1833ba4e73594092788ae09c5))
