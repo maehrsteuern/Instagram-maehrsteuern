@@ -3,7 +3,7 @@
     {"vorlage":"einblendung","datei":"bausteine/haken_formel.png","typ":"haken","titel":"Wer hat die *Formel*\ngelöscht?","sub":"Niemand. Natürlich."},
     {"vorlage":"einblendung","datei":"bausteine/haken_datenzugriff.png","typ":"haken","kicker":"Betriebsprüfung","titel":"*Datenzugriff*.\nBereit?","sub":"§ 147 Abs. 6 AO."},
     {"vorlage":"einblendung","datei":"bausteine/haken_vorjahr.png","typ":"haken","titel":"Vorjahr kopiert.\n*Hebesatz nicht.*"},
-    {"vorlage":"einblendung","datei":"bausteine/haken_8b.png","typ":"haken","kicker":"Quiz","titel":"*95 %* oder 100 %?","sub":"Dividenden unter GmbHs."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_8b.png","typ":"haken","kicker":"Quiz","titel":"*95 %* oder 100 %?","sub":"Dividenden ab 10 % Beteiligung."},
     {"vorlage":"einblendung","datei":"bausteine/haken_final.png","typ":"haken","titel":"*final_v3_neu*\n.xlsx","sub":"Wir müssen reden."},
     {"vorlage":"einblendung","datei":"bausteine/haken_ueber_hinz.png","typ":"haken_ueber","kicker":"Demo","titel":"Hinzurechnung:\n*automatisch*","transparent":true},
     {"vorlage":"einblendung","datei":"bausteine/haken_ueber_gelb.png","typ":"haken_ueber","kicker":"Ampel","titel":"Gelb heißt:\n*Quote prüfen*","transparent":true},

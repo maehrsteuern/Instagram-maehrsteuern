@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 08:31 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 08:47 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -26,7 +26,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - **Fristen** (`automatik/erinnerungen.json` → „Braucht dich“ + Kalender): LinkedIn #18 Mi 07.10. 08:00 (Termin kommt schon automatisch) · Reel-Vergleich „5 Dinge“/Split → Anzeigen-Start ca. Mo 12.10. (Chrome Modul 2 am 04.10. nur vorbereiten) · **ManyChat-Trial endet Fr 16.10.** → Entscheidung Loris (Erinnerung Mi 14.10.).
 - **Meta-App „maehrsteuern Autopilot“** bleibt im Entwicklungsmodus. Die laufenden IG-Schlüssel und die Statistik sind davon nicht betroffen (eigenes Konto mit App-Rolle). Nur die Hashtag-Suche braucht die Freigabe → Checkliste [#26](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/26).
 - **Reclaim-Hinweis:** Claudes Reclaim-Zugang (Connector) zeigt auf **Konto B (Outlook, Lite)**, nicht auf das Demo-Konto. Für die Automatik nicht nutzen; Demo-Buchungen kommen nur über das Apps-Script „maehrsteuern Demo-Kopie“.
-- **Bibliothek aus dem Brand Kit (Claude Design) gebaut (02.10.):** 365 fertige Bilder in `assets/bibliothek/` (Übersicht `README.md` dort), Texte als Job-Dateien in `vorlagen/system/jobs/bibliothek/`. Neue Vorlagen `zahl.html` + `banner.html`, Highlight-Symbole, Vergleichstabelle/Checkliste im Karussell. Nichts davon ist eingeplant. **Gegengelesen (05.10.):** 10 Fehler korrigiert und neu gerendert, 25 Zweifelsfälle offen → `assets/bibliothek/PRUEFBERICHT.md` (vor Verwendung eines Beitrags dort abhaken).
+- **Bibliothek aus dem Brand Kit (Claude Design) gebaut (02.10.):** 365 fertige Bilder in `assets/bibliothek/` (Übersicht `README.md` dort), Texte als Job-Dateien in `vorlagen/system/jobs/bibliothek/`. Neue Vorlagen `zahl.html` + `banner.html`, Highlight-Symbole, Vergleichstabelle/Checkliste im Karussell. Nichts davon ist eingeplant. **Gegengelesen (05.10.):** 10 Fehler korrigiert, 25 Zweifelsfälle mit Loris entschieden und umgesetzt → `assets/bibliothek/PRUEFBERICHT.md`. Offen nur: Zinsschranke-Caption mit Hinweis auf Untergang des Zinsvortrags.
 - **Lage als Seite (04.10.):** `LAGE.html` mit Kacheln, Kalender, Diagrammen und filterbarem Protokoll, wird mit LAGE.md neu geschrieben und über GitHub Pages veröffentlicht (https://maehrsteuern.github.io/Instagram-maehrsteuern/). Pages eingeschaltet ✓ (04.10.), Seite läuft und aktualisiert sich bei jeder neuen Lage automatisch.
 
 ## 👉 Braucht dich
@@ -115,6 +115,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 08:47 🔀 Merge: Bibliothek gegengelesen (10 Korrekturen, Prüfbericht) ([`686ac1b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/686ac1bfb2362e5b9bf0745eb19ff13b6ac1c796))
+- 08:39 ✍️ Bibliothek gegengelesen: 10 Korrekturen, 25 Zweifelsfälle im Prüfbericht ([`d3ee26f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d3ee26f6780915231a438dacbce0b5cddb704709))
+  - `LAGE.html`, `assets/bibliothek/PRUEFBERICHT.md`, `assets/bibliothek/einzelposts/zahl_zinsen.png`, `assets/bibliothek/karussell/e_rechnung/folie_03.png`, `assets/bibliothek/karussell/forschungszulage/folie_03.png`, `assets/bibliothek/karussell/gewst_zahlen/folie_04.png`, `…`
 - 08:31 ✍️ Lage-Notiz: latente Steuern auf „spätestens jetzt“ umgestellt ([`fde2ac9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fde2ac984d3a7f1056f4f3cbec8c577b76ac6f81))
   - `LAGE.html`, `automatik/lage_notizen.md`
 - 08:29 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`a465237`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a4652376cdd635f24d23f9d1da551b6e32c8da58))
