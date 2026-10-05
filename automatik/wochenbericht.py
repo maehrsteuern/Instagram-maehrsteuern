@@ -65,20 +65,26 @@ def follower(von, bis):
 
 
 def beitraege(von, bis):
-    """Letzter Stand je Beitrag bis Wochenende. Aufrufe der Woche = Zuwachs je Beitrag gegenüber dem Stand vor der
-    Woche – fehlt der (Statistik lief noch nicht), zählt der erste Stand in der Woche als Basis, damit alte Aufrufe
-    nicht als neu erscheinen. Top 3 nur aus Beiträgen der letzten 4 Wochen."""
+    """Letzter Stand je Beitrag bis Wochenende. Der Bericht läuft So ~18:00, das Sonntags-Reel geht erst 19:30
+    online – „neu“ ist deshalb, was von So der Vorwoche bis Sa gepostet wurde (sonst fiele jedes Sonntags-Reel
+    durch beide Berichte). Aufrufe der Woche = Zuwachs je Beitrag gegenüber dem Stand vor der Woche; neue Beiträge
+    zählen ab 0. Fehlt der Vorwochen-Stand, zählt der erste Stand in der Woche als Basis, damit alte Aufrufe nicht
+    als neu erscheinen. Top 3 nur aus Beiträgen der letzten 4 Wochen."""
+    ab, bis_neu = (von - timedelta(days=1)).isoformat(), (bis - timedelta(days=1)).isoformat()
     zeilen = sorted(lesen(STATISTIK / "beitraege.csv"), key=lambda z: z["datum"])
     stand_ende, basis = {}, {}
     for z in zeilen:
+        if z["gepostet"] >= ab:  # neu: Basis 0, keine Vorwochen-Zeile
+            if z["datum"] <= bis.isoformat():
+                stand_ende[z["id"]] = z
+            continue
         if z["datum"] < von.isoformat():
             basis[z["id"]] = z
         elif z["datum"] <= bis.isoformat():
-            if z["id"] not in basis and z["gepostet"] < von.isoformat():
-                basis[z["id"]] = z  # erster Stand in der Woche
+            basis.setdefault(z["id"], z)  # erster Stand in der Woche
             stand_ende[z["id"]] = z
     views = sum(max(0, zahl(z["views"]) - zahl(basis.get(i, {}).get("views"))) for i, z in stand_ende.items())
-    neu = [z for z in stand_ende.values() if von.isoformat() <= z["gepostet"] <= bis.isoformat()]
+    neu = [z for z in stand_ende.values() if ab <= z["gepostet"] <= bis_neu]
     frisch = [z for z in stand_ende.values() if z["gepostet"] >= (von - timedelta(days=21)).isoformat() and zahl(z["reach"]) >= 20]
     top = sorted(frisch, key=lambda z: -(zahl(z["saved"]) + zahl(z["shares"])) / max(1, zahl(z["reach"])))[:3]
     return views, neu, top
