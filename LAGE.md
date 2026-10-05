@@ -133,8 +133,14 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 09:06 ✍️ Stand claude/instagram übernommen ([`53b4eaf`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/53b4eaf085e3b802e2b0e1698a2b6d6a4eedf704))
 - 09:06 ✍️ Reel 11.10. Monatsbericht: Bilder (3 Schritte), Titelbild, Teaser, Bildunterschrift, Drehbuch ([`b197f71`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b197f7113caee3b60e3dc3c002797a50e42b5b7c))
   - `LAGE.html`, `posts/09_2026-10-11_reel_monatsbericht`, `posts/sprechtexte.md`, `vorlagen/system/fuenf_dinge.html`, `vorlagen/system/jobs/p09_reel_monatsbericht.json`
+- 09:05 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`8ca2ae2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/8ca2ae236f636b31dfadd9054c658953f92cc3a4))
+  - Plan: `10-story-umfrage` → Freigabe-Issue #31; `10-e-rechnung` → Freigabe-Issue #31; `10-story-teaser` → Freigabe-Issue #31
+- 09:05 🔀 Merge remote-tracking branch 'origin/claude/instagram' into ccr-e6f8d1b2-zd8pzn ([`c77b202`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c77b2029d7d18815b0e9539038a26353f2166d13))
+- 09:05 ✍️ Erste Bibliothek-Beiträge eingeplant: Rückstellung (15.10.) und E-Rechnung (22.10.) ([`14efa48`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/14efa482bd2af59d6966f30dc6ae35c5eca2a9f1))
+  - Plan: neu `09-story-quiz` (2026-10-14 12:15, entwurf); neu `09-story-aufloesung` (2026-10-15 12:15, entwurf); neu `09-rueckstellung` (2026-10-15 19:30, entwurf); neu `09-story-teaser` (2026-10-15 19:35, entwurf); neu `10-story-umfrage` (2026-10-21 12:15, entwurf); neu `10-e-rechnung` (2026-10-22 19:30, entwurf); neu `10-story-teaser` (2026-10-22 19:35, entwurf)
 - 09:03 ✍️ Reel So 11.10. eingeplant: „Nummer 1: Der Monatsbericht“ (wartet auf Sprachnachricht) ([`dc36957`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/dc369579b6a2ad1835017ac59cf1e0fe1137e099))
   - Plan: neu `09-reel-monatsbericht` (2026-10-11 19:30, wartet_auf_sprachnachricht); neu `09-story-teaser` (2026-10-11 19:35, entwurf)
 - 09:03 ✍️ Lage-Notiz: globaler Reclaim-Puffer 10 Min. entschieden ([`384fa87`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/384fa8755b9dfe73c4f34ad54f00d77a0846f180))
