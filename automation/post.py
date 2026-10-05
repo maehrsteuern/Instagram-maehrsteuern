@@ -82,7 +82,12 @@ class Instagram:
         if missing:
             sys.exit(f"✗ {', '.join(missing)} missing – add the secrets first (see SETUP.md). Nothing was posted.")
         self.token = os.environ["IG_TOKEN"]
-        self.user = os.environ["IG_USER_ID"]
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import ig_account
+        self.user, username = ig_account.resolve(self.token)
+        if username and username != ig_account.EXPECTED_USERNAME:
+            sys.exit(f"✗ IG_TOKEN belongs to @{username}, not @{ig_account.EXPECTED_USERNAME} – nothing was posted. "
+                     "Generate the token for @maehrtax (SETUP.md).")
 
     def _request(self, method, path, retry=True, **kwargs):
         """Retry short hiccups (connection, timeout, 5xx) up to 3× – except for media_publish:

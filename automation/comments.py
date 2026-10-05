@@ -122,8 +122,11 @@ def check():
         print("Comments: IG_TOKEN / IG_USER_ID missing – nothing to check (see SETUP.md).")
         return
     state = load()
-    me = ig("GET", os.environ["IG_USER_ID"], fields="username")["username"]
-    media = ig("GET", f"{os.environ['IG_USER_ID']}/media", fields="id,caption,permalink",
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import ig_account
+    user, _ = ig_account.resolve()
+    me = ig("GET", user, fields="username")["username"]
+    media = ig("GET", f"{user}/media", fields="id,caption,permalink",
                limit=SETTINGS["posts_to_check"]).get("data", [])
     new, done = [], 0
     cutoff = NOW - timedelta(hours=48 if state.get("first_run") else 24 * 7)

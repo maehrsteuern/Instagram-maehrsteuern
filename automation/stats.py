@@ -21,7 +21,11 @@ if not os.environ.get("IG_TOKEN") or not os.environ.get("IG_USER_ID"):
 
 import requests
 
-TOKEN, USER = os.environ["IG_TOKEN"], os.environ["IG_USER_ID"]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import ig_account
+
+TOKEN = os.environ["IG_TOKEN"]
+USER, _ = ig_account.resolve(TOKEN)
 
 
 def get(path, **params):

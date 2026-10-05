@@ -22,7 +22,11 @@ if not os.environ.get("IG_TOKEN") or not os.environ.get("IG_USER_ID"):
 
 import requests
 
-TOKEN, USER = os.environ["IG_TOKEN"], os.environ["IG_USER_ID"]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import ig_account
+
+TOKEN = os.environ["IG_TOKEN"]
+USER, _ = ig_account.resolve(TOKEN)
 
 MEDIA_METRICS = ["views", "reach", "likes", "comments", "saved", "shares", "total_interactions",
                  "ig_reels_avg_watch_time", "ig_reels_video_view_total_time", "reels_skip_rate",
