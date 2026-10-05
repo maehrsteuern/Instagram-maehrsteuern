@@ -34,6 +34,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - ⏳ **Wartet auf sprachnachricht** `04-reel-mein-weg` (Di 20.10. 19:30) – Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🟡 **Freigeben** `04-story-teaser` (Di 20.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
+- ⏰ **💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)** (Mi 07.10. 08:00) – PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5).
 
 ## ⏭️ Nächste 7 Tage
 
