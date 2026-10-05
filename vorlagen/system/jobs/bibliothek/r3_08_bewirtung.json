@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Geschäftsessen und Geschenke“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/bewirtung/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Geschäftsessen und Geschenke: *was zählt*.","sub":"Die Grenzen auf vier Folien."},
+    {"vorlage":"karussell","datei":"karussell/bewirtung/folie_02.png","typ":"inhalt","saeule":"Bewirtung","titel":"*70 %* abziehbar.","text":"Angemessene, nachgewiesene Bewirtungskosten aus geschäftlichem Anlass. 30 % bleiben außen vor.","boxTitel":"NORM","box":"§ 4 Abs. 5 Satz 1 Nr. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/bewirtung/folie_03.png","typ":"inhalt","saeule":"Vorsteuer","titel":"Die Vorsteuer: *100 %*.","text":"Die 70-%-Grenze gilt nur für die Ertragsteuer. Die Vorsteuer aus angemessenen Bewirtungen ist voll abziehbar.","boxTitel":"NORM","box":"§ 15 Abs. 1a Satz 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/bewirtung/folie_04.png","typ":"inhalt","saeule":"Geschenke","titel":"*50 €* pro Person und Jahr.","text":"Netto, wenn Vorsteuer abziehbar. Wird die Grenze überschritten, entfällt der Abzug komplett.","boxTitel":"NORM","box":"§ 4 Abs. 5 Satz 1 Nr. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/bewirtung/folie_05.png","typ":"inhalt","saeule":"Pauschalsteuer","titel":"*30 %* für den Empfänger.","text":"Das Unternehmen kann die Steuer des Beschenkten pauschal übernehmen – bis 10.000 € je Empfänger und Jahr.","boxTitel":"NORM","box":"§ 37b EStG"},
+    {"vorlage":"karussell","datei":"karussell/bewirtung/folie_06.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* vor dem Weihnachtsgeschäft.","text":"Geschenke getrennt buchen – sonst ist der Abzug weg (§ 4 Abs. 7 EStG).","chip":"📌 Jetzt speichern"}
+  ] }

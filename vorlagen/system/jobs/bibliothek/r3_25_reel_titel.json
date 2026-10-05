@@ -1,0 +1,18 @@
+{ "titel": "Reel-Titelbilder (Runde 3)", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"reel_titel","datei":"reels/reel_hinzurechnung/titelbild.png","kicker":"Demo · Steuern × Code","titel":"Hinzu-\n*rechnung*","sub":"Vier Quoten, ein Freibetrag."},
+    {"vorlage":"reel_titel","datei":"reels/reel_8b/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"*95 %*\nsteuerfrei","sub":"Dividenden unter GmbHs."},
+    {"vorlage":"reel_titel","datei":"reels/reel_zinsschranke/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Zins-\n*schranke*","sub":"30 % EBITDA in 15 Sekunden."},
+    {"vorlage":"reel_titel","datei":"reels/reel_organschaft/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Organ-\n*schaft*","sub":"Fünf Jahre Vertrag – mindestens."},
+    {"vorlage":"reel_titel","datei":"reels/reel_kst2032/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"*24,55 %*\nab 2032","sub":"Die KSt sinkt Jahr für Jahr."},
+    {"vorlage":"reel_titel","datei":"reels/reel_gwg/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"*800 €*\noder Pool?","sub":"GWG in 10 Sekunden."},
+    {"vorlage":"reel_titel","datei":"reels/reel_bewirtung/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"Geschäfts-\n*essen*","sub":"70 % abziehbar – Vorsteuer voll."},
+    {"vorlage":"reel_titel","datei":"reels/reel_erechnung/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"E-Rechnung\n*2027*","sub":"Der Fahrplan in 15 Sekunden."},
+    {"vorlage":"reel_titel","datei":"reels/reel_zuschlaege/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Eine Woche\n*zu spät*","sub":"Was das kostet."},
+    {"vorlage":"reel_titel","datei":"reels/reel_aufbewahrung/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"*8 Jahre*\nstatt 10","sub":"Neue Aufbewahrung für Belege."},
+    {"vorlage":"reel_titel","datei":"reels/reel_mindeststeuer/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Mindest-\n*steuer*","sub":"15 % – für wen eigentlich?"},
+    {"vorlage":"reel_titel","datei":"reels/reel_rst_ampel/titelbild.png","kicker":"Demo · Steuern × Code","titel":"Rückstellung\n*mit Ampel*","sub":"Rot, Gelb, Grün – live."},
+    {"vorlage":"reel_titel","datei":"reels/reel_suenden/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"Excel-\n*Sünden*","sub":"Erkennst du eure Datei?"},
+    {"vorlage":"reel_titel","datei":"reels/reel_tag/titelbild.png","kicker":"Hinter dem Code","titel":"Ein Tag als\n*Steuer-Coder*","sub":"Von 7 bis 19 Uhr."},
+    {"vorlage":"reel_titel","datei":"reels/reel_prompt/titelbild.png","kicker":"KI × Steuern","titel":"Prompt vs.\n*Prüfpfad*","sub":"Warum Code gewinnt."}
+  ] }

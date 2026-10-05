@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Dividenden unter GmbHs: 95 % steuerfrei“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/par8b/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Dividenden unter GmbHs: *95 % steuerfrei*.","sub":"§ 8b KStG kompakt – und wo die Gewerbesteuer anders tickt."},
+    {"vorlage":"karussell","datei":"karussell/par8b/folie_02.png","typ":"inhalt","saeule":"Die Regel","titel":"*5 %* bleiben steuerpflichtig.","text":"Gewinnausschüttungen bleiben bei der empfangenden Kapitalgesellschaft außer Ansatz. 5 % gelten als nicht abziehbare Betriebsausgaben.","boxTitel":"NORM","box":"§ 8b Abs. 1 und 5 KStG"},
+    {"vorlage":"karussell","datei":"karussell/par8b/folie_03.png","typ":"inhalt","saeule":"Die Ausnahme","titel":"Unter *10 %*: voll steuerpflichtig.","text":"Bei Streubesitz – Beteiligung unter 10 % zu Beginn des Kalenderjahres – greift die Steuerfreiheit für Dividenden nicht.","boxTitel":"NORM","box":"§ 8b Abs. 4 KStG"},
+    {"vorlage":"karussell","datei":"karussell/par8b/folie_04.png","typ":"inhalt","saeule":"Gewerbesteuer","titel":"Hier zählen *15 %*.","text":"Für die Kürzung braucht es mindestens 15 % zu Beginn des Erhebungszeitraums. Darunter wird die Dividende wieder hinzugerechnet.","boxTitel":"NORM","box":"§ 9 Nr. 2a und § 8 Nr. 5 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/par8b/folie_05.png","typ":"inhalt","saeule":"Rechenbeispiel · Demo-Zahlen","titel":"100.000 € Dividende, *20 %* Beteiligung","zeilen":[["5 % nicht abziehbar","5.000 €"],["KSt + SolZ 15,825 %","791 €"],["GewSt 14 % (Hebesatz 400 %)","700 €"],["Steuerlast","1.491 €","summe"]]},
+    {"vorlage":"karussell","datei":"karussell/par8b/folie_06.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für die nächste Ausschüttung.","text":"Beteiligungsquoten zum Stichtag prüfen – das Tool zeigt, welche Grenze greift.","chip":"📌 Jetzt speichern"}
+  ] }

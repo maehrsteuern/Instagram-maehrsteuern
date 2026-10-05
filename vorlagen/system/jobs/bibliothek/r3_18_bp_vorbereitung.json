@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Praxis – „Betriebsprüfung: 4 Dinge vorab“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/bp_vorbereitung/folie_01.png","typ":"titel","saeule":"Praxis","titel":"Betriebsprüfung: *4 Dinge*, die vorher stehen sollten.","sub":"Damit „Woher kommt diese Zahl?“ schnell beantwortet ist."},
+    {"vorlage":"karussell","datei":"karussell/bp_vorbereitung/folie_02.png","typ":"inhalt","nr":"01","titel":"Die *Prüfungsanordnung* lesen.","text":"Steuerarten, Zeiträume, Beginn: Die Anordnung legt den Rahmen fest.","boxTitel":"NORM","box":"§§ 196, 197 AO"},
+    {"vorlage":"karussell","datei":"karussell/bp_vorbereitung/folie_03.png","typ":"inhalt","nr":"02","titel":"*Datenzugriff* vorbereiten.","text":"Unmittelbar, mittelbar oder per Datenträger – der Prüfer darf auf eure digitalen Unterlagen zugreifen.","boxTitel":"NORM","box":"§ 147 Abs. 6 AO"},
+    {"vorlage":"karussell","datei":"karussell/bp_vorbereitung/folie_04.png","typ":"inhalt","nr":"03","titel":"Verfahrens­*dokumentation*.","text":"Wie entstehen eure Zahlen? Nach den GoBD muss ein sachverständiger Dritter das nachvollziehen können."},
+    {"vorlage":"karussell","datei":"karussell/bp_vorbereitung/folie_05.png","typ":"inhalt","nr":"04","titel":"Eine *Ansprechperson*.","text":"Eine Person koordiniert Anfragen und Unterlagen – das spart beiden Seiten Zeit.","boxTitel":"NORM","box":"Mitwirkungspflicht § 200 AO"},
+    {"vorlage":"karussell","datei":"karussell/bp_vorbereitung/folie_06.png","typ":"cta","saeule":"Praxis","titel":"Prüfpfad *auf Knopfdruck*?","text":"Jede Zahl der Steuerrückstellung bis zur Quelle – das ist der Kern meiner Tools."}
+  ] }

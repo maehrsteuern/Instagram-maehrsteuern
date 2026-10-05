@@ -1,0 +1,4 @@
+{ "titel": "LinkedIn-Banner 1584×396 (links unten frei fürs Profilbild)", "runde": 1, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"banner","datei":"linkedin/banner.png"}
+  ] }

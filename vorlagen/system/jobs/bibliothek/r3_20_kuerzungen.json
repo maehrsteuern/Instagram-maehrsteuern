@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Kürzungen nach § 9 GewStG“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/kuerzungen/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Kürzungen: *Was bei der GewSt abgeht*.","sub":"§ 9 GewStG – die vier wichtigsten Posten."},
+    {"vorlage":"karussell","datei":"karussell/kuerzungen/folie_02.png","typ":"inhalt","nr":"01","titel":"*Grundbesitz*.","text":"Seit 2025: 0,11 % des Grundsteuerwerts des betrieblichen Grundbesitzes.","boxTitel":"NORM","box":"§ 9 Nr. 1 Satz 1 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/kuerzungen/folie_03.png","typ":"inhalt","nr":"02","titel":"Anteile an *Personen­gesellschaften*.","text":"Gewinnanteile aus Mitunternehmerschaften werden gekürzt – sie sind dort schon gewerbesteuerpflichtig.","boxTitel":"NORM","box":"§ 9 Nr. 2 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/kuerzungen/folie_04.png","typ":"inhalt","nr":"03","titel":"*Schachtel*­privileg.","text":"Dividenden aus Beteiligungen von mindestens 15 % zu Beginn des Erhebungszeitraums.","boxTitel":"NORM","box":"§ 9 Nr. 2a GewStG"},
+    {"vorlage":"karussell","datei":"karussell/kuerzungen/folie_05.png","typ":"inhalt","nr":"04","titel":"*Spenden*.","text":"Bis 20 % des Gewinns oder 4 ‰ der Umsätze, Löhne und Gehälter.","boxTitel":"NORM","box":"§ 9 Nr. 5 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/kuerzungen/folie_06.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für die nächste GewSt-Erklärung.","chip":"📌 Jetzt speichern"}
+  ] }

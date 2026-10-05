@@ -1,9 +1,9 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css"><script src="text.js"></script>
-<!-- Ampel-Nahaufnahme für Reels 1080×1920, nachgebaut im Stil der App (nur Beispieldaten). stand: rot | gelb | gruen -->
+<!-- Ampel-Nahaufnahme für Reels 1080×1920, nachgebaut im Stil der App (nur Beispieldaten). stand: rot | gelb | gruen
+     Eigene Themen: kopf, datum, kicker, titel, namen:[5 Prüfpunkte], zeilen:[[farbe,text] …] (sonst Ertragsteuern-Standard) -->
 <style>
 html,body{width:1080px;height:1920px}
 body{background:radial-gradient(110% 60% at 50% 40%,var(--glow) 0%,var(--bg) 68%)}
-:root{--gelb:#E8B04A}
 .kopf{position:absolute;left:70px;right:70px;top:150px;display:flex;align-items:center;gap:26px}
 .kopf b{font-family:var(--serif);font-size:46px;font-weight:600}
 .kopf span{font-family:var(--mono);font-size:30px;color:var(--grau);letter-spacing:.08em}
@@ -38,13 +38,15 @@ const STAENDE = {
   gruen: {titel:'Abschluss-\n*reif.*', farbe:'gruen', zeilen:[['gruen','ok'],['gruen','ok'],['gruen','ok'],['gruen','ok'],['gruen','gebucht']]},
 };
 const NAMEN = ['Körperschaftsteuer + SolZ','Gewerbesteuer','Latente Steuern','Vorauszahlungen','Steuerrückstellung'];
-const s = STAENDE[d.stand] || STAENDE.rot;
+const s0 = STAENDE[d.stand] || STAENDE.rot;
+const s = {...s0, titel: d.titel ?? s0.titel, zeilen: d.zeilen ?? s0.zeilen};
+const namen = d.namen ?? NAMEN;
 const titel = fmt(s.titel).replace(/class="a"/g, `class="${s.farbe}"`);
 document.body.insertAdjacentHTML('beforeend', `
-<div class="kopf"><b>Ertragsteuern</b><span>JA 2025-12-31</span><i>DEMODATEN</i></div>
-<div class="titel"><div class="kicker">Abschlussreife</div><h1>${titel}</h1></div>
+<div class="kopf"><b>${fmt(d.kopf ?? 'Ertragsteuern')}</b><span>${fmt(d.datum ?? 'JA 2025-12-31')}</span><i>DEMODATEN</i></div>
+<div class="titel"><div class="kicker">${fmt(d.kicker ?? 'Abschlussreife')}</div><h1>${titel}</h1></div>
 <div class="lampen">${['rot','gelb','gruen'].map(f => `<div class="lampe l-${f}${f===s.farbe?' an':''}"></div>`).join('')}</div>
-<div class="karte"><div class="kicker">Prüfpunkte</div>${NAMEN.map((n,i) => { const [f,t] = s.zeilen[i];
-  return `<div class="zeile"><div class="punkt p-${f}"></div><div class="name">${n}</div><div class="st ${f}">${t}</div></div>`; }).join('')}</div>
+<div class="karte"><div class="kicker">Prüfpunkte</div>${namen.map((n,i) => { const [f,t] = s.zeilen[i];
+  return `<div class="zeile"><div class="punkt p-${f}"></div><div class="name">${fmt(n)}</div><div class="st ${f}">${t}</div></div>`; }).join('')}</div>
 <div class="fuss">DEMO · BEISPIELDATEN</div>`);
 </script></body></html>
