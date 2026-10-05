@@ -1,0 +1,6 @@
+{ "titel": "Reel-Titelbilder (Text im mittleren 3:4-Bereich)", "runde": 1, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"reel_titel","datei":"reels/reel_pruefpfad/titelbild.png","kicker":"Demo · Steuern × Code","titel":"Jede Zahl bis zur *Quelle*.","sub":"Prüfpfad mit einem Klick."},
+    {"vorlage":"reel_titel","datei":"reels/reel_excel_vs_tool/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"Excel vs.\n*Tool*","sub":"Gleiche Aufgabe, zwei Wege."},
+    {"vorlage":"reel_titel","datei":"reels/reel_abgestimmt/titelbild.png","kicker":"Hinter dem Code","titel":"Ihr habt\n*abgestimmt*.","sub":"Jetzt baue ich das Feature."}
+  ] }

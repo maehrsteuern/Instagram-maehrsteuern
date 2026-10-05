@@ -36,11 +36,12 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 | `posts/<Nr>_<Datum>_<Thema>/` | fertige Beiträge: Folien bzw. Reel, Titelbild, Storys, `bildunterschrift.txt` |
 
 ## Vorlagen-System (`vorlagen/system/`)
-- `karussell.html` (1080×1350; Typen `titel`, `inhalt` mit Text/Liste/Tabelle, `cta`), `story.html` (1080×1920; `info`, `frage`, `teaser`), `reel_titel.html`, `highlight.html` (`start`, `wissen`, `faq`), `einblendung.html` (Reel: `haken`, `leiste`, `abspann`), `ampel.html` (Ampel-Nahaufnahme `rot`/`gelb`/`gruen`, Stil der App)
-- Farben und Schriften zentral in `basis.css`; `*Wort*` im Text wird grün, `\n` bricht um; zu lange Überschriften werden automatisch verkleinert
+- `karussell.html` (1080×1350; Typen `titel`, `inhalt` mit Text/Liste/nummerierter Checkliste/Tabelle/Vergleichstabelle/Box, `cta`), `story.html` (1080×1920; `info`, `frage`, `antwort`, `teaser`, eigene Aufzählungszeichen `marker`), `reel_titel.html`, `highlight.html` (`start`, `wissen`, `faq`, `demo`, `termin`, `ampel`, `lupe`, `rechner`, `dm`, `tabelle`, `text` mit Zeichen), `einblendung.html` (Reel: `haken`, `haken_ueber`, `leiste`, `abspann`), `ampel.html` (Ampel-Nahaufnahme `rot`/`gelb`/`gruen`, Stil der App, Prüfpunkte frei wählbar), `zahl.html` (Einzelpost 1:1 „Zahl mit Norm“), `banner.html` (LinkedIn-Banner 1584×396)
+- Farben und Schriften zentral in `basis.css`; `*Wort*` im Text wird grün, `~Wort~` rot, `\n` bricht um; zu lange Überschriften werden automatisch verkleinert
 - Texte stehen in Job-Dateien unter `jobs/`. Bilder erzeugen: im Ordner `vorlagen/system` → `node render.mjs jobs/p02_excel_fehler.json`
 - Reels aus Standbildern: Schnittliste in `schnitt/`, dann `python3 reel.py schnitt/p01_reel_ampel.json` (braucht `pip install pillow imageio-ffmpeg`)
 - Ergebnisse landen in `posts/` bzw. `assets/` (`highlights/`, `storys/start/`)
+- **Bibliothek auf Vorrat:** `assets/bibliothek/` – 365 fertige Bilder aus dem Claude-Design-Katalog „Brand Kit“ (ca. 30 Karussell-Serien, Storys, Reel-Titel, Einblendungen, Ampeln, Einzelposts, Highlights, LinkedIn-Banner), Texte in `vorlagen/system/jobs/bibliothek/`, Übersicht in `assets/bibliothek/README.md`. Nicht im Plan, Demo-Zahlen, vor Verwendung fachlich prüfen.
 
 ## Marke
 - Botschaft: **Steuern × Code** – „Steuerwissen, das rechnet.“ Diplom-Finanzwirt und KI-Manager (IHK), baut KI- und Steuer-Tools – vom Tool bis zum ganzen Prozess.

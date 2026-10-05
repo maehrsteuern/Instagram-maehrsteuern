@@ -1,5 +1,6 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css"><script src="text.js"></script>
-<!-- Karussell-Folie 1080×1350 (4:5). Typen: titel | inhalt | cta -->
+<!-- Karussell-Folie 1080×1350 (4:5). Typen: titel | inhalt | cta
+     inhalt: text, punkte (nummern:true → 01, 02 …), zeilen (Tabelle, 3. Wert 'summe'), vergleich {kopf:[…], zeilen:[[…]]}, box/boxTitel (boxMono:true für Formeln) -->
 <style>
 html,body{width:1080px;height:1350px}
 body{background:radial-gradient(110% 70% at 80% 0%,var(--glow) 0%,var(--bg) 60%)}
@@ -21,6 +22,18 @@ td{padding:18px 0;border-bottom:2px solid rgba(143,163,152,.25);color:var(--text
 td:last-child{text-align:right;font-family:var(--mono);font-weight:600;color:var(--text);white-space:nowrap;padding-left:24px}
 tr.summe td{border-bottom:none;border-top:4px solid var(--gruen);color:var(--text);font-weight:600}
 tr.summe td:last-child{color:var(--gruen)}
+ul.num{display:flex;flex-direction:column;gap:22px}
+ul.num li{display:flex;gap:28px;padding:0;margin:0;font-size:36px;line-height:1.3}
+ul.num li:before{content:none}
+ul.num li b{font-family:var(--mono);font-weight:600;color:var(--gruen)}
+.box.mono span{font-family:var(--mono);font-size:32px}
+.vgl{display:grid;margin-top:40px;font-size:34px;color:var(--text2)}
+.vgl>div{padding:22px 0;border-bottom:2px solid rgba(143,163,152,.25)}
+.vgl>div.w{text-align:right;font-family:var(--mono);font-weight:600;color:var(--text)}
+.vgl>div.w.l{color:var(--gruen)}
+.vgl>div.w .r{color:var(--rot)}
+.vgl>div.k{text-transform:uppercase;padding:18px 0;font-family:var(--mono);font-size:24px;letter-spacing:.2em;color:var(--grau);border-bottom:4px solid var(--gruen);text-align:right}
+.vgl>div.ende{border-bottom:none}
 .foot{position:absolute;left:96px;right:96px;bottom:64px;display:flex;justify-content:space-between;align-items:center;
   font-family:var(--mono);font-size:26px;color:var(--grau)}
 .bar{position:absolute;left:0;bottom:0;height:8px;background:var(--gruen)}
@@ -34,6 +47,14 @@ tr.summe td:last-child{color:var(--gruen)}
 <script>
 const d = window.DATA || {typ:'titel',saeule:'Praxis',titel:'5 Excel-Fehler in der\n*Steuerrückstellung*',sub:'Und wie ein Tool sie verhindert.',seite:1,von:7};
 const p = $('pad');
+// Vergleichstabelle: erste Spalte Merkmal, letzte Spalte grün (Empfehlung), ~x~ rot
+function vergleich(v) {
+  const n = v.kopf.length, letzte = v.zeilen.length - 1;
+  return `<div class="vgl" style="grid-template-columns:1.5fr${' 1fr'.repeat(n-1)}">`
+    + v.kopf.map((k,i)=>`<div class="k"${i===n-1?' style="color:var(--gruen)"':''}>${fmt(k)}</div>`).join('')
+    + v.zeilen.map((z,j)=>z.map((x,i)=>`<div class="${i?'w':''}${i===n-1?' l':''}${j===letzte?' ende':''}">${fmt(x)}</div>`).join('')).join('')
+    + `</div>`;
+}
 if (d.typ==='titel') {
   p.className='pad center';
   p.innerHTML = `<div class="kicker">${fmt(d.saeule)}</div><h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}`;
@@ -41,9 +62,11 @@ if (d.typ==='titel') {
   p.className='pad center';
   p.innerHTML = `${d.nr?`<div class="nr">${fmt(d.nr)}</div>`:`<div class="kicker">${fmt(d.saeule)}</div>`}<h2>${fmt(d.titel)}</h2>
    ${d.text?`<div class="txt">${fmt(d.text)}</div>`:''}
-   ${d.punkte?`<ul>${d.punkte.map(x=>`<li>${fmt(x)}</li>`).join('')}</ul>`:''}
+   ${d.punkte?(d.nummern?`<ul class="num">${d.punkte.map((x,i)=>`<li><b>${String(i+1).padStart(2,'0')}</b><span>${fmt(x)}</span></li>`).join('')}</ul>`
+     :`<ul>${d.punkte.map(x=>`<li>${fmt(x)}</li>`).join('')}</ul>`):''}
    ${d.zeilen?`<table>${d.zeilen.map(z=>`<tr class="${z[2]||''}"><td>${fmt(z[0])}</td><td>${fmt(z[1])}</td></tr>`).join('')}</table>`:''}
-   ${d.box?`<div class="box"><b>${fmt(d.boxTitel||'LÖSUNG')}</b>${fmt(d.box)}</div>`:''}`;
+   ${d.vergleich?vergleich(d.vergleich):''}
+   ${d.box?`<div class="box${d.boxMono?' mono':''}"><b>${fmt(d.boxTitel||'LÖSUNG')}</b><span>${fmt(d.box)}</span></div>`:''}`;
 } else {
   p.className='pad center cta';
   p.innerHTML = `<div class="kicker">${fmt(d.saeule||'Steuern × Code')}</div><h2 style="font-size:88px">${fmt(d.titel)}</h2>

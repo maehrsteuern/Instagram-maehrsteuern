@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Praxis – „Die 7 Todsünden der Steuer-Excel“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/excel_suenden/folie_01.png","typ":"titel","saeule":"Praxis","titel":"Die *7 Todsünden* der Steuer-Excel.","sub":"Wie viele findest du in eurer Datei?"},
+    {"vorlage":"karussell","datei":"karussell/excel_suenden/folie_02.png","typ":"inhalt","saeule":"Sünde 1–2","titel":"Festwerte und *fremde Dateien*.","punkte":["30 % fest in der Formel statt aus einer Tabelle","Verknüpfungen auf „Abschluss_2023_final.xlsx“"]},
+    {"vorlage":"karussell","datei":"karussell/excel_suenden/folie_03.png","typ":"inhalt","saeule":"Sünde 3–4","titel":"Versteckt und *bunt*.","punkte":["Ausgeblendete Zeilen mit Korrekturen","Farben als Logik: „Gelb heißt manuell“"]},
+    {"vorlage":"karussell","datei":"karussell/excel_suenden/folie_04.png","typ":"inhalt","saeule":"Sünde 5–6","titel":"*Kopiert* und überschrieben.","punkte":["Vorjahr kopiert, Hebesatz nicht angepasst","Formel mit festem Wert überschrieben"]},
+    {"vorlage":"karussell","datei":"karussell/excel_suenden/folie_05.png","typ":"inhalt","saeule":"Sünde 7","titel":"*final_v3_neu*.xlsx","text":"Fünf Versionen, keine Historie. Welche ist die richtige?","boxTitel":"LÖSUNG","box":"Eine Quelle, Versionen mit Datum, Änderungen protokolliert."},
+    {"vorlage":"karussell","datei":"karussell/excel_suenden/folie_06.png","typ":"cta","saeule":"Praxis","titel":"Wie viele *Sünden* hat eure Datei?","text":"Antworte mit einer Zahl – ab 4 sollten wir reden."}
+  ] }

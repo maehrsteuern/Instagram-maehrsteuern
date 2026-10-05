@@ -1,0 +1,11 @@
+{ "titel": "Karussell · Mythos oder Fakt – „6 Steuer-Irrtümer“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/mythen/folie_01.png","typ":"titel","saeule":"Mythos oder Fakt","titel":"*6 Steuer-Irrtümer*, die sich halten.","sub":"Klingt richtig – stimmt aber nicht (mehr)."},
+    {"vorlage":"karussell","datei":"karussell/mythen/folie_02.png","typ":"inhalt","saeule":"Mythos 01","titel":"„Die Gewerbesteuer ist *Betriebsausgabe*.“","boxTitel":"FAKT","box":"Seit 2008 steuerlich nicht abziehbar (§ 4 Abs. 5b EStG)."},
+    {"vorlage":"karussell","datei":"karussell/mythen/folie_03.png","typ":"inhalt","saeule":"Mythos 02","titel":"„Geschenke bis *35 €* sind abziehbar.“","boxTitel":"FAKT","box":"Seit 2024 liegt die Grenze bei 50 € (§ 4 Abs. 5 Satz 1 Nr. 1 EStG)."},
+    {"vorlage":"karussell","datei":"karussell/mythen/folie_04.png","typ":"inhalt","saeule":"Mythos 03","titel":"„Belege muss ich *10 Jahre* aufheben.“","boxTitel":"FAKT","box":"Buchungsbelege seit 2025: 8 Jahre (§ 147 Abs. 3 AO)."},
+    {"vorlage":"karussell","datei":"karussell/mythen/folie_05.png","typ":"inhalt","saeule":"Mythos 04","titel":"„Ein PDF ist eine *E-Rechnung*.“","boxTitel":"FAKT","box":"Nein. Gefordert ist ein strukturiertes Format nach EN 16931."},
+    {"vorlage":"karussell","datei":"karussell/mythen/folie_06.png","typ":"inhalt","saeule":"Mythos 05","titel":"„Latente Steuern muss *jeder* bilanzieren.“","boxTitel":"FAKT","box":"Kleine Kapitalgesellschaften sind von § 274 HGB befreit (§ 274a HGB)."},
+    {"vorlage":"karussell","datei":"karussell/mythen/folie_07.png","typ":"inhalt","saeule":"Mythos 06","titel":"„Drohverluste zählen *auch steuerlich*.“","boxTitel":"FAKT","box":"Die Rückstellung ist steuerlich verboten (§ 5 Abs. 4a EStG)."},
+    {"vorlage":"karussell","datei":"karussell/mythen/folie_08.png","typ":"cta","saeule":"Mythos oder Fakt","titel":"Welchen Mythos *kennst du*?","text":"Schreib ihn in die Kommentare – ich prüfe ihn im nächsten Beitrag.","chip":"💬 Ab in die Kommentare"}
+  ] }

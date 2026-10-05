@@ -1,7 +1,7 @@
 // Bilder aus Vorlagen erzeugen:  node render.mjs jobs/w02_karussell.json
 // Eine Job-Datei: { "ausgabe": "../../assets/<ordner>", "bilder": [ { "vorlage": "karussell", "datei": "01.png", ...Daten } ] }
 import { readFileSync, mkdirSync } from 'fs';
-import { resolve, dirname } from 'path';
+import { resolve, dirname } from 'path';  // datei darf Unterordner enthalten (z. B. storys/quiz.png)
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
 import { execSync } from 'child_process';
@@ -12,7 +12,7 @@ try { ({ chromium } = await import('playwright')); }
 catch { ({ chromium } = createRequire(execSync('npm root -g').toString().trim()+'/')('playwright')); }
 
 const hier = dirname(fileURLToPath(import.meta.url));
-const GROESSE = { karussell:[1080,1350], story:[1080,1920], reel_titel:[1080,1920], highlight:[1080,1920], einblendung:[1080,1920], excel_chaos:[1404,2496], ampel:[1080,1920], fuenf_dinge:[1080,1920] };
+const GROESSE = { karussell:[1080,1350], story:[1080,1920], reel_titel:[1080,1920], highlight:[1080,1920], einblendung:[1080,1920], excel_chaos:[1404,2496], ampel:[1080,1920], fuenf_dinge:[1080,1920], zahl:[1080,1080], banner:[1584,396] };
 
 const jobs = process.argv.slice(2);
 if (!jobs.length) { console.log('Aufruf: node render.mjs jobs/<datei>.json [...]'); process.exit(1); }
@@ -30,6 +30,7 @@ for (const job of jobs) {
     await page.addInitScript(d => { window.DATA = d; }, b);
     await page.goto('file://'+resolve(hier, b.vorlage+'.html'));
     await page.evaluate(async () => { await document.fonts.ready; window.fitAll?.(); }); await page.waitForTimeout(300);
+    mkdirSync(dirname(resolve(ziel, b.datei)), { recursive:true });
     await page.screenshot({ path: resolve(ziel, b.datei), omitBackground: !!b.transparent });
     await page.close(); console.log('✓', cfg.ausgabe+'/'+b.datei);
   }

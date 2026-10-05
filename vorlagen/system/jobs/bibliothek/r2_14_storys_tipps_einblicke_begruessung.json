@@ -1,0 +1,12 @@
+{ "titel": "Storys · Tipps, Einblicke, Begrüßung", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/tipp_umkehrjahr.png","typ":"info","kicker":"Tipp","titel":"Umkehrjahr *je Differenz*.","text":"Latente Steuern bewertest du mit dem Satz des Jahres, in dem sich die Differenz abbaut (§ 274 Abs. 2 HGB).","cta":true,"chip":"📌 Jetzt speichern"},
+    {"vorlage":"story","datei":"storys/tipp_hinzurechnung.png","typ":"info","kicker":"Tipp","titel":"Freibetrag *zuerst*, dann ein Viertel.","text":"Bei der Hinzurechnung erst 200.000 € abziehen – vom Rest wird ein Viertel hinzugerechnet."},
+    {"vorlage":"story","datei":"storys/tipp_vorauszahlung.png","typ":"info","kicker":"Tipp","titel":"Vorauszahlungen *anpassen* lassen.","text":"Sinkt der Gewinn, kannst du die Herabsetzung beantragen.\n§ 37 Abs. 3 EStG · § 31 KStG · § 19 Abs. 3 GewStG"},
+    {"vorlage":"story","datei":"storys/tipp_namen.png","typ":"info","kicker":"Tipp","titel":"*Benannte Bereiche* statt $C$12.","text":"Formeln werden lesbar – und brechen nicht, wenn Zeilen dazukommen."},
+    {"vorlage":"story","datei":"storys/mythos_ki.png","typ":"info","kicker":"Mythos","titel":"„KI ersetzt die *Steuerabteilung*.“","text":"Nein. Sie nimmt Routine ab – die Verantwortung bleibt bei Menschen."},
+    {"vorlage":"story","datei":"storys/einblick_ampel.png","typ":"info","kicker":"Hinter dem Code","titel":"Heute gebaut: die *Ampel*.","punkte":["Rot: Hebesatz fehlt","Gelb: Satz prüfen","Grün: abschlussreif"]},
+    {"vorlage":"story","datei":"storys/dm_danke.png","typ":"info","kicker":"Danke für deine Nachricht","titel":"So geht es *weiter*.","punkte":["Die Demo kommt in den nächsten Stunden","Nur Beispieldaten – bitte keine echten Zahlen schicken","Danach: 20 Minuten Gespräch"],"cta":true,"chip":"📅 Termin über den Link in der Bio"},
+    {"vorlage":"story","datei":"storys/willkommen.png","typ":"info","kicker":"Neu hier?","titel":"Willkommen bei *Steuern × Code*.","punkte":["Demo: Tools in Aktion","Praxis: Excel-Schmerz und Lösung","Wissen: Steuern, die rechnen","Hinter dem Code: mein Weg"],"cta":true,"chip":"➕ Folgen"},
+    {"vorlage":"story","datei":"storys/rueckblick_woche1.png","typ":"info","kicker":"Rückblick","titel":"*Woche 1* im Überblick.","punkte":["Neuvorstellung","Reel: Ertragsteuer-Ampel","Karussell: 5 Excel-Fehler"],"cta":true,"chip":"Alles im Profil → @maehrsteuern"}
+  ] }

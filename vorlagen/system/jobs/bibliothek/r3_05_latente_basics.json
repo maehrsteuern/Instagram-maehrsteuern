@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Latente Steuern: aktiv oder passiv?“", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/latente_basics/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Latente Steuern: *aktiv oder passiv*?","sub":"Die Grundlogik nach § 274 HGB – ohne Formelsalat."},
+    {"vorlage":"karussell","datei":"karussell/latente_basics/folie_02.png","typ":"inhalt","saeule":"Passive latente Steuern","titel":"Handelsbilanz *höher* als Steuerbilanz.","text":"Mehr Vermögen im HGB-Abschluss heißt: Später fallen Steuern an. Für einen Passivüberhang gilt Ansatzpflicht.","boxTitel":"BEISPIEL","box":"Degressive AfA nur in der Steuerbilanz."},
+    {"vorlage":"karussell","datei":"karussell/latente_basics/folie_03.png","typ":"inhalt","saeule":"Aktive latente Steuern","titel":"Handelsbilanz *niedriger* als Steuerbilanz.","text":"Später sinken die Steuern. Für einen Aktivüberhang gibt es ein Wahlrecht.","boxTitel":"BEISPIEL","box":"Drohverlustrückstellung – im HGB Pflicht, steuerlich verboten."},
+    {"vorlage":"karussell","datei":"karussell/latente_basics/folie_04.png","typ":"inhalt","saeule":"Bewertung","titel":"Mit dem Satz des *Abbaujahres*.","text":"Maßgeblich ist der unternehmensindividuelle Steuersatz im Zeitpunkt des Abbaus. Abgezinst wird nicht.","boxTitel":"NORM","box":"§ 274 Abs. 2 HGB"},
+    {"vorlage":"karussell","datei":"karussell/latente_basics/folie_05.png","typ":"inhalt","saeule":"Verlustvorträge","titel":"Nur *5 Jahre* zählen.","text":"Aktive latente Steuern auf Verlustvorträge nur, soweit die Verrechnung in den nächsten fünf Jahren zu erwarten ist.","boxTitel":"NORM","box":"§ 274 Abs. 1 Satz 4 HGB"},
+    {"vorlage":"karussell","datei":"karussell/latente_basics/folie_06.png","typ":"cta","saeule":"Wissen","titel":"Umkehrjahr *je Differenz*?","text":"Das Tool bewertet jede Differenz mit dem Satz ihres Abbaujahres – inklusive KSt-Staffel bis 2032."}
+  ] }

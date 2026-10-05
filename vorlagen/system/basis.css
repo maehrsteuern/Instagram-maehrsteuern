@@ -3,12 +3,12 @@
 :root{
   --bg:#0B110E; --bg2:#153A31; --glow:#12302A;
   --gruen:#53C3A2; --gruen-soft:rgba(83,195,162,.12);
-  --text:#EAF1EC; --text2:#C9D6CE; --grau:#8FA398; --rot:#E07A6B;
+  --text:#EAF1EC; --text2:#C9D6CE; --grau:#8FA398; --rot:#E07A6B; --gelb:#E8B04A;
   --serif:"IBM Plex Serif",serif; --sans:"IBM Plex Sans",sans-serif; --mono:"IBM Plex Mono",monospace;
 }
 *{box-sizing:border-box}
 html,body{margin:0;overflow:hidden;background:var(--bg);color:var(--text);font-family:var(--sans)}
-.a{color:var(--gruen)}
+.a{color:var(--gruen)} .r{color:var(--rot)}
 .kicker{font-family:var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--gruen);font-weight:600}
 .chip{display:inline-flex;align-items:center;gap:.5em;padding:.4em 1em;border:3px solid var(--gruen);border-radius:99px;
   background:var(--gruen-soft);font-family:var(--mono);font-weight:600}

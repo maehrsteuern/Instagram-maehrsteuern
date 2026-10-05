@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css"><script src="text.js"></script>
+<!-- Einzelpost 1:1 „Zahl mit Norm“ 1080×1080: kicker, zahl (wird je nach Länge kleiner), titel, text, norm (unten rechts) -->
+<style>
+html,body{width:1080px;height:1080px}
+body{background:radial-gradient(90% 80% at 50% 38%,var(--bg2) 0%,var(--bg) 70%)}
+.pad{position:absolute;top:96px;left:96px;right:96px;bottom:150px;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-size:28px}
+.zahl{font-family:var(--mono);font-weight:600;line-height:1;color:var(--gruen);margin-top:36px;letter-spacing:-.02em;white-space:nowrap;
+  text-shadow:0 0 60px rgba(83,195,162,.35)}
+h2{font-family:var(--serif);font-weight:600;font-size:64px;line-height:1.1;margin:40px 0 0}
+.txt{margin-top:28px;font-size:34px;color:var(--text2);line-height:1.45}
+.foot{position:absolute;left:96px;right:96px;bottom:64px;display:flex;justify-content:space-between;gap:24px;
+  font-family:var(--mono);font-size:24px;color:var(--grau)}
+.bar{position:absolute;left:0;bottom:0;height:8px;width:100%;background:var(--gruen)}
+</style></head><body>
+<div class="pad" id="pad"></div>
+<div class="foot"><span>@maehrsteuern</span><span id="norm"></span></div><div class="bar"></div>
+<script>
+const d = window.DATA || {kicker:'Gesamtsteuersatz',zahl:'29,825 %',titel:'KSt, SolZ und *GewSt* zusammen.',text:'Bei 400 % Hebesatz – Demo-Wert.',norm:'§ 23 KStG · § 11 GewStG'};
+const L = String(d.zahl).length, zs = L <= 4 ? 260 : L <= 6 ? 220 : L <= 8 ? 180 : 150;
+$('pad').innerHTML = `<div class="kicker">${fmt(d.kicker)}</div><div class="zahl" style="font-size:${zs}px">${fmt(d.zahl)}</div>
+  <h2>${fmt(d.titel)}</h2>${d.text?`<div class="txt">${fmt(d.text)}</div>`:''}`;
+$('norm').innerHTML = fmt(d.norm || '');
+</script></body></html>
