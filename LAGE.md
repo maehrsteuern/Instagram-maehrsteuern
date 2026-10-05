@@ -593,6 +593,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 - 03:21 ✍️ Modify comment for workflow trigger clarity ([`9e128d1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9e128d175328a4f9d7fb9122d109e6f4da1e3048))
   - `.github/workflows`
 
+<details><summary>Älter als 7 Tage</summary>
+
 **Di 29.09.2026**
 - 22:47 ✍️ Neuvorstellung manuell in der App geplant, Teaser-Story entfaellt ([`eef8768`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/eef87684b6c812c3da006927c0da28b9dc21df85))
   - Plan: `00-neuvorstellung` status: entwurf → manuell; `00-story-teaser` status: entwurf → entfaellt
@@ -614,3 +616,5 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - `EINRICHTUNG.md`
 - 19:17 ✍️ Instagram-Autopilot: Vorlagen, Beitraege Okt. 2026 und automatisches Posten ([`d04f975`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d04f97515051945cf5190af915df1281805d2b44))
   - Plan: neu `00-neuvorstellung` (2026-10-04 18:30, entwurf); neu `00-story-teaser` (2026-10-04 18:35, entwurf); neu `01-reel-ampel` (2026-10-06 18:30, entwurf); neu `01-story-teaser` (2026-10-06 18:35, entwurf); neu `02-excel-fehler` (2026-10-13 18:30, entwurf); neu `02-story-teaser` (2026-10-13 18:35, entwurf); neu `03-gewst-hinzurechnung` (2026-10-20 18:30, entwurf); neu `03-story-teaser` (2026-10-20 18:35, entwurf); neu `03-story-aufloesung` (2026-10-23 12:15, entwurf); neu `04-reel-mein-weg` (2026-10-27 18:30, wartet_auf_clips); neu `04-story-teaser` (2026-10-27 18:35, entwurf)
+
+</details>
