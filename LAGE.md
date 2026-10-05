@@ -115,8 +115,17 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 09:01 🔀 Merge remote-tracking branch 'origin/claude/instagram' into instagram-merge ([`93ebbbf`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/93ebbbfad07e8fe0dd9864ffd9c6151db587c386))
 - 09:01 ✍️ Bibliothek: 25 Zweifelsfälle entschieden und umgesetzt ([`9c2dcd6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9c2dcd64d6c93ec74e5adb0491d2ef39c2f32014))
   - `LAGE.html`, `assets/bibliothek/PRUEFBERICHT.md`, `assets/bibliothek/bausteine/haken_8b.png`, `assets/bibliothek/karussell/bewirtung/folie_05.png`, `assets/bibliothek/karussell/e_rechnung/folie_03.png`, `assets/bibliothek/karussell/examen/folie_01.png`, `…`
+- 08:56 ✍️ Latente Steuern Folie 6: Hinweis zu kleinen Kapitalgesellschaften präzisiert ([`e0329b6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e0329b680ce9146b3c3876400c272a2511656c16))
+  - `LAGE.html`, `automatik/lage_notizen.md`, `posts/05_2026-10-08_latente_steuern`, `vorlagen/system/jobs/p05_latente_steuern.json`
+- 08:54 ✍️ Prüfzettel latente Steuern: Punkte 4–5 geprüft, Box Folie 6 zur Entscheidung ([`f92e962`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f92e96267a45ac4725e3f0247683590b002cd476))
+  - `LAGE.html`, `automatik/lage_notizen.md`, `posts/05_2026-10-08_latente_steuern`
+- 08:51 ✍️ Prüfzettel latente Steuern: Punkte 1–3 mit Quellen geprüft ([`ac252f8`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ac252f80ce0dc6a0d87aa1d8b5c975bd4fa4a80a))
+  - `LAGE.html`, `automatik/lage_notizen.md`, `posts/05_2026-10-08_latente_steuern`
+- 08:47 📈 Statistik 2026-10-05 ([`db0069d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/db0069da35cb6b2d766db3757f07a80d67c9001c))
+  - `automatik/statistik`
 - 08:47 🔀 Merge: Bibliothek gegengelesen (10 Korrekturen, Prüfbericht) ([`686ac1b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/686ac1bfb2362e5b9bf0745eb19ff13b6ac1c796))
 - 08:39 ✍️ Bibliothek gegengelesen: 10 Korrekturen, 25 Zweifelsfälle im Prüfbericht ([`d3ee26f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/d3ee26f6780915231a438dacbce0b5cddb704709))
   - `LAGE.html`, `assets/bibliothek/PRUEFBERICHT.md`, `assets/bibliothek/einzelposts/zahl_zinsen.png`, `assets/bibliothek/karussell/e_rechnung/folie_03.png`, `assets/bibliothek/karussell/forschungszulage/folie_03.png`, `assets/bibliothek/karussell/gewst_zahlen/folie_04.png`, `…`
