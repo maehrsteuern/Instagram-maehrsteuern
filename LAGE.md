@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 10:10 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 11:00 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -130,6 +130,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 11:00 🤖 Autopilot: Dateien fuer 02-story-umfrage vorbereitet ([`dc7f4d4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/dc7f4d46478243f426a7bdc2245de6512b8cfdb2))
+  - `posts/02_2026-10-06_excel_fehler`
 - 10:10 🔀 Merge pull request #32 from maehrsteuern/claude/sweet-newton-56icda ([`4aef643`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4aef643f42aeae8410a34b2be6074cbcb9f67031))
 - 10:04 ✍️ Lage-Seite: Pages-Paket je Versuch eindeutig benennen ([`b0d954d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b0d954dd50ff5ac191e0c5bc363850805a183eb3))
   - `.github/workflows`
