@@ -65,7 +65,23 @@ if (FOLDER / "account.csv").exists() and f"\n{today}," in (FOLDER / "account.csv
     print(f"Stats for {today} already exist.")
     raise SystemExit(0)
 
-account = get(USER, fields="followers_count,follows_count,media_count")
+def diagnose():
+    """Which account does IG_TOKEN belong to, and does IG_USER_ID match it? (Only the username is printed.)"""
+    try:
+        me = get("me", fields="user_id,username")
+    except requests.HTTPError as e:
+        return f"IG_TOKEN itself is rejected ({e}) – generate a new token for @maehrtax (SETUP.md)."
+    if str(me.get("user_id")) == USER or str(me.get("id")) == USER:
+        return f"IG_TOKEN belongs to @{me.get('username')} and IG_USER_ID matches – the token lacks permissions."
+    return (f"IG_TOKEN belongs to @{me.get('username')}, but IG_USER_ID is a different ID. Set IG_USER_ID to the "
+            "Instagram account ID shown next to the token in the Meta app (API setup with Instagram login) – "
+            "not the Facebook page's Instagram ID (that one is FB_IG_USER_ID).")
+
+
+try:
+    account = get(USER, fields="followers_count,follows_count,media_count")
+except requests.HTTPError as e:
+    sys.exit(f"✗ Account call failed: {e}\n→ {diagnose()}")
 append(FOLDER / "account.csv", [{"date": today, **{k: account.get(k) for k in ("followers_count", "follows_count", "media_count")}}],
        ["date", "followers_count", "follows_count", "media_count"])
 
