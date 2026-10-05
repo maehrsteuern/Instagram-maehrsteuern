@@ -6,5 +6,6 @@
     {"vorlage":"story","datei":"storys/teaser_afa.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Die degressive AfA ist *zurück*."},
     {"vorlage":"story","datei":"storys/teaser_vga.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"5 Klassiker der *vGA*.","bild":"../../assets/bibliothek/karussell/vga/folie_01.png"},
     {"vorlage":"story","datei":"storys/teaser_formeln.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"5 Formeln für *Steuerleute*."},
-    {"vorlage":"story","datei":"storys/teaser_ki.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Was *KI* heute schon kann.","bild":"../../assets/bibliothek/karussell/ki_steuer/folie_01.png"}
+    {"vorlage":"story","datei":"storys/teaser_ki.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Was *KI* heute schon kann.","bild":"../../assets/bibliothek/karussell/ki_steuer/folie_01.png"},
+    {"vorlage":"story","datei":"storys/teaser_erechnung.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Musst du 2027 schon *umstellen*?","bild":"../../assets/bibliothek/karussell/e_rechnung/folie_01.png"}
   ] }
