@@ -115,6 +115,11 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 08:29 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`a465237`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a4652376cdd635f24d23f9d1da551b6e32c8da58))
+- 08:29 💼 LinkedIn-Paket latente Steuern: „Abschluss 2026“ → „spätestens jetzt“ ([`f3959e2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f3959e2020519cf14d0f0930ddac914db5066b55))
+  - `LAGE.html`, `posts/05_2026-10-08_latente_steuern`
+- 08:29 ✍️ Lage-Notiz: Puffer 10 Min. am Demo-Link als offener Chrome-Schritt ([`b444ec7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b444ec7b5dcc7c5b647219ede693ccc5b9bf8f35))
+  - `LAGE.html`, `automatik/lage_notizen.md`
 - 08:29 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`c364a4e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c364a4eacdad154f62e5d7b8663483c242213f4f))
 - 08:28 🔀 Merge branch 'claude/instagram' of https://github.com/maehrsteuern/Instagram-maehrsteuern into claude/instagram ([`85a1dfd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/85a1dfd6974909865ccd70e2981a3796672f54a3))
 - 08:27 ✍️ Wochenbericht: Demo-Zahlen aus Reclaim-Pflichtfeld + Kalender, dm_tracking nicht mehr angezeigt ([`714b0eb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/714b0eb0b4c9cc35d73cb7f9a5ac3d874d340d3b))
