@@ -8,7 +8,7 @@
      Mehrere Angaben in einem Kommentar gehen auch. Übernommen wird still in den Issue-Text (keine Antwort-Mail).
 
 Quellen: automatik/statistik/konto.csv + beitraege.csv (Instagram), geschlossene Radar-Issues (Haken),
-automatik/interaktion/kommentare.json (Kommentar-Hilfe), strategie/dm_tracking.csv (termin_gebucht = ja),
+automatik/interaktion/kommentare.json (Kommentar-Hilfe), strategie/dm_tracking.csv (nur noch in woche.csv, nicht im Bericht),
 Demo-Buchungen als Kopie im Kalender „maehrsteuern Autopilot“ (Apps-Script automatik/apps_script/demo_kopie.gs).
 Alle Werte landen zusätzlich in automatik/statistik/woche.csv.
 Umgebung: GH_TOKEN, GITHUB_REPOSITORY, GOOGLE_SA_KEY + GOOGLE_CALENDAR_ID (optional, für Demo-Buchungen).
@@ -65,20 +65,26 @@ def follower(von, bis):
 
 
 def beitraege(von, bis):
-    """Letzter Stand je Beitrag bis Wochenende. Aufrufe der Woche = Zuwachs je Beitrag gegenüber dem Stand vor der
-    Woche – fehlt der (Statistik lief noch nicht), zählt der erste Stand in der Woche als Basis, damit alte Aufrufe
-    nicht als neu erscheinen. Top 3 nur aus Beiträgen der letzten 4 Wochen."""
+    """Letzter Stand je Beitrag bis Wochenende. Der Bericht läuft So ~18:00, das Sonntags-Reel geht erst 19:30
+    online – „neu“ ist deshalb, was von So der Vorwoche bis Sa gepostet wurde (sonst fiele jedes Sonntags-Reel
+    durch beide Berichte). Aufrufe der Woche = Zuwachs je Beitrag gegenüber dem Stand vor der Woche; neue Beiträge
+    zählen ab 0. Fehlt der Vorwochen-Stand, zählt der erste Stand in der Woche als Basis, damit alte Aufrufe nicht
+    als neu erscheinen. Top 3 nur aus Beiträgen der letzten 4 Wochen."""
+    ab, bis_neu = (von - timedelta(days=1)).isoformat(), (bis - timedelta(days=1)).isoformat()
     zeilen = sorted(lesen(STATISTIK / "beitraege.csv"), key=lambda z: z["datum"])
     stand_ende, basis = {}, {}
     for z in zeilen:
+        if z["gepostet"] >= ab:  # neu: Basis 0, keine Vorwochen-Zeile
+            if z["datum"] <= bis.isoformat():
+                stand_ende[z["id"]] = z
+            continue
         if z["datum"] < von.isoformat():
             basis[z["id"]] = z
         elif z["datum"] <= bis.isoformat():
-            if z["id"] not in basis and z["gepostet"] < von.isoformat():
-                basis[z["id"]] = z  # erster Stand in der Woche
+            basis.setdefault(z["id"], z)  # erster Stand in der Woche
             stand_ende[z["id"]] = z
     views = sum(max(0, zahl(z["views"]) - zahl(basis.get(i, {}).get("views"))) for i, z in stand_ende.items())
-    neu = [z for z in stand_ende.values() if von.isoformat() <= z["gepostet"] <= bis.isoformat()]
+    neu = [z for z in stand_ende.values() if ab <= z["gepostet"] <= bis_neu]
     frisch = [z for z in stand_ende.values() if z["gepostet"] >= (von - timedelta(days=21)).isoformat() and zahl(z["reach"]) >= 20]
     top = sorted(frisch, key=lambda z: -(zahl(z["saved"]) + zahl(z["shares"])) / max(1, zahl(z["reach"])))[:3]
     return views, neu, top
@@ -202,11 +208,9 @@ def text(z, neu, top):
         "|---|---|",
         f"| ManyChat gesendet | {hand('manychat_gesendet')} |",
         f"| Klicks Demo-Link | {hand('manychat_klicks')} |",
-        f"| Demos gebucht (von Hand) | {hand('demos_hand')} |",
-        f"| Demos laut Kalender (Reclaim) | {z.get('demos_kalender') or '_noch nicht verbunden_'} |",
-        f"| Demos laut `dm_tracking.csv` | {z['demos_tracking']} |",
-        f"| Herkunft (Buchungsfeld) | {z.get('herkunft_kalender') or '–'} |",
-        f"| Herkunft (von Hand) | {hand('herkunft', '_offen_')} |",
+        f"| Demos gebucht (Reclaim, automatisch) | {z.get('demos_kalender') or '_noch nicht verbunden_'} |",
+        f"| Herkunft („Woher kennst du mich?“) | {z.get('herkunft_kalender') or '–'} |",
+        f"| Korrektur von Hand (Demos / Herkunft) | {hand('demos_hand', '–')} / {hand('herkunft', '–')} |",
         "",
         "**Nachtragen** – einfach hier kommentieren, wird still übernommen:",
         "`demos 2` · `manychat 14/6` (gesendet/Klicks) · `herkunft manychat 1, bio 1`",
