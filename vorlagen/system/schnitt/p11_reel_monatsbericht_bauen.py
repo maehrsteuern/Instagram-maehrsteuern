@@ -3,7 +3,7 @@ Zeiten = Sekunden in ton/stimme_final.flac (aus 4 Teilen der Rohaufnahme zusamme
 import json
 from pathlib import Path
 
-P = "../../posts/11_2026-10-11_reel_monatsbericht"
+P = "../../posts/11_2026-10-07_reel_monatsbericht"
 ENDE = 39.6
 ZOOM = {"von": [540, 960, 1080], "nach": [540, 930, 1010]}
 # (Bild, von, bis, Untertitel [(Text, von, bis)], Extra)

@@ -1,24 +1,24 @@
 {
- "ausgabe": "../../posts/11_2026-10-11_reel_monatsbericht/reel.mp4",
+ "ausgabe": "../../posts/11_2026-10-07_reel_monatsbericht/reel.mp4",
  "fps": 30,
  "quellen": {
   "hook": {
-   "datei": "../../posts/11_2026-10-11_reel_monatsbericht/bausteine/hook.png"
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/hook.png"
   },
   "vorher": {
-   "datei": "../../posts/11_2026-10-11_reel_monatsbericht/bausteine/vorher.png"
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/vorher.png"
   },
   "schritt1": {
-   "datei": "../../posts/11_2026-10-11_reel_monatsbericht/bausteine/schritt1.png"
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/schritt1.png"
   },
   "schritt2": {
-   "datei": "../../posts/11_2026-10-11_reel_monatsbericht/bausteine/schritt2.png"
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/schritt2.png"
   },
   "schritt3": {
-   "datei": "../../posts/11_2026-10-11_reel_monatsbericht/bausteine/schritt3.png"
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/schritt3.png"
   },
   "ende": {
-   "datei": "../../posts/11_2026-10-11_reel_monatsbericht/bausteine/ende.png"
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/ende.png"
   }
  },
  "szenen": [
@@ -358,7 +358,7 @@
  ],
  "ton": [
   {
-   "datei": "../../posts/11_2026-10-11_reel_monatsbericht/ton/stimme_final.flac",
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/ton/stimme_final.flac",
    "ab": 0,
    "lautstaerke": 1.0,
    "ein": 0.02,

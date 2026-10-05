@@ -130,17 +130,6 @@
       "issue": 7
     },
     {
-      "id": "01-story-teaser",
-      "zeit": "2026-10-04 19:35",
-      "typ": "story",
-      "ordner": "posts/01_2026-10-04_reel_ampel",
-      "bilder": [
-        "story_so_teaser.png"
-      ],
-      "status": "pause",
-      "hinweis": "04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“."
-    },
-    {
       "id": "01-reel-5dinge",
       "zeit": "2026-10-04 19:30",
       "typ": "reel",
@@ -153,6 +142,17 @@
       "media_id": "17916550404258137",
       "link": "https://www.instagram.com/reel/DeFLK53ALSs/",
       "veroeffentlicht_am": "2026-10-04 19:30"
+    },
+    {
+      "id": "01-story-teaser",
+      "zeit": "2026-10-04 19:35",
+      "typ": "story",
+      "ordner": "posts/01_2026-10-04_reel_ampel",
+      "bilder": [
+        "story_so_teaser.png"
+      ],
+      "status": "pause",
+      "hinweis": "04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“."
     },
     {
       "id": "01-story-teaser-5dinge",
@@ -219,27 +219,27 @@
       "issue": 12
     },
     {
-      "id": "06-reel-split",
+      "id": "11-reel-monatsbericht",
       "zeit": "2026-10-07 19:30",
       "typ": "reel",
-      "ordner": "posts/02_2026-10-06_excel_fehler",
-      "video": "reel_split.mp4",
-      "titelbild": "reel_split_titel.png",
-      "text": "bildunterschrift_reel.txt",
-      "status": "freigegeben",
-      "hinweis": "Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen.",
-      "issue": 13
+      "ordner": "posts/11_2026-10-07_reel_monatsbericht",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "entwurf",
+      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s",
+      "issue": 36
     },
     {
-      "id": "06-story-teaser",
+      "id": "11-story-teaser",
       "zeit": "2026-10-07 19:35",
       "typ": "story",
-      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "ordner": "posts/11_2026-10-07_reel_monatsbericht",
       "bilder": [
-        "story_so_teaser_reel.png"
+        "story_so_teaser.png"
       ],
-      "status": "freigegeben",
-      "issue": 13
+      "status": "entwurf",
+      "issue": 36
     },
     {
       "id": "05-latente-steuern",
@@ -306,27 +306,27 @@
       "issue": 15
     },
     {
-      "id": "11-reel-monatsbericht",
+      "id": "06-reel-split",
       "zeit": "2026-10-11 19:30",
       "typ": "reel",
-      "ordner": "posts/11_2026-10-11_reel_monatsbericht",
-      "video": "reel.mp4",
-      "titelbild": "titelbild.png",
-      "text": "bildunterschrift.txt",
-      "status": "entwurf",
-      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s",
-      "issue": 36
+      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "video": "reel_split.mp4",
+      "titelbild": "reel_split_titel.png",
+      "text": "bildunterschrift_reel.txt",
+      "status": "freigegeben",
+      "hinweis": "Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen. · 05.10.: auf So 11.10. getauscht – Mi 07.10. läuft das Monatsbericht-Reel als Follow-up zum 5-Dinge-Reel.",
+      "issue": 13
     },
     {
-      "id": "11-story-teaser",
+      "id": "06-story-teaser",
       "zeit": "2026-10-11 19:35",
       "typ": "story",
-      "ordner": "posts/11_2026-10-11_reel_monatsbericht",
+      "ordner": "posts/02_2026-10-06_excel_fehler",
       "bilder": [
-        "story_so_teaser.png"
+        "story_so_teaser_reel.png"
       ],
-      "status": "entwurf",
-      "issue": 36
+      "status": "freigegeben",
+      "issue": 13
     },
     {
       "id": "03-story-quiz",

@@ -1,4 +1,4 @@
-# Reel So 11.10. – „Nummer 1: Der Monatsbericht“
+# Reel Mi 07.10. – „Nummer 1: Der Monatsbericht“
 
 Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.). Keine Werbung, kein TOOL-CTA.
 Sprechtext: `posts/sprechtexte.md` → „So 11.10.“. Bilder: `vorlagen/system/jobs/p11_reel_monatsbericht.json` (Vorlage `fuenf_dinge.html`, m-Bilder).
