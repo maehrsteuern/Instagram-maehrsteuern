@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 09:01 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 09:02 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -115,6 +115,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 09:02 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`322e9a0`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/322e9a0f68abb1e6c8cfc94fd5c361e53fe38a23))
+- 09:02 💼 LinkedIn Excel-Fehler: Punkt 1 um KSt-Senkung ab 2028 ergänzt ([`e2566fb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e2566fb480b207cb97497a659f0e616290ba79e0))
+  - `LAGE.html`, `posts/02_2026-10-06_excel_fehler`
 - 09:01 🔀 Merge remote-tracking branch 'origin/claude/instagram' into instagram-merge ([`93ebbbf`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/93ebbbfad07e8fe0dd9864ffd9c6151db587c386))
 - 09:01 ✍️ Bibliothek: 25 Zweifelsfälle entschieden und umgesetzt ([`9c2dcd6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9c2dcd64d6c93ec74e5adb0491d2ef39c2f32014))
   - `LAGE.html`, `assets/bibliothek/PRUEFBERICHT.md`, `assets/bibliothek/bausteine/haken_8b.png`, `assets/bibliothek/karussell/bewirtung/folie_05.png`, `assets/bibliothek/karussell/e_rechnung/folie_03.png`, `assets/bibliothek/karussell/examen/folie_01.png`, `…`
