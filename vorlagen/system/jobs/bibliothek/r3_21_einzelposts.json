@@ -6,7 +6,7 @@
     {"vorlage":"zahl","datei":"einzelposts/zahl_geschenke.png","kicker":"Geschenke","zahl":"50 €","titel":"Pro Person und *Jahr*.","text":"Ein Euro mehr – und der ganze Betrag ist nicht abziehbar.","norm":"§ 4 Abs. 5 Nr. 1 EStG"},
     {"vorlage":"zahl","datei":"einzelposts/zahl_zinsschranke.png","kicker":"Zinsschranke","zahl":"3 Mio. €","titel":"Die *Freigrenze*.","text":"Darunter ist der Nettozinsaufwand voll abziehbar.","norm":"§ 4h Abs. 2 EStG"},
     {"vorlage":"zahl","datei":"einzelposts/zahl_mindeststeuer.png","kicker":"Mindeststeuer","zahl":"15 %","titel":"Effektiv, *je Land*.","text":"Für Gruppen ab 750 Mio. € Umsatz.","norm":"MinStG"},
-    {"vorlage":"zahl","datei":"einzelposts/zahl_zinsen.png","kicker":"Steuerzinsen","zahl":"1,8 %","titel":"Pro *Jahr*.","text":"0,15 % je vollem Monat – nach 15 Monaten Karenzzeit.","norm":"§ 233a · § 238 AO"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_zinsen.png","kicker":"Steuerzinsen","zahl":"1,8 %","titel":"Pro *Jahr*.","text":"0,15 % je vollen Monat – nach 15 Monaten Karenzzeit.","norm":"§ 233a · § 238 AO"},
     {"vorlage":"zahl","datei":"einzelposts/zahl_belege.png","kicker":"Aufbewahrung","zahl":"8 Jahre","titel":"Für *Buchungsbelege*.","text":"Seit 2025 – statt bisher 10 Jahre.","norm":"§ 147 Abs. 3 AO"},
     {"vorlage":"zahl","datei":"einzelposts/zahl_kleinunternehmer.png","kicker":"Kleinunternehmer","zahl":"25.000 €","titel":"Grenze im *Vorjahr*.","text":"Und im laufenden Jahr höchstens 100.000 € – seit 2025.","norm":"§ 19 Abs. 1 UStG"},
     {"vorlage":"zahl","datei":"einzelposts/zahl_forschung.png","kicker":"Forschungszulage","zahl":"12 Mio. €","titel":"Bemessungs­grundlage *ab 2026*.","text":"25 % Zulage, für KMU 35 %.","norm":"FZulG"},
