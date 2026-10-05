@@ -1,15 +1,17 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 03.10. 19:52 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 07:03 Uhr._
 
-**Als Nächstes online:** 🎬 Reel `01-reel-ampel` am **So 04.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
 - Neustart läuft: Start-Storys + Vorfreude (30.09.) und Neuvorstellung (Do 01.10. 18:30, von Hand) sind online. Nach 2 h: 26 erreicht, 6× geteilt, 0 neue Follower. Angepinnt ✓ (03.10.). Offen von Hand: Highlight „Start 👋“.
 - Wochenrhythmus ab Okt. steht im Prompt der Content-Fabrik (Mo + Do 08:47, max. 4 Beiträge pro Lauf): Di/Do Karussell + Teaser, Mi Begleit-Reel, Fr Wissens-Reel oder Stimm-Reel, So Reel + Teaser, täglich 12:15 Story.
 - Content-Fabrik nutzt ab Mo 05.10. die Lernpunkte aus `strategie/wettbewerb.md` (über Abschnitt in `08_hooks.md`): pro Lauf ≥ 1 Hook „konkreter Fall“ oder „Prüfer/Finanzamt“, Lernpunkt im Freigabe-Issue vermerkt. Routine-Prompt selbst unverändert (nur aus ihrer eigenen Sitzung änderbar).
-- Bis 10.10. alles freigegeben: Reel Ampel mit Stimme (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
+- **So 04.10. umgebaut:** Statt Ampel-Reel geht 19:30 das Community-Reel „5 Sachen, die ich aus Excel rausgeschmissen hab“ online (Loris' Sprachnachricht, 41 s, keine Werbung, CTA: Zahl 1–5 in die Kommentare) + neue Teaser-Story 19:35. Ampel-Reel und alter Teaser stehen auf `pause` – kann später wieder eingeplant werden. Die Kommentar-Antworten (welche Nummer?) sind die Themen für die nächsten Reels.
+- **Doppel-Post 04.10. behoben:** Das 5-Dinge-Reel ging zweimal raus (DeFLK53ALSs = im Plan, DeFLSBNFUXy = Duplikat, von Loris am 04.10. gelöscht ✓). Ursache: Ein Lauf startet mit dem Stand vom Startzeitpunkt und hat den Plan nur nach dem Warten neu geladen. `posten.py` holt jetzt direkt vor jedem Posten den neuesten Plan; klappt das nicht, wird nicht gepostet (nächster Lauf holt nach).
+- Bis 10.10. alles freigegeben: 5-Dinge-Reel (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
 - Latente Steuern bitte fachlich gegenlesen (`pruefzettel.md` im Post-Ordner; Bildunterschrift schon auf „Spätestens im Abschluss 2026“ angepasst). Änderungen bis Mi 07.10. abends.
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.): **Loris baut die Konzeption selbst um (03.10.)** – bis dahin gilt Variante B (`drehbuch_markenweg.md`) nicht als gesetzt, keine Sprachnachricht anfordern, nichts schneiden. Status bleibt `wartet_auf_sprachnachricht`, bis das neue Konzept da ist. **KI-Hinweis** (falls KI-Karten bleiben): Hinweis in der Bildunterschrift, Label nach dem Posten in der App prüfen.
@@ -24,6 +26,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - **Fristen** (`automatik/erinnerungen.json` → „Braucht dich“ + Kalender): LinkedIn #18 Mi 07.10. 08:00 (Termin kommt schon automatisch) · Reel-Vergleich Ampel/Split → Anzeigen-Start ca. Mo 12.10. (Chrome Modul 2 am 04.10. nur vorbereiten) · **ManyChat-Trial endet Fr 16.10.** → Entscheidung Loris (Erinnerung Mi 14.10.).
 - **Meta-App „maehrsteuern Autopilot“** bleibt im Entwicklungsmodus. Die laufenden IG-Schlüssel und die Statistik sind davon nicht betroffen (eigenes Konto mit App-Rolle). Nur die Hashtag-Suche braucht die Freigabe → Checkliste [#26](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/26).
 - **Reclaim-Hinweis:** Claudes Reclaim-Zugang (Connector) zeigt auf **Konto B (Outlook, Lite)**, nicht auf das Demo-Konto. Für die Automatik nicht nutzen; Demo-Buchungen kommen nur über das Apps-Script „maehrsteuern Demo-Kopie“.
+- **Lage als Seite (04.10.):** `LAGE.html` mit Kacheln, Kalender, Diagrammen und filterbarem Protokoll, wird mit LAGE.md neu geschrieben und über GitHub Pages veröffentlicht (https://maehrsteuern.github.io/Instagram-maehrsteuern/). Einmalig von Hand: Settings → Pages → Source „GitHub Actions“.
 
 ## 👉 Braucht dich
 
@@ -31,13 +34,12 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - ⏳ **Wartet auf sprachnachricht** `04-reel-mein-weg` (Di 20.10. 19:30) – Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🟡 **Freigeben** `04-story-teaser` (Di 20.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
+- ⏰ **💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)** (Mi 07.10. 08:00) – PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5).
 
 ## ⏭️ Nächste 7 Tage
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| So 04.10. 19:30 | 🎬 Reel `01-reel-ampel` | 🟢 freigegeben (geht automatisch online) | Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
-| So 04.10. 19:35 | 📱 Story `01-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
 | Mo 05.10. 12:15 | 📱 Story `02-story-umfrage` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 06.10. 19:35 | 📱 Story `02-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
@@ -65,6 +67,8 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
+- So 04.10. 19:35 · 📱 Story `01-story-teaser-5dinge` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4000661016565086455) (online 2026-10-04 19:46)
+- So 04.10. 19:30 · 🎬 Reel `01-reel-5dinge` · [ansehen](https://www.instagram.com/reel/DeFLK53ALSs/) (online 2026-10-04 19:30)
 - Sa 03.10. 12:15 · 📱 Story `08-story-tipp` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3999709094836161880) (online 2026-10-03 12:15)
 - Fr 02.10. 12:15 · 📱 Story `01-story-frage` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3998984318181825905) (online 2026-10-02 12:15)
 - Do 01.10. 18:30 · 🖼️ Karussell `00-neuvorstellung` · [ansehen](https://www.instagram.com/p/Dd9V5HAAhcL/) (online 2026-10-01 18:30)
@@ -75,17 +79,19 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
-**351 Follower** · 2 Beiträge im Profil (Abruf 2026-10-03) · **+0** seit 2026-10-02
-Reichweite pro Tag: 30.09. **82** · 01.10. **68** · 02.10. **79** · 03.10. **20**
+**351 Follower** · 2 Beiträge im Profil (Abruf 2026-10-04) · **+0** seit 2026-10-03
+Reichweite pro Tag: 01.10. **68** · 02.10. **79** · 03.10. **63** · 04.10. **175**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| Sa 03.10. 12:15 | 15 | 13 | 0 | 0 | 0 |
+| So 04.10. 19:46 | 30 | 24 | 0 | 0 | 0 |
+| So 04.10. 19:50 | 29 | 17 | 0 | 0 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 280 (+37) | 102 | 7 | 2 | 2 | 16 |
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 271 (+9) | 161 | 6 | 2 | 2 | 7 |
+| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 223 | 160 | 4 | 2 | 3 | 0 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 298 (+18) | 107 | 7 | 2 | 2 | 16 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 278 (+7) | 165 | 6 | 2 | 2 | 7 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -100,12 +106,55 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 | Schlüssel verlängern | am 1. des Monats ca. 06:27 | ✅ ok |
 | Radar + LinkedIn | täglich ca. 07:00 (Issue mit Arbeitsliste) | ✅ ok |
 | Kommentare | nach jedem Posten-Takt (Vorschläge ins Issue) | ✅ ok |
-| Wochenbericht | sonntags ca. 18:00 (ein Issue) | – |
+| Wochenbericht | sonntags ca. 18:00 (ein Issue) | ✅ ok |
 | Musik holen | nur von Hand | ✅ ok |
 
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
+
+**Mo 05.10.2026**
+- 07:03 📡 Radar 2026-10-05: 8 Beiträge, 0 DM-Entwürfe ([`c7af627`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c7af627103cd7673c90dbc18c53d97522c1b2062))
+  - `automatik/interaktion`
+
+**So 04.10.2026**
+- 21:28 📈 Statistik 2026-10-04 ([`1e9ea9e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1e9ea9ea7c92280cb4d24c0b8a6636c28d6fa5fb))
+  - `automatik/statistik`
+- 21:04 ✍️ Reel-Regeln: Listen-Reels hoechstens 3 Punkte, unter 20 s (Erkenntnis 5-Dinge-Reel) ([`4878531`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/48785317faa85863a94d49e61e1aab4b027e1cbe))
+  - `strategie/09_reel_regeln.md`
+- 20:38 📈 Statistik 2026-10-04 ([`1096968`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1096968c6b9b9a9b9156e5f097d3f95312fba9bb))
+  - `automatik/statistik`
+- 19:48 🤖 Autopilot: vor jedem Posten neuesten Plan holen – verhindert Doppel-Posts ([`5738537`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5738537125e7e824964b436914029f8446af3573))
+  - `LAGE.html`, `automatik/lage_notizen.md`, `automatik/posten.py`
+- 19:46 🤖 Autopilot: 01-story-teaser-5dinge veroeffentlicht ([`a850704`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a850704aa2a081fcd149efb9a8f2a15bbd8df45a))
+  - Plan: `01-story-teaser-5dinge` status: freigegeben → veroeffentlicht; `01-story-teaser-5dinge` online: https://www.instagram.com/stories/maehrsteuern/4000661016565086455
+- 19:46 🤖 Autopilot: Dateien fuer 01-story-teaser-5dinge vorbereitet ([`3b9e1ab`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3b9e1ab11b4c811de1de4d0d4e98ed69cfa2910c))
+  - `posts/01_2026-10-04_reel_5dinge`
+- 19:30 🤖 Autopilot: 01-reel-5dinge veroeffentlicht ([`f6ad3ab`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f6ad3ab088f3b8f0749e5dc1831c69714e06b3b3))
+  - Plan: `01-reel-5dinge` status: freigegeben → veroeffentlicht; `01-reel-5dinge` online: https://www.instagram.com/reel/DeFLK53ALSs/
+- 18:01 ✍️ Wochenbericht KW 2026-40 ([`3c6a4f2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3c6a4f232ad9525921acc222113685ad90c9eb41))
+  - `automatik/statistik`
+- 16:15 🤖 Autopilot: Dateien fuer Probelauf 01-reel-5dinge vorbereitet ([`2657c66`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2657c66bd11cb4207c840b9cb22841fdc37cee8b))
+  - `posts/01_2026-10-04_reel_5dinge`
+- 16:14 ✍️ Stand claude/instagram übernommen ([`3a8d366`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3a8d36658bc954aed59859eee9526d6a1d691129))
+- 16:14 ✍️ Reel 04.10. umgebaut: „5 Sachen, die ich aus Excel rausgeschmissen hab“ (Community statt Werbung) ([`353300b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/353300b53859ce2859db10a565744c53c84c2d74))
+  - Plan: neu `01-reel-5dinge` (2026-10-04 19:30, freigegeben); neu `01-story-teaser-5dinge` (2026-10-04 19:35, freigegeben)
+- 15:54 ✍️ Ampel-Reel und Teaser 04.10. pausiert: Go zurückgenommen, wird durch Reel „5 Dinge mit Code statt Excel“ ersetzt ([`ca552b3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ca552b33fbf7c6500de59b076c41b3ff7e916f09))
+  - Plan: `01-reel-ampel` status: freigegeben → pause; `01-story-teaser` status: freigegeben → pause
+- 14:52 📈 Statistik 2026-10-04 ([`e5a407c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e5a407c19b52d51642910375205b1c48b17183e1))
+  - `automatik/statistik`
+- 13:07 📡 Radar 2026-10-04: 8 Beiträge, 0 DM-Entwürfe ([`996fe74`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/996fe74d4dbf888d86c5d28492b53f48b2ec0864))
+  - `automatik/interaktion`
+- 08:59 ✍️ Tagesbericht 04.10.; Vortagsvergleich jetzt Morgen gegen Morgen (Schnappschuss je Bericht) ([`4d41c01`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4d41c016723ad265a0331f9ab1350a2f5acbda92))
+  - `automatik/berichte`, `automatik/tagesbericht.py`
+- 08:47 📈 Statistik 2026-10-04 ([`91fa33b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/91fa33b5962d62e23d7996789d41c1b65de38ed2))
+  - `automatik/statistik`
+- 07:02 📡 Radar 2026-10-04: 8 Beiträge, 0 DM-Entwürfe ([`9ee31d0`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9ee31d0805fd2abb5e1444972821876d9f5f3dd8))
+  - `automatik/interaktion`
+- 01:03 ✍️ Lage-Seite: Veröffentlichung darf scheitern, ohne die Lage rot zu färben ([`015c30e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/015c30e3dbcf0bef7616834ed5c397900c529435))
+  - `.github/workflows`
+- 01:03 ✍️ Lage als Seite: LAGE.html mit Kacheln, Kalender, Diagrammen und Protokoll, Veröffentlichung über GitHub Pages ([`110b299`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/110b29958834522e6296662811988d45acc5aa14))
+  - `.claude/skills/lage/SKILL.md`, `.github/workflows`, `CLAUDE.md`, `LAGE.html`, `README.md`, `automatik/lage.py`, `…`
 
 **Sa 03.10.2026**
 - 19:52 🔀 Merge: Radar drosselfest, Wochenbericht geprüft, Fristen in Lage + Kalender ([`01b05e7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/01b05e73e2d2ae3c6aef2f8e5390e6d4ea2defbe))

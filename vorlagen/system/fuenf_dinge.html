@@ -1,0 +1,103 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css">
+<!-- Reel „5 Dinge, die ich aus Excel rausgeschmissen hab“ 1080×1920. DATA.bild = hook | 5a..1b | ende. a = Excel (vorher), b = Code (heute). Nur Beispieldaten.
+     Bildbereich 200–1220 px, darunter bleibt Platz für die Untertitel (y≈1330) und die Instagram-Leiste. -->
+<style>
+html,body{width:1080px;height:1920px}
+body{background:radial-gradient(110% 60% at 50% 34%,var(--glow) 0%,var(--bg) 70%)}
+.kopf{position:absolute;left:70px;right:150px;top:215px}
+.nr{display:flex;align-items:center;gap:26px}
+.nr b{font-family:var(--serif);font-size:150px;line-height:1;color:var(--gruen);font-weight:600}
+.nr.rot b{color:var(--rot)}
+.nr span{font-family:var(--mono);font-size:30px;letter-spacing:.22em;text-transform:uppercase;color:var(--grau);line-height:1.4}
+.nr span i{font-style:normal;display:block;color:var(--text);font-family:var(--serif);letter-spacing:0;text-transform:none;font-size:56px;font-weight:600}
+.panel{position:absolute;left:60px;right:60px;top:500px;height:700px;border-radius:26px;overflow:hidden}
+/* Excel-Look */
+.xl{background:#fff;color:#1f1f1f;font-family:Calibri,"IBM Plex Sans",sans-serif;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.xl .t{height:62px;background:#1d6f42;color:#fff;display:flex;align-items:center;padding:0 26px;font-size:27px;font-weight:600}
+.xl .fx{height:54px;border-bottom:2px solid #d4d4d4;display:flex;align-items:center;font-size:25px}
+.xl .fx .n{width:110px;border-right:2px solid #d4d4d4;padding-left:16px;color:#555}
+.xl .fx .f{padding-left:16px;font-family:var(--mono);color:#b00;white-space:nowrap}
+.xl table{border-collapse:collapse;width:100%;font-size:28px}
+.xl td,.xl th{border:1px solid #d9d9d9;height:58px;padding:0 14px;white-space:nowrap;text-align:right}
+.xl th{background:#f3f3f3;color:#666;font-weight:400;text-align:center;width:56px}
+.xl td.l{text-align:left}
+.err{color:#c00;font-weight:700;background:#fde2e2}
+.mark{background:#fff2a8}
+/* Code-Look */
+.code{background:#0F1714;border:3px solid #26342D;font-family:var(--mono);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.code .t{height:62px;display:flex;align-items:center;gap:14px;padding:0 26px;border-bottom:2px solid #212C27;color:var(--grau);font-size:24px}
+.code .t u{width:18px;height:18px;border-radius:50%;background:#26342D;text-decoration:none}
+.code pre{margin:0;padding:40px 34px 0;font-size:34px;line-height:1.6;color:var(--text2);white-space:pre}
+.k{color:#7FB5FF}.s{color:#E8B04A}.c{color:var(--grau)}.g{color:var(--gruen);font-weight:600}.r{color:var(--rot);font-weight:600}
+.aus{margin:28px 34px 0;padding:24px 28px;border-radius:16px;background:var(--gruen-soft);border:2px solid rgba(83,195,162,.4);font-size:31px;line-height:1.55;color:var(--text)}
+/* Dateien */
+.ordner{background:#F7F7F7;color:#222;font-family:"IBM Plex Sans",sans-serif;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.ordner .t{height:62px;background:#E9E9E9;display:flex;align-items:center;padding:0 26px;font-size:26px;color:#555;border-bottom:2px solid #d4d4d4}
+.datei{display:flex;align-items:center;gap:22px;padding:0 30px;height:84px;border-bottom:1px solid #e2e2e2;font-size:31px}
+.datei .ic{width:44px;height:52px;border-radius:6px;background:#1d6f42;color:#fff;font-size:22px;font-weight:700;display:grid;place-items:center;flex:none}
+.datei .d{margin-left:auto;color:#888;font-size:25px}
+.datei.rot{background:#fde2e2}
+/* Hook / Ende */
+.gross{position:absolute;left:70px;right:150px;top:300px;font-family:var(--serif);font-weight:600;font-size:92px;line-height:1.08}
+.liste{position:absolute;left:70px;right:150px;top:740px;display:flex;flex-direction:column;gap:14px}
+.liste div{display:flex;align-items:center;gap:26px;font-size:38px;padding:12px 30px;border-radius:18px;background:#141B18;border:3px solid #26342D}
+.liste b{font-family:var(--serif);font-size:54px;color:var(--gruen);width:44px;text-align:center}
+.liste .x{margin-left:auto;font-family:var(--mono);font-size:26px;color:var(--rot);letter-spacing:.12em}
+.zahlen{position:absolute;left:70px;right:150px;top:700px;display:flex;justify-content:space-between}
+.zahlen div{width:150px;height:170px;border-radius:24px;border:4px solid var(--gruen);background:var(--gruen-soft);display:grid;place-items:center;
+  font-family:var(--serif);font-size:110px;font-weight:600;color:var(--gruen)}
+.chips{position:absolute;left:70px;right:150px;top:960px;display:flex;flex-wrap:wrap;gap:20px}
+.chips .chip{font-size:30px;color:var(--text)}
+.marke{position:absolute;left:70px;top:150px;font-family:var(--mono);font-size:28px;letter-spacing:.25em;color:var(--grau)}
+</style></head><body>
+<div id="root"></div>
+<script>
+const D = window.DATA || {bild:"5a"};
+const kopf = (n, titel, vorher) => `<div class="kopf"><div class="nr ${vorher?'rot':''}"><b>${n}</b><span>${vorher?'Früher · Excel':'Heute · Code'}<i>${titel}</i></span></div></div>`;
+const xl = (titel, ref, formel, kopfzeile, zeilen) => `<div class="panel xl"><div class="t">${titel}</div>
+  <div class="fx"><span class="n">${ref}</span><span class="f">${formel}</span></div>
+  <table><tr><th></th>${kopfzeile.map(k=>`<th>${k}</th>`).join("")}</tr>
+  ${zeilen.map((z,i)=>`<tr><th>${i+1}</th>${z.map(c=>{const [v,cls]=Array.isArray(c)?c:[c,""];return `<td class="${cls}">${v}</td>`}).join("")}</tr>`).join("")}</table></div>`;
+const code = (datei, zeilen, ausgabe) => `<div class="panel code"><div class="t"><u></u><u></u><u></u>&nbsp;${datei}</div><pre>${zeilen}</pre><div class="aus">${ausgabe}</div></div>`;
+const L = (v)=>[v,"l"];
+const B = {
+  hook: `<div class="marke">@maehrsteuern</div>
+    <div class="gross">5 Sachen, die ich aus <span style="color:#3fae6c">Excel</span> rausgeschmissen hab.</div>
+    <div class="liste">${[5,4,3,2,1].map(n=>`<div><b>${n}</b><span style="color:var(--grau)">${n===1?'spart am meisten Zeit':'· · ·'}</span><span class="x">${n===1?'':'RAUS'}</span></div>`).join("")}</div>`,
+  "5a": kopf(5,"Listen abgleichen",1) + xl("Abgleich_Kreditoren.xlsx","C4","=SVERWEIS(A4;Buchhaltung!A:D;4;FALSCH)",["A","B","C"],[
+    [L("K-10017"),"1.250,00","1.250,00"],[L("K-10018"),"980,40",["#NV","err"]],[L("K-10021"),"4.312,00","4.312,00"],
+    [L("K-10022 "),"75,90",["#NV","err"]],[L("K-10030"),"2.004,10",["#NV","err"]],[L("K-10031"),"611,00","611,00"],[L("…"),"…",["#NV","err"]]]),
+  "5b": kopf(5,"Listen abgleichen",0) + code("abgleich.py",
+    `<span class="k">import</span> pandas <span class="k">as</span> pd\nliste = pd.merge(kreditoren, buchhaltung,\n          on=<span class="s">"Konto"</span>, how=<span class="s">"outer"</span>)`,
+    `<span class="g">✓ 12.408 Zeilen abgeglichen</span> · 0,4 s<br>3 fehlen in der Buchhaltung · 0 × #NV`),
+  "4a": kopf(4,"Doppelte Rechnungsnummern",1) + xl("Ausgangsrechnungen_2026.xlsx","A6","",["A","B","C"],[
+    [L("RE-2026-1039"),L("02.09."),"2.380,00"],[L("RE-2026-1040"),L("03.09."),"119,00"],[L("RE-2026-1041"),L("03.09."),"5.950,00"],
+    [L("RE-2026-1042"),L("05.09."),"714,00"],[L("RE-2026-1042"),L("05.09."),"714,00"],[L("RE-2026-1044"),L("08.09."),"1.190,00"],[L("…"),L("…"),"…"]]),
+  "4b": kopf(4,"Doppelte Rechnungsnummern",0) + code("pruefung.py",
+    `nr = rechnungen[<span class="s">"Nummer"</span>]\ndoppelt = nr[nr.duplicated()]\nzahl = nr.str[-4:].astype(int)\nalle = range(zahl.min(), zahl.max())\nluecken = set(alle) - set(zahl)`,
+    `<span class="r">⚠ doppelt: RE-2026-1042</span><br><span class="r">⚠ Lücke: RE-2026-1043</span><br><span class="g">✓ geprüft in 1 s</span> – vor der Prüfung`),
+  "3a": kopf(3,"Wer hat was geändert?",1) + `<div class="panel ordner"><div class="t">📁 Steuern › Rückstellung 2025</div>
+    ${["Rückstellung_2025.xlsx","Rückstellung_2025_final.xlsx","Rückstellung_2025_final_final.xlsx","Rückstellung_2025_final_final_v3.xlsx","Kopie von Rückstellung_final_v3 (2).xlsx","Rückstellung_NEU_bitte_diese.xlsx"]
+      .map((n,i)=>`<div class="datei ${i===3?'rot':''}"><span class="ic">X</span>${n}<span class="d">${["12.08.","19.08.","02.09.","02.09.","15.09.","29.09."][i]}</span></div>`).join("")}</div>`,
+  "3b": kopf(3,"Wer hat was geändert?",0) + code("Verlauf · eine Datei",
+    `<span class="g">●</span> 29.09. 16:42  Hebesatz 400 → 410\n<span class="c">│</span>          Loris\n<span class="g">●</span> 15.09. 09:10  Hinzurechnung Mieten\n<span class="c">│</span>          Anna\n<span class="g">●</span> 02.09. 11:27  Vorauszahlungen Q3`,
+    `<span class="g">✓ jede Version gespeichert</span><br>mit Datum, Name und genauer Änderung`),
+  "2a": kopf(2,"Zeile eingefügt",1) + xl("Gewerbesteuer_2025.xlsx","B8","=SUMME(B2:B6)",["A","B"],[
+    [L("Gewinn"),"412.000"],[L("Hinzurechnung Mieten"),"18.400"],[L("Hinzurechnung Zinsen"),"9.750"],
+    [L("+ neue Zeile"),["6.200","mark"]],[L("Kürzung Grundbesitz"),"-3.120"],[L("Spenden"),"-1.000"],[L("Summe"),["#BEZUG!","err"]]]),
+  "2b": kopf(2,"Zeile eingefügt",0) + code("gewerbesteuer.py",
+    `posten = pd.read_csv(<span class="s">"gewst_2025.csv"</span>)\n\n<span class="c"># rechnet über alle Zeilen –</span>\n<span class="c"># egal, wie viele dazukommen</span>\nsumme = posten[<span class="s">"Betrag"</span>].sum()`,
+    `<span class="g">✓ neue Zeile drin – Summe stimmt</span><br>442.230 €`),
+  "1a": kopf(1,"Der Monatsbericht",1) + `<div class="panel ordner"><div class="t">Monatsbericht_September.xlsx – jeden Monat von Hand</div>
+    ${["SuSa exportieren","Spalten kopieren → Strg+C","In Bericht einfügen → Strg+V","Formeln nach unten ziehen","Diagramm anpassen","Als PDF speichern … und nochmal prüfen"]
+      .map((n,i)=>`<div class="datei"><span class="ic" style="background:#8a8a8a">${i+1}</span>${n}<span class="d">${["10 min","15 min","15 min","20 min","10 min","30 min"][i]}</span></div>`).join("")}</div>`,
+  "1b": kopf(1,"Der Monatsbericht",0) + code("terminal",
+    `<span class="g">$</span> python monatsbericht.py 2026-09\n\n<span class="c">  Daten gelesen ........ ok</span>\n<span class="c">  Abstimmung ........... ok</span>\n<span class="c">  Diagramme ............ ok</span>`,
+    `<span class="g">✓ Monatsbericht_2026-09.pdf fertig</span><br>Daten rein · ein Klick · fertig`),
+  ende: `<div class="marke">@maehrsteuern</div>
+    <div class="gross" style="top:330px">Welche Nummer soll ich dir zeigen?</div>
+    <div class="zahlen">${[5,4,3,2,1].map(n=>`<div>${n}</div>`).join("")}</div>
+    <div class="chips"><span class="chip">Zahl in die Kommentare</span><span class="chip">🔖 Speichern</span></div>`,
+};
+document.getElementById("root").innerHTML = B[D.bild];
+</script></body></html>

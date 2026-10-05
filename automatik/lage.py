@@ -5,6 +5,7 @@ Läuft automatisch per GitHub Actions (.github/workflows/lage.yml) nach jedem Pu
 von Posten, Freigabe, Statistik, Schlüssel und Musik. Quellen: plan.json, Git-Verlauf, statistik/*.csv,
 optional der Workflow-Status über die GitHub-API (GH_TOKEN + GITHUB_REPOSITORY).
 Handnotizen („gerade in Arbeit“, Entscheidungen) stehen in automatik/lage_notizen.md und werden oben eingebunden.
+Schreibt außerdem LAGE.html (automatik/lage_html.py) – dieselbe Lage als grafische Seite (GitHub Pages).
 """
 import csv, json, os, re, subprocess
 from datetime import datetime, timedelta
@@ -205,8 +206,9 @@ def zahlen(n):
     return aus + ["", "Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`"]
 
 
-def automatik():
-    zeilen = ["| Ablauf | Wann | Letzter Lauf |", "|---|---|---|"]
+def automatik_daten():
+    """[(Name, wann, letzter Lauf als Markdown)] – Workflow-Status über die GitHub-API (nur mit GH_TOKEN)."""
+    aus = []
     token = os.environ.get("GH_TOKEN")
     for datei, name, wann in WORKFLOWS:
         letzter = "–"
@@ -224,8 +226,12 @@ def automatik():
                     letzter = "✅ ok" if ergebnis == "success" else f"🔴 [fehlgeschlagen]({url}) {tag(t)}"
             except Exception:
                 pass
-        zeilen.append(f"| {name} | {wann} | {letzter} |")
-    return zeilen
+        aus.append((name, wann, letzter))
+    return aus
+
+
+def automatik(daten):
+    return ["| Ablauf | Wann | Letzter Lauf |", "|---|---|---|"] + [f"| {n} | {w} | {l} |" for n, w, l in daten]
 
 
 # ---------- Protokoll ----------
@@ -279,19 +285,28 @@ def bereiche(sha):
     return b[:6] + (["…"] if len(b) > 6 else [])
 
 
-def protokoll(n):
-    log = git("log", "--format=%H%x09%aI%x09%s")
-    tage = {}
-    for zeile in log.splitlines():
+def protokoll_daten():
+    """Alle Commits (ohne Lage-Commits) als Dicts, neueste zuerst."""
+    aus = []
+    for zeile in git("log", "--format=%H%x09%aI%x09%s").splitlines():
         sha, datum, nachricht = zeile.split("\t", 2)
         if nachricht.startswith(LAGE_COMMIT):
             continue
-        t = datetime.fromisoformat(datum).astimezone(ZONE)
-        text = f"- {t:%H:%M} {art(nachricht)} {nachricht} ([`{sha[:7]}`](https://github.com/{REPO}/commit/{sha}))"
-        if aend := plan_aenderungen(sha):
-            text += "\n  - Plan: " + "; ".join(aend)
-        elif b := bereiche(sha):
-            text += "\n  - " + ", ".join(f"`{x}`" for x in b)
+        aend = plan_aenderungen(sha)
+        aus.append({"sha": sha, "zeit": datetime.fromisoformat(datum).astimezone(ZONE), "nachricht": nachricht,
+                    "art": art(nachricht), "plan": aend, "bereiche": [] if aend else bereiche(sha)})
+    return aus
+
+
+def protokoll(n, daten):
+    tage = {}
+    for c in daten:
+        t, sha = c["zeit"], c["sha"]
+        text = f"- {t:%H:%M} {c['art']} {c['nachricht']} ([`{sha[:7]}`](https://github.com/{REPO}/commit/{sha}))"
+        if c["plan"]:
+            text += "\n  - Plan: " + "; ".join(c["plan"])
+        elif c["bereiche"]:
+            text += "\n  - " + ", ".join(f"`{x}`" for x in c["bereiche"])
         tage.setdefault(t.date(), []).append(text)
     zeilen, alt = [], []
     for d, eintraege in tage.items():
@@ -325,7 +340,8 @@ def main():
                   f"– {status(naechster)}", ""]
     if NOTIZEN.exists() and (notiz := NOTIZEN.read_text().strip()):
         teile += ["## 📝 Gerade in Arbeit", "", notiz, ""]
-    teile += ["## 👉 Braucht dich", "", *[f"- {p}" for p in offene_punkte(eintraege, n)], ""]
+    punkte = offene_punkte(eintraege, n)
+    teile += ["## 👉 Braucht dich", "", *[f"- {p}" for p in punkte], ""]
     woche = [e for e in kommend if zeit(e) <= n + timedelta(days=7)]
     spaeter = [e for e in kommend if zeit(e) > n + timedelta(days=7)]
     teile += ["## ⏭️ Nächste 7 Tage", "", *(tabelle(woche) if woche else ["Nichts geplant."]), ""]
@@ -333,12 +349,17 @@ def main():
         teile += ["## 🗓️ Danach", "", *tabelle(spaeter), ""]
     teile += ["## ✅ Zuletzt veröffentlicht (Autopilot)", "", *veroeffentlicht(eintraege), ""]
     teile += ["## 📈 Zahlen (täglich ca. 08:45)", "", *zahlen(n), ""]
-    teile += ["## ⚙️ Automatik", "", *automatik(), ""]
+    ablaeufe, commits = automatik_daten(), protokoll_daten()
+    teile += ["## ⚙️ Automatik", "", *automatik(ablaeufe), ""]
     teile += ["## 📜 Protokoll – jede Änderung", "",
               "🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude", "",
-              *protokoll(n)]
+              *protokoll(n, commits)]
     ZIEL.write_text("\n".join(teile).rstrip() + "\n")
     print(f"✓ {ZIEL.relative_to(WURZEL)} geschrieben")
+
+    import lage_html  # gleiche Daten als grafische Seite (LAGE.html)
+    lage_html.schreiben(n=n, stand=stand, eintraege=eintraege, kommend=kommend, naechster=naechster,
+                        punkte=punkte, ablaeufe=ablaeufe, commits=commits)
 
 
 if __name__ == "__main__":

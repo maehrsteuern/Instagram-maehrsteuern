@@ -26,6 +26,11 @@ Vorlage zum Kopieren: `vorlagen/system/schnitt/p01_reel_ampel_hook.json` (Render
   Richtwerte: Stimme ca. −18 LUFS, Musik ~0,13, Atmo 0,2–0,3.
 - Aufnahme: Abstand zum Handy-Mikro halten (sonst klingt es kratzig/übersteuert), ruhiger Raum.
 
+## Listen-Reels: höchstens 3 Punkte (Entscheidung Loris, 04.10.)
+- Reel „5 Dinge mit Code statt Excel“ (41 s): Einstieg stark (46 % weitergewischt statt 66 %), aber Ø Sehdauer nur 7,6 s = 19 % der Länge – die meisten steigen nach Punkt 5/4 aus.
+- **Regel:** Listen-/Countdown-Reels mit **maximal 3 Punkten**, Ziel **unter 20 s**. Mehr Punkte → als Karussell oder als Serie (Teil 1, 2 …).
+- Countdown beibehalten (3 → 1), stärkster Punkt zuletzt, damit man bis zum Ende schaut.
+
 ## Hook (0–3 s)
 - **Kein Dauerfeuer.** Im Hook 2 Einstellungen, nicht 4–5 Achtel-Schnitte. Jede Einstellung darf 1,4–2 s stehen.
 - **Text ab 0,3 s**, groß mit schwarzer Outline, Wort für Wort bzw. Zeile für Zeile. Der Hook muss **ohne Ton** funktionieren.

@@ -125,8 +125,8 @@
       "video": "reel_stimme.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "freigegeben",
-      "hinweis": "Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s",
+      "status": "pause",
+      "hinweis": "Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“.",
       "issue": 7
     },
     {
@@ -137,7 +137,35 @@
       "bilder": [
         "story_so_teaser.png"
       ],
-      "status": "freigegeben"
+      "status": "pause",
+      "hinweis": "04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“."
+    },
+    {
+      "id": "01-reel-5dinge",
+      "zeit": "2026-10-04 19:30",
+      "typ": "reel",
+      "ordner": "posts/01_2026-10-04_reel_5dinge",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "veroeffentlicht",
+      "hinweis": "Ersetzt Ampel-Reel (Go am 04.10. von Loris direkt im Chat). Community-Reel ohne Werbung: Loris erzählt 5 Dinge, die mit Code besser gehen als mit Excel (Countdown 5→1), Bilder Excel vorher / Code heute, Untertitel wörtlich, Musik ganz leise, CTA Zahl in die Kommentare, 41 s",
+      "media_id": "17916550404258137",
+      "link": "https://www.instagram.com/reel/DeFLK53ALSs/",
+      "veroeffentlicht_am": "2026-10-04 19:30"
+    },
+    {
+      "id": "01-story-teaser-5dinge",
+      "zeit": "2026-10-04 19:35",
+      "typ": "story",
+      "ordner": "posts/01_2026-10-04_reel_5dinge",
+      "bilder": [
+        "story_so_teaser.png"
+      ],
+      "status": "veroeffentlicht",
+      "media_id": "18143214628582116",
+      "link": "https://www.instagram.com/stories/maehrsteuern/4000661016565086455",
+      "veroeffentlicht_am": "2026-10-04 19:46"
     },
     {
       "id": "02-story-umfrage",

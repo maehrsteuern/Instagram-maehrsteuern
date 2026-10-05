@@ -1,0 +1,506 @@
+{
+ "ausgabe": "../../posts/01_2026-10-04_reel_5dinge/reel.mp4",
+ "fps": 30,
+ "quellen": {
+  "hook": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/hook.png"
+  },
+  "5a": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/5a.png"
+  },
+  "5b": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/5b.png"
+  },
+  "4a": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/4a.png"
+  },
+  "4b": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/4b.png"
+  },
+  "3a": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/3a.png"
+  },
+  "3b": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/3b.png"
+  },
+  "2a": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/2a.png"
+  },
+  "2b": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/2b.png"
+  },
+  "1a": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/1a.png"
+  },
+  "1b": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/1b.png"
+  },
+  "ende": {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/bausteine/ende.png"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "hook",
+   "dauer": 4.6,
+   "text": [
+    {
+     "wort": "Ich hab fünf Sachen",
+     "groesse": 66,
+     "y": 1440,
+     "ab": 0.0,
+     "bis": 1.36
+    },
+    {
+     "wort": "aus Excel rausgeschmissen.",
+     "groesse": 66,
+     "y": 1440,
+     "ab": 1.36,
+     "bis": 2.32
+    },
+    {
+     "wort": "Und Nummer eins spart mir am meisten Zeit.",
+     "groesse": 66,
+     "y": 1440,
+     "ab": 2.32,
+     "bis": 4.6
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "5a",
+   "dauer": 5.6,
+   "text": [
+    {
+     "wort": "Nummer fünf:",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.2
+    },
+    {
+     "wort": "Listen abgleichen.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.2,
+     "bis": 2.6
+    },
+    {
+     "wort": "Früher ein SVERWEIS",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 2.6,
+     "bis": 3.72
+    },
+    {
+     "wort": "und überall #NV-Fehler.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 3.72,
+     "bis": 5.6
+    },
+    {
+     "wort": "#NV",
+     "farbe": "rot",
+     "groesse": 115,
+     "y": 1222,
+     "ab": 4.3,
+     "bis": 5.6
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "5b",
+   "dauer": 3.5,
+   "text": [
+    {
+     "wort": "Heute drei Zeilen Code,",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.6
+    },
+    {
+     "wort": "egal wie lang die Liste ist.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.6,
+     "bis": 3.5
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ],
+   "rein": "whip"
+  },
+  {
+   "quelle": "4a",
+   "dauer": 2.5,
+   "text": [
+    {
+     "wort": "Vier:",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.0
+    },
+    {
+     "wort": "Doppelte Rechnungsnummern.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.0,
+     "bis": 2.5
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "4b",
+   "dauer": 2.8,
+   "text": [
+    {
+     "wort": "Findet der Code in einer Sekunde,",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.5
+    },
+    {
+     "wort": "nicht erst der Prüfer.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.5,
+     "bis": 2.8
+    },
+    {
+     "wort": "in 1 Sekunde",
+     "farbe": "gruen",
+     "groesse": 115,
+     "y": 1222,
+     "ab": 0.9,
+     "bis": 2.8
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "3a",
+   "dauer": 2.1,
+   "text": [
+    {
+     "wort": "Drei:",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.0
+    },
+    {
+     "wort": "Wer hat was geändert?",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.0,
+     "bis": 2.1
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "3b",
+   "dauer": 1.7,
+   "text": [
+    {
+     "wort": "Jede Version bleibt gespeichert.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.7
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "3a",
+   "dauer": 3.4,
+   "text": [
+    {
+     "wort": "Schluss mit „final_final_v3“.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 3.4
+    }
+   ],
+   "von": [
+    540,
+    880,
+    1080
+   ],
+   "nach": [
+    560,
+    900,
+    920
+   ]
+  },
+  {
+   "quelle": "2a",
+   "dauer": 2.84,
+   "text": [
+    {
+     "wort": "Zwei:",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.4
+    },
+    {
+     "wort": "Jemand fügt eine Zeile ein",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.4,
+     "bis": 2.84
+    },
+    {
+     "wort": "#BEZUG!",
+     "farbe": "rot",
+     "groesse": 115,
+     "y": 1222,
+     "ab": 1.9,
+     "bis": 2.84
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "2b",
+   "dauer": 1.14,
+   "text": [
+    {
+     "wort": "und nichts geht kaputt.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.14
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "1a",
+   "dauer": 2.12,
+   "text": [
+    {
+     "wort": "Und eins:",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 0.92
+    },
+    {
+     "wort": "Der Monatsbericht.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.92,
+     "bis": 2.12
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "1b",
+   "dauer": 4.3,
+   "text": [
+    {
+     "wort": "Daten rein.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.0
+    },
+    {
+     "wort": "Ein Klick.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.0,
+     "bis": 1.9
+    },
+    {
+     "wort": "Fertig.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.9,
+     "bis": 2.75
+    },
+    {
+     "wort": "Nie wieder Copy-Paste.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 2.75,
+     "bis": 4.3
+    },
+    {
+     "wort": "1 Klick",
+     "farbe": "gruen",
+     "groesse": 115,
+     "y": 1222,
+     "ab": 1.16,
+     "bis": 4.3
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "ende",
+   "dauer": 4.6,
+   "text": [
+    {
+     "wort": "Speicher dir das und schreib mir:",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 0.0,
+     "bis": 1.9
+    },
+    {
+     "wort": "Welche Nummer soll ich dir",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 1.9,
+     "bis": 2.98
+    },
+    {
+     "wort": "Schritt für Schritt zeigen?",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 2.98,
+     "bis": 4.6
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  }
+ ],
+ "ton": [
+  {
+   "datei": "../../posts/01_2026-10-04_reel_5dinge/ton/stimme_roh.m4a",
+   "ab": 0,
+   "start": 1.8,
+   "dauer": 41.2,
+   "lautstaerke": 0.8,
+   "ein": 0.05,
+   "aus": 0.4
+  },
+  {
+   "datei": "../../musik/06_runway_lofi_ruhig.mp3",
+   "ab": 4.6,
+   "start": 0,
+   "lautstaerke": 0.1,
+   "ein": 1.5
+  }
+ ]
+}
