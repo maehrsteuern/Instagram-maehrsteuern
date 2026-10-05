@@ -313,8 +313,8 @@
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Code-Ausschnitte zum Nachbauen, keine Werbung. Sprechtext „So 11.10.“ in posts/sprechtexte.md – Sprachnachricht bis Fr 09.10."
+      "status": "entwurf",
+      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s"
     },
     {
       "id": "09-story-teaser",

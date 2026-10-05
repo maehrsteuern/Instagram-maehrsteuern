@@ -1,0 +1,26 @@
+[
+ {
+  "teil": "S1",
+  "roh_von": 19.3,
+  "roh_bis": 35.1,
+  "neu_von": 0
+ },
+ {
+  "teil": "S2",
+  "roh_von": 172.2,
+  "roh_bis": 181.78,
+  "neu_von": 16.25
+ },
+ {
+  "teil": "S3",
+  "roh_von": 101.5,
+  "roh_bis": 103.14,
+  "neu_von": 26.11
+ },
+ {
+  "teil": "S4",
+  "roh_von": 183.98,
+  "roh_bis": 194.72,
+  "neu_von": 28.17
+ }
+]

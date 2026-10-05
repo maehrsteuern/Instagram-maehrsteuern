@@ -11,6 +11,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Content-Fabrik nutzt ab Mo 05.10. die Lernpunkte aus `strategie/wettbewerb.md` (über Abschnitt in `08_hooks.md`): pro Lauf ≥ 1 Hook „konkreter Fall“ oder „Prüfer/Finanzamt“, Lernpunkt im Freigabe-Issue vermerkt. Routine-Prompt selbst unverändert (nur aus ihrer eigenen Sitzung änderbar).
 - **So 04.10. umgebaut:** Statt Ampel-Reel geht 19:30 das Community-Reel „5 Sachen, die ich aus Excel rausgeschmissen hab“ online (Loris' Sprachnachricht, 41 s, keine Werbung, CTA: Zahl 1–5 in die Kommentare) + neue Teaser-Story 19:35. Ampel-Reel und alter Teaser stehen auf `pause` – kann später wieder eingeplant werden. Die Kommentar-Antworten (welche Nummer?) sind die Themen für die nächsten Reels.
 - **Doppel-Post 04.10. behoben:** Das 5-Dinge-Reel ging zweimal raus (DeFLK53ALSs = im Plan, DeFLSBNFUXy = Duplikat, von Loris am 04.10. gelöscht ✓). Ursache: Ein Lauf startet mit dem Stand vom Startzeitpunkt und hat den Plan nur nach dem Warten neu geladen. `posten.py` holt jetzt direkt vor jedem Posten den neuesten Plan; klappt das nicht, wird nicht gepostet (nächster Lauf holt nach).
+- **So 11.10. Reel „Nummer 1: Der Monatsbericht“** ist geschnitten (Sprachnachricht 05.10., Unterbrechung entfernt, 39,6 s) → wartet auf „go“ im Freigabe-Issue (Reel + Teaser 19:35).
 - Bis 10.10. alles freigegeben: 5-Dinge-Reel (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
 - Latente Steuern: Prüfzettel Punkte 1–5 am 05.10. mit Quellen geprüft ✓ – Box Folie 6 präzisiert (kleine KapGes: von § 274 befreit, passive Latenzen ggf. als Rückstellung), fachlich nichts mehr offen (`pruefzettel.md` im Post-Ordner; „Abschluss 2026“ am 05.10. überall auf „spätestens jetzt“ geändert – Folien 1+7, Bildunterschrift, Teaser, LinkedIn-Text + PDF). Änderungen bis Mi 07.10. abends.
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
@@ -31,12 +32,12 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 👉 Braucht dich
 
-- ⏳ **Wartet auf sprachnachricht** `09-reel-monatsbericht` (So 11.10. 19:30) – Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Code-Ausschnitte zum Nachbauen, keine Werbung. Sprechtext „So 11.10.“ in posts/sprechtexte.md – Sprachnachricht bis Fr 09.10.
-- 🟡 **Freigeben** `09-story-teaser` (So 11.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
-- 🟡 **Freigeben** `09-story-quiz` (Mi 14.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
-- 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
-- 🟡 **Freigeben** `09-rueckstellung` (Do 15.10. 19:30) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
-- 🟡 **Freigeben** `09-story-teaser` (Do 15.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
+- 🟡 **Freigeben** `09-reel-monatsbericht` (So 11.10. 19:30) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `09-story-teaser` (So 11.10. 19:35) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `09-story-quiz` (Mi 14.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `09-rueckstellung` (Do 15.10. 19:30) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `09-story-teaser` (Do 15.10. 19:35) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf sprachnachricht** `04-reel-mein-weg` (Di 20.10. 19:30) – Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
@@ -57,7 +58,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Fr 09.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Fr 09.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟢 freigegeben (geht automatisch online) | Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
-| So 11.10. 19:30 | 🎬 Reel `09-reel-monatsbericht` | ⏳ wartet auf sprachnachricht | Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Code-Ausschnitte zum Nachbauen, keine Werbung. Sprechtext „So 11.10.“ in posts/sprechtexte.md – Sprachnachricht bis Fr 09.10. |
+| So 11.10. 19:30 | 🎬 Reel `09-reel-monatsbericht` | 🟡 Entwurf (wartet auf Freigabe) | Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s |
 | So 11.10. 19:35 | 📱 Story `09-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
 
