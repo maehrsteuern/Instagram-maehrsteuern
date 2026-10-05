@@ -375,8 +375,9 @@ def collab_candidate(profiles, contacts):
         if k.get("collab") or not low <= followers <= high:
             continue
         media = p.get("media", {}).get("data", [])
-        if not media:
-            continue
+        newest = max((parse_time(m["timestamp"]) for m in media if m.get("timestamp")), default=None)
+        if not newest or newest < NOW - timedelta(days=30):
+            continue  # nobody to collab with if the account hasn't posted for a month
         rate = sum((m.get("like_count") or 0) + 3 * (m.get("comments_count") or 0) for m in media) / len(media) / followers
         fitting.append((rate + 0.02 * k.get("comments", 0), p))
     if not fitting:
