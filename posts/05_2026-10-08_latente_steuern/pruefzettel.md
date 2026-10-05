@@ -23,16 +23,19 @@ Aussage: KSt × 1,055 (SolZ) + 3,5 % × 400 % = 14 % GewSt. Ergebnis 29,83 % / 2
 
 Quellen: https://dejure.org/gesetze/KStG/23.html · https://www.haufe.de/id/beitrag/gesetz-fuer-ein-steuerliches-investitionssofortprogramm-2-schrittweise-senkung-des-koerperschaftsteuersatzes-23-abs-1-kstg-HI16854493.html · https://www.roedl.com/insights/absenkung-koerperschaftsteuersatz-latente-steuern/ · https://www.haufe.de/steuern/steuerwissen-tipps/senkung-des-koerperschaftsteuersatzes-latente-steuern_170_664332.html
 
-## 4. Rechenbeispiel (Folie 5, Demo-Zahlen)
+## 4. Rechenbeispiel (Folie 5, Demo-Zahlen) – ✅ geprüft 05.10.
 Aussage: 100.000 € Differenz, Umkehr 2030. Fest 29,83 % → 29.825 €, richtig 26,66 % → 26.660 €, zu hoch 3.165 €.
-- ✅ Nachgerechnet, stimmt (29.825 nutzt den ungerundeten Satz 29,825 %).
-- ☐ „Zu hoch angesetzt“ gilt für aktive **und** passive Latenzen gleichermaßen – Formulierung neutral genug?
-- ☐ Keine echten Zahlen vom Arbeitgeber – reine Demo-Zahl. ✔
+- ✅ Nachgerechnet, stimmt (29.825 nutzt den ungerundeten Satz 29,825 %; 2030: 12 × 1,055 + 14 = 26,66 %).
+- ✅ „Zu hoch angesetzt“ passt für aktive und passive Latenzen: in beiden Fällen ist der Betrag zu hoch (Posten auf der Aktiv- bzw. Passivseite).
+- ✅ Reine Demo-Zahl, nichts vom Arbeitgeber.
 
-## 5. Drei Schritte (Folie 6)
-- ☐ „Bestehende Latenzen neu bewerten – der Effekt läuft über die GuV“: Grundsätzlich ja (latenter Steueraufwand/-ertrag). Ausnahme: Latenzen, die erfolgsneutral entstanden sind – für Instagram vernachlässigbar?
-- ☐ Hinweis „Kleine Kapitalgesellschaften dürfen auf latente Steuern verzichten (§ 274a Nr. 4 HGB)“: Nummer prüfen (nach BilRUG Nr. 4?). Nuance: Passive latente Steuern können trotzdem als **Rückstellung nach § 249 HGB** nötig sein (h. M./IDW) – ergänzen oder bewusst weglassen?
-- ☐ Aktivierungs**wahlrecht** für einen Überhang aktiver latenter Steuern (§ 274 Abs. 1 Satz 2 HGB) wird nicht erwähnt – okay für den Beitrag?
+## 5. Drei Schritte (Folie 6) – geprüft 05.10., ⚠️ eine Formulierung offen
+- ✅ „Bestehende Latenzen neu bewerten – der Effekt läuft über die GuV“: § 274 Abs. 2 Satz 3 HGB – Aufwand/Ertrag aus der Veränderung latenter Steuern gesondert unter „Steuern vom Einkommen und vom Ertrag“. Ausnahme erfolgsneutral entstandener Latenzen (v. a. Konzern) ist für den Beitrag vernachlässigbar.
+- ✅ § 274a Nr. 4 HGB ist die richtige Nummer („§ 274 über die Abgrenzung latenter Steuern“).
+- ⚠️ „Kleine Kapitalgesellschaften dürfen auf latente Steuern verzichten“ ist **zu absolut**: Befreit sind sie nur von § 274. Passive latente Steuern sind trotzdem als **Rückstellung nach § 249 Abs. 1 Satz 1 HGB** anzusetzen, wenn deren Voraussetzungen vorliegen (IDW, BStBK-Verlautbarung 2012; „Rückstellungsmethode“). Vorschlag für die Box: „Kleine Kapitalgesellschaften sind von § 274 befreit (§ 274a Nr. 4 HGB) – passive Latenzen können aber als Rückstellung nötig sein.“ → **Entscheidung Loris.**
+- ✅ Aktivierungswahlrecht für einen Überhang aktiver latenter Steuern (§ 274 Abs. 1 Satz 2 HGB) wird nicht erwähnt – für den Beitrag nicht nötig.
+
+Quellen 4–5: https://dejure.org/gesetze/HGB/274.html · https://dejure.org/gesetze/HGB/274a.html · https://www.bstbk.de/downloads/bstbk/steuerrecht-und-rechnungslegung/fachinfos/BStBK_Verlautbarung-latenter-Steuern_2012.pdf · https://steuerinfo.de/latente-steuer-bei-kleinen-kapitalgesellschaften-ist-das-thema-endgultig-vom-tisch/
 
 ## 6. Bildunterschrift
 - ✅ 05.10. (Loris): „Abschluss 2026“ überall auf „spätestens jetzt“ – Bildunterschrift, Folie 1 (Untertitel) und Folie 7 (Titel); Teaser-Story neu erzeugt.
