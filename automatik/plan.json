@@ -340,6 +340,17 @@
       "status": "freigegeben"
     },
     {
+      "id": "09-story-quiz",
+      "zeit": "2026-10-14 12:15",
+      "typ": "story",
+      "ordner": "posts/09_2026-10-15_rueckstellung",
+      "bilder": [
+        "story_mi_quiz.png"
+      ],
+      "status": "entwurf",
+      "hinweis": "Aus der Bibliothek: Quiz SolZ als Einstieg zum Rückstellungs-Karussell"
+    },
+    {
       "id": "07-reel-hinzurechnung",
       "zeit": "2026-10-14 19:30",
       "typ": "reel",
@@ -349,6 +360,44 @@
       "status": "freigegeben",
       "hinweis": "Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot",
       "issue": 14
+    },
+    {
+      "id": "09-story-aufloesung",
+      "zeit": "2026-10-15 12:15",
+      "typ": "story",
+      "ordner": "posts/09_2026-10-15_rueckstellung",
+      "bilder": [
+        "story_do_aufloesung.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "09-rueckstellung",
+      "zeit": "2026-10-15 19:30",
+      "typ": "karussell",
+      "ordner": "posts/09_2026-10-15_rueckstellung",
+      "bilder": [
+        "folie_01.png",
+        "folie_02.png",
+        "folie_03.png",
+        "folie_04.png",
+        "folie_05.png",
+        "folie_06.png",
+        "folie_07.png"
+      ],
+      "text": "bildunterschrift.txt",
+      "status": "entwurf",
+      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Demo-Zahlen 1 Mio. €, Hebesatz 400 %)"
+    },
+    {
+      "id": "09-story-teaser",
+      "zeit": "2026-10-15 19:35",
+      "typ": "story",
+      "ordner": "posts/09_2026-10-15_rueckstellung",
+      "bilder": [
+        "story_do_teaser.png"
+      ],
+      "status": "entwurf"
     },
     {
       "id": "03-story-aufloesung",
@@ -389,6 +438,44 @@
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
       "bilder": [
         "story_di_teaser_markenweg.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "10-story-umfrage",
+      "zeit": "2026-10-21 12:15",
+      "typ": "story",
+      "ordner": "posts/10_2026-10-22_e_rechnung",
+      "bilder": [
+        "story_mi_umfrage.png"
+      ],
+      "status": "entwurf",
+      "hinweis": "Aus der Bibliothek: Umfrage E-Rechnung als Einstieg"
+    },
+    {
+      "id": "10-e-rechnung",
+      "zeit": "2026-10-22 19:30",
+      "typ": "karussell",
+      "ordner": "posts/10_2026-10-22_e_rechnung",
+      "bilder": [
+        "folie_01.png",
+        "folie_02.png",
+        "folie_03.png",
+        "folie_04.png",
+        "folie_05.png",
+        "folie_06.png"
+      ],
+      "text": "bildunterschrift.txt",
+      "status": "entwurf",
+      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG)"
+    },
+    {
+      "id": "10-story-teaser",
+      "zeit": "2026-10-22 19:35",
+      "typ": "story",
+      "ordner": "posts/10_2026-10-22_e_rechnung",
+      "bilder": [
+        "story_do_teaser.png"
       ],
       "status": "entwurf"
     }

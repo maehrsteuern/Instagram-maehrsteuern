@@ -26,15 +26,22 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - **Fristen** (`automatik/erinnerungen.json` → „Braucht dich“ + Kalender): LinkedIn #18 Mi 07.10. 08:00 (Termin kommt schon automatisch) · Reel-Vergleich „5 Dinge“/Split → Anzeigen-Start ca. Mo 12.10. (Chrome Modul 2 am 04.10. nur vorbereiten) · **ManyChat-Trial endet Fr 16.10.** → Entscheidung Loris (Erinnerung Mi 14.10.).
 - **Meta-App „maehrsteuern Autopilot“** bleibt im Entwicklungsmodus. Die laufenden IG-Schlüssel und die Statistik sind davon nicht betroffen (eigenes Konto mit App-Rolle). Nur die Hashtag-Suche braucht die Freigabe → Checkliste [#26](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/26).
 - **Reclaim-Hinweis:** Claudes Reclaim-Zugang (Connector) zeigt auf **Konto B (Outlook, Lite)**, nicht auf das Demo-Konto. Für die Automatik nicht nutzen; Demo-Buchungen kommen nur über das Apps-Script „maehrsteuern Demo-Kopie“.
-- **Bibliothek aus dem Brand Kit (Claude Design) gebaut (02.10.):** 365 fertige Bilder in `assets/bibliothek/` (Übersicht `README.md` dort), Texte als Job-Dateien in `vorlagen/system/jobs/bibliothek/`. Neue Vorlagen `zahl.html` + `banner.html`, Highlight-Symbole, Vergleichstabelle/Checkliste im Karussell. Nichts davon ist eingeplant. **Gegengelesen (05.10.):** 10 Fehler korrigiert, 25 Zweifelsfälle mit Loris entschieden und umgesetzt → `assets/bibliothek/PRUEFBERICHT.md`. Offen nur: Zinsschranke-Caption mit Hinweis auf Untergang des Zinsvortrags.
+- **Bibliothek aus dem Brand Kit (Claude Design) gebaut (02.10.):** 365 fertige Bilder in `assets/bibliothek/` (Übersicht `README.md` dort), Texte als Job-Dateien in `vorlagen/system/jobs/bibliothek/`. Neue Vorlagen `zahl.html` + `banner.html`, Highlight-Symbole, Vergleichstabelle/Checkliste im Karussell. Nichts davon ist eingeplant. **Gegengelesen (05.10.):** 10 Fehler korrigiert, 25 Zweifelsfälle mit Loris entschieden und umgesetzt → `assets/bibliothek/PRUEFBERICHT.md`. Offen nur: Zinsschranke-Caption mit Hinweis auf Untergang des Zinsvortrags. **Erste Bibliothek-Beiträge eingeplant (05.10., als Entwurf → Freigabe-Issue):** Rückstellung in 6 Schritten Do 15.10. (Quiz SolZ Mi 14.10., Auflösung Do 15.10. 12:15, Teaser 19:35) · E-Rechnung-Fahrplan Do 22.10. (Umfrage Mi 21.10., Teaser 19:35). Content-Fabrik: diese Slots sind belegt.
 - **Lage als Seite (04.10.):** `LAGE.html` mit Kacheln, Kalender, Diagrammen und filterbarem Protokoll, wird mit LAGE.md neu geschrieben und über GitHub Pages veröffentlicht (https://maehrsteuern.github.io/Instagram-maehrsteuern/). Pages eingeschaltet ✓ (04.10.), Seite läuft und aktualisiert sich bei jeder neuen Lage automatisch.
 
 ## 👉 Braucht dich
 
+- 🟡 **Freigeben** `09-story-quiz` (Mi 14.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `09-rueckstellung` (Do 15.10. 19:30) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `09-story-teaser` (Do 15.10. 19:35) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf sprachnachricht** `04-reel-mein-weg` (Di 20.10. 19:30) – Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🟡 **Freigeben** `04-story-teaser` (Di 20.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
+- 🟡 **Freigeben** `10-story-umfrage` (Mi 21.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `10-e-rechnung` (Do 22.10. 19:30) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `10-story-teaser` (Do 22.10. 19:35) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
 - ⏰ **💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)** (Mi 07.10. 08:00) – PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5).
 
 ## ⏭️ Nächste 7 Tage
@@ -60,11 +67,18 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:30 | 🖼️ Karussell `03-gewst-hinzurechnung` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:35 | 📱 Story `03-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
+| Mi 14.10. 12:15 | 📱 Story `09-story-quiz` | 🟡 Entwurf (wartet auf Freigabe) | Aus der Bibliothek: Quiz SolZ als Einstieg zum Rückstellungs-Karussell |
 | Mi 14.10. 19:30 | 🎬 Reel `07-reel-hinzurechnung` | 🟢 freigegeben (geht automatisch online) | Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot · [Freigabe #14](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/14) |
+| Do 15.10. 12:15 | 📱 Story `09-story-aufloesung` | 🟡 Entwurf (wartet auf Freigabe) |  |
+| Do 15.10. 19:30 | 🖼️ Karussell `09-rueckstellung` | 🟡 Entwurf (wartet auf Freigabe) | Aus der Bibliothek (gegengelesen 05.10., Demo-Zahlen 1 Mio. €, Hebesatz 400 %) |
+| Do 15.10. 19:35 | 📱 Story `09-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
 | Fr 16.10. 12:15 | 📱 Story `03-story-aufloesung` | 🟢 freigegeben (geht automatisch online) |  |
 | Mo 19.10. 12:15 | 📱 Story `04-story-frage` | 🟡 Entwurf (wartet auf Freigabe) |  |
 | Di 20.10. 19:30 | 🎬 Reel `04-reel-mein-weg` | ⏳ wartet auf sprachnachricht | Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen |
 | Di 20.10. 19:35 | 📱 Story `04-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
+| Mi 21.10. 12:15 | 📱 Story `10-story-umfrage` | 🟡 Entwurf (wartet auf Freigabe) | Aus der Bibliothek: Umfrage E-Rechnung als Einstieg |
+| Do 22.10. 19:30 | 🖼️ Karussell `10-e-rechnung` | 🟡 Entwurf (wartet auf Freigabe) | Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG) |
+| Do 22.10. 19:35 | 📱 Story `10-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
