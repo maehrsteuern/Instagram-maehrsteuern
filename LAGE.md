@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 09:01 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 09:05 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -16,7 +16,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.): **Loris baut die Konzeption selbst um (03.10.)** – bis dahin gilt Variante B (`drehbuch_markenweg.md`) nicht als gesetzt, keine Sprachnachricht anfordern, nichts schneiden. Status bleibt `wartet_auf_sprachnachricht`, bis das neue Konzept da ist. **KI-Hinweis** (falls KI-Karten bleiben): Hinweis in der Bildunterschrift, Label nach dem Posten in der App prüfen.
 - DM-Strecke läuft über **ManyChat** (Kommentar/Story-Antwort/DM mit Tool/TOOL/tool/tol → DM mit Demo-Link, Follow-up nach 23 h). Stichwörter nur in `automatik/interaktion.json` pflegen – Abweichungen meldet LAGE.md. Die eigenen Skripte schicken nie DMs.
-- Interaktion läuft (Radar 50 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (nur Postzeiten „beschäftigt“ für Reclaim, To-dos/LinkedIn „frei“; Farben + Pop-ups je Art). In Reclaim verbunden ✓ (geprüft 05.10.). Offen: Freigabe des Autopilot-Kalenders (nur Dienstkonto, nicht öffentlich) und Auslöser der Demo-Kopie (genau 1, stündlich) per Chrome-Claude gegenprüfen. `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Demo-Zahlen (entschieden 03.10.): Reclaim-Pflichtfeld „Woher kennst du mich?“ → Apps-Script „maehrsteuern Demo-Kopie“ kopiert Buchungen stündlich ohne Namen nach „maehrsteuern Autopilot“ → Wochenbericht zählt sie; UTM/Webhooks scheiden aus (Starter), `dm_tracking.csv` nicht mehr im Bericht. **Laut Chrome-Check 03.10. noch offen** (Chrome-Prompt Sprint 2): Pflichtfeld anlegen, Puffer 10 Min. am Demo-Link, 2 Reclaim-Vorlagen löschen, Apps-Script einrichten + Testbuchung. ManyChat-Zahlen bleiben von Hand (API nur Pro) – siehe `strategie/13_backlog.md`.
+- Interaktion läuft (Radar 50 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (nur Postzeiten „beschäftigt“ für Reclaim, To-dos/LinkedIn „frei“; Farben + Pop-ups je Art). In Reclaim verbunden ✓, Freigabe nur Dienstkonto (nicht öffentlich, nicht im Hauptkalender) ✓ (Chrome 05.10.). `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Demo-Zahlen (entschieden 03.10.): Reclaim-Pflichtfeld „Woher kennst du mich?“ → Apps-Script „maehrsteuern Demo-Kopie“ kopiert Buchungen stündlich ohne Namen nach „maehrsteuern Autopilot“ → Wochenbericht zählt sie; UTM/Webhooks scheiden aus (Starter), `dm_tracking.csv` nicht mehr im Bericht. **Chrome 05.10.:** Pflichtfeld (Dropdown, Pflicht) ✓, Reclaim-Vorlagen weg ✓ (zweiter Link „Demo + Intro Call“ für @maehrtax bleibt, wird nicht gezählt), Apps-Script = GitHub-Stand, 1 Trigger stündlich :40, 0 % Fehler ✓. **Offen:** Testbuchung (loris_jm@gmx.de, Herkunft Instagram → Kopie prüfen → absagen) + Beschreibungsausschnitt an Claude; Puffer: global 10 Min. nach jedem Meeting (gilt auch für @maehrtax, entschieden 05.10.) – setzt Chrome zusammen mit der Testbuchung. ManyChat-Zahlen bleiben von Hand (API nur Pro) – siehe `strategie/13_backlog.md`.
 - **Automatik gehärtet (03.10., mit #23 in `claude/instagram`):** kein Doppel-Post bei Push-Konflikt, „stop“ greift auch während des Wartens, kein Schlüssel in Fehlermeldungen, keine verlorenen „go“-Antworten, Schlüssel-Verlängerung mit Reserve-Takt – Details `strategie/13_backlog.md`.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
@@ -31,10 +31,13 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 👉 Braucht dich
 
-- 🟡 **Freigeben** `09-story-quiz` (Mi 14.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
-- 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
-- 🟡 **Freigeben** `09-rueckstellung` (Do 15.10. 19:30) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
-- 🟡 **Freigeben** `09-story-teaser` (Do 15.10. 19:35) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- ⏳ **Wartet auf sprachnachricht** `09-reel-monatsbericht` (So 11.10. 19:30) – Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Code-Ausschnitte zum Nachbauen, keine Werbung. Sprechtext „So 11.10.“ in posts/sprechtexte.md – Sprachnachricht bis Fr 09.10.
+- 🟡 **Freigeben** `09-story-teaser` (So 11.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
+- 🔴 **Dateien fehlen** `09-story-teaser` (So 11.10. 19:35): story_so_teaser.png
+- 🟡 **Freigeben** `09-story-quiz` (Mi 14.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
+- 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
+- 🟡 **Freigeben** `09-rueckstellung` (Do 15.10. 19:30) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
+- 🟡 **Freigeben** `09-story-teaser` (Do 15.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `09-reel-monatsbericht` fertig ist)
 - 🟡 **Freigeben** `04-story-frage` (Mo 19.10. 12:15) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏳ **Wartet auf sprachnachricht** `04-reel-mein-weg` (Di 20.10. 19:30) – Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
@@ -59,6 +62,8 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Fr 09.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Fr 09.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟢 freigegeben (geht automatisch online) | Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
+| So 11.10. 19:30 | 🎬 Reel `09-reel-monatsbericht` | ⏳ wartet auf sprachnachricht | Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Code-Ausschnitte zum Nachbauen, keine Werbung. Sprechtext „So 11.10.“ in posts/sprechtexte.md – Sprachnachricht bis Fr 09.10. |
+| So 11.10. 19:35 | 📱 Story `09-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
 
 ## 🗓️ Danach
 
@@ -129,6 +134,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 09:05 ✍️ Erste Bibliothek-Beiträge eingeplant: Rückstellung (15.10.) und E-Rechnung (22.10.) ([`14efa48`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/14efa482bd2af59d6966f30dc6ae35c5eca2a9f1))
+  - Plan: neu `09-story-quiz` (2026-10-14 12:15, entwurf); neu `09-story-aufloesung` (2026-10-15 12:15, entwurf); neu `09-rueckstellung` (2026-10-15 19:30, entwurf); neu `09-story-teaser` (2026-10-15 19:35, entwurf); neu `10-story-umfrage` (2026-10-21 12:15, entwurf); neu `10-e-rechnung` (2026-10-22 19:30, entwurf); neu `10-story-teaser` (2026-10-22 19:35, entwurf)
 - 09:01 🔀 Merge remote-tracking branch 'origin/claude/instagram' into instagram-merge ([`93ebbbf`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/93ebbbfad07e8fe0dd9864ffd9c6151db587c386))
 - 09:01 ✍️ Bibliothek: 25 Zweifelsfälle entschieden und umgesetzt ([`9c2dcd6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9c2dcd64d6c93ec74e5adb0491d2ef39c2f32014))
   - `LAGE.html`, `assets/bibliothek/PRUEFBERICHT.md`, `assets/bibliothek/bausteine/haken_8b.png`, `assets/bibliothek/karussell/bewirtung/folie_05.png`, `assets/bibliothek/karussell/e_rechnung/folie_03.png`, `assets/bibliothek/karussell/examen/folie_01.png`, `…`

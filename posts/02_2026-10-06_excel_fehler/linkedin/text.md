@@ -2,7 +2,7 @@
 
 Wer Steuerrückstellungen in Excel rechnet, kennt das: Die Datei funktioniert, bis jemand fragt, wie eine Zahl zustande kommt.
 
-1. Fest eingetippte Steuersätze. Hebesatz oder KSt-Satz inklusive SolZ stehen direkt in der Formel. Ändert sich ein Wert, muss jede betroffene Zelle einzeln gefunden werden. Besser sind zentrale Parameter, die nur an einer Stelle gepflegt werden.
+1. Fest eingetippte Steuersätze. Hebesatz oder KSt-Satz inklusive SolZ stehen direkt in der Formel. Ändert sich ein Wert, muss jede betroffene Zelle einzeln gefunden werden. Spätestens mit der KSt-Senkung ab 2028 wird das teuer: Jeder fest eingetippte Satz ist dann falsch. Besser sind zentrale Parameter, die nur an einer Stelle gepflegt werden.
 
 2. Tote Verknüpfungen. Externe Bezüge auf Vorjahresdateien oder verschobene Ordner liefern im Zweifel veraltete, zwischengespeicherte Werte. Das fällt oft erst bei der Abstimmung auf.
 

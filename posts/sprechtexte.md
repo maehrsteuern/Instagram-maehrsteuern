@@ -4,6 +4,18 @@ Ablauf: Text grob lesen, dann **locker frei sprechen** (Sprachnachricht vom Hand
 etwas Abstand zum Mikro). Schicken → Claude schneidet mit wörtlichen Untertiteln (Regeln: `strategie/09_reel_regeln.md`).
 Keine echten Zahlen oder Fälle vom Arbeitgeber – nur Demo-Zahlen.
 
+## So 11.10. · „Nummer 1: Der Monatsbericht“ (Folge-Reel zum 5-Dinge-Reel vom 04.10.)
+> Nummer eins aus meinem letzten Reel: der Monatsbericht. Ich zeig dir, wie ich das mache.
+> Früher: jeden Monat dieselbe Runde. Exportieren, kopieren, einfügen, Formeln runterziehen. Fast zwei Stunden. Und am Ende stimmt trotzdem irgendwas nicht.
+> Heute sind es drei Schritte.
+> Eins: Der Code liest die Summen- und Saldenliste ein. Direkt den Export, ich fass nichts an.
+> Zwei: Er stimmt ab. Passt eine Summe nicht, hört er auf und sagt mir genau, wo.
+> Drei: Er baut den Bericht. Tabellen, Diagramm, fertiges PDF.
+> Daten rein, ein Klick, fertig.
+> Speicher dir das. Und schreib mir, welche Nummer als Nächstes dran ist.
+
+Bild: je Schritt eine Karte mit kurzem Code-Ausschnitt (Beispieldaten), vorher Excel-Runde, am Ende fertiges PDF. Hook-Text: „Nummer 1: Der Monatsbericht“. Ca. 35–40 s, gern in deinen Worten – „fast zwei Stunden“ nur sagen, wenn es bei dir ungefähr stimmt.
+
 ## Fr 09.10. · „Der Steuersatz, der ab 2028 falsch ist“ (zum Karussell latente Steuern vom 08.10.)
 > In meinem ersten Abschluss stand der Steuersatz fest in einer Zelle. Dreißig Prozent, eingetippt, fertig.
 > Hat jahrelang gepasst. Aber ab 2028 sinkt die Körperschaftsteuer jedes Jahr um einen Punkt – bis auf zehn Prozent.
