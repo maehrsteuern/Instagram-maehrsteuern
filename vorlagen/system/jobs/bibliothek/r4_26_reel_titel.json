@@ -1,0 +1,17 @@
+{ "titel": "Reel-Titelbilder (Runde 4)", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"reel_titel","datei":"reels/reel_ein_euro/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"1 € Gewinn.\n*52 Cent* privat.","sub":"Wohin der Rest geht."},
+    {"vorlage":"reel_titel","datei":"reels/reel_holding/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Holding:\n*1,5 %*","sub":"Warum Unternehmer sie lieben."},
+    {"vorlage":"reel_titel","datei":"reels/reel_34a/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"*28,25 %*\nstatt 45 %","sub":"Thesaurierung erklärt."},
+    {"vorlage":"reel_titel","datei":"reels/reel_betriebsaufspaltung/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Die stille\n*Falle*","sub":"Betriebsaufspaltung in 20 Sekunden."},
+    {"vorlage":"reel_titel","datei":"reels/reel_8c/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Verluste\n*weg*?","sub":"§ 8c KStG beim Anteilsverkauf."},
+    {"vorlage":"reel_titel","datei":"reels/reel_rc/titelbild.png","kicker":"Umsatzsteuer","titel":"Wer zahlt\nhier die *USt*?","sub":"Reverse-Charge in 15 Sekunden."},
+    {"vorlage":"reel_titel","datei":"reels/reel_rechnung/titelbild.png","kicker":"Umsatzsteuer","titel":"Rechnung\n*prüfen*","sub":"Pflichtangaben per Tool."},
+    {"vorlage":"reel_titel","datei":"reels/reel_extras/titelbild.png","kicker":"Lohn · Steuern × Code","titel":"*Steuerfrei*\nfürs Team","sub":"Sieben Extras, sieben Normen."},
+    {"vorlage":"reel_titel","datei":"reels/reel_homeoffice/titelbild.png","kicker":"Lohn · Steuern × Code","titel":"*6 €*\npro Tag","sub":"Homeoffice-Pauschale erklärt."},
+    {"vorlage":"reel_titel","datei":"reels/reel_nachfolge/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"85 % oder\n*100 %*?","sub":"Verschonung bei der Nachfolge."},
+    {"vorlage":"reel_titel","datei":"reels/reel_paragraf_formel/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"§ wird\n*Formel*","sub":"Fünf Normen als Excel-Zeile."},
+    {"vorlage":"reel_titel","datei":"reels/reel_gobd/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"GoBD in\n*5 Wörtern*","sub":"Kurz, aber prüfungsfest."},
+    {"vorlage":"reel_titel","datei":"reels/reel_tests/titelbild.png","kicker":"Hinter dem Code","titel":"*312*\nTestfälle","sub":"Bevor eine Regel live geht."},
+    {"vorlage":"reel_titel","datei":"reels/reel_mythen2/titelbild.png","kicker":"Mythos oder Fakt","titel":"Stundung\nist *gratis*?","sub":"Leider nein."}
+  ] }

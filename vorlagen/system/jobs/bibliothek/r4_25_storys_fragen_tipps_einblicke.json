@@ -1,0 +1,16 @@
+{ "titel": "Storys · Fragen, Tipps, Einblicke (Runde 4)", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/frage_holding.png","typ":"frage","kicker":"Umfrage","titel":"Habt ihr eine *Holding*-Struktur?"},
+    {"vorlage":"story","datei":"storys/frage_rc.png","typ":"frage","kicker":"Ehrlich","titel":"Prüft ihr Eingangs­rechnungen auf *§ 13b*?"},
+    {"vorlage":"story","datei":"storys/frage_nachfolge.png","typ":"frage","kicker":"Umfrage","titel":"Ist *Nachfolge* bei euch gerade ein Thema?"},
+    {"vorlage":"story","datei":"storys/frage_glossar.png","typ":"antwort","kicker":"Glossar Teil 3","titel":"Welchen Begriff soll ich *erklären*?"},
+    {"vorlage":"story","datei":"storys/frage_einlage.png","typ":"frage","kicker":"Umfrage","titel":"Wer führt bei euch das *Einlagekonto*?"},
+    {"vorlage":"story","datei":"storys/frage_extras.png","typ":"frage","kicker":"Umfrage","titel":"Nutzt ihr *steuerfreie Extras* für Mitarbeitende?"},
+    {"vorlage":"story","datei":"storys/tipp_rc_hinweis.png","typ":"info","kicker":"Tipp","titel":"„Steuer­schuldner­schaft des *Leistungs­empfängers*“","text":"Dieser Satz gehört auf jede Reverse-Charge-Rechnung (§ 14a Abs. 5 UStG)."},
+    {"vorlage":"story","datei":"storys/tipp_einlage_bescheinigung.png","typ":"info","kicker":"Tipp","titel":"Einlagekonto *richtig* bescheinigen.","text":"Eine zu niedrige Bescheinigung gilt als festgeschrieben (§ 27 Abs. 5 KStG). Vor der Ausschüttung prüfen."},
+    {"vorlage":"story","datei":"storys/tipp_option.png","typ":"info","kicker":"Tipp","titel":"Option zur KSt: *einen Monat* vorher.","text":"Der Antrag nach § 1a KStG muss spätestens einen Monat vor Beginn des Wirtschaftsjahres gestellt werden."},
+    {"vorlage":"story","datei":"storys/tipp_freigrenze.png","typ":"info","kicker":"Tipp","titel":"Freigrenze ≠ *Freibetrag*.","punkte":["Freigrenze: drüber = alles steuerpflichtig","Freibetrag: nur der Rest zählt","Sachbezug 50 € ist eine Freigrenze"]},
+    {"vorlage":"story","datei":"storys/tipp_adv.png","typ":"info","kicker":"Tipp","titel":"Einspruch *plus* AdV.","text":"Der Einspruch allein hemmt die Zahlung nicht. Aussetzung der Vollziehung gleich mit beantragen (§ 361 AO)."},
+    {"vorlage":"story","datei":"storys/einblick_formel.png","typ":"info","kicker":"Hinter dem Code","titel":"Heute aus § 8 Nr. 1 GewStG *Code* gemacht.","punkte":["Konten den Quoten zugeordnet","Freibetrag als Parameter","Ampel bei unklaren Mietverträgen"]},
+    {"vorlage":"story","datei":"storys/einblick_test.png","typ":"info","kicker":"Hinter dem Code","titel":"*312 Testfälle*. Alle grün.","text":"Jede Regel wird gegen Lehrbuchfälle geprüft, bevor sie ins Tool kommt."}
+  ] }

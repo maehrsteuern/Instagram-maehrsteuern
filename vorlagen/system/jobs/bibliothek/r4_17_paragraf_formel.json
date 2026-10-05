@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Praxis – „Wenn Paragrafen Excel-Formeln wären“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/paragraf_formel/folie_01.png","typ":"titel","saeule":"Praxis","titel":"Wenn Paragrafen *Excel-Formeln* wären.","sub":"Fünf Normen, fünf Zeilen – zum Nachbauen."},
+    {"vorlage":"karussell","datei":"karussell/paragraf_formel/folie_02.png","typ":"inhalt","saeule":"§ 8 Nr. 1 GewStG","titel":"Hinzurechnung","text":"Ein Viertel der Finanzierungsanteile über 200.000 €.","boxTitel":"FORMEL","box":"=MAX(0; Summe-200000)/4","boxMono":true},
+    {"vorlage":"karussell","datei":"karussell/paragraf_formel/folie_03.png","typ":"inhalt","saeule":"§ 11 GewStG","titel":"Messbetrag","text":"Gewerbeertrag auf 100 € abrunden, mal 3,5 %.","boxTitel":"FORMEL","box":"=PRODUKT(ABRUNDEN(Ertrag;-2); 3,5%)","boxMono":true},
+    {"vorlage":"karussell","datei":"karussell/paragraf_formel/folie_04.png","typ":"inhalt","saeule":"§ 8b Abs. 5 KStG","titel":"Schachtelstrafe","text":"5 % der Dividende gelten als nicht abziehbar.","boxTitel":"FORMEL","box":"=Dividende/20","boxMono":true},
+    {"vorlage":"karussell","datei":"karussell/paragraf_formel/folie_05.png","typ":"inhalt","saeule":"§ 4 Abs. 5 Satz 1 Nr. 1 EStG","titel":"Geschenke","text":"Bis 50 € abziehbar – darüber gar nicht.","boxTitel":"FORMEL","box":"=WENN(Netto<=50; Netto; 0)","boxMono":true},
+    {"vorlage":"karussell","datei":"karussell/paragraf_formel/folie_06.png","typ":"inhalt","saeule":"§ 4h EStG","titel":"Zinsschranke","text":"Unter 3 Mio. € alles abziehbar, sonst bis 30 % EBITDA.","boxTitel":"FORMEL","box":"=WENN(Nettozins<3000000; Nettozins; MIN(Nettozins; EBITDA_30))","boxMono":true},
+    {"vorlage":"karussell","datei":"karussell/paragraf_formel/folie_07.png","typ":"cta","saeule":"Praxis","titel":"Formel gefunden? *Tool* gebaut.","text":"Aus genau solchen Zeilen entstehen meine Tools – mit Prüfpfad statt Zellbezug."}
+  ] }

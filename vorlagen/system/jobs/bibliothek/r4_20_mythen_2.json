@@ -1,0 +1,11 @@
+{ "titel": "Karussell · Mythos oder Fakt – Teil 2", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/mythen_2/folie_01.png","typ":"titel","saeule":"Mythos oder Fakt","titel":"*Teil 2*: noch mehr Steuer-Irrtümer.","sub":"Ihr habt sie in die Kommentare geschrieben."},
+    {"vorlage":"karussell","datei":"karussell/mythen_2/folie_02.png","typ":"inhalt","saeule":"Mythos 01","titel":"„Bis *50 €* ist jeder Sachbezug frei.“","boxTitel":"FAKT","box":"Monatlich – und als Freigrenze: Bei 50,01 € ist alles steuerpflichtig (§ 8 Abs. 2 Satz 11 EStG)."},
+    {"vorlage":"karussell","datei":"karussell/mythen_2/folie_03.png","typ":"inhalt","saeule":"Mythos 02","titel":"„Kleinunternehmer zahlen *nie* USt.“","boxTitel":"FAKT","box":"Über 100.000 € im laufenden Jahr gilt sofort die Regelbesteuerung (§ 19 Abs. 1 UStG)."},
+    {"vorlage":"karussell","datei":"karussell/mythen_2/folie_04.png","typ":"inhalt","saeule":"Mythos 03","titel":"„Eine Holding spart *alle* Steuern.“","boxTitel":"FAKT","box":"Sie spart bei Veräußerung bis auf rund 1,5 % – aber die Ausschüttung an Privat kostet weiter."},
+    {"vorlage":"karussell","datei":"karussell/mythen_2/folie_05.png","typ":"inhalt","saeule":"Mythos 04","titel":"„Stundung ist *kostenlos*.“","boxTitel":"FAKT","box":"Stundungszinsen: 0,5 % pro vollem Monat (§§ 234, 238 AO)."},
+    {"vorlage":"karussell","datei":"karussell/mythen_2/folie_06.png","typ":"inhalt","saeule":"Mythos 05","titel":"„Einspruch stoppt die *Zahlung*.“","boxTitel":"FAKT","box":"Nein. Dafür braucht es die Aussetzung der Vollziehung (§ 361 AO)."},
+    {"vorlage":"karussell","datei":"karussell/mythen_2/folie_07.png","typ":"inhalt","saeule":"Mythos 06","titel":"„Reverse-Charge gibt es nur *im Ausland*.“","boxTitel":"FAKT","box":"Auch im Inland – etwa bei Bauleistungen an Bauleister (§ 13b Abs. 2 Nr. 4 UStG)."},
+    {"vorlage":"karussell","datei":"karussell/mythen_2/folie_08.png","typ":"cta","saeule":"Mythos oder Fakt","titel":"Teil 3? *Ihr* entscheidet.","text":"Schreib deinen Mythos in die Kommentare.","chip":"💬 Ab in die Kommentare"}
+  ] }

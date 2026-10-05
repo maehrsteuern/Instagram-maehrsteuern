@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Das steuerliche Einlagekonto“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/einlagekonto/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Das Einlagekonto: *steuerfrei zurück*.","sub":"Warum § 27 KStG mehr ist als eine Feststellung."},
+    {"vorlage":"karussell","datei":"karussell/einlagekonto/folie_02.png","typ":"inhalt","saeule":"Was ist das?","titel":"Einlagen außerhalb des *Nennkapitals*.","text":"Zum Beispiel Zuzahlungen in die Kapitalrücklage. Das Konto wird jedes Jahr gesondert festgestellt.","boxTitel":"NORM","box":"§ 27 Abs. 1 und 2 KStG"},
+    {"vorlage":"karussell","datei":"karussell/einlagekonto/folie_03.png","typ":"inhalt","saeule":"Wozu?","titel":"Rückzahlung ist *keine* Dividende.","text":"Leistungen aus dem Einlagekonto mindern beim Gesellschafter die Anschaffungskosten der Anteile – keine Kapitalertragsteuer.","boxTitel":"NORM","box":"§ 20 Abs. 1 Nr. 1 Satz 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/einlagekonto/folie_04.png","typ":"inhalt","saeule":"Die Reihenfolge","titel":"Erst der *Gewinn*, dann die Einlage.","text":"Leistungen gelten zuerst aus dem ausschüttbaren Gewinn als erbracht. Nur was darüber hinausgeht, kommt aus dem Einlagekonto.","boxTitel":"NORM","box":"§ 27 Abs. 1 Satz 3 KStG"},
+    {"vorlage":"karussell","datei":"karussell/einlagekonto/folie_05.png","typ":"inhalt","saeule":"Praxis","titel":"Ohne *Bescheinigung* geht nichts.","text":"Die GmbH muss die Verwendung des Einlagekontos bescheinigen. Eine zu niedrige Bescheinigung lässt sich nachträglich nicht korrigieren.","boxTitel":"NORM","box":"§ 27 Abs. 3 und 5 KStG"},
+    {"vorlage":"karussell","datei":"karussell/einlagekonto/folie_06.png","typ":"cta","saeule":"Wissen","titel":"Einlagekonto *fortschreiben*?","text":"Zugänge, Abgänge, Verwendungsrechnung – ein klarer Fall für ein Tool."}
+  ] }

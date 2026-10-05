@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Praxis – „GoBD in fünf Wörtern“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/gobd/folie_01.png","typ":"titel","saeule":"Praxis","titel":"GoBD in *fünf Wörtern*.","sub":"Was digitale Buchführung erfüllen muss."},
+    {"vorlage":"karussell","datei":"karussell/gobd/folie_02.png","typ":"inhalt","nr":"01","titel":"*Nachvollziehbar*.","text":"Ein sachverständiger Dritter muss sich in angemessener Zeit einen Überblick verschaffen können.","boxTitel":"NORM","box":"§ 145 Abs. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/gobd/folie_03.png","typ":"inhalt","nr":"02","titel":"*Vollständig*.","text":"Jeder Geschäftsvorfall wird einzeln erfasst – lückenlos.","boxTitel":"NORM","box":"§ 146 Abs. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/gobd/folie_04.png","typ":"inhalt","nr":"03","titel":"*Zeitgerecht*.","text":"Kasseneinnahmen und -ausgaben täglich, unbare Vorgänge zeitnah – als Richtwert innerhalb von zehn Tagen."},
+    {"vorlage":"karussell","datei":"karussell/gobd/folie_05.png","typ":"inhalt","nr":"04","titel":"*Unveränderbar*.","text":"Änderungen dürfen den ursprünglichen Inhalt nicht unkenntlich machen.","boxTitel":"NORM","box":"§ 146 Abs. 4 AO"},
+    {"vorlage":"karussell","datei":"karussell/gobd/folie_06.png","typ":"inhalt","nr":"05","titel":"*Dokumentiert*.","text":"Die Verfahrensdokumentation beschreibt, wie Daten entstehen, verarbeitet und aufbewahrt werden."},
+    {"vorlage":"karussell","datei":"karussell/gobd/folie_07.png","typ":"cta","saeule":"Praxis","titel":"Excel-Datei *GoBD-fest*?","text":"Eine Excel-Datei ist von Natur aus veränderbar. Ein Tool mit Protokoll ist es nicht."}
+  ] }

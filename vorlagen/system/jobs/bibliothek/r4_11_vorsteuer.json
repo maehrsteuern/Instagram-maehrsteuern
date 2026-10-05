@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Umsatzsteuer – „Vorsteuer: 4 Voraussetzungen“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/vorsteuer/folie_01.png","typ":"titel","saeule":"Umsatzsteuer","titel":"Vorsteuer: *4 Voraussetzungen*.","sub":"Was erfüllt sein muss – § 15 UStG."},
+    {"vorlage":"karussell","datei":"karussell/vorsteuer/folie_02.png","typ":"inhalt","nr":"01","titel":"*Unternehmer*.","text":"Nur ein Unternehmer im Sinne des § 2 UStG kann Vorsteuer abziehen."},
+    {"vorlage":"karussell","datei":"karussell/vorsteuer/folie_03.png","typ":"inhalt","nr":"02","titel":"Leistung *für das Unternehmen*.","text":"Die Leistung muss für das Unternehmen bezogen sein – bei gemischter Nutzung mindestens 10 % unternehmerisch.","boxTitel":"NORM","box":"§ 15 Abs. 1 Satz 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/vorsteuer/folie_04.png","typ":"inhalt","nr":"03","titel":"Eine *ordnungsgemäße* Rechnung.","text":"Mit allen Pflichtangaben – Kleinbetragsrechnungen bis 250 € brutto mit weniger Angaben.","boxTitel":"NORM","box":"§ 14 Abs. 4 UStG · § 33 UStDV"},
+    {"vorlage":"karussell","datei":"karussell/vorsteuer/folie_05.png","typ":"inhalt","nr":"04","titel":"Kein *Ausschluss*.","text":"Wer steuerfreie Umsätze wie Vermietung ohne Option oder Finanzleistungen ausführt, hat insoweit keinen Abzug.","boxTitel":"NORM","box":"§ 15 Abs. 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/vorsteuer/folie_06.png","typ":"inhalt","saeule":"Pflichtangaben","titel":"Was auf die *Rechnung* muss.","punkte":["Name und Anschrift beider Seiten","Steuernummer oder USt-IdNr.","Datum und fortlaufende Nummer","Menge, Art, Zeitpunkt der Leistung","Entgelt, Steuersatz, Steuerbetrag"]},
+    {"vorlage":"karussell","datei":"karussell/vorsteuer/folie_07.png","typ":"cta","saeule":"Umsatzsteuer","titel":"Rechnungen *automatisch* prüfen?","text":"Mit der E-Rechnung sind die Pflichtangaben strukturiert – perfekt für ein Prüf-Tool."}
+  ] }

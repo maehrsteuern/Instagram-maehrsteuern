@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Betriebsaufspaltung“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/betriebsaufspaltung/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Betriebs­aufspaltung: *die stille Falle*.","sub":"Wie Vermietung plötzlich gewerblich wird."},
+    {"vorlage":"karussell","datei":"karussell/betriebsaufspaltung/folie_02.png","typ":"inhalt","saeule":"Voraussetzung 1","titel":"*Sachliche* Verflechtung.","text":"Das Besitzunternehmen überlässt der Betriebsgesellschaft eine wesentliche Betriebsgrundlage – typischerweise das Betriebsgrundstück."},
+    {"vorlage":"karussell","datei":"karussell/betriebsaufspaltung/folie_03.png","typ":"inhalt","saeule":"Voraussetzung 2","titel":"*Personelle* Verflechtung.","text":"Dieselbe Person oder Personengruppe beherrscht beide Unternehmen – sie hat einen einheitlichen geschäftlichen Betätigungswillen.","boxTitel":"NORM","box":"H 15.7 Abs. 4 ff. EStH"},
+    {"vorlage":"karussell","datei":"karussell/betriebsaufspaltung/folie_04.png","typ":"inhalt","saeule":"Die Folge","titel":"Miete wird *gewerblich*.","punkte":["Mieteinnahmen sind Einkünfte aus Gewerbebetrieb","Grundstück und GmbH-Anteile sind Betriebsvermögen","Gewerbesteuer beim Besitzunternehmen"]},
+    {"vorlage":"karussell","datei":"karussell/betriebsaufspaltung/folie_05.png","typ":"inhalt","saeule":"Das Risiko","titel":"Das Ende *kostet*.","text":"Fällt eine Voraussetzung weg – etwa durch Schenkung oder Erbfall –, kann das eine Betriebsaufgabe auslösen. Stille Reserven werden aufgedeckt."},
+    {"vorlage":"karussell","datei":"karussell/betriebsaufspaltung/folie_06.png","typ":"cta","saeule":"Wissen","titel":"Struktur *prüfen*, bevor sie kippt.","text":"Speicher dir die zwei Voraussetzungen für das nächste Gespräch.","chip":"📌 Jetzt speichern"}
+  ] }

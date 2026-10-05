@@ -1,0 +1,8 @@
+{ "titel": "Karussell · Wissen – „Grunderwerbsteuer bei Share Deals“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/grest_share/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Share Deals: *90 % in 10 Jahren*.","sub":"Grunderwerbsteuer ohne Grundstückskauf – § 1 GrEStG."},
+    {"vorlage":"karussell","datei":"karussell/grest_share/folie_02.png","typ":"inhalt","saeule":"Personengesellschaft","titel":"Wechsel im *Gesellschafter­bestand*.","text":"Gehen innerhalb von zehn Jahren mindestens 90 % der Anteile auf neue Gesellschafter über, fällt Grunderwerbsteuer an.","boxTitel":"NORM","box":"§ 1 Abs. 2a GrEStG"},
+    {"vorlage":"karussell","datei":"karussell/grest_share/folie_03.png","typ":"inhalt","saeule":"Kapitalgesellschaft","titel":"Seit 2021 *auch* bei der GmbH.","text":"Die gleiche 90-%-Grenze in zehn Jahren gilt seit Juli 2021 auch für Kapitalgesellschaften mit Grundbesitz.","boxTitel":"NORM","box":"§ 1 Abs. 2b GrEStG"},
+    {"vorlage":"karussell","datei":"karussell/grest_share/folie_04.png","typ":"inhalt","saeule":"Steuersatz","titel":"*3,5 % bis 6,5 %* – je nach Land.","text":"Jedes Bundesland legt den Satz selbst fest. Bemessungsgrundlage beim Share Deal ist der Grundbesitzwert.","boxTitel":"NORM","box":"§ 11 GrEStG · Art. 105 Abs. 2a GG · § 8 Abs. 2 GrEStG"},
+    {"vorlage":"karussell","datei":"karussell/grest_share/folie_05.png","typ":"cta","saeule":"Wissen","titel":"Anteilsbewegungen *über 10 Jahre* tracken?","text":"Eine Tabelle reicht selten. Ein Tool zählt automatisch mit."}
+  ] }

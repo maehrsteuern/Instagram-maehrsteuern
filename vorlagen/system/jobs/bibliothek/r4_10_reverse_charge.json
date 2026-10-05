@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „Reverse-Charge: 5 Fälle“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/reverse_charge/folie_01.png","typ":"titel","saeule":"Umsatzsteuer","titel":"Reverse-Charge: *Wer zahlt die Steuer*?","sub":"5 Fälle, in denen der Leistungsempfänger schuldet – § 13b UStG."},
+    {"vorlage":"karussell","datei":"karussell/reverse_charge/folie_02.png","typ":"inhalt","saeule":"Die Regel","titel":"Steuer­schuld *dreht sich um*.","text":"Der Leistende stellt netto in Rechnung, der Empfänger meldet die Umsatzsteuer – und zieht sie meist sofort als Vorsteuer ab.","boxTitel":"NORM","box":"§ 13b Abs. 5 UStG"},
+    {"vorlage":"karussell","datei":"karussell/reverse_charge/folie_03.png","typ":"inhalt","saeule":"Die Fälle","titel":"Fünf *Klassiker*.","punkte":["Werklieferungen und sonstige Leistungen ausländischer Unternehmer","Bauleistungen an Bauleister","Gebäudereinigung an Gebäudereiniger","Handys, Tablets, Konsolen ab 5.000 € je Lieferung","Strom und Gas an Wiederverkäufer"],"boxTitel":"NORM","box":"§ 13b Abs. 1 und 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/reverse_charge/folie_04.png","typ":"inhalt","saeule":"Die Rechnung","titel":"Ein *Pflicht*­hinweis.","text":"Auf der Rechnung muss stehen: „Steuerschuldnerschaft des Leistungsempfängers“.","boxTitel":"NORM","box":"§ 14a Abs. 5 UStG"},
+    {"vorlage":"karussell","datei":"karussell/reverse_charge/folie_05.png","typ":"inhalt","saeule":"Typischer Fehler","titel":"Trotzdem *mit* USt bezahlt.","text":"Wird die Umsatzsteuer trotzdem ausgewiesen, schuldet der Leistende sie nach § 14c UStG – und der Empfänger hat keinen Vorsteuerabzug daraus."},
+    {"vorlage":"karussell","datei":"karussell/reverse_charge/folie_06.png","typ":"cta","saeule":"Umsatzsteuer","titel":"*Speichern* für die Eingangsrechnungs-Prüfung.","chip":"📌 Jetzt speichern"}
+  ] }

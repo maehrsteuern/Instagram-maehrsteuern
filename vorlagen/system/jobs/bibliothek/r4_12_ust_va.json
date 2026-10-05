@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „Voranmeldung: monatlich oder quartalsweise?“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/ust_va/folie_01.png","typ":"titel","saeule":"Umsatzsteuer","titel":"Voranmeldung: *monatlich* oder quartalsweise?","sub":"Die Grenzen seit 2025 – § 18 UStG."},
+    {"vorlage":"karussell","datei":"karussell/ust_va/folie_02.png","typ":"inhalt","saeule":"Die Grenzen","titel":"Was die *Vorjahressteuer* entscheidet.","zeilen":[["über 9.000 €","monatlich"],["2.000 € bis 9.000 €","quartalsweise"],["bis 2.000 €","Befreiung möglich"]],"boxTitel":"NORM","box":"§ 18 Abs. 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ust_va/folie_03.png","typ":"inhalt","saeule":"Die Frist","titel":"Am *10. Tag* danach.","text":"Die Voranmeldung ist bis zum 10. Tag nach Ablauf des Voranmeldungszeitraums elektronisch zu übermitteln.","boxTitel":"NORM","box":"§ 18 Abs. 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ust_va/folie_04.png","typ":"inhalt","saeule":"Mehr Zeit","titel":"Dauerfrist­verlängerung: *1 Monat*.","text":"Auf Antrag einen Monat mehr. Monatszahler leisten dafür eine Sondervorauszahlung von 1/11 der Vorjahres-Vorauszahlungen.","boxTitel":"NORM","box":"§§ 46–48 UStDV"},
+    {"vorlage":"karussell","datei":"karussell/ust_va/folie_05.png","typ":"inhalt","saeule":"Ist oder Soll?","titel":"Ist-Versteuerung bis *800.000 €*.","text":"Bis zu diesem Vorjahresumsatz kann die Steuer nach vereinnahmten Entgelten berechnet werden – erst zahlen, wenn der Kunde zahlt.","boxTitel":"NORM","box":"§ 20 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ust_va/folie_06.png","typ":"cta","saeule":"Umsatzsteuer","titel":"*Speichern* für den Fristenkalender.","chip":"📌 Jetzt speichern"}
+  ] }

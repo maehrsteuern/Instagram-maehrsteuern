@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Unternehmensnachfolge: 85 % oder 100 %?“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/erbst_bv/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Unternehmens­nachfolge: *85 % oder 100 %*?","sub":"Die Verschonung von Betriebsvermögen – §§ 13a, 13b ErbStG."},
+    {"vorlage":"karussell","datei":"karussell/erbst_bv/folie_02.png","typ":"inhalt","saeule":"Regelverschonung","titel":"*85 %* steuerfrei.","zeilen":[["Verschonung","85 %"],["Behaltensfrist","5 Jahre"],["Mindestlohnsumme","400 %"]],"boxTitel":"NORM","box":"§ 13a Abs. 1 und 3 ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/erbst_bv/folie_03.png","typ":"inhalt","saeule":"Optionsverschonung","titel":"*100 %* steuerfrei.","zeilen":[["Verschonung","100 %"],["Behaltensfrist","7 Jahre"],["Mindestlohnsumme","700 %"],["Verwaltungsvermögen höchstens","20 %"]],"boxTitel":"NORM","box":"§ 13a Abs. 10 ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/erbst_bv/folie_04.png","typ":"inhalt","saeule":"Grenze","titel":"Ab *26 Mio. €* wird es eng.","text":"Über 26 Mio. € begünstigtem Vermögen greifen Abschmelzungsmodell oder Verschonungsbedarfsprüfung.","boxTitel":"NORM","box":"§ 13a Abs. 1 · §§ 13c, 28a ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/erbst_bv/folie_05.png","typ":"inhalt","saeule":"Freibeträge","titel":"Zusätzlich *persönlich*.","zeilen":[["Ehegatte","500.000 €"],["Kind","400.000 €"],["Enkel","200.000 €"]],"boxTitel":"NORM","box":"§ 16 Abs. 1 ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/erbst_bv/folie_06.png","typ":"cta","saeule":"Wissen","titel":"Nachfolge *früh* planen.","text":"Lohnsummen und Verwaltungsvermögen über Jahre im Blick – das kann ein Tool."}
+  ] }

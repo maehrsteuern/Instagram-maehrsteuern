@@ -1,0 +1,7 @@
+{ "titel": "Highlight-Titelbilder · Euro, Summe, Formel, USt", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"highlight","datei":"highlights/hl_euro.png","icon":"text","glyph":"€","fs":300},
+    {"vorlage":"highlight","datei":"highlights/hl_summe.png","icon":"text","glyph":"Σ","fs":300},
+    {"vorlage":"highlight","datei":"highlights/hl_formel.png","icon":"text","glyph":"fx","fs":230},
+    {"vorlage":"highlight","datei":"highlights/hl_ust.png","icon":"text","glyph":"USt","fs":170}
+  ] }

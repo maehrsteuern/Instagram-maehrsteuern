@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Praxis – „Der Steuerkalender: Q4“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/steuerkalender/folie_01.png","typ":"titel","saeule":"Praxis","titel":"Der Steuerkalender: *die festen Termine*.","sub":"Vorauszahlungen und Anmeldungen – zum Speichern."},
+    {"vorlage":"karussell","datei":"karussell/steuerkalender/folie_02.png","typ":"inhalt","saeule":"Monatlich","titel":"Am *10.* jedes Monats.","punkte":["Umsatzsteuer-Voranmeldung (§ 18 UStG)","Lohnsteuer-Anmeldung (§ 41a EStG)","Ohne Dauerfristverlängerung"]},
+    {"vorlage":"karussell","datei":"karussell/steuerkalender/folie_03.png","typ":"inhalt","saeule":"ESt- und KSt-Vorauszahlung","titel":"Vier *Termine*.","zeilen":[["10. März","Q1"],["10. Juni","Q2"],["10. September","Q3"],["10. Dezember","Q4"]],"boxTitel":"NORM","box":"§ 37 Abs. 1 EStG · § 31 KStG"},
+    {"vorlage":"karussell","datei":"karussell/steuerkalender/folie_04.png","typ":"inhalt","saeule":"GewSt-Vorauszahlung","titel":"Immer am *15.*","zeilen":[["15. Februar","Q1"],["15. Mai","Q2"],["15. August","Q3"],["15. November","Q4"]],"boxTitel":"NORM","box":"§ 19 Abs. 1 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/steuerkalender/folie_05.png","typ":"inhalt","saeule":"Schonfrist","titel":"*3 Tage* bei Überweisung.","text":"Bei Überweisung entsteht ein Säumniszuschlag erst nach drei Tagen. Bei Scheck gilt keine Schonfrist.","boxTitel":"NORM","box":"§ 240 Abs. 3 AO"},
+    {"vorlage":"karussell","datei":"karussell/steuerkalender/folie_06.png","typ":"cta","saeule":"Praxis","titel":"*Speichern* und Termine eintragen.","chip":"📌 Jetzt speichern"}
+  ] }

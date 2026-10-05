@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Ein Euro Gewinn: Was bleibt?“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/ein_euro/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Ein Euro Gewinn in der GmbH: *Was bleibt?*","sub":"Von der Gesellschaft bis aufs Privatkonto – Hebesatz 400 %, Stand 2026."},
+    {"vorlage":"karussell","datei":"karussell/ein_euro/folie_02.png","typ":"inhalt","saeule":"Ebene 1 · GmbH","titel":"Erst *zahlt* die Gesellschaft.","zeilen":[["Gewinn vor Steuern","1,0000 €"],["KSt + SolZ 15,825 %","0,1583 €"],["GewSt 14 %","0,1400 €"],["Ausschüttbar","0,7018 €","summe"]]},
+    {"vorlage":"karussell","datei":"karussell/ein_euro/folie_03.png","typ":"inhalt","saeule":"Ebene 2 · Gesellschafter","titel":"Dann *zahlt* der Gesellschafter.","zeilen":[["Ausschüttung","0,7018 €"],["Abgeltungsteuer + SolZ 26,375 %","0,1851 €"],["Netto privat","0,5167 €","summe"]],"boxTitel":"NORM","box":"§ 32d Abs. 1 EStG · § 4 SolZG"},
+    {"vorlage":"karussell","datei":"karussell/ein_euro/folie_04.png","typ":"inhalt","saeule":"Gesamtbelastung","titel":"Rund *48 %* – bei Ausschüttung.","text":"Bleibt der Gewinn in der GmbH, sind es nur 29,825 %. Die zweite Ebene kommt erst, wenn ausgeschüttet wird.","boxTitel":"OHNE KIRCHENSTEUER","box":"Kirchensteuer würde die Abgeltungsteuer zusätzlich verändern."},
+    {"vorlage":"karussell","datei":"karussell/ein_euro/folie_05.png","typ":"inhalt","saeule":"Ab 2032","titel":"Die erste Ebene wird *leichter*.","zeilen":[["KSt + SolZ 10,55 %","0,1055 €"],["GewSt 14 %","0,1400 €"],["Ausschüttbar","0,7545 €","summe"]],"boxTitel":"NORM","box":"§ 23 Abs. 1 KStG"},
+    {"vorlage":"karussell","datei":"karussell/ein_euro/folie_06.png","typ":"cta","saeule":"Wissen","titel":"Rechtsform *durchrechnen*?","text":"Ein Tool vergleicht GmbH, Thesaurierung und Ausschüttung mit euren Zahlen."}
+  ] }

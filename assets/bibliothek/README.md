@@ -1,8 +1,8 @@
 # Bibliothek – fertige Assets auf Vorrat
 
-Aus dem Claude-Design-Katalog „maehrsteuern Brand Kit“ (Runden 1–3) übernommen und mit dem Vorlagen-System erzeugt. **Nichts davon ist im Plan** – die Content-Fabrik oder Loris nimmt sich hier Beiträge, kopiert sie nach `posts/<Nr>_<Datum>_<Thema>/` und trägt sie in `automatik/plan.json` ein.
+Aus dem Claude-Design-Katalog „maehrsteuern Brand Kit“ (Runden 1–4) übernommen und mit dem Vorlagen-System erzeugt. **Nichts davon ist im Plan** – die Content-Fabrik oder Loris nimmt sich hier Beiträge, kopiert sie nach `posts/<Nr>_<Datum>_<Thema>/` und trägt sie in `automatik/plan.json` ein.
 
-**365 Bilder** in 55 Job-Dateien.
+**582 Bilder** in 84 Job-Dateien.
 
 - **Alle Zahlen sind Demo-Werte.** Rechtsstand und Normen vor der Freigabe fachlich prüfen (Stand der Texte: Okt. 2026).
 - Texte ändern: Job-Datei in `vorlagen/system/jobs/bibliothek/` anpassen, dann im Ordner `vorlagen/system` → `node render.mjs jobs/bibliothek/<datei>.json`. Danach optional verlustfrei verkleinern: `pip install pyoxipng` und `python3 -c "import oxipng,sys; [oxipng.optimize(f, level=3) for f in sys.argv[1:]]" <png …>`.
@@ -87,3 +87,39 @@ Aus dem Claude-Design-Katalog „maehrsteuern Brand Kit“ (Runden 1–3) übern
 | `r3_26_einblendungen.json` | Reel-Einblendungen (Runde 3) | 15 | `bausteine/` – haken_formel, haken_datenzugriff, haken_vorjahr, haken_8b, haken_final, haken_ueber_hinz, haken_ueber_gelb, haken_ueber_gruen, leiste_konten, leiste_quoten, leiste_freibetrag, leiste_hinz_fertig, leiste_norm, abspann_mehr_abschluss, abspann_quote |
 | `r3_27_highlights.json` | Highlight-Titelbilder · Quiz, Paragraf, Code, Prozent | 4 | `highlights/hl_quiz.png`, `highlights/hl_paragraf.png`, `highlights/hl_code.png`, `highlights/hl_prozent.png` |
 | `r3_28_ampel.json` | Ampel-Nahaufnahmen · Zinsschranke, Organschaft, Rückstellung | 6 | `bausteine/` – ampel_zins_rot, ampel_zins_gruen, ampel_organ_gelb, ampel_organ_gruen, ampel_rst_rot, ampel_rst_gruen |
+
+## Runde 4
+
+**Platzhalter – vor Verwendung ersetzen:** „312 Testfälle“ (`storys/einblick_test.png`, `reels/reel_tests/titelbild.png`, `bausteine/haken_ueber_test.png`) und die Beteiligungsquoten 48 %/62 % in `bausteine/ampel_8c_gelb.png` / `ampel_8c_rot.png` sind erfundene Demo-Werte.
+
+| Job | Inhalt | Bilder | Dateien |
+|---|---|---|---|
+| `r4_01_ein_euro.json` | Karussell · Wissen – „Ein Euro Gewinn: Was bleibt?“ | 6 | `karussell/ein_euro/` |
+| `r4_02_teileinkuenfte.json` | Karussell · Wissen – „Teileinkünfteverfahren: 60/40“ | 6 | `karussell/teileinkuenfte/` |
+| `r4_03_holding.json` | Karussell · Wissen – „Holding: Warum 1,5 %?“ | 6 | `karussell/holding/` |
+| `r4_04_thesaurierung.json` | Karussell · Wissen – „Thesaurierung nach § 34a EStG“ | 6 | `karussell/thesaurierung/` |
+| `r4_05_betriebsaufspaltung.json` | Karussell · Wissen – „Betriebsaufspaltung“ | 6 | `karussell/betriebsaufspaltung/` |
+| `r4_06_par8c.json` | Karussell · Wissen – „§ 8c KStG: Wann Verluste untergehen“ | 6 | `karussell/par8c/` |
+| `r4_07_einlagekonto.json` | Karussell · Wissen – „Das steuerliche Einlagekonto“ | 6 | `karussell/einlagekonto/` |
+| `r4_08_pension.json` | Karussell · Wissen – „Pensionsrückstellung: 6 % vs. HGB“ | 6 | `karussell/pension/` |
+| `r4_09_teilwert.json` | Karussell · Wissen – „Teilwertabschreibung“ | 6 | `karussell/teilwert/` |
+| `r4_10_reverse_charge.json` | Karussell · Umsatzsteuer – „Reverse-Charge: 5 Fälle“ | 6 | `karussell/reverse_charge/` |
+| `r4_11_vorsteuer.json` | Karussell · Umsatzsteuer – „Vorsteuer: 4 Voraussetzungen“ | 7 | `karussell/vorsteuer/` |
+| `r4_12_ust_va.json` | Karussell · Umsatzsteuer – „Voranmeldung: monatlich oder quartalsweise?“ | 6 | `karussell/ust_va/` |
+| `r4_13_lohn_extras.json` | Karussell · Lohn – „Sieben steuerfreie Extras“ | 6 | `karussell/lohn_extras/` |
+| `r4_14_homeoffice.json` | Karussell · Lohn – „Homeoffice und Arbeitszimmer“ | 6 | `karussell/homeoffice/` |
+| `r4_15_erbst_bv.json` | Karussell · Wissen – „Unternehmensnachfolge: 85 % oder 100 %?“ | 6 | `karussell/erbst_bv/` |
+| `r4_16_grest_share.json` | Karussell · Wissen – „Grunderwerbsteuer bei Share Deals“ | 5 | `karussell/grest_share/` |
+| `r4_17_paragraf_formel.json` | Karussell · Praxis – „Wenn Paragrafen Excel-Formeln wären“ | 7 | `karussell/paragraf_formel/` |
+| `r4_18_steuerkalender.json` | Karussell · Praxis – „Der Steuerkalender: Q4“ | 6 | `karussell/steuerkalender/` |
+| `r4_19_gobd.json` | Karussell · Praxis – „GoBD in fünf Wörtern“ | 7 | `karussell/gobd/` |
+| `r4_20_mythen_2.json` | Karussell · Mythos oder Fakt – Teil 2 | 8 | `karussell/mythen_2/` |
+| `r4_21_glossar_2.json` | Karussell · Glossar – Teil 2 | 7 | `karussell/glossar_2/` |
+| `r4_22_einzelposts.json` | Einzelposts 1:1 · „Zahl mit Norm“ (Runde 4) | 15 | `einzelposts/` – zahl_48, zahl_holding, zahl_34a, zahl_teileinkuenfte, zahl_pension, zahl_8c, zahl_ust_va, zahl_ist, zahl_kleinbetrag, zahl_betriebsfeier, zahl_homeoffice, zahl_verschonung, zahl_share_deal, zahl_stundung, zahl_reverse |
+| `r4_23_storys_quiz_und_aufloesung.json` | Storys · Quiz und Auflösung (Runde 4) | 12 | `storys/` – quiz_euro, quiz_euro_aufloesung, quiz_holding, quiz_holding_aufloesung, quiz_sachbezug, quiz_sachbezug_aufloesung, quiz_pension, quiz_pension_aufloesung, quiz_ust, quiz_ust_aufloesung, quiz_8c, quiz_8c_aufloesung |
+| `r4_24_storys_zahl_des_tages.json` | Storys · Zahl des Tages (Runde 4) | 8 | `storys/` – zdt_34a, zdt_pension, zdt_sachbezug, zdt_ehegatte, zdt_10tage, zdt_kleinbetrag, zdt_einlage, zdt_lohnsumme |
+| `r4_25_storys_fragen_tipps_einblicke.json` | Storys · Fragen, Tipps, Einblicke (Runde 4) | 13 | `storys/` – frage_holding, frage_rc, frage_nachfolge, frage_glossar, frage_einlage, frage_extras, tipp_rc_hinweis, tipp_einlage_bescheinigung, tipp_option, tipp_freigrenze, tipp_adv, einblick_formel, einblick_test |
+| `r4_26_reel_titel.json` | Reel-Titelbilder (Runde 4) | 14 | `reels/reel_ein_euro/`, `reels/reel_holding/`, `reels/reel_34a/`, `reels/reel_betriebsaufspaltung/`, `reels/reel_8c/`, `reels/reel_rc/`, `reels/reel_rechnung/`, `reels/reel_extras/`, `reels/reel_homeoffice/`, `reels/reel_nachfolge/`, `reels/reel_paragraf_formel/`, `reels/reel_gobd/`, `reels/reel_tests/`, `reels/reel_mythen2/` |
+| `r4_27_einblendungen.json` | Reel-Einblendungen (Runde 4) | 14 | `bausteine/` – haken_52cent, haken_miete, haken_51, haken_rechnung, haken_test, haken_ueber_rc, haken_ueber_einlage, haken_ueber_test, leiste_rechnung_lesen, leiste_pflicht, leiste_13b, leiste_vorsteuer, abspann_paragraf, abspann_getestet |
+| `r4_28_highlights.json` | Highlight-Titelbilder · Euro, Summe, Formel, USt | 4 | `highlights/hl_euro.png`, `highlights/hl_summe.png`, `highlights/hl_formel.png`, `highlights/hl_ust.png` |
+| `r4_29_ampel.json` | Ampel-Nahaufnahmen · Vorsteuer, § 8c, Pensionen | 6 | `bausteine/` – ampel_vst_rot, ampel_vst_gruen, ampel_8c_gelb, ampel_8c_rot, ampel_pension_gelb, ampel_pension_gruen |

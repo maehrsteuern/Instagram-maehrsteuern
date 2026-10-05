@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Teilwertabschreibung“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/teilwert/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Teilwert­abschreibung: *nur wenn dauernd*.","sub":"Wann das Finanzamt die Wertminderung akzeptiert."},
+    {"vorlage":"karussell","datei":"karussell/teilwert/folie_02.png","typ":"inhalt","saeule":"Die Regel","titel":"*Voraussichtlich dauernde* Wertminderung.","text":"Nur dann darf steuerlich auf den niedrigeren Teilwert abgeschrieben werden – es ist ein Wahlrecht.","boxTitel":"NORM","box":"§ 6 Abs. 1 Nr. 1 Satz 2 und Nr. 2 Satz 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/teilwert/folie_03.png","typ":"inhalt","saeule":"Abnutzbares Anlagevermögen","titel":"Die *Halbzeit*-Regel.","text":"Dauernd ist die Wertminderung, wenn der Teilwert mindestens für die halbe Restnutzungsdauer unter dem planmäßigen Restbuchwert liegt.","boxTitel":"QUELLE","box":"BMF-Schreiben zur Teilwertabschreibung"},
+    {"vorlage":"karussell","datei":"karussell/teilwert/folie_04.png","typ":"inhalt","saeule":"Börsennotierte Aktien","titel":"Die *5-%-Grenze*.","text":"Ein Kursrückgang unter die Anschaffungskosten gilt als dauernd, wenn er die Bagatellgrenze von 5 % überschreitet."},
+    {"vorlage":"karussell","datei":"karussell/teilwert/folie_05.png","typ":"inhalt","saeule":"Danach","titel":"Wert­aufholung ist *Pflicht*.","text":"Steigt der Wert wieder, muss bis höchstens zu den fortgeführten Anschaffungskosten zugeschrieben werden.","boxTitel":"NORM","box":"§ 6 Abs. 1 Nr. 1 Satz 4 EStG"},
+    {"vorlage":"karussell","datei":"karussell/teilwert/folie_06.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für den Stichtag.","chip":"📌 Jetzt speichern"}
+  ] }

@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Pensionsrückstellung: 6 % vs. HGB“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/pension/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Pensions­rückstellung: *6 %* vs. HGB.","sub":"Warum Handels- und Steuerbilanz so weit auseinanderliegen."},
+    {"vorlage":"karussell","datei":"karussell/pension/folie_02.png","typ":"inhalt","saeule":"Steuerbilanz","titel":"Rechnungszins *6 %*.","text":"Steuerlich wird mit 6 % abgezinst – seit Jahrzehnten unverändert. Hoher Zins heißt: niedrige Rückstellung.","boxTitel":"NORM","box":"§ 6a Abs. 3 Satz 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/pension/folie_03.png","typ":"inhalt","saeule":"Handelsbilanz","titel":"Durchschnitt aus *10 Jahren*.","text":"Im HGB gilt der durchschnittliche Marktzins der letzten zehn Jahre (Bundesbank). Er liegt deutlich unter 6 %.","boxTitel":"NORM","box":"§ 253 Abs. 2 HGB"},
+    {"vorlage":"karussell","datei":"karussell/pension/folie_04.png","typ":"inhalt","saeule":"Voraussetzungen","titel":"Steuerlich nur mit *Form*.","punkte":["Schriftliche Zusage","Kein schädlicher Widerrufsvorbehalt","Eindeutige Angaben zu Art, Form und Höhe"],"boxTitel":"NORM","box":"§ 6a Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/pension/folie_05.png","typ":"inhalt","saeule":"Folge","titel":"Fast immer *aktive* latente Steuern.","text":"HGB-Rückstellung höher als in der Steuerbilanz – das ergibt eine aktive Differenz, bewertet mit dem Satz des Abbaujahres."},
+    {"vorlage":"karussell","datei":"karussell/pension/folie_06.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für die Gutachten-Saison.","chip":"📌 Jetzt speichern"}
+  ] }

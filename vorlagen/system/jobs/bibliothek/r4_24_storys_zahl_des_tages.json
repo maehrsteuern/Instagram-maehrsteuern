@@ -1,0 +1,11 @@
+{ "titel": "Storys · Zahl des Tages (Runde 4)", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/zdt_34a.png","typ":"info","kicker":"Zahl des Tages","titel":"*28,25 %*","text":"Thesaurierungssatz für nicht entnommene Gewinne – auf Antrag (§ 34a EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_pension.png","typ":"info","kicker":"Zahl des Tages","titel":"*6 %*\nRechnungszins","text":"Für Pensionsrückstellungen in der Steuerbilanz (§ 6a Abs. 3 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_sachbezug.png","typ":"info","kicker":"Zahl des Tages","titel":"*50 €*\nim Monat","text":"Freigrenze für Sachbezüge wie Gutscheine (§ 8 Abs. 2 Satz 11 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_ehegatte.png","typ":"info","kicker":"Zahl des Tages","titel":"*500.000 €*","text":"Freibetrag für Ehegatten bei der Erbschaft- und Schenkungsteuer (§ 16 Abs. 1 Nr. 1 ErbStG)."},
+    {"vorlage":"story","datei":"storys/zdt_10tage.png","typ":"info","kicker":"Zahl des Tages","titel":"*10 Tage*","text":"Richtwert für die zeitgerechte Erfassung unbarer Geschäftsvorfälle nach den GoBD."},
+    {"vorlage":"story","datei":"storys/zdt_kleinbetrag.png","typ":"info","kicker":"Zahl des Tages","titel":"*250 €*\nbrutto","text":"Bis hier reicht eine Kleinbetragsrechnung für den Vorsteuerabzug (§ 33 UStDV)."},
+    {"vorlage":"story","datei":"storys/zdt_einlage.png","typ":"info","kicker":"Zahl des Tages","titel":"*0 €*\nKapital­ertrag­steuer","text":"Auf Rückzahlungen aus dem steuerlichen Einlagekonto (§ 27 KStG, § 20 Abs. 1 Nr. 1 Satz 3 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_lohnsumme.png","typ":"info","kicker":"Zahl des Tages","titel":"*400 %*\nLohnsumme","text":"Über fünf Jahre für die Regelverschonung bei der Unternehmensnachfolge (§ 13a Abs. 3 ErbStG)."}
+  ] }

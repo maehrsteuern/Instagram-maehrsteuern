@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Thesaurierung nach § 34a EStG“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/thesaurierung/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Thesaurierung: *28,25 %* für Einzel­unternehmer.","sub":"Die Begünstigung nicht entnommener Gewinne – § 34a EStG."},
+    {"vorlage":"karussell","datei":"karussell/thesaurierung/folie_02.png","typ":"inhalt","saeule":"Die Regel","titel":"Was *im Betrieb bleibt*.","text":"Auf Antrag wird der nicht entnommene Gewinn mit 28,25 % besteuert – statt mit dem persönlichen Steuersatz bis 45 %.","boxTitel":"NORM","box":"§ 34a Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/thesaurierung/folie_03.png","typ":"inhalt","saeule":"Die Nachversteuerung","titel":"Später: *25 %*.","text":"Wird der begünstigte Gewinn später entnommen, fällt eine Nachversteuerung von 25 % an.","boxTitel":"NORM","box":"§ 34a Abs. 4 EStG"},
+    {"vorlage":"karussell","datei":"karussell/thesaurierung/folie_04.png","typ":"inhalt","saeule":"Für wen?","titel":"Nur bei *hohem* Steuersatz.","punkte":["Einzelunternehmer und Mitunternehmer","Gewinnermittlung durch Bilanz","Lohnt sich meist erst nahe am Spitzensteuersatz"]},
+    {"vorlage":"karussell","datei":"karussell/thesaurierung/folie_05.png","typ":"inhalt","saeule":"Alternative","titel":"Oder gleich *optieren*?","text":"Personengesellschaften können zur Körperschaftsteuer optieren – Antrag spätestens einen Monat vor Beginn des Wirtschaftsjahres.","boxTitel":"NORM","box":"§ 1a KStG"},
+    {"vorlage":"karussell","datei":"karussell/thesaurierung/folie_06.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für die Rechtsformfrage.","chip":"📌 Jetzt speichern"}
+  ] }

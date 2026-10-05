@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „§ 8c KStG: Wann Verluste untergehen“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/par8c/folie_01.png","typ":"titel","saeule":"Wissen","titel":"§ 8c KStG: Wann *Verluste untergehen*.","sub":"Anteilseignerwechsel und Verlustvortrag."},
+    {"vorlage":"karussell","datei":"karussell/par8c/folie_02.png","typ":"inhalt","saeule":"Die Regel","titel":"Mehr als *50 %* in 5 Jahren.","text":"Werden innerhalb von fünf Jahren mehr als 50 % der Anteile an einen Erwerber übertragen, gehen die bisher nicht genutzten Verluste vollständig unter.","boxTitel":"NORM","box":"§ 8c Abs. 1 Satz 1 KStG"},
+    {"vorlage":"karussell","datei":"karussell/par8c/folie_03.png","typ":"inhalt","saeule":"Ausnahmen","titel":"Drei *Rettungsanker*.","punkte":["*Konzernklausel*: Erwerber und Veräußerer zu 100 % in einer Hand","*Stille-Reserven-Klausel*: Verluste bis zur Höhe der stillen Reserven bleiben","*Sanierungsklausel*: Erwerb zum Zweck der Sanierung"],"boxTitel":"NORM","box":"§ 8c Abs. 1 Sätze 4–9, Abs. 1a KStG"},
+    {"vorlage":"karussell","datei":"karussell/par8c/folie_04.png","typ":"inhalt","saeule":"Auf Antrag","titel":"Der *fortführungs­gebundene* Verlustvortrag.","text":"Wurde der Geschäftsbetrieb seit drei Jahren unverändert geführt, bleibt der Verlust auf Antrag erhalten – solange der Betrieb so weiterläuft.","boxTitel":"NORM","box":"§ 8d KStG"},
+    {"vorlage":"karussell","datei":"karussell/par8c/folie_05.png","typ":"inhalt","saeule":"Gewerbesteuer","titel":"Gilt *genauso*.","text":"Für Fehlbeträge nach § 10a GewStG ist § 8c KStG entsprechend anzuwenden.","boxTitel":"NORM","box":"§ 10a Satz 10 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/par8c/folie_06.png","typ":"cta","saeule":"Wissen","titel":"Anteilsverkauf geplant? *Erst rechnen.*","chip":"📌 Jetzt speichern"}
+  ] }

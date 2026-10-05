@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Teileinkünfteverfahren: 60/40“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/teileinkuenfte/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Teileinkünfte­verfahren: *60/40*.","sub":"Wenn GmbH-Anteile im Betriebsvermögen liegen – § 3 Nr. 40 EStG."},
+    {"vorlage":"karussell","datei":"karussell/teileinkuenfte/folie_02.png","typ":"inhalt","saeule":"Die Regel","titel":"*40 %* steuerfrei.","text":"Dividenden und Veräußerungsgewinne aus Kapitalgesellschafts-Anteilen sind bei natürlichen Personen im Betriebsvermögen zu 40 % steuerfrei.","boxTitel":"NORM","box":"§ 3 Nr. 40 EStG"},
+    {"vorlage":"karussell","datei":"karussell/teileinkuenfte/folie_03.png","typ":"inhalt","saeule":"Die Kehrseite","titel":"Kosten nur zu *60 %*.","text":"Betriebsausgaben und Werbungskosten, die damit zusammenhängen, sind nur zu 60 % abziehbar.","boxTitel":"NORM","box":"§ 3c Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/teileinkuenfte/folie_04.png","typ":"inhalt","saeule":"Im Privatvermögen","titel":"Option *auf Antrag*.","punkte":["Mindestens *25 %* beteiligt","Oder mindestens *1 %* und beruflich für die GmbH tätig","Dann Teileinkünfte statt Abgeltungsteuer"],"boxTitel":"NORM","box":"§ 32d Abs. 2 Nr. 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/teileinkuenfte/folie_05.png","typ":"inhalt","saeule":"Im Vergleich","titel":"Natürliche Person vs. *GmbH*.","zeilen":[["Natürliche Person, Betriebsvermögen","60 % stpfl."],["Natürliche Person, Privatvermögen","25 % Abgeltung"],["GmbH als Gesellschafterin (§ 8b KStG)","5 % stpfl."]]},
+    {"vorlage":"karussell","datei":"karussell/teileinkuenfte/folie_06.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* für die nächste Beteiligung.","chip":"📌 Jetzt speichern"}
+  ] }

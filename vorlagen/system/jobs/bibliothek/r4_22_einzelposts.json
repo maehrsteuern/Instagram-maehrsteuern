@@ -1,0 +1,18 @@
+{ "titel": "Einzelposts 1:1 · „Zahl mit Norm“ (Runde 4)", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"zahl","datei":"einzelposts/zahl_48.png","kicker":"GmbH plus Ausschüttung","zahl":"48,3 %","titel":"Gesamt­belastung *2026*.","text":"29,825 % auf Ebene der GmbH, dann 26,375 % auf die Ausschüttung.","norm":"§ 23 KStG · § 32d EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_holding.png","kicker":"Holding","zahl":"1,49 %","titel":"Auf *Veräußerungs­gewinne*.","text":"5 % nicht abziehbar × 29,825 % – bei Hebesatz 400 %.","norm":"§ 8b Abs. 2, 3 KStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_34a.png","kicker":"Thesaurierung","zahl":"28,25 %","titel":"Für *nicht entnommene* Gewinne.","text":"Plus SolZ – Nachversteuerung bei Entnahme: 25 %.","norm":"§ 34a EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_teileinkuenfte.png","kicker":"Teileinkünfte","zahl":"60 %","titel":"*Steuerpflichtig*.","text":"Dividenden im Betriebsvermögen natürlicher Personen.","norm":"§ 3 Nr. 40 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_pension.png","kicker":"Pensionen","zahl":"6 %","titel":"Der *steuerliche* Rechnungszins.","text":"Im HGB gilt der 10-Jahres-Durchschnitt der Bundesbank.","norm":"§ 6a Abs. 3 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_8c.png","kicker":"Verlustvortrag","zahl":"> 50 %","titel":"In *fünf* Jahren.","text":"Dann gehen Verluste grundsätzlich unter.","norm":"§ 8c Abs. 1 KStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_ust_va.png","kicker":"USt-Voranmeldung","zahl":"9.000 €","titel":"Darüber *monatlich*.","text":"Maßgeblich ist die Steuer des Vorjahres.","norm":"§ 18 Abs. 2 UStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_ist.png","kicker":"Ist-Versteuerung","zahl":"800.000 €","titel":"Vorjahres­umsatz *höchstens*.","text":"Dann zählt die Zahlung, nicht die Rechnung.","norm":"§ 20 UStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_kleinbetrag.png","kicker":"Kleinbetragsrechnung","zahl":"250 €","titel":"*Brutto*.","text":"Weniger Pflichtangaben – Vorsteuer trotzdem abziehbar.","norm":"§ 33 UStDV"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_betriebsfeier.png","kicker":"Betriebsveranstaltung","zahl":"110 €","titel":"Pro Person, *zweimal* im Jahr.","text":"Freibetrag – nur der Rest ist Arbeitslohn.","norm":"§ 19 Abs. 1 Satz 1 Nr. 1a EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_homeoffice.png","kicker":"Homeoffice","zahl":"1.260 €","titel":"Maximal *pro Jahr*.","text":"6 € je Tag, höchstens 210 Tage.","norm":"§ 4 Abs. 5 Satz 1 Nr. 6c EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_verschonung.png","kicker":"Nachfolge","zahl":"100 %","titel":"*Options*­verschonung.","text":"7 Jahre Behaltensfrist, 700 % Lohnsumme.","norm":"§ 13a Abs. 10 ErbStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_share_deal.png","kicker":"Share Deal","zahl":"90 %","titel":"In *zehn* Jahren.","text":"Ab dann fällt Grunderwerbsteuer an.","norm":"§ 1 Abs. 2a, 2b GrEStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_stundung.png","kicker":"Stundungszinsen","zahl":"0,5 %","titel":"Pro *vollem* Monat.","text":"Gilt auch für Aussetzungszinsen.","norm":"§§ 234, 237, 238 AO"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_reverse.png","kicker":"Reverse-Charge","zahl":"5.000 €","titel":"Handys und *Tablets*.","text":"Ab diesem Betrag je Lieferung schuldet der Empfänger.","norm":"§ 13b Abs. 2 Nr. 10 UStG"}
+  ] }

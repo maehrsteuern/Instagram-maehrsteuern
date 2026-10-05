@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Glossar – Teil 2", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/glossar_2/folie_01.png","typ":"titel","saeule":"Glossar · Teil 2","titel":"Steuer-Glossar: *5 weitere Begriffe*.","sub":"Mit euren Vorschlägen aus Teil 1."},
+    {"vorlage":"karussell","datei":"karussell/glossar_2/folie_02.png","typ":"inhalt","saeule":"Glossar · A","titel":"*Aussetzung der Vollziehung*","text":"Der angefochtene Bescheid muss vorerst nicht bezahlt werden – bei ernstlichen Zweifeln an der Rechtmäßigkeit.","boxTitel":"NORM","box":"§ 361 AO · § 69 FGO"},
+    {"vorlage":"karussell","datei":"karussell/glossar_2/folie_03.png","typ":"inhalt","saeule":"Glossar · F","titel":"*Freigrenze*","text":"Bis zur Grenze steuerfrei – darüber zählt der *gesamte* Betrag. Beispiel: Sachbezug 50 €, Zinsschranke 3 Mio. €."},
+    {"vorlage":"karussell","datei":"karussell/glossar_2/folie_04.png","typ":"inhalt","saeule":"Glossar · F","titel":"*Freibetrag*","text":"Wird immer abgezogen – nur der übersteigende Teil zählt. Beispiel: Hinzurechnung 200.000 €, Betriebsveranstaltung 110 €."},
+    {"vorlage":"karussell","datei":"karussell/glossar_2/folie_05.png","typ":"inhalt","saeule":"Glossar · V","titel":"*Vorbehalt der Nachprüfung*","text":"Der Bescheid kann jederzeit geändert werden, solange die Festsetzungsfrist läuft – etwa bis nach der Betriebsprüfung.","boxTitel":"NORM","box":"§ 164 AO"},
+    {"vorlage":"karussell","datei":"karussell/glossar_2/folie_06.png","typ":"inhalt","saeule":"Glossar · W","titel":"*Wesentliche Betriebs­grundlage*","text":"Ein Wirtschaftsgut, das für den Betrieb funktional unverzichtbar ist – Kernbegriff der Betriebsaufspaltung."},
+    {"vorlage":"karussell","datei":"karussell/glossar_2/folie_07.png","typ":"cta","saeule":"Glossar","titel":"*Speichern* und weitersagen.","chip":"📌 Jetzt speichern"}
+  ] }

@@ -1,0 +1,15 @@
+{ "titel": "Storys · Quiz und Auflösung (Runde 4)", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/quiz_euro.png","typ":"antwort","kicker":"Quiz","titel":"Von 1 € GmbH-Gewinn: Wie viel kommt *privat* an?","antwort":"↩ Schätz in Cent –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_euro_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"Rund *52 Cent*.","text":"29,825 % zahlt die GmbH (Hebesatz 400 %), 26,375 % Abgeltungsteuer mit SolZ die Ausschüttung."},
+    {"vorlage":"story","datei":"storys/quiz_holding.png","typ":"antwort","kicker":"Quiz","titel":"Wie viel Steuer zahlt eine GmbH auf einen *Anteilsverkauf*?","antwort":"↩ Antworte in Prozent –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_holding_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"Rund *1,5 %*.","text":"95 % sind steuerfrei, 5 % gelten als nicht abziehbar (§ 8b Abs. 2 und 3 KStG)."},
+    {"vorlage":"story","datei":"storys/quiz_sachbezug.png","typ":"antwort","kicker":"Quiz","titel":"Ein Gutschein über *51 €*: Was ist steuerfrei?","antwort":"↩ Antworte mit einem Betrag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_sachbezug_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*Nichts*.","text":"50 € sind eine Freigrenze. Wird sie überschritten, ist der ganze Betrag steuerpflichtig (§ 8 Abs. 2 Satz 11 EStG)."},
+    {"vorlage":"story","datei":"storys/quiz_pension.png","typ":"antwort","kicker":"Quiz","titel":"Mit welchem Zins zinst die *Steuerbilanz* Pensionen ab?","antwort":"↩ Schätz mal –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_pension_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*6 %*.","text":"Fest im Gesetz (§ 6a Abs. 3 EStG). Das HGB nutzt den 10-Jahres-Durchschnittszins."},
+    {"vorlage":"story","datei":"storys/quiz_ust.png","typ":"antwort","kicker":"Quiz","titel":"Ab welcher Vorjahressteuer gibst du die USt-VA *monatlich* ab?","antwort":"↩ Antworte mit einem Betrag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_ust_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"Über *9.000 €*.","text":"Seit 2025 – vorher waren es 7.500 € (§ 18 Abs. 2 UStG)."},
+    {"vorlage":"story","datei":"storys/quiz_8c.png","typ":"antwort","kicker":"Quiz","titel":"Ab welcher Quote gehen bei Anteilsverkauf *Verluste* unter?","antwort":"↩ Antworte in Prozent –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_8c_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"Mehr als *50 %*.","text":"Innerhalb von fünf Jahren an einen Erwerber (§ 8c KStG) – mit Ausnahmen wie der Stille-Reserven-Klausel."}
+  ] }

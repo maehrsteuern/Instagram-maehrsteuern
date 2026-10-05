@@ -49,3 +49,28 @@ Die ursprünglichen Befunde:
 - [x] **r3_25_reel_titel.json** (reels/reel_8b/titelbild.png) – sub: „Dividenden unter GmbHs.“ (dasselbe in r3_26 haken_8b.png): Die 95 % gelten für Dividenden nur ab 10 % Beteiligung (Streubesitz, § 8b Abs. 4 KStG). Außerdem sind die Bezüge formal zu 100 % steuerfrei, 5 % gelten als nichtabziehbare Betriebsausgaben. Für einen Hook ist das vertretbar, im Reel sollte es aber gesagt werden. *Vorschlag:* Im Reel-Text die 10-%-Grenze nennen und erklären, wie die 5 % fiktiven Betriebsausgaben die 95 % ergeben.
 - [x] **r3_25_reel_titel.json** (reels/reel_kst2032/titelbild.png) – titel: „24,55 % ab 2032“: Die 24,55 % gelten nur bei einem Hebesatz von 400 % (10 % + 0,55 % + 14 %). Auf dem Titelbild fehlt diese Annahme, im Einzelpost steht sie dagegen („Bei gleichem Hebesatz“). *Vorschlag:* Im Reel oder in der Caption „bei 400 % Hebesatz“ ergänzen.
 - [x] **r3_24_storys_fragen_und_tipps.json** (tipp_eav.png) – „Die Organschaft gilt erstmals für das Jahr, in dem der Vertrag wirksam wird (§ 14 Abs. 1 Satz 2 KStG).“: Das ist verkürzt. Das Einkommen wird erstmals für das Kalenderjahr zugerechnet, in dem das Wirtschaftsjahr der Organgesellschaft endet, in dem der GAV durch die HR-Eintragung wirksam wird. Bei abweichendem Wirtschaftsjahr ist die Aussage ungenau, im Regelfall stimmt sie. *Vorschlag:* Gegebenenfalls „für das Wirtschaftsjahr, in dem der Vertrag (HR-Eintragung) wirksam wird“ schreiben.
+
+# Runde 4 (05.10.2026)
+
+Alle 29 Job-Dateien `r4_*.json` (217 Bilder) vor dem Rendern gegengelesen, Rechtsstand Okt. 2026. Alle Rechenbeispiele gehen auf: 1 € → 0,7018 € → 0,5167 €, also 48,3 % Gesamtbelastung. 50.000 € × 29,825 % = 14.913 €, also 1,49 %. Ab 2032 bleiben 0,7545 € ausschüttbar. 6 € × 210 Tage = 1.260 €.
+
+## Korrigiert vor dem Rendern (6)
+
+- **r4_17_paragraf_formel.json** (folie_05.png): „§ 4 Abs. 5 Nr. 1 EStG“ → „§ 4 Abs. 5 Satz 1 Nr. 1 EStG“. Das Zitat war unvollständig, so steht es auch in den anderen Bibliothekstexten.
+- **r4_22_einzelposts.json** (zahl_betriebsfeier.png): „§ 19 Abs. 1 Nr. 1a EStG“ → „§ 19 Abs. 1 Satz 1 Nr. 1a EStG“. Damit ist das Zitat vollständig, wie im Karussell.
+- **r4_22_einzelposts.json** (zahl_homeoffice.png): „§ 4 Abs. 5 Nr. 6c EStG“ → „§ 4 Abs. 5 Satz 1 Nr. 6c EStG“. Damit ist das Zitat vollständig, wie im Karussell.
+- **r4_22_einzelposts.json** (zahl_ust_va.png): „Ab dann *monatlich*.“ → „Darüber *monatlich*.“ Nach § 18 Abs. 2 UStG ist monatlich abzugeben, wenn die Vorjahressteuer **mehr als** 9.000 € betrug. Bei genau 9.000 € bleibt es quartalsweise.
+- **r4_23_storys_quiz_und_aufloesung.json** (quiz_ust_aufloesung.png): „Ab *9.000 €*.“ → „Über *9.000 €*.“ Grund wie oben, so heißt es auch im Karussell („über 9.000 €“).
+- **r4_23_storys_quiz_und_aufloesung.json** (quiz_pension.png): „Mit welchem Zins rechnet die *Steuerbilanz* Pensionen ab?“ → „Mit welchem Zins zinst die *Steuerbilanz* Pensionen ab?“ „Abrechnen“ war das falsche Wort, gemeint ist das Abzinsen.
+
+## Platzhalter (Design, bewusst übernommen)
+
+- [ ] **„312 Testfälle“** in r4_25 (einblick_test.png), r4_26 (reel_tests) und r4_27 (haken_ueber_test.png) ist eine erfundene Zahl. Vor dem Posten durch die echte Anzahl ersetzen und neu rendern.
+- [ ] **Beteiligungsquoten 48 % / 62 %** in r4_29 (ampel_8c_gelb.png, ampel_8c_rot.png) sind Demo-Werte. Als Demo sind sie unkritisch, sie sind aber nicht aus einem echten Fall.
+
+## Offen – Entscheidung Loris (4)
+
+- [ ] **r4_02_teileinkuenfte.json** (folie_05.png) – Zeile „GmbH als Gesellschafterin (§ 8b KStG): 5 % stpfl.“: Das gilt für Veräußerungsgewinne immer. Für Dividenden gilt es nur ab 10 % Beteiligung (§ 8b Abs. 4 KStG), wie beim Prüfpunkt zu zdt_8b in Runde 3. *Vorschlag:* Hinweis „Dividenden ab 10 %“ in der Caption, oder die Zeile kürzen.
+- [ ] **r4_13_lohn_extras.json** (folie_01/02.png) – „Sieben *steuerfreie* Extras“: Die Erholungsbeihilfe ist für den Mitarbeitenden steuerfrei, der Arbeitgeber versteuert sie aber pauschal mit 25 % (§ 40 Abs. 2 Satz 1 Nr. 3 EStG). Aufmerksamkeiten sind gar kein Arbeitslohn. Die Tabelle nennt „pauschal 25 %“, für Instagram ist das vertretbar. Die Werte stimmen: 600 € Gesundheitsförderung (§ 3 Nr. 34 EStG), 156 € Erholungsbeihilfe je Arbeitnehmer. *Vorschlag:* In der Caption „steuerfrei bzw. pauschal versteuert“ schreiben.
+- [ ] **r4_22_einzelposts.json** (zahl_stundung.png) – „0,5 % pro vollem Monat, gilt auch für Aussetzungszinsen (§ 237 AO)“: Der Gesetzeswortlaut stimmt, die Zinsreform 2022 hat nur § 233a AO auf 0,15 % gesenkt. Ob 0,5 % bei Aussetzungszinsen verfassungsgemäß ist, wird diskutiert. *Vorschlag:* Vor dem Posten den aktuellen Stand der Rechtsprechung prüfen.
+- [ ] **r4_16_grest_share.json** (folie_04.png) – „3,5 % bis 6,5 %“: Das ist die Spanne der Landessätze (Bayern 3,5 %, z. B. NRW/Brandenburg/Saarland/Schleswig-Holstein 6,5 %). Vor dem Posten die aktuellen Landessätze kurz gegenprüfen, weil die Länder sie jederzeit ändern können.

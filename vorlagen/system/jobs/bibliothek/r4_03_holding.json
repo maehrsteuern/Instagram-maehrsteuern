@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Holding: Warum 1,5 %?“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/holding/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Holding: Warum *1,5 %*?","sub":"Veräußerungsgewinne zwischen Kapitalgesellschaften – § 8b Abs. 2 und 3 KStG."},
+    {"vorlage":"karussell","datei":"karussell/holding/folie_02.png","typ":"inhalt","saeule":"Die Regel","titel":"Veräußerungsgewinn *steuerfrei* – fast.","text":"Verkauft eine GmbH Anteile an einer anderen Kapitalgesellschaft, bleibt der Gewinn außer Ansatz. 5 % gelten als nicht abziehbare Betriebsausgaben.","boxTitel":"NORM","box":"§ 8b Abs. 2 und 3 KStG"},
+    {"vorlage":"karussell","datei":"karussell/holding/folie_03.png","typ":"inhalt","saeule":"Rechenbeispiel · Demo-Zahlen","titel":"1 Mio. € *Veräußerungsgewinn*","zeilen":[["5 % nicht abziehbar","50.000 €"],["× 29,825 % (Hebesatz 400 %)","14.913 €","summe"]],"boxTitel":"EFFEKTIV","box":"14.913 € auf 1 Mio. € = *1,49 %*"},
+    {"vorlage":"karussell","datei":"karussell/holding/folie_04.png","typ":"inhalt","saeule":"Der Unterschied","titel":"Ohne Mindest­beteiligung.","text":"Anders als bei Dividenden (10 % bzw. 15 %) gilt die Freistellung für Veräußerungsgewinne unabhängig von der Beteiligungshöhe.","boxTitel":"ACHTUNG","box":"Verluste aus der Veräußerung sind ebenfalls *nicht* abziehbar."},
+    {"vorlage":"karussell","datei":"karussell/holding/folie_05.png","typ":"inhalt","saeule":"Warum Holding?","titel":"Gewinn *bleibt* im Konzern.","text":"Der Erlös kann bei der Holding reinvestiert werden – die zweite Steuerebene kommt erst bei Ausschüttung an die natürliche Person."},
+    {"vorlage":"karussell","datei":"karussell/holding/folie_06.png","typ":"cta","saeule":"Wissen","titel":"Struktur *durchrechnen*?","text":"Mit und ohne Holding, mit euren Zahlen – Demo per DM."}
+  ] }

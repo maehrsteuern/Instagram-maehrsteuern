@@ -1,0 +1,17 @@
+{ "titel": "Reel-Einblendungen (Runde 4)", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"einblendung","datei":"bausteine/haken_52cent.png","typ":"haken","titel":"Von 1 € bleiben\n*52 Cent*.","sub":"Und das ist legal."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_miete.png","typ":"haken","kicker":"Kennst du?","titel":"Miete an die eigene\n*GmbH*?","sub":"Dann lies weiter."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_51.png","typ":"haken","titel":"*51 €* Gutschein.\nAlles steuerpflichtig.","sub":"Ein Euro zu viel."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_rechnung.png","typ":"haken","kicker":"Eingangsrechnung","titel":"Mit USt bezahlt.\n*Falsch* gemacht?","sub":"§ 13b UStG."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_test.png","typ":"haken","kicker":"Hinter dem Code","titel":"Was passiert, wenn\n*ein Test* rot wird?"},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_rc.png","typ":"haken_ueber","kicker":"Ampel","titel":"Rot heißt:\n*§ 13b prüfen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_einlage.png","typ":"haken_ueber","kicker":"Demo","titel":"Einlagekonto:\n*fortgeschrieben*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_test.png","typ":"haken_ueber","kicker":"Ergebnis","titel":"312 von 312\n*bestanden*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_rechnung_lesen.png","typ":"leiste","kicker":"Schritt 1","titel":"E-Rechnung *einlesen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_pflicht.png","typ":"leiste","kicker":"Schritt 2","titel":"Pflichtangaben *prüfen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_13b.png","typ":"leiste","kicker":"Schritt 3","titel":"§ 13b *erkennen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_vorsteuer.png","typ":"leiste","kicker":"Ergebnis","titel":"Vorsteuer *gesichert*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_paragraf.png","typ":"abspann","titel":"Vom Paragrafen\n*zur Formel.*"},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_getestet.png","typ":"abspann","titel":"Jede Regel\n*getestet.*"}
+  ] }

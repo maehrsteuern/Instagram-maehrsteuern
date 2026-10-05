@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Lohn – „Homeoffice und Arbeitszimmer“", "runde": 4, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/homeoffice/folie_01.png","typ":"titel","saeule":"Lohn","titel":"Homeoffice oder Arbeitszimmer: *was zählt*?","sub":"Die Regeln seit 2023 auf einen Blick."},
+    {"vorlage":"karussell","datei":"karussell/homeoffice/folie_02.png","typ":"inhalt","saeule":"Homeoffice-Pauschale","titel":"*6 €* pro Tag.","text":"Für jeden Tag, an dem überwiegend zu Hause gearbeitet wird – höchstens 210 Tage.","boxTitel":"NORM","box":"§ 4 Abs. 5 Satz 1 Nr. 6c EStG"},
+    {"vorlage":"karussell","datei":"karussell/homeoffice/folie_03.png","typ":"inhalt","saeule":"Das Maximum","titel":"Höchstens *1.260 €*.","zeilen":[["6 € × 210 Tage","1.260 €","summe"]],"boxTitel":"ACHTUNG","box":"Die Pauschale ist Teil der Werbungskosten – der Arbeitnehmer-Pauschbetrag (1.230 €) gilt nicht zusätzlich."},
+    {"vorlage":"karussell","datei":"karussell/homeoffice/folie_04.png","typ":"inhalt","saeule":"Arbeitszimmer","titel":"Nur als *Mittelpunkt*.","text":"Ist das Arbeitszimmer Mittelpunkt der gesamten Tätigkeit, sind die Kosten abziehbar – oder pauschal 1.260 € im Jahr.","boxTitel":"NORM","box":"§ 4 Abs. 5 Satz 1 Nr. 6b EStG"},
+    {"vorlage":"karussell","datei":"karussell/homeoffice/folie_05.png","typ":"inhalt","saeule":"Entweder oder","titel":"*Nicht* beides.","text":"Für dieselben Tage gibt es nicht Arbeitszimmer und Homeoffice-Pauschale zugleich."},
+    {"vorlage":"karussell","datei":"karussell/homeoffice/folie_06.png","typ":"cta","saeule":"Lohn","titel":"*Speichern* für die Steuererklärung.","chip":"📌 Jetzt speichern"}
+  ] }
