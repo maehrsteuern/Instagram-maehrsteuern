@@ -1,0 +1,13 @@
+{
+  "ausgabe": "../../posts/09_2026-10-11_reel_monatsbericht/bausteine",
+  "bilder": [
+    {"vorlage": "fuenf_dinge", "datei": "hook.png", "bild": "m_hook"},
+    {"vorlage": "fuenf_dinge", "datei": "vorher.png", "bild": "1a"},
+    {"vorlage": "fuenf_dinge", "datei": "schritt1.png", "bild": "m1"},
+    {"vorlage": "fuenf_dinge", "datei": "schritt2.png", "bild": "m2"},
+    {"vorlage": "fuenf_dinge", "datei": "schritt3.png", "bild": "m3"},
+    {"vorlage": "fuenf_dinge", "datei": "ende.png", "bild": "m_ende"},
+    {"vorlage": "reel_titel", "datei": "../titelbild.png", "saeule": "Wissen", "titel": "Nummer 1:\nDer *Monatsbericht*", "sub": "In 3 Schritten – Daten rein, ein Klick, fertig."},
+    {"vorlage": "story", "datei": "../story_so_teaser.png", "typ": "teaser", "kicker": "Neues Reel", "titel": "Nummer 1 aus dem letzten Reel: der *Monatsbericht* mit Code.", "bild": "../../posts/09_2026-10-11_reel_monatsbericht/titelbild.png"}
+  ]
+}

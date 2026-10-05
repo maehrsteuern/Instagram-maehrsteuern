@@ -9,7 +9,7 @@ Keine echten Zahlen oder Fälle vom Arbeitgeber – nur Demo-Zahlen.
 > Früher: jeden Monat dieselbe Runde. Exportieren, kopieren, einfügen, Formeln runterziehen. Fast zwei Stunden. Und am Ende stimmt trotzdem irgendwas nicht.
 > Heute sind es drei Schritte.
 > Eins: Der Code liest die Summen- und Saldenliste ein. Direkt den Export, ich fass nichts an.
-> Zwei: Er stimmt ab. Passt eine Summe nicht, hört er auf und sagt mir genau, wo.
+> Zwei: Er stimmt ab. Passt die Summe nicht, hört er auf und sagt mir, um wie viel. Bevor ein falscher Bericht rausgeht.
 > Drei: Er baut den Bericht. Tabellen, Diagramm, fertiges PDF.
 > Daten rein, ein Klick, fertig.
 > Speicher dir das. Und schreib mir, welche Nummer als Nächstes dran ist.

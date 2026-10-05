@@ -1,0 +1,16 @@
+Nummer 1 aus meinem letzten Reel: der Monatsbericht 👇
+
+Früher jeden Monat dieselbe Runde: exportieren, kopieren, einfügen, Formeln runterziehen. Heute sind es 3 Schritte:
+
+1️⃣ SuSa einlesen – direkt den Export aus der Buchhaltung, keine Zelle anfassen
+2️⃣ Abstimmen – passt Soll und Haben nicht, stoppt der Code, bevor ein falscher Bericht rausgeht
+3️⃣ Bericht bauen – Tabellen, Diagramm, fertiges PDF
+
+Daten rein, ein Klick, fertig.
+
+🔖 Speicher dir das für den nächsten Monatsabschluss.
+Welche Nummer soll als Nächstes dran sein? 2, 3, 4 oder 5 – schreib's in die Kommentare 👇
+
+Alle Zahlen im Video sind Beispieldaten.
+
+#steuern #monatsabschluss #excel #python #automatisierung

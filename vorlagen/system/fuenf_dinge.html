@@ -53,6 +53,7 @@ body{background:radial-gradient(110% 60% at 50% 34%,var(--glow) 0%,var(--bg) 70%
 <div id="root"></div>
 <script>
 const D = window.DATA || {bild:"5a"};
+const schritt = (n, titel, unter) => `<div class="kopf"><div class="nr"><b>${n}</b><span>${unter}<i>${titel}</i></span></div></div>`;
 const kopf = (n, titel, vorher) => `<div class="kopf"><div class="nr ${vorher?'rot':''}"><b>${n}</b><span>${vorher?'Früher · Excel':'Heute · Code'}<i>${titel}</i></span></div></div>`;
 const xl = (titel, ref, formel, kopfzeile, zeilen) => `<div class="panel xl"><div class="t">${titel}</div>
   <div class="fx"><span class="n">${ref}</span><span class="f">${formel}</span></div>
@@ -94,6 +95,22 @@ const B = {
   "1b": kopf(1,"Der Monatsbericht",0) + code("terminal",
     `<span class="g">$</span> python monatsbericht.py 2026-09\n\n<span class="c">  Daten gelesen ........ ok</span>\n<span class="c">  Abstimmung ........... ok</span>\n<span class="c">  Diagramme ............ ok</span>`,
     `<span class="g">✓ Monatsbericht_2026-09.pdf fertig</span><br>Daten rein · ein Klick · fertig`),
+  // Folge-Reel 11.10. „Nummer 1: Der Monatsbericht“ – m-Bilder
+  m_hook: `<div class="marke">@maehrsteuern</div>
+    <div class="gross">Nummer 1:<br><span style="color:var(--gruen)">Der Monats&shy;bericht.</span></div>
+    <div class="liste">${["SuSa einlesen","Abstimmen","PDF bauen"].map((t,i)=>`<div><b>${i+1}</b>${t}<span class="x" style="color:var(--gruen)">CODE</span></div>`).join("")}</div>`,
+  m1: schritt(1,"SuSa einlesen","Schritt 1 von 3") + code("monatsbericht.py",
+    `<span class="k">import</span> pandas <span class="k">as</span> pd\n\n<span class="c"># Export aus der Buchhaltung, unverändert</span>\nsusa = pd.read_csv(<span class="s">"susa_2026-09.csv"</span>,\n                   sep=<span class="s">";"</span>, decimal=<span class="s">","</span>)`,
+    `<span class="g">✓ 1.284 Konten eingelesen</span><br>keine Zelle angefasst`),
+  m2: schritt(2,"Abstimmen","Schritt 2 von 3") + code("monatsbericht.py",
+    `soll  = susa[<span class="s">"Soll"</span>].sum()\nhaben = susa[<span class="s">"Haben"</span>].sum()\ndiff  = soll - haben\n\n<span class="k">if</span> <span class="k">abs</span>(diff) > 0.01:\n    <span class="k">raise</span> ValueError(<span class="s">f"Differenz {diff}"</span>)`,
+    `<span class="r">✗ Differenz 1.190,00 – Soll ≠ Haben</span><br>stoppt, bevor ein falscher Bericht rausgeht`),
+  m3: schritt(3,"Bericht bauen","Schritt 3 von 3") + code("monatsbericht.py",
+    `bericht = vorlage.render(\n    guv=guv, bilanz=bilanz,\n    diagramm=umsatz_chart(susa))\n\nbericht.als_pdf(<span class="s">"Monatsbericht_2026-09.pdf"</span>)`,
+    `<span class="g">✓ Monatsbericht_2026-09.pdf fertig</span><br>Tabellen · Diagramm · 4 Seiten`),
+  m_ende: `<div class="marke">@maehrsteuern</div>
+    <div class="gross" style="top:330px">Daten rein.<br>Ein Klick.<br><span style="color:var(--gruen)">Fertig.</span></div>
+    <div class="chips" style="top:860px"><span class="chip">🔖 Speichern</span><span class="chip">Welche Nummer als Nächstes?</span></div>`,
   ende: `<div class="marke">@maehrsteuern</div>
     <div class="gross" style="top:330px">Welche Nummer soll ich dir zeigen?</div>
     <div class="zahlen">${[5,4,3,2,1].map(n=>`<div>${n}</div>`).join("")}</div>
