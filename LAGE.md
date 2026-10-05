@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 08:29 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 08:31 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -115,6 +115,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 08:31 ✍️ Lage-Notiz: latente Steuern auf „spätestens jetzt“ umgestellt ([`fde2ac9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fde2ac984d3a7f1056f4f3cbec8c577b76ac6f81))
+  - `LAGE.html`, `automatik/lage_notizen.md`
 - 08:29 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`a465237`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a4652376cdd635f24d23f9d1da551b6e32c8da58))
 - 08:29 💼 LinkedIn-Paket latente Steuern: „Abschluss 2026“ → „spätestens jetzt“ ([`f3959e2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f3959e2020519cf14d0f0930ddac914db5066b55))
   - `LAGE.html`, `posts/05_2026-10-08_latente_steuern`
