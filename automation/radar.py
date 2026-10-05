@@ -94,9 +94,14 @@ class Throttled(RuntimeError):
     """Meta throttles (HTTP 429 or error code 4/17/32/613/80002) – even after waiting."""
 
 
+class TokenInvalid(RuntimeError):
+    """FB_TOKEN expired or invalid (code 190/102/463/467) – a problem of the key, never of the queried account."""
+
+
 # Meta error codes: throttling or a short hiccup – not a sign that an account is gone
 THROTTLE_CODES = {4, 17, 32, 613, 80001, 80002}
 HICCUP_CODES = {1, 2}
+TOKEN_CODES = {102, 190, 463, 467}
 WAIT = (30, 90, 270)  # seconds between attempts (backoff)
 
 
@@ -122,6 +127,8 @@ def api(path, **params):
         throttled = r.status_code == 429 or code in THROTTLE_CODES
         if not (throttled or r.status_code >= 500 or code in HICCUP_CODES) or attempt == len(WAIT):
             message = f"{code}: {err.get('message', r.text[:200])}"
+            if code in TOKEN_CODES or err.get("type") == "OAuthException" and err.get("error_subcode") in (463, 467):
+                raise TokenInvalid(message)
             raise Throttled(message) if throttled else RuntimeError(message)
         wait = WAIT[attempt]
         if (after := r.headers.get("Retry-After", "")).isdigit():
@@ -265,6 +272,8 @@ def query_accounts(notes):
             d = api(os.environ["FB_IG_USER_ID"],
                     fields=f"business_discovery.username({name}){{username,name,followers_count,media_count,"
                            f"media.limit(6){{{FIELDS}}}}}")["business_discovery"]
+        except TokenInvalid:
+            raise  # main() stops the whole run – no account may be marked as broken because of the key
         except Throttled as e:
             # querying on only makes it worse; the remaining accounts do NOT count as broken
             notes.append(f"Meta throttles ({e}) – {len(items) - nr} accounts not queried today, again tomorrow")
@@ -290,6 +299,8 @@ def query_hashtags(notes):
             for m in api(f"{ids[tag]}/recent_media", user_id=os.environ["FB_IG_USER_ID"], fields=FIELDS, limit=30)["data"]:
                 m["hashtag"] = tag
                 posts.append(m)
+        except TokenInvalid:
+            raise
         except Throttled as e:
             notes.append(f"Hashtags: Meta throttles ({e}) – again tomorrow")
             break
@@ -494,6 +505,13 @@ def main():
         print("Radar: FB_TOKEN / FB_IG_USER_ID missing – setup see SETUP.md (radar section). Nothing to do.")
         return
     FOLDER.mkdir(parents=True, exist_ok=True)
+    try:  # check the key once before anything else – an expired key must never look like 93 broken accounts
+        api(os.environ["FB_IG_USER_ID"], fields="username")
+    except TokenInvalid as e:
+        sys.exit(f"✗ Radar: FB_TOKEN is expired or invalid ({short(str(e), 160)}).\n"
+                 "→ Generate a long-lived token (60 days) for the Facebook page linked to @maehrtax and replace the "
+                 "secret FB_TOKEN (SETUP.md, radar section). With FB_APP_ID + FB_APP_SECRET set, the monthly key "
+                 "refresh keeps it alive. Nothing was queried, no account was marked as broken.")
     contacts, seen = load(CONTACTS, {}), load(SEEN, {})
     old_issues, remove, add = ([], [], []) if DRY_RUN else count_ticks(contacts)
     if remove or add:
