@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 14:17 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 17:17 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `02-excel-fehler` am **Di 06.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -96,18 +96,19 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 ## 📈 Zahlen (täglich ca. 08:45)
 
 **352 Follower** · 3 Beiträge im Profil (Abruf 2026-10-05) · **+1** seit 2026-10-04
-Reichweite pro Tag: 01.10. **68** · 02.10. **79** · 03.10. **63** · 04.10. **418**
+Reichweite pro Tag: 02.10. **79** · 03.10. **63** · 04.10. **428** · 05.10. **151**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| So 04.10. 19:46 | 51 | 44 | 0 | 0 | 0 |
-| So 04.10. 19:50 | 53 | 40 | 0 | 1 | 1 |
+| So 04.10. 19:46 | 75 | 59 | 0 | 1 | 0 |
+| So 04.10. 19:50 | 80 | 57 | 0 | 1 | 1 |
+| Mo 05.10. 12:15 | 37 | 27 | 0 | 0 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 519 (+296) | 406 | 5 | 2 | 8 | 3 |
-| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 302 (+4) | 110 | 8 | 2 | 2 | 16 |
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 281 (+3) | 167 | 6 | 2 | 2 | 7 |
+| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 700 (+477) | 547 | 8 | 6 | 12 | 12 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 307 (+9) | 112 | 8 | 2 | 2 | 16 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 285 (+7) | 169 | 8 | 2 | 4 | 7 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -130,6 +131,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 17:17 📈 Statistik 2026-10-05 ([`a785838`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a785838ecb2a55609596407a52204986a168b3e9))
+  - `automatik/statistik`
 - 14:17 💼 LinkedIn-Pakete: 10-e-rechnung ([`6ff6d3c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6ff6d3c82581dc188f2ad622cf6dd6b52bd0269d))
   - `posts/10_2026-10-22_e_rechnung`
 - 14:17 📡 Radar 2026-10-05: 8 Beiträge, 0 DM-Entwürfe ([`6f78e52`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f78e52ac0bae4745576201e56a4ba4e376a8ede))
