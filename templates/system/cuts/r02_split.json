@@ -113,9 +113,9 @@
    "text": [
     {
      "text": "Tool: done in 17 s.",
-     "y": 900,
+     "y": 1170,
      "color": "green",
-     "size": 105,
+     "size": 88,
      "at": 0.1
     }
    ]
@@ -127,14 +127,14 @@
    "text": [
     {
      "text": "Spreadsheet:",
-     "y": 830,
+     "y": 600,
      "color": "white",
      "size": 95,
      "at": 1.0
     },
     {
      "text": "2 h and counting.",
-     "y": 950,
+     "y": 720,
      "color": "red",
      "size": 105,
      "at": 1.3
