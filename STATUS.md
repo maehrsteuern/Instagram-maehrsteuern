@@ -83,7 +83,7 @@ No stats yet – they start after the Instagram secrets are set and the first st
 | Instagram stats | daily around 9:00 AM ET | 🔴 [failed](https://github.com/maehrsteuern/maehrtax---instagram/actions/runs/37222117684) Sun 10/4 1:51 PM ET |
 | Refresh Instagram key | 1st of the month | – |
 | Radar (+ LinkedIn if enabled) | daily around 7:00 AM ET (issue with work list) | ✅ ok |
-| Comments | after every post run (suggestions in the issue) | 🔴 [failed](https://github.com/maehrsteuern/maehrtax---instagram/actions/runs/37246537465) Sun 10/4 8:12 PM ET |
+| Comments | after every post run (suggestions in the issue) | 🔴 [failed](https://github.com/maehrsteuern/maehrtax---instagram/actions/runs/37269057330) Mon 10/5 1:43 AM ET |
 | Weekly report | Sundays around 6:00 PM ET (one issue) | ✅ ok |
 | Fetch music | manual only | – |
 
