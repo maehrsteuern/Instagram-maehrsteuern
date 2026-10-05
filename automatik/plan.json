@@ -314,7 +314,8 @@
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "entwurf",
-      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s"
+      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s",
+      "issue": 35
     },
     {
       "id": "09-story-teaser",
@@ -324,7 +325,8 @@
       "bilder": [
         "story_so_teaser.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 35
     },
     {
       "id": "03-story-quiz",
@@ -372,7 +374,8 @@
         "story_mi_quiz.png"
       ],
       "status": "entwurf",
-      "hinweis": "Aus der Bibliothek: Quiz SolZ als Einstieg zum Rückstellungs-Karussell"
+      "hinweis": "Aus der Bibliothek: Quiz SolZ als Einstieg zum Rückstellungs-Karussell",
+      "issue": 35
     },
     {
       "id": "07-reel-hinzurechnung",
@@ -393,7 +396,8 @@
       "bilder": [
         "story_do_aufloesung.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 35
     },
     {
       "id": "09-rueckstellung",
@@ -411,7 +415,8 @@
       ],
       "text": "bildunterschrift.txt",
       "status": "entwurf",
-      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Demo-Zahlen 1 Mio. €, Hebesatz 400 %)"
+      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Demo-Zahlen 1 Mio. €, Hebesatz 400 %)",
+      "issue": 35
     },
     {
       "id": "09-story-teaser",
@@ -421,7 +426,8 @@
       "bilder": [
         "story_do_teaser.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 35
     },
     {
       "id": "03-story-aufloesung",
