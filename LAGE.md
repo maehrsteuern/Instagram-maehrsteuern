@@ -16,18 +16,18 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
 - Reel „Mein Weg“ (20.10.): **Loris baut die Konzeption selbst um (03.10.)** – bis dahin gilt Variante B (`drehbuch_markenweg.md`) nicht als gesetzt, keine Sprachnachricht anfordern, nichts schneiden. Status bleibt `wartet_auf_sprachnachricht`, bis das neue Konzept da ist. **KI-Hinweis** (falls KI-Karten bleiben): Hinweis in der Bildunterschrift, Label nach dem Posten in der App prüfen.
 - DM-Strecke läuft über **ManyChat** (Kommentar/Story-Antwort/DM mit Tool/TOOL/tool/tol → DM mit Demo-Link, Follow-up nach 23 h). Stichwörter nur in `automatik/interaktion.json` pflegen – Abweichungen meldet LAGE.md. Die eigenen Skripte schicken nie DMs.
-- Interaktion läuft (Radar 50 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (nur Postzeiten „beschäftigt“ für Reclaim, To-dos/LinkedIn „frei“; Farben + Pop-ups je Art). In Reclaim verbunden ✓ (geprüft 05.10.). Offen: Freigabe des Autopilot-Kalenders (nur Dienstkonto, nicht öffentlich) und Auslöser der Demo-Kopie (genau 1, stündlich) per Chrome-Claude gegenprüfen. `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Demo-Buchungen + Herkunft: Apps-Script „maehrsteuern Demo-Kopie“ kopiert sie stündlich nach „maehrsteuern Autopilot“ – eingerichtet und per Echttest bestätigt (03.10.). Reclaim: Pflichtfeld „Woher kennst du mich?“, Titel „Demo + Erstgespräch – Name“, nur noch dieser eine Link. ManyChat-Zahlen bleiben von Hand (API nur Pro) – siehe `strategie/13_backlog.md`.
+- Interaktion läuft (Radar 50 Konten, Kommentar-Hilfe, LinkedIn-Pakete). **Sprint 1 (03.10.):** Wächter-Issue, Stichwort-Abgleich, Radar-Pflege montags, Erste-Stunde-Checkliste. **Kalender-Sync live (03.10.):** Termine gehen direkt in den Google-Kalender „maehrsteuern Autopilot“ (nur Postzeiten „beschäftigt“ für Reclaim, To-dos/LinkedIn „frei“; Farben + Pop-ups je Art). In Reclaim verbunden ✓ (geprüft 05.10.). Offen: Freigabe des Autopilot-Kalenders (nur Dienstkonto, nicht öffentlich) und Auslöser der Demo-Kopie (genau 1, stündlich) per Chrome-Claude gegenprüfen. `kalender.ics` entfällt. **Wochenbericht** ab So 04.10. ca. 18:00 als Issue – Demos/ManyChat per Kommentar nachtragen. Demo-Zahlen (entschieden 03.10.): Reclaim-Pflichtfeld „Woher kennst du mich?“ → Apps-Script „maehrsteuern Demo-Kopie“ kopiert Buchungen stündlich ohne Namen nach „maehrsteuern Autopilot“ → Wochenbericht zählt sie; UTM/Webhooks scheiden aus (Starter), `dm_tracking.csv` nicht mehr im Bericht. **Laut Chrome-Check 03.10. noch offen** (Chrome-Prompt Sprint 2): Pflichtfeld anlegen, 2 Reclaim-Vorlagen löschen, Apps-Script einrichten + Testbuchung. ManyChat-Zahlen bleiben von Hand (API nur Pro) – siehe `strategie/13_backlog.md`.
 - **Automatik gehärtet (03.10., mit #23 in `claude/instagram`):** kein Doppel-Post bei Push-Konflikt, „stop“ greift auch während des Wartens, kein Schlüssel in Fehlermeldungen, keine verlorenen „go“-Antworten, Schlüssel-Verlängerung mit Reserve-Takt – Details `strategie/13_backlog.md`.
 - Externer Takt fürs Posten läuft (cron-job.org, alle 15 Min.). Schlüssel `cron-posten` läuft am **29.09.2027** ab → vorher erneuern.
 - Tax-Calc-Repo: PR #2 (Delta-Plakette beim Tippen) und PR #3 (Reel-Datensatz `?demo=reel`) warten auf Review.
 - **Chrome-Claude-Module** (`strategie/14_chrome_module.md`): Erinnerungen im Kalender „maehrsteuern Autopilot“ – So 04.10. 11:00 einmalig A·2·3, jeden So 18:45 Modul 1 (ManyChat → Wochenbericht), 1. Mo im Monat 18:00 Module 4+6, LinkedIn-Upload (Modul 5) automatisch je Karussell am Werktag danach 08:00.
-- **Wochenbericht KW 40 ist da ([#29](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/29), So 18:01, Reserve-Lauf 21:26 hat dasselbe Issue nur aktualisiert):** Zahlen geprüft (575 Aufrufe = Zuwachs der 2 neuen Beiträge, Radar 2 Kommentare aus #22, Kalender verbunden – 0 Demos). **Offen: ManyChat-Zeile fehlt** (Chrome Modul 1 lief nicht) → im Issue `manychat x/y` + Zeile `Gesamtstand ManyChat: gesendet X / Klicks Y` kommentieren. Behoben (05.10.): Sonntags-Reels (19:30, nach dem Bericht) zählen jetzt im Bericht der Folgewoche als neu – „neu“ = gepostet So–Sa.
+- **So 04.10. erster Wochenbericht (ca. 18:00):** prüfen, ob ManyChat-Kommentar (Chrome Modul 1, 18:45), Demo-Kopien und Herkunft richtig im Issue landen. Probelauf mit Testdaten am 03.10. ok. Dabei behoben: Kalender ohne unzuverlässige Volltextsuche (alle Seiten), leere Herkunft rutscht nicht mehr in die nächste Zeile, Nachträge zählen nur am Zeilenanfang/nach Komma (zitierte Zeilen und „Gesamtstand ManyChat …“ zählen nicht).
 - **Radar-Nachträge (03.10.):** Meta-Drosselung (429/Code 4, 17, 32, 613) → Backoff 30/90/270 s, bei anhaltender Drosselung wird abgebrochen. Gedrosselte oder kurz gestörte Konten landen nicht mehr als 🧹 „nicht abrufbar“ in der Pflege; aufgeräumt werden nur dauerhaft kaputte Konten oder Konten ohne Beitrag seit 30 Tagen (montags, nur abgehakt). Art neuer Konten wird auch aus Wörtern wie „Steuerberaterin“, „Prüfung“, „Akademie“ erkannt; fehlende oder unbekannte Art erscheint als Hinweis im Radar-Issue.
-- **Fristen** (`automatik/erinnerungen.json` → „Braucht dich“ + Kalender): LinkedIn #18 Mi 07.10. 08:00 (Termin kommt schon automatisch) · Reel-Vergleich „5 Dinge“/Split → Anzeigen-Start ca. Mo 12.10. (Chrome Modul 2 am 04.10. nur vorbereiten) · **ManyChat-Trial endet Fr 16.10.** → Entscheidung Loris (Erinnerung Mi 14.10.).
+- **Fristen** (`automatik/erinnerungen.json` → „Braucht dich“ + Kalender): LinkedIn #18 Mi 07.10. 08:00 (Termin kommt schon automatisch) · Reel-Vergleich Ampel/Split → Anzeigen-Start ca. Mo 12.10. (Chrome Modul 2 am 04.10. nur vorbereiten) · **ManyChat-Trial endet Fr 16.10.** → Entscheidung Loris (Erinnerung Mi 14.10.).
 - **Meta-App „maehrsteuern Autopilot“** bleibt im Entwicklungsmodus. Die laufenden IG-Schlüssel und die Statistik sind davon nicht betroffen (eigenes Konto mit App-Rolle). Nur die Hashtag-Suche braucht die Freigabe → Checkliste [#26](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/26).
 - **Reclaim-Hinweis:** Claudes Reclaim-Zugang (Connector) zeigt auf **Konto B (Outlook, Lite)**, nicht auf das Demo-Konto. Für die Automatik nicht nutzen; Demo-Buchungen kommen nur über das Apps-Script „maehrsteuern Demo-Kopie“.
 - **Bibliothek aus dem Brand Kit (Claude Design) gebaut (02.10.):** 365 fertige Bilder in `assets/bibliothek/` (Übersicht `README.md` dort), Texte als Job-Dateien in `vorlagen/system/jobs/bibliothek/`. Neue Vorlagen `zahl.html` + `banner.html`, Highlight-Symbole, Vergleichstabelle/Checkliste im Karussell. Nichts davon ist eingeplant – vor Verwendung fachlich gegenlesen (Demo-Zahlen, Rechtsstand).
-- **Lage als Seite (04.10.):** `LAGE.html` mit Kacheln, Kalender, Diagrammen und filterbarem Protokoll, wird mit LAGE.md neu geschrieben und über GitHub Pages veröffentlicht (https://maehrsteuern.github.io/Instagram-maehrsteuern/). Einmalig von Hand: Settings → Pages → Source „GitHub Actions“.
+- **Lage als Seite (04.10.):** `LAGE.html` mit Kacheln, Kalender, Diagrammen und filterbarem Protokoll, wird mit LAGE.md neu geschrieben und über GitHub Pages veröffentlicht (https://maehrsteuern.github.io/Instagram-maehrsteuern/). Pages eingeschaltet ✓ (04.10.), Seite läuft und aktualisiert sich bei jeder neuen Lage automatisch.
 
 ## 👉 Braucht dich
 
@@ -115,8 +115,13 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
-- 08:28 ✍️ Wochenbericht: Sonntags-Reels zählen in der Folgewoche als neu; Reel-Vergleich auf „5 Dinge“ vs. Split ([`3cb33fe`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3cb33fe0780585282727634cb1951bc61d819ce7))
-  - `LAGE.html`, `automatik/erinnerungen.json`, `automatik/lage_notizen.md`, `automatik/wochenbericht.py`
+- 08:28 ✍️ Lage-Notiz: GitHub Pages eingeschaltet, Lage-Seite läuft (erledigt) ([`be6765d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/be6765d918528c33a51ad1a07e4a9caab5ad19ff))
+  - `LAGE.html`, `automatik/lage_notizen.md`
+- 08:27 🔀 Merge pull request #16 from maehrsteuern/claude/upbeat-goodall-huo6u7 ([`262ed48`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/262ed487ed9b2c5f9a63c5e7d9950047851bda2d))
+- 08:27 🔀 Merge claude/instagram in Bibliothek-Branch: Konflikte gelöst ([`0581783`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/058178316c96c700026777ee6023c075a8d81354))
+- 08:27 🔀 Merge: Lage-Notizen Kalender-Prüfung – Autopilot-Kalender in Reclaim verbunden, Freigabe/Auslöser noch gegenprüfen ([`0deb532`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0deb532118e3e94d8151e674981da7063d1b4099))
+- 08:26 ✍️ Lage: Duplikat des 5-Dinge-Reels gelöscht ([`c09d6c5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c09d6c5fa749cc10f86e3b418b0f06e4964b98fe))
+  - `LAGE.html`, `automatik/lage_notizen.md`
 - 07:03 📡 Radar 2026-10-05: 8 Beiträge, 0 DM-Entwürfe ([`c7af627`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c7af627103cd7673c90dbc18c53d97522c1b2062))
   - `automatik/interaktion`
 
@@ -158,6 +163,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - `.github/workflows`
 - 01:03 ✍️ Lage als Seite: LAGE.html mit Kacheln, Kalender, Diagrammen und Protokoll, Veröffentlichung über GitHub Pages ([`110b299`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/110b29958834522e6296662811988d45acc5aa14))
   - `.claude/skills/lage/SKILL.md`, `.github/workflows`, `CLAUDE.md`, `LAGE.html`, `README.md`, `automatik/lage.py`, `…`
+- 00:13 ✍️ LAGE.md vom Ziel-Branch übernommen (wird nach dem Merge automatisch neu erzeugt) ([`5c7f63c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5c7f63cd3015f373ddca653ec4c90f4b63605c28))
+- 00:13 🔀 Merge claude/instagram in Bibliothek-Branch: Konflikte gelöst ([`978f730`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/978f730edd04156b2f0426f0b2e68001f153f180))
 
 **Sa 03.10.2026**
 - 19:52 🔀 Merge: Radar drosselfest, Wochenbericht geprüft, Fristen in Lage + Kalender ([`01b05e7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/01b05e73e2d2ae3c6aef2f8e5390e6d4ea2defbe))
@@ -176,6 +183,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 - 11:00 🤖 Autopilot: Dateien fuer 08-story-tipp vorbereitet ([`568830e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/568830e81361f28c724dd67e42f296ad2615006a))
   - `posts/08_2026-10-09_reel_kst_staffel`
 - 10:59 🔀 Merge claude/instagram (LAGE.md vom Ziel-Branch übernommen) ([`cec8375`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cec837549e12513f9d9faa1a0c53032f068c0896))
+- 10:58 ✍️ Lage-Notizen: Autopilot-Kalender in Reclaim noch nicht verbunden, Freigabe/Auslöser gegenprüfen ([`072d0e8`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/072d0e80655779c70ac91964e7ce2c09ec1f3949))
+  - `automatik/lage_notizen.md`
 - 10:58 ✍️ Latente Steuern: Bildunterschrift „Spätestens im Abschluss 2026“ ([`517eed6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/517eed626f47d00007d4a1c63450ed845d5c2dda))
   - `automatik/lage_notizen.md`, `posts/05_2026-10-08_latente_steuern`
 - 10:55 🔀 Merge claude/instagram ([`f4b8248`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f4b82489c0731ed02aebcf2960f65a244732385f))
@@ -241,6 +250,11 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - `automatik/interaktion`
 - 20:55 📡 Radar: Konten eingetragen ([`0e7b547`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0e7b5474da4cf4a29873d372c46e6adc6e14859f))
   - `automatik/interaktion.json`
+- 17:40 ✍️ Lage: Neuvorstellung angepinnt (erledigt), ManyChat läuft ([`433d9dd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/433d9ddfa08f42fc6450fc6ac72b4538d5d8fbc0))
+  - `automatik/lage_notizen.md`, `automatik/plan.json`
+- 16:36 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/upbeat-goodall-huo6u7 ([`9f1937f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9f1937f8cacd4c46086ac72ebc469ad709bc8d3b))
+- 16:31 ✍️ Bibliothek aus dem Brand Kit (Claude Design): 365 fertige Assets ([`1f6ffc4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1f6ffc4940575300f26391be0fb53ec83b501a21))
+  - `README.md`, `assets/bibliothek/README.md`, `assets/bibliothek/bausteine/abspann_copy_paste.png`, `assets/bibliothek/bausteine/abspann_mehr_abschluss.png`, `assets/bibliothek/bausteine/abspann_pruefpfad.png`, `assets/bibliothek/bausteine/abspann_quote.png`, `…`
 - 16:12 ✍️ Auswertung: aktive Zeiten der ganzen Woche (auf deutsche Zeit umgerechnet) – 19:30 passt, Sonntag stärkster Abend ([`a2f31a3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a2f31a30f1fd371ecc9e4895d59dac6e254bc376))
   - `strategie/06_auswertung.md`
 - 15:11 📈 Statistik 2026-10-02 ([`c3f893b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c3f893b5c2d3bb9f56c0b7b3646ae9679ac7990b))

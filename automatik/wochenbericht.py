@@ -8,7 +8,7 @@
      Mehrere Angaben in einem Kommentar gehen auch. Übernommen wird still in den Issue-Text (keine Antwort-Mail).
 
 Quellen: automatik/statistik/konto.csv + beitraege.csv (Instagram), geschlossene Radar-Issues (Haken),
-automatik/interaktion/kommentare.json (Kommentar-Hilfe), strategie/dm_tracking.csv (termin_gebucht = ja),
+automatik/interaktion/kommentare.json (Kommentar-Hilfe), strategie/dm_tracking.csv (nur noch in woche.csv, nicht im Bericht),
 Demo-Buchungen als Kopie im Kalender „maehrsteuern Autopilot“ (Apps-Script automatik/apps_script/demo_kopie.gs).
 Alle Werte landen zusätzlich in automatik/statistik/woche.csv.
 Umgebung: GH_TOKEN, GITHUB_REPOSITORY, GOOGLE_SA_KEY + GOOGLE_CALENDAR_ID (optional, für Demo-Buchungen).
@@ -208,11 +208,9 @@ def text(z, neu, top):
         "|---|---|",
         f"| ManyChat gesendet | {hand('manychat_gesendet')} |",
         f"| Klicks Demo-Link | {hand('manychat_klicks')} |",
-        f"| Demos gebucht (von Hand) | {hand('demos_hand')} |",
-        f"| Demos laut Kalender (Reclaim) | {z.get('demos_kalender') or '_noch nicht verbunden_'} |",
-        f"| Demos laut `dm_tracking.csv` | {z['demos_tracking']} |",
-        f"| Herkunft (Buchungsfeld) | {z.get('herkunft_kalender') or '–'} |",
-        f"| Herkunft (von Hand) | {hand('herkunft', '_offen_')} |",
+        f"| Demos gebucht (Reclaim, automatisch) | {z.get('demos_kalender') or '_noch nicht verbunden_'} |",
+        f"| Herkunft („Woher kennst du mich?“) | {z.get('herkunft_kalender') or '–'} |",
+        f"| Korrektur von Hand (Demos / Herkunft) | {hand('demos_hand', '–')} / {hand('herkunft', '–')} |",
         "",
         "**Nachtragen** – einfach hier kommentieren, wird still übernommen:",
         "`demos 2` · `manychat 14/6` (gesendet/Klicks) · `herkunft manychat 1, bio 1`",
