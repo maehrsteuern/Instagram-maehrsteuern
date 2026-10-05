@@ -1,0 +1,11 @@
+{ "titel": "Storys · Fragen und Umfragen", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/frage_gesellschaften.png","typ":"frage","kicker":"Umfrage","titel":"Wie viele *Gesellschaften* rechnet ihr im Abschluss?"},
+    {"vorlage":"story","datei":"storys/frage_pruefung.png","typ":"frage","kicker":"Umfrage","titel":"Wer prüft eure *Steuerrückstellung* gegen?"},
+    {"vorlage":"story","datei":"storys/frage_ki.png","typ":"frage","kicker":"Umfrage","titel":"Nutzt ihr schon *KI* im Steueralltag?"},
+    {"vorlage":"story","datei":"storys/frage_hebesaetze.png","typ":"frage","kicker":"Ehrlich","titel":"Tippt ihr *Hebesätze* noch von Hand?"},
+    {"vorlage":"story","datei":"storys/frage_naechstes.png","typ":"antwort","kicker":"Du entscheidest","titel":"Was soll ich als Nächstes *erklären*?"},
+    {"vorlage":"story","datei":"storys/frage_blaetter.png","typ":"frage","kicker":"Umfrage","titel":"Eure Steuer-Datei: *unter 10* oder über 10 Blätter?"},
+    {"vorlage":"story","datei":"storys/frage_freitag.png","typ":"frage","kicker":"Kennst du das?","titel":"Freitagabend.\n*Abschluss offen.*"},
+    {"vorlage":"story","datei":"storys/frage_formel.png","typ":"antwort","kicker":"Kurze Frage","titel":"Welche Formel nervt dich *am meisten*?"}
+  ] }

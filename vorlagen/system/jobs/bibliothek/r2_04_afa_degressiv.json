@@ -1,0 +1,8 @@
+{ "titel": "Karussell · Wissen – „Die degressive AfA ist zurück“", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/afa_degressiv/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Die degressive AfA ist *zurück*.","sub":"Investitionssofortprogramm: bis zu 30 % pro Jahr – für Anschaffungen bis Ende 2027."},
+    {"vorlage":"karussell","datei":"karussell/afa_degressiv/folie_02.png","typ":"inhalt","saeule":"Was gilt","titel":"Bis zu *30 %* pro Jahr.","punkte":["Bewegliche Wirtschaftsgüter des Anlagevermögens","Angeschafft oder hergestellt nach dem *30.06.2025* und vor dem *01.01.2028*","Höchstens das *3-Fache* der linearen AfA, maximal 30 %"],"boxTitel":"NORM","box":"§ 7 Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/afa_degressiv/folie_03.png","typ":"inhalt","saeule":"Rechenbeispiel · Demo-Zahlen","titel":"Maschine 100.000 €, *10 Jahre*","zeilen":[["Linear: 10 %","10.000 €"],["Degressiv: 3 × 10 % = 30 %","30.000 €"],["Mehr AfA im 1. Jahr","20.000 €","summe"]],"boxTitel":"HINWEIS","box":"Im Anschaffungsjahr zeitanteilig (pro rata temporis)."},
+    {"vorlage":"karussell","datei":"karussell/afa_degressiv/folie_04.png","typ":"inhalt","saeule":"Elektro-Firmenwagen","titel":"*75 %* im ersten Jahr.","text":"Für neue, rein elektrische Fahrzeuge, angeschafft nach dem 30.06.2025 und vor 2028: 75 % im Jahr der Anschaffung, danach sinkend.","boxTitel":"NORM","box":"§ 7 Abs. 2a EStG"},
+    {"vorlage":"karussell","datei":"karussell/afa_degressiv/folie_05.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* vor der nächsten Investition.","text":"AfA-Pläne mit Staffel pro Jahr rechnet mein Tool automatisch. Demo? Schreib „TOOL“.","chip":"📌 Jetzt speichern"}
+  ] }

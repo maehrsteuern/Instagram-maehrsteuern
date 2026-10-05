@@ -1,0 +1,6 @@
+{ "titel": "Karussell · Themenspeicher – „Steuersatz-Staffel in Excel“ & „Was im Examen keiner sagt“ (Anfänge, Rest folgt)", "runde": 1, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/staffel/folie_01.png","typ":"titel","saeule":"Praxis","titel":"Die Steuersatz-Staffel *richtig bauen*.","sub":"2028–2032 in Excel: Parameter-Tabelle statt Festwert.","seite":1,"von":3},
+    {"vorlage":"karussell","datei":"karussell/staffel/folie_02.png","typ":"inhalt","saeule":"Blatt „Parameter“","titel":"Ein Satz pro Jahr, *eine Quelle*.","zeilen":[["2027","15 %"],["2028","14 %"],["2030","12 %"],["ab 2032","10 %"]],"boxTitel":"FORMEL","box":"=XVERWEIS(Umkehrjahr; Jahre; Sätze)","boxMono":true,"seite":2,"von":3},
+    {"vorlage":"karussell","datei":"karussell/examen/folie_01.png","typ":"titel","saeule":"Examen → Praxis","titel":"Was im Examen *keiner sagt*.","sub":"So sieht die Steuerrückstellung in der Praxis wirklich aus.","seite":1,"von":1}
+  ] }

@@ -1,0 +1,11 @@
+{ "titel": "Storys · Quiz und Auflösung", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/quiz_gewst_ba.png","typ":"antwort","kicker":"Quiz","titel":"Ist die Gewerbesteuer eine *Betriebsausgabe*?","antwort":"↩ Antworte mit „Ja“ oder „Nein“ –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_gewst_ba_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*Nein* – steuerlich nicht.","punkte":["Handelsrechtlich: Aufwand","Steuerlich: nicht abziehbar (§ 4 Abs. 5b EStG)","Deshalb kommt sie außerbilanziell zurück"]},
+    {"vorlage":"story","datei":"storys/quiz_hebesatz.png","typ":"antwort","kicker":"Quiz","titel":"Wie hoch ist der *Mindest-Hebesatz*?","antwort":"↩ Schätz mal –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_hebesatz_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*200 %*.","text":"Keine Gemeinde darf darunter gehen (§ 16 Abs. 4 GewStG).","cta":true,"chip":"Mehr im Karussell „5 Zahlen“"},
+    {"vorlage":"story","datei":"storys/quiz_verlust.png","typ":"antwort","kicker":"Quiz","titel":"Wie viel Verlust darfst du 2026 *voll* verrechnen?","antwort":"↩ Antworte mit deinem Tipp –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_verlust_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*1 Mio. €* – darüber 70 %.","text":"Gilt bis 2027 für Einkommen- und Körperschaftsteuer. Bei der Gewerbesteuer bleibt es bei 60 %."},
+    {"vorlage":"story","datei":"storys/quiz_solz.png","typ":"antwort","kicker":"Quiz","titel":"Wie viel *SolZ* zahlt eine GmbH?","antwort":"↩ Antworte mit einer Zahl –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_solz_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*5,5 %* der KSt.","text":"Zusammen mit der KSt sind das 15,825 % – ohne Freigrenze.","cta":true,"chip":"📌 Jetzt speichern"}
+  ] }

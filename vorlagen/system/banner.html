@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css"><script src="text.js"></script>
+<!-- LinkedIn-Banner 1584×396. Text rechts, links unten bleibt frei fürs Profilbild -->
+<style>
+html,body{width:1584px;height:396px}
+body{background:radial-gradient(70% 140% at 85% 30%,var(--bg2) 0%,var(--bg) 70%)}
+.box{position:absolute;right:96px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right}
+.kicker{font-size:24px}
+.titel{font-family:var(--serif);font-weight:600;font-size:84px;line-height:1.02;margin-top:22px}
+.zeile{display:flex;gap:28px;align-items:center;margin-top:30px}
+.zeile span:first-child{font-size:28px;color:var(--text2)}
+.chip{font-size:26px;padding:.35em .9em}
+</style></head><body><div class="box" id="box"></div>
+<script>
+const d = window.DATA || {};
+$('box').innerHTML = `<div class="kicker">${fmt(d.kicker||'Steuern × Code')}</div><div class="titel">${fmt(d.titel||'Steuerwissen, das *rechnet.*')}</div>
+  <div class="zeile"><span>${fmt(d.sub||'Diplom-Finanzwirt · KI-Manager (IHK)')}</span><span class="chip">${fmt(d.chip||'Demo: „TOOL“ per DM')}</span></div>`;
+</script></body></html>

@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Wissen – „Gewerbesteuer in 5 Zahlen“", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/gewst_zahlen/folie_01.png","typ":"titel","saeule":"Wissen","titel":"Gewerbesteuer in *5 Zahlen*.","sub":"Messzahl, Hebesatz, Freibetrag, Anrechnung, Abrundung – zum Speichern."},
+    {"vorlage":"karussell","datei":"karussell/gewst_zahlen/folie_02.png","typ":"inhalt","nr":"3,5 %","titel":"Die *Steuermesszahl*.","text":"Der Gewerbeertrag wird mit 3,5 % multipliziert. Das Ergebnis ist der Steuermessbetrag.","boxTitel":"NORM","box":"§ 11 Abs. 2 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zahlen/folie_03.png","typ":"inhalt","nr":"200 %","titel":"Der *Mindest-Hebesatz*.","text":"Jede Gemeinde legt ihren Hebesatz selbst fest – aber nie unter 200 %.","boxTitel":"NORM","box":"§ 16 Abs. 4 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zahlen/folie_04.png","typ":"inhalt","nr":"24.500 €","titel":"Der *Freibetrag*.","text":"Gilt für Einzelunternehmen und Personengesellschaften. Kapitalgesellschaften bekommen keinen.","boxTitel":"NORM","box":"§ 11 Abs. 1 Nr. 1 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zahlen/folie_05.png","typ":"inhalt","nr":"4,0","titel":"Die *Anrechnung*.","text":"Einzelunternehmer und Mitunternehmer rechnen das 4-Fache des Messbetrags auf ihre Einkommensteuer an – begrenzt durch die tatsächlich gezahlte Gewerbesteuer.","boxTitel":"NORM","box":"§ 35 EStG"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zahlen/folie_06.png","typ":"inhalt","nr":"100 €","titel":"Die *Abrundung*.","text":"Der Gewerbeertrag wird auf volle 100 € abgerundet – vor dem Freibetrag.","boxTitel":"EXCEL","box":"=ABRUNDEN(Gewerbeertrag; -2)","boxMono":true},
+    {"vorlage":"karussell","datei":"karussell/gewst_zahlen/folie_07.png","typ":"cta","saeule":"Wissen","titel":"*Speichern* und nie wieder suchen.","text":"In meinem Tool stecken alle fünf Zahlen als Parameter – nicht als Festwert in Formeln.","chip":"📌 Jetzt speichern"}
+  ] }

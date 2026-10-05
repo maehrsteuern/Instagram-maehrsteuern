@@ -1,0 +1,10 @@
+{ "titel": "Storys · Teaser „Neuer Beitrag“", "runde": 2, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/teaser_rueckstellung.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Rückstellung in *6 Schritten*.","bild":"../../posts/05_2026-10-08_latente_steuern/folie_01.png"},
+    {"vorlage":"story","datei":"storys/teaser_gewst.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Gewerbesteuer in *5 Zahlen*."},
+    {"vorlage":"story","datei":"storys/teaser_verlust.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Verluste 2026: *70 %*?","bild":"../../posts/00_2026-10-01_neuvorstellung/folie_01.png"},
+    {"vorlage":"story","datei":"storys/teaser_afa.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Die degressive AfA ist *zurück*."},
+    {"vorlage":"story","datei":"storys/teaser_vga.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"5 Klassiker der *vGA*.","bild":"../../posts/01_2026-10-04_reel_ampel/titelbild.png"},
+    {"vorlage":"story","datei":"storys/teaser_formeln.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"5 Formeln für *Steuerleute*."},
+    {"vorlage":"story","datei":"storys/teaser_ki.png","typ":"teaser","kicker":"Neuer Beitrag","titel":"Was *KI* heute schon kann.","bild":"../../posts/05_2026-10-08_latente_steuern/folie_01.png"}
+  ] }

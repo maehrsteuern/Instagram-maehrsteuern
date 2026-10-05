@@ -1,0 +1,18 @@
+{ "titel": "Reel-Einblendungen (Runde 3)", "runde": 3, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"einblendung","datei":"bausteine/haken_formel.png","typ":"haken","titel":"Wer hat die *Formel*\ngelöscht?","sub":"Niemand. Natürlich."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_datenzugriff.png","typ":"haken","kicker":"Betriebsprüfung","titel":"*Datenzugriff*.\nBereit?","sub":"§ 147 Abs. 6 AO."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_vorjahr.png","typ":"haken","titel":"Vorjahr kopiert.\n*Hebesatz nicht.*"},
+    {"vorlage":"einblendung","datei":"bausteine/haken_8b.png","typ":"haken","kicker":"Quiz","titel":"*95 %* oder 100 %?","sub":"Dividenden unter GmbHs."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_final.png","typ":"haken","titel":"*final_v3_neu*\n.xlsx","sub":"Wir müssen reden."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_hinz.png","typ":"haken_ueber","kicker":"Demo","titel":"Hinzurechnung:\n*automatisch*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_gelb.png","typ":"haken_ueber","kicker":"Ampel","titel":"Gelb heißt:\n*Quote prüfen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_gruen.png","typ":"haken_ueber","kicker":"Ergebnis","titel":"Alle Ampeln\n*grün*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_konten.png","typ":"leiste","kicker":"Schritt 1","titel":"Konten *zuordnen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_quoten.png","typ":"leiste","kicker":"Schritt 2","titel":"Quoten *anwenden*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_freibetrag.png","typ":"leiste","kicker":"Schritt 3","titel":"Freibetrag *abziehen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_hinz_fertig.png","typ":"leiste","kicker":"Ergebnis","titel":"Hinzurechnung *fertig*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_norm.png","typ":"leiste","kicker":"Norm","titel":"§ 8 Nr. 1 *GewStG*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_mehr_abschluss.png","typ":"abspann","titel":"Weniger Excel.\n*Mehr Abschluss.*"},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_quote.png","typ":"abspann","titel":"Jede Quote\n*belegt.*"}
+  ] }
