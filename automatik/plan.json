@@ -303,6 +303,27 @@
       "issue": 15
     },
     {
+      "id": "09-reel-monatsbericht",
+      "zeit": "2026-10-11 19:30",
+      "typ": "reel",
+      "ordner": "posts/09_2026-10-11_reel_monatsbericht",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Code-Ausschnitte zum Nachbauen, keine Werbung. Sprechtext „So 11.10.“ in posts/sprechtexte.md – Sprachnachricht bis Fr 09.10."
+    },
+    {
+      "id": "09-story-teaser",
+      "zeit": "2026-10-11 19:35",
+      "typ": "story",
+      "ordner": "posts/09_2026-10-11_reel_monatsbericht",
+      "bilder": [
+        "story_so_teaser.png"
+      ],
+      "status": "entwurf"
+    },
+    {
       "id": "03-story-quiz",
       "zeit": "2026-10-12 12:15",
       "typ": "story",
