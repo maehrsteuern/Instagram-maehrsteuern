@@ -26,7 +26,12 @@ TOKEN, USER = os.environ["IG_TOKEN"], os.environ["IG_USER_ID"]
 
 def get(path, **params):
     r = requests.get(f"{API}/{path}", params={**params, "access_token": TOKEN}, timeout=60)
-    r.raise_for_status()
+    if not r.ok:  # show Meta's reason (e.g. invalid token, wrong account ID) instead of a bare "400 Bad Request"
+        try:
+            message = r.json().get("error", {}).get("message", r.text)
+        except ValueError:
+            message = r.text
+        raise requests.HTTPError(f"{r.status_code} {message[:200]}", response=r)
     return r.json()
 
 
