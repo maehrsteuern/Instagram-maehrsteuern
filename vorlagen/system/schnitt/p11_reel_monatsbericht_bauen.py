@@ -1,9 +1,9 @@
-"""Erzeugt p09_reel_monatsbericht.json (Schnitt für montage.py) aus der geschnittenen Sprachnachricht vom 05.10.
+"""Erzeugt p11_reel_monatsbericht.json (Schnitt für montage.py) aus der geschnittenen Sprachnachricht vom 05.10.
 Zeiten = Sekunden in ton/stimme_final.flac (aus 4 Teilen der Rohaufnahme zusammengesetzt, siehe ton/schnitte.json)."""
 import json
 from pathlib import Path
 
-P = "../../posts/09_2026-10-11_reel_monatsbericht"
+P = "../../posts/11_2026-10-11_reel_monatsbericht"
 ENDE = 39.6
 ZOOM = {"von": [540, 960, 1080], "nach": [540, 930, 1010]}
 # (Bild, von, bis, Untertitel [(Text, von, bis)], Extra)
@@ -47,5 +47,5 @@ cfg = {
         {"datei": "../../musik/06_runway_lofi_ruhig.mp3", "ab": 14.35, "start": 0, "lautstaerke": 0.1, "ein": 1.5},
     ],
 }
-Path(__file__).with_name("p09_reel_monatsbericht.json").write_text(json.dumps(cfg, ensure_ascii=False, indent=1))
-print("✓ p09_reel_monatsbericht.json", round(sum(s["dauer"] for s in szenen), 2), "s")
+Path(__file__).with_name("p11_reel_monatsbericht.json").write_text(json.dumps(cfg, ensure_ascii=False, indent=1))
+print("✓ p11_reel_monatsbericht.json", round(sum(s["dauer"] for s in szenen), 2), "s")

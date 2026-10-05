@@ -306,27 +306,25 @@
       "issue": 15
     },
     {
-      "id": "09-reel-monatsbericht",
+      "id": "11-reel-monatsbericht",
       "zeit": "2026-10-11 19:30",
       "typ": "reel",
-      "ordner": "posts/09_2026-10-11_reel_monatsbericht",
+      "ordner": "posts/11_2026-10-11_reel_monatsbericht",
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "entwurf",
-      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s",
-      "issue": 35
+      "hinweis": "Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s"
     },
     {
-      "id": "09-story-teaser",
+      "id": "11-story-teaser",
       "zeit": "2026-10-11 19:35",
       "typ": "story",
-      "ordner": "posts/09_2026-10-11_reel_monatsbericht",
+      "ordner": "posts/11_2026-10-11_reel_monatsbericht",
       "bilder": [
         "story_so_teaser.png"
       ],
-      "status": "entwurf",
-      "issue": 35
+      "status": "entwurf"
     },
     {
       "id": "03-story-quiz",
