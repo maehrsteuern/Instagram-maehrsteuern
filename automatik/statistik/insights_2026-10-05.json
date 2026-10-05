@@ -5,8 +5,8 @@
   "name": "Loris | Steuer-Tools x Code",
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
-  "followers_count": 352,
-  "follows_count": 268,
+  "followers_count": 355,
+  "follows_count": 269,
   "media_count": 3
  },
  "konto_verlauf": [
@@ -14,18 +14,18 @@
    "von": "2026-09-05",
    "bis": "2026-10-05",
    "reach": {
-    "gesamt": 588,
+    "gesamt": 597,
     "aufgeteilt": {
      "FOLLOWER": 126,
-     "NON_FOLLOWER": 461
+     "NON_FOLLOWER": 470
     }
    },
    "views": {
-    "gesamt": 2347,
+    "gesamt": 2359,
     "aufgeteilt": {
      "UNKNOWN": 2,
-     "NON_FOLLOWER": 929,
-     "FOLLOWER": 1416
+     "FOLLOWER": 1418,
+     "NON_FOLLOWER": 939
     }
    },
    "accounts_engaged": 26,
@@ -164,8 +164,8 @@
    "reach": {
     "gesamt": 48,
     "aufgeteilt": {
-     "FOLLOWER": 2,
-     "NON_FOLLOWER": 46
+     "NON_FOLLOWER": 46,
+     "FOLLOWER": 2
     }
    },
    "views": {
@@ -392,9 +392,9 @@
    "views": {
     "gesamt": 196,
     "aufgeteilt": {
-     "UNKNOWN": 6,
      "FOLLOWER": 16,
-     "NON_FOLLOWER": 174
+     "NON_FOLLOWER": 174,
+     "UNKNOWN": 6
     }
    },
    "accounts_engaged": 0,
@@ -500,9 +500,9 @@
    "views": {
     "gesamt": 641,
     "aufgeteilt": {
+     "UNKNOWN": 20,
      "FOLLOWER": 44,
-     "NON_FOLLOWER": 577,
-     "UNKNOWN": 20
+     "NON_FOLLOWER": 577
     }
    },
    "accounts_engaged": 0,
@@ -633,7 +633,6 @@
   }
  ],
  "tageswerte_reichweite": {
-  "2026-09-06": 1,
   "2026-09-07": 0,
   "2026-09-08": 1,
   "2026-09-09": 1,
@@ -661,7 +660,8 @@
   "2026-10-01": 68,
   "2026-10-02": 79,
   "2026-10-03": 63,
-  "2026-10-04": 418
+  "2026-10-04": 428,
+  "2026-10-05": 151
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -928,33 +928,8 @@
   }
  },
  "online_follower": {
-  "2026-10-03": {
-   "0": 98,
-   "1": 104,
-   "2": 97,
-   "3": 97,
-   "4": 99,
-   "5": 91,
-   "6": 91,
-   "7": 90,
-   "8": 92,
-   "9": 101,
-   "10": 102,
-   "11": 108,
-   "12": 94,
-   "13": 93,
-   "14": 74,
-   "15": 48,
-   "16": 35,
-   "17": 29,
-   "18": 20,
-   "19": 23,
-   "20": 16,
-   "21": 27,
-   "22": 46,
-   "23": 86
-  },
-  "2026-10-04": {}
+  "2026-10-04": {},
+  "2026-10-05": {}
  },
  "beitraege": [
   {
@@ -963,19 +938,19 @@
    "media_type": "VIDEO",
    "timestamp": "2026-10-04T17:30:48+0000",
    "permalink": "https://www.instagram.com/reel/DeFLK53ALSs/",
-   "like_count": 5,
-   "comments_count": 2,
+   "like_count": 8,
+   "comments_count": 6,
    "caption": "5 Dinge, die ich aus Excel rausgeschmissen hab 👇\n\n5️⃣ Listen abgleichen – statt SVERWEIS und #NV ein paar Zeilen Code, egal wie lang die Liste ist\n4️⃣ Doppelte Rechnungsnummern und Lücken finden – in einer Sekunde, nicht erst in der Prüfung\n3️⃣ Sehen, wer was geändert hat – jede Version bleibt gespeichert, kein „final_final_v3“ mehr\n2️⃣ Zeile einfügen, ohne dass die Summe kaputtgeht\n1️⃣ Der Monatsbericht – Daten rein, ein Klick, fertig\n\nExcel bleibt super zum schnellen Rechnen. Aber alles, was sich jeden Monat wiederholt, macht bei mir inzwischen Code.\n\nWelche Nummer soll ich dir Schritt für Schritt zeigen? Schreib die Zahl in die Kommentare 👇\n🔖 Speicher dir das für später.\n\nAlle Zahlen im Video sind Beispieldaten.\n\n#steuern #steuerabteilung #excel #python #automatisierung",
-   "views": 519,
-   "reach": 406,
-   "likes": 5,
-   "comments": 2,
-   "saved": 8,
-   "shares": 3,
-   "total_interactions": 19,
-   "ig_reels_avg_watch_time": 9167,
-   "ig_reels_video_view_total_time": 4033578,
-   "reels_skip_rate": 64,
+   "views": 700,
+   "reach": 547,
+   "likes": 8,
+   "comments": 6,
+   "saved": 12,
+   "shares": 12,
+   "total_interactions": 40,
+   "ig_reels_avg_watch_time": 9991,
+   "ig_reels_video_view_total_time": 5934740,
+   "reels_skip_rate": 62.9,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -994,8 +969,8 @@
    "like_count": 8,
    "comments_count": 2,
    "caption": "Neu hier? Dann kurz zu mir 👋\n\nIch bin Loris – Diplom-Finanzwirt und IHK-zertifizierter Manager für angewandte KI-Transformation.\n\n2025 habe ich maehrsteuern gestartet: mit Lern-Inhalten und KI-Schulungen rund ums Steuer-Examen. Viele von euch kennen mich daher – und sind heute selbst Beraterinnen und Berater. 🎓➡️💼\n\nJetzt geht's den nächsten Schritt: KI-Lösungen für Steuern, die wirklich laufen – weil ich sie selbst programmiere. Vom kleinen Tool bis zum ganzen Prozess.\n\n📅 Ab jetzt jede Woche neue Beiträge, meist abends um 19:30:\n⚙️ Demos meiner Tools\n📊 Excel-Fehler und Steuerwissen mit Rechenbeispiel\n🧠 Einblicke hinter den Code\n\nWoher kennst du mich – Examen, Kanzlei oder Steuerabteilung? 👇\n\n💬 Schreib mir „TOOL“ per DM, wenn du die Demo sehen willst.\n\n#steuern #steuerrecht #kuenstlicheintelligenz #automatisierung #finanzwirt",
-   "views": 302,
-   "reach": 110,
+   "views": 307,
+   "reach": 112,
    "likes": 8,
    "comments": 2,
    "saved": 2,
@@ -1019,19 +994,19 @@
    "media_type": "VIDEO",
    "timestamp": "2026-09-29T13:42:19+0000",
    "permalink": "https://www.instagram.com/reel/Dd34F9RtucT/",
-   "like_count": 6,
+   "like_count": 8,
    "comments_count": 2,
    "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
-   "views": 281,
-   "reach": 167,
-   "likes": 6,
+   "views": 285,
+   "reach": 169,
+   "likes": 8,
    "comments": 2,
-   "saved": 2,
+   "saved": 4,
    "shares": 7,
-   "total_interactions": 18,
-   "ig_reels_avg_watch_time": 6836,
-   "ig_reels_video_view_total_time": 1476768,
-   "reels_skip_rate": 65.2,
+   "total_interactions": 22,
+   "ig_reels_avg_watch_time": 7014,
+   "ig_reels_video_view_total_time": 1550145,
+   "reels_skip_rate": 64.7,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -1044,10 +1019,10 @@
  ],
  "storys_aktiv": [
   {
-   "id": "18386911906224507",
-   "zeit": "2026-10-04T17:50:57+0000",
-   "views": 53,
-   "reach": 40,
+   "id": "18103571240631271",
+   "zeit": "2026-10-05T10:15:05+0000",
+   "views": 37,
+   "reach": 27,
    "_fehlt": [
     "likes",
     "comments",
@@ -1057,19 +1032,41 @@
     "reels_skip_rate"
    ],
    "shares": 0,
-   "total_interactions": 1,
+   "total_interactions": 2,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 29,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18386911906224507",
+   "zeit": "2026-10-04T17:50:57+0000",
+   "views": 80,
+   "reach": 57,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 2,
    "profile_visits": 1,
    "profile_activity": 0,
    "follows": 1,
-   "navigation": 48,
+   "navigation": 72,
    "replies": 0,
    "kommentare_text": []
   },
   {
    "id": "18143214628582116",
    "zeit": "2026-10-04T17:46:23+0000",
-   "views": 51,
-   "reach": 44,
+   "views": 75,
+   "reach": 59,
    "_fehlt": [
     "likes",
     "comments",
@@ -1079,11 +1076,11 @@
     "reels_skip_rate"
    ],
    "shares": 0,
-   "total_interactions": 0,
-   "profile_visits": 0,
+   "total_interactions": 2,
+   "profile_visits": 1,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 42,
+   "navigation": 61,
    "replies": 0,
    "kommentare_text": []
   }
