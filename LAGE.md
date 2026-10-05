@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 09:06 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 09:13 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -41,9 +41,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - ⏳ **Wartet auf sprachnachricht** `04-reel-mein-weg` (Di 20.10. 19:30) – Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen
 - 🎵 **Musik fehlt** `04-reel-mein-weg` (Di 20.10. 19:30)
 - 🟡 **Freigeben** `04-story-teaser` (Di 20.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
-- 🟡 **Freigeben** `10-story-umfrage` (Mi 21.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31))
-- 🟡 **Freigeben** `10-e-rechnung` (Do 22.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31))
-- 🟡 **Freigeben** `10-story-teaser` (Do 22.10. 19:35) – „go“ oder „stop“ im Issue ([Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31))
 - ⏰ **💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)** (Mi 07.10. 08:00) – PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5).
 
 ## ⏭️ Nächste 7 Tage
@@ -80,9 +77,9 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Mo 19.10. 12:15 | 📱 Story `04-story-frage` | 🟡 Entwurf (wartet auf Freigabe) |  |
 | Di 20.10. 19:30 | 🎬 Reel `04-reel-mein-weg` | ⏳ wartet auf sprachnachricht | Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen |
 | Di 20.10. 19:35 | 📱 Story `04-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
-| Mi 21.10. 12:15 | 📱 Story `10-story-umfrage` | 🟡 Entwurf (wartet auf Freigabe) | Aus der Bibliothek: Umfrage E-Rechnung als Einstieg · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
-| Do 22.10. 19:30 | 🖼️ Karussell `10-e-rechnung` | 🟡 Entwurf (wartet auf Freigabe) | Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG) · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
-| Do 22.10. 19:35 | 📱 Story `10-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
+| Mi 21.10. 12:15 | 📱 Story `10-story-umfrage` | 🟢 freigegeben (geht automatisch online) | Aus der Bibliothek: Umfrage E-Rechnung als Einstieg · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
+| Do 22.10. 19:30 | 🖼️ Karussell `10-e-rechnung` | 🟢 freigegeben (geht automatisch online) | Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG) · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
+| Do 22.10. 19:35 | 📱 Story `10-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
@@ -133,6 +130,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 09:13 ✅ Freigabe #31: go ([`fc33faf`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fc33faf70167f966ac3f31f801fbb370ec70f21e))
+  - Plan: `10-story-umfrage` status: entwurf → freigegeben; `10-e-rechnung` status: entwurf → freigegeben; `10-story-teaser` status: entwurf → freigegeben
 - 09:06 ✍️ Stand claude/instagram übernommen ([`53b4eaf`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/53b4eaf085e3b802e2b0e1698a2b6d6a4eedf704))
 - 09:06 ✍️ Reel 11.10. Monatsbericht: Bilder (3 Schritte), Titelbild, Teaser, Bildunterschrift, Drehbuch ([`b197f71`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b197f7113caee3b60e3dc3c002797a50e42b5b7c))
   - `LAGE.html`, `posts/09_2026-10-11_reel_monatsbericht`, `posts/sprechtexte.md`, `vorlagen/system/fuenf_dinge.html`, `vorlagen/system/jobs/p09_reel_monatsbericht.json`
