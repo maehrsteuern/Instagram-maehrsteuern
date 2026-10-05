@@ -1,7 +1,7 @@
 { "titel": "Storys · Zahl des Tages", "runde": 3, "ausgabe": "../../assets/bibliothek",
   "bilder": [
     {"vorlage":"story","datei":"storys/zdt_zinsen.png","typ":"info","kicker":"Zahl des Tages","titel":"*0,15 %*\npro Monat","text":"Zinsen auf Steuernachzahlungen und -erstattungen – 1,8 % im Jahr (§§ 233a, 238 AO)."},
-    {"vorlage":"story","datei":"storys/zdt_8b.png","typ":"info","kicker":"Zahl des Tages","titel":"*95 %*\nsteuerfrei","text":"Dividenden und Veräußerungsgewinne aus Kapitalgesellschafts-Anteilen bei der KSt (§ 8b KStG)."},
+    {"vorlage":"story","datei":"storys/zdt_8b.png","typ":"info","kicker":"Zahl des Tages","titel":"*95 %*\nsteuerfrei","text":"Dividenden (ab 10 % Beteiligung) und Veräußerungsgewinne aus KapG-Anteilen bei der KSt (§ 8b KStG)."},
     {"vorlage":"story","datei":"storys/zdt_ebitda.png","typ":"info","kicker":"Zahl des Tages","titel":"*30 %*\ndes EBITDA","text":"So viel Nettozinsaufwand ist oberhalb der Freigrenze abziehbar (§ 4h Abs. 1 EStG)."},
     {"vorlage":"story","datei":"storys/zdt_viertel.png","typ":"info","kicker":"Zahl des Tages","titel":"*ein Viertel*","text":"Von den Finanzierungsanteilen über 200.000 € wird ein Viertel hinzugerechnet (§ 8 Nr. 1 GewStG)."},
     {"vorlage":"story","datei":"storys/zdt_mindeststeuer.png","typ":"info","kicker":"Zahl des Tages","titel":"*15 %*\nMindeststeuer","text":"Effektiv je Land – für Gruppen ab 750 Mio. € Umsatz (MinStG)."},
