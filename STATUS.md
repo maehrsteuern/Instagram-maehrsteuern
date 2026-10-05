@@ -71,7 +71,16 @@ Nothing published through the autopilot yet.
 
 ## 📈 Numbers (daily around 9:00 AM ET)
 
-No stats yet – they start after the Instagram secrets are set and the first stats run (daily around 9:00 AM ET).
+**4 followers** · 3 posts on the profile (fetched 10/5)
+Reach per day: 10/1 **0** · 10/2 **0** · 10/3 **0** · 10/4 **16**
+
+| Post (last 14 days) | Views | Reach | Likes | Comments | Saves | Shares |
+|---|---|---|---|---|---|---|
+| Sun 10/4 4:51 AM ET [Built for US tax teams. 🇺🇸](https://www.instagram.com/p/DeEPyWTjTqO/) | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sun 10/4 4:46 AM ET [5 spreadsheet mistakes almost every ASC ](https://www.instagram.com/p/DeEPPDCjWSn/) | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sun 10/4 4:39 AM ET [Deferred taxes in 60 seconds ⏱️](https://www.instagram.com/p/DeEOXm1DSj5/) | 0 | 0 | 0 | 0 | 0 | 0 |
+
+Raw data: `automation/stats/`, analysis: `strategy/06_analytics.md`
 
 ## ⚙️ Automation
 
@@ -80,9 +89,9 @@ No stats yet – they start after the Instagram secrets are set and the first st
 | Status + Google Calendar | after every post run, every push, daily (STATUS.md, calendar sync, watchdog) | ✅ ok |
 | Instagram post | every 15 min (posts approved entries) | ✅ ok |
 | Approval | on new drafts / reply in the issue | ✅ ok |
-| Instagram stats | daily around 9:00 AM ET | 🔴 [failed](https://github.com/maehrsteuern/maehrtax---instagram/actions/runs/37272749119) Mon 10/5 2:30 AM ET |
+| Instagram stats | daily around 9:00 AM ET | ✅ ok |
 | Refresh Instagram key | 1st of the month | – |
-| Radar (+ LinkedIn if enabled) | daily around 7:00 AM ET (issue with work list) | ✅ ok |
+| Radar (+ LinkedIn if enabled) | daily around 7:00 AM ET (issue with work list) | 🔴 [failed](https://github.com/maehrsteuern/maehrtax---instagram/actions/runs/37272929002) Mon 10/5 2:32 AM ET |
 | Comments | after every post run (suggestions in the issue) | 🔴 [failed](https://github.com/maehrsteuern/maehrtax---instagram/actions/runs/37269057330) Mon 10/5 1:43 AM ET |
 | Weekly report | Sundays around 6:00 PM ET (one issue) | ✅ ok |
 | Fetch music | manual only | – |
@@ -92,6 +101,8 @@ No stats yet – they start after the Instagram secrets are set and the first st
 🤖 Autopilot · ✅ Approval · 📈 Stats · 📊 Weekly report · 🎵 Music · 🔀 Merge · ✍️ by hand / Claude
 
 **Mon 10/5/2026**
+- 2:32 AM 📈 Stats 2026-10-05 ([`4b8c663`](https://github.com/maehrsteuern/maehrtax---instagram/commit/4b8c6639c9f000962fd3762eedc19904c3831ebf))
+  - `automation/stats`
 - 2:32 AM ✍️ Read the Instagram account ID from IG_TOKEN (/me) instead of trusting IG_USER_ID; post.py refuses tokens of other accounts ([`8bfd360`](https://github.com/maehrsteuern/maehrtax---instagram/commit/8bfd36003c55555bf1e1c21844678049016ad4b1))
   - `automation/comments.py`, `automation/ig_account.py`, `automation/insights_full.py`, `automation/post.py`, `automation/stats.py`
 - 2:31 AM 📡 Radar: an expired FB_TOKEN stops the run instead of marking every account as broken ([`81c7b2e`](https://github.com/maehrsteuern/maehrtax---instagram/commit/81c7b2e00e5a83ba758b0efc9ae674c3966e35a4))
