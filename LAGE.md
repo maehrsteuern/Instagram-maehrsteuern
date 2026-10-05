@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 12:15 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 14:17 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `02-excel-fehler` am **Di 06.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -130,6 +130,10 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 14:17 💼 LinkedIn-Pakete: 10-e-rechnung ([`6ff6d3c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6ff6d3c82581dc188f2ad622cf6dd6b52bd0269d))
+  - `posts/10_2026-10-22_e_rechnung`
+- 14:17 📡 Radar 2026-10-05: 8 Beiträge, 0 DM-Entwürfe ([`6f78e52`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f78e52ac0bae4745576201e56a4ba4e376a8ede))
+  - `automatik/interaktion`
 - 12:15 🤖 Autopilot: 02-story-umfrage veroeffentlicht ([`61dad15`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/61dad15cd99d4e4ee1f15b5a3ae17cacec13c781))
   - Plan: `02-story-umfrage` status: freigegeben → veroeffentlicht; `02-story-umfrage` online: https://www.instagram.com/stories/maehrsteuern/4001158648931891388
 - 11:00 🤖 Autopilot: Dateien fuer 02-story-umfrage vorbereitet ([`dc7f4d4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/dc7f4d46478243f426a7bdc2245de6512b8cfdb2))
