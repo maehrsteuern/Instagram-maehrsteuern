@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 09:15 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 10:10 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -130,6 +130,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 10:10 🔀 Merge pull request #32 from maehrsteuern/claude/sweet-newton-56icda ([`4aef643`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4aef643f42aeae8410a34b2be6074cbcb9f67031))
+- 10:04 ✍️ Lage-Seite: Pages-Paket je Versuch eindeutig benennen ([`b0d954d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b0d954dd50ff5ac191e0c5bc363850805a183eb3))
+  - `.github/workflows`
 - 09:15 ✍️ Bibliothek Runde 4: 217 neue Assets aus dem Brand Kit (jetzt 582) ([`6f7ccb5`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f7ccb559d09ff18e0cb292e44c7694c6178ad33))
   - `LAGE.html`, `README.md`, `assets/bibliothek/PRUEFBERICHT.md`, `assets/bibliothek/README.md`, `assets/bibliothek/bausteine/abspann_getestet.png`, `assets/bibliothek/bausteine/abspann_paragraf.png`, `…`
 - 09:13 ✅ Freigabe #31: go ([`fc33faf`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fc33faf70167f966ac3f31f801fbb370ec70f21e))
