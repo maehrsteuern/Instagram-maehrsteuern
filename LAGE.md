@@ -115,6 +115,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 09:02 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`ff02a11`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ff02a11e25af47725737b0578a24172525306ca7))
+- 09:02 ✍️ Lage-Notiz: Chrome-Check Sprint 2 eingetragen – nur Testbuchung und Puffer offen ([`4afac31`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4afac31f1821607173ab39a0fc86320728a251c1))
+  - `LAGE.html`, `automatik/lage_notizen.md`
 - 09:02 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`322e9a0`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/322e9a0f68abb1e6c8cfc94fd5c361e53fe38a23))
 - 09:02 💼 LinkedIn Excel-Fehler: Punkt 1 um KSt-Senkung ab 2028 ergänzt ([`e2566fb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e2566fb480b207cb97497a659f0e616290ba79e0))
   - `LAGE.html`, `posts/02_2026-10-06_excel_fehler`
