@@ -471,7 +471,8 @@
         "story_mi_umfrage.png"
       ],
       "status": "entwurf",
-      "hinweis": "Aus der Bibliothek: Umfrage E-Rechnung als Einstieg"
+      "hinweis": "Aus der Bibliothek: Umfrage E-Rechnung als Einstieg",
+      "issue": 31
     },
     {
       "id": "10-e-rechnung",
@@ -488,7 +489,8 @@
       ],
       "text": "bildunterschrift.txt",
       "status": "entwurf",
-      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG)"
+      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG)",
+      "issue": 31
     },
     {
       "id": "10-story-teaser",
@@ -498,7 +500,8 @@
       "bilder": [
         "story_do_teaser.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 31
     }
   ]
 }
