@@ -122,6 +122,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 **Mo 05.10.2026**
 - 09:03 ✍️ Reel So 11.10. eingeplant: „Nummer 1: Der Monatsbericht“ (wartet auf Sprachnachricht) ([`dc36957`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/dc369579b6a2ad1835017ac59cf1e0fe1137e099))
   - Plan: neu `09-reel-monatsbericht` (2026-10-11 19:30, wartet_auf_sprachnachricht); neu `09-story-teaser` (2026-10-11 19:35, entwurf)
+- 09:03 ✍️ Lage-Notiz: globaler Reclaim-Puffer 10 Min. entschieden ([`384fa87`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/384fa8755b9dfe73c4f34ad54f00d77a0846f180))
+  - `LAGE.html`, `automatik/lage_notizen.md`
 - 09:02 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`ff02a11`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ff02a11e25af47725737b0578a24172525306ca7))
 - 09:02 ✍️ Lage-Notiz: Chrome-Check Sprint 2 eingetragen – nur Testbuchung und Puffer offen ([`4afac31`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4afac31f1821607173ab39a0fc86320728a251c1))
   - `LAGE.html`, `automatik/lage_notizen.md`
