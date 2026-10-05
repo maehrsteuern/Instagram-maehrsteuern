@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 08:28 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 08:29 Uhr._
 
 **Als Nächstes online:** 📱 Story `02-story-umfrage` am **Mo 05.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -115,12 +115,19 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 08:29 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`c364a4e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c364a4eacdad154f62e5d7b8663483c242213f4f))
+- 08:28 🔀 Merge branch 'claude/instagram' of https://github.com/maehrsteuern/Instagram-maehrsteuern into claude/instagram ([`85a1dfd`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/85a1dfd6974909865ccd70e2981a3796672f54a3))
+- 08:27 ✍️ Wochenbericht: Demo-Zahlen aus Reclaim-Pflichtfeld + Kalender, dm_tracking nicht mehr angezeigt ([`714b0eb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/714b0eb0b4c9cc35d73cb7f9a5ac3d874d340d3b))
+  - `LAGE.html`, `automatik/lage_notizen.md`, `automatik/wochenbericht.py`
+- 08:28 🔀 Merge branch 'claude/instagram' of https://github.com/maehrsteuern/Instagram-maehrsteuern into claude/instagram ([`34127cc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/34127ccd7ac5d0ba8fc5e8a126eef22d65c9de45))
 - 08:28 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`ee6e233`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ee6e2334b3f6301f88ebcc09a627054c16554281))
 - 08:28 🔀 Merge remote-tracking branch 'origin/claude/instagram' into claude/instagram ([`99bf365`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/99bf3657a014fa18a807313182eea9e1e49e5385))
 - 08:28 ✍️ Lage-Notiz: GitHub Pages eingeschaltet, Lage-Seite läuft (erledigt) ([`be6765d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/be6765d918528c33a51ad1a07e4a9caab5ad19ff))
   - `LAGE.html`, `automatik/lage_notizen.md`
 - 08:28 ✍️ Latente Steuern: „Abschluss 2026“ → „spätestens jetzt“ ([`f8fda58`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f8fda5850ec94d37c8b92b989248f2e4360936d7))
   - `LAGE.html`, `posts/05_2026-10-08_latente_steuern`, `vorlagen/system/jobs/p05_latente_steuern.json`
+- 08:28 ✍️ Wochenbericht: Sonntags-Reels zählen in der Folgewoche als neu; Reel-Vergleich auf „5 Dinge“ vs. Split ([`3cb33fe`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3cb33fe0780585282727634cb1951bc61d819ce7))
+  - `LAGE.html`, `automatik/erinnerungen.json`, `automatik/lage_notizen.md`, `automatik/wochenbericht.py`
 - 08:27 🔀 Merge pull request #16 from maehrsteuern/claude/upbeat-goodall-huo6u7 ([`262ed48`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/262ed487ed9b2c5f9a63c5e7d9950047851bda2d))
 - 08:27 🔀 Merge claude/instagram in Bibliothek-Branch: Konflikte gelöst ([`0581783`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/058178316c96c700026777ee6023c075a8d81354))
 - 08:27 🔀 Merge: Lage-Notizen Kalender-Prüfung – Autopilot-Kalender in Reclaim verbunden, Freigabe/Auslöser noch gegenprüfen ([`0deb532`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0deb532118e3e94d8151e674981da7063d1b4099))
