@@ -121,8 +121,13 @@ jobs:
           ref: claude/instagram
       - name: Seite zusammenstellen
         run: mkdir _site && cp LAGE.html _site/index.html && touch _site/.nojekyll
+      # Name je Versuch eindeutig: bei „Re-run“ hängt das Paket vom ersten Versuch noch am Lauf,
+      # sonst findet deploy-pages zwei „github-pages“ und bricht ab
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+          name: github-pages-${{ github.run_attempt }}
       - id: deploy
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
