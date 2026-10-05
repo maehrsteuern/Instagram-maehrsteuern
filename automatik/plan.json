@@ -470,7 +470,7 @@
       "bilder": [
         "story_mi_umfrage.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "hinweis": "Aus der Bibliothek: Umfrage E-Rechnung als Einstieg",
       "issue": 31
     },
@@ -488,7 +488,7 @@
         "folie_06.png"
       ],
       "text": "bildunterschrift.txt",
-      "status": "entwurf",
+      "status": "freigegeben",
       "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG)",
       "issue": 31
     },
@@ -500,7 +500,7 @@
       "bilder": [
         "story_do_teaser.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "issue": 31
     }
   ]
