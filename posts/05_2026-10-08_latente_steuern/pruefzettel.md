@@ -29,10 +29,10 @@ Aussage: 100.000 € Differenz, Umkehr 2030. Fest 29,83 % → 29.825 €, richti
 - ✅ „Zu hoch angesetzt“ passt für aktive und passive Latenzen: in beiden Fällen ist der Betrag zu hoch (Posten auf der Aktiv- bzw. Passivseite).
 - ✅ Reine Demo-Zahl, nichts vom Arbeitgeber.
 
-## 5. Drei Schritte (Folie 6) – geprüft 05.10., ⚠️ eine Formulierung offen
+## 5. Drei Schritte (Folie 6) – ✅ geprüft 05.10., Box geändert
 - ✅ „Bestehende Latenzen neu bewerten – der Effekt läuft über die GuV“: § 274 Abs. 2 Satz 3 HGB – Aufwand/Ertrag aus der Veränderung latenter Steuern gesondert unter „Steuern vom Einkommen und vom Ertrag“. Ausnahme erfolgsneutral entstandener Latenzen (v. a. Konzern) ist für den Beitrag vernachlässigbar.
 - ✅ § 274a Nr. 4 HGB ist die richtige Nummer („§ 274 über die Abgrenzung latenter Steuern“).
-- ⚠️ „Kleine Kapitalgesellschaften dürfen auf latente Steuern verzichten“ ist **zu absolut**: Befreit sind sie nur von § 274. Passive latente Steuern sind trotzdem als **Rückstellung nach § 249 Abs. 1 Satz 1 HGB** anzusetzen, wenn deren Voraussetzungen vorliegen (IDW, BStBK-Verlautbarung 2012; „Rückstellungsmethode“). Vorschlag für die Box: „Kleine Kapitalgesellschaften sind von § 274 befreit (§ 274a Nr. 4 HGB) – passive Latenzen können aber als Rückstellung nötig sein.“ → **Entscheidung Loris.**
+- ✅ (geändert) „Kleine Kapitalgesellschaften dürfen auf latente Steuern verzichten“ ist **zu absolut**: Befreit sind sie nur von § 274. Passive latente Steuern sind trotzdem als **Rückstellung nach § 249 Abs. 1 Satz 1 HGB** anzusetzen, wenn deren Voraussetzungen vorliegen (IDW, BStBK-Verlautbarung 2012; „Rückstellungsmethode“). Vorschlag für die Box: „Kleine Kapitalgesellschaften sind von § 274 befreit (§ 274a Nr. 4 HGB) – passive Latenzen können aber als Rückstellung nötig sein.“ → ✅ 05.10. von Loris freigegeben, Folie 6 + LinkedIn-PDF neu erzeugt.
 - ✅ Aktivierungswahlrecht für einen Überhang aktiver latenter Steuern (§ 274 Abs. 1 Satz 2 HGB) wird nicht erwähnt – für den Beitrag nicht nötig.
 
 Quellen 4–5: https://dejure.org/gesetze/HGB/274.html · https://dejure.org/gesetze/HGB/274a.html · https://www.bstbk.de/downloads/bstbk/steuerrecht-und-rechnungslegung/fachinfos/BStBK_Verlautbarung-latenter-Steuern_2012.pdf · https://steuerinfo.de/latente-steuer-bei-kleinen-kapitalgesellschaften-ist-das-thema-endgultig-vom-tisch/
