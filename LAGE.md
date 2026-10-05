@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 18:17 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mo 05.10. 18:20 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `02-excel-fehler` am **Di 06.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -32,8 +32,8 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 👉 Braucht dich
 
-- 🟡 **Freigeben** `11-reel-monatsbericht` (So 11.10. 19:30) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
-- 🟡 **Freigeben** `11-story-teaser` (So 11.10. 19:35) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `11-reel-monatsbericht` (So 11.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36))
+- 🟡 **Freigeben** `11-story-teaser` (So 11.10. 19:35) – „go“ oder „stop“ im Issue ([Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36))
 - 🟡 **Freigeben** `09-story-quiz` (Mi 14.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
 - 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
 - 🟡 **Freigeben** `09-rueckstellung` (Do 15.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
@@ -58,8 +58,8 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Fr 09.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Fr 09.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟢 freigegeben (geht automatisch online) | Wissens-Reel (These + Zahl, 10 s) zum Karussell latente Steuern vom 08.10. Wer schickt das an wen: Steuerabteilung an den Kollegen mit der Excel, in der noch 30 % steht. Suchbegriffe: latente Steuern, Steuersatz 2028, KSt-Senkung. Keine Sprachnachricht da – liegt bis Do 08.10. eine zum Sprechtext Fr 09.10. vor, ersetzt das Stimm-Reel dieses. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
-| So 11.10. 19:30 | 🎬 Reel `11-reel-monatsbericht` | 🟡 Entwurf (wartet auf Freigabe) | Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s |
-| So 11.10. 19:35 | 📱 Story `11-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
+| So 11.10. 19:30 | 🎬 Reel `11-reel-monatsbericht` | 🟡 Entwurf (wartet auf Freigabe) | Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel (04.10.): Monatsbericht in 3 Schritten (SuSa einlesen → abstimmen → PDF), Loris' Sprachnachricht vom 05.10. (Unterbrechung rausgeschnitten, 4 Teile aus 3 Anläufen, Klang verbessert, −18 LUFS), Untertitel wörtlich, Musik ganz leise, CTA Speichern + nächste Nummer, 39,6 s · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
+| So 11.10. 19:35 | 📱 Story `11-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
 | Mo 12.10. 12:15 | 📱 Story `03-story-quiz` | 🟢 freigegeben (geht automatisch online) |  |
 
 ## 🗓️ Danach
@@ -132,6 +132,10 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mo 05.10.2026**
+- 18:20 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`c745b43`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c745b43fac15981b8c5d90711dbc29ab11892ee6))
+  - Plan: `11-reel-monatsbericht` → Freigabe-Issue #36; `11-story-teaser` → Freigabe-Issue #36
+- 18:18 ✍️ Reel Monatsbericht auf Nummer 11 umbenannt (Kollision mit Fabrik-Beitrag 09 Rückstellung) ([`b194a17`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b194a1754ae37fc1833ba4e73594092788ae09c5))
+  - Plan: neu `11-reel-monatsbericht` (2026-10-11 19:30, entwurf); neu `11-story-teaser` (2026-10-11 19:35, entwurf); entfernt `09-reel-monatsbericht`
 - 18:17 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`87c407c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/87c407cb4ceffb24ce06dc0d79472937e95f0d0f))
   - Plan: `09-reel-monatsbericht` → Freigabe-Issue #35; `09-story-teaser` → Freigabe-Issue #35; `09-story-quiz` → Freigabe-Issue #35; `09-story-aufloesung` → Freigabe-Issue #35; `09-rueckstellung` → Freigabe-Issue #35
 - 18:17 ✍️ Reel 11.10. „Nummer 1: Der Monatsbericht“ geschnitten – zur Freigabe ([`cfc83cc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/cfc83cc2a55c097f6dfddf72a7ea2dfade7cf107))
