@@ -257,7 +257,7 @@
       "titelbild": "reel_split_titel.png",
       "text": "bildunterschrift_reel.txt",
       "status": "manuell",
-      "hinweis": "EDITS-TEST (06.10.): Loris baut das Reel selbst in der Instagram-App „Edits“ aus dem Edits-Paket (Drive) und plant es dort auf Do 08.10. 19:30 – der Autopilot postet es NICHT. Ziel: prüfen, ob Edits-Reels mehr Reichweite bekommen (Vergleich mit Autopilot-Reels: Reichweite/Follower, Speichern+Teilen). Nach dem Posten Link hier eintragen. Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen. · 05.10.: auf So 11.10. getauscht – Mi 07.10. läuft das Monatsbericht-Reel als Follow-up zum 5-Dinge-Reel.",
+      "hinweis": "EDITS-TEST (06.10.): Loris lädt das Reel über die Instagram-App „Edits“ hoch (fertiges reel_split.mp4 oder selbst gebaut aus dem Edits-Paket) und plant es dort auf Do 08.10. 19:30 – der Autopilot postet es NICHT. Ziel: prüfen, ob Edits-Reels mehr Reichweite bekommen (Vergleich mit Autopilot-Reels: Reichweite/Follower, Speichern+Teilen). Nach dem Posten Link hier eintragen. Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen. · 05.10.: auf So 11.10. getauscht – Mi 07.10. läuft das Monatsbericht-Reel als Follow-up zum 5-Dinge-Reel.",
       "issue": 13
     },
     {
@@ -354,7 +354,7 @@
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Serie Nummer 2 aus dem 5-Dinge-Reel: Zeile eingefügt, Summe kaputt (#BEZUG!) → Code summiert über alle Posten. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+      "hinweis": "Serie Nummer 2 aus dem 5-Dinge-Reel: Zeile eingefügt, Summe kaputt (#BEZUG!) → Code summiert über alle Posten. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel komplett fertig (mit Musik, Untertiteln) und schickt es im Chat, Loris lädt es über Edits hoch und plant/postet selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
     },
     {
       "id": "03-gewst-hinzurechnung",
@@ -466,7 +466,7 @@
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Story-Reel „Die Verknüpfung auf die alte Datei“ (#BEZUG! 2 Tage vor Abgabe → Prüfpfad-Klick). Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+      "hinweis": "Story-Reel „Die Verknüpfung auf die alte Datei“ (#BEZUG! 2 Tage vor Abgabe → Prüfpfad-Klick). Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel komplett fertig (mit Musik, Untertiteln) und schickt es im Chat, Loris lädt es über Edits hoch und plant/postet selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
     },
     {
       "id": "14-reel-versionen",
@@ -477,7 +477,7 @@
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Serie Nummer 3: final_final_v3 → eine Datei, jede Änderung mit wer/wann/was, Schritt zurück möglich. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+      "hinweis": "Serie Nummer 3: final_final_v3 → eine Datei, jede Änderung mit wer/wann/was, Schritt zurück möglich. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel komplett fertig (mit Musik, Untertiteln) und schickt es im Chat, Loris lädt es über Edits hoch und plant/postet selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
     },
     {
       "id": "15-reel-rechnungsnummern",
@@ -488,7 +488,7 @@
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Serie Nummer 4: doppelte Rechnungsnummern und Lücken finden – vor der Prüfung. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+      "hinweis": "Serie Nummer 4: doppelte Rechnungsnummern und Lücken finden – vor der Prüfung. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel komplett fertig (mit Musik, Untertiteln) und schickt es im Chat, Loris lädt es über Edits hoch und plant/postet selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
     },
     {
       "id": "10-story-umfrage",
@@ -511,7 +511,7 @@
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Serie Nummer 5 (Abschluss der Serie): Listen abgleichen ohne SVERWEIS/#NV. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+      "hinweis": "Serie Nummer 5 (Abschluss der Serie): Listen abgleichen ohne SVERWEIS/#NV. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel komplett fertig (mit Musik, Untertiteln) und schickt es im Chat, Loris lädt es über Edits hoch und plant/postet selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
     },
     {
       "id": "10-e-rechnung",
@@ -551,7 +551,7 @@
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Thema aus den Kommentaren der Serie (wird nach Auswertung bis ca. 20.10. festgelegt). Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+      "hinweis": "Thema aus den Kommentaren der Serie (wird nach Auswertung bis ca. 20.10. festgelegt). Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel komplett fertig (mit Musik, Untertiteln) und schickt es im Chat, Loris lädt es über Edits hoch und plant/postet selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
     },
     {
       "id": "04-story-frage",
