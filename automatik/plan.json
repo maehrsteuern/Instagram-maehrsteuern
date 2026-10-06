@@ -346,6 +346,17 @@
       "status": "freigegeben"
     },
     {
+      "id": "12-reel-zeile",
+      "zeit": "2026-10-12 19:30",
+      "typ": "reel",
+      "ordner": "posts/12_2026-10-12_reel_zeile",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "Serie Nummer 2 aus dem 5-Dinge-Reel: Zeile eingefügt, Summe kaputt (#BEZUG!) → Code summiert über alle Posten. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+    },
+    {
       "id": "03-gewst-hinzurechnung",
       "zeit": "2026-10-13 19:30",
       "typ": "karussell",
@@ -447,40 +458,41 @@
       "status": "freigegeben"
     },
     {
-      "id": "04-story-frage",
-      "zeit": "2026-10-19 12:15",
-      "typ": "story",
-      "ordner": "posts/04_2026-10-20_reel_mein_weg",
-      "bilder": [
-        "story_mo_frage.png"
-      ],
-      "status": "entwurf"
+      "id": "13-reel-verknuepfung",
+      "zeit": "2026-10-16 19:30",
+      "typ": "reel",
+      "ordner": "posts/13_2026-10-16_reel_verknuepfung",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "Story-Reel „Die Verknüpfung auf die alte Datei“ (#BEZUG! 2 Tage vor Abgabe → Prüfpfad-Klick). Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
     },
     {
-      "id": "04-reel-mein-weg",
+      "id": "14-reel-versionen",
+      "zeit": "2026-10-18 19:30",
+      "typ": "reel",
+      "ordner": "posts/14_2026-10-18_reel_versionen",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "Serie Nummer 3: final_final_v3 → eine Datei, jede Änderung mit wer/wann/was, Schritt zurück möglich. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+    },
+    {
+      "id": "15-reel-rechnungsnummern",
       "zeit": "2026-10-20 19:30",
       "typ": "reel",
-      "ordner": "posts/04_2026-10-20_reel_mein_weg",
-      "video": "reel_markenweg.mp4",
-      "titelbild": "titelbild_markenweg.png",
-      "text": "bildunterschrift_markenweg.txt",
-      "musik_fehlt": true,
+      "ordner": "posts/15_2026-10-20_reel_rechnungsnummern",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
       "status": "wartet_auf_sprachnachricht",
-      "hinweis": "Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen"
-    },
-    {
-      "id": "04-story-teaser",
-      "zeit": "2026-10-20 19:35",
-      "typ": "story",
-      "ordner": "posts/04_2026-10-20_reel_mein_weg",
-      "bilder": [
-        "story_di_teaser_markenweg.png"
-      ],
-      "status": "entwurf"
+      "hinweis": "Serie Nummer 4: doppelte Rechnungsnummern und Lücken finden – vor der Prüfung. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
     },
     {
       "id": "10-story-umfrage",
-      "zeit": "2026-10-21 12:15",
+      "zeit": "2026-10-22 12:15",
       "typ": "story",
       "ordner": "posts/10_2026-10-22_e_rechnung",
       "bilder": [
@@ -491,8 +503,19 @@
       "issue": 31
     },
     {
-      "id": "10-e-rechnung",
+      "id": "16-reel-listen",
       "zeit": "2026-10-22 19:30",
+      "typ": "reel",
+      "ordner": "posts/16_2026-10-22_reel_listen",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "Serie Nummer 5 (Abschluss der Serie): Listen abgleichen ohne SVERWEIS/#NV. Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+    },
+    {
+      "id": "10-e-rechnung",
+      "zeit": "2026-10-23 19:30",
       "typ": "karussell",
       "ordner": "posts/10_2026-10-22_e_rechnung",
       "bilder": [
@@ -505,12 +528,12 @@
       ],
       "text": "bildunterschrift.txt",
       "status": "freigegeben",
-      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG)",
+      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG) · 06.10.: auf Fr 23.10. geschoben (Reel-Takt alle 2 Tage).",
       "issue": 31
     },
     {
       "id": "10-story-teaser",
-      "zeit": "2026-10-22 19:35",
+      "zeit": "2026-10-23 19:35",
       "typ": "story",
       "ordner": "posts/10_2026-10-22_e_rechnung",
       "bilder": [
@@ -518,6 +541,49 @@
       ],
       "status": "freigegeben",
       "issue": 31
+    },
+    {
+      "id": "17-reel-kommentare",
+      "zeit": "2026-10-24 19:30",
+      "typ": "reel",
+      "ordner": "posts/17_2026-10-24_reel_kommentare",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "Thema aus den Kommentaren der Serie (wird nach Auswertung bis ca. 20.10. festgelegt). Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel fertig (ohne Musik) und schickt es im Chat, Loris öffnet es in Edits, wählt Musik dort und plant/postet es selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md."
+    },
+    {
+      "id": "04-story-frage",
+      "zeit": "2026-10-26 12:15",
+      "typ": "story",
+      "ordner": "posts/04_2026-10-20_reel_mein_weg",
+      "bilder": [
+        "story_mo_frage.png"
+      ],
+      "status": "entwurf"
+    },
+    {
+      "id": "04-reel-mein-weg",
+      "zeit": "2026-10-27 19:30",
+      "typ": "reel",
+      "ordner": "posts/04_2026-10-20_reel_mein_weg",
+      "video": "reel_markenweg.mp4",
+      "titelbild": "titelbild_markenweg.png",
+      "text": "bildunterschrift_markenweg.txt",
+      "musik_fehlt": true,
+      "status": "wartet_auf_sprachnachricht",
+      "hinweis": "06.10.: auf Di 27.10. geschoben (Slot 20.10. geht an die Excel-Serie). Konzept wird von Loris umgebaut (03.10.) – Variante B (drehbuch_markenweg.md) vorerst nicht gesetzt, keine Sprachnachricht anfordern; bei KI-Karten: Hinweis in der Bildunterschrift, KI-Label nach dem Posten in der App prüfen"
+    },
+    {
+      "id": "04-story-teaser",
+      "zeit": "2026-10-27 19:35",
+      "typ": "story",
+      "ordner": "posts/04_2026-10-20_reel_mein_weg",
+      "bilder": [
+        "story_di_teaser_markenweg.png"
+      ],
+      "status": "entwurf"
     }
   ]
 }
