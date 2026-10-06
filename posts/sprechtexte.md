@@ -4,7 +4,7 @@ Ablauf: Text grob lesen, dann **locker frei sprechen** (Sprachnachricht vom Hand
 etwas Abstand zum Mikro). Schicken → Claude schneidet mit wörtlichen Untertiteln (Regeln: `strategie/09_reel_regeln.md`).
 Keine echten Zahlen oder Fälle vom Arbeitgeber – nur Demo-Zahlen.
 
-## Mi 07.10. · „Nummer 1: Der Monatsbericht“ (eingesprochen 05.10. ✓) (Folge-Reel zum 5-Dinge-Reel vom 04.10.)
+## Mi 07.10. · „Nummer 1: Der Monatsbericht“ (neu aufnehmen – bis Mi 07.10. ca. 15 Uhr) (Folge-Reel zum 5-Dinge-Reel vom 04.10.)
 > Nummer eins aus meinem letzten Reel: der Monatsbericht. Ich zeig dir, wie ich das mache.
 > Früher: jeden Monat dieselbe Runde. Exportieren, kopieren, einfügen, Formeln runterziehen. Fast zwei Stunden. Und am Ende stimmt trotzdem irgendwas nicht.
 > Heute sind es drei Schritte.
