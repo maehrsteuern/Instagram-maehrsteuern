@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 09:22 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 09:28 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `11-reel-monatsbericht` am **Di 06.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -129,6 +129,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Di 06.10.2026**
+- 09:28 ✅ Freigabe #36: go (Loris im Chat) – Monatsbericht-Reel + Teaser heute 19:30/19:35 ([`e6f5338`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e6f533880a1a424a48be4f029b68285e534eaa66))
+  - Plan: `11-reel-monatsbericht` status: entwurf → freigegeben; `11-story-teaser` status: entwurf → freigegeben
 - 09:22 ✍️ Monatsbericht-Reel: Pausen mit Raumton statt digitaler Stille, feste Verstärkung statt loudnorm ([`5652c08`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5652c08b40452b44bdb9c362759387ba44985cd7))
   - `posts/11_2026-10-07_reel_monatsbericht`, `vorlagen/system/schnitt/p11_reel_monatsbericht.json`, `vorlagen/system/schnitt/p11_reel_monatsbericht_bauen.py`
 - 09:12 ✍️ Monatsbericht-Reel Version 3: dritte Aufnahme (09:02), Atmer stumm – zur Freigabe für heute 19:30 ([`3d9f5d9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/3d9f5d977c9e214072fc5a846127b73ff315dee4))
