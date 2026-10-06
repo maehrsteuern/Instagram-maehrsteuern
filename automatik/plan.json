@@ -188,9 +188,12 @@
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "freigegeben",
+      "status": "veroeffentlicht",
       "hinweis": "Version 3 (06.10., Aufnahme 09:02): letzter Durchgang geschnitten, Satz „Weil so viele von euch gefragt haben …“ entfernt, Atmer stummgeschaltet, Pausen gekürzt, −18 LUFS, 30 s. Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel; Di 06.10. statt Karussell (das läuft Mi 07.10.).",
-      "issue": 36
+      "issue": 36,
+      "media_id": "18154273729518650",
+      "link": "https://www.instagram.com/reel/DeKUuvPgA1W/",
+      "veroeffentlicht_am": "2026-10-06 19:30"
     },
     {
       "id": "11-story-teaser",
