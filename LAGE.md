@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 20:50 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 21:07 Uhr._
 
 **Als Nächstes online:** 📱 Story `05-story-frage` am **Mi 07.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -142,6 +142,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Di 06.10.2026**
+- 21:07 ✍️ montage.py: stumme Tonspur behoben – Split- und KSt-Reel mit Ton neu gerendert ([`1413df2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1413df2f4329f7f252b56cdf8ce5d3f77e9f012b))
+  - `LAGE.html`, `automatik/lage_notizen.md`, `posts/02_2026-10-06_excel_fehler`, `posts/08_2026-10-09_reel_kst_staffel`, `vorlagen/system/montage.py`
 - 20:50 ✍️ Reel-Serie: komplett fertig liefern (inkl. Musik), Loris lädt über Edits hoch ([`e490c8d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e490c8d24f38c8e94696626468fed05fcd5c2718))
   - `LAGE.html`, `automatik/lage_notizen.md`, `automatik/plan.json`
 - 20:49 ✍️ Stand claude/instagram übernommen ([`a1fda23`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a1fda236acc2b7523259e14a26b6d07a183bf706))
