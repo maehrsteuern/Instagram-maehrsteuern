@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 08:14 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 08:41 Uhr._
 
 **Als Nächstes online:** 📱 Story `05-story-frage` am **Mi 07.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -132,6 +132,10 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Di 06.10.2026**
+- 08:41 ✍️ Rohaufnahme Monatsbericht v2 aus dem Repo genommen (nur fertiger Schnitt bleibt öffentlich) ([`2dd3db2`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2dd3db2e541627df46c62c3e8b4f7973e918e953))
+  - `posts/11_2026-10-07_reel_monatsbericht`
+- 08:40 ✍️ Monatsbericht-Reel Version 2: neue Aufnahme, neuer Hook, heute Di 06.10. – Karussell Excel-Fehler auf Mi 07.10. ([`2985d86`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2985d86376a25f5ed42a02296819c73dbb53acda))
+  - Plan: `11-reel-monatsbericht` status: wartet_auf_sprachnachricht → entwurf; `11-reel-monatsbericht` zeit: 2026-10-07 19:30 → 2026-10-06 19:30; `11-story-teaser` zeit: 2026-10-07 19:35 → 2026-10-06 19:35; `02-excel-fehler` zeit: 2026-10-06 19:30 → 2026-10-07 19:30; `02-story-teaser` zeit: 2026-10-06 19:35 → 2026-10-07 19:35
 - 08:14 ✍️ Stand claude/instagram übernommen ([`f4e5a6f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f4e5a6fc5b878181908df23ed69461eac79acc43))
 - 08:14 ✍️ Sprechtext Monatsbericht neu: kürzer, lockerer, stärkerer Hook („Zwei Stunden. Jeden Monat.“) ([`61689c3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/61689c353aae2043cd1da047291a9c13bf2e045c))
   - `LAGE.html`, `posts/sprechtexte.md`
