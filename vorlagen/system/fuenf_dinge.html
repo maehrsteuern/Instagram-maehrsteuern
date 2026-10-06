@@ -111,6 +111,19 @@ const B = {
   m_ende: `<div class="marke">@maehrsteuern</div>
     <div class="gross" style="top:330px">Daten rein.<br>Einen Klick.<br><span style="color:var(--gruen)">Fertig.</span></div>
     <div class="chips" style="top:860px"><span class="chip">🔖 Speichern</span><span class="chip">Welche Nummer als Nächstes?</span></div>`,
+  // Version 2 (06.10.): Hook „2 Stunden. Jeden Monat.“, Knopf, Schluss mit Nummernfrage
+  m_hook2: `<div class="marke">@maehrsteuern</div>
+    <div class="gross" style="top:230px;font-size:124px;line-height:1.02"><span style="color:var(--rot)">2 Stunden.</span><br>Jeden Monat.</div>
+    <div class="panel ordner" style="top:560px;height:600px"><div class="t">Monatsbericht_September.xlsx – nur Copy-Paste</div>
+    ${["SuSa exportieren","Spalten kopieren → Strg+C","In Bericht einfügen → Strg+V","Formeln nach unten ziehen","Diagramm anpassen","Als PDF speichern … und nochmal prüfen"]
+      .map((n,i)=>`<div class="datei"><span class="ic" style="background:#8a8a8a">${i+1}</span>${n}<span class="d">${["10 min","15 min","15 min","20 min","10 min","30 min"][i]}</span></div>`).join("")}</div>`,
+  m_knopf: `<div class="marke">@maehrsteuern</div>
+    <div class="gross" style="top:300px">Heute:<br><span style="color:var(--gruen)">ein Knopf.</span></div>
+    <div class="liste" style="top:700px">${["SuSa einlesen","Abstimmen","PDF bauen"].map((t,i)=>`<div><b>${i+1}</b>${t}<span class="x" style="color:var(--gruen)">CODE</span></div>`).join("")}</div>`,
+  m_ende2: `<div class="marke">@maehrsteuern</div>
+    <div class="gross" style="top:330px">Welche Nummer als <span style="color:var(--gruen)">Nächstes?</span></div>
+    <div class="zahlen">${[5,4,3,2].map(n=>`<div>${n}</div>`).join("")}<div style="opacity:.35;border-style:dashed">1</div></div>
+    <div class="chips"><span class="chip">Zahl in die Kommentare</span><span class="chip">✓ Nummer 1 erledigt</span></div>`,
   ende: `<div class="marke">@maehrsteuern</div>
     <div class="gross" style="top:330px">Welche Nummer soll ich dir zeigen?</div>
     <div class="zahlen">${[5,4,3,2,1].map(n=>`<div>${n}</div>`).join("")}</div>

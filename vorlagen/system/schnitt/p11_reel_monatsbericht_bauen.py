@@ -1,33 +1,26 @@
-"""Erzeugt p11_reel_monatsbericht.json (Schnitt für montage.py) aus der geschnittenen Sprachnachricht vom 05.10.
-Zeiten = Sekunden in ton/stimme_final.flac (aus 4 Teilen der Rohaufnahme zusammengesetzt, siehe ton/schnitte.json)."""
+"""Erzeugt p11_reel_monatsbericht.json (Schnitt für montage.py) – Version 2 vom 06.10.:
+neuer Sprechtext (kürzer, Hook „Zwei verdammte Stunden“), Aufnahme 06.10. 08:29 (Take B), Zeiten = Sekunden in ton/stimme_final.flac."""
 import json
 from pathlib import Path
 
 P = "../../posts/11_2026-10-07_reel_monatsbericht"
-ENDE = 39.6
+ENDE = 27.0
 ZOOM = {"von": [540, 960, 1080], "nach": [540, 930, 1010]}
 # (Bild, von, bis, Untertitel [(Text, von, bis)], Extra)
 SZENEN = [
-    ("hook", 0.0, 4.45, [("Nummer eins", 0.0, 0.94), ("aus meinem letzten Reel:", 0.94, 1.8), ("der Monatsbericht.", 1.8, 2.8),
-                         ("Ich zeig dir, wie ich das mache.", 2.8, 4.45)], {}),
-    ("vorher", 4.45, 14.35, [("Früher: jeden Monat dieselbe Runde.", 4.45, 7.3), ("Exportieren, kopieren, einfügen,", 7.3, 10.1),
-                             ("Formeln runterziehen.", 10.1, 11.3), ("Fast zwei Stunden", 11.3, 12.3),
-                             ("und am Ende stimmt trotzdem irgendwas nicht.", 12.3, 14.35)],
-     {"von": [540, 960, 1080], "nach": [540, 990, 990]}),
-    ("hook", 14.35, 16.35, [("Heute sind es drei Schritte.", 14.35, 16.35)], {"rein": "whip"}),
-    ("schritt1", 16.35, 21.55, [("Eins:", 16.35, 17.0), ("Der Code liest die", 17.0, 17.9), ("Summen- und Saldenliste ein.", 17.9, 19.3),
-                                ("Direkt den Export.", 19.3, 20.35), ("Ich fass nichts an.", 20.35, 21.55)], {}),
-    ("schritt2", 21.55, 27.76, [("Zwei: Er stimmt ab.", 21.55, 23.15), ("Passt die Summe nicht,", 23.15, 24.0),
-                                ("hört er auf und sagt mir, um wie viel –", 24.0, 26.1), ("bevor ein falscher Bericht rausgeht.", 26.1, 27.76)], {}),
-    ("schritt3", 27.76, 32.9, [("Drei: Er baut den Bericht.", 27.76, 30.15), ("Tabellen, Diagramm,", 30.15, 31.48),
-                               ("fertiges PDF.", 31.48, 32.9)], {}),
-    ("ende", 32.9, ENDE, [("Daten rein.", 32.9, 33.8), ("Einen Klick.", 33.8, 34.55), ("Fertig.", 34.55, 35.4),
-                          ("Speichert ihr das", 35.4, 36.4), ("und schreibt mir, welche Nummer", 36.4, 37.85),
-                          ("als Nächstes dran ist.", 37.85, ENDE)], {}),
+    ("hook2", 0.0, 5.1, [("Zwei verdammte Stunden", 0.0, 1.42), ("jeden Monat,", 1.42, 2.6), ("nur Copy-Paste", 2.6, 3.5),
+                         ("für einen einzigen Bericht.", 3.5, 5.1)], {"von": [540, 960, 1080], "nach": [540, 900, 980]}),
+    ("knopf", 5.1, 8.15, [("Heute drück ich einen Knopf", 5.1, 6.6), ("und so geht's:", 6.6, 8.15)], {"rein": "whip"}),
+    ("schritt1", 8.15, 12.2, [("Eins:", 8.15, 8.8), ("Der Code zieht sich die", 8.8, 9.75), ("Summen- und Saldenliste", 9.75, 10.74),
+                              ("direkt aus dem Export.", 10.74, 12.2)], {}),
+    ("schritt2", 12.2, 16.9, [("Zwei: Er stimmt ab.", 12.2, 13.7), ("Passt was nicht, stoppt er,", 13.7, 15.18),
+                              ("bevor ein falscher Bericht rausgeht.", 15.18, 16.9)], {}),
+    ("schritt3", 16.9, 21.5, [("Drei: Er baut den Bericht.", 16.9, 18.82), ("Tabellen, Diagramm, PDF –", 18.82, 20.7),
+                              ("fertig.", 20.7, 21.5)], {}),
+    ("ende2", 21.5, ENDE, [("Das war Nummer eins", 21.5, 22.7), ("aus meinem letzten Video.", 22.7, 23.9),
+                           ("Welche Nummer willst du", 23.9, 24.9), ("als Nächstes sehen?", 24.9, 25.8), ("Schreib's mir.", 25.8, ENDE)], {}),
 ]
-AKZENTE = {  # große Schlagworte als Verstärkung des Gesagten (Zeit im Audio, Farbe)
-    "vorher": [("~2 Stunden", 11.44, "rot")], "schritt2": [("STOPP", 24.0, "rot")], "schritt3": [("PDF ✓", 31.9, "gruen")],
-}
+AKZENTE = {"schritt2": [("STOPP", 14.62, "rot")], "schritt3": [("PDF ✓", 20.22, "gruen")]}
 
 szenen, quellen = [], {}
 for bild, a, b, texte, extra in SZENEN:
@@ -43,8 +36,9 @@ cfg = {
     "ausgabe": f"{P}/reel.mp4", "fps": 30, "quellen": quellen, "szenen": szenen,
     "ton": [
         {"datei": f"{P}/ton/stimme_final.flac", "ab": 0, "lautstaerke": 1.0, "ein": 0.02, "aus": 0.3},
-        {"datei": "../../musik/atmo/fehlerton.mp3", "ab": 23.7, "dauer": 0.6, "lautstaerke": 0.18},
-        {"datei": "../../musik/06_runway_lofi_ruhig.mp3", "ab": 14.35, "start": 0, "lautstaerke": 0.1, "ein": 1.5},
+        {"datei": "../../musik/atmo/uhr_ticken.mp3", "ab": 0.0, "start": 0.3, "dauer": 5.0, "lautstaerke": 0.14, "ein": 0.05, "aus": 0.4},
+        {"datei": "../../musik/atmo/fehlerton.mp3", "ab": 14.0, "dauer": 0.6, "lautstaerke": 0.18},
+        {"datei": "../../musik/06_runway_lofi_ruhig.mp3", "ab": 5.1, "start": 0, "lautstaerke": 0.1, "ein": 1.0},
     ],
 }
 Path(__file__).with_name("p11_reel_monatsbericht.json").write_text(json.dumps(cfg, ensure_ascii=False, indent=1))

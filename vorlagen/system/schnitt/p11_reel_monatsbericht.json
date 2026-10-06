@@ -2,11 +2,11 @@
  "ausgabe": "../../posts/11_2026-10-07_reel_monatsbericht/reel.mp4",
  "fps": 30,
  "quellen": {
-  "hook": {
-   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/hook.png"
+  "hook2": {
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/hook2.png"
   },
-  "vorher": {
-   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/vorher.png"
+  "knopf": {
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/knopf.png"
   },
   "schritt1": {
    "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/schritt1.png"
@@ -17,42 +17,42 @@
   "schritt3": {
    "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/schritt3.png"
   },
-  "ende": {
-   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/ende.png"
+  "ende2": {
+   "datei": "../../posts/11_2026-10-07_reel_monatsbericht/bausteine/ende2.png"
   }
  },
  "szenen": [
   {
-   "quelle": "hook",
-   "dauer": 4.45,
+   "quelle": "hook2",
+   "dauer": 5.1,
    "text": [
     {
-     "wort": "Nummer eins",
+     "wort": "Zwei verdammte Stunden",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 0.94
+     "bis": 1.42
     },
     {
-     "wort": "aus meinem letzten Reel:",
+     "wort": "jeden Monat,",
      "groesse": 66,
      "y": 1330,
-     "ab": 0.94,
-     "bis": 1.8
+     "ab": 1.42,
+     "bis": 2.6
     },
     {
-     "wort": "der Monatsbericht.",
+     "wort": "nur Copy-Paste",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.8,
-     "bis": 2.8
+     "ab": 2.6,
+     "bis": 3.5
     },
     {
-     "wort": "Ich zeig dir, wie ich das mache.",
+     "wort": "für einen einzigen Bericht.",
      "groesse": 66,
      "y": 1330,
-     "ab": 2.8,
-     "bis": 4.45
+     "ab": 3.5,
+     "bis": 5.1
     }
    ],
    "von": [
@@ -62,79 +62,27 @@
    ],
    "nach": [
     540,
-    930,
-    1010
+    900,
+    980
    ]
   },
   {
-   "quelle": "vorher",
-   "dauer": 9.9,
+   "quelle": "knopf",
+   "dauer": 3.05,
    "text": [
     {
-     "wort": "Früher: jeden Monat dieselbe Runde.",
+     "wort": "Heute drück ich einen Knopf",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 2.85
+     "bis": 1.5
     },
     {
-     "wort": "Exportieren, kopieren, einfügen,",
+     "wort": "und so geht's:",
      "groesse": 66,
      "y": 1330,
-     "ab": 2.85,
-     "bis": 5.65
-    },
-    {
-     "wort": "Formeln runterziehen.",
-     "groesse": 66,
-     "y": 1330,
-     "ab": 5.65,
-     "bis": 6.85
-    },
-    {
-     "wort": "Fast zwei Stunden",
-     "groesse": 66,
-     "y": 1330,
-     "ab": 6.85,
-     "bis": 7.85
-    },
-    {
-     "wort": "und am Ende stimmt trotzdem irgendwas nicht.",
-     "groesse": 66,
-     "y": 1330,
-     "ab": 7.85,
-     "bis": 9.9
-    },
-    {
-     "wort": "~2 Stunden",
-     "farbe": "rot",
-     "groesse": 115,
-     "y": 1222,
-     "ab": 6.99,
-     "bis": 9.9
-    }
-   ],
-   "von": [
-    540,
-    960,
-    1080
-   ],
-   "nach": [
-    540,
-    990,
-    990
-   ]
-  },
-  {
-   "quelle": "hook",
-   "dauer": 2.0,
-   "text": [
-    {
-     "wort": "Heute sind es drei Schritte.",
-     "groesse": 66,
-     "y": 1330,
-     "ab": 0.0,
-     "bis": 2.0
+     "ab": 1.5,
+     "bis": 3.05
     }
    ],
    "von": [
@@ -151,7 +99,7 @@
   },
   {
    "quelle": "schritt1",
-   "dauer": 5.2,
+   "dauer": 4.05,
    "text": [
     {
      "wort": "Eins:",
@@ -161,32 +109,25 @@
      "bis": 0.65
     },
     {
-     "wort": "Der Code liest die",
+     "wort": "Der Code zieht sich die",
      "groesse": 66,
      "y": 1330,
      "ab": 0.65,
-     "bis": 1.55
+     "bis": 1.6
     },
     {
-     "wort": "Summen- und Saldenliste ein.",
+     "wort": "Summen- und Saldenliste",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.55,
-     "bis": 2.95
+     "ab": 1.6,
+     "bis": 2.59
     },
     {
-     "wort": "Direkt den Export.",
+     "wort": "direkt aus dem Export.",
      "groesse": 66,
      "y": 1330,
-     "ab": 2.95,
-     "bis": 4.0
-    },
-    {
-     "wort": "Ich fass nichts an.",
-     "groesse": 66,
-     "y": 1330,
-     "ab": 4.0,
-     "bis": 5.2
+     "ab": 2.59,
+     "bis": 4.05
     }
    ],
    "von": [
@@ -202,43 +143,36 @@
   },
   {
    "quelle": "schritt2",
-   "dauer": 6.21,
+   "dauer": 4.7,
    "text": [
     {
      "wort": "Zwei: Er stimmt ab.",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 1.6
+     "bis": 1.5
     },
     {
-     "wort": "Passt die Summe nicht,",
+     "wort": "Passt was nicht, stoppt er,",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.6,
-     "bis": 2.45
-    },
-    {
-     "wort": "hört er auf und sagt mir, um wie viel –",
-     "groesse": 66,
-     "y": 1330,
-     "ab": 2.45,
-     "bis": 4.55
+     "ab": 1.5,
+     "bis": 2.98
     },
     {
      "wort": "bevor ein falscher Bericht rausgeht.",
      "groesse": 66,
      "y": 1330,
-     "ab": 4.55,
-     "bis": 6.21
+     "ab": 2.98,
+     "bis": 4.7
     },
     {
      "wort": "STOPP",
      "farbe": "rot",
      "groesse": 115,
      "y": 1222,
-     "ab": 2.45,
-     "bis": 6.21
+     "ab": 2.42,
+     "bis": 4.7
     }
    ],
    "von": [
@@ -254,36 +188,36 @@
   },
   {
    "quelle": "schritt3",
-   "dauer": 5.14,
+   "dauer": 4.6,
    "text": [
     {
      "wort": "Drei: Er baut den Bericht.",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 2.39
+     "bis": 1.92
     },
     {
-     "wort": "Tabellen, Diagramm,",
+     "wort": "Tabellen, Diagramm, PDF –",
      "groesse": 66,
      "y": 1330,
-     "ab": 2.39,
-     "bis": 3.72
+     "ab": 1.92,
+     "bis": 3.8
     },
     {
-     "wort": "fertiges PDF.",
+     "wort": "fertig.",
      "groesse": 66,
      "y": 1330,
-     "ab": 3.72,
-     "bis": 5.14
+     "ab": 3.8,
+     "bis": 4.6
     },
     {
      "wort": "PDF ✓",
      "farbe": "gruen",
      "groesse": 115,
      "y": 1222,
-     "ab": 4.14,
-     "bis": 5.14
+     "ab": 3.32,
+     "bis": 4.6
     }
    ],
    "von": [
@@ -298,50 +232,43 @@
    ]
   },
   {
-   "quelle": "ende",
-   "dauer": 6.7,
+   "quelle": "ende2",
+   "dauer": 5.5,
    "text": [
     {
-     "wort": "Daten rein.",
+     "wort": "Das war Nummer eins",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 0.9
+     "bis": 1.2
     },
     {
-     "wort": "Einen Klick.",
+     "wort": "aus meinem letzten Video.",
      "groesse": 66,
      "y": 1330,
-     "ab": 0.9,
-     "bis": 1.65
+     "ab": 1.2,
+     "bis": 2.4
     },
     {
-     "wort": "Fertig.",
+     "wort": "Welche Nummer willst du",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.65,
-     "bis": 2.5
+     "ab": 2.4,
+     "bis": 3.4
     },
     {
-     "wort": "Speichert ihr das",
+     "wort": "als Nächstes sehen?",
      "groesse": 66,
      "y": 1330,
-     "ab": 2.5,
-     "bis": 3.5
+     "ab": 3.4,
+     "bis": 4.3
     },
     {
-     "wort": "und schreibt mir, welche Nummer",
+     "wort": "Schreib's mir.",
      "groesse": 66,
      "y": 1330,
-     "ab": 3.5,
-     "bis": 4.95
-    },
-    {
-     "wort": "als Nächstes dran ist.",
-     "groesse": 66,
-     "y": 1330,
-     "ab": 4.95,
-     "bis": 6.7
+     "ab": 4.3,
+     "bis": 5.5
     }
    ],
    "von": [
@@ -365,17 +292,26 @@
    "aus": 0.3
   },
   {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 0.0,
+   "start": 0.3,
+   "dauer": 5.0,
+   "lautstaerke": 0.14,
+   "ein": 0.05,
+   "aus": 0.4
+  },
+  {
    "datei": "../../musik/atmo/fehlerton.mp3",
-   "ab": 23.7,
+   "ab": 14.0,
    "dauer": 0.6,
    "lautstaerke": 0.18
   },
   {
    "datei": "../../musik/06_runway_lofi_ruhig.mp3",
-   "ab": 14.35,
+   "ab": 5.1,
    "start": 0,
    "lautstaerke": 0.1,
-   "ein": 1.5
+   "ein": 1.0
   }
  ]
 }

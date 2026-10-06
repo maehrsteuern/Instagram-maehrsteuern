@@ -1,9 +1,9 @@
 {
   "_hinweis": "Einmalige Erinnerungen/Fristen außerhalb des Plans. Erscheinen in LAGE.md unter „Braucht dich“ (ab 'zeigen_ab_tagen' vorher bis 'wann' + 1 Tag) und – wenn kalender = true – als Termin im Google-Kalender „maehrsteuern Autopilot“ (Art erinnerung, „frei“, Pop-up 1 Tag vorher + zur Zeit). Erledigtes: 'erledigt': true setzen oder Eintrag löschen. Zeiten deutsche Zeit.",
   "erinnerungen": [
-    {"id": "linkedin-18", "wann": "2026-10-07T08:00", "kalender": false, "zeigen_ab_tagen": 2,
+    {"id": "linkedin-18", "wann": "2026-10-08T08:00", "kalender": false, "zeigen_ab_tagen": 2,
      "titel": "💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)",
-     "text": "PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5)."},
+     "text": "Karussell geht erst Mi 07.10. auf Instagram → LinkedIn Do 08.10. PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5)."},
     {"id": "anzeige-start", "wann": "2026-10-12T18:00", "kalender": true, "zeigen_ab_tagen": 3,
      "titel": "📣 Reel-Vergleich „5 Dinge“ vs. Split → Anzeige starten (ca. 12.10.)",
      "text": "„5 Dinge“ (So 04.10., ersetzt das Ampel-Reel) gegen Split (Mi 07.10.) vergleichen: (Speichern + Teilen) / Reichweite in LAGE.md bzw. im Wochenbericht.\nDas bessere Reel wird die Click-to-DM-Anzeige (strategie/12_interaktion.md Abschnitt 5, Chrome Modul 2): 1 €/Tag, ca. 30 €/Monat – Zahlung und Absenden machst du selbst."},
