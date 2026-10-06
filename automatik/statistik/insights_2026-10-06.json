@@ -1,0 +1,1101 @@
+{
+ "abgerufen": "2026-10-06",
+ "konto": {
+  "username": "maehrsteuern",
+  "name": "Loris | Steuer-Tools x Code",
+  "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
+  "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
+  "followers_count": 356,
+  "follows_count": 273,
+  "media_count": 3
+ },
+ "konto_verlauf": [
+  {
+   "von": "2026-09-06",
+   "bis": "2026-10-06",
+   "reach": {
+    "gesamt": 811,
+    "aufgeteilt": {
+     "FOLLOWER": 130,
+     "NON_FOLLOWER": 678
+    }
+   },
+   "views": {
+    "gesamt": 2867,
+    "aufgeteilt": {
+     "UNKNOWN": 2,
+     "FOLLOWER": 1625,
+     "NON_FOLLOWER": 1240
+    }
+   },
+   "accounts_engaged": 34,
+   "total_interactions": 186,
+   "likes": 67,
+   "comments": 13,
+   "shares": 38,
+   "saves": 19,
+   "replies": 5,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 8,
+     "NON_FOLLOWER": 10
+    }
+   }
+  },
+  {
+   "von": "2026-08-07",
+   "bis": "2026-09-06",
+   "reach": {
+    "gesamt": 31,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 29
+    }
+   },
+   "views": {
+    "gesamt": 101,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "UNKNOWN": 3,
+     "NON_FOLLOWER": 92
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": -1,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": -1,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 7
+    }
+   }
+  },
+  {
+   "von": "2026-07-08",
+   "bis": "2026-08-07",
+   "reach": {
+    "gesamt": 74,
+    "aufgeteilt": {
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 71
+    }
+   },
+   "views": {
+    "gesamt": 228,
+    "aufgeteilt": {
+     "FOLLOWER": 17,
+     "UNKNOWN": 15,
+     "NON_FOLLOWER": 196
+    }
+   },
+   "accounts_engaged": 1,
+   "total_interactions": 2,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 8
+    }
+   }
+  },
+  {
+   "von": "2026-06-08",
+   "bis": "2026-07-08",
+   "reach": {
+    "gesamt": 53,
+    "aufgeteilt": {
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 50
+    }
+   },
+   "views": {
+    "gesamt": 218,
+    "aufgeteilt": {
+     "UNKNOWN": 2,
+     "FOLLOWER": 9,
+     "NON_FOLLOWER": 207
+    }
+   },
+   "accounts_engaged": 2,
+   "total_interactions": 2,
+   "likes": 1,
+   "comments": 1,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 4,
+     "NON_FOLLOWER": 9
+    }
+   }
+  },
+  {
+   "von": "2026-05-09",
+   "bis": "2026-06-08",
+   "reach": {
+    "gesamt": 46,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 44
+    }
+   },
+   "views": {
+    "gesamt": 162,
+    "aufgeteilt": {
+     "FOLLOWER": 13,
+     "NON_FOLLOWER": 146,
+     "UNKNOWN": 3
+    }
+   },
+   "accounts_engaged": 5,
+   "total_interactions": 8,
+   "likes": 7,
+   "comments": 1,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 11,
+     "NON_FOLLOWER": 7
+    }
+   }
+  },
+  {
+   "von": "2026-04-09",
+   "bis": "2026-05-09",
+   "reach": {
+    "gesamt": 63,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 61
+    }
+   },
+   "views": {
+    "gesamt": 135,
+    "aufgeteilt": {
+     "UNKNOWN": 14,
+     "FOLLOWER": 26,
+     "NON_FOLLOWER": 95
+    }
+   },
+   "accounts_engaged": 2,
+   "total_interactions": 5,
+   "likes": 5,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 10
+    }
+   }
+  },
+  {
+   "von": "2026-03-10",
+   "bis": "2026-04-09",
+   "reach": {
+    "gesamt": 56,
+    "aufgeteilt": {
+     "FOLLOWER": 1,
+     "NON_FOLLOWER": 55
+    }
+   },
+   "views": {
+    "gesamt": 116,
+    "aufgeteilt": {
+     "UNKNOWN": 3,
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 111
+    }
+   },
+   "accounts_engaged": 2,
+   "total_interactions": 8,
+   "likes": 6,
+   "comments": 0,
+   "shares": 1,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 8,
+     "NON_FOLLOWER": 9
+    }
+   }
+  },
+  {
+   "von": "2026-02-08",
+   "bis": "2026-03-10",
+   "reach": {
+    "gesamt": 37,
+    "aufgeteilt": {
+     "FOLLOWER": 1,
+     "NON_FOLLOWER": 36
+    }
+   },
+   "views": {
+    "gesamt": 106,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "UNKNOWN": 1,
+     "NON_FOLLOWER": 103
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 8,
+   "likes": 6,
+   "comments": 0,
+   "shares": 1,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 5,
+     "NON_FOLLOWER": 17
+    }
+   }
+  },
+  {
+   "von": "2026-01-09",
+   "bis": "2026-02-08",
+   "reach": {
+    "gesamt": 95,
+    "aufgeteilt": {
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 92
+    }
+   },
+   "views": {
+    "gesamt": 380,
+    "aufgeteilt": {
+     "FOLLOWER": 11,
+     "NON_FOLLOWER": 369
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 3,
+   "comments": 0,
+   "shares": 0,
+   "saves": -3,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 9,
+     "NON_FOLLOWER": 14
+    }
+   }
+  },
+  {
+   "von": "2025-12-10",
+   "bis": "2026-01-09",
+   "reach": {
+    "gesamt": 123,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 117
+    }
+   },
+   "views": {
+    "gesamt": 438,
+    "aufgeteilt": {
+     "UNKNOWN": 7,
+     "FOLLOWER": 33,
+     "NON_FOLLOWER": 398
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 12,
+   "likes": 12,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 11,
+     "NON_FOLLOWER": 19
+    }
+   }
+  },
+  {
+   "von": "2025-11-10",
+   "bis": "2025-12-10",
+   "reach": {
+    "gesamt": 82,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 77
+    }
+   },
+   "views": {
+    "gesamt": 198,
+    "aufgeteilt": {
+     "FOLLOWER": 16,
+     "NON_FOLLOWER": 175,
+     "UNKNOWN": 7
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 6,
+   "likes": 9,
+   "comments": 0,
+   "shares": 0,
+   "saves": -2,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 15,
+     "NON_FOLLOWER": 18
+    }
+   }
+  },
+  {
+   "von": "2025-10-11",
+   "bis": "2025-11-10",
+   "reach": {
+    "gesamt": 79,
+    "aufgeteilt": {
+     "FOLLOWER": 6,
+     "NON_FOLLOWER": 73
+    }
+   },
+   "views": {
+    "gesamt": 200,
+    "aufgeteilt": {
+     "UNKNOWN": 4,
+     "FOLLOWER": 32,
+     "NON_FOLLOWER": 164
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 4,
+   "likes": 4,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 23,
+     "NON_FOLLOWER": 19
+    }
+   }
+  },
+  {
+   "von": "2025-09-11",
+   "bis": "2025-10-11",
+   "reach": {
+    "gesamt": 221,
+    "aufgeteilt": {
+     "FOLLOWER": 2,
+     "NON_FOLLOWER": 32
+    }
+   },
+   "views": {
+    "gesamt": 505,
+    "aufgeteilt": {
+     "FOLLOWER": 55,
+     "UNKNOWN": 20,
+     "NON_FOLLOWER": 430
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 14,
+   "likes": 8,
+   "comments": 1,
+   "shares": 2,
+   "saves": 1,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {
+     "FOLLOWER": 5,
+     "NON_FOLLOWER": 7
+    }
+   }
+  },
+  {
+   "von": "2025-08-12",
+   "bis": "2025-09-11",
+   "reach": {
+    "gesamt": 537,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 653,
+    "aufgeteilt": {
+     "UNKNOWN": 20,
+     "NON_FOLLOWER": 589,
+     "FOLLOWER": 44
+    }
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 17,
+   "likes": 15,
+   "comments": 1,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  },
+  {
+   "von": "2025-07-13",
+   "bis": "2025-08-12",
+   "reach": {
+    "gesamt": 4053,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  },
+  {
+   "von": "2025-06-13",
+   "bis": "2025-07-13",
+   "reach": {
+    "gesamt": 5565,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 2,
+    "aufgeteilt": {
+     "EMAIL": 2
+    }
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  },
+  {
+   "von": "2025-05-14",
+   "bis": "2025-06-13",
+   "reach": {
+    "gesamt": 1612,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  },
+  {
+   "von": "2025-05-01",
+   "bis": "2025-05-14",
+   "reach": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "views": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "accounts_engaged": 0,
+   "total_interactions": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "saves": 0,
+   "replies": 0,
+   "profile_links_taps": {
+    "gesamt": 0,
+    "aufgeteilt": {}
+   },
+   "follows_and_unfollows": {
+    "gesamt": null,
+    "aufgeteilt": {}
+   }
+  }
+ ],
+ "tageswerte_reichweite": {
+  "2026-09-07": 0,
+  "2026-09-08": 1,
+  "2026-09-09": 1,
+  "2026-09-10": 1,
+  "2026-09-11": 1,
+  "2026-09-12": 3,
+  "2026-09-13": 2,
+  "2026-09-14": 2,
+  "2026-09-15": 0,
+  "2026-09-16": 4,
+  "2026-09-17": 1,
+  "2026-09-18": 1,
+  "2026-09-19": 0,
+  "2026-09-20": 4,
+  "2026-09-21": 4,
+  "2026-09-22": 3,
+  "2026-09-23": 1,
+  "2026-09-24": 3,
+  "2026-09-25": 1,
+  "2026-09-26": 3,
+  "2026-09-27": 1,
+  "2026-09-28": 1,
+  "2026-09-29": 126,
+  "2026-09-30": 82,
+  "2026-10-01": 68,
+  "2026-10-02": 79,
+  "2026-10-03": 63,
+  "2026-10-04": 428,
+  "2026-10-05": 262
+ },
+ "zielgruppe": {
+  "follower_demographics": {
+   "this_month": {
+    "age": {
+     "13-17": 5,
+     "18-24": 22,
+     "25-34": 122,
+     "35-44": 97,
+     "45-54": 68,
+     "55-64": 24,
+     "65+": 14
+    },
+    "gender": {
+     "F": 152,
+     "M": 108,
+     "U": 92
+    },
+    "city": {
+     "Wölfis, Thüringen": 2,
+     "Jena, Thüringen": 2,
+     "Heidenheim, Baden-Württemberg": 2,
+     "Heidelberg, Baden-Württemberg": 2,
+     "Markt Sankt Florian, Upper Austria": 1,
+     "Munich, Bayern": 8,
+     "Aachen, Nordrhein-Westfalen": 1,
+     "Gotha, Thüringen": 3,
+     "Berlin, Berlin": 17,
+     "Hürth, Nordrhein-Westfalen": 2,
+     "Erfurt, Thüringen": 8,
+     "Suhl, Thüringen": 2,
+     "Hamburg, Hamburg": 8,
+     "Erfurt-Bindersleben, Thüringen": 2,
+     "Düsseldorf, Nordrhein-Westfalen": 2,
+     "Ludwigshafen, Rheinland-Pfalz": 2,
+     "Oberhausen, Nordrhein-Westfalen": 2,
+     "Dortmund, Nordrhein-Westfalen": 2,
+     "Dresden, Sachsen": 2,
+     "Ohrdruf, Thüringen": 5,
+     "Essen, Nordrhein-Westfalen": 6,
+     "Plaue, Thüringen": 2,
+     "Cologne, Nordrhein-Westfalen": 8,
+     "Nuremberg, Bayern": 2,
+     "Shanghai, Shanghai": 3,
+     "Ravensburg, Baden-Württemberg": 2,
+     "Haigerloch, Baden-Württemberg": 1,
+     "Wien, Vienna": 5,
+     "Wernberg-Köblitz, Bayern": 2,
+     "Kokrobite, Greater Accra Region": 1,
+     "Brazzaville, Brazzaville": 1,
+     "Hanover, Niedersachsen": 2,
+     "Schmalkalden, Thüringen": 1,
+     "Leipzig, Sachsen": 3,
+     "Filderstadt, Baden-Württemberg": 2,
+     "Arnstadt, Thüringen": 4,
+     "Frankfurt, Hessen": 3,
+     "Oberasbach, Bayern": 1,
+     "Viersen, Nordrhein-Westfalen": 3,
+     "Flensburg, Schleswig-Holstein": 2,
+     "Niederense, Nordrhein-Westfalen": 1,
+     "Stuttgart, Baden-Württemberg": 2,
+     "Zweibrücken, Rheinland-Pfalz": 1,
+     "Neuss, Nordrhein-Westfalen": 2,
+     "Gera, Thüringen": 2
+    },
+    "country": {
+     "DE": 272,
+     "LR": 1,
+     "BJ": 1,
+     "FR": 2,
+     "BR": 1,
+     "SD": 1,
+     "GB": 3,
+     "ID": 3,
+     "GD": 1,
+     "GE": 1,
+     "CA": 1,
+     "US": 9,
+     "GH": 1,
+     "CG": 1,
+     "CH": 2,
+     "IN": 2,
+     "GM": 1,
+     "CI": 1,
+     "KR": 1,
+     "ZA": 1,
+     "GR": 1,
+     "CN": 4,
+     "IT": 8,
+     "CO": 1,
+     "ES": 5,
+     "AR": 3,
+     "ZM": 1,
+     "XK": 1,
+     "AT": 15,
+     "CY": 1,
+     "CZ": 1,
+     "PH": 2,
+     "PK": 1,
+     "PL": 1,
+     "RO": 1
+    }
+   }
+  },
+  "reached_audience_demographics": {
+   "this_month": {
+    "age": {
+     "13-17": 1,
+     "18-24": 19,
+     "25-34": 88,
+     "35-44": 33,
+     "45-54": 16,
+     "55-64": 2
+    },
+    "gender": {
+     "F": 57,
+     "M": 70,
+     "U": 32
+    },
+    "city": {
+     "Wölfis, Thüringen": 1,
+     "Herrieden, Bayern": 1,
+     "Jena, Thüringen": 2,
+     "Halle, Saxony-Anhalt": 1,
+     "Hesel, Niedersachsen": 1,
+     "Ahrensfelde, Brandenburg": 1,
+     "Gotha, Thüringen": 3,
+     "Berlin, Berlin": 5,
+     "Hürth, Nordrhein-Westfalen": 2,
+     "Erfurt, Thüringen": 8,
+     "Hamburg, Hamburg": 5,
+     "Oberwil, Basel-Landschaft": 1,
+     "Düsseldorf, Nordrhein-Westfalen": 2,
+     "Seoul, Seoul": 1,
+     "Dresden, Sachsen": 2,
+     "Luisenthal, Thüringen": 1,
+     "Ohrdruf, Thüringen": 5,
+     "Waldsee, Rheinland-Pfalz": 1,
+     "Neukirchen-Vluyn, Nordrhein-Westfalen": 1,
+     "Pöttmes, Bayern": 1,
+     "Plaue, Thüringen": 2,
+     "Marktbreit, Bayern": 1,
+     "Ravensburg, Baden-Württemberg": 1,
+     "Pößneck, Thüringen": 1,
+     "Weimar, Thüringen": 1,
+     "Wernberg-Köblitz, Bayern": 1,
+     "Recklinghausen, Nordrhein-Westfalen": 1,
+     "Amman, Amman Governorate": 1,
+     "Schmölln, Thüringen": 1,
+     "Chennai, Tamil Nadu": 2,
+     "Simmerath, Nordrhein-Westfalen": 1,
+     "Groningen, Groningen": 1,
+     "Gossel, Thüringen": 2,
+     "Hardheim, Baden-Württemberg": 1,
+     "Frankfurt, Hessen": 2,
+     "Crawinkel, Thüringen": 1,
+     "Grenville, Saint Andrew Parish": 1,
+     "Liebenstein, Thüringen": 2,
+     "Fulda, Hessen": 1,
+     "Maxhütte-Haidhof, Bayern": 1,
+     "Wolfsburg-Unkeroda, Thüringen": 1,
+     "Flensburg, Schleswig-Holstein": 2,
+     "Kempen, Nordrhein-Westfalen": 1,
+     "Semnan, Semnan Province": 1,
+     "Neuss, Nordrhein-Westfalen": 1
+    },
+    "country": {
+     "DE": 131,
+     "CH": 1,
+     "UZ": 1,
+     "JO": 1,
+     "IN": 8,
+     "SY": 1,
+     "KR": 6,
+     "IR": 2,
+     "MX": 1,
+     "FR": 1,
+     "PK": 1,
+     "GB": 1,
+     "GD": 1,
+     "NL": 1,
+     "TR": 2
+    }
+   },
+   "this_week": {
+    "age": {
+     "13-17": 1,
+     "18-24": 19,
+     "25-34": 87,
+     "35-44": 33,
+     "45-54": 16,
+     "55-64": 1
+    },
+    "gender": {
+     "F": 56,
+     "M": 69,
+     "U": 32
+    },
+    "city": {
+     "Wölfis, Thüringen": 1,
+     "Herrieden, Bayern": 1,
+     "Jena, Thüringen": 2,
+     "Halle, Saxony-Anhalt": 1,
+     "Hesel, Niedersachsen": 1,
+     "Ahrensfelde, Brandenburg": 1,
+     "Gotha, Thüringen": 3,
+     "Berlin, Berlin": 5,
+     "Hürth, Nordrhein-Westfalen": 2,
+     "Erfurt, Thüringen": 8,
+     "Hamburg, Hamburg": 5,
+     "Oberwil, Basel-Landschaft": 1,
+     "Düsseldorf, Nordrhein-Westfalen": 2,
+     "Seoul, Seoul": 1,
+     "Dresden, Sachsen": 2,
+     "Luisenthal, Thüringen": 1,
+     "Ohrdruf, Thüringen": 5,
+     "Waldsee, Rheinland-Pfalz": 1,
+     "Neukirchen-Vluyn, Nordrhein-Westfalen": 1,
+     "Pöttmes, Bayern": 1,
+     "Plaue, Thüringen": 2,
+     "Marktbreit, Bayern": 1,
+     "Ravensburg, Baden-Württemberg": 1,
+     "Pößneck, Thüringen": 1,
+     "Weimar, Thüringen": 1,
+     "Wernberg-Köblitz, Bayern": 1,
+     "Recklinghausen, Nordrhein-Westfalen": 1,
+     "Amman, Amman Governorate": 1,
+     "Schmölln, Thüringen": 1,
+     "Chennai, Tamil Nadu": 2,
+     "Simmerath, Nordrhein-Westfalen": 1,
+     "Groningen, Groningen": 1,
+     "Gossel, Thüringen": 2,
+     "Hardheim, Baden-Württemberg": 1,
+     "Frankfurt, Hessen": 2,
+     "Crawinkel, Thüringen": 1,
+     "Grenville, Saint Andrew Parish": 1,
+     "Liebenstein, Thüringen": 2,
+     "Fulda, Hessen": 1,
+     "Maxhütte-Haidhof, Bayern": 1,
+     "Wolfsburg-Unkeroda, Thüringen": 1,
+     "Flensburg, Schleswig-Holstein": 2,
+     "Kempen, Nordrhein-Westfalen": 1,
+     "Semnan, Semnan Province": 1,
+     "Neuss, Nordrhein-Westfalen": 1
+    },
+    "country": {
+     "DE": 129,
+     "CH": 1,
+     "UZ": 1,
+     "JO": 1,
+     "IN": 8,
+     "SY": 1,
+     "KR": 6,
+     "IR": 2,
+     "MX": 1,
+     "FR": 1,
+     "PK": 1,
+     "GB": 1,
+     "GD": 1,
+     "NL": 1,
+     "TR": 2
+    }
+   }
+  }
+ },
+ "online_follower": {
+  "2026-10-04": {
+   "0": 90,
+   "1": 88,
+   "2": 85,
+   "3": 90,
+   "4": 100,
+   "5": 106,
+   "6": 104,
+   "7": 104,
+   "8": 89,
+   "9": 113,
+   "10": 115,
+   "11": 118,
+   "12": 115,
+   "13": 96,
+   "14": 58,
+   "15": 36,
+   "16": 26,
+   "17": 18,
+   "18": 13,
+   "19": 18,
+   "20": 36,
+   "21": 65,
+   "22": 89,
+   "23": 91
+  },
+  "2026-10-05": {}
+ },
+ "beitraege": [
+  {
+   "id": "17916550404258137",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "timestamp": "2026-10-04T17:30:48+0000",
+   "permalink": "https://www.instagram.com/reel/DeFLK53ALSs/",
+   "like_count": 11,
+   "comments_count": 10,
+   "caption": "5 Dinge, die ich aus Excel rausgeschmissen hab 👇\n\n5️⃣ Listen abgleichen – statt SVERWEIS und #NV ein paar Zeilen Code, egal wie lang die Liste ist\n4️⃣ Doppelte Rechnungsnummern und Lücken finden – in einer Sekunde, nicht erst in der Prüfung\n3️⃣ Sehen, wer was geändert hat – jede Version bleibt gespeichert, kein „final_final_v3“ mehr\n2️⃣ Zeile einfügen, ohne dass die Summe kaputtgeht\n1️⃣ Der Monatsbericht – Daten rein, ein Klick, fertig\n\nExcel bleibt super zum schnellen Rechnen. Aber alles, was sich jeden Monat wiederholt, macht bei mir inzwischen Code.\n\nWelche Nummer soll ich dir Schritt für Schritt zeigen? Schreib die Zahl in die Kommentare 👇\n🔖 Speicher dir das für später.\n\nAlle Zahlen im Video sind Beispieldaten.\n\n#steuern #steuerabteilung #excel #python #automatisierung",
+   "views": 834,
+   "reach": 646,
+   "likes": 11,
+   "comments": 10,
+   "saved": 13,
+   "shares": 12,
+   "total_interactions": 48,
+   "ig_reels_avg_watch_time": 9895,
+   "ig_reels_video_view_total_time": 7105169,
+   "reels_skip_rate": 64.1,
+   "_fehlt": [
+    "profile_visits",
+    "profile_activity",
+    "follows",
+    "navigation",
+    "replies"
+   ],
+   "kommentare_text": []
+  },
+  {
+   "id": "17965089348198457",
+   "media_product_type": "FEED",
+   "media_type": "CAROUSEL_ALBUM",
+   "timestamp": "2026-10-01T16:30:02+0000",
+   "permalink": "https://www.instagram.com/p/Dd9V5HAAhcL/",
+   "like_count": 9,
+   "comments_count": 2,
+   "caption": "Neu hier? Dann kurz zu mir 👋\n\nIch bin Loris – Diplom-Finanzwirt und IHK-zertifizierter Manager für angewandte KI-Transformation.\n\n2025 habe ich maehrsteuern gestartet: mit Lern-Inhalten und KI-Schulungen rund ums Steuer-Examen. Viele von euch kennen mich daher – und sind heute selbst Beraterinnen und Berater. 🎓➡️💼\n\nJetzt geht's den nächsten Schritt: KI-Lösungen für Steuern, die wirklich laufen – weil ich sie selbst programmiere. Vom kleinen Tool bis zum ganzen Prozess.\n\n📅 Ab jetzt jede Woche neue Beiträge, meist abends um 19:30:\n⚙️ Demos meiner Tools\n📊 Excel-Fehler und Steuerwissen mit Rechenbeispiel\n🧠 Einblicke hinter den Code\n\nWoher kennst du mich – Examen, Kanzlei oder Steuerabteilung? 👇\n\n💬 Schreib mir „TOOL“ per DM, wenn du die Demo sehen willst.\n\n#steuern #steuerrecht #kuenstlicheintelligenz #automatisierung #finanzwirt",
+   "views": 313,
+   "reach": 115,
+   "likes": 9,
+   "comments": 2,
+   "saved": 2,
+   "shares": 16,
+   "total_interactions": 32,
+   "_fehlt": [
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate",
+    "navigation",
+    "replies"
+   ],
+   "profile_visits": 7,
+   "profile_activity": 0,
+   "follows": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18432424948196865",
+   "media_product_type": "REELS",
+   "media_type": "VIDEO",
+   "timestamp": "2026-09-29T13:42:19+0000",
+   "permalink": "https://www.instagram.com/reel/Dd34F9RtucT/",
+   "like_count": 9,
+   "comments_count": 2,
+   "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
+   "views": 287,
+   "reach": 172,
+   "likes": 9,
+   "comments": 2,
+   "saved": 4,
+   "shares": 7,
+   "total_interactions": 23,
+   "ig_reels_avg_watch_time": 6991,
+   "ig_reels_video_view_total_time": 1566061,
+   "reels_skip_rate": 64.6,
+   "_fehlt": [
+    "profile_visits",
+    "profile_activity",
+    "follows",
+    "navigation",
+    "replies"
+   ],
+   "kommentare_text": []
+  }
+ ],
+ "storys_aktiv": [
+  {
+   "id": "18111893153620845",
+   "zeit": "2026-10-05T20:20:01+0000",
+   "views": 35,
+   "reach": 27,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 2,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 31,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18103571240631271",
+   "zeit": "2026-10-05T10:15:05+0000",
+   "views": 65,
+   "reach": 52,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 4,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 56,
+   "replies": 0,
+   "kommentare_text": []
+  }
+ ],
+ "_fehlt": [
+  "engaged_audience_demographics/this_month/age: 400 Not enough users",
+  "engaged_audience_demographics/this_month/gender: 400 Not enough users",
+  "engaged_audience_demographics/this_month/city: 400 Not enough users",
+  "engaged_audience_demographics/this_month/country: 400 Not enough users",
+  "engaged_audience_demographics/this_week/age: 400 Not enough users",
+  "engaged_audience_demographics/this_week/gender: 400 Not enough users",
+  "engaged_audience_demographics/this_week/city: 400 Not enough users",
+  "engaged_audience_demographics/this_week/country: 400 Not enough users"
+ ]
+}
