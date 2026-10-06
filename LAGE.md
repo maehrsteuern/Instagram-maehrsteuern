@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 20:45 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 20:49 Uhr._
 
 **Als Nächstes online:** 📱 Story `05-story-frage` am **Mi 07.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -141,6 +141,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Di 06.10.2026**
+- 20:49 ✍️ Stand claude/instagram übernommen ([`a1fda23`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a1fda236acc2b7523259e14a26b6d07a183bf706))
+- 20:49 ✍️ Reel-Takt alle 2 Tage bis 24.10.: 6 neue Reel-Slots + 5 Sprechtexte (Serie Nummer 2–5 + Verknüpfung) ([`ac88455`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ac884553c77ec5411a0e2dc8ce4ee97ac4ed083f))
+  - Plan: neu `12-reel-zeile` (2026-10-12 19:30, wartet_auf_sprachnachricht); neu `13-reel-verknuepfung` (2026-10-16 19:30, wartet_auf_sprachnachricht); neu `14-reel-versionen` (2026-10-18 19:30, wartet_auf_sprachnachricht); neu `15-reel-rechnungsnummern` (2026-10-20 19:30, wartet_auf_sprachnachricht); neu `16-reel-listen` (2026-10-22 19:30, wartet_auf_sprachnachricht); neu `17-reel-kommentare` (2026-10-24 19:30, wartet_auf_sprachnachricht); `10-story-umfrage` zeit: 2026-10-21 12:15 → 2026-10-22 12:15; `10-e-rechnung` zeit: 2026-10-22 19:30 → 2026-10-23 19:30; `10-story-teaser` zeit: 2026-10-22 19:35 → 2026-10-23 19:35; `04-story-frage` zeit: 2026-10-19 12:15 → 2026-10-26 12:15; `04-reel-mein-weg` zeit: 2026-10-20 19:30 → 2026-10-27 19:30; `04-story-teaser` zeit: 2026-10-20 19:35 → 2026-10-27 19:35
 - 20:45 📈 Statistik: Schnellabruf einzelner Beiträge (nur Protokoll, keine Dateien) ([`a028389`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a028389fd39fec8aeefb0d76ec5acecd5ee5fb2c))
   - `.github/workflows`, `automatik/beitrag_jetzt.py`
 - 20:44 ✍️ Edits-Test: Split-Reel Do 08.10. von Loris in Edits (manuell), Woche verschoben ([`ea2ce8f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ea2ce8fa74a159a7beb35cbfcc8accc9c6499de3))
