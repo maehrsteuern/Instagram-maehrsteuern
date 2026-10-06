@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 19:35 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 20:45 Uhr._
 
 **Als Nächstes online:** 📱 Story `05-story-frage` am **Mi 07.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -128,6 +128,10 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Di 06.10.2026**
+- 20:45 📈 Statistik: Schnellabruf einzelner Beiträge (nur Protokoll, keine Dateien) ([`a028389`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a028389fd39fec8aeefb0d76ec5acecd5ee5fb2c))
+  - `.github/workflows`, `automatik/beitrag_jetzt.py`
+- 20:44 ✍️ Edits-Test: Split-Reel Do 08.10. von Loris in Edits (manuell), Woche verschoben ([`ea2ce8f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ea2ce8fa74a159a7beb35cbfcc8accc9c6499de3))
+  - Plan: `06-reel-split` status: freigegeben → manuell; `06-reel-split` zeit: 2026-10-11 19:30 → 2026-10-08 19:30; `06-story-teaser` zeit: 2026-10-11 19:35 → 2026-10-08 19:35; `05-latente-steuern` zeit: 2026-10-08 19:30 → 2026-10-09 19:30; `05-story-teaser` zeit: 2026-10-08 19:35 → 2026-10-09 19:35; `08-story-heute` zeit: 2026-10-09 12:15 → 2026-10-10 12:15; `08-reel-kst-staffel` zeit: 2026-10-09 19:30 → 2026-10-10 19:30; `08-story-rueckblick` zeit: 2026-10-10 12:15 → 2026-10-11 12:15
 - 19:35 🤖 Autopilot: 11-story-teaser veroeffentlicht ([`461142e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/461142eef2e2d6b5a0a87e5afc8355fe1aef4e4d))
   - Plan: `11-story-teaser` status: freigegeben → veroeffentlicht; `11-story-teaser` online: https://www.instagram.com/stories/maehrsteuern/4002104878277412503
 - 19:33 🤖 Autopilot: Dateien fuer 11-story-teaser vorbereitet ([`ee11a38`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ee11a38228eba20470b2a90f856cc2ef92c0ad70))
