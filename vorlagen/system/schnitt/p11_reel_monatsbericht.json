@@ -24,35 +24,35 @@
  "szenen": [
   {
    "quelle": "hook2",
-   "dauer": 5.75,
+   "dauer": 5.9,
    "text": [
     {
      "wort": "Zwei verdammte Stunden",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 1.7
+     "bis": 1.85
     },
     {
      "wort": "jeden Monat.",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.7,
-     "bis": 2.78
+     "ab": 1.85,
+     "bis": 2.93
     },
     {
      "wort": "Nur Copy-Paste",
      "groesse": 66,
      "y": 1330,
-     "ab": 2.78,
-     "bis": 3.8
+     "ab": 2.93,
+     "bis": 3.95
     },
     {
      "wort": "für einen einzigen Bericht.",
      "groesse": 66,
      "y": 1330,
-     "ab": 3.8,
-     "bis": 5.75
+     "ab": 3.95,
+     "bis": 5.9
     }
    ],
    "von": [
@@ -184,7 +184,7 @@
    "dauer": 5.9,
    "text": [
     {
-     "wort": "Der letzte Punkt:",
+     "wort": "Und der letzte Punkt:",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
@@ -216,7 +216,7 @@
      "farbe": "gruen",
      "groesse": 115,
      "y": 1222,
-     "ab": 4.19,
+     "ab": 4.22,
      "bis": 5.9
     }
    ],
@@ -302,13 +302,13 @@
   },
   {
    "datei": "../../musik/atmo/fehlerton.mp3",
-   "ab": 15.0,
+   "ab": 15.15,
    "dauer": 0.6,
    "lautstaerke": 0.18
   },
   {
    "datei": "../../musik/06_runway_lofi_ruhig.mp3",
-   "ab": 5.75,
+   "ab": 5.9,
    "start": 0,
    "lautstaerke": 0.1,
    "ein": 1.0
