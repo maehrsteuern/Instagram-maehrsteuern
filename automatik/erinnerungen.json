@@ -1,14 +1,37 @@
 {
   "_hinweis": "Einmalige Erinnerungen/Fristen außerhalb des Plans. Erscheinen in LAGE.md unter „Braucht dich“ (ab 'zeigen_ab_tagen' vorher bis 'wann' + 1 Tag) und – wenn kalender = true – als Termin im Google-Kalender „maehrsteuern Autopilot“ (Art erinnerung, „frei“, Pop-up 1 Tag vorher + zur Zeit). Erledigtes: 'erledigt': true setzen oder Eintrag löschen. Zeiten deutsche Zeit.",
   "erinnerungen": [
-    {"id": "linkedin-18", "wann": "2026-10-08T08:00", "kalender": false, "zeigen_ab_tagen": 2,
-     "titel": "💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)",
-     "text": "Karussell geht erst Mi 07.10. auf Instagram → LinkedIn Do 08.10. PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5)."},
-    {"id": "anzeige-start", "wann": "2026-10-12T18:00", "kalender": true, "zeigen_ab_tagen": 3,
-     "titel": "📣 Reel-Vergleich „5 Dinge“ vs. Split → Anzeige starten (ca. 12.10.)",
-     "text": "„5 Dinge“ (So 04.10., ersetzt das Ampel-Reel) gegen Split (Mi 07.10.) vergleichen: (Speichern + Teilen) / Reichweite in LAGE.md bzw. im Wochenbericht.\nDas bessere Reel wird die Click-to-DM-Anzeige (strategie/12_interaktion.md Abschnitt 5, Chrome Modul 2): 1 €/Tag, ca. 30 €/Monat – Zahlung und Absenden machst du selbst."},
-    {"id": "manychat-trial", "wann": "2026-10-14T18:00", "kalender": true, "zeigen_ab_tagen": 7,
-     "titel": "💳 ManyChat-Trial endet Fr 16.10. – entscheiden",
-     "text": "Entscheidung Loris: weiter (Kosten?) oder kündigen. Grundlage: ManyChat gesendet/Klicks und Demos aus den Wochenberichten KW 40 + 41.\nOhne Entscheidung läuft die DM-Strecke (TOOL → Demo-Link) evtl. nicht weiter – vor dem 16.10. klären, nichts automatisch buchen."}
+    {
+      "id": "edits-split",
+      "wann": "2026-10-08T09:00",
+      "kalender": true,
+      "zeigen_ab_tagen": 1,
+      "titel": "🎬 Split-Reel in Edits bauen + auf 19:30 planen (Edits-Test)",
+      "text": "Anleitung: Google Doc „Edits-Anleitung Split-Reel (Do 08.10.)“ im Drive-Ordner „Maehrsteuern audios“. Dateien kamen per Claude-Chat (auch im Repo: posts/02_2026-10-06_excel_fehler/edits_paket/). Bildunterschrift aus der Textdatei kopieren (im Doc sind die Emojis kaputt). Danach Claude Bescheid geben. Der Autopilot postet dieses Reel NICHT."
+    },
+    {
+      "id": "linkedin-18",
+      "wann": "2026-10-08T08:00",
+      "kalender": false,
+      "zeigen_ab_tagen": 2,
+      "titel": "💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)",
+      "text": "Karussell geht erst Mi 07.10. auf Instagram → LinkedIn Do 08.10. PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5)."
+    },
+    {
+      "id": "anzeige-start",
+      "wann": "2026-10-12T18:00",
+      "kalender": true,
+      "zeigen_ab_tagen": 3,
+      "titel": "📣 Reel-Vergleich „5 Dinge“ vs. Split → Anzeige starten (ca. 12.10.)",
+      "text": "„5 Dinge“ (So 04.10., ersetzt das Ampel-Reel) gegen Split (Mi 07.10.) vergleichen: (Speichern + Teilen) / Reichweite in LAGE.md bzw. im Wochenbericht.\nDas bessere Reel wird die Click-to-DM-Anzeige (strategie/12_interaktion.md Abschnitt 5, Chrome Modul 2): 1 €/Tag, ca. 30 €/Monat – Zahlung und Absenden machst du selbst."
+    },
+    {
+      "id": "manychat-trial",
+      "wann": "2026-10-14T18:00",
+      "kalender": true,
+      "zeigen_ab_tagen": 7,
+      "titel": "💳 ManyChat-Trial endet Fr 16.10. – entscheiden",
+      "text": "Entscheidung Loris: weiter (Kosten?) oder kündigen. Grundlage: ManyChat gesendet/Klicks und Demos aus den Wochenberichten KW 40 + 41.\nOhne Entscheidung läuft die DM-Strecke (TOOL → Demo-Link) evtl. nicht weiter – vor dem 16.10. klären, nichts automatisch buchen."
+    }
   ]
 }

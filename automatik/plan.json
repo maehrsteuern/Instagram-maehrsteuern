@@ -249,8 +249,31 @@
       "status": "freigegeben"
     },
     {
-      "id": "05-latente-steuern",
+      "id": "06-reel-split",
       "zeit": "2026-10-08 19:30",
+      "typ": "reel",
+      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "video": "reel_split.mp4",
+      "titelbild": "reel_split_titel.png",
+      "text": "bildunterschrift_reel.txt",
+      "status": "manuell",
+      "hinweis": "EDITS-TEST (06.10.): Loris baut das Reel selbst in der Instagram-App „Edits“ aus dem Edits-Paket (Drive) und plant es dort auf Do 08.10. 19:30 – der Autopilot postet es NICHT. Ziel: prüfen, ob Edits-Reels mehr Reichweite bekommen (Vergleich mit Autopilot-Reels: Reichweite/Follower, Speichern+Teilen). Nach dem Posten Link hier eintragen. Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen. · 05.10.: auf So 11.10. getauscht – Mi 07.10. läuft das Monatsbericht-Reel als Follow-up zum 5-Dinge-Reel.",
+      "issue": 13
+    },
+    {
+      "id": "06-story-teaser",
+      "zeit": "2026-10-08 19:35",
+      "typ": "story",
+      "ordner": "posts/02_2026-10-06_excel_fehler",
+      "bilder": [
+        "story_so_teaser_reel.png"
+      ],
+      "status": "freigegeben",
+      "issue": 13
+    },
+    {
+      "id": "05-latente-steuern",
+      "zeit": "2026-10-09 19:30",
       "typ": "karussell",
       "ordner": "posts/05_2026-10-08_latente_steuern",
       "bilder": [
@@ -269,7 +292,7 @@
     },
     {
       "id": "05-story-teaser",
-      "zeit": "2026-10-08 19:35",
+      "zeit": "2026-10-09 19:35",
       "typ": "story",
       "ordner": "posts/05_2026-10-08_latente_steuern",
       "bilder": [
@@ -280,7 +303,7 @@
     },
     {
       "id": "08-story-heute",
-      "zeit": "2026-10-09 12:15",
+      "zeit": "2026-10-10 12:15",
       "typ": "story",
       "ordner": "posts/08_2026-10-09_reel_kst_staffel",
       "bilder": [
@@ -291,7 +314,7 @@
     },
     {
       "id": "08-reel-kst-staffel",
-      "zeit": "2026-10-09 19:30",
+      "zeit": "2026-10-10 19:30",
       "typ": "reel",
       "ordner": "posts/08_2026-10-09_reel_kst_staffel",
       "video": "reel.mp4",
@@ -303,7 +326,7 @@
     },
     {
       "id": "08-story-rueckblick",
-      "zeit": "2026-10-10 12:15",
+      "zeit": "2026-10-11 12:15",
       "typ": "story",
       "ordner": "posts/08_2026-10-09_reel_kst_staffel",
       "bilder": [
@@ -311,29 +334,6 @@
       ],
       "status": "freigegeben",
       "issue": 15
-    },
-    {
-      "id": "06-reel-split",
-      "zeit": "2026-10-11 19:30",
-      "typ": "reel",
-      "ordner": "posts/02_2026-10-06_excel_fehler",
-      "video": "reel_split.mp4",
-      "titelbild": "reel_split_titel.png",
-      "text": "bildunterschrift_reel.txt",
-      "status": "freigegeben",
-      "hinweis": "Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen. · 05.10.: auf So 11.10. getauscht – Mi 07.10. läuft das Monatsbericht-Reel als Follow-up zum 5-Dinge-Reel.",
-      "issue": 13
-    },
-    {
-      "id": "06-story-teaser",
-      "zeit": "2026-10-11 19:35",
-      "typ": "story",
-      "ordner": "posts/02_2026-10-06_excel_fehler",
-      "bilder": [
-        "story_so_teaser_reel.png"
-      ],
-      "status": "freigegeben",
-      "issue": 13
     },
     {
       "id": "03-story-quiz",
