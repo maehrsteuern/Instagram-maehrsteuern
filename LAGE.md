@@ -483,6 +483,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 - 08:18 ✍️ Schluessel verlaengern: Workflow neu anmelden (war bei GitHub nicht registriert) ([`94eb587`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/94eb5875c40243fdacc3da6695390902f39d463d))
   - `.github/workflows`
 
+<details><summary>Älter als 7 Tage</summary>
+
 **Mi 30.09.2026**
 - 19:45 🔀 Merge: Statistik täglich ca. 08:45 + Tagesbericht ([`b427de9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b427de99d250726c8bfffe750bfd24e6b15513cf))
 - 19:45 📈 Statistik täglich ca. 08:45 (Anstoß über Lage-Lauf, Reserve-Zeitplan) + Tagesbericht in LAGE.md ([`6f3a270`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6f3a2708cc7ab144af63059f669c7d49bc5f164a))
@@ -652,8 +654,6 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - `automatik/statistik`
 - 03:21 ✍️ Modify comment for workflow trigger clarity ([`9e128d1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/9e128d175328a4f9d7fb9122d109e6f4da1e3048))
   - `.github/workflows`
-
-<details><summary>Älter als 7 Tage</summary>
 
 **Di 29.09.2026**
 - 22:47 ✍️ Neuvorstellung manuell in der App geplant, Teaser-Story entfaellt ([`eef8768`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/eef87684b6c812c3da006927c0da28b9dc21df85))
