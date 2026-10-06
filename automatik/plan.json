@@ -203,8 +203,11 @@
       "bilder": [
         "story_so_teaser.png"
       ],
-      "status": "freigegeben",
-      "issue": 36
+      "status": "veroeffentlicht",
+      "issue": 36,
+      "media_id": "18108714698605885",
+      "link": "https://www.instagram.com/stories/maehrsteuern/4002104878277412503",
+      "veroeffentlicht_am": "2026-10-06 19:35"
     },
     {
       "id": "05-story-frage",
