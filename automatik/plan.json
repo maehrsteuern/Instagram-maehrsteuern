@@ -188,7 +188,7 @@
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "entwurf",
+      "status": "freigegeben",
       "hinweis": "Version 3 (06.10., Aufnahme 09:02): letzter Durchgang geschnitten, Satz „Weil so viele von euch gefragt haben …“ entfernt, Atmer stummgeschaltet, Pausen gekürzt, −18 LUFS, 30 s. Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel; Di 06.10. statt Karussell (das läuft Mi 07.10.).",
       "issue": 36
     },
@@ -200,7 +200,7 @@
       "bilder": [
         "story_so_teaser.png"
       ],
-      "status": "entwurf",
+      "status": "freigegeben",
       "issue": 36
     },
     {

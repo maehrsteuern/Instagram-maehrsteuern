@@ -2,7 +2,7 @@
 
 _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 09:22 Uhr._
 
-**Als Nächstes online:** 📱 Story `05-story-frage` am **Mi 07.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 🎬 Reel `11-reel-monatsbericht` am **Di 06.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
@@ -11,7 +11,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Content-Fabrik nutzt ab Mo 05.10. die Lernpunkte aus `strategie/wettbewerb.md` (über Abschnitt in `08_hooks.md`): pro Lauf ≥ 1 Hook „konkreter Fall“ oder „Prüfer/Finanzamt“, Lernpunkt im Freigabe-Issue vermerkt. Routine-Prompt selbst unverändert (nur aus ihrer eigenen Sitzung änderbar).
 - **So 04.10. umgebaut:** Statt Ampel-Reel geht 19:30 das Community-Reel „5 Sachen, die ich aus Excel rausgeschmissen hab“ online (Loris' Sprachnachricht, 41 s, keine Werbung, CTA: Zahl 1–5 in die Kommentare) + neue Teaser-Story 19:35. Ampel-Reel und alter Teaser stehen auf `pause` – kann später wieder eingeplant werden. Die Kommentar-Antworten (welche Nummer?) sind die Themen für die nächsten Reels.
 - **Doppel-Post 04.10. behoben:** Das 5-Dinge-Reel ging zweimal raus (DeFLK53ALSs = im Plan, DeFLSBNFUXy = Duplikat, von Loris am 04.10. gelöscht ✓). Ursache: Ein Lauf startet mit dem Stand vom Startzeitpunkt und hat den Plan nur nach dem Warten neu geladen. `posten.py` holt jetzt direkt vor jedem Posten den neuesten Plan; klappt das nicht, wird nicht gepostet (nächster Lauf holt nach).
-- **Di 06.10. Reel „Nummer 1: Der Monatsbericht“ (Version 2)**: neu eingesprochen (Hook „Zwei verdammte Stunden“, 27 s), mit dem Karussell Excel-Fehler getauscht (Karussell jetzt Mi 07.10., LinkedIn #18 Do 08.10.) → wartet auf „go“ in #36. Split-Reel So 11.10. (Bildunterschrift „Karussell vom Mittwoch“).
+- **Di 06.10. 19:30 Reel „Nummer 1: Der Monatsbericht“ (Version 3)** freigegeben (go von Loris im Chat, 06.10.): dritte Aufnahme, Atmer raus, Pausen mit Raumton, 30 s. Karussell Excel-Fehler Mi 07.10., LinkedIn #18 Do 08.10., Split-Reel So 11.10.
 - Bis 10.10. alles freigegeben: 5-Dinge-Reel (So 04.10.), Excel-Fehler (Di 06.10.), Split-Reel als Begleit-Reel (Mi 07.10., vorgezogen), latente Steuern (Do 08.10.), Wissens-Reel KSt-Staffel (Fr 09.10.). So 11.10. ist frei → Fabrik am Mo 05.10.
 - Latente Steuern: Prüfzettel Punkte 1–5 am 05.10. mit Quellen geprüft ✓ – Box Folie 6 präzisiert (kleine KapGes: von § 274 befreit, passive Latenzen ggf. als Rückstellung), fachlich nichts mehr offen (`pruefzettel.md` im Post-Ordner; „Abschluss 2026“ am 05.10. überall auf „spätestens jetzt“ geändert – Folien 1+7, Bildunterschrift, Teaser, LinkedIn-Text + PDF). Änderungen bis Mi 07.10. abends.
 - Sprachnachricht zu „Fr 09.10.“ aus `posts/sprechtexte.md` bis Do 08.10. → ersetzt dann das Wissens-Reel durch das Stimm-Reel.
@@ -32,8 +32,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 👉 Braucht dich
 
-- 🟡 **Freigeben** `11-reel-monatsbericht` (Di 06.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36))
-- 🟡 **Freigeben** `11-story-teaser` (Di 06.10. 19:35) – „go“ oder „stop“ im Issue ([Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36))
 - 🟡 **Freigeben** `09-story-quiz` (Mi 14.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
 - 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
 - 🟡 **Freigeben** `09-rueckstellung` (Do 15.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
@@ -48,8 +46,8 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Di 06.10. 19:30 | 🎬 Reel `11-reel-monatsbericht` | 🟡 Entwurf (wartet auf Freigabe) | Version 3 (06.10., Aufnahme 09:02): letzter Durchgang geschnitten, Satz „Weil so viele von euch gefragt haben …“ entfernt, Atmer stummgeschaltet, Pausen gekürzt, −18 LUFS, 30 s. Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel; Di 06.10. statt Karussell (das läuft Mi 07.10.). · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
-| Di 06.10. 19:35 | 📱 Story `11-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
+| Di 06.10. 19:30 | 🎬 Reel `11-reel-monatsbericht` | 🟢 freigegeben (geht automatisch online) | Version 3 (06.10., Aufnahme 09:02): letzter Durchgang geschnitten, Satz „Weil so viele von euch gefragt haben …“ entfernt, Atmer stummgeschaltet, Pausen gekürzt, −18 LUFS, 30 s. Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel; Di 06.10. statt Karussell (das läuft Mi 07.10.). · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
+| Di 06.10. 19:35 | 📱 Story `11-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
 | Mi 07.10. 12:15 | 📱 Story `05-story-frage` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Mi 07.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) | 06.10.: mit dem Monatsbericht-Reel getauscht → Mi 07.10. |
 | Mi 07.10. 19:35 | 📱 Story `02-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
