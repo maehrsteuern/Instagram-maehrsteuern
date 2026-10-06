@@ -32,7 +32,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 👉 Braucht dich
 
-- ⏳ **Wartet auf sprachnachricht** `11-reel-monatsbericht` (Di 06.10. 19:30) – 06.10.: Loris nimmt Version 2 nochmal auf (zu laut/nuschelig) – Bilder/Schnitt stehen, nur Stimme tauschen. Version 2 (06.10.): neuer Sprechtext (kürzer, Hook „Zwei verdammte Stunden“), Take 08:29 gewählt, Klang verbessert, −18 LUFS, 27 s. Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel; auf Di 06.10. vorgezogen (Reels bringen am Anfang die meiste Reichweite), Karussell Excel-Fehler dafür Mi 07.10.
+- 🟡 **Freigeben** `11-reel-monatsbericht` (Di 06.10. 19:30) – „go“ oder „stop“ im Issue ([Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36))
 - 🟡 **Freigeben** `11-story-teaser` (Di 06.10. 19:35) – „go“ oder „stop“ im Issue ([Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36))
 - 🟡 **Freigeben** `09-story-quiz` (Mi 14.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
 - 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
@@ -48,7 +48,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Di 06.10. 19:30 | 🎬 Reel `11-reel-monatsbericht` | ⏳ wartet auf sprachnachricht | 06.10.: Loris nimmt Version 2 nochmal auf (zu laut/nuschelig) – Bilder/Schnitt stehen, nur Stimme tauschen. Version 2 (06.10.): neuer Sprechtext (kürzer, Hook „Zwei verdammte Stunden“), Take 08:29 gewählt, Klang verbessert, −18 LUFS, 27 s. Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel; auf Di 06.10. vorgezogen (Reels bringen am Anfang die meiste Reichweite), Karussell Excel-Fehler dafür Mi 07.10. · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
+| Di 06.10. 19:30 | 🎬 Reel `11-reel-monatsbericht` | 🟡 Entwurf (wartet auf Freigabe) | Version 3 (06.10., Aufnahme 09:02): letzter Durchgang geschnitten, Satz „Weil so viele von euch gefragt haben …“ entfernt, Atmer stummgeschaltet, Pausen gekürzt, −18 LUFS, 30 s. Folge-Reel zu Nummer 1 aus dem 5-Dinge-Reel; Di 06.10. statt Karussell (das läuft Mi 07.10.). · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
 | Di 06.10. 19:35 | 📱 Story `11-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #36](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/36) |
 | Mi 07.10. 12:15 | 📱 Story `05-story-frage` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Mi 07.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) | 06.10.: mit dem Monatsbericht-Reel getauscht → Mi 07.10. |

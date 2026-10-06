@@ -24,35 +24,35 @@
  "szenen": [
   {
    "quelle": "hook2",
-   "dauer": 5.1,
+   "dauer": 5.75,
    "text": [
     {
      "wort": "Zwei verdammte Stunden",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 1.42
+     "bis": 1.7
     },
     {
-     "wort": "jeden Monat,",
+     "wort": "jeden Monat.",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.42,
-     "bis": 2.6
+     "ab": 1.7,
+     "bis": 2.78
     },
     {
-     "wort": "nur Copy-Paste",
+     "wort": "Nur Copy-Paste",
      "groesse": 66,
      "y": 1330,
-     "ab": 2.6,
-     "bis": 3.5
+     "ab": 2.78,
+     "bis": 3.8
     },
     {
      "wort": "für einen einzigen Bericht.",
      "groesse": 66,
      "y": 1330,
-     "ab": 3.5,
-     "bis": 5.1
+     "ab": 3.8,
+     "bis": 5.75
     }
    ],
    "von": [
@@ -68,21 +68,21 @@
   },
   {
    "quelle": "knopf",
-   "dauer": 3.05,
+   "dauer": 3.7,
    "text": [
     {
-     "wort": "Heute drück ich einen Knopf",
+     "wort": "Heute drücke ich einen Knopf.",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 1.5
+     "bis": 2.25
     },
     {
-     "wort": "und so geht's:",
+     "wort": "Und zwar drei Schritte.",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.5,
-     "bis": 3.05
+     "ab": 2.25,
+     "bis": 3.7
     }
    ],
    "von": [
@@ -99,27 +99,20 @@
   },
   {
    "quelle": "schritt1",
-   "dauer": 4.05,
+   "dauer": 3.85,
    "text": [
-    {
-     "wort": "Eins:",
-     "groesse": 66,
-     "y": 1330,
-     "ab": 0.0,
-     "bis": 0.65
-    },
     {
      "wort": "Der Code zieht sich die",
      "groesse": 66,
      "y": 1330,
-     "ab": 0.65,
-     "bis": 1.6
+     "ab": 0.0,
+     "bis": 1.45
     },
     {
      "wort": "Summen- und Saldenliste",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.6,
+     "ab": 1.45,
      "bis": 2.59
     },
     {
@@ -127,7 +120,7 @@
      "groesse": 66,
      "y": 1330,
      "ab": 2.59,
-     "bis": 4.05
+     "bis": 3.85
     }
    ],
    "von": [
@@ -143,20 +136,20 @@
   },
   {
    "quelle": "schritt2",
-   "dauer": 4.7,
+   "dauer": 5.05,
    "text": [
     {
-     "wort": "Zwei: Er stimmt ab.",
+     "wort": "Danach stimmt er ihn ab.",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 1.5
+     "bis": 1.55
     },
     {
-     "wort": "Passt was nicht, stoppt er,",
+     "wort": "Passt was nicht, stoppt er –",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.5,
+     "ab": 1.55,
      "bis": 2.98
     },
     {
@@ -164,15 +157,15 @@
      "groesse": 66,
      "y": 1330,
      "ab": 2.98,
-     "bis": 4.7
+     "bis": 5.05
     },
     {
      "wort": "STOPP",
      "farbe": "rot",
      "groesse": 115,
      "y": 1222,
-     "ab": 2.42,
-     "bis": 4.7
+     "ab": 2.48,
+     "bis": 5.05
     }
    ],
    "von": [
@@ -188,36 +181,43 @@
   },
   {
    "quelle": "schritt3",
-   "dauer": 4.6,
+   "dauer": 5.9,
    "text": [
     {
-     "wort": "Drei: Er baut den Bericht.",
+     "wort": "Der letzte Punkt:",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 1.92
+     "bis": 1.15
     },
     {
-     "wort": "Tabellen, Diagramm, PDF –",
+     "wort": "Er baut den Bericht.",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.92,
-     "bis": 3.8
+     "ab": 1.15,
+     "bis": 2.6
     },
     {
-     "wort": "fertig.",
+     "wort": "Tabellen, Diagramm, PDF.",
      "groesse": 66,
      "y": 1330,
-     "ab": 3.8,
-     "bis": 4.6
+     "ab": 2.6,
+     "bis": 4.95
+    },
+    {
+     "wort": "Fertig.",
+     "groesse": 66,
+     "y": 1330,
+     "ab": 4.95,
+     "bis": 5.9
     },
     {
      "wort": "PDF ✓",
      "farbe": "gruen",
      "groesse": 115,
      "y": 1222,
-     "ab": 3.32,
-     "bis": 4.6
+     "ab": 4.19,
+     "bis": 5.9
     }
    ],
    "von": [
@@ -233,42 +233,42 @@
   },
   {
    "quelle": "ende2",
-   "dauer": 5.5,
+   "dauer": 5.75,
    "text": [
     {
      "wort": "Das war Nummer eins",
      "groesse": 66,
      "y": 1330,
      "ab": 0.0,
-     "bis": 1.2
+     "bis": 0.89
     },
     {
      "wort": "aus meinem letzten Video.",
      "groesse": 66,
      "y": 1330,
-     "ab": 1.2,
-     "bis": 2.4
+     "ab": 0.89,
+     "bis": 2.15
     },
     {
      "wort": "Welche Nummer willst du",
      "groesse": 66,
      "y": 1330,
-     "ab": 2.4,
-     "bis": 3.4
+     "ab": 2.15,
+     "bis": 3.21
     },
     {
      "wort": "als Nächstes sehen?",
      "groesse": 66,
      "y": 1330,
-     "ab": 3.4,
-     "bis": 4.3
+     "ab": 3.21,
+     "bis": 4.25
     },
     {
-     "wort": "Schreib's mir.",
+     "wort": "Schreib es mir gerne.",
      "groesse": 66,
      "y": 1330,
-     "ab": 4.3,
-     "bis": 5.5
+     "ab": 4.25,
+     "bis": 5.75
     }
    ],
    "von": [
@@ -295,20 +295,20 @@
    "datei": "../../musik/atmo/uhr_ticken.mp3",
    "ab": 0.0,
    "start": 0.3,
-   "dauer": 5.0,
+   "dauer": 5.6,
    "lautstaerke": 0.14,
    "ein": 0.05,
    "aus": 0.4
   },
   {
    "datei": "../../musik/atmo/fehlerton.mp3",
-   "ab": 14.0,
+   "ab": 15.0,
    "dauer": 0.6,
    "lautstaerke": 0.18
   },
   {
    "datei": "../../musik/06_runway_lofi_ruhig.mp3",
-   "ab": 5.1,
+   "ab": 5.75,
    "start": 0,
    "lautstaerke": 0.1,
    "ein": 1.0
