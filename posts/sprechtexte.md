@@ -4,17 +4,16 @@ Ablauf: Text grob lesen, dann **locker frei sprechen** (Sprachnachricht vom Hand
 etwas Abstand zum Mikro). Schicken → Claude schneidet mit wörtlichen Untertiteln (Regeln: `strategie/09_reel_regeln.md`).
 Keine echten Zahlen oder Fälle vom Arbeitgeber – nur Demo-Zahlen.
 
-## Mi 07.10. · „Nummer 1: Der Monatsbericht“ (neu aufnehmen – bis Mi 07.10. ca. 15 Uhr) (Folge-Reel zum 5-Dinge-Reel vom 04.10.)
-> Nummer eins aus meinem letzten Reel: der Monatsbericht. Ich zeig dir, wie ich das mache.
-> Früher: jeden Monat dieselbe Runde. Exportieren, kopieren, einfügen, Formeln runterziehen. Fast zwei Stunden. Und am Ende stimmt trotzdem irgendwas nicht.
-> Heute sind es drei Schritte.
-> Eins: Der Code liest die Summen- und Saldenliste ein. Direkt den Export, ich fass nichts an.
-> Zwei: Er stimmt ab. Passt die Summe nicht, hört er auf und sagt mir, um wie viel. Bevor ein falscher Bericht rausgeht.
-> Drei: Er baut den Bericht. Tabellen, Diagramm, fertiges PDF.
-> Daten rein, ein Klick, fertig.
-> Speicher dir das. Und schreib mir, welche Nummer als Nächstes dran ist.
+## Mi 07.10. · „Nummer 1: Der Monatsbericht“ (neu aufnehmen – bis Mi 07.10. ca. 15 Uhr)
+> Zwei Stunden. Jeden Monat. Nur Copy-Paste für einen einzigen Bericht.
+> Heute drück ich einen Knopf. So geht's:
+> Eins: Der Code zieht sich die Summen- und Saldenliste. Direkt aus dem Export.
+> Zwei: Er stimmt ab. Passt was nicht, stoppt er. Bevor ein falscher Bericht rausgeht.
+> Drei: Er baut den Bericht. Tabellen, Diagramm, PDF. Fertig.
+> Das war Nummer eins aus meinem letzten Reel. Welche Nummer willst du als Nächstes? Schreib's mir.
 
-Bild: je Schritt eine Karte mit kurzem Code-Ausschnitt (Beispieldaten), vorher Excel-Runde, am Ende fertiges PDF. Hook-Text: „Nummer 1: Der Monatsbericht“. Ca. 35–40 s, gern in deinen Worten – „fast zwei Stunden“ nur sagen, wenn es bei dir ungefähr stimmt.
+Ca. 25 s. Locker sprechen, nicht ablesen – der erste Satz kurz und mit Pausen („Zwei Stunden. – Jeden Monat.“).
+Hook-Text: „2 Stunden. Jeden Monat.“ Bild: Hook = Excel-Runde (vorher), dann Schritt 1–3, Schluss. Alte Fassung (05.10.) verworfen.
 
 ## Fr 09.10. · „Der Steuersatz, der ab 2028 falsch ist“ (zum Karussell latente Steuern vom 08.10.)
 > In meinem ersten Abschluss stand der Steuersatz fest in einer Zelle. Dreißig Prozent, eingetippt, fertig.
