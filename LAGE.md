@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 08:13 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Di 06.10. 08:14 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `02-excel-fehler` am **Di 06.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -132,6 +132,9 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Di 06.10.2026**
+- 08:14 ✍️ Stand claude/instagram übernommen ([`f4e5a6f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f4e5a6fc5b878181908df23ed69461eac79acc43))
+- 08:14 ✍️ Sprechtext Monatsbericht neu: kürzer, lockerer, stärkerer Hook („Zwei Stunden. Jeden Monat.“) ([`61689c3`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/61689c353aae2043cd1da047291a9c13bf2e045c))
+  - `LAGE.html`, `posts/sprechtexte.md`
 - 08:13 ✍️ Monatsbericht-Reel: wartet wieder auf Sprachnachricht (Loris nimmt neu auf) ([`843b8d1`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/843b8d10aa19018cedbfc94c5c2a5b19f0e254fa))
   - Plan: `11-reel-monatsbericht` status: entwurf → wartet_auf_sprachnachricht
 - 07:05 📡 Radar 2026-10-06: 8 Beiträge, 0 DM-Entwürfe ([`ffe8206`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ffe8206f9e4374e897b90f4e3832155b384c2bca))
