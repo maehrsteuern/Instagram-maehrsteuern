@@ -161,11 +161,12 @@ for k, sp in enumerate(spuren):
     kette = [f"atrim=start={sp.get('start', 0):.3f}:duration={lang:.3f}", "asetpts=PTS-STARTPTS",
              "aformat=sample_rates=44100:channel_layouts=stereo", f"volume={sp.get('lautstaerke', 0.9)}",
              f"afade=t=in:d={sp.get('ein', 0.03)}", f"afade=t=out:st={max(lang - sp.get('aus', 0.05), 0):.3f}:d={sp.get('aus', 0.05)}",
-             f"adelay={round(ab * 1000)}|{round(ab * 1000)}"]
+             f"adelay={round(ab * 1000)}|{round(ab * 1000)}", f"apad=whole_dur={dauer:.3f}"]  # jede Spur auf volle Länge – sonst bricht amix bei spät einsetzenden Spuren ab (Split-Reel war stumm)
     filter_.append(f"[{k + 1}:a]{','.join(kette)}[s{k}]")
 if spuren:
     filter_.append("".join(f"[s{k}]" for k in range(len(spuren))) +
-                   f"amix=inputs={len(spuren)}:normalize=0,apad,atrim=duration={dauer:.3f},afade=t=out:st={max(dauer - 0.8, 0):.3f}:d=0.8[ton]")
+                   f"amix=inputs={len(spuren)}:normalize=0,asetpts=N/SR/TB,apad,atrim=duration={dauer:.3f},"
+                   f"afade=t=out:st={max(dauer - 0.8, 0):.3f}:d=0.8[ton]")  # asetpts: saubere Zeitstempel, sonst stumme Spur im MP4
     ton = [*eingaenge, "-filter_complex", ";".join(filter_), "-map", "0:v", "-map", "[ton]"]
 else:
     ton = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest"]
