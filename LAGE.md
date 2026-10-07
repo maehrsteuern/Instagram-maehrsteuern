@@ -451,6 +451,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 - 08:47 📈 Statistik 2026-10-02 ([`60c4aa6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/60c4aa67f643e11d4d6ef46ef453c4a2c18202b3))
   - `automatik/statistik`
 
+<details><summary>Älter als 7 Tage</summary>
+
 **Do 01.10.2026**
 - 23:56 ✍️ Lage: Neuvorstellung als veroeffentlicht eingetragen, Notizen auf Stand 01.10. abends ([`805d54b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/805d54b688b007b543fe592ea32cf008054844a9))
   - Plan: `00-neuvorstellung` status: manuell → veroeffentlicht; `00-neuvorstellung` online: https://www.instagram.com/p/Dd9V5HAAhcL/
@@ -508,8 +510,6 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - `automatik/statistik`
 - 08:18 ✍️ Schluessel verlaengern: Workflow neu anmelden (war bei GitHub nicht registriert) ([`94eb587`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/94eb5875c40243fdacc3da6695390902f39d463d))
   - `.github/workflows`
-
-<details><summary>Älter als 7 Tage</summary>
 
 **Mi 30.09.2026**
 - 19:45 🔀 Merge: Statistik täglich ca. 08:45 + Tagesbericht ([`b427de9`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b427de99d250726c8bfffe750bfd24e6b15513cf))
