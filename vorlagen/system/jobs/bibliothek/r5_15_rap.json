@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Rechnungsabgrenzung“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/rap/folie_01.png","typ":"titel","titel":"Rechnungs­abgrenzung in *vier* Folien.","sub":"Aktiv, passiv, Zeit und Grenze.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/rap/folie_02.png","typ":"inhalt","saeule":"Aktiv","titel":"Heute bezahlt, *später* Aufwand.","text":"Etwa die Kfz-Versicherung, die im Dezember für das Folgejahr gezahlt wird.","boxTitel":"NORM","box":"§ 5 Abs. 5 Satz 1 Nr. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/rap/folie_03.png","typ":"inhalt","saeule":"Passiv","titel":"Heute erhalten, *später* Ertrag.","text":"Etwa eine Miete, die im Voraus für Januar eingeht.","boxTitel":"NORM","box":"§ 5 Abs. 5 Satz 1 Nr. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/rap/folie_04.png","typ":"inhalt","saeule":"Voraussetzung","titel":"Eine *bestimmte* Zeit.","text":"Der Zeitraum nach dem Stichtag muss kalendermäßig feststehen."},
+    {"vorlage":"karussell","datei":"karussell/rap/folie_05.png","typ":"inhalt","saeule":"Vereinfachung","titel":"Bis *5.000 €* darf entfallen.","text":"Seit 2024 kann auf die Abgrenzung je Posten bis zu dieser Grenze verzichtet werden – einheitlich für alle Fälle.","boxTitel":"NORM","box":"§ 5 Abs. 5 Satz 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/rap/folie_06.png","typ":"cta","titel":"Abgrenzung *automatisch*?","text":"Ein Tool liest Zeiträume aus Rechnungen und bucht den RAP.","saeule":"Wissen"}
+  ] }

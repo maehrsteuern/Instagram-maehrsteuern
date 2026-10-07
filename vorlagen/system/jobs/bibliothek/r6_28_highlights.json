@@ -1,0 +1,6 @@
+{ "titel": "Highlight-Titelbilder · AO, Kap, V+V", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"highlight","datei":"highlights/hl_ao.png","icon":"text","glyph":"AO","fs":200},
+    {"vorlage":"highlight","datei":"highlights/hl_kap.png","icon":"text","glyph":"Kap","fs":170},
+    {"vorlage":"highlight","datei":"highlights/hl_vuv.png","icon":"text","glyph":"V+V","fs":150}
+  ] }

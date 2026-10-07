@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „Reverse-Charge am Bau“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/bauleistungen/folie_01.png","typ":"titel","titel":"Am Bau schuldet oft *der Kunde* die USt.","sub":"§ 13b UStG bei Bauleistungen.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/bauleistungen/folie_02.png","typ":"inhalt","saeule":"Regel","titel":"Bauunternehmer an *Bauunternehmer*.","text":"Der Empfänger schuldet die Steuer, wenn er selbst nachhaltig Bauleistungen erbringt.","boxTitel":"NORM","box":"§ 13b Abs. 2 Nr. 4, Abs. 5 Satz 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/bauleistungen/folie_03.png","typ":"inhalt","saeule":"Nachweis","titel":"Die *USt 1 TG*.","text":"Die Bescheinigung des Finanzamts belegt, dass der Kunde Bauleister ist."},
+    {"vorlage":"karussell","datei":"karussell/bauleistungen/folie_04.png","typ":"inhalt","saeule":"Rechnung","titel":"*Netto* mit Hinweis.","text":"„Steuerschuldnerschaft des Leistungsempfängers“ – ohne Steuerbetrag.","boxTitel":"NORM","box":"§ 14a Abs. 5 UStG"},
+    {"vorlage":"karussell","datei":"karussell/bauleistungen/folie_05.png","typ":"inhalt","saeule":"Auch erfasst","titel":"*Gebäudereinigung*.","text":"Unter denselben Voraussetzungen gilt die Umkehr auch dort.","boxTitel":"NORM","box":"§ 13b Abs. 2 Nr. 8 UStG"},
+    {"vorlage":"karussell","datei":"karussell/bauleistungen/folie_06.png","typ":"cta","titel":"Kunden *einordnen*?","text":"Ein Tool merkt sich die USt 1 TG und setzt den Rechnungshinweis.","saeule":"Umsatzsteuer"}
+  ] }

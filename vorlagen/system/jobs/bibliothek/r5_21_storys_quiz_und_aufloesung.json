@@ -1,0 +1,15 @@
+{ "titel": "Storys · Quiz und Auflösung (Runde 5)", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/quiz_kleinunternehmer.png","typ":"antwort","kicker":"Quiz","titel":"Ab welchem Umsatz endet die Klein­unternehmer­regel *sofort*?","antwort":"↩ Antworte mit einem Betrag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_kleinunternehmer_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"Über *100.000 €*.","text":"Schon der Umsatz, der die Grenze überschreitet, ist steuerpflichtig (§ 19 Abs. 1 Satz 2 UStG)."},
+    {"vorlage":"story","datei":"storys/quiz_arbeitsweg.png","typ":"antwort","kicker":"Quiz","titel":"Firmenwagen, 20 km zur Arbeit: Wie viel % pro Monat *zusätzlich*?","antwort":"↩ Antworte in Prozent –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_arbeitsweg_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*0,6 %*.","text":"20 km × 0,03 % vom Bruttolistenpreis (§ 8 Abs. 2 Satz 3 EStG)."},
+    {"vorlage":"story","datei":"storys/quiz_enkel.png","typ":"antwort","kicker":"Quiz","titel":"Wie viel dürfen Großeltern einem Enkel *steuerfrei* schenken?","antwort":"↩ Antworte mit einem Betrag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_enkel_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*200.000 €*.","text":"Pro Großelternteil und alle zehn Jahre (§ 16 Abs. 1 Nr. 3 ErbStG)."},
+    {"vorlage":"story","datei":"storys/quiz_vermietet.png","typ":"antwort","kicker":"Quiz","titel":"Vermietete Wohnung: Wie lange *halten*, bis der Verkauf steuerfrei ist?","antwort":"↩ Antworte in Jahren –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_vermietet_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*10 Jahre*.","text":"Gerechnet von Kaufvertrag zu Kaufvertrag (§ 23 Abs. 1 Satz 1 Nr. 1 EStG)."},
+    {"vorlage":"story","datei":"storys/quiz_minijob.png","typ":"antwort","kicker":"Quiz","titel":"Wie viel darf man 2026 im Minijob *im Monat* verdienen?","antwort":"↩ Antworte mit einem Betrag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_minijob_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*603 €*.","text":"130 Stunden × 13,90 € Mindestlohn ÷ 3, aufgerundet (§ 8 Abs. 1a SGB IV)."},
+    {"vorlage":"story","datei":"storys/quiz_schnitzel.png","typ":"antwort","kicker":"Quiz","titel":"Schnitzel und Cola im Restaurant 2026: *welche* Steuersätze?","antwort":"↩ Antworte mit zwei Sätzen –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_schnitzel_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*7 %* und *19 %*.","text":"Speisen sind seit 2026 ermäßigt, Getränke nicht."}
+  ] }

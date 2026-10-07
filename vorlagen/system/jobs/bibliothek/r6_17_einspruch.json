@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Einspruch einlegen“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/einspruch/folie_01.png","typ":"titel","titel":"Bescheid falsch? *Einspruch* in vier Schritten.","sub":"Fristen und Form.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/einspruch/folie_02.png","typ":"inhalt","saeule":"Frist","titel":"*Ein Monat*.","text":"Ab Bekanntgabe des Bescheids.","boxTitel":"NORM","box":"§ 355 Abs. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/einspruch/folie_03.png","typ":"inhalt","saeule":"Bekanntgabe","titel":"*Vier Tage* nach Absendung.","text":"Seit 2025 gilt ein Bescheid per Post am vierten Tag nach Aufgabe als bekannt gegeben.","boxTitel":"NORM","box":"§ 122 Abs. 2 Nr. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/einspruch/folie_04.png","typ":"inhalt","saeule":"Form","titel":"*Schriftlich* oder elektronisch.","text":"Etwa über ELSTER. Eine Begründung kann nachgereicht werden.","boxTitel":"NORM","box":"§ 357 Abs. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/einspruch/folie_05.png","typ":"inhalt","saeule":"Zahlung","titel":"Trotzdem *fällig*.","text":"Der Einspruch hält die Zahlung nicht auf. Dafür braucht es Aussetzung der Vollziehung.","boxTitel":"NORM","box":"§ 361 AO"},
+    {"vorlage":"karussell","datei":"karussell/einspruch/folie_06.png","typ":"cta","titel":"Bescheide *automatisch* prüfen?","text":"Ein Tool vergleicht Bescheid und Erklärung Zeile für Zeile.","saeule":"Wissen"}
+  ] }

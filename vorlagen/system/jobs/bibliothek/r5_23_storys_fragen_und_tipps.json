@@ -1,0 +1,15 @@
+{ "titel": "Storys · Fragen und Tipps (Runde 5)", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/frage_firmenwagen.png","typ":"frage","kicker":"Umfrage","titel":"Fahrtenbuch oder *1 %*?"},
+    {"vorlage":"story","datei":"storys/frage_kleinunternehmer.png","typ":"frage","kicker":"Umfrage","titel":"Kennt ihr die *neuen* Klein­unternehmer­grenzen?"},
+    {"vorlage":"story","datei":"storys/frage_minijob.png","typ":"frage","kicker":"Umfrage","titel":"Beschäftigt ihr *Minijobber*?"},
+    {"vorlage":"story","datei":"storys/frage_dauerfrist.png","typ":"frage","kicker":"Ehrlich","titel":"Habt ihr eine *Dauerfrist­verlängerung*?"},
+    {"vorlage":"story","datei":"storys/frage_reise.png","typ":"frage","kicker":"Umfrage","titel":"Reisekosten: noch *von Hand*?"},
+    {"vorlage":"story","datei":"storys/frage_mythen.png","typ":"antwort","kicker":"Mythos oder Fakt Teil 4","titel":"Welcher Steuer-Mythos *nervt* dich?"},
+    {"vorlage":"story","datei":"storys/tipp_fahrtenbuch.png","typ":"info","kicker":"Tipp","titel":"Fahrtenbuch: *zeitnah* und geschlossen.","text":"Nachträglich erstellte oder lose Listen erkennt das Finanzamt nicht an. Dann gilt die 1-%-Regel."},
+    {"vorlage":"story","datei":"storys/tipp_zm.png","typ":"info","kicker":"Tipp","titel":"ZM vergessen? *Schnell* nachholen.","text":"Die Steuerbefreiung der innergemeinschaftlichen Lieferung hängt an der richtigen Zusammenfassenden Meldung."},
+    {"vorlage":"story","datei":"storys/tipp_ig_rechnung.png","typ":"info","kicker":"Tipp","titel":"EU-Rechnung: *drei* Angaben.","punkte":["USt-IdNr. des Kunden","Eigene USt-IdNr.","Hinweis „steuerfreie innergemeinschaftliche Lieferung“"]},
+    {"vorlage":"story","datei":"storys/tipp_entfernung.png","typ":"info","kicker":"Tipp","titel":"Arbeitsweg: nur die *einfache* Strecke.","text":"Die Entfernungspauschale gilt pro Arbeitstag für den Hinweg – 0,38 € ab dem ersten Kilometer."},
+    {"vorlage":"story","datei":"storys/tipp_rap.png","typ":"info","kicker":"Tipp","titel":"RAP bis 5.000 €: *einheitlich* entscheiden.","text":"Das Wahlrecht gilt nur für alle Fälle gleich – nicht mal so, mal so (§ 5 Abs. 5 Satz 2 EStG)."},
+    {"vorlage":"story","datei":"storys/tipp_zufluss.png","typ":"info","kicker":"Tipp","titel":"USt Dezember bis *10. Januar* zahlen.","text":"Dann ist sie in der EÜR noch Betriebsausgabe des alten Jahres (§ 11 Abs. 2 Satz 2 EStG)."}
+  ] }

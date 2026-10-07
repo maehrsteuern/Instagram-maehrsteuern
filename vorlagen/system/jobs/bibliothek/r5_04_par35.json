@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Gewerbesteuer-Anrechnung § 35 EStG“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/par35/folie_01.png","typ":"titel","titel":"Gewerbesteuer *zurückholen*: § 35 EStG.","sub":"Für Einzelunternehmer und Personengesellschaften.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/par35/folie_02.png","typ":"inhalt","saeule":"Schritt 1","titel":"*24.500 €* Freibetrag.","text":"Natürliche Personen und Personengesellschaften ziehen ihn vom Gewerbeertrag ab.","boxTitel":"NORM","box":"§ 11 Abs. 1 Satz 3 Nr. 1 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/par35/folie_03.png","typ":"inhalt","saeule":"Schritt 2","titel":"*3,5 %* Steuermesszahl.","text":"Daraus ergibt sich der Messbetrag, den die Gemeinde mit dem Hebesatz multipliziert.","boxTitel":"NORM","box":"§ 11 Abs. 2 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/par35/folie_04.png","typ":"inhalt","saeule":"Schritt 3","titel":"Das *4,0-fache* zurück.","text":"Die Einkommensteuer sinkt um das Vierfache des Messbetrags – höchstens um die tatsächlich zu zahlende Gewerbesteuer.","boxTitel":"NORM","box":"§ 35 Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/par35/folie_05.png","typ":"inhalt","saeule":"Faustregel","titel":"Bis Hebesatz *400 %* fast neutral.","text":"Darüber bleibt Gewerbesteuer als Belastung übrig. Zusätzlich begrenzt die anteilige Einkommensteuer die Ermäßigung."},
+    {"vorlage":"karussell","datei":"karussell/par35/folie_06.png","typ":"cta","titel":"Anrechnung *nachrechnen*?","text":"Ein Tool zeigt die Entlastung für euren Hebesatz.","saeule":"Wissen"}
+  ] }

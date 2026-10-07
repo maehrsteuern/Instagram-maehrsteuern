@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Wissen – „Kapitalerträge: fünf Regeln“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/kapitalertraege/folie_01.png","typ":"titel","titel":"Zinsen, Dividenden, Fonds: *fünf Regeln*.","sub":"Wie Kapitalerträge privat besteuert werden.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/kapitalertraege/folie_02.png","typ":"inhalt","saeule":"Freibetrag","titel":"*1.000 €* Sparer-Pauschbetrag.","text":"Für Zusammenveranlagte 2.000 €. Tatsächliche Werbungskosten sind daneben nicht abziehbar.","boxTitel":"NORM","box":"§ 20 Abs. 9 EStG"},
+    {"vorlage":"karussell","datei":"karussell/kapitalertraege/folie_03.png","typ":"inhalt","saeule":"Steuersatz","titel":"*25 %* plus SolZ.","text":"Die Bank behält die Abgeltungsteuer direkt ein. Damit ist die Steuer in der Regel erledigt.","boxTitel":"NORM","box":"§ 32d Abs. 1, § 43 EStG"},
+    {"vorlage":"karussell","datei":"karussell/kapitalertraege/folie_04.png","typ":"inhalt","saeule":"Aktienfonds","titel":"*30 %* bleiben steuerfrei.","text":"Teilfreistellung für Fonds mit mindestens 51 % Aktienanteil.","boxTitel":"NORM","box":"§ 20 Abs. 1 InvStG"},
+    {"vorlage":"karussell","datei":"karussell/kapitalertraege/folie_05.png","typ":"inhalt","saeule":"Günstigerprüfung","titel":"Persönlicher Satz *niedriger*?","text":"Dann auf Antrag mit dem individuellen Steuersatz – über die Steuererklärung.","boxTitel":"NORM","box":"§ 32d Abs. 6 EStG"},
+    {"vorlage":"karussell","datei":"karussell/kapitalertraege/folie_06.png","typ":"inhalt","saeule":"Verluste","titel":"Aktien­verluste nur mit *Aktien­gewinnen*.","text":"Sie werden in einem eigenen Verlusttopf gesammelt und vorgetragen.","boxTitel":"NORM","box":"§ 20 Abs. 6 Satz 4 EStG"},
+    {"vorlage":"karussell","datei":"karussell/kapitalertraege/folie_07.png","typ":"cta","titel":"Erträge *sortieren*?","text":"Ein Tool ordnet Bankbescheinigungen den richtigen Töpfen zu.","saeule":"Wissen"}
+  ] }

@@ -1,0 +1,13 @@
+{ "titel": "Storys · Quiz und Auflösung (Runde 6)", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/quiz_spende.png","typ":"antwort","kicker":"Quiz","titel":"Bis zu welchem Betrag reicht für eine Spende der *Kontoauszug*?","antwort":"↩ Antworte mit einem Betrag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_spende_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*300 €*.","text":"Bei gemeinnützigen Empfängern genügt der Buchungsbeleg (§ 50 Abs. 4 EStDV)."},
+    {"vorlage":"story","datei":"storys/quiz_homeoffice.png","typ":"antwort","kicker":"Quiz","titel":"Wie viel *Homeoffice-Pauschale* gibt es höchstens im Jahr?","antwort":"↩ Antworte mit einem Betrag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_homeoffice_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*1.260 €*.","text":"6 € an höchstens 210 Tagen (§ 4 Abs. 5 Satz 1 Nr. 6c EStG)."},
+    {"vorlage":"story","datei":"storys/quiz_rechnungen.png","typ":"antwort","kicker":"Quiz","titel":"Wie lange müssen *Rechnungen* seit 2025 aufbewahrt werden?","antwort":"↩ Antworte in Jahren –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_rechnungen_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"*8 Jahre*.","text":"Buchungsbelege – Bücher und Abschlüsse weiter zehn Jahre (§ 147 Abs. 3 AO)."},
+    {"vorlage":"story","datei":"storys/quiz_bekanntgabe.png","typ":"antwort","kicker":"Quiz","titel":"Bescheid am Montag abgeschickt: *Wann* gilt er als bekannt gegeben?","antwort":"↩ Antworte mit einem Wochentag –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_bekanntgabe_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"Am *Freitag*.","text":"Vier Tage nach Aufgabe zur Post (§ 122 Abs. 2 Nr. 1 AO). Fällt der Tag aufs Wochenende, verschiebt er sich auf Montag."},
+    {"vorlage":"story","datei":"storys/quiz_architekt.png","typ":"antwort","kicker":"Quiz","titel":"Deutscher Architekt plant ein Haus in *Wien*: Wo ist die Leistung steuerbar?","antwort":"↩ Antworte mit einem Land –\nAuflösung morgen"},
+    {"vorlage":"story","datei":"storys/quiz_architekt_aufloesung.png","typ":"info","kicker":"Auflösung Quiz","titel":"In *Österreich*.","text":"Leistungen im Zusammenhang mit einem Grundstück: Ort ist das Grundstück (§ 3a Abs. 3 Nr. 1 UStG)."}
+  ] }

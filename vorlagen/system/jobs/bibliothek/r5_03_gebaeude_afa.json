@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Gebäude-AfA: 2, 3 oder 5 %?“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/gebaeude_afa/folie_01.png","typ":"titel","titel":"Gebäude-AfA: *2, 3 oder 5 %*?","sub":"Welcher Satz für welches Gebäude gilt.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/gebaeude_afa/folie_02.png","typ":"inhalt","saeule":"Vorab","titel":"Grund und Boden: *keine* AfA.","text":"Der Kaufpreis wird aufgeteilt. Abgeschrieben wird nur der Gebäudeanteil."},
+    {"vorlage":"karussell","datei":"karussell/gebaeude_afa/folie_03.png","typ":"inhalt","saeule":"Linear","titel":"Der Satz hängt am *Baujahr*.","zeilen":[["Wohngebäude, fertig ab 2023","3 %"],["Wohngebäude, fertig 1925–2022","2 %"],["Wohngebäude, fertig vor 1925","2,5 %"],["Betriebsgebäude im BV","3 %"]],"boxTitel":"NORM","box":"§ 7 Abs. 4 EStG"},
+    {"vorlage":"karussell","datei":"karussell/gebaeude_afa/folie_04.png","typ":"inhalt","saeule":"Degressiv","titel":"*5 %* vom Restwert.","text":"Für Wohngebäude mit Baubeginn zwischen 1.10.2023 und 30.9.2029. Ein späterer Wechsel zur linearen AfA ist möglich.","boxTitel":"NORM","box":"§ 7 Abs. 5a EStG"},
+    {"vorlage":"karussell","datei":"karussell/gebaeude_afa/folie_05.png","typ":"inhalt","saeule":"Sonder-AfA","titel":"Zusätzlich *5 %* für Mietwohnungsneubau.","text":"Vier Jahre lang, wenn Baukosten- und Effizienzvorgaben eingehalten werden.","boxTitel":"NORM","box":"§ 7b EStG"},
+    {"vorlage":"karussell","datei":"karussell/gebaeude_afa/folie_06.png","typ":"cta","titel":"AfA-Plan *automatisch*?","text":"Ein Tool rechnet linear, degressiv und den Wechsel nebeneinander.","saeule":"Wissen"}
+  ] }

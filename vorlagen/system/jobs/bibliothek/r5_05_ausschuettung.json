@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „GmbH-Ausschüttung: der Ablauf“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/ausschuettung/folie_01.png","typ":"titel","titel":"Ausschüttung aus der GmbH: *der Ablauf*.","sub":"Vom Beschluss bis zur Steuerbescheinigung.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/ausschuettung/folie_02.png","typ":"inhalt","saeule":"Schritt 1","titel":"Erst der *Beschluss*.","text":"Die Gesellschafterversammlung beschließt Höhe und Fälligkeit der Gewinnausschüttung.","boxTitel":"NORM","box":"§ 29, § 46 Nr. 1 GmbHG"},
+    {"vorlage":"karussell","datei":"karussell/ausschuettung/folie_03.png","typ":"inhalt","saeule":"Schritt 2","titel":"Die GmbH behält *26,375 %* ein.","zeilen":[["Kapitalertragsteuer","25 %"],["Solidaritätszuschlag 5,5 %","1,375 %"],["Einbehalt gesamt","26,375 %","summe"]],"boxTitel":"NORM","box":"§ 43a Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/ausschuettung/folie_04.png","typ":"inhalt","saeule":"Schritt 3","titel":"Abführen bis zum *10.* des Folgemonats.","text":"Anmeldung und Zahlung für den Monat, in dem die Ausschüttung zugeflossen ist.","boxTitel":"NORM","box":"§ 44 Abs. 1 Satz 5 EStG"},
+    {"vorlage":"karussell","datei":"karussell/ausschuettung/folie_05.png","typ":"inhalt","saeule":"Achtung","titel":"Beim beherrschenden Gesellschafter *früher*.","text":"Ist die GmbH zahlungsfähig, gilt die Ausschüttung in der Regel schon bei Fälligkeit als zugeflossen.","boxTitel":"DANACH","box":"Steuerbescheinigung für den Gesellschafter (§ 45a EStG)"},
+    {"vorlage":"karussell","datei":"karussell/ausschuettung/folie_06.png","typ":"cta","titel":"Fristen *nicht verpassen*?","text":"Ein Tool erinnert an Anmeldung und Bescheinigung.","saeule":"Wissen"}
+  ] }

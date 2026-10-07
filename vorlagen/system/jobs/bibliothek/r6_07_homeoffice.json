@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Lohn – „Homeoffice und Arbeitszimmer“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/homeoffice_2/folie_01.png","typ":"titel","titel":"Homeoffice: *6 €* oder Arbeitszimmer?","sub":"Die zwei Wege seit 2023.","saeule":"Lohn"},
+    {"vorlage":"karussell","datei":"karussell/homeoffice_2/folie_02.png","typ":"inhalt","saeule":"Pauschale","titel":"*6 €* je Homeoffice-Tag.","text":"Höchstens 210 Tage, also 1.260 € im Jahr. Ein eigenes Zimmer ist nicht nötig.","boxTitel":"NORM","box":"§ 4 Abs. 5 Satz 1 Nr. 6c EStG"},
+    {"vorlage":"karussell","datei":"karussell/homeoffice_2/folie_03.png","typ":"inhalt","saeule":"Arbeitszimmer","titel":"Nur als *Mittelpunkt*.","text":"Ist das Zimmer Mittelpunkt der gesamten Tätigkeit, sind die Kosten abziehbar.","boxTitel":"NORM","box":"§ 4 Abs. 5 Satz 1 Nr. 6b EStG"},
+    {"vorlage":"karussell","datei":"karussell/homeoffice_2/folie_04.png","typ":"inhalt","saeule":"Vereinfachung","titel":"*1.260 €* Jahrespauschale.","text":"Statt der tatsächlichen Kosten – für jeden Monat mit Mittelpunkt ein Zwölftel."},
+    {"vorlage":"karussell","datei":"karussell/homeoffice_2/folie_05.png","typ":"inhalt","saeule":"Kein Doppel","titel":"*Entweder* oder.","text":"Wer das Arbeitszimmer abzieht, bekommt für dieselben Tage keine Tagespauschale."},
+    {"vorlage":"karussell","datei":"karussell/homeoffice_2/folie_06.png","typ":"cta","titel":"Tage *mitzählen*?","text":"Ein Tool führt den Homeoffice-Kalender fürs ganze Jahr.","saeule":"Lohn"}
+  ] }

@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Die Grundwerte 2026“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/grundwerte_2026/folie_01.png","typ":"titel","titel":"Die Grundwerte *2026*.","sub":"Grundfreibetrag, Kinder, Kindergeld.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/grundwerte_2026/folie_02.png","typ":"inhalt","saeule":"Grundfreibetrag","titel":"*12.348 €* steuerfrei.","text":"Für Zusammenveranlagte das Doppelte.","boxTitel":"NORM","box":"§ 32a Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/grundwerte_2026/folie_03.png","typ":"inhalt","saeule":"Kinderfreibetrag","titel":"*3.414 €* je Elternteil.","text":"Dazu 1.464 € für Betreuung, Erziehung oder Ausbildung je Elternteil.","boxTitel":"NORM","box":"§ 32 Abs. 6 EStG"},
+    {"vorlage":"karussell","datei":"karussell/grundwerte_2026/folie_04.png","typ":"inhalt","saeule":"Kindergeld","titel":"*259 €* pro Kind und Monat.","text":"Einheitlich für jedes Kind.","boxTitel":"NORM","box":"§ 66 Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/grundwerte_2026/folie_05.png","typ":"inhalt","saeule":"Günstigerprüfung","titel":"Kindergeld *oder* Freibetrag.","text":"Das Finanzamt prüft automatisch, was günstiger ist. Bei hohem Einkommen wirkt der Freibetrag stärker.","boxTitel":"NORM","box":"§ 31 EStG"},
+    {"vorlage":"karussell","datei":"karussell/grundwerte_2026/folie_06.png","typ":"cta","titel":"Werte *immer aktuell*?","text":"Ein Tool hält alle Grundwerte als Parameter mit Gültigkeitsjahr.","saeule":"Wissen"}
+  ] }

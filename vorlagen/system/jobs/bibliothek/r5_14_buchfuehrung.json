@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „EÜR oder Bilanz?“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/buchfuehrung/folie_01.png","typ":"titel","titel":"EÜR oder *Bilanz*?","sub":"Wann die Buchführungspflicht beginnt.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/buchfuehrung/folie_02.png","typ":"inhalt","saeule":"Grenze 1","titel":"Umsatz über *800.000 €*.","text":"Im Kalenderjahr, je Betrieb.","boxTitel":"NORM","box":"§ 141 Abs. 1 Nr. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/buchfuehrung/folie_03.png","typ":"inhalt","saeule":"Grenze 2","titel":"Gewinn über *80.000 €*.","text":"Eine der beiden Grenzen reicht für die Pflicht.","boxTitel":"NORM","box":"§ 141 Abs. 1 Nr. 4 AO"},
+    {"vorlage":"karussell","datei":"karussell/buchfuehrung/folie_04.png","typ":"inhalt","saeule":"Beginn","titel":"Erst nach *Mitteilung*.","text":"Die Pflicht beginnt mit dem Wirtschaftsjahr, das auf die Mitteilung des Finanzamts folgt.","boxTitel":"NORM","box":"§ 141 Abs. 2 AO"},
+    {"vorlage":"karussell","datei":"karussell/buchfuehrung/folie_05.png","typ":"inhalt","saeule":"Handelsrecht","titel":"Gleiche Grenzen im *HGB*.","text":"Einzelkaufleute unter 800.000 € Umsatz und 80.000 € Gewinn sind befreit. GmbHs bilanzieren immer.","boxTitel":"NORM","box":"§ 241a HGB"},
+    {"vorlage":"karussell","datei":"karussell/buchfuehrung/folie_06.png","typ":"cta","titel":"Grenzen *beobachten*?","text":"Ein Tool warnt, bevor die Pflicht zur Bilanz kommt.","saeule":"Wissen"}
+  ] }

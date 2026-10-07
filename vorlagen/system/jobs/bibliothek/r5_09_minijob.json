@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Lohn – „Minijob 2026“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/minijob/folie_01.png","typ":"titel","titel":"Minijob *2026*: die Zahlen.","sub":"Was mit dem neuen Mindestlohn gilt.","saeule":"Lohn"},
+    {"vorlage":"karussell","datei":"karussell/minijob/folie_02.png","typ":"inhalt","saeule":"Mindestlohn","titel":"*13,90 €* pro Stunde.","text":"Seit 1.1.2026. Für 2027 sind 14,60 € beschlossen."},
+    {"vorlage":"karussell","datei":"karussell/minijob/folie_03.png","typ":"inhalt","saeule":"Verdienstgrenze","titel":"*603 €* im Monat.","text":"Die Grenze ist an den Mindestlohn gekoppelt: 130 Stunden × 13,90 € ÷ 3, aufgerundet.","boxTitel":"NORM","box":"§ 8 Abs. 1a SGB IV"},
+    {"vorlage":"karussell","datei":"karussell/minijob/folie_04.png","typ":"inhalt","saeule":"Steuer","titel":"*2 %* pauschal.","text":"Die einheitliche Pauschsteuer deckt Lohnsteuer, SolZ und Kirchensteuer ab.","boxTitel":"NORM","box":"§ 40a Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/minijob/folie_05.png","typ":"inhalt","saeule":"Arbeitgeber","titel":"Dazu Pauschal­beiträge *Sozialversicherung*.","zeilen":[["Krankenversicherung","13 %"],["Rentenversicherung","15 %"],["Pauschsteuer","2 %"],["Gesamt (ohne Umlagen)","30 %","summe"]]},
+    {"vorlage":"karussell","datei":"karussell/minijob/folie_06.png","typ":"inhalt","saeule":"Darüber","titel":"Bis *2.000 €* Übergangsbereich.","text":"Im Midijob steigen die Arbeitnehmerbeiträge gleitend an.","boxTitel":"NORM","box":"§ 20 Abs. 2 SGB IV"},
+    {"vorlage":"karussell","datei":"karussell/minijob/folie_07.png","typ":"cta","titel":"Lohnkosten *vorab* rechnen?","text":"Ein Rechner zeigt Minijob und Midijob für jede Stundenzahl.","saeule":"Lohn"}
+  ] }

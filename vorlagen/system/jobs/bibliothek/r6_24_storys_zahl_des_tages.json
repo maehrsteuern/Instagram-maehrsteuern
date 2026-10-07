@@ -1,0 +1,15 @@
+{ "titel": "Storys · Zahl des Tages (Runde 6)", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/zdt_12348.png","typ":"info","kicker":"Zahl des Tages","titel":"*12.348 €*","text":"Grundfreibetrag 2026 (§ 32a Abs. 1 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_3414.png","typ":"info","kicker":"Zahl des Tages","titel":"*3.414 €*\nje Elternteil","text":"Kinderfreibetrag 2026 (§ 32 Abs. 6 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_15.png","typ":"info","kicker":"Zahl des Tages","titel":"*15 %*\nin drei Jahren","text":"Darüber werden Renovierungskosten nach dem Kauf zu Anschaffungskosten (§ 6 Abs. 1 Nr. 1a EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_25000_zerlegung.png","typ":"info","kicker":"Zahl des Tages","titel":"*25.000 €*\nUnternehmerlohn","text":"Wird bei der Gewerbesteuer-Zerlegung je Unternehmer angesetzt (§ 31 Abs. 5 GewStG)."},
+    {"vorlage":"story","datei":"storys/zdt_40.png","typ":"info","kicker":"Zahl des Tages","titel":"*40 %*\nSonder-AfA","text":"Für kleine Betriebe, zusätzlich zur normalen AfA (§ 7g Abs. 5 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_70.png","typ":"info","kicker":"Zahl des Tages","titel":"*70 %*","text":"So viel Gewinn über 1 Mio. € ist 2024 bis 2027 mit Verlustvorträgen verrechenbar (§ 10d Abs. 2 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_015.png","typ":"info","kicker":"Zahl des Tages","titel":"*0,15 %*\npro Monat","text":"Nachzahlungszinsen auf Steuern (§ 238 AO)."},
+    {"vorlage":"story","datei":"storys/zdt_4tage.png","typ":"info","kicker":"Zahl des Tages","titel":"*4 Tage*","text":"Dann gilt ein Bescheid per Post als bekannt gegeben (§ 122 Abs. 2 AO)."},
+    {"vorlage":"story","datei":"storys/zdt_1230.png","typ":"info","kicker":"Zahl des Tages","titel":"*1.230 €*","text":"Arbeitnehmer-Pauschbetrag – Werbungskosten ohne Nachweis (§ 9a EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_1260.png","typ":"info","kicker":"Zahl des Tages","titel":"*1.260 €*\nim Jahr","text":"Höchstbetrag der Homeoffice-Pauschale (§ 4 Abs. 5 Satz 1 Nr. 6c EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_510.png","typ":"info","kicker":"Zahl des Tages","titel":"*510 €*","text":"Höchste Steuerermäßigung für einen Minijob im Privathaushalt (§ 35a Abs. 1 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_10jahre.png","typ":"info","kicker":"Zahl des Tages","titel":"*10 Jahre*","text":"Aufbewahrung für Bücher und Jahresabschlüsse (§ 147 Abs. 3 AO)."}
+  ] }

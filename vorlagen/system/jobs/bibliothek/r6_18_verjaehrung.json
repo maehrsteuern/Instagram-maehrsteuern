@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Festsetzungsverjährung“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/verjaehrung/folie_01.png","typ":"titel","titel":"Wie lange darf das Finanzamt *noch ändern*?","sub":"Die Festsetzungsverjährung.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/verjaehrung/folie_02.png","typ":"inhalt","saeule":"Regel","titel":"*Vier Jahre*.","text":"Für Steuern wie Einkommen-, Umsatz- und Gewerbesteuer.","boxTitel":"NORM","box":"§ 169 Abs. 2 Satz 1 Nr. 2 AO"},
+    {"vorlage":"karussell","datei":"karussell/verjaehrung/folie_03.png","typ":"inhalt","saeule":"Beginn","titel":"Ab *Abgabe* der Erklärung.","text":"Mit Ablauf des Jahres der Abgabe – spätestens nach drei Jahren.","boxTitel":"NORM","box":"§ 170 Abs. 2 Satz 1 Nr. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/verjaehrung/folie_04.png","typ":"inhalt","saeule":"Länger","titel":"*5* oder *10* Jahre.","text":"Bei leichtfertiger Verkürzung fünf, bei Hinterziehung zehn Jahre.","boxTitel":"NORM","box":"§ 169 Abs. 2 Satz 2 AO"},
+    {"vorlage":"karussell","datei":"karussell/verjaehrung/folie_05.png","typ":"inhalt","saeule":"Hemmung","titel":"Die *Prüfung* hält die Uhr an.","text":"Eine begonnene Außenprüfung oder ein Einspruch hemmt den Ablauf.","boxTitel":"NORM","box":"§ 171 AO"},
+    {"vorlage":"karussell","datei":"karussell/verjaehrung/folie_06.png","typ":"cta","titel":"Fristen je Jahr *sehen*?","text":"Ein Tool zeigt, welche Jahre noch offen sind.","saeule":"Wissen"}
+  ] }

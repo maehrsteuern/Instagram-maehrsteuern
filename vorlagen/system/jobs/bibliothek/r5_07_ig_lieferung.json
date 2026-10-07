@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „Innergemeinschaftliche Lieferung“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/ig_lieferung/folie_01.png","typ":"titel","titel":"Steuerfrei in die EU: *vier Bedingungen*.","sub":"Die innergemeinschaftliche Lieferung.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/ig_lieferung/folie_02.png","typ":"inhalt","saeule":"Bedingung 1","titel":"Gültige *USt-IdNr.* des Kunden.","text":"Der Erwerber muss sie aus einem anderen Mitgliedstaat verwenden. Seit 2020 ist das eine materielle Voraussetzung.","boxTitel":"NORM","box":"§ 6a Abs. 1 Satz 1 Nr. 4 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ig_lieferung/folie_03.png","typ":"inhalt","saeule":"Bedingung 2","titel":"Die Ware *verlässt* Deutschland.","text":"Nachweis zum Beispiel über die Gelangensbestätigung.","boxTitel":"NORM","box":"§ 17b UStDV"},
+    {"vorlage":"karussell","datei":"karussell/ig_lieferung/folie_04.png","typ":"inhalt","saeule":"Bedingung 3","titel":"*Zusammenfassende Meldung* richtig.","text":"Bis zum 25. Tag nach Ablauf des Monats. Fehlt sie, kann die Steuerbefreiung entfallen.","boxTitel":"NORM","box":"§ 4 Nr. 1 Buchst. b, § 18a UStG"},
+    {"vorlage":"karussell","datei":"karussell/ig_lieferung/folie_05.png","typ":"inhalt","saeule":"Bedingung 4","titel":"Der *Hinweis* auf der Rechnung.","text":"„Steuerfreie innergemeinschaftliche Lieferung“ und beide USt-IdNrn.","boxTitel":"NORM","box":"§ 14a Abs. 3 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ig_lieferung/folie_06.png","typ":"cta","titel":"USt-IdNr. *automatisch* prüfen?","text":"Ein Tool fragt die Nummer beim BZSt ab und speichert das Ergebnis.","saeule":"Umsatzsteuer"}
+  ] }

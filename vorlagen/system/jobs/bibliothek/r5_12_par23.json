@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Wissen – „Private Veräußerung § 23 EStG“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/par23/folie_01.png","typ":"titel","titel":"Verkauf privat: *wann* es steuerfrei ist.","sub":"Die Fristen aus § 23 EStG.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/par23/folie_02.png","typ":"inhalt","saeule":"Grundstücke","titel":"*10 Jahre* Haltefrist.","text":"Zwischen Anschaffung und Verkauf. Maßgeblich ist jeweils der Kaufvertrag.","boxTitel":"NORM","box":"§ 23 Abs. 1 Satz 1 Nr. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/par23/folie_03.png","typ":"inhalt","saeule":"Ausnahme","titel":"Selbst *bewohnt*: frei.","text":"Im Jahr des Verkaufs und in den beiden Vorjahren zu eigenen Wohnzwecken genutzt – dann zählt die Frist nicht."},
+    {"vorlage":"karussell","datei":"karussell/par23/folie_04.png","typ":"inhalt","saeule":"Andere Dinge","titel":"*1 Jahr* – etwa bei Krypto.","text":"Für Gegenstände des täglichen Gebrauchs gilt die Regel nicht.","boxTitel":"NORM","box":"§ 23 Abs. 1 Satz 1 Nr. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/par23/folie_05.png","typ":"inhalt","saeule":"Freigrenze","titel":"*1.000 €* im Jahr.","text":"Seit 2024. Wird sie überschritten, ist der gesamte Gewinn steuerpflichtig.","boxTitel":"NORM","box":"§ 23 Abs. 3 Satz 5 EStG"},
+    {"vorlage":"karussell","datei":"karussell/par23/folie_06.png","typ":"inhalt","saeule":"Verluste","titel":"Nur mit *§ 23-Gewinnen*.","text":"Ausgleich im selben Jahr, Rücktrag oder Vortrag – aber nicht mit anderen Einkünften.","boxTitel":"NORM","box":"§ 23 Abs. 3 Satz 7, 8 EStG"},
+    {"vorlage":"karussell","datei":"karussell/par23/folie_07.png","typ":"cta","titel":"Fristen *automatisch* prüfen?","text":"Ein Tool rechnet ab Kaufdatum und zeigt den steuerfreien Tag.","saeule":"Wissen"}
+  ] }

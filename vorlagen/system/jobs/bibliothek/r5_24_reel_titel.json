@@ -1,0 +1,13 @@
+{ "titel": "Reel-Titelbilder (Runde 5)", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"reel_titel","datei":"reels/reel_kleinunternehmer/titelbild.png","kicker":"Umsatzsteuer","titel":"*100.000 €*\nund raus","sub":"Die neue Kleinunternehmer-Grenze."},
+    {"vorlage":"reel_titel","datei":"reels/reel_firmenwagen/titelbild.png","kicker":"Lohn · Steuern × Code","titel":"1 % oder\n*Fahrtenbuch*?","sub":"In 20 Sekunden entschieden."},
+    {"vorlage":"reel_titel","datei":"reels/reel_gebaeude/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"2, 3 oder\n*5 %*?","sub":"Gebäude-AfA erklärt."},
+    {"vorlage":"reel_titel","datei":"reels/reel_35/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Gewerbesteuer\n*zurück*","sub":"§ 35 EStG in 15 Sekunden."},
+    {"vorlage":"reel_titel","datei":"reels/reel_gastro/titelbild.png","kicker":"Umsatzsteuer","titel":"Schnitzel *7 %*.\nCola 19 %.","sub":"Gastronomie seit 2026."},
+    {"vorlage":"reel_titel","datei":"reels/reel_minijob/titelbild.png","kicker":"Lohn · Steuern × Code","titel":"*603 €*\nim Monat","sub":"Minijob 2026."},
+    {"vorlage":"reel_titel","datei":"reels/reel_reise/titelbild.png","kicker":"Lohn · Steuern × Code","titel":"*14 €* oder\n28 €?","sub":"Verpflegung auf Reisen."},
+    {"vorlage":"reel_titel","datei":"reels/reel_schenkung/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"*400.000 €*\nsteuerfrei","sub":"Und alle zehn Jahre wieder."},
+    {"vorlage":"reel_titel","datei":"reels/reel_23/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"*10 Jahre*\nwarten?","sub":"Nicht beim Eigenheim."},
+    {"vorlage":"reel_titel","datei":"reels/reel_plausi/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"Fünf\n*Plausi-Checks*","sub":"Bevor der Abschluss rausgeht."}
+  ] }

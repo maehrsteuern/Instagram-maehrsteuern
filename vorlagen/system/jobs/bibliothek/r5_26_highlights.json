@@ -1,0 +1,8 @@
+{ "titel": "Highlight-Titelbilder · km, EU, Lohn, AfA, Kfz", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"highlight","datei":"highlights/hl_km.png","icon":"text","glyph":"km","fs":230},
+    {"vorlage":"highlight","datei":"highlights/hl_eu.png","icon":"text","glyph":"EU","fs":230},
+    {"vorlage":"highlight","datei":"highlights/hl_lohn.png","icon":"text","glyph":"Lohn","fs":150},
+    {"vorlage":"highlight","datei":"highlights/hl_afa.png","icon":"text","glyph":"AfA","fs":170},
+    {"vorlage":"highlight","datei":"highlights/hl_kfz.png","icon":"text","glyph":"Kfz","fs":170}
+  ] }

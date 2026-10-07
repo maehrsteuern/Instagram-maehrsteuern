@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Mythos oder Fakt – „Teil 4“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/mythen_4/folie_01.png","typ":"titel","titel":"Mythos oder Fakt? *Teil 4*.","sub":"Fünf Sätze, die man oft hört.","saeule":"Mythos oder Fakt"},
+    {"vorlage":"karussell","datei":"karussell/mythen_4/folie_02.png","typ":"inhalt","saeule":"Mythos","titel":"„Den Handwerker *bar* zahlen ist egal.“","text":"Ohne Überweisung keine Steuerermäßigung nach § 35a EStG.","boxTitel":"NORM","box":"§ 35a Abs. 5 Satz 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/mythen_4/folie_03.png","typ":"inhalt","saeule":"Fakt","titel":"„Bis *300 €* reicht für die Spende der Kontoauszug.“","text":"Bei gemeinnützigen Empfängern genügt der Buchungsbeleg.","boxTitel":"NORM","box":"§ 50 Abs. 4 EStDV"},
+    {"vorlage":"karussell","datei":"karussell/mythen_4/folie_04.png","typ":"inhalt","saeule":"Mythos","titel":"„Der Einspruch *stoppt* die Zahlung.“","text":"Ohne Aussetzung der Vollziehung bleibt die Steuer fällig.","boxTitel":"NORM","box":"§ 361 Abs. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/mythen_4/folie_05.png","typ":"inhalt","saeule":"Fakt","titel":"„Belege muss man nur noch *acht Jahre* aufheben.“","text":"Seit 2025 – Bücher und Abschlüsse weiter zehn Jahre.","boxTitel":"NORM","box":"§ 147 Abs. 3 AO"},
+    {"vorlage":"karussell","datei":"karussell/mythen_4/folie_06.png","typ":"inhalt","saeule":"Mythos","titel":"„Billig an die Familie *vermieten* kostet den Abzug.“","text":"Ab 66 % der ortsüblichen Miete bleiben die Werbungskosten voll abziehbar.","boxTitel":"NORM","box":"§ 21 Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/mythen_4/folie_07.png","typ":"cta","titel":"Welcher Mythos *fehlt*?","text":"Schreibt ihn in die Kommentare – er kommt in Teil 5.","saeule":"Mythos oder Fakt"}
+  ] }

@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Praxis – „Aufbewahrungsfristen“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung_2/folie_01.png","typ":"titel","titel":"Was darf *weg*? Die Aufbewahrungsfristen.","sub":"Seit 2025 teilweise kürzer.","saeule":"Praxis"},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung_2/folie_02.png","typ":"inhalt","saeule":"10 Jahre","titel":"Bücher und *Abschlüsse*.","text":"Jahresabschlüsse, Inventare, Lageberichte und Arbeitsanweisungen.","boxTitel":"NORM","box":"§ 147 Abs. 3 AO"},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung_2/folie_03.png","typ":"inhalt","saeule":"8 Jahre","titel":"*Buchungsbelege*.","text":"Rechnungen und Kontoauszüge – seit 2025 von zehn auf acht Jahre verkürzt.","boxTitel":"NORM","box":"§ 147 Abs. 3 AO, § 14b UStG"},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung_2/folie_04.png","typ":"inhalt","saeule":"6 Jahre","titel":"*Geschäftsbriefe*.","text":"Empfangene und abgesandte Handels- und Geschäftsbriefe.","boxTitel":"NORM","box":"§ 147 Abs. 3 AO"},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung_2/folie_05.png","typ":"inhalt","saeule":"Beginn","titel":"Ab *Jahresende*.","text":"Die Frist beginnt mit dem Ende des Jahres, in dem die Unterlage entstanden ist.","boxTitel":"NORM","box":"§ 147 Abs. 4 AO"},
+    {"vorlage":"karussell","datei":"karussell/aufbewahrung_2/folie_06.png","typ":"cta","titel":"Löschen *nach Plan*?","text":"Ein Tool markiert, welche Ordner im Januar weg dürfen.","saeule":"Praxis"}
+  ] }

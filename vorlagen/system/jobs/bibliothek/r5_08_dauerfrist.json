@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „Dauerfristverlängerung“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/dauerfrist/folie_01.png","typ":"titel","titel":"Ein Monat *mehr Zeit*: Dauerfrist­verlängerung.","sub":"Für die USt-Voranmeldung.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/dauerfrist/folie_02.png","typ":"inhalt","saeule":"Wirkung","titel":"Abgabe und Zahlung *einen Monat* später.","text":"Die Voranmeldung für Januar ist dann erst am 10. März fällig.","boxTitel":"NORM","box":"§ 46 UStDV"},
+    {"vorlage":"karussell","datei":"karussell/dauerfrist/folie_03.png","typ":"inhalt","saeule":"Monatszahler","titel":"*1/11* als Sonder­voraus­zahlung.","text":"Ein Elftel der Vorauszahlungen des Vorjahres, angemeldet bis zum 10. Februar.","boxTitel":"NORM","box":"§ 47 Abs. 1, § 48 Abs. 2 UStDV"},
+    {"vorlage":"karussell","datei":"karussell/dauerfrist/folie_04.png","typ":"inhalt","saeule":"Quartalszahler","titel":"*Keine* Sondervorauszahlung.","text":"Der Antrag genügt. Er gilt fort, bis er widerrufen wird."},
+    {"vorlage":"karussell","datei":"karussell/dauerfrist/folie_05.png","typ":"inhalt","saeule":"Jahresende","titel":"Angerechnet im *Dezember*.","text":"Die Sondervorauszahlung wird mit der letzten Voranmeldung des Jahres verrechnet.","boxTitel":"NORM","box":"§ 48 Abs. 4 UStDV"},
+    {"vorlage":"karussell","datei":"karussell/dauerfrist/folie_06.png","typ":"cta","titel":"Fristen *im Kalender*?","text":"Ein Tool trägt alle USt-Termine mit Verlängerung ein.","saeule":"Umsatzsteuer"}
+  ] }

@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Umsatzsteuer – „Wo ist die Leistung steuerbar?“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/leistungsort/folie_01.png","typ":"titel","titel":"Dienstleistung ins Ausland: *Wo* wird versteuert?","sub":"Der Leistungsort nach § 3a UStG.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/leistungsort/folie_02.png","typ":"inhalt","saeule":"B2B","titel":"Beim *Kunden*.","text":"Grundregel für Leistungen an Unternehmer: Ort ist der Sitz des Empfängers.","boxTitel":"NORM","box":"§ 3a Abs. 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/leistungsort/folie_03.png","typ":"inhalt","saeule":"B2C","titel":"Beim *Leistenden*.","text":"Grundregel für Privatkunden: Ort ist der Sitz des leistenden Unternehmens.","boxTitel":"NORM","box":"§ 3a Abs. 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/leistungsort/folie_04.png","typ":"inhalt","saeule":"Grundstücke","titel":"Wo das *Grundstück* liegt.","text":"Etwa Architekten, Makler oder Handwerker am Gebäude – unabhängig vom Kunden.","boxTitel":"NORM","box":"§ 3a Abs. 3 Nr. 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/leistungsort/folie_05.png","typ":"inhalt","saeule":"Restaurant","titel":"Wo *gegessen* wird.","text":"Restaurant- und Verpflegungsleistungen: Ort der tatsächlichen Erbringung.","boxTitel":"NORM","box":"§ 3a Abs. 3 Nr. 3 Buchst. b UStG"},
+    {"vorlage":"karussell","datei":"karussell/leistungsort/folie_06.png","typ":"inhalt","saeule":"Folge B2B in der EU","titel":"*Reverse-Charge* beim Kunden.","text":"Rechnung ohne deutsche USt, mit Hinweis – und Meldung in der Zusammenfassenden Meldung.","boxTitel":"NORM","box":"§ 14a Abs. 1, § 18a UStG"},
+    {"vorlage":"karussell","datei":"karussell/leistungsort/folie_07.png","typ":"cta","titel":"Ort *automatisch* bestimmen?","text":"Ein Tool fragt drei Merkmale ab und zeigt den Leistungsort.","saeule":"Umsatzsteuer"}
+  ] }

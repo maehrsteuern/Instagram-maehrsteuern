@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Gewerbesteuer-Zerlegung“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/gewst_zerlegung/folie_01.png","typ":"titel","titel":"Mehrere Standorte: *Wer bekommt* die Gewerbesteuer?","sub":"Die Zerlegung nach §§ 28 ff. GewStG.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zerlegung/folie_02.png","typ":"inhalt","saeule":"Wann","titel":"Betriebsstätten in *mehreren* Gemeinden.","text":"Dann wird der Messbetrag auf die Gemeinden aufgeteilt.","boxTitel":"NORM","box":"§ 28 Abs. 1 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zerlegung/folie_03.png","typ":"inhalt","saeule":"Maßstab","titel":"Nach *Arbeitslöhnen*.","text":"Jede Gemeinde erhält den Anteil, der auf die Löhne ihrer Betriebsstätte entfällt.","boxTitel":"NORM","box":"§ 29 Abs. 1 Nr. 1 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zerlegung/folie_04.png","typ":"inhalt","saeule":"Unternehmerlohn","titel":"*25.000 €* für den Chef.","text":"Bei Einzelunternehmen und Personengesellschaften wird je Unternehmer dieser Betrag angesetzt.","boxTitel":"NORM","box":"§ 31 Abs. 5 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zerlegung/folie_05.png","typ":"inhalt","saeule":"Nicht dabei","titel":"*Auszubildende*.","text":"Ausbildungsvergütungen bleiben bei der Zerlegung außer Ansatz.","boxTitel":"NORM","box":"§ 31 Abs. 2 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/gewst_zerlegung/folie_06.png","typ":"cta","titel":"Zerlegung *in Sekunden*?","text":"Ein Tool verteilt den Messbetrag aus der Lohnliste.","saeule":"Wissen"}
+  ] }

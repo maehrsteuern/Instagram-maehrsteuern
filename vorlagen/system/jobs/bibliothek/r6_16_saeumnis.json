@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Zinsen und Säumniszuschläge“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/saeumnis/folie_01.png","typ":"titel","titel":"Zu spät gezahlt: *was es kostet*.","sub":"Säumniszuschläge und Zinsen.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/saeumnis/folie_02.png","typ":"inhalt","saeule":"Säumniszuschlag","titel":"*1 %* pro Monat.","text":"Für jeden angefangenen Monat, gerechnet vom auf 50 € abgerundeten Betrag.","boxTitel":"NORM","box":"§ 240 Abs. 1 AO"},
+    {"vorlage":"karussell","datei":"karussell/saeumnis/folie_03.png","typ":"inhalt","saeule":"Schonfrist","titel":"*3 Tage* bei Überweisung.","text":"Kein Zuschlag, wenn die Zahlung bis drei Tage nach Fälligkeit eingeht – nicht bei Bar- oder Scheckzahlung.","boxTitel":"NORM","box":"§ 240 Abs. 3 AO"},
+    {"vorlage":"karussell","datei":"karussell/saeumnis/folie_04.png","typ":"inhalt","saeule":"Nachzahlungszinsen","titel":"*0,15 %* pro Monat.","text":"Also 1,8 % im Jahr – ab 15 Monaten nach Ablauf des Steuerjahres.","boxTitel":"NORM","box":"§ 233a, § 238 AO"},
+    {"vorlage":"karussell","datei":"karussell/saeumnis/folie_05.png","typ":"inhalt","saeule":"Lösung","titel":"Rechtzeitig *Stundung* beantragen.","text":"Vor Fälligkeit. Bei erheblicher Härte kann das Finanzamt stunden.","boxTitel":"NORM","box":"§ 222 AO"},
+    {"vorlage":"karussell","datei":"karussell/saeumnis/folie_06.png","typ":"cta","titel":"Fälligkeiten *nie verpassen*?","text":"Ein Tool sammelt alle Termine aus den Bescheiden.","saeule":"Wissen"}
+  ] }

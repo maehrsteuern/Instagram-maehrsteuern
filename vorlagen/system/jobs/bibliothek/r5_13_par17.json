@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Anteile verkaufen § 17 EStG“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/par17/folie_01.png","typ":"titel","titel":"GmbH-Anteile verkaufen: *ab 1 %*.","sub":"Wann § 17 EStG greift.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/par17/folie_02.png","typ":"inhalt","saeule":"Schwelle","titel":"Mindestens *1 %* in fünf Jahren.","text":"Es reicht, wenn die Beteiligung irgendwann in den letzten fünf Jahren diese Höhe hatte.","boxTitel":"NORM","box":"§ 17 Abs. 1 Satz 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/par17/folie_03.png","typ":"inhalt","saeule":"Besteuerung","titel":"*60 %* steuerpflichtig.","text":"Teileinkünfteverfahren – 40 % des Gewinns bleiben steuerfrei.","boxTitel":"NORM","box":"§ 3 Nr. 40 Buchst. c EStG"},
+    {"vorlage":"karussell","datei":"karussell/par17/folie_04.png","typ":"inhalt","saeule":"Freibetrag","titel":"*9.060 €* – mit Abschmelzung.","text":"Anteilig nach Beteiligungsquote. Er sinkt um den Betrag, um den der Gewinn 36.100 € übersteigt.","boxTitel":"NORM","box":"§ 17 Abs. 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/par17/folie_05.png","typ":"inhalt","saeule":"Verlust","titel":"Zu *60 %* abziehbar.","text":"Spiegelbildlich zum Gewinn, mit Einschränkungen bei kurzer Haltedauer.","boxTitel":"NORM","box":"§ 3c Abs. 2, § 17 Abs. 2 Satz 6 EStG"},
+    {"vorlage":"karussell","datei":"karussell/par17/folie_06.png","typ":"cta","titel":"Verkauf *durchrechnen*?","text":"Ein Tool rechnet Freibetrag und Teileinkünfte mit euren Zahlen.","saeule":"Wissen"}
+  ] }

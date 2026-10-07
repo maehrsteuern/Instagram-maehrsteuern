@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Glossar – „Teil 3“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/glossar_3/folie_01.png","typ":"titel","titel":"Glossar *Teil 3*.","sub":"Fünf Begriffe, kurz erklärt.","saeule":"Glossar"},
+    {"vorlage":"karussell","datei":"karussell/glossar_3/folie_02.png","typ":"inhalt","saeule":"Begriff 1","titel":"*Messbetrag*","text":"Gewerbeertrag × 3,5 %. Die Gemeinde multipliziert ihn mit dem Hebesatz.","boxTitel":"NORM","box":"§ 11 GewStG"},
+    {"vorlage":"karussell","datei":"karussell/glossar_3/folie_03.png","typ":"inhalt","saeule":"Begriff 2","titel":"*Sondervoraus­zahlung*","text":"1/11 der USt-Vorauszahlungen des Vorjahres – der Preis für die Dauerfristverlängerung bei Monatszahlern.","boxTitel":"NORM","box":"§ 47 UStDV"},
+    {"vorlage":"karussell","datei":"karussell/glossar_3/folie_04.png","typ":"inhalt","saeule":"Begriff 3","titel":"*Gelangens­bestätigung*","text":"Der Abnehmer bestätigt, dass die Ware im anderen EU-Staat angekommen ist.","boxTitel":"NORM","box":"§ 17b Abs. 2 UStDV"},
+    {"vorlage":"karussell","datei":"karussell/glossar_3/folie_05.png","typ":"inhalt","saeule":"Begriff 4","titel":"*Rechnungs­abgrenzung*","text":"Zahlung und Aufwand liegen in verschiedenen Jahren – der Posten verschiebt das Ergebnis ins richtige Jahr.","boxTitel":"NORM","box":"§ 5 Abs. 5 EStG"},
+    {"vorlage":"karussell","datei":"karussell/glossar_3/folie_06.png","typ":"inhalt","saeule":"Begriff 5","titel":"*Bruttolisten­preis*","text":"Inländischer Listenpreis bei Erstzulassung inklusive Sonderausstattung und USt – Basis der 1-%-Regel."},
+    {"vorlage":"karussell","datei":"karussell/glossar_3/folie_07.png","typ":"cta","titel":"Welcher Begriff ist *der nächste*?","text":"Schreibt ihn mir – Teil 4 folgt.","saeule":"Glossar"}
+  ] }

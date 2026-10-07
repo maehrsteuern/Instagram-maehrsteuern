@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Wissen – „Schenkung: Freibeträge“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/schenkung/folie_01.png","typ":"titel","titel":"Schenken mit *Freibetrag*.","sub":"Was alle zehn Jahre steuerfrei geht.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/schenkung/folie_02.png","typ":"inhalt","saeule":"Ehegatten und Kinder","titel":"*500.000 €* und *400.000 €*.","zeilen":[["Ehegatte / Lebenspartner","500.000 €"],["Kind","400.000 €"]],"boxTitel":"NORM","box":"§ 16 Abs. 1 Nr. 1, 2 ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/schenkung/folie_03.png","typ":"inhalt","saeule":"Enkel","titel":"*200.000 €* pro Enkel.","text":"Ist das Elternteil bereits verstorben, gelten 400.000 €.","boxTitel":"NORM","box":"§ 16 Abs. 1 Nr. 2, 3 ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/schenkung/folie_04.png","typ":"inhalt","saeule":"Alle anderen","titel":"*20.000 €*.","text":"Geschwister, Nichten, Neffen und nicht verwandte Personen. Dazu kommen höhere Steuersätze.","boxTitel":"NORM","box":"§ 16 Abs. 1 Nr. 5, 7 ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/schenkung/folie_05.png","typ":"inhalt","saeule":"Zehn Jahre","titel":"Der Freibetrag *lebt neu auf*.","text":"Schenkungen innerhalb von zehn Jahren werden zusammengerechnet. Danach steht der Freibetrag wieder voll zur Verfügung.","boxTitel":"NORM","box":"§ 14 ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/schenkung/folie_06.png","typ":"inhalt","saeule":"Familienheim","titel":"An den Ehegatten *steuerfrei*.","text":"Die Schenkung des selbst genutzten Familienheims unter Lebenden ist unabhängig vom Wert befreit.","boxTitel":"NORM","box":"§ 13 Abs. 1 Nr. 4a ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/schenkung/folie_07.png","typ":"cta","titel":"Schenkungen *planen*?","text":"Ein Tool verfolgt die Zehn-Jahres-Fristen je Person.","saeule":"Wissen"}
+  ] }

@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Glossar – „Teil 4“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/glossar_4/folie_01.png","typ":"titel","titel":"Glossar *Teil 4*.","sub":"Fünf Begriffe, kurz erklärt.","saeule":"Glossar"},
+    {"vorlage":"karussell","datei":"karussell/glossar_4/folie_02.png","typ":"inhalt","saeule":"Begriff 1","titel":"*Teil­freistellung*","text":"Steuerfreier Anteil von Fondserträgen – bei Aktienfonds 30 %.","boxTitel":"NORM","box":"§ 20 InvStG"},
+    {"vorlage":"karussell","datei":"karussell/glossar_4/folie_03.png","typ":"inhalt","saeule":"Begriff 2","titel":"*Leistungsort*","text":"Der Ort, an dem eine Leistung umsatzsteuerlich als ausgeführt gilt.","boxTitel":"NORM","box":"§ 3a UStG"},
+    {"vorlage":"karussell","datei":"karussell/glossar_4/folie_04.png","typ":"inhalt","saeule":"Begriff 3","titel":"*Mindest­besteuerung*","text":"Über 1 Mio. € darf ein Gewinn nur teilweise mit Verlustvorträgen verrechnet werden.","boxTitel":"NORM","box":"§ 10d Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/glossar_4/folie_05.png","typ":"inhalt","saeule":"Begriff 4","titel":"*Anlaufhemmung*","text":"Die Verjährung beginnt erst mit Abgabe der Erklärung – höchstens drei Jahre später.","boxTitel":"NORM","box":"§ 170 Abs. 2 AO"},
+    {"vorlage":"karussell","datei":"karussell/glossar_4/folie_06.png","typ":"inhalt","saeule":"Begriff 5","titel":"*Aussetzung der Vollziehung*","text":"Der Bescheid muss vorerst nicht bezahlt werden, solange über den Einspruch entschieden wird.","boxTitel":"NORM","box":"§ 361 AO"},
+    {"vorlage":"karussell","datei":"karussell/glossar_4/folie_07.png","typ":"cta","titel":"Welcher Begriff ist *der nächste*?","text":"Schreibt ihn mir – Teil 5 folgt.","saeule":"Glossar"}
+  ] }

@@ -1,0 +1,10 @@
+{ "titel": "Reel-Einblendungen (Runde 6)", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"einblendung","datei":"bausteine/haken_bar.png","typ":"haken","kicker":"Handwerker","titel":"Bar bezahlt?\n*Dann nichts zurück.*","sub":"§ 35a EStG."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_belege.png","typ":"haken","kicker":"Seit 2025","titel":"Zwei Jahre\n*weniger Ordner*.","sub":"§ 147 AO."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_wien.png","typ":"haken","kicker":"Umsatzsteuer","titel":"Haus in Wien –\n*USt in Österreich*.","sub":"§ 3a Abs. 3 UStG."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_frist.png","typ":"haken_ueber","kicker":"Frist","titel":"Noch\n*12 Tage*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_bescheid.png","typ":"leiste","kicker":"Schritt 1","titel":"Bescheid *abgleichen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_einspruch.png","typ":"leiste","kicker":"Schritt 2","titel":"Einspruch *fristgerecht*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_frist.png","typ":"abspann","titel":"Jede Frist.\n*Im Blick.*"}
+  ] }

@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Lohn – „Werbungskosten für Arbeitnehmer“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/werbungskosten/folie_01.png","typ":"titel","titel":"Werbungskosten: *was über 1.230 € geht*.","sub":"Für Arbeitnehmer.","saeule":"Lohn"},
+    {"vorlage":"karussell","datei":"karussell/werbungskosten/folie_02.png","typ":"inhalt","saeule":"Pauschale","titel":"*1.230 €* ohne Nachweis.","text":"Der Arbeitnehmer-Pauschbetrag. Nur was darüber liegt, wirkt sich aus.","boxTitel":"NORM","box":"§ 9a Satz 1 Nr. 1 Buchst. a EStG"},
+    {"vorlage":"karussell","datei":"karussell/werbungskosten/folie_03.png","typ":"inhalt","saeule":"Arbeitsmittel","titel":"Bis *952 €* brutto sofort.","text":"800 € netto plus USt. Teurere Geräte werden über die Nutzungsdauer abgeschrieben.","boxTitel":"NORM","box":"§ 9 Abs. 1 Satz 3 Nr. 6, 7 EStG"},
+    {"vorlage":"karussell","datei":"karussell/werbungskosten/folie_04.png","typ":"inhalt","saeule":"Zweitwohnung","titel":"Bis *1.000 €* Miete im Monat.","text":"Bei beruflich veranlasster doppelter Haushaltsführung im Inland.","boxTitel":"NORM","box":"§ 9 Abs. 1 Satz 3 Nr. 5 EStG"},
+    {"vorlage":"karussell","datei":"karussell/werbungskosten/folie_05.png","typ":"inhalt","saeule":"Fortbildung","titel":"Im Beruf: *voll* abziehbar.","text":"Kurse, Fachliteratur, Prüfungsgebühren. Ein Erststudium außerhalb eines Dienstverhältnisses dagegen nicht.","boxTitel":"NORM","box":"§ 9 Abs. 6 EStG"},
+    {"vorlage":"karussell","datei":"karussell/werbungskosten/folie_06.png","typ":"cta","titel":"Lohnt sich die *Einzelaufstellung*?","text":"Ein Rechner zeigt, ob ihr über die Pauschale kommt.","saeule":"Lohn"}
+  ] }

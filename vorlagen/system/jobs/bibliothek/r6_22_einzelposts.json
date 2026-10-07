@@ -1,0 +1,18 @@
+{ "titel": "Einzelposts 1:1 · „Zahl mit Norm“ (Runde 6)", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"zahl","datei":"einzelposts/zahl_sparer.png","kicker":"Kapitalerträge","zahl":"1.000 €","titel":"*Sparer*-Pauschbetrag.","text":"2.000 € bei Zusammenveranlagung.","norm":"§ 20 Abs. 9 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_teilfreistellung.png","kicker":"Aktienfonds","zahl":"30 %","titel":"Bleiben *steuerfrei*.","text":"Teilfreistellung ab 51 % Aktienquote.","norm":"§ 20 Abs. 1 InvStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_66.png","kicker":"Vermietung","zahl":"66 %","titel":"Der *ortsüblichen* Miete.","text":"Ab hier volle Werbungskosten.","norm":"§ 21 Abs. 2 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_grundfreibetrag.png","kicker":"2026","zahl":"12.348 €","titel":"*Grundfreibetrag*.","text":"Bis hier keine Einkommensteuer.","norm":"§ 32a Abs. 1 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_kindergeld.png","kicker":"Kindergeld 2026","zahl":"259 €","titel":"Pro Kind und *Monat*.","text":"Für jedes Kind gleich.","norm":"§ 66 Abs. 1 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_handwerker.png","kicker":"Handwerker","zahl":"1.200 €","titel":"Weniger *Einkommensteuer*.","text":"20 % von 6.000 € Arbeitskosten.","norm":"§ 35a Abs. 3 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_wk.png","kicker":"Arbeitnehmer","zahl":"1.230 €","titel":"*Ohne* Nachweis.","text":"Arbeitnehmer-Pauschbetrag.","norm":"§ 9a EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_homeoffice_tag.png","kicker":"Homeoffice","zahl":"6 €","titel":"Pro *Tag*.","text":"Höchstens 1.260 € im Jahr.","norm":"§ 4 Abs. 5 Satz 1 Nr. 6c EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_oss.png","kicker":"One-Stop-Shop","zahl":"10.000 €","titel":"*EU-weit* an Privatkunden.","text":"Darüber gilt die USt des Kundenlands.","norm":"§ 3c Abs. 4 UStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_ist_2026.png","kicker":"Istversteuerung","zahl":"800.000 €","titel":"*Vorjahres*umsatz.","text":"Bis hier USt erst bei Zahlung.","norm":"§ 20 UStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_iab.png","kicker":"Investitionsabzugsbetrag","zahl":"50 %","titel":"*Vorab* abziehen.","text":"Der geplanten Anschaffungskosten.","norm":"§ 7g Abs. 1 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_saeumnis.png","kicker":"Säumniszuschlag","zahl":"1 %","titel":"Pro *angefangenem* Monat.","text":"Schonfrist drei Tage bei Überweisung.","norm":"§ 240 AO"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_einspruch.png","kicker":"Einspruch","zahl":"1","titel":"*Monat* Zeit.","text":"Ab Bekanntgabe des Bescheids.","norm":"§ 355 AO"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_verjaehrung.png","kicker":"Verjährung","zahl":"4","titel":"*Jahre* Regelfrist.","text":"Fünf oder zehn bei Verkürzung.","norm":"§ 169 Abs. 2 AO"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_belege_8.png","kicker":"Aufbewahrung","zahl":"8","titel":"*Jahre* für Belege.","text":"Seit 2025 – vorher zehn.","norm":"§ 147 Abs. 3 AO"}
+  ] }

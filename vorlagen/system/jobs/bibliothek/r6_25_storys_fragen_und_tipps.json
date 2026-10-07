@@ -1,0 +1,13 @@
+{ "titel": "Storys · Fragen und Tipps (Runde 6)", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/frage_homeoffice.png","typ":"frage","kicker":"Umfrage","titel":"Wie viele Tage *Homeoffice* pro Woche?"},
+    {"vorlage":"story","datei":"storys/frage_einspruch.png","typ":"frage","kicker":"Ehrlich","titel":"Schon mal *Einspruch* eingelegt?"},
+    {"vorlage":"story","datei":"storys/frage_belege.png","typ":"frage","kicker":"Umfrage","titel":"Belege *digital* oder im Ordner?"},
+    {"vorlage":"story","datei":"storys/frage_oss.png","typ":"frage","kicker":"Umfrage","titel":"Verkauft ihr an Privat­kunden *in der EU*?"},
+    {"vorlage":"story","datei":"storys/frage_glossar_5.png","typ":"antwort","kicker":"Glossar Teil 5","titel":"Welchen Steuer­begriff *erkläre* ich als Nächstes?"},
+    {"vorlage":"story","datei":"storys/tipp_handwerker.png","typ":"info","kicker":"Tipp","titel":"Handwerker: *Arbeit* getrennt ausweisen.","text":"Nur Arbeits-, Maschinen- und Fahrtkosten zählen für die 20 % (§ 35a EStG)."},
+    {"vorlage":"story","datei":"storys/tipp_einspruch.png","typ":"info","kicker":"Tipp","titel":"Einspruch: Frist *notieren*.","text":"Absendung plus vier Tage, dann ein Monat. Die Begründung kann später kommen."},
+    {"vorlage":"story","datei":"storys/tipp_bau.png","typ":"info","kicker":"Tipp","titel":"Bauleistung: *USt 1 TG* anfordern.","text":"Mit der Bescheinigung ist klar, dass der Kunde die Steuer schuldet."},
+    {"vorlage":"story","datei":"storys/tipp_iab.png","typ":"info","kicker":"Tipp","titel":"IAB: *Drei Jahre* im Kalender.","punkte":["Abzugsjahr notieren","Investition bis Ende Jahr 3","Sonst rückwirkend weg – mit Zinsen"]},
+    {"vorlage":"story","datei":"storys/tipp_zahlung.png","typ":"info","kicker":"Tipp","titel":"Steuer *per Lastschrift*.","text":"Mit SEPA-Mandat zieht das Finanzamt pünktlich ein – keine Säumniszuschläge."}
+  ] }

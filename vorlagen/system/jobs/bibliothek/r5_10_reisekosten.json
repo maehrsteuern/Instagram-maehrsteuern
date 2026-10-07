@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Lohn – „Reisekosten 2026“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/reisekosten/folie_01.png","typ":"titel","titel":"Reisekosten *2026*: vier Zahlen.","sub":"Verpflegung, Kürzung, Kilometer.","saeule":"Lohn"},
+    {"vorlage":"karussell","datei":"karussell/reisekosten/folie_02.png","typ":"inhalt","saeule":"Verpflegung","titel":"*14 €* und *28 €*.","zeilen":[["Mehr als 8 Stunden abwesend","14 €"],["An- und Abreisetag","14 €"],["24 Stunden abwesend","28 €"]],"boxTitel":"NORM","box":"§ 9 Abs. 4a EStG"},
+    {"vorlage":"karussell","datei":"karussell/reisekosten/folie_03.png","typ":"inhalt","saeule":"Kürzung","titel":"Gestellte Mahlzeiten *mindern*.","zeilen":[["Frühstück (20 %)","5,60 €"],["Mittag- oder Abendessen (40 %)","11,20 €"]],"boxTitel":"DREI MONATE","box":"Am selben Ort gelten die Pauschalen nur die ersten drei Monate."},
+    {"vorlage":"karussell","datei":"karussell/reisekosten/folie_04.png","typ":"inhalt","saeule":"Dienstreise","titel":"*0,30 €* je gefahrenem km.","text":"Mit dem eigenen Pkw, für Hin- und Rückweg. Ohne Einzelnachweis.","boxTitel":"NORM","box":"§ 9 Abs. 1 Satz 3 Nr. 4a EStG"},
+    {"vorlage":"karussell","datei":"karussell/reisekosten/folie_05.png","typ":"inhalt","saeule":"Arbeitsweg","titel":"*0,38 €* ab dem ersten km.","text":"Seit 2026 gilt die Entfernungspauschale einheitlich – nur für die einfache Strecke.","boxTitel":"NORM","box":"§ 9 Abs. 1 Satz 3 Nr. 4 EStG"},
+    {"vorlage":"karussell","datei":"karussell/reisekosten/folie_06.png","typ":"cta","titel":"Reisekosten *ohne Excel*?","text":"Ein Tool rechnet Pauschalen und Kürzungen pro Reise.","saeule":"Lohn"}
+  ] }

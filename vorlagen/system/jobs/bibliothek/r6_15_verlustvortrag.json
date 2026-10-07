@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Verluste richtig nutzen“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/verlustvortrag_2/folie_01.png","typ":"titel","titel":"Verlust gemacht? *So* wird er genutzt.","sub":"Rücktrag und Vortrag nach § 10d EStG.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/verlustvortrag_2/folie_02.png","typ":"inhalt","saeule":"Zurück","titel":"In die *zwei* Vorjahre.","text":"Der Verlust wird zuerst zurückgetragen – das bringt eine Erstattung.","boxTitel":"NORM","box":"§ 10d Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/verlustvortrag_2/folie_03.png","typ":"inhalt","saeule":"Wahlrecht","titel":"Rücktrag *abwählen*.","text":"Wer den Verlust später besser nutzen kann, verzichtet auf den Rücktrag.","boxTitel":"NORM","box":"§ 10d Abs. 1 Satz 6 EStG"},
+    {"vorlage":"karussell","datei":"karussell/verlustvortrag_2/folie_04.png","typ":"inhalt","saeule":"Vortrag","titel":"*1 Mio. €* unbegrenzt.","text":"Darüber hinaus ist der Gewinn nur zu 70 % mit Verlusten verrechenbar (2024 bis 2027).","boxTitel":"NORM","box":"§ 10d Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/verlustvortrag_2/folie_05.png","typ":"inhalt","saeule":"Feststellung","titel":"*Gesondert* festgestellt.","text":"Der verbleibende Verlustvortrag steht in einem eigenen Bescheid. Einspruch dort einlegen.","boxTitel":"NORM","box":"§ 10d Abs. 4 EStG"},
+    {"vorlage":"karussell","datei":"karussell/verlustvortrag_2/folie_06.png","typ":"cta","titel":"Rücktrag oder Vortrag *vergleichen*?","text":"Ein Tool rechnet beide Varianten mit euren Zahlen.","saeule":"Wissen"}
+  ] }

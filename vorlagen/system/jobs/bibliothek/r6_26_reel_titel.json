@@ -1,0 +1,11 @@
+{ "titel": "Reel-Titelbilder (Runde 6)", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"reel_titel","datei":"reels/reel_homeoffice_tag/titelbild.png","kicker":"Lohn · Steuern × Code","titel":"*6 €*\npro Tag","sub":"Die Homeoffice-Pauschale."},
+    {"vorlage":"reel_titel","datei":"reels/reel_handwerker/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"*20 %*\nzurück","sub":"Handwerker im Haushalt."},
+    {"vorlage":"reel_titel","datei":"reels/reel_einspruch/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Ein Monat.\n*Nicht mehr.*","sub":"Einspruch richtig einlegen."},
+    {"vorlage":"reel_titel","datei":"reels/reel_belege/titelbild.png","kicker":"Praxis · Steuern × Code","titel":"*8 Jahre*\nstatt 10","sub":"Was im Januar weg darf."},
+    {"vorlage":"reel_titel","datei":"reels/reel_oss/titelbild.png","kicker":"Umsatzsteuer","titel":"*10.000 €*\nEU-weit","sub":"Der One-Stop-Shop."},
+    {"vorlage":"reel_titel","datei":"reels/reel_vermietung/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"*66 %*\nreichen","sub":"Vermieten an die Familie."},
+    {"vorlage":"reel_titel","datei":"reels/reel_iab/titelbild.png","kicker":"Wissen · Steuern × Code","titel":"Heute abziehen.\n*Später kaufen.*","sub":"Der Investitionsabzugsbetrag."},
+    {"vorlage":"reel_titel","datei":"reels/reel_bau/titelbild.png","kicker":"Umsatzsteuer","titel":"Am Bau zahlt\n*der Kunde*","sub":"Reverse-Charge in 15 Sekunden."}
+  ] }

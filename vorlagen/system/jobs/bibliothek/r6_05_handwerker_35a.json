@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Wissen – „Handwerker und Haushalt“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/handwerker_35a/folie_01.png","typ":"titel","titel":"Handwerker im Haushalt: *20 %* zurück.","sub":"Die Steuerermäßigung nach § 35a EStG.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/handwerker_35a/folie_02.png","typ":"inhalt","saeule":"Handwerker","titel":"Höchstens *1.200 €* Ermäßigung.","text":"20 % von bis zu 6.000 € Arbeitskosten im Jahr.","boxTitel":"NORM","box":"§ 35a Abs. 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/handwerker_35a/folie_03.png","typ":"inhalt","saeule":"Dienstleistungen","titel":"Höchstens *4.000 €*.","text":"20 % für haushaltsnahe Dienstleistungen wie Reinigung, Gartenpflege, Pflege.","boxTitel":"NORM","box":"§ 35a Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/handwerker_35a/folie_04.png","typ":"inhalt","saeule":"Minijob im Haushalt","titel":"Höchstens *510 €*.","text":"20 % der Aufwendungen für eine geringfügige Beschäftigung im Privathaushalt.","boxTitel":"NORM","box":"§ 35a Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/handwerker_35a/folie_05.png","typ":"inhalt","saeule":"Begünstigt","titel":"Nur *Arbeit*, kein Material.","text":"Arbeits-, Maschinen- und Fahrtkosten. Die Rechnung sollte sie getrennt ausweisen."},
+    {"vorlage":"karussell","datei":"karussell/handwerker_35a/folie_06.png","typ":"inhalt","saeule":"Pflicht","titel":"*Rechnung* und Überweisung.","text":"Barzahlung schließt die Ermäßigung aus.","boxTitel":"NORM","box":"§ 35a Abs. 5 Satz 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/handwerker_35a/folie_07.png","typ":"cta","titel":"Rechnungen *aufteilen*?","text":"Ein Tool trennt Arbeit und Material und rechnet die 20 %.","saeule":"Wissen"}
+  ] }

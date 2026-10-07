@@ -1,0 +1,13 @@
+{ "titel": "Storys · Zahl des Tages (Runde 5)", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"story","datei":"storys/zdt_25000.png","typ":"info","kicker":"Zahl des Tages","titel":"*25.000 €*","text":"Vorjahresumsatz-Grenze für Kleinunternehmer seit 2025 (§ 19 Abs. 1 UStG)."},
+    {"vorlage":"story","datei":"storys/zdt_e_auto.png","typ":"info","kicker":"Zahl des Tages","titel":"*0,25 %*\nE-Dienstwagen","text":"Statt 1 % vom Bruttolistenpreis – bis zur Preisgrenze (§ 6 Abs. 1 Nr. 4 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_gebaeude.png","typ":"info","kicker":"Zahl des Tages","titel":"*3 %*\nGebäude-AfA","text":"Für Wohngebäude, die ab 2023 fertiggestellt wurden (§ 7 Abs. 4 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_35.png","typ":"info","kicker":"Zahl des Tages","titel":"*4,0*\nfach","text":"So oft wird der Gewerbesteuer-Messbetrag auf die Einkommensteuer angerechnet (§ 35 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_elftel.png","typ":"info","kicker":"Zahl des Tages","titel":"*1/11*","text":"Sondervorauszahlung für die Dauerfristverlängerung bei Monatszahlern (§ 47 UStDV)."},
+    {"vorlage":"story","datei":"storys/zdt_zm.png","typ":"info","kicker":"Zahl des Tages","titel":"*25.*\nTag","text":"Frist für die Zusammenfassende Meldung nach Monatsende (§ 18a UStG)."},
+    {"vorlage":"story","datei":"storys/zdt_verpflegung.png","typ":"info","kicker":"Zahl des Tages","titel":"*14 €*","text":"Verpflegungspauschale ab acht Stunden Abwesenheit (§ 9 Abs. 4a EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_038.png","typ":"info","kicker":"Zahl des Tages","titel":"*0,38 €*\nje km","text":"Entfernungspauschale seit 2026 – ab dem ersten Kilometer (§ 9 Abs. 1 Satz 3 Nr. 4 EStG)."},
+    {"vorlage":"story","datei":"storys/zdt_20000.png","typ":"info","kicker":"Zahl des Tages","titel":"*20.000 €*","text":"Schenkungsfreibetrag für Geschwister, Nichten, Neffen und Fremde (§ 16 Abs. 1 Nr. 5, 7 ErbStG)."},
+    {"vorlage":"story","datei":"storys/zdt_80000.png","typ":"info","kicker":"Zahl des Tages","titel":"*80.000 €*\nGewinn","text":"Darüber droht die Buchführungspflicht (§ 141 Abs. 1 AO)."}
+  ] }

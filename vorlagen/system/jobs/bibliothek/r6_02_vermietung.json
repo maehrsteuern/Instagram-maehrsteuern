@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Wissen – „Vermietung: fünf Grenzen“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/vermietung/folie_01.png","typ":"titel","titel":"Vermieten: *fünf* Grenzen, die zählen.","sub":"Werbungskosten bei Vermietung und Verpachtung.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/vermietung/folie_02.png","typ":"inhalt","saeule":"Zinsen","titel":"Schuldzinsen sind *Werbungskosten*.","text":"Soweit das Darlehen die vermietete Immobilie finanziert.","boxTitel":"NORM","box":"§ 9 Abs. 1 Satz 3 Nr. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/vermietung/folie_03.png","typ":"inhalt","saeule":"Günstige Miete","titel":"Ab *66 %* voll abziehbar.","text":"Beträgt die Miete mindestens 66 % der ortsüblichen, gilt die Vermietung als voll entgeltlich.","boxTitel":"NORM","box":"§ 21 Abs. 2 Satz 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/vermietung/folie_04.png","typ":"inhalt","saeule":"Unter 50 %","titel":"Dann wird *aufgeteilt*.","text":"Werbungskosten nur anteilig. Zwischen 50 und 66 % entscheidet eine Totalüberschussprognose.","boxTitel":"NORM","box":"§ 21 Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/vermietung/folie_05.png","typ":"inhalt","saeule":"Nach dem Kauf","titel":"*15 %* in drei Jahren.","text":"Instandsetzung über 15 % der Gebäude-Anschaffungskosten (netto) wird zu Anschaffungskosten – Abschreibung statt Sofortabzug.","boxTitel":"NORM","box":"§ 6 Abs. 1 Nr. 1a EStG"},
+    {"vorlage":"karussell","datei":"karussell/vermietung/folie_06.png","typ":"inhalt","saeule":"Große Reparatur","titel":"Auf *2 bis 5 Jahre* verteilen.","text":"Größerer Erhaltungsaufwand bei Wohngebäuden im Privatvermögen darf gleichmäßig verteilt werden.","boxTitel":"NORM","box":"§ 82b EStDV"},
+    {"vorlage":"karussell","datei":"karussell/vermietung/folie_07.png","typ":"cta","titel":"Anlage V *vorbereiten*?","text":"Ein Tool prüft 15-%-Grenze und Mietquote automatisch.","saeule":"Wissen"}
+  ] }

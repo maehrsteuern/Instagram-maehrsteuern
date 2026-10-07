@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Umsatzsteuer – „7 % oder 19 %?“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/ust_saetze/folie_01.png","typ":"titel","titel":"7 % oder *19 %*?","sub":"Die Steuersätze und ihre Ausnahmen.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/ust_saetze/folie_02.png","typ":"inhalt","saeule":"Grundregel","titel":"*19 %* – außer es steht anders im Gesetz.","zeilen":[["Regelsteuersatz","19 %"],["Ermäßigter Satz","7 %"],["Nullsatz (z. B. Photovoltaik)","0 %"]],"boxTitel":"NORM","box":"§ 12 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ust_saetze/folie_03.png","typ":"inhalt","saeule":"7 %","titel":"Lebensmittel, *Bücher*, Zeitungen.","text":"Auch E-Books und Nahverkehr. Die Liste der begünstigten Gegenstände steht in Anlage 2 zum UStG.","boxTitel":"NORM","box":"§ 12 Abs. 2 Nr. 1, 14 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ust_saetze/folie_04.png","typ":"inhalt","saeule":"Hotel","titel":"Übernachtung 7 %, *Frühstück* 19 %.","text":"Nur die Vermietung zur kurzfristigen Beherbergung ist ermäßigt. Nebenleistungen wie Frühstück nicht.","boxTitel":"NORM","box":"§ 12 Abs. 2 Nr. 11 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ust_saetze/folie_05.png","typ":"inhalt","saeule":"Gastronomie ab 2026","titel":"Speisen *7 %*, Getränke 19 %.","text":"Restaurant- und Verpflegungsleistungen sind seit 1.1.2026 dauerhaft ermäßigt – Getränke ausgenommen."},
+    {"vorlage":"karussell","datei":"karussell/ust_saetze/folie_06.png","typ":"inhalt","saeule":"Photovoltaik","titel":"*0 %* auf die Anlage.","text":"Lieferung und Installation bei Wohngebäuden bis 30 kW. Kein Vorsteuerabzug nötig.","boxTitel":"NORM","box":"§ 12 Abs. 3 UStG"},
+    {"vorlage":"karussell","datei":"karussell/ust_saetze/folie_07.png","typ":"cta","titel":"Satz pro Artikel *prüfen*?","text":"Ein Tool ordnet Positionen dem richtigen Steuersatz zu.","saeule":"Umsatzsteuer"}
+  ] }

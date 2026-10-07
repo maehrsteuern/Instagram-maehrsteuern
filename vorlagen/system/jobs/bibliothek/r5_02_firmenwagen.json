@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Lohn – „Firmenwagen: 1 % oder Fahrtenbuch?“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/firmenwagen/folie_01.png","typ":"titel","titel":"Firmenwagen: *1 %* oder Fahrtenbuch?","sub":"Die private Nutzung im Überblick.","saeule":"Lohn"},
+    {"vorlage":"karussell","datei":"karussell/firmenwagen/folie_02.png","typ":"inhalt","saeule":"Pauschal","titel":"*1 %* vom Bruttolistenpreis.","text":"Pro Monat, unabhängig davon, wie viel privat gefahren wird.","boxTitel":"NORM","box":"§ 6 Abs. 1 Nr. 4 Satz 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/firmenwagen/folie_03.png","typ":"inhalt","saeule":"Arbeitsweg","titel":"Plus *0,03 %* je Entfernungs-km.","text":"Für Fahrten zur ersten Tätigkeitsstätte. Alternativ 0,002 % je Fahrt bei höchstens 180 Fahrten im Jahr.","boxTitel":"NORM","box":"§ 8 Abs. 2 Satz 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/firmenwagen/folie_04.png","typ":"inhalt","saeule":"Elektro und Hybrid","titel":"*0,25 %* oder 0,5 %.","zeilen":[["E-Auto bis Preisgrenze","0,25 %"],["E-Auto darüber","0,5 %"],["Plug-in-Hybrid (Kriterien erfüllt)","0,5 %"],["Verbrenner","1 %","summe"]],"boxTitel":"PREISGRENZE","box":"100.000 € Bruttolistenpreis bei Anschaffung ab 1.7.2025"},
+    {"vorlage":"karussell","datei":"karussell/firmenwagen/folie_05.png","typ":"inhalt","saeule":"Fahrtenbuch","titel":"Echte Kosten statt *Pauschale*.","text":"Lohnt sich bei wenig Privatfahrten oder abgeschriebenem Wagen. Es muss zeitnah und geschlossen geführt werden.","boxTitel":"NORM","box":"§ 6 Abs. 1 Nr. 4 Satz 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/firmenwagen/folie_06.png","typ":"inhalt","saeule":"Zuzahlung","titel":"Eigene Zahlungen *mindern* den Vorteil.","text":"Ein Nutzungsentgelt des Arbeitnehmers wird vom geldwerten Vorteil abgezogen.","boxTitel":"NORM","box":"R 8.1 Abs. 9 Nr. 4 LStR"},
+    {"vorlage":"karussell","datei":"karussell/firmenwagen/folie_07.png","typ":"cta","titel":"Beide Methoden *vergleichen*?","text":"Ein Rechner stellt 1 % und Fahrtenbuch mit euren Zahlen gegenüber.","saeule":"Lohn"}
+  ] }

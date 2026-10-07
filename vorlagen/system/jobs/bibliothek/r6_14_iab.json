@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Wissen – „Investitionsabzugsbetrag“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/iab_2/folie_01.png","typ":"titel","titel":"Investitions­abzugsbetrag: *heute* abziehen, *später* kaufen.","sub":"§ 7g EStG für kleine Betriebe.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/iab_2/folie_02.png","typ":"inhalt","saeule":"Höhe","titel":"*50 %* der Kosten.","text":"Der geplanten Anschaffungskosten eines beweglichen Wirtschaftsguts.","boxTitel":"NORM","box":"§ 7g Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/iab_2/folie_03.png","typ":"inhalt","saeule":"Grenzen","titel":"*200.000 €* – zweimal.","text":"Höchstens 200.000 € Abzugsbeträge pro Betrieb, und der Gewinn darf 200.000 € nicht übersteigen.","boxTitel":"NORM","box":"§ 7g Abs. 1 Satz 2, 4 EStG"},
+    {"vorlage":"karussell","datei":"karussell/iab_2/folie_04.png","typ":"inhalt","saeule":"Frist","titel":"*Drei Jahre* zum Investieren.","text":"Sonst wird der Abzug im Ursprungsjahr rückgängig gemacht – mit Zinsen.","boxTitel":"NORM","box":"§ 7g Abs. 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/iab_2/folie_05.png","typ":"inhalt","saeule":"Dazu","titel":"*40 %* Sonder-AfA.","text":"Im Jahr der Anschaffung und den vier Folgejahren, zusätzlich zur normalen AfA.","boxTitel":"NORM","box":"§ 7g Abs. 5 EStG"},
+    {"vorlage":"karussell","datei":"karussell/iab_2/folie_06.png","typ":"inhalt","saeule":"Nutzung","titel":"Mindestens *90 %* betrieblich.","text":"Im Jahr der Anschaffung und im Folgejahr.","boxTitel":"NORM","box":"§ 7g Abs. 4, 6 EStG"},
+    {"vorlage":"karussell","datei":"karussell/iab_2/folie_07.png","typ":"cta","titel":"Fristen *überwachen*?","text":"Ein Tool erinnert vor Ablauf der drei Jahre.","saeule":"Wissen"}
+  ] }

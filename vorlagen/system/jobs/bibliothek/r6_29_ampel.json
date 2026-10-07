@@ -1,0 +1,5 @@
+{ "titel": "Ampel-Nahaufnahmen · Bescheidprüfung", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"ampel","datei":"bausteine/ampel_bescheid_rot.png","stand":"rot","kopf":"Bescheidprüfung","datum":"Okt. 2026","kicker":"§ 355 AO","titel":"Frist\n*läuft ab*","namen":["Bescheid eingegangen","Abgleich mit Erklärung","Abweichung begründet","Einspruchsfrist","Zahlung fällig"],"zeilen":[["gruen","ok"],["rot","Differenz"],["rot","offen"],["rot","3 Tage"],["gelb","prüfen"]]},
+    {"vorlage":"ampel","datei":"bausteine/ampel_bescheid_gruen.png","stand":"gruen","kopf":"Bescheidprüfung","datum":"Okt. 2026","kicker":"§ 355 AO","titel":"Bescheid\n*geprüft.*","namen":["Bescheid eingegangen","Abgleich mit Erklärung","Abweichung begründet","Einspruchsfrist","Zahlung fällig"],"zeilen":[["gruen","ok"],["gruen","ok"],["gruen","keine"],["gruen","gewahrt"],["gruen","bezahlt"]]}
+  ] }

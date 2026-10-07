@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „One-Stop-Shop“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/oss/folie_01.png","typ":"titel","titel":"Online an Privatkunden in der EU: *der OSS*.","sub":"Wann ausländische USt anfällt.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/oss/folie_02.png","typ":"inhalt","saeule":"Schwelle","titel":"*10.000 €* EU-weit.","text":"Gilt für Fernverkäufe und elektronische Dienstleistungen an Privatkunden zusammen.","boxTitel":"NORM","box":"§ 3c Abs. 4 UStG"},
+    {"vorlage":"karussell","datei":"karussell/oss/folie_03.png","typ":"inhalt","saeule":"Darüber","titel":"USt des *Bestimmungs­lands*.","text":"Dann gilt der Steuersatz des Landes, in dem der Kunde sitzt.","boxTitel":"NORM","box":"§ 3c Abs. 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/oss/folie_04.png","typ":"inhalt","saeule":"Meldung","titel":"*Ein* Portal statt 27.","text":"Registrierung beim BZSt. Die Erklärung kommt quartalsweise bis zum Ende des Folgemonats.","boxTitel":"NORM","box":"§ 18j UStG"},
+    {"vorlage":"karussell","datei":"karussell/oss/folie_05.png","typ":"inhalt","saeule":"Rechnung","titel":"Mit *ausländischem* Satz.","text":"Etwa 21 % für einen Kunden in den Niederlanden oder 20 % in Österreich."},
+    {"vorlage":"karussell","datei":"karussell/oss/folie_06.png","typ":"cta","titel":"Länder­sätze *pflegen*?","text":"Ein Tool hält alle EU-Steuersätze aktuell und rechnet pro Land.","saeule":"Umsatzsteuer"}
+  ] }

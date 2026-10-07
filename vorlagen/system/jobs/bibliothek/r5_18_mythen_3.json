@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Mythos oder Fakt – „Teil 3“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/mythen_3/folie_01.png","typ":"titel","titel":"Mythos oder Fakt? *Teil 3*.","sub":"Fünf Sätze, die man oft hört.","saeule":"Mythos oder Fakt"},
+    {"vorlage":"karussell","datei":"karussell/mythen_3/folie_02.png","typ":"inhalt","saeule":"Mythos","titel":"„Die Spekulationsfrist gilt auch fürs *Eigenheim*.“","text":"Wer im Verkaufsjahr und den zwei Jahren davor selbst darin wohnt, verkauft steuerfrei.","boxTitel":"NORM","box":"§ 23 Abs. 1 Satz 1 Nr. 1 Satz 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/mythen_3/folie_03.png","typ":"inhalt","saeule":"Fakt","titel":"„Der Schenkungs­freibetrag *lebt* nach zehn Jahren *neu auf*.“","text":"Erst Schenkungen innerhalb von zehn Jahren werden zusammengerechnet.","boxTitel":"NORM","box":"§ 14 ErbStG"},
+    {"vorlage":"karussell","datei":"karussell/mythen_3/folie_04.png","typ":"inhalt","saeule":"Mythos","titel":"„Ein Einspruch *kostet* Gebühren.“","text":"Das Einspruchsverfahren ist kostenfrei. Kosten entstehen erst bei einer Klage.","boxTitel":"NORM","box":"§ 347 ff. AO"},
+    {"vorlage":"karussell","datei":"karussell/mythen_3/folie_05.png","typ":"inhalt","saeule":"Fakt","titel":"„Kleinunternehmer ziehen *keine Vorsteuer*.“","text":"Wer keine Umsatzsteuer berechnet, kann auch keine abziehen.","boxTitel":"NORM","box":"§ 19 Abs. 1 Satz 4 UStG"},
+    {"vorlage":"karussell","datei":"karussell/mythen_3/folie_06.png","typ":"inhalt","saeule":"Mythos","titel":"„Seit 2026 sind *Getränke* im Restaurant ermäßigt.“","text":"Ermäßigt sind nur Speisen. Getränke bleiben bei 19 %."},
+    {"vorlage":"karussell","datei":"karussell/mythen_3/folie_07.png","typ":"cta","titel":"Welcher Mythos *fehlt*?","text":"Schreibt ihn in die Kommentare – er kommt in Teil 4.","saeule":"Mythos oder Fakt"}
+  ] }

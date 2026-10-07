@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „Falsche Steuer auf der Rechnung“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/par14c/folie_01.png","typ":"titel","titel":"Falsche USt auf der Rechnung: *Wer zahlt*?","sub":"§ 14c UStG und die Berichtigung.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/par14c/folie_02.png","typ":"inhalt","saeule":"Zu hoch","titel":"Der *Mehrbetrag* wird geschuldet.","text":"19 % statt 7 % ausgewiesen? Dann schuldet der Leistende die Differenz.","boxTitel":"NORM","box":"§ 14c Abs. 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/par14c/folie_03.png","typ":"inhalt","saeule":"Unberechtigt","titel":"Wer gar *nicht darf*, schuldet auch.","text":"Etwa Kleinunternehmer an Unternehmer oder Privatpersonen, die USt ausweisen.","boxTitel":"NORM","box":"§ 14c Abs. 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/par14c/folie_04.png","typ":"inhalt","saeule":"Kunde","titel":"*Kein* Vorsteuerabzug.","text":"Abziehbar ist nur die gesetzlich geschuldete Steuer – nicht der falsche Ausweis.","boxTitel":"NORM","box":"§ 15 Abs. 1 Satz 1 Nr. 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/par14c/folie_05.png","typ":"inhalt","saeule":"Lösung","titel":"*Rechnung berichtigen*.","text":"Beim zu hohen Ausweis wirkt die Korrektur im Zeitraum der Berichtigung.","boxTitel":"NORM","box":"§ 14c Abs. 1 Satz 2, § 17 UStG"},
+    {"vorlage":"karussell","datei":"karussell/par14c/folie_06.png","typ":"cta","titel":"Rechnungen *vorher* prüfen?","text":"Ein Tool gleicht Steuersatz und Leistungsart vor dem Versand ab.","saeule":"Umsatzsteuer"}
+  ] }

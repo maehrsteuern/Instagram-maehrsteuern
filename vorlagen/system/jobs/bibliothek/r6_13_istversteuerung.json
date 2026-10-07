@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „Ist- oder Sollversteuerung“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/istversteuerung/folie_01.png","typ":"titel","titel":"USt erst bei *Zahlung*?","sub":"Die Istversteuerung nach § 20 UStG.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/istversteuerung/folie_02.png","typ":"inhalt","saeule":"Soll","titel":"Steuer mit der *Leistung*.","text":"Grundregel: Die USt entsteht mit Ablauf des Monats, in dem geleistet wurde – auch wenn der Kunde noch nicht bezahlt hat.","boxTitel":"NORM","box":"§ 13 Abs. 1 Nr. 1 Buchst. a UStG"},
+    {"vorlage":"karussell","datei":"karussell/istversteuerung/folie_03.png","typ":"inhalt","saeule":"Ist","titel":"Steuer mit dem *Geldeingang*.","text":"Auf Antrag bei einem Vorjahresumsatz bis 800.000 €, für Freiberufler auch ohne Grenze.","boxTitel":"NORM","box":"§ 20 Satz 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/istversteuerung/folie_04.png","typ":"inhalt","saeule":"Vorsteuer","titel":"Vorsteuer *trotzdem sofort*.","text":"Der Vorsteuerabzug setzt Rechnung und Leistung voraus – nicht die eigene Zahlung, auch bei Istversteuerung.","boxTitel":"NORM","box":"§ 15 Abs. 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/istversteuerung/folie_05.png","typ":"inhalt","saeule":"Anzahlungen","titel":"Immer bei *Zahlung*.","text":"Auch Sollversteuerer schulden die USt auf Anzahlungen mit Vereinnahmung.","boxTitel":"NORM","box":"§ 13 Abs. 1 Nr. 1 Buchst. a Satz 4 UStG"},
+    {"vorlage":"karussell","datei":"karussell/istversteuerung/folie_06.png","typ":"cta","titel":"Liquidität *planen*?","text":"Ein Tool zeigt die USt-Zahllast nach Soll und Ist nebeneinander.","saeule":"Umsatzsteuer"}
+  ] }

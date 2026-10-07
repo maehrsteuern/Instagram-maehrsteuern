@@ -1,0 +1,10 @@
+{ "titel": "Karussell · Praxis – „Fünf Plausi-Checks für den Abschluss“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/excel_checks/folie_01.png","typ":"titel","titel":"Fünf *Plausi-Checks* für den Abschluss.","sub":"Bevor die Datei rausgeht.","saeule":"Praxis"},
+    {"vorlage":"karussell","datei":"karussell/excel_checks/folie_02.png","typ":"inhalt","saeule":"Check 1","titel":"Summen *gegenprüfen*.","text":"Jede Summe einmal anders herum rechnen. Zeilen und Spalten müssen dasselbe Ergebnis liefern."},
+    {"vorlage":"karussell","datei":"karussell/excel_checks/folie_03.png","typ":"inhalt","saeule":"Check 2","titel":"Abgleich mit der *SuSa*.","text":"Jeder Betrag in der Steuerdatei muss sich auf ein Konto der Summen- und Saldenliste zurückführen lassen."},
+    {"vorlage":"karussell","datei":"karussell/excel_checks/folie_04.png","typ":"inhalt","saeule":"Check 3","titel":"*Vorjahr* daneben.","text":"Große Abweichungen kurz begründen. Meist steckt eine Umbuchung oder ein Tippfehler dahinter."},
+    {"vorlage":"karussell","datei":"karussell/excel_checks/folie_05.png","typ":"inhalt","saeule":"Check 4","titel":"Keine *festen Werte* in Formeln.","text":"Steuersätze und Hebesätze gehören in eine Parameterzelle, nicht in die Formel."},
+    {"vorlage":"karussell","datei":"karussell/excel_checks/folie_06.png","typ":"inhalt","saeule":"Check 5","titel":"Eine *Prüfspalte*.","text":"Am Ende jeder Tabelle: Differenz gleich null? Dann grün. Sonst sofort sichtbar."},
+    {"vorlage":"karussell","datei":"karussell/excel_checks/folie_07.png","typ":"cta","titel":"Checks *automatisch*?","text":"Ein Tool prüft alle fünf Punkte, bevor ihr exportiert.","saeule":"Praxis"}
+  ] }

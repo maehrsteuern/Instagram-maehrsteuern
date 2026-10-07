@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Zufluss und Abfluss“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/zufluss/folie_01.png","typ":"titel","titel":"Wann zählt die *Zahlung*?","sub":"Zufluss und Abfluss nach § 11 EStG.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/zufluss/folie_02.png","typ":"inhalt","saeule":"Grundregel","titel":"Es zählt das *Konto*.","text":"Bei der Einnahmen-Überschuss-Rechnung entscheidet, wann das Geld fließt.","boxTitel":"NORM","box":"§ 11 Abs. 1, 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/zufluss/folie_03.png","typ":"inhalt","saeule":"Ausnahme","titel":"Die *10-Tage*-Regel.","text":"Regelmäßig wiederkehrende Zahlungen kurz vor oder nach dem Jahreswechsel gehören in das Jahr, zu dem sie wirtschaftlich gehören.","boxTitel":"NORM","box":"§ 11 Abs. 1 Satz 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/zufluss/folie_04.png","typ":"inhalt","saeule":"Klassiker","titel":"Die *USt* für Dezember.","text":"Fällig und bezahlt bis zum 10. Januar? Dann Betriebsausgabe des Vorjahres.","boxTitel":"NORM","box":"H 11 EStH"},
+    {"vorlage":"karussell","datei":"karussell/zufluss/folie_05.png","typ":"inhalt","saeule":"Vorauszahlung","titel":"Über *5 Jahre* verteilen.","text":"Wer Miete oder Nutzung für mehr als fünf Jahre im Voraus zahlt, muss die Ausgabe verteilen.","boxTitel":"NORM","box":"§ 11 Abs. 2 Satz 3 EStG"},
+    {"vorlage":"karussell","datei":"karussell/zufluss/folie_06.png","typ":"cta","titel":"Zahlungen *richtig* zuordnen?","text":"Ein Tool markiert Buchungen rund um den Jahreswechsel.","saeule":"Wissen"}
+  ] }

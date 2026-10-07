@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Wissen – „Spenden richtig absetzen“", "runde": 6, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/spenden/folie_01.png","typ":"titel","titel":"Spenden *richtig* absetzen.","sub":"Höchstbetrag, Nachweis, Parteien.","saeule":"Wissen"},
+    {"vorlage":"karussell","datei":"karussell/spenden/folie_02.png","typ":"inhalt","saeule":"Höchstbetrag","titel":"Bis *20 %* der Einkünfte.","text":"Vom Gesamtbetrag der Einkünfte – als Sonderausgabe.","boxTitel":"NORM","box":"§ 10b Abs. 1 EStG"},
+    {"vorlage":"karussell","datei":"karussell/spenden/folie_03.png","typ":"inhalt","saeule":"Nachweis","titel":"Bis *300 €* reicht der Kontoauszug.","text":"Bei gemeinnützigen Empfängern genügt der Buchungsbeleg statt Zuwendungsbestätigung.","boxTitel":"NORM","box":"§ 50 Abs. 4 EStDV"},
+    {"vorlage":"karussell","datei":"karussell/spenden/folie_04.png","typ":"inhalt","saeule":"Parteien","titel":"*50 %* direkt von der Steuer.","text":"Steuerermäßigung für Spenden bis 1.650 €, bei Zusammenveranlagung 3.300 €. Darüber hinaus Sonderausgabe.","boxTitel":"NORM","box":"§ 34g, § 10b Abs. 2 EStG"},
+    {"vorlage":"karussell","datei":"karussell/spenden/folie_05.png","typ":"inhalt","saeule":"Zu viel gespendet","titel":"Der Rest wird *vorgetragen*.","text":"Was über den Höchstbetrag hinausgeht, zählt in den Folgejahren.","boxTitel":"NORM","box":"§ 10b Abs. 1 Satz 9 EStG"},
+    {"vorlage":"karussell","datei":"karussell/spenden/folie_06.png","typ":"cta","titel":"Spenden *gesammelt* erfassen?","text":"Ein Tool sortiert Belege nach Empfänger und Nachweisart.","saeule":"Wissen"}
+  ] }

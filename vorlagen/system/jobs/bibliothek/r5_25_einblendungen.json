@@ -1,0 +1,13 @@
+{ "titel": "Reel-Einblendungen (Runde 5)", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"einblendung","datei":"bausteine/haken_kleinunternehmer.png","typ":"haken","kicker":"Kleinunternehmer?","titel":"Ein Auftrag zu viel –\n*und die USt ist da*.","sub":"§ 19 UStG."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_fahrtenbuch.png","typ":"haken","titel":"Das Fahrtenbuch\n*spart nicht immer*.","sub":"Hier ist die Rechnung."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_schnitzel.png","typ":"haken","kicker":"Seit 2026","titel":"Schnitzel 7 %.\n*Cola 19 %.*","sub":"Ein Bon, zwei Sätze."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_enkel.png","typ":"haken","kicker":"Schenkung","titel":"*200.000 €*\nan jeden Enkel.","sub":"Steuerfrei."},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_zm.png","typ":"haken_ueber","kicker":"Ampel","titel":"Rot heißt:\n*ZM fehlt*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/haken_ueber_plausi.png","typ":"haken_ueber","kicker":"Prüfspalte","titel":"Differenz:\n*0,00 €*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_susa.png","typ":"leiste","kicker":"Schritt 1","titel":"SuSa *abgleichen*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/leiste_vorjahr.png","typ":"leiste","kicker":"Schritt 2","titel":"Vorjahr *daneben*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_plausi.png","typ":"abspann","titel":"Erst prüfen.\n*Dann senden.*"},
+    {"vorlage":"einblendung","datei":"bausteine/abspann_ust.png","typ":"abspann","titel":"Der richtige Satz.\n*Jedes Mal.*"}
+  ] }

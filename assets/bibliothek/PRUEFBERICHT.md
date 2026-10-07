@@ -74,3 +74,35 @@ Alle 29 Job-Dateien `r4_*.json` (217 Bilder) vor dem Rendern gegengelesen, Recht
 - [ ] **r4_13_lohn_extras.json** (folie_01/02.png) – „Sieben *steuerfreie* Extras“: Die Erholungsbeihilfe ist für den Mitarbeitenden steuerfrei, der Arbeitgeber versteuert sie aber pauschal mit 25 % (§ 40 Abs. 2 Satz 1 Nr. 3 EStG). Aufmerksamkeiten sind gar kein Arbeitslohn. Die Tabelle nennt „pauschal 25 %“, für Instagram ist das vertretbar. Die Werte stimmen: 600 € Gesundheitsförderung (§ 3 Nr. 34 EStG), 156 € Erholungsbeihilfe je Arbeitnehmer. *Vorschlag:* In der Caption „steuerfrei bzw. pauschal versteuert“ schreiben.
 - [ ] **r4_22_einzelposts.json** (zahl_stundung.png) – „0,5 % pro vollem Monat, gilt auch für Aussetzungszinsen (§ 237 AO)“: Der Gesetzeswortlaut stimmt, die Zinsreform 2022 hat nur § 233a AO auf 0,15 % gesenkt. Ob 0,5 % bei Aussetzungszinsen verfassungsgemäß ist, wird diskutiert. *Vorschlag:* Vor dem Posten den aktuellen Stand der Rechtsprechung prüfen.
 - [ ] **r4_16_grest_share.json** (folie_04.png) – „3,5 % bis 6,5 %“: Das ist die Spanne der Landessätze (Bayern 3,5 %, z. B. NRW/Brandenburg/Saarland/Schleswig-Holstein 6,5 %). Vor dem Posten die aktuellen Landessätze kurz gegenprüfen, weil die Länder sie jederzeit ändern können.
+
+# Runden 5 und 6 (07.10.2026)
+
+Alle 56 Job-Dateien (400 Bilder) vor dem Rendern gegengelesen, Rechtsstand Okt. 2026. Grundwerte 2026 (12.348 € / 3.414 € / 1.464 € / 259 €), Minijob 603 € (13,90 € × 130 ÷ 3), Kürzungen 5,60 €/11,20 €, 50.000 €-Beispiele und Quiz-Auflösungen geprüft – rechnerisch alles stimmig.
+
+## Korrigiert vor dem Rendern (10)
+
+- **r5_04_par35.json** (folie_04.png, `text`): „tatsächlich gezahlte“ → „tatsächlich zu zahlende“ – § 35 Abs. 1 Satz 5 EStG begrenzt auf die „tatsächlich zu zahlende“ Gewerbesteuer (gleiche Korrektur wie r2_02 im Prüfbericht).
+- **r5_10_reisekosten.json** (folie_05.png, `box`): „§ 9 Abs. 2 EStG“ → „§ 9 Abs. 1 Satz 3 Nr. 4 EStG“ – Die Entfernungspauschale (0,38 €) steht in § 9 Abs. 1 Satz 3 Nr. 4 EStG; § 9 Abs. 2 EStG regelt nur die Abgeltungswirkung.
+- **r5_20_einzelposts.json** (zahl_pendler.png, `norm`): „§ 9 Abs. 2 EStG“ → „§ 9 Abs. 1 Satz 3 Nr. 4 EStG“ – Die Entfernungspauschale (0,38 €) steht in § 9 Abs. 1 Satz 3 Nr. 4 EStG; § 9 Abs. 2 EStG regelt nur die Abgeltungswirkung.
+- **r5_22_storys_zahl_des_tages.json** (zdt_038.png, `text`): „§ 9 Abs. 2 EStG“ → „§ 9 Abs. 1 Satz 3 Nr. 4 EStG“ – Die Entfernungspauschale (0,38 €) steht in § 9 Abs. 1 Satz 3 Nr. 4 EStG; § 9 Abs. 2 EStG regelt nur die Abgeltungswirkung.
+- **r5_15_rap.json** (folie_05.png, `titel`): „*1.000 €*“ → „*5.000 €*“ – § 5 Abs. 5 Satz 2 EStG i. d. F. des Wachstumschancengesetzes: Verzicht auf den RAP bis 5.000 € je Posten (Wirtschaftsjahre ab 2024). 1.000 € gab es nie als Grenze.
+- **r5_20_einzelposts.json** (zahl_rap.png, `zahl`): „1.000 €“ → „5.000 €“ – § 5 Abs. 5 Satz 2 EStG i. d. F. des Wachstumschancengesetzes: Verzicht auf den RAP bis 5.000 € je Posten (Wirtschaftsjahre ab 2024). 1.000 € gab es nie als Grenze.
+- **r5_23_storys_fragen_und_tipps.json** (tipp_rap.png, `titel`): „RAP bis 1.000 €“ → „RAP bis 5.000 €“ – § 5 Abs. 5 Satz 2 EStG i. d. F. des Wachstumschancengesetzes: Verzicht auf den RAP bis 5.000 € je Posten (Wirtschaftsjahre ab 2024). 1.000 € gab es nie als Grenze.
+- **r5_21_storys_quiz_und_aufloesung.json** (quiz_kleinunternehmer_aufloesung.png, `titel`): „Bei *100.000 €*.“ → „Über *100.000 €*.“ – Die Befreiung endet erst, wenn 100.000 € überschritten werden (§ 19 Abs. 1 UStG) – bei genau 100.000 € gilt sie noch.
+- **r6_09_leistungsort.json** (folie_06.png, `box`): „§ 13b Abs. 1, § 18a UStG“ → „§ 14a Abs. 1, § 18a UStG“ – Für den deutschen Leistenden gelten Rechnungshinweis (§ 14a Abs. 1 UStG) und ZM; § 13b Abs. 1 UStG betrifft nur den Bezug aus dem EU-Ausland durch deutsche Empfänger.
+- **r6_25_storys_fragen_und_tipps.json** (tipp_einspruch.png, `text`): „Bekanntgabe plus vier Tage“ → „Absendung plus vier Tage“ – Die vier Tage zählen ab Aufgabe zur Post, nicht ab Bekanntgabe – die Bekanntgabe ist ja erst der vierte Tag (§ 122 Abs. 2 Nr. 1 AO).
+
+**Bitte gegenprüfen:** Die RAP-Korrektur (1.000 € → 5.000 €, drei Bilder) beruht auf § 5 Abs. 5 Satz 2 EStG i. d. F. des Wachstumschancengesetzes. Falls du eine andere Grenze im Kopf hast, Job-Dateien r5_15/r5_20/r5_23 anpassen und neu rendern.
+
+## Umbenannt (Kollision mit Runden 2–4)
+
+Das Design hätte vorhandene Bilder überschrieben (`karussell/homeoffice`, `iab`, `verlustvortrag`, `aufbewahrung`, `reels/reel_homeoffice`, `zahl_homeoffice`, `zahl_ist`, `zahl_belege`, `quiz_belege`, `frage_glossar`). Die Runde-6-Fassungen liegen jetzt unter `…_2` bzw. sprechenden Namen (Liste im Bibliotheks-README).
+
+## Offen – Entscheidung Loris (6)
+
+- [ ] **r6_13_istversteuerung.json** (folie_04.png) – „Vorsteuer trotzdem sofort“: Stimmt für den aktuellen Rechtsstand. Ein Gesetzgebungsvorhaben (Vorsteuerabzug für Ist-Versteuerer erst bei Zahlung) war im Gespräch – Stand vor dem Posten prüfen.
+- [ ] **r5_18_mythen_3.json** (folie_05.png) – Box „§ 19 Abs. 1 Satz 4 UStG“: Das Zitat stammt aus der Fassung bis 2024. Seit 2025 sind die Umsätze steuerfrei, der Vorsteuerausschluss folgt aus § 15 Abs. 2 UStG. *Vorschlag:* „§ 19 Abs. 1, § 15 Abs. 2 UStG“.
+- [ ] **r5_06_ust_saetze.json** (folie_05.png / Gastro-Reel, Mythos, Quiz) – Speisen 7 % seit 1.1.2026: setzt das Steueränderungsgesetz 2025 voraus; Folie 05 hat keine Normbox (§ 12 Abs. 2 Nr. 15 UStG). Kurz bestätigen.
+- [ ] **r5_06_ust_saetze.json** (folie_06.png) – „Kein Vorsteuerabzug nötig“ (Photovoltaik): Missverständlich. Gemeint ist, dass der Käufer keine USt zahlt und daher nichts abziehen muss. *Vorschlag:* „Der Käufer zahlt keine USt.“
+- [ ] **r5_14_buchfuehrung.json** (folie_05.png) – § 241a HGB: Die Befreiung setzt voraus, dass die Grenzen an zwei aufeinanderfolgenden Stichtagen nicht überschritten werden. Vereinfachung, ggf. in der Caption.
+- [ ] **r6_27_einblendungen.json** (haken_ueber_frist.png) und **r6_29_ampel.json** – „Noch 12 Tage“ / „3 Tage“ sind Demo-Werte.

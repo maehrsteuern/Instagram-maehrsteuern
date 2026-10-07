@@ -1,0 +1,18 @@
+{ "titel": "Einzelposts 1:1 · „Zahl mit Norm“ (Runde 5)", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"zahl","datei":"einzelposts/zahl_kleinunternehmer_2025.png","kicker":"Kleinunternehmer","zahl":"25.000 €","titel":"Umsatz im *Vorjahr*.","text":"Und höchstens 100.000 € im laufenden Jahr.","norm":"§ 19 Abs. 1 UStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_firmenwagen.png","kicker":"Firmenwagen","zahl":"1 %","titel":"Vom *Listenpreis*, pro Monat.","text":"Pauschal für die private Nutzung.","norm":"§ 6 Abs. 1 Nr. 4 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_e_auto.png","kicker":"E-Dienstwagen","zahl":"0,25 %","titel":"Statt *1 %*.","text":"Bis 100.000 € Bruttolistenpreis bei Anschaffung ab 1.7.2025.","norm":"§ 6 Abs. 1 Nr. 4 Satz 2 Nr. 3 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_gebaeude.png","kicker":"Gebäude-AfA","zahl":"3 %","titel":"Für *neue* Wohngebäude.","text":"Fertigstellung ab 2023 – davor 2 %.","norm":"§ 7 Abs. 4 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_35.png","kicker":"Gewerbesteuer-Anrechnung","zahl":"4,0","titel":"Mal der *Messbetrag*.","text":"So viel Einkommensteuer fällt weg.","norm":"§ 35 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_gewst_freibetrag.png","kicker":"Gewerbesteuer","zahl":"24.500 €","titel":"*Freibetrag* für Personen­unternehmen.","text":"Kapitalgesellschaften haben keinen.","norm":"§ 11 Abs. 1 GewStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_sondervz.png","kicker":"Dauerfristverlängerung","zahl":"1/11","titel":"Der *Vorjahres*­zahlungen.","text":"Als Sondervorauszahlung bis 10. Februar.","norm":"§ 47 UStDV"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_zm.png","kicker":"Zusammenfassende Meldung","zahl":"25.","titel":"Tag nach *Monatsende*.","text":"Für innergemeinschaftliche Lieferungen.","norm":"§ 18a Abs. 1 UStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_minijob.png","kicker":"Minijob 2026","zahl":"603 €","titel":"*Im Monat*.","text":"Gekoppelt an 13,90 € Mindestlohn.","norm":"§ 8 Abs. 1a SGB IV"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_verpflegung.png","kicker":"Verpflegung","zahl":"28 €","titel":"Für *24 Stunden*.","text":"14 € ab acht Stunden Abwesenheit.","norm":"§ 9 Abs. 4a EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_pendler.png","kicker":"Entfernungspauschale","zahl":"0,38 €","titel":"Ab dem *ersten* Kilometer.","text":"Seit 2026, einfache Strecke.","norm":"§ 9 Abs. 1 Satz 3 Nr. 4 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_kinder.png","kicker":"Schenkung","zahl":"400.000 €","titel":"*Pro Kind*, alle zehn Jahre.","text":"Von jedem Elternteil.","norm":"§ 16 Abs. 1 Nr. 2 ErbStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_23_freigrenze.png","kicker":"Private Veräußerung","zahl":"1.000 €","titel":"*Freigrenze* pro Jahr.","text":"Darüber ist alles steuerpflichtig.","norm":"§ 23 Abs. 3 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_17.png","kicker":"Anteilsverkauf","zahl":"1 %","titel":"Reicht für *§ 17*.","text":"Irgendwann in den letzten fünf Jahren.","norm":"§ 17 Abs. 1 EStG"},
+    {"vorlage":"zahl","datei":"einzelposts/zahl_rap.png","kicker":"Rechnungsabgrenzung","zahl":"5.000 €","titel":"Darunter *darf* sie entfallen.","text":"Wahlrecht je Posten seit 2024.","norm":"§ 5 Abs. 5 Satz 2 EStG"}
+  ] }

@@ -1,0 +1,9 @@
+{ "titel": "Karussell · Umsatzsteuer – „Kleinunternehmer seit 2025“", "runde": 5, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"karussell","datei":"karussell/kleinunternehmer/folie_01.png","typ":"titel","titel":"Kleinunternehmer: *zwei* neue Grenzen.","sub":"Was seit 2025 in § 19 UStG gilt.","saeule":"Umsatzsteuer"},
+    {"vorlage":"karussell","datei":"karussell/kleinunternehmer/folie_02.png","typ":"inhalt","saeule":"Grenze 1 · Vorjahr","titel":"Höchstens *25.000 €* im Vorjahr.","text":"Maßgeblich ist der Gesamtumsatz des vorangegangenen Kalenderjahres.","boxTitel":"NORM","box":"§ 19 Abs. 1 Satz 1 UStG"},
+    {"vorlage":"karussell","datei":"karussell/kleinunternehmer/folie_03.png","typ":"inhalt","saeule":"Grenze 2 · laufendes Jahr","titel":"*100.000 €* – und zwar sofort.","text":"Wird die Grenze im laufenden Jahr überschritten, ist schon der Umsatz, mit dem sie überschritten wird, regulär steuerpflichtig.","boxTitel":"NORM","box":"§ 19 Abs. 1 Satz 2 UStG"},
+    {"vorlage":"karussell","datei":"karussell/kleinunternehmer/folie_04.png","typ":"inhalt","saeule":"Folge","titel":"Keine USt, aber auch *keine Vorsteuer*.","text":"Die Umsätze sind steuerfrei. Vorsteuer aus Eingangsrechnungen kann nicht abgezogen werden.","boxTitel":"VERZICHT","box":"Wer auf die Regelung verzichtet, ist fünf Jahre gebunden (§ 19 Abs. 3 UStG)."},
+    {"vorlage":"karussell","datei":"karussell/kleinunternehmer/folie_05.png","typ":"inhalt","saeule":"Rechnung","titel":"Hinweis auf die *Steuerbefreiung*.","text":"Kein Steuerausweis. Eine E-Rechnung müssen auch Kleinunternehmer empfangen können, ausstellen müssen sie keine.","boxTitel":"NORM","box":"§ 34a UStDV"},
+    {"vorlage":"karussell","datei":"karussell/kleinunternehmer/folie_06.png","typ":"cta","titel":"Grenzen *im Blick* behalten?","text":"Ein Tool zeigt, wie nah der laufende Umsatz an 100.000 € liegt.","saeule":"Umsatzsteuer"}
+  ] }
