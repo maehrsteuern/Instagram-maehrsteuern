@@ -72,12 +72,12 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Di 13.10. 19:30 | 🖼️ Karussell `03-gewst-hinzurechnung` | 🟢 freigegeben (geht automatisch online) |  |
 | Di 13.10. 19:35 | 📱 Story `03-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
 | Mi 14.10. 12:15 | 📱 Story `09-story-quiz` | 🟡 Entwurf (wartet auf Freigabe) | Aus der Bibliothek: Quiz SolZ als Einstieg zum Rückstellungs-Karussell · [Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35) |
+| Mi 14.10. 19:30 | 🎬 Reel `07-reel-hinzurechnung` | 🟢 freigegeben (geht automatisch online) | Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot · [Freigabe #14](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/14) |
 
 ## 🗓️ Danach
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Mi 14.10. 19:30 | 🎬 Reel `07-reel-hinzurechnung` | 🟢 freigegeben (geht automatisch online) | Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot · [Freigabe #14](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/14) |
 | Do 15.10. 12:15 | 📱 Story `09-story-aufloesung` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35) |
 | Do 15.10. 19:30 | 🖼️ Karussell `09-rueckstellung` | 🟡 Entwurf (wartet auf Freigabe) | Aus der Bibliothek (gegengelesen 05.10., Demo-Zahlen 1 Mio. €, Hebesatz 400 %) · [Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35) |
 | Do 15.10. 19:35 | 📱 Story `09-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35) |
