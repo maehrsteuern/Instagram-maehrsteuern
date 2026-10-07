@@ -217,8 +217,11 @@
       "bilder": [
         "story_mi_frage.png"
       ],
-      "status": "freigegeben",
-      "issue": 12
+      "status": "veroeffentlicht",
+      "issue": 12,
+      "media_id": "18091202405680157",
+      "link": "https://www.instagram.com/stories/maehrsteuern/4002608197877985940",
+      "veroeffentlicht_am": "2026-10-07 12:15"
     },
     {
       "id": "02-excel-fehler",
