@@ -1,8 +1,8 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 07.10. 16:34 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Mi 07.10. 19:35 Uhr._
 
-**Als Nächstes online:** 🖼️ Karussell `02-excel-fehler` am **Mi 07.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 🎬 Reel `06-reel-split` am **Do 08.10. 19:30 Uhr** – ✋ manuell (postest du in der App)
 
 ## 📝 Gerade in Arbeit
 
@@ -58,8 +58,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Mi 07.10. 19:30 | 🖼️ Karussell `02-excel-fehler` | 🟢 freigegeben (geht automatisch online) | 06.10.: mit dem Monatsbericht-Reel getauscht → Mi 07.10. |
-| Mi 07.10. 19:35 | 📱 Story `02-story-teaser` | 🟢 freigegeben (geht automatisch online) |  |
 | Do 08.10. 19:30 | 🎬 Reel `06-reel-split` | ✋ manuell (postest du in der App) | EDITS-TEST (06.10.): Loris lädt das Reel über die Instagram-App „Edits“ hoch (fertiges reel_split.mp4 oder selbst gebaut aus dem Edits-Paket) und plant es dort auf Do 08.10. 19:30 – der Autopilot postet es NICHT. Ziel: prüfen, ob Edits-Reels mehr Reichweite bekommen (Vergleich mit Autopilot-Reels: Reichweite/Follower, Speichern+Teilen). Nach dem Posten Link hier eintragen. Begleit-Reel zum Karussell Excel-Fehler vom Di 06.10. (Split-Screen Excel gegen Tool), auf Loris' Wunsch am 01.10. von So 11.10. auf Mi 07.10. vorgezogen. · 05.10.: auf So 11.10. getauscht – Mi 07.10. läuft das Monatsbericht-Reel als Follow-up zum 5-Dinge-Reel. · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
 | Do 08.10. 19:35 | 📱 Story `06-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #13](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/13) |
 | Fr 09.10. 19:30 | 🖼️ Karussell `05-latente-steuern` | 🟢 freigegeben (geht automatisch online) | Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
@@ -96,6 +94,8 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
+- Mi 07.10. 19:35 · 📱 Story `02-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4002829658245043420) (online 2026-10-07 19:35)
+- Mi 07.10. 19:30 · 🖼️ Karussell `02-excel-fehler` · [ansehen](https://www.instagram.com/p/DeM5u1vGLsR/) (online 2026-10-07 19:32)
 - Mi 07.10. 12:15 · 📱 Story `05-story-frage` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4002608197877985940) (online 2026-10-07 12:15)
 - Di 06.10. 19:35 · 📱 Story `11-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4002104878277412503) (online 2026-10-06 19:35)
 - Di 06.10. 19:30 · 🎬 Reel `11-reel-monatsbericht` · [ansehen](https://www.instagram.com/reel/DeKUuvPgA1W/) (online 2026-10-06 19:30)
@@ -104,8 +104,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - So 04.10. 19:30 · 🎬 Reel `01-reel-5dinge` · [ansehen](https://www.instagram.com/reel/DeFLK53ALSs/) (online 2026-10-04 19:30)
 - Sa 03.10. 12:15 · 📱 Story `08-story-tipp` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3999709094836161880) (online 2026-10-03 12:15)
 - Fr 02.10. 12:15 · 📱 Story `01-story-frage` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3998984318181825905) (online 2026-10-02 12:15)
-- Do 01.10. 18:30 · 🖼️ Karussell `00-neuvorstellung` · [ansehen](https://www.instagram.com/p/Dd9V5HAAhcL/) (online 2026-10-01 18:30)
-- Mi 30.09. 19:30 · 📱 Story `00-vorfreude` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3997727075650058524) (online 2026-09-30 18:37)
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
@@ -146,6 +144,12 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Mi 07.10.2026**
+- 19:35 🤖 Autopilot: 02-story-teaser veroeffentlicht ([`e476372`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/e476372f52ceb6d0bc4bee2debcd9b34867e3ac9))
+  - Plan: `02-story-teaser` status: freigegeben → veroeffentlicht; `02-story-teaser` online: https://www.instagram.com/stories/maehrsteuern/4002829658245043420
+- 19:32 🤖 Autopilot: Dateien fuer 02-story-teaser vorbereitet ([`abc4d88`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/abc4d88f198aa0cf7fba3cb751486cb4235ce6ab))
+  - `posts/02_2026-10-06_excel_fehler`
+- 19:32 🤖 Autopilot: 02-excel-fehler veroeffentlicht ([`1e9ba27`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1e9ba27479847ba2022ae3b4cd03e91954f8155a))
+  - Plan: `02-excel-fehler` status: freigegeben → veroeffentlicht; `02-excel-fehler` online: https://www.instagram.com/p/DeM5u1vGLsR/
 - 16:34 ✍️ Bibliothek Runden 5 und 6: 400 Assets (jetzt 996) ([`722b914`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/722b9140f6ff0cbcc8fce8cb4eec2087cdad236f))
   - `LAGE.html`, `README.md`, `assets/bibliothek/PRUEFBERICHT.md`, `assets/bibliothek/README.md`, `assets/bibliothek/bausteine/abspann_frist.png`, `assets/bibliothek/bausteine/abspann_plausi.png`, `…`
 - 16:02 ✍️ Bibliothek Runde 7: MBS-Reels (10 Titel, 4 Einblendungen) ([`070fd3b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/070fd3b4a71c53a5b19c0cdf439b18642f30e189))
