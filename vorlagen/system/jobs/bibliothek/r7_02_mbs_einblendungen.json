@@ -1,0 +1,7 @@
+{ "titel": "Reel-Einblendungen · MAEHR Business Suite (MBS)", "runde": 7, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"einblendung","datei":"bausteine/mbs_haken_baum.png","typ":"haken","kicker":"MBS","titel":"Bilanz aufklappen.\n*Jede Zahl gerechnet.*","sub":"Hinter jeder Position eine eigene App."},
+    {"vorlage":"einblendung","datei":"bausteine/mbs_haken_ueber_ampel.png","typ":"haken_ueber","kicker":"Ampel","titel":"Passt zur\n*Saldenliste*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/mbs_leiste_import.png","typ":"leiste","kicker":"Import","titel":"SAP, DATEV *oder Excel*","transparent":true},
+    {"vorlage":"einblendung","datei":"bausteine/mbs_abspann_demo.png","typ":"abspann","titel":"Offline. Eine Datei.\n*Demo buchen.*","chip":"Demo buchen","sub":"Link in der Bio · Beta mit Beispieldaten"}
+  ] }

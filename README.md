@@ -41,7 +41,7 @@ Leitspruch: „Steuern × Code“ – KI ist Qualifikation und Werkzeug, Code is
 - Texte stehen in Job-Dateien unter `jobs/`. Bilder erzeugen: im Ordner `vorlagen/system` → `node render.mjs jobs/p02_excel_fehler.json`
 - Reels aus Standbildern: Schnittliste in `schnitt/`, dann `python3 reel.py schnitt/p01_reel_ampel.json` (braucht `pip install pillow imageio-ffmpeg`)
 - Ergebnisse landen in `posts/` bzw. `assets/` (`highlights/`, `storys/start/`)
-- **Bibliothek auf Vorrat:** `assets/bibliothek/` – 582 fertige Bilder aus dem Claude-Design-Katalog „Brand Kit“, Runden 1–4 (ca. 55 Karussell-Serien, Storys, Reel-Titel, Einblendungen, Ampeln, Einzelposts, Highlights, LinkedIn-Banner), Texte in `vorlagen/system/jobs/bibliothek/`, Übersicht in `assets/bibliothek/README.md`. Nicht im Plan, Demo-Zahlen, vor Verwendung fachlich prüfen.
+- **Bibliothek auf Vorrat:** `assets/bibliothek/` – 596 fertige Bilder aus dem Claude-Design-Katalog „Brand Kit“, Runden 1–4 und 7 (MBS-Reels) (ca. 55 Karussell-Serien, Storys, Reel-Titel, Einblendungen, Ampeln, Einzelposts, Highlights, LinkedIn-Banner), Texte in `vorlagen/system/jobs/bibliothek/`, Übersicht in `assets/bibliothek/README.md`. Nicht im Plan, Demo-Zahlen, vor Verwendung fachlich prüfen.
 
 ## Marke
 - Botschaft: **Steuern × Code** – „Steuerwissen, das rechnet.“ Diplom-Finanzwirt und KI-Manager (IHK), baut KI- und Steuer-Tools – vom Tool bis zum ganzen Prozess.

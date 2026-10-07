@@ -1,8 +1,8 @@
 # Bibliothek – fertige Assets auf Vorrat
 
-Aus dem Claude-Design-Katalog „maehrsteuern Brand Kit“ (Runden 1–4) übernommen und mit dem Vorlagen-System erzeugt. **Nichts davon ist im Plan** – die Content-Fabrik oder Loris nimmt sich hier Beiträge, kopiert sie nach `posts/<Nr>_<Datum>_<Thema>/` und trägt sie in `automatik/plan.json` ein.
+Aus dem Claude-Design-Katalog „maehrsteuern Brand Kit“ (Runden 1–4 und 7) übernommen und mit dem Vorlagen-System erzeugt. **Nichts davon ist im Plan** – die Content-Fabrik oder Loris nimmt sich hier Beiträge, kopiert sie nach `posts/<Nr>_<Datum>_<Thema>/` und trägt sie in `automatik/plan.json` ein.
 
-**582 Bilder** in 84 Job-Dateien.
+**596 Bilder** in 86 Job-Dateien.
 
 - **Alle Zahlen sind Demo-Werte.** Rechtsstand und Normen vor der Freigabe fachlich prüfen (Stand der Texte: Okt. 2026).
 - Texte ändern: Job-Datei in `vorlagen/system/jobs/bibliothek/` anpassen, dann im Ordner `vorlagen/system` → `node render.mjs jobs/bibliothek/<datei>.json`. Danach optional verlustfrei verkleinern: `pip install pyoxipng` und `python3 -c "import oxipng,sys; [oxipng.optimize(f, level=3) for f in sys.argv[1:]]" <png …>`.
@@ -123,3 +123,12 @@ Aus dem Claude-Design-Katalog „maehrsteuern Brand Kit“ (Runden 1–4) übern
 | `r4_27_einblendungen.json` | Reel-Einblendungen (Runde 4) | 14 | `bausteine/` – haken_52cent, haken_miete, haken_51, haken_rechnung, haken_test, haken_ueber_rc, haken_ueber_einlage, haken_ueber_test, leiste_rechnung_lesen, leiste_pflicht, leiste_13b, leiste_vorsteuer, abspann_paragraf, abspann_getestet |
 | `r4_28_highlights.json` | Highlight-Titelbilder · Euro, Summe, Formel, USt | 4 | `highlights/hl_euro.png`, `highlights/hl_summe.png`, `highlights/hl_formel.png`, `highlights/hl_ust.png` |
 | `r4_29_ampel.json` | Ampel-Nahaufnahmen · Vorsteuer, § 8c, Pensionen | 6 | `bausteine/` – ampel_vst_rot, ampel_vst_gruen, ampel_8c_gelb, ampel_8c_rot, ampel_pension_gelb, ampel_pension_gruen |
+
+## Runde 7 · MAEHR Business Suite (MBS)
+
+Reels 9:16 für die MBS (Stand: Beta/Demo). Aufruf überall „Demo buchen“ (Caption: https://app.reclaim.ai/m/maehrsteuern/demo). Der Abspann nutzt das neue optionale Feld `chip` in `einblendung.html` (Standard bleibt „Schreib TOOL per DM“).
+
+| Job | Inhalt | Bilder | Ordner |
+|---|---|---|---|
+| `r7_01_mbs_reel_titel.json` | Titelbilder, ein Modul je Reel | 10 | `reels/mbs_*/` |
+| `r7_02_mbs_einblendungen.json` | Wiederverwendbare Einblendungen (Haken, Ampel, Import-Leiste, Abspann) | 4 | `bausteine/mbs_*` |

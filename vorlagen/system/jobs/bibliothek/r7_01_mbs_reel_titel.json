@@ -1,0 +1,13 @@
+{ "titel": "Reel-Titelbilder · MAEHR Business Suite (MBS), Beta", "runde": 7, "ausgabe": "../../assets/bibliothek",
+  "bilder": [
+    {"vorlage":"reel_titel","datei":"reels/mbs_ertragsteuer/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Steuer­rückstellung\n*auf Knopfdruck*","sub":"KSt, SolZ, GewSt – direkt aus der Saldenliste."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_latente_steuern/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Latente Steuern\n*ohne Neben­rechnung*","sub":"HGB gegen Steuerbilanz, Differenz für Differenz."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_zinsschranke/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Zinsschranke\n*sofort geprüft*","sub":"Freigrenze, 30 % EBITDA, Vortrag."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_zerlegung/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Gewerbe­steuer\n*zerlegt*","sub":"Messbetrag nach Löhnen auf alle Gemeinden."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_anlagespiegel/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Zwei AfA-Pläne.\n*Ein Anlage­spiegel.*","sub":"HGB und Steuerbilanz nebeneinander."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_rueckstellungen/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Urlaub, Jubiläum,\n*Sonstiges*","sub":"Jede Rückstellung mit eigener Rechnung."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_forderungen/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Forderungen\n*nach Alter*","sub":"Altersstruktur und Wertberichtigung in einem Schritt."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_fremdwaehrung/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Fremd­währung\n*zum Stichtag*","sub":"Bewertung je Posten mit Kurs und Effekt."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_ust_verprobung/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Umsatz und USt\n*verprobt*","sub":"Buchhaltung gegen Voranmeldungen."},
+    {"vorlage":"reel_titel","datei":"reels/mbs_bankabstimmung/titelbild.png","kicker":"MAEHR Business Suite (MBS)","titel":"Bank *abgestimmt*.\nLiquidität im Blick.","sub":"Kontoauszug gegen Buchhaltung."}
+  ] }

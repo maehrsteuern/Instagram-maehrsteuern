@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="basis.css"><script src="text.js"></script>
-<!-- Reel-Einblendungen 1080×1920. Typen: haken (volle Karte) | haken_ueber (Haken über laufendem Bild, transparent rendern) | leiste (Textleiste oben, transparent rendern) | abspann (volle Karte) -->
+<!-- Reel-Einblendungen 1080×1920. Typen: haken (volle Karte) | haken_ueber (Haken über laufendem Bild, transparent rendern) | leiste (Textleiste oben, transparent rendern) | abspann (volle Karte, optional chip) -->
 <style>
 html,body{width:1080px;height:1920px}
 body.voll{background:radial-gradient(110% 65% at 50% 42%,var(--glow) 0%,var(--bg) 65%)}
@@ -27,8 +27,8 @@ document.body.className = document.documentElement.className = (d.typ==="leiste"
 let h;
 if (d.typ==='haken_ueber') h = `<div class="mitteBox">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}</div>`;
 else if (d.typ==='leiste') h = `<div class="leiste">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h2>${fmt(d.titel)}</h2></div>`;
-else if (d.typ==='abspann') h = `<div class="mitte"><div class="kicker">Steuern × Code</div><h1>${fmt(d.titel||'Steuerwissen,\ndas *rechnet.*')}</h1>
-  <div class="line"></div><span class="chip">💬 Schreib „TOOL“ per DM</span><div class="cta">${fmt(d.sub||'@maehrsteuern · Demo mit Beispieldaten')}</div></div>`;
+else if (d.typ==='abspann') h = `<div class="mitte"><div class="kicker">${fmt(d.kicker||'Steuern × Code')}</div><h1>${fmt(d.titel||'Steuerwissen,\ndas *rechnet.*')}</h1>
+  <div class="line"></div><span class="chip">${fmt(d.chip||'💬 Schreib „TOOL“ per DM')}</span><div class="cta">${fmt(d.sub||'@maehrsteuern · Demo mit Beispieldaten')}</div></div>`;
 else h = `<div class="mitte">${d.kicker?`<div class="kicker">${fmt(d.kicker)}</div>`:''}<h1>${fmt(d.titel)}</h1>${d.sub?`<div class="sub">${fmt(d.sub)}</div>`:''}</div>`;
 document.body.insertAdjacentHTML('beforeend', h);
 </script></body></html>
