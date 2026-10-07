@@ -52,6 +52,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - 🟡 **Freigeben** `04-story-teaser` (Di 27.10. 19:35) – „go“ oder „stop“ im Issue (Issue kommt, sobald `04-reel-mein-weg` fertig ist)
 - ⏰ **💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)** (Do 08.10. 08:00) – Karussell geht erst Mi 07.10. auf Instagram → LinkedIn Do 08.10. PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5).
 - ⏰ **🎬 Split-Reel in Edits bauen + auf 19:30 planen (Edits-Test)** (Do 08.10. 09:00) – Anleitung: Google Doc „Edits-Anleitung Split-Reel (Do 08.10.)“ im Drive-Ordner „Maehrsteuern audios“. Dateien kamen per Claude-Chat (auch im Repo: posts/02_2026-10-06_excel_fehler/edits_paket/). Bildunterschrift aus der Textdatei kopieren (im Doc sind die Emojis kaputt). Danach Claude Bescheid geben. Der Autopilot postet dieses Reel NICHT.
+- ⏰ **💳 ManyChat-Trial endet Fr 16.10. – entscheiden** (Mi 14.10. 18:00) – Entscheidung Loris: weiter (Kosten?) oder kündigen. Grundlage: ManyChat gesendet/Klicks und Demos aus den Wochenberichten KW 40 + 41.
 
 ## ⏭️ Nächste 7 Tage
 
