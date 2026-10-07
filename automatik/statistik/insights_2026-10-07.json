@@ -14,18 +14,18 @@
    "von": "2026-09-07",
    "bis": "2026-10-07",
    "reach": {
-    "gesamt": 943,
+    "gesamt": 950,
     "aufgeteilt": {
      "FOLLOWER": 136,
-     "NON_FOLLOWER": 803
+     "NON_FOLLOWER": 809
     }
    },
    "views": {
-    "gesamt": 3331,
+    "gesamt": 3334,
     "aufgeteilt": {
      "UNKNOWN": 2,
-     "FOLLOWER": 1810,
-     "NON_FOLLOWER": 1519
+     "NON_FOLLOWER": 1522,
+     "FOLLOWER": 1810
     }
    },
    "accounts_engaged": 36,
@@ -97,8 +97,8 @@
    "views": {
     "gesamt": 223,
     "aufgeteilt": {
-     "FOLLOWER": 17,
      "UNKNOWN": 15,
+     "FOLLOWER": 17,
      "NON_FOLLOWER": 191
     }
    },
@@ -134,8 +134,8 @@
    "views": {
     "gesamt": 225,
     "aufgeteilt": {
-     "FOLLOWER": 8,
      "UNKNOWN": 2,
+     "FOLLOWER": 8,
      "NON_FOLLOWER": 215
     }
    },
@@ -171,9 +171,9 @@
    "views": {
     "gesamt": 162,
     "aufgeteilt": {
+     "FOLLOWER": 14,
      "UNKNOWN": 3,
-     "NON_FOLLOWER": 145,
-     "FOLLOWER": 14
+     "NON_FOLLOWER": 145
     }
    },
    "accounts_engaged": 6,
@@ -208,9 +208,9 @@
    "views": {
     "gesamt": 127,
     "aufgeteilt": {
-     "UNKNOWN": 14,
+     "NON_FOLLOWER": 87,
      "FOLLOWER": 26,
-     "NON_FOLLOWER": 87
+     "UNKNOWN": 14
     }
    },
    "accounts_engaged": 2,
@@ -245,8 +245,8 @@
    "views": {
     "gesamt": 120,
     "aufgeteilt": {
-     "FOLLOWER": 2,
      "UNKNOWN": 3,
+     "FOLLOWER": 2,
      "NON_FOLLOWER": 115
     }
    },
@@ -282,8 +282,8 @@
    "views": {
     "gesamt": 111,
     "aufgeteilt": {
-     "FOLLOWER": 2,
      "UNKNOWN": 1,
+     "FOLLOWER": 2,
      "NON_FOLLOWER": 108
     }
    },
@@ -348,15 +348,15 @@
    "reach": {
     "gesamt": 125,
     "aufgeteilt": {
-     "FOLLOWER": 6,
-     "NON_FOLLOWER": 119
+     "NON_FOLLOWER": 119,
+     "FOLLOWER": 6
     }
    },
    "views": {
     "gesamt": 446,
     "aufgeteilt": {
-     "FOLLOWER": 33,
      "UNKNOWN": 7,
+     "FOLLOWER": 33,
      "NON_FOLLOWER": 406
     }
    },
@@ -422,15 +422,15 @@
    "reach": {
     "gesamt": 76,
     "aufgeteilt": {
-     "NON_FOLLOWER": 71,
-     "FOLLOWER": 5
+     "FOLLOWER": 5,
+     "NON_FOLLOWER": 71
     }
    },
    "views": {
     "gesamt": 193,
     "aufgeteilt": {
-     "FOLLOWER": 31,
      "UNKNOWN": 4,
+     "FOLLOWER": 31,
      "NON_FOLLOWER": 158
     }
    },
@@ -500,9 +500,9 @@
    "views": {
     "gesamt": 670,
     "aufgeteilt": {
-     "UNKNOWN": 20,
+     "FOLLOWER": 45,
      "NON_FOLLOWER": 605,
-     "FOLLOWER": 45
+     "UNKNOWN": 20
     }
    },
    "accounts_engaged": 0,
@@ -633,7 +633,6 @@
   }
  ],
  "tageswerte_reichweite": {
-  "2026-09-08": 1,
   "2026-09-09": 1,
   "2026-09-10": 1,
   "2026-09-11": 1,
@@ -661,7 +660,8 @@
   "2026-10-03": 63,
   "2026-10-04": 428,
   "2026-10-05": 262,
-  "2026-10-06": 216
+  "2026-10-06": 220,
+  "2026-10-07": 52
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -928,33 +928,8 @@
   }
  },
  "online_follower": {
-  "2026-10-05": {
-   "0": 94,
-   "1": 100,
-   "2": 106,
-   "3": 106,
-   "4": 102,
-   "5": 102,
-   "6": 97,
-   "7": 97,
-   "8": 107,
-   "9": 105,
-   "10": 115,
-   "11": 133,
-   "12": 129,
-   "13": 95,
-   "14": 56,
-   "15": 28,
-   "16": 24,
-   "17": 17,
-   "18": 17,
-   "19": 22,
-   "20": 29,
-   "21": 71,
-   "22": 98,
-   "23": 91
-  },
-  "2026-10-06": {}
+  "2026-10-06": {},
+  "2026-10-07": {}
  },
  "beitraege": [
   {
@@ -966,16 +941,16 @@
    "like_count": 10,
    "comments_count": 2,
    "caption": "Zwei Stunden. Jeden Monat. Nur Copy-Paste für einen einzigen Bericht 😮‍💨\n\nHeute drück ich einen Knopf. So geht's:\n\n1️⃣ SuSa einlesen – der Code zieht sich die Summen- und Saldenliste direkt aus dem Export\n2️⃣ Abstimmen – passt was nicht, stoppt er, bevor ein falscher Bericht rausgeht\n3️⃣ Bericht bauen – Tabellen, Diagramm, PDF. Fertig.\n\nDas war Nummer 1 aus meinem letzten Reel.\nWelche Nummer willst du als Nächstes sehen? 2, 3, 4 oder 5 – schreib's in die Kommentare 👇\n🔖 Speicher dir das für den nächsten Monatsabschluss.\n\nAlle Zahlen im Video sind Beispieldaten.\n\n#steuern #monatsabschluss #excel #python #automatisierung",
-   "views": 264,
-   "reach": 192,
+   "views": 324,
+   "reach": 234,
    "likes": 10,
    "comments": 2,
    "saved": 9,
    "shares": 8,
    "total_interactions": 30,
-   "ig_reels_avg_watch_time": 8018,
-   "ig_reels_video_view_total_time": 1675827,
-   "reels_skip_rate": 60.5,
+   "ig_reels_avg_watch_time": 7463,
+   "ig_reels_video_view_total_time": 1910602,
+   "reels_skip_rate": 61.1,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -991,19 +966,19 @@
    "media_type": "VIDEO",
    "timestamp": "2026-10-04T17:30:48+0000",
    "permalink": "https://www.instagram.com/reel/DeFLK53ALSs/",
-   "like_count": 11,
+   "like_count": 12,
    "comments_count": 10,
    "caption": "5 Dinge, die ich aus Excel rausgeschmissen hab 👇\n\n5️⃣ Listen abgleichen – statt SVERWEIS und #NV ein paar Zeilen Code, egal wie lang die Liste ist\n4️⃣ Doppelte Rechnungsnummern und Lücken finden – in einer Sekunde, nicht erst in der Prüfung\n3️⃣ Sehen, wer was geändert hat – jede Version bleibt gespeichert, kein „final_final_v3“ mehr\n2️⃣ Zeile einfügen, ohne dass die Summe kaputtgeht\n1️⃣ Der Monatsbericht – Daten rein, ein Klick, fertig\n\nExcel bleibt super zum schnellen Rechnen. Aber alles, was sich jeden Monat wiederholt, macht bei mir inzwischen Code.\n\nWelche Nummer soll ich dir Schritt für Schritt zeigen? Schreib die Zahl in die Kommentare 👇\n🔖 Speicher dir das für später.\n\nAlle Zahlen im Video sind Beispieldaten.\n\n#steuern #steuerabteilung #excel #python #automatisierung",
-   "views": 880,
-   "reach": 660,
-   "likes": 11,
+   "views": 884,
+   "reach": 662,
+   "likes": 12,
    "comments": 10,
    "saved": 14,
    "shares": 12,
-   "total_interactions": 49,
-   "ig_reels_avg_watch_time": 9617,
-   "ig_reels_video_view_total_time": 7347453,
-   "reels_skip_rate": 64.8,
+   "total_interactions": 50,
+   "ig_reels_avg_watch_time": 9587,
+   "ig_reels_video_view_total_time": 7353804,
+   "reels_skip_rate": 64.9,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -1022,8 +997,8 @@
    "like_count": 9,
    "comments_count": 2,
    "caption": "Neu hier? Dann kurz zu mir 👋\n\nIch bin Loris – Diplom-Finanzwirt und IHK-zertifizierter Manager für angewandte KI-Transformation.\n\n2025 habe ich maehrsteuern gestartet: mit Lern-Inhalten und KI-Schulungen rund ums Steuer-Examen. Viele von euch kennen mich daher – und sind heute selbst Beraterinnen und Berater. 🎓➡️💼\n\nJetzt geht's den nächsten Schritt: KI-Lösungen für Steuern, die wirklich laufen – weil ich sie selbst programmiere. Vom kleinen Tool bis zum ganzen Prozess.\n\n📅 Ab jetzt jede Woche neue Beiträge, meist abends um 19:30:\n⚙️ Demos meiner Tools\n📊 Excel-Fehler und Steuerwissen mit Rechenbeispiel\n🧠 Einblicke hinter den Code\n\nWoher kennst du mich – Examen, Kanzlei oder Steuerabteilung? 👇\n\n💬 Schreib mir „TOOL“ per DM, wenn du die Demo sehen willst.\n\n#steuern #steuerrecht #kuenstlicheintelligenz #automatisierung #finanzwirt",
-   "views": 328,
-   "reach": 122,
+   "views": 332,
+   "reach": 123,
    "likes": 9,
    "comments": 2,
    "saved": 2,
@@ -1047,19 +1022,19 @@
    "media_type": "VIDEO",
    "timestamp": "2026-09-29T13:42:19+0000",
    "permalink": "https://www.instagram.com/reel/Dd34F9RtucT/",
-   "like_count": 9,
+   "like_count": 10,
    "comments_count": 2,
    "caption": "Steuern × Code. ⚡\nKeine Standardsoftware, keine Excel-Hölle, sondern maßgeschneiderte Steuer-Tools mit Prüfpfad und Dashboard.\n💬 „TOOL“ per DM, und wir reden über dein Projekt.\n\nWie rechnest du deine Steuern? Stimm ab! 👇🏼\n\n#steuern #taxtech #programmieren #finanzen #steuerberater",
-   "views": 299,
-   "reach": 180,
-   "likes": 9,
+   "views": 303,
+   "reach": 181,
+   "likes": 10,
    "comments": 2,
    "saved": 4,
    "shares": 7,
-   "total_interactions": 23,
-   "ig_reels_avg_watch_time": 6975,
-   "ig_reels_video_view_total_time": 1653119,
-   "reels_skip_rate": 63.9,
+   "total_interactions": 24,
+   "ig_reels_avg_watch_time": 6982,
+   "ig_reels_video_view_total_time": 1682711,
+   "reels_skip_rate": 63.5,
    "_fehlt": [
     "profile_visits",
     "profile_activity",
@@ -1072,10 +1047,32 @@
  ],
  "storys_aktiv": [
   {
+   "id": "18091202405680157",
+   "zeit": "2026-10-07T10:15:15+0000",
+   "views": 17,
+   "reach": 13,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 0,
+   "profile_visits": 0,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 12,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
    "id": "18061677203790365",
    "zeit": "2026-10-06T17:48:50+0000",
-   "views": 36,
-   "reach": 26,
+   "views": 46,
+   "reach": 33,
    "_fehlt": [
     "likes",
     "comments",
@@ -1089,15 +1086,15 @@
    "profile_visits": 0,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 32,
+   "navigation": 42,
    "replies": 0,
    "kommentare_text": []
   },
   {
    "id": "18108714698605885",
    "zeit": "2026-10-06T17:35:13+0000",
-   "views": 42,
-   "reach": 38,
+   "views": 50,
+   "reach": 44,
    "_fehlt": [
     "likes",
     "comments",
@@ -1108,10 +1105,10 @@
    ],
    "shares": 0,
    "total_interactions": 2,
-   "profile_visits": 1,
+   "profile_visits": 2,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 37,
+   "navigation": 43,
    "replies": 0,
    "kommentare_text": []
   }
