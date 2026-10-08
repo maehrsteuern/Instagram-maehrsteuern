@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 08.10. 19:05 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 08.10. 19:08 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `06-reel-split` am **Do 08.10. 19:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -142,6 +142,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 08.10.2026**
+- 19:08 ✍️ Testmonat-Auswertung im Tagesbericht, plan.json mit stimme/hook, Fabrik 3× pro Woche ([`6dcd8c7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/6dcd8c7968a14def4aa8cfc32248471bac62075b))
+  - `LAGE.html`, `automatik/berichte`, `automatik/insights_voll.py`, `automatik/plan.json`, `automatik/tagesbericht.py`, `strategie/06_auswertung.md`, `…`
 - 19:05 ✍️ Story-Quiz zum Antippen, Bio-Vorschlag mit Nutzen-Satz, Highlight „Start“ ([`582aabb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/582aabb34e1bf44982ef8bd91f90189188ed7e89))
   - `LAGE.html`, `automatik/plan.json`, `posts/09_2026-10-15_rueckstellung`, `strategie/02_bio_highlights.md`, `vorlagen/system/jobs/p09_story_quiz_tippen.json`
 - 19:03 ✍️ Routine Tagesbericht: neues Prompt mit Zugangsschritt, Kalender-Hinweis und Commit-Regel ([`ae0777f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ae0777fc08b87f56cdd5028499638a2259597158))
