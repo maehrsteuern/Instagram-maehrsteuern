@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 08.10. 15:50 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 08.10. 15:51 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `06-reel-split` am **Do 08.10. 19:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -44,10 +44,10 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - 🟡 **Freigeben** `09-story-aufloesung` (Do 15.10. 12:15) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
 - 🟡 **Freigeben** `09-rueckstellung` (Do 15.10. 12:30) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
 - 🟡 **Freigeben** `09-story-teaser` (Do 15.10. 12:35) – „go“ oder „stop“ im Issue ([Freigabe #35](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/35))
-- 🟡 **Freigeben** `04-story-frage` (Do 15.10. 18:00) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `04-story-frage` (Do 15.10. 18:00) – „go“ oder „stop“ im Issue ([Freigabe #44](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/44))
 - ✋ **Von Hand posten** `16-reel-listen` (Do 15.10. 19:30) – Serie Nummer 5: zwei Listen, SVERWEIS. Vorgezogen vom 22.10. – Serie damit durch. · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.
 - ✋ **Von Hand posten** `04-reel-mein-weg` (Fr 16.10. 19:30) – Mein Weg rückwärts (Variante B, Loris hat den Text am 08.10. eingesprochen). Vorgezogen vom 27.10. KI-LABEL in Edits/Instagram einschalten (Karte 2 + 3 KI), Hinweis steht in der Bildunterschrift. Variante-A-Dateien: *_variante_a.* · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.
-- 🟡 **Freigeben** `04-story-teaser` (Fr 16.10. 19:35) – „go“ oder „stop“ im Issue (Issue wird automatisch angelegt)
+- 🟡 **Freigeben** `04-story-teaser` (Fr 16.10. 19:35) – „go“ oder „stop“ im Issue ([Freigabe #44](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/44))
 - ⏳ **Wartet auf sprachnachricht** `17-reel-kommentare` (Sa 24.10. 19:30) – Thema aus den Kommentaren der Serie (wird nach Auswertung bis ca. 20.10. festgelegt). Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel komplett fertig (mit Musik, Untertiteln) und schickt es im Chat, Loris lädt es über Edits hoch und plant/postet selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md.
 - ⏰ **💼 LinkedIn-Karussell „Excel-Fehler“ posten (Issue #18)** (Do 08.10. 08:00) – Karussell geht erst Mi 07.10. auf Instagram → LinkedIn Do 08.10. PDF + Text im Issue #18, danach 1 h Kommentare beantworten und #18 schließen. Termin steht schon automatisch im Kalender (Chrome Modul 5).
 - ⏰ **🎬 Split-Reel in Edits bauen + auf 19:30 planen (Edits-Test)** (Do 08.10. 09:00) – Anleitung: Google Doc „Edits-Anleitung Split-Reel (Do 08.10.)“ im Drive-Ordner „Maehrsteuern audios“. Dateien kamen per Claude-Chat (auch im Repo: posts/02_2026-10-06_excel_fehler/edits_paket/). Bildunterschrift aus der Textdatei kopieren (im Doc sind die Emojis kaputt). Danach Claude Bescheid geben. Der Autopilot postet dieses Reel NICHT.
@@ -81,11 +81,11 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Do 15.10. 18:00 | 📱 Story `04-story-frage` | 🟡 Entwurf (wartet auf Freigabe) |  |
+| Do 15.10. 18:00 | 📱 Story `04-story-frage` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #44](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/44) |
 | Do 15.10. 19:30 | 🎬 Reel `16-reel-listen` | ✋ manuell (postest du in der App) | Serie Nummer 5: zwei Listen, SVERWEIS. Vorgezogen vom 22.10. – Serie damit durch. · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. |
 | Fr 16.10. 12:15 | 📱 Story `03-story-aufloesung` | 🟢 freigegeben (geht automatisch online) |  |
 | Fr 16.10. 19:30 | 🎬 Reel `04-reel-mein-weg` | ✋ manuell (postest du in der App) | Mein Weg rückwärts (Variante B, Loris hat den Text am 08.10. eingesprochen). Vorgezogen vom 27.10. KI-LABEL in Edits/Instagram einschalten (Karte 2 + 3 KI), Hinweis steht in der Bildunterschrift. Variante-A-Dateien: *_variante_a.* · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. |
-| Fr 16.10. 19:35 | 📱 Story `04-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  |
+| Fr 16.10. 19:35 | 📱 Story `04-story-teaser` | 🟡 Entwurf (wartet auf Freigabe) |  · [Freigabe #44](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/44) |
 | Do 22.10. 12:15 | 📱 Story `10-story-umfrage` | 🟢 freigegeben (geht automatisch online) | Aus der Bibliothek: Umfrage E-Rechnung als Einstieg · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
 | Fr 23.10. 19:30 | 🖼️ Karussell `10-e-rechnung` | 🟢 freigegeben (geht automatisch online) | Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG) · 06.10.: auf Fr 23.10. geschoben (Reel-Takt alle 2 Tage). · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
 | Fr 23.10. 19:35 | 📱 Story `10-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
@@ -145,6 +145,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 08.10.2026**
+- 15:51 ✅ Freigabe angefragt (1 Beitrag/Beiträge) ([`16ff123`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/16ff12330f13313cdcc95c89bc9c5e1678a73dc5))
+  - Plan: `04-story-frage` → Freigabe-Issue #44; `04-story-teaser` → Freigabe-Issue #44
 - 15:50 ✍️ Tagesbericht: Methoden-Check erst ab 48 h, Reel-Länge, Heute-geplant-Liste ([`66cd01e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/66cd01eeed24ffb7d1e20811b6ed4e75635cdb1d))
   - `automatik/berichte`, `automatik/tagesbericht.py`
 - 15:49 🔀 Merge pull request #43 from maehrsteuern/claude/focused-shannon-hrtyy7 ([`776c97e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/776c97e9409d714980d146efb4985e72337dd4f3))
