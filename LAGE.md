@@ -458,6 +458,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 - 00:29 📡 Radar: Excel/DATEV-Konten ergänzt ([`c824346`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c824346653277cd05bbe1e04ac265fe73417cfd1))
   - `automatik/interaktion.json`
 
+<details><summary>Älter als 7 Tage</summary>
+
 **Fr 02.10.2026**
 - 21:05 💼 LinkedIn-Pakete: 02-excel-fehler, 05-latente-steuern, 03-gewst-hinzurechnung ([`5214c46`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5214c460db8ac7cc9206d8649a67b97413765715))
   - `posts/02_2026-10-06_excel_fehler`, `posts/03_2026-10-13_gewst_hinzurechnung`, `posts/05_2026-10-08_latente_steuern`
@@ -485,8 +487,6 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - `posts/01_2026-10-04_reel_ampel`
 - 08:47 📈 Statistik 2026-10-02 ([`60c4aa6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/60c4aa67f643e11d4d6ef46ef453c4a2c18202b3))
   - `automatik/statistik`
-
-<details><summary>Älter als 7 Tage</summary>
 
 **Do 01.10.2026**
 - 23:56 ✍️ Lage: Neuvorstellung als veroeffentlicht eingetragen, Notizen auf Stand 01.10. abends ([`805d54b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/805d54b688b007b543fe592ea32cf008054844a9))
