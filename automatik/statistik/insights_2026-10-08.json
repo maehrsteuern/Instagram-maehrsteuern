@@ -5,7 +5,7 @@
   "name": "Loris | Steuer-Tools x Code",
   "biography": "🧠 Steuern × Code – Steuerwissen, das rechnet\n⚙️ KI-Lösungen, die wirklich laufen\n🎓 Diplom-Finanzwirt · KI-Manager (IHK)\n💬 DM mir „TOOL“ → gratis Demo",
   "website": "https://app.reclaim.ai/m/maehrsteuern/demo",
-  "followers_count": 356,
+  "followers_count": 357,
   "follows_count": 278,
   "media_count": 5
  },
@@ -21,10 +21,10 @@
     }
    },
    "views": {
-    "gesamt": 3807,
+    "gesamt": 3816,
     "aufgeteilt": {
-     "FOLLOWER": 2072,
      "UNKNOWN": 2,
+     "FOLLOWER": 2081,
      "NON_FOLLOWER": 1733
     }
    },
@@ -60,8 +60,8 @@
    "views": {
     "gesamt": 102,
     "aufgeteilt": {
-     "UNKNOWN": 3,
      "FOLLOWER": 6,
+     "UNKNOWN": 3,
      "NON_FOLLOWER": 93
     }
    },
@@ -97,9 +97,9 @@
    "views": {
     "gesamt": 220,
     "aufgeteilt": {
-     "FOLLOWER": 17,
      "UNKNOWN": 13,
-     "NON_FOLLOWER": 190
+     "NON_FOLLOWER": 190,
+     "FOLLOWER": 17
     }
    },
    "accounts_engaged": 0,
@@ -164,16 +164,16 @@
    "reach": {
     "gesamt": 45,
     "aufgeteilt": {
-     "NON_FOLLOWER": 42,
-     "FOLLOWER": 3
+     "FOLLOWER": 3,
+     "NON_FOLLOWER": 42
     }
    },
    "views": {
     "gesamt": 163,
     "aufgeteilt": {
      "UNKNOWN": 3,
-     "NON_FOLLOWER": 146,
-     "FOLLOWER": 14
+     "FOLLOWER": 14,
+     "NON_FOLLOWER": 146
     }
    },
    "accounts_engaged": 6,
@@ -208,8 +208,8 @@
    "views": {
     "gesamt": 128,
     "aufgeteilt": {
-     "FOLLOWER": 26,
      "UNKNOWN": 14,
+     "FOLLOWER": 26,
      "NON_FOLLOWER": 88
     }
    },
@@ -346,15 +346,15 @@
    "reach": {
     "gesamt": 123,
     "aufgeteilt": {
-     "FOLLOWER": 6,
-     "NON_FOLLOWER": 117
+     "NON_FOLLOWER": 117,
+     "FOLLOWER": 6
     }
    },
    "views": {
     "gesamt": 444,
     "aufgeteilt": {
-     "UNKNOWN": 7,
      "FOLLOWER": 33,
+     "UNKNOWN": 7,
      "NON_FOLLOWER": 404
     }
    },
@@ -390,9 +390,9 @@
    "views": {
     "gesamt": 180,
     "aufgeteilt": {
+     "FOLLOWER": 10,
      "UNKNOWN": 7,
-     "NON_FOLLOWER": 163,
-     "FOLLOWER": 10
+     "NON_FOLLOWER": 163
     }
    },
    "accounts_engaged": 0,
@@ -427,8 +427,8 @@
    "views": {
     "gesamt": 200,
     "aufgeteilt": {
-     "UNKNOWN": 4,
      "FOLLOWER": 36,
+     "UNKNOWN": 4,
      "NON_FOLLOWER": 160
     }
    },
@@ -464,9 +464,9 @@
    "views": {
     "gesamt": 507,
     "aufgeteilt": {
+     "NON_FOLLOWER": 432,
      "UNKNOWN": 20,
-     "FOLLOWER": 55,
-     "NON_FOLLOWER": 432
+     "FOLLOWER": 55
     }
    },
    "accounts_engaged": 0,
@@ -631,7 +631,6 @@
   }
  ],
  "tageswerte_reichweite": {
-  "2026-09-09": 1,
   "2026-09-10": 1,
   "2026-09-11": 1,
   "2026-09-12": 3,
@@ -659,7 +658,8 @@
   "2026-10-04": 428,
   "2026-10-05": 262,
   "2026-10-06": 220,
-  "2026-10-07": 135
+  "2026-10-07": 136,
+  "2026-10-08": 11
  },
  "zielgruppe": {
   "follower_demographics": {
@@ -926,33 +926,8 @@
   }
  },
  "online_follower": {
-  "2026-10-06": {
-   "0": 87,
-   "1": 85,
-   "2": 82,
-   "3": 87,
-   "4": 89,
-   "5": 90,
-   "6": 99,
-   "7": 109,
-   "8": 118,
-   "9": 114,
-   "10": 109,
-   "11": 121,
-   "12": 124,
-   "13": 86,
-   "14": 64,
-   "15": 37,
-   "16": 22,
-   "17": 17,
-   "18": 13,
-   "19": 14,
-   "20": 32,
-   "21": 83,
-   "22": 94,
-   "23": 94
-  },
-  "2026-10-07": {}
+  "2026-10-07": {},
+  "2026-10-08": {}
  },
  "beitraege": [
   {
@@ -964,13 +939,13 @@
    "like_count": 2,
    "comments_count": 0,
    "caption": "5 Excel-Fehler, die fast jede Steuerrückstellung hat 👀\n\nFest eingetippte Steuersätze, tote Verknüpfungen, keine Versionen, kein Prüfpfad, zu früh gerundet. Keiner davon fällt sofort auf – aber alle kosten im Abschluss Zeit.\n\nWelcher Fehler ist bei euch Stammgast? Nummer in die Kommentare 👇\n\n💬 Schreib mir „TOOL“ per DM – ich zeig dir, wie ein Tool das verhindert.\n\n#steuern #steuerabteilung #excel #steuerrueckstellung #automatisierung",
-   "views": 119,
-   "reach": 42,
+   "views": 137,
+   "reach": 49,
    "likes": 2,
    "comments": 0,
-   "saved": 1,
+   "saved": 2,
    "shares": 0,
-   "total_interactions": 3,
+   "total_interactions": 4,
    "_fehlt": [
     "ig_reels_avg_watch_time",
     "ig_reels_video_view_total_time",
@@ -999,8 +974,8 @@
    "saved": 9,
    "shares": 8,
    "total_interactions": 30,
-   "ig_reels_avg_watch_time": 7009,
-   "ig_reels_video_view_total_time": 2137913,
+   "ig_reels_avg_watch_time": 7005,
+   "ig_reels_video_view_total_time": 2150730,
    "reels_skip_rate": 66.8,
    "_fehlt": [
     "profile_visits",
@@ -1027,8 +1002,8 @@
    "saved": 14,
    "shares": 12,
    "total_interactions": 50,
-   "ig_reels_avg_watch_time": 9573,
-   "ig_reels_video_view_total_time": 7400459,
+   "ig_reels_avg_watch_time": 9614,
+   "ig_reels_video_view_total_time": 7441335,
    "reels_skip_rate": 64.8,
    "_fehlt": [
     "profile_visits",
@@ -1049,7 +1024,7 @@
    "comments_count": 2,
    "caption": "Neu hier? Dann kurz zu mir 👋\n\nIch bin Loris – Diplom-Finanzwirt und IHK-zertifizierter Manager für angewandte KI-Transformation.\n\n2025 habe ich maehrsteuern gestartet: mit Lern-Inhalten und KI-Schulungen rund ums Steuer-Examen. Viele von euch kennen mich daher – und sind heute selbst Beraterinnen und Berater. 🎓➡️💼\n\nJetzt geht's den nächsten Schritt: KI-Lösungen für Steuern, die wirklich laufen – weil ich sie selbst programmiere. Vom kleinen Tool bis zum ganzen Prozess.\n\n📅 Ab jetzt jede Woche neue Beiträge, meist abends um 19:30:\n⚙️ Demos meiner Tools\n📊 Excel-Fehler und Steuerwissen mit Rechenbeispiel\n🧠 Einblicke hinter den Code\n\nWoher kennst du mich – Examen, Kanzlei oder Steuerabteilung? 👇\n\n💬 Schreib mir „TOOL“ per DM, wenn du die Demo sehen willst.\n\n#steuern #steuerrecht #kuenstlicheintelligenz #automatisierung #finanzwirt",
    "views": 342,
-   "reach": 125,
+   "reach": 126,
    "likes": 9,
    "comments": 2,
    "saved": 2,
@@ -1100,52 +1075,8 @@
   {
    "id": "18105886382209743",
    "zeit": "2026-10-08T05:20:57+0000",
-   "views": 10,
-   "reach": 7,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 0,
-   "profile_visits": 1,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 7,
-   "replies": 0,
-   "kommentare_text": []
-  },
-  {
-   "id": "18102258089378630",
-   "zeit": "2026-10-07T21:02:43+0000",
    "views": 24,
-   "reach": 20,
-   "_fehlt": [
-    "likes",
-    "comments",
-    "saved",
-    "ig_reels_avg_watch_time",
-    "ig_reels_video_view_total_time",
-    "reels_skip_rate"
-   ],
-   "shares": 0,
-   "total_interactions": 0,
-   "profile_visits": 2,
-   "profile_activity": 0,
-   "follows": 0,
-   "navigation": 23,
-   "replies": 0,
-   "kommentare_text": []
-  },
-  {
-   "id": "18153420970529463",
-   "zeit": "2026-10-07T17:35:14+0000",
-   "views": 41,
-   "reach": 34,
+   "reach": 18,
    "_fehlt": [
     "likes",
     "comments",
@@ -1159,15 +1090,15 @@
    "profile_visits": 1,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 40,
+   "navigation": 22,
    "replies": 0,
    "kommentare_text": []
   },
   {
-   "id": "18091202405680157",
-   "zeit": "2026-10-07T10:15:15+0000",
-   "views": 61,
-   "reach": 47,
+   "id": "18102258089378630",
+   "zeit": "2026-10-07T21:02:43+0000",
+   "views": 32,
+   "reach": 25,
    "_fehlt": [
     "likes",
     "comments",
@@ -1177,11 +1108,33 @@
     "reels_skip_rate"
    ],
    "shares": 0,
-   "total_interactions": 2,
+   "total_interactions": 0,
+   "profile_visits": 2,
+   "profile_activity": 0,
+   "follows": 0,
+   "navigation": 29,
+   "replies": 0,
+   "kommentare_text": []
+  },
+  {
+   "id": "18153420970529463",
+   "zeit": "2026-10-07T17:35:14+0000",
+   "views": 50,
+   "reach": 40,
+   "_fehlt": [
+    "likes",
+    "comments",
+    "saved",
+    "ig_reels_avg_watch_time",
+    "ig_reels_video_view_total_time",
+    "reels_skip_rate"
+   ],
+   "shares": 0,
+   "total_interactions": 1,
    "profile_visits": 1,
    "profile_activity": 0,
    "follows": 0,
-   "navigation": 50,
+   "navigation": 48,
    "replies": 0,
    "kommentare_text": []
   }
