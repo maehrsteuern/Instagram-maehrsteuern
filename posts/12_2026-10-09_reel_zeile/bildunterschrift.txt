@@ -1,0 +1,12 @@
+Jutta hat schon wieder eine Zeile eingefügt – und die Summe ist weg. #BEZUG! 😤
+
+In Excel hängt die Summe an festen Zellen. Fügst du am Rand was ein, rechnet sie am neuen Posten vorbei. Oder sie bricht ganz.
+
+Im Code gibt's keine Zellen. Ich sag nur: Nimm alle Posten und summier den Betrag. Egal ob 3 oder 300 Zeilen dazukommen – die Summe stimmt.
+
+Das war Nummer 2 aus meinem 5-Dinge-Reel.
+Welche Nummer willst du als Nächstes sehen? 3, 4 oder 5 – schreib's in die Kommentare 👇
+
+Alle Zahlen im Video sind Beispieldaten.
+
+#steuern #excel #gewerbesteuer #python #automatisierung

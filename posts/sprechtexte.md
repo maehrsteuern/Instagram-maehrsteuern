@@ -4,20 +4,20 @@ Ablauf: Text grob lesen, dann **locker frei sprechen** (Sprachnachricht vom Hand
 etwas Abstand zum Mikro). Schicken → Claude schneidet mit wörtlichen Untertiteln (Regeln: `strategie/09_reel_regeln.md`).
 Keine echten Zahlen oder Fälle vom Arbeitgeber – nur Demo-Zahlen.
 
-## 🎬 Serie „5 Dinge“ – Reel-Takt alle 2 Tage (geschrieben 06.10.)
+## 🎬 Serie „5 Dinge“ (geschrieben 06.10.) – ✓ alles eingesprochen 08.10., geschnitten, täglich 19:30 eingeplant
 Jede Datei einzeln aufnehmen, in Drive „Maehrsteuern audios“ ablegen, Dateiname egal (Claude erkennt den Text).
 Tipps: Handy 30–40 cm seitlich, langsam (lieber zu langsam), Wortenden aussprechen, vor dem ersten Satz einmal
 einatmen. Versprecher? Kurz Pause und den Satz neu – Claude schneidet. Atmer und Pausen nimmt Claude raus.
 Zahlen/„früher“-Aussagen nur sagen, wenn sie für dich stimmen – sonst in deinen Worten.
 
-### Mo 12.10. · Nummer 2: „Eine Zeile – und die Summe ist weg“  (`12-reel-zeile`, ca. 25 s)
+### ✓ Fr 09.10. · Nummer 2: „Eine Zeile – und die Summe ist weg“  (`12-reel-zeile`, ca. 25 s)
 > Eine Zeile eingefügt. Und die Summe ist weg. Hash-Bezug.
 > In Excel hängt die Summe an festen Zellen. Fügst du am Rand was ein, rechnet sie am neuen Posten vorbei. Oder sie bricht ganz.
 > Im Code gibt's keine Zellen. Ich sag nur: Nimm alle Posten. Und summier den Betrag.
 > Egal, ob drei oder dreihundert Zeilen dazukommen – die Summe stimmt.
 > Das war Nummer zwei aus meinem 5-Dinge-Reel. Welche Nummer willst du als Nächstes?
 
-### (alt) Fr 16.10. · „Die Verknüpfung auf die alte Datei“ – jetzt oben in der Serie (13-reel-verknuepfung)  (`13-reel-verknuepfung`, ca. 25 s)
+### ✓ So 11.10. · „Die Verknüpfung auf die alte Datei“  (`13-reel-verknuepfung`, ca. 25 s)
 > Kennst du das? Zwei Tage vor Abgabe, du öffnest die Steuerberechnung – und überall steht Hash-Bezug.
 > Bei mir hing eine Verknüpfung noch an der Datei vom Vorjahr. Irgendwer hatte den Ordner umbenannt.
 > Ich hab einen ganzen Abend gesucht, welche Zahl woher kommt.
@@ -25,7 +25,7 @@ Zahlen/„früher“-Aussagen nur sagen, wenn sie für dich stimmen – sonst in
 > Heute klick ich auf eine Zahl und seh sofort, wo sie herkommt.
 > Wie oft passiert dir das? Schreib's in die Kommentare.
 
-### So 18.10. · Nummer 3: „final_final_v3“  (`14-reel-versionen`, ca. 25 s)
+### ✓ Mo 12.10. · Nummer 3: „final_final_v3“  (`14-reel-versionen`, ca. 25 s)
 > Final. Final final. Final final v3. Und keiner weiß, welche die richtige ist.
 > So sah mein Steuerordner früher aus.
 > Heute gibt's eine Datei. Und jede Änderung wird gespeichert: wer, wann, was.
@@ -33,14 +33,14 @@ Zahlen/„früher“-Aussagen nur sagen, wenn sie für dich stimmen – sonst in
 > Und wenn was schiefgeht, geh ich einfach einen Schritt zurück.
 > Nummer drei aus meinem 5-Dinge-Reel. Wie heißt eure schlimmste Datei? Schreib's in die Kommentare.
 
-### Di 20.10. · Nummer 4: „Die doppelte Rechnungsnummer“  (`15-reel-rechnungsnummern`, ca. 25 s)
+### ✓ Di 13.10. · Nummer 4: „Die doppelte Rechnungsnummer“  (`15-reel-rechnungsnummern`, ca. 25 s)
 > Eine Rechnungsnummer doppelt. Der Prüfer findet sie in zwei Minuten. Und du?
 > In Excel heißt das: sortieren, scrollen, hoffen.
 > Mein Code prüft jede Nummer gegen alle anderen. Doppelt? Rot. Lücke in der Folge? Auch rot.
 > Dauert eine Sekunde. Und ich weiß es vor der Prüfung – nicht danach.
 > Nummer vier aus meinem 5-Dinge-Reel. Speicher dir das für den nächsten Abschluss.
 
-### Do 22.10. · Nummer 5: „Zwei Listen, ein SVERWEIS zu viel“  (`16-reel-listen`, ca. 25 s)
+### ✓ Do 15.10. · Nummer 5: „Zwei Listen, ein SVERWEIS zu viel“  (`16-reel-listen`, ca. 25 s)
 > SVERWEIS. Runterziehen. N-V. Nochmal runterziehen.
 > Zwei Listen abgleichen hat mich früher einen halben Nachmittag gekostet.
 > Heute: drei Zeilen Code. Er legt beide Listen nebeneinander und sagt mir, was nur in einer steht.
@@ -61,7 +61,7 @@ Text folgt, sobald die Kommentare der Serie ausgewertet sind (ca. 20.10.).
 Ca. 25 s. Locker sprechen, nicht ablesen – der erste Satz kurz und mit Pausen („Zwei Stunden. – Jeden Monat.“).
 Hook-Text: „2 Stunden. Jeden Monat.“ Bild: Hook = Excel-Runde (vorher), dann Schritt 1–3, Schluss. Alte Fassung (05.10.) verworfen.
 
-## Fr 09.10. · „Der Steuersatz, der ab 2028 falsch ist“ (zum Karussell latente Steuern vom 08.10.)
+## ✓ (eingesprochen 08.10., Sa 10.10.) · „Der Steuersatz, der ab 2028 falsch ist“ (zum Karussell latente Steuern vom 08.10.)
 > In meinem ersten Abschluss stand der Steuersatz fest in einer Zelle. Dreißig Prozent, eingetippt, fertig.
 > Hat jahrelang gepasst. Aber ab 2028 sinkt die Körperschaftsteuer jedes Jahr um einen Punkt – bis auf zehn Prozent.
 > Und latente Steuern bewertest du mit dem Satz aus dem Jahr, in dem sich die Differenz umkehrt.
@@ -81,7 +81,7 @@ Bild: Gesicht kurz am Anfang (optional Selfie-Clip 2–3 s), dann Aufnahme Staff
 
 Bild: Gesicht + Bildschirm (Format C), am Ende Prüfpfad-Klick im Tool. Hook-Text: „#BEZUG! – 2 Tage vor Abgabe.“
 
-## Di 20.10. · „Mein Weg rückwärts“ (Reel Mein Weg, Variante B – bis Do 15.10.)
+## ✓ (eingesprochen 08.10., Fr 16.10.) · „Mein Weg rückwärts“ (Reel Mein Weg, Variante B – bis Do 15.10.)
 > Das bin ich. Heute.
 > Davor: ein KI-Porträt, das ich selbst bearbeitet habe.
 > 2025 hat noch ein KI-Avatar für mich gesprochen.

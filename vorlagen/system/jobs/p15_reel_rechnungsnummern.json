@@ -1,0 +1,27 @@
+{
+ "ausgabe": "../../posts/15_2026-10-13_reel_rechnungsnummern",
+ "bilder": [
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/4a.png",
+   "bild": "4a"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/4b.png",
+   "bild": "4b"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/s_ende4.png",
+   "bild": "s_ende4"
+  },
+  {
+   "vorlage": "reel_titel",
+   "datei": "titelbild.png",
+   "saeule": "Nummer 4",
+   "titel": "Die *doppelte*\nRechnungsnummer.",
+   "sub": "In 1 Sekunde gefunden – vor der Prüfung."
+  }
+ ]
+}

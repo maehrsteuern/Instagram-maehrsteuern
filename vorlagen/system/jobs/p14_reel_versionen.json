@@ -1,0 +1,27 @@
+{
+ "ausgabe": "../../posts/14_2026-10-12_reel_versionen",
+ "bilder": [
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/3a.png",
+   "bild": "3a"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/3b.png",
+   "bild": "3b"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/s_ende3.png",
+   "bild": "s_ende3"
+  },
+  {
+   "vorlage": "reel_titel",
+   "datei": "titelbild.png",
+   "saeule": "Nummer 3",
+   "titel": "final_final_*v3*.xlsx",
+   "sub": "Eine Datei. Jede Änderung gespeichert."
+  }
+ ]
+}

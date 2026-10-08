@@ -1,0 +1,32 @@
+{
+ "ausgabe": "../../posts/13_2026-10-11_reel_verknuepfung",
+ "bilder": [
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/v_hook.png",
+   "bild": "v_hook"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/v_dialog.png",
+   "bild": "v_dialog"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/v_pfad.png",
+   "bild": "v_pfad"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/v_ende.png",
+   "bild": "v_ende"
+  },
+  {
+   "vorlage": "reel_titel",
+   "datei": "titelbild.png",
+   "saeule": "Excel-Fehler",
+   "titel": "*#BEZUG!* –\n2 Tage vor Abgabe.",
+   "sub": "Die Verknüpfung auf die alte Datei."
+  }
+ ]
+}

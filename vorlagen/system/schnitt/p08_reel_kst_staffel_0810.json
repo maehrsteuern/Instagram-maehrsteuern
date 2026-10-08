@@ -1,0 +1,471 @@
+{
+ "ausgabe": "../../posts/08_2026-10-09_reel_kst_staffel/reel.mp4",
+ "fps": 30,
+ "quellen": {
+  "tabelle_30prozent": {
+   "datei": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/tabelle_30prozent.png"
+  },
+  "karte_staffel": {
+   "datei": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_staffel.png"
+  },
+  "karte_umkehr": {
+   "datei": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_umkehr.png"
+  },
+  "k_staffel": {
+   "datei": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/k_staffel.png"
+  },
+  "karte_ende": {
+   "datei": "../../posts/08_2026-10-09_reel_kst_staffel/bausteine/karte_ende.png"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "tabelle_30prozent",
+   "dauer": 6.42,
+   "text": [
+    {
+     "wort": "In meinem ersten",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.1,
+     "bis": 1.02
+    },
+    {
+     "wort": "Abschluss stand der",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.02,
+     "bis": 1.84
+    },
+    {
+     "wort": "Steuersatz fest in",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.84,
+     "bis": 2.7
+    },
+    {
+     "wort": "einer Zelle.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.7,
+     "bis": 3.46
+    },
+    {
+     "wort": "30 Prozent eingetippt,",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.46,
+     "bis": 4.88
+    },
+    {
+     "wort": "fertig.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.88,
+     "bis": 5.28
+    },
+    {
+     "wort": "Hat jahrelang gepasst.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.28,
+     "bis": 6.5
+    },
+    {
+     "wort": "30 % fest",
+     "farbe": "weiss",
+     "groesse": 118,
+     "y": 700,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.3,
+     "bis": 3.6
+    },
+    {
+     "wort": "eingetippt?",
+     "farbe": "gelb",
+     "groesse": 118,
+     "y": 850,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.8999999999999999,
+     "bis": 3.6
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    700,
+    940,
+    940
+   ],
+   "abdunkeln": 0.25
+  },
+  {
+   "quelle": "karte_staffel",
+   "dauer": 4.8,
+   "text": [
+    {
+     "wort": "Hat jahrelang gepasst.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Aber ab 2028 sinkt die",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 1.96
+    },
+    {
+     "wort": "Körperschaftsteuer",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.96,
+     "bis": 2.68
+    },
+    {
+     "wort": "jedes Jahr um einen",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.68,
+     "bis": 3.48
+    },
+    {
+     "wort": "Punkt bis auf 10",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.48,
+     "bis": 4.26
+    },
+    {
+     "wort": "Prozent.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.26,
+     "bis": 4.88
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ],
+   "rein": "whip"
+  },
+  {
+   "quelle": "karte_umkehr",
+   "dauer": 6.94,
+   "text": [
+    {
+     "wort": "Prozent.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Und latente Steuern",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 1.0
+    },
+    {
+     "wort": "bewertest du mit dem",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.0,
+     "bis": 1.8
+    },
+    {
+     "wort": "Satz aus dem Jahr, in",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.8,
+     "bis": 2.86
+    },
+    {
+     "wort": "dem sich die Differenz",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.86,
+     "bis": 3.76
+    },
+    {
+     "wort": "umkehrt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.76,
+     "bis": 4.6
+    },
+    {
+     "wort": "Ein fester Satz ist ab",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.6,
+     "bis": 5.68
+    },
+    {
+     "wort": "jetzt also schlicht",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.68,
+     "bis": 6.42
+    },
+    {
+     "wort": "falsch.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.42,
+     "bis": 7.02
+    },
+    {
+     "wort": "FALSCH",
+     "farbe": "rot",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.04,
+     "bis": 6.94
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "k_staffel",
+   "dauer": 3.36,
+   "text": [
+    {
+     "wort": "falsch.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Ich habe mir deshalb",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.66
+    },
+    {
+     "wort": "eine kleine Staffel",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.66,
+     "bis": 1.54
+    },
+    {
+     "wort": "gebaut, die das Jahr",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.54,
+     "bis": 2.54
+    },
+    {
+     "wort": "selbst erkennt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.54,
+     "bis": 3.44
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "karte_ende",
+   "dauer": 5.42,
+   "text": [
+    {
+     "wort": "selbst erkennt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Den Rechenweg habe ich",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.98
+    },
+    {
+     "wort": "gestern ins Karussell",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.98,
+     "bis": 1.84
+    },
+    {
+     "wort": "gepackt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.84,
+     "bis": 2.56
+    },
+    {
+     "wort": "Und wenn du das Tool",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.56,
+     "bis": 3.44
+    },
+    {
+     "wort": "sehen willst:",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.44,
+     "bis": 4.18
+    },
+    {
+     "wort": "schreib mir „TOOL“.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.18,
+     "bis": 5.07
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  }
+ ],
+ "ton": [
+  {
+   "datei": "../../posts/08_2026-10-09_reel_kst_staffel/ton/stimme.flac",
+   "ab": 0,
+   "lautstaerke": 1.0,
+   "ein": 0.02,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/09_runway_lofi_piano.mp3",
+   "ab": 18.16,
+   "start": 0.4,
+   "lautstaerke": 0.1,
+   "ein": 0.8
+  },
+  {
+   "datei": "../../musik/atmo/tippen_fehlerton.mp3",
+   "ab": 3.38,
+   "start": 0.8,
+   "dauer": 0.8,
+   "lautstaerke": 0.8,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 17.56,
+   "start": 0,
+   "dauer": 0.6,
+   "lautstaerke": 0.35,
+   "ein": 0.05,
+   "aus": 0.3
+  }
+ ]
+}

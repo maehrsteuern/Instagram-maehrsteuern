@@ -1,0 +1,10 @@
+Gleiche Aufgabe, zwei Wege: Hebesatz von 400 auf 450 %. 👀
+
+Oben Excel: #BEZUG! und „Quelle nicht gefunden“. Unten mein Tool: fertig, bevor Excel die Quelle findet. Eine Datenquelle, keine Verknüpfungen. Alles Demo-Daten.
+
+Wie oft hängt bei euch eine Verknüpfung noch an einer alten Datei? 👇
+
+💬 Schreib mir „TOOL“ per DM – ich zeig dir die Demo.
+📌 Alle 5 Excel-Fehler stehen im Karussell von gestern.
+
+#steuern #excel #steuerabteilung #gewerbesteuer #automatisierung

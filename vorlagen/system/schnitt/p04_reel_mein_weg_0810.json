@@ -1,0 +1,288 @@
+{
+ "ausgabe": "../../posts/04_2026-10-20_reel_mein_weg/reel.mp4",
+ "fps": 30,
+ "quellen": {
+  "k1": {
+   "datei": "../../assets/marke/karte_1_aktuell_9x16.png"
+  },
+  "k2": {
+   "datei": "../../assets/marke/karte_2_ki_portrait_9x16.png"
+  },
+  "k3": {
+   "datei": "../../assets/marke/karte_3_ki_avatar_2025_9x16.png"
+  },
+  "abspann": {
+   "datei": "../../posts/04_2026-10-20_reel_mein_weg/bausteine/abspann.png"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "k1",
+   "dauer": 2.0,
+   "text": [
+    {
+     "wort": "Das bin ich heute.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.1,
+     "bis": 2.08
+    },
+    {
+     "wort": "Mein Weg.",
+     "farbe": "weiss",
+     "groesse": 118,
+     "y": 700,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.3,
+     "bis": 2.0
+    },
+    {
+     "wort": "Rückwärts.",
+     "farbe": "gruen",
+     "groesse": 118,
+     "y": 850,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.8999999999999999,
+     "bis": 2.0
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    900,
+    960
+   ],
+   "abdunkeln": 0.25
+  },
+  {
+   "quelle": "k2",
+   "dauer": 3.26,
+   "text": [
+    {
+     "wort": "Das bin ich heute.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Davor:",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.52
+    },
+    {
+     "wort": "ein KI-Porträt, das",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.52,
+     "bis": 1.98
+    },
+    {
+     "wort": "ich selbst bearbeitet",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.98,
+     "bis": 2.78
+    },
+    {
+     "wort": "habe.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.78,
+     "bis": 3.34
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    940,
+    1010
+   ],
+   "rein": "whip"
+  },
+  {
+   "quelle": "k3",
+   "dauer": 3.26,
+   "text": [
+    {
+     "wort": "habe.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "2025 hat noch ein",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 1.72
+    },
+    {
+     "wort": "KI-Avatar für mich",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.72,
+     "bis": 2.68
+    },
+    {
+     "wort": "gesprochen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.68,
+     "bis": 3.34
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    940,
+    1010
+   ]
+  },
+  {
+   "quelle": "k1",
+   "dauer": 2.56,
+   "text": [
+    {
+     "wort": "gesprochen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Heute stehe ich selbst",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.86
+    },
+    {
+     "wort": "da.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.86,
+     "bis": 1.44
+    },
+    {
+     "wort": "mit Steuern × Code.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.44,
+     "bis": 2.64
+    }
+   ],
+   "von": [
+    540,
+    900,
+    960
+   ],
+   "nach": [
+    540,
+    960,
+    1080
+   ],
+   "rein": "whip"
+  },
+  {
+   "quelle": "abspann",
+   "dauer": 1.72,
+   "text": [
+    {
+     "wort": "mit Steuern × Code.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Schreib „TOOL“ per DM.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 1.37
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  }
+ ],
+ "ton": [
+  {
+   "datei": "../../posts/04_2026-10-20_reel_mein_weg/ton/stimme.flac",
+   "ab": 0,
+   "lautstaerke": 1.0,
+   "ein": 0.02,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/09_runway_lofi_piano.mp3",
+   "ab": 8.52,
+   "start": 0.4,
+   "lautstaerke": 0.11,
+   "ein": 0.8
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 0.02,
+   "start": 0.3,
+   "dauer": 9.6,
+   "lautstaerke": 0.2,
+   "ein": 0.05,
+   "aus": 0.3
+  }
+ ]
+}

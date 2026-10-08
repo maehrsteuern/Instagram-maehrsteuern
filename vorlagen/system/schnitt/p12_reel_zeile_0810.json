@@ -1,0 +1,388 @@
+{
+ "ausgabe": "../../posts/12_2026-10-09_reel_zeile/reel.mp4",
+ "fps": 30,
+ "quellen": {
+  "2a": {
+   "datei": "../../posts/12_2026-10-09_reel_zeile/bausteine/2a.png"
+  },
+  "2b": {
+   "datei": "../../posts/12_2026-10-09_reel_zeile/bausteine/2b.png"
+  },
+  "s_ende2": {
+   "datei": "../../posts/12_2026-10-09_reel_zeile/bausteine/s_ende2.png"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "2a",
+   "dauer": 4.18,
+   "text": [
+    {
+     "wort": "Jutta hat schon wieder",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.0,
+     "bis": 1.42
+    },
+    {
+     "wort": "eine Zeile eingefügt",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.42,
+     "bis": 2.46
+    },
+    {
+     "wort": "und die Summe ist weg.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.46,
+     "bis": 3.54
+    },
+    {
+     "wort": "#BEZUG!-Fehler.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.54,
+     "bis": 4.26
+    },
+    {
+     "wort": "Zeile eingefügt.",
+     "farbe": "weiss",
+     "groesse": 118,
+     "y": 700,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.3,
+     "bis": 3.6
+    },
+    {
+     "wort": "Summe weg.",
+     "farbe": "rot",
+     "groesse": 118,
+     "y": 850,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.8999999999999999,
+     "bis": 3.6
+    },
+    {
+     "wort": "#BEZUG!",
+     "farbe": "rot",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.46,
+     "bis": 4.18
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    560,
+    1000,
+    900
+   ],
+   "abdunkeln": 0.25
+  },
+  {
+   "quelle": "2a",
+   "dauer": 6.64,
+   "text": [
+    {
+     "wort": "#BEZUG!-Fehler.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "In Excel hängt die",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.98
+    },
+    {
+     "wort": "Summe an festen",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.98,
+     "bis": 1.88
+    },
+    {
+     "wort": "Zellen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.88,
+     "bis": 2.46
+    },
+    {
+     "wort": "Fügst du am Rand was",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.46,
+     "bis": 3.3
+    },
+    {
+     "wort": "ein, rechnet sie am",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.3,
+     "bis": 4.42
+    },
+    {
+     "wort": "neuen Posten vorbei.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.42,
+     "bis": 5.6
+    },
+    {
+     "wort": "Oder sie bricht ganz.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.6,
+     "bis": 6.72
+    }
+   ],
+   "von": [
+    540,
+    930,
+    1010
+   ],
+   "nach": [
+    540,
+    960,
+    1080
+   ]
+  },
+  {
+   "quelle": "2b",
+   "dauer": 7.14,
+   "text": [
+    {
+     "wort": "Oder sie bricht ganz.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Im Code gibt es keine",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.88
+    },
+    {
+     "wort": "Zellen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.88,
+     "bis": 1.52
+    },
+    {
+     "wort": "Ich sag nur, nimm alle",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.52,
+     "bis": 2.54
+    },
+    {
+     "wort": "Posten und summier den",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.54,
+     "bis": 3.62
+    },
+    {
+     "wort": "Betrag.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.62,
+     "bis": 4.32
+    },
+    {
+     "wort": "Egal ob 3 oder 300",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.32,
+     "bis": 5.72
+    },
+    {
+     "wort": "Zeilen –",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.72,
+     "bis": 6.36
+    },
+    {
+     "wort": "Die Summe stimmt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.36,
+     "bis": 7.22
+    },
+    {
+     "wort": "✓ stimmt",
+     "farbe": "gruen",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.28,
+     "bis": 7.14
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ],
+   "rein": "whip"
+  },
+  {
+   "quelle": "s_ende2",
+   "dauer": 4.7,
+   "text": [
+    {
+     "wort": "Die Summe stimmt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Das war Nummer 2 aus",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 1.16
+    },
+    {
+     "wort": "meinem 5-Dinge-Reel.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.16,
+     "bis": 2.44
+    },
+    {
+     "wort": "Welche Nummer willst",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.44,
+     "bis": 3.14
+    },
+    {
+     "wort": "du als Nächstes sehen?",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.14,
+     "bis": 4.35
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  }
+ ],
+ "ton": [
+  {
+   "datei": "../../posts/12_2026-10-09_reel_zeile/ton/stimme.flac",
+   "ab": 0,
+   "lautstaerke": 1.0,
+   "ein": 0.02,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/12_runway_pop_electronic.mp3",
+   "ab": 10.82,
+   "start": 0.4,
+   "lautstaerke": 0.1,
+   "ein": 0.8
+  },
+  {
+   "datei": "../../musik/atmo/tippen_fehlerton.mp3",
+   "ab": 1.34,
+   "start": 0.8,
+   "dauer": 0.6,
+   "lautstaerke": 0.8,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 3.46,
+   "start": 0,
+   "dauer": 0.6,
+   "lautstaerke": 0.45,
+   "ein": 0.05,
+   "aus": 0.3
+  }
+ ]
+}

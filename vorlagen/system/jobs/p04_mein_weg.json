@@ -3,7 +3,7 @@
   "bilder": [
     {
       "vorlage": "reel_titel",
-      "datei": "../titelbild.png",
+      "datei": "../titelbild_variante_a.png",
       "saeule": "Hinter dem Code",
       "kicker": "Hinter dem Code",
       "titel": "Vom Steuer-Studium\nzum *eigenen Tool*",
@@ -67,7 +67,7 @@
       "typ": "teaser",
       "kicker": "Neues Reel",
       "titel": "Mein Weg zu *Steuern × Code*.",
-      "bild": "../../posts/04_2026-10-20_reel_mein_weg/titelbild.png"
+      "bild": "../../posts/04_2026-10-20_reel_mein_weg/titelbild_variante_a.png"
     }
   ]
 }

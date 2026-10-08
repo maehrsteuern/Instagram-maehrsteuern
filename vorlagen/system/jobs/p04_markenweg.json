@@ -3,7 +3,7 @@
   "bilder": [
     {
       "vorlage": "reel_titel",
-      "datei": "titelbild_markenweg.png",
+      "datei": "titelbild.png",
       "bild": "../../assets/marke/karte_3_ki_avatar_2025_9x16.png",
       "kicker": "Hinter dem Code",
       "titel": "Mein Weg\n*rückwärts*",
@@ -15,7 +15,7 @@
       "typ": "teaser",
       "kicker": "Neues Reel",
       "titel": "Mein Weg zu *Steuern × Code*.",
-      "bild": "../../posts/04_2026-10-20_reel_mein_weg/titelbild_markenweg.png"
+      "bild": "../../posts/04_2026-10-20_reel_mein_weg/titelbild.png"
     }
   ]
 }

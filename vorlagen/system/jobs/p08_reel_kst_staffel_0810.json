@@ -1,0 +1,17 @@
+{
+ "ausgabe": "../../posts/08_2026-10-09_reel_kst_staffel",
+ "bilder": [
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/k_staffel.png",
+   "bild": "k_staffel"
+  },
+  {
+   "vorlage": "reel_titel",
+   "datei": "titelbild.png",
+   "saeule": "Latente Steuern",
+   "titel": "*30 %* fest\neingetippt?",
+   "sub": "Ab 2028 ist das falsch."
+  }
+ ]
+}

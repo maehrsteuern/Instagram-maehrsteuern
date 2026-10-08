@@ -1,0 +1,12 @@
+Eine Rechnungsnummer doppelt. Der Prüfer findet sie in 2 Minuten. Und du? 🔍
+
+In Excel heißt das: sortieren, scrollen, hoffen.
+Mein Code prüft jede Nummer gegen alle anderen. Doppelt? Rot. Lücke in der Folge? Auch rot.
+Dauert eine Sekunde – und ich weiß es vor der Prüfung, nicht danach.
+
+Nummer 4 aus meinem 5-Dinge-Reel.
+🔖 Speicher dir das für den nächsten Abschluss.
+
+Alle Zahlen im Video sind Beispieldaten.
+
+#steuern #betriebspruefung #umsatzsteuer #python #automatisierung

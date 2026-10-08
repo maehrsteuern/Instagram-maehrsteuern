@@ -1,0 +1,27 @@
+{
+ "ausgabe": "../../posts/12_2026-10-09_reel_zeile",
+ "bilder": [
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/2a.png",
+   "bild": "2a"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/2b.png",
+   "bild": "2b"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/s_ende2.png",
+   "bild": "s_ende2"
+  },
+  {
+   "vorlage": "reel_titel",
+   "datei": "titelbild.png",
+   "saeule": "Nummer 2",
+   "titel": "Eine Zeile –\nund die *Summe* ist weg.",
+   "sub": "Warum Code keine Zellen braucht."
+  }
+ ]
+}

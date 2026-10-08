@@ -15,6 +15,7 @@ Szene:
    "glitch": 0.3,     – Anteil Bilder mit Glitch (RGB-Versatz, verschobene Streifen)
    "abdunkeln": 0.35, – Hintergrund abdunkeln, damit Text auf unruhigen Screens lesbar bleibt
    "text": [{"wort": "#BEZUG!", "ab": "0b", "farbe": "rot", "groesse": 190, "y": 700}]}
+   Text optional mit "x" (Mitte, Standard 540) und "breite" (max. Breite) – z. B. x 470 / breite 760 hält rechts 150 px frei.
 Texte ohne "ab" stehen sofort (ohne Aufpoppen) – so bleibt ein Text über mehrere Schnitte stehen.
 "bis" blendet einen Text wieder aus (für Untertitel, die innerhalb einer Szene wechseln).
 
@@ -129,14 +130,14 @@ def text_ebene(eintraege, t):
         zeile = e["wort"]
         g = e.get("groesse", 150)
         breit = ImageDraw.Draw(ebene).textbbox((0, 0), zeile, font=font(g), stroke_width=round(g * 0.075))
-        g = min(g, int(g * (W - 90) / (breit[2] - breit[0])))  # nie breiter als das Bild
+        g = min(g, int(g * e.get("breite", W - 90) / (breit[2] - breit[0])))  # nie breiter als das Bild bzw. "breite" (Safe-Zone)
         k = min((t - ab) / 0.15, 1) if ab >= 0 else 1
         skala = 0.6 + 0.4 * k + 0.3 * math.sin(math.pi * k)  # klein rein, kurz überschwingen
         f = font(max(round(g * skala), 8))
         rand = max(round(g * skala * 0.075), 4)
         box = ImageDraw.Draw(ebene).textbbox((0, 0), zeile, font=f, stroke_width=rand)
         bw, bh = box[2] - box[0], box[3] - box[1]
-        x, y = (W - bw) / 2 - box[0], e.get("y", 760) - bh / 2 - box[1]
+        x, y = e.get("x", W / 2) - bw / 2 - box[0], e.get("y", 760) - bh / 2 - box[1]
         schatten = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         ImageDraw.Draw(schatten).text((x + 8, y + 12), zeile, font=f, fill=(0, 0, 0, 150), stroke_width=rand, stroke_fill=(0, 0, 0, 150))
         ebene.alpha_composite(schatten.filter(ImageFilter.GaussianBlur(10)))

@@ -61,6 +61,11 @@ const xl = (titel, ref, formel, kopfzeile, zeilen) => `<div class="panel xl"><di
   ${zeilen.map((z,i)=>`<tr><th>${i+1}</th>${z.map(c=>{const [v,cls]=Array.isArray(c)?c:[c,""];return `<td class="${cls}">${v}</td>`}).join("")}</tr>`).join("")}</table></div>`;
 const code = (datei, zeilen, ausgabe) => `<div class="panel code"><div class="t"><u></u><u></u><u></u>&nbsp;${datei}</div><pre>${zeilen}</pre><div class="aus">${ausgabe}</div></div>`;
 const L = (v)=>[v,"l"];
+// Schlussfrage: erledigt = Nummern mit Haken, null = keine Zahlenreihe
+const frage = (titel, erledigt, chip) => `<div class="marke">@maehrsteuern</div>
+    <div class="gross" style="top:330px">${titel}</div>
+    ${erledigt ? `<div class="zahlen">${[1,2,3,4,5].map(n=>`<div ${erledigt.includes(n)?'style="opacity:.35;border-style:dashed"':''}>${erledigt.includes(n)?'✓':n}</div>`).join("")}</div>` : ''}
+    <div class="chips" ${erledigt?'':'style="top:760px"'}><span class="chip">${chip}</span></div>`;
 const B = {
   hook: `<div class="marke">@maehrsteuern</div>
     <div class="gross">5 Sachen, die ich aus <span style="color:#3fae6c">Excel</span> rausgeschmissen hab.</div>
@@ -124,6 +129,28 @@ const B = {
     <div class="gross" style="top:330px">Welche Nummer als <span style="color:var(--gruen)">Nächstes?</span></div>
     <div class="zahlen">${[5,4,3,2].map(n=>`<div>${n}</div>`).join("")}<div style="opacity:.35;border-style:dashed">1</div></div>
     <div class="chips"><span class="chip">Zahl in die Kommentare</span><span class="chip">✓ Nummer 1 erledigt</span></div>`,
+  // Serie 08.10. (Nummer 2–5, Verknüpfung, Steuersatz) – s-/v-/k-Bilder, nur Demo-Zahlen
+  s_ende2: frage("Welche Nummer willst du als <span style='color:var(--gruen)'>Nächstes?</span>", [1,2], "Zahl in die Kommentare"),
+  s_ende3: frage("Wie heißt eure <span style='color:var(--rot)'>schlimmste</span> Datei?", [1,2,3], "Schreib's in die Kommentare"),
+  s_ende4: `<div class="marke">@maehrsteuern</div>
+    <div class="gross" style="top:330px">Vor der Prüfung.<br><span style="color:var(--gruen)">Nicht danach.</span></div>
+    <div class="zahlen">${[1,2,3,4,5].map(n=>`<div ${n>4?'style="opacity:.35;border-style:dashed"':''}>${n<=4?'✓':n}</div>`).join("")}</div>
+    <div class="chips"><span class="chip">🔖 Speichern für den nächsten Abschluss</span></div>`,
+  s_ende5: frage("Welche Nummer war für dich die <span style='color:var(--gruen)'>beste?</span>", [], "Serie durch · Zahl in die Kommentare"),
+  v_hook: kopf("!","Zwei Tage vor Abgabe",1) + xl("Steuerberechnung_2025.xlsx","B4","='C:\\Steuern\\2024\\[Steuer_2024.xlsx]GewSt'!B12",["A","B"],[
+    [L("Gewinn lt. Bilanz"),["#BEZUG!","err"]],[L("Hinzurechnungen"),["#BEZUG!","err"]],[L("Kürzungen"),["#BEZUG!","err"]],
+    [L("Gewerbeertrag"),["#BEZUG!","err"]],[L("Messbetrag 3,5 %"),["#BEZUG!","err"]],[L("Gewerbesteuer 400 %"),["#BEZUG!","err"]],[L("Rückstellung"),["#BEZUG!","err"]]]),
+  v_dialog: kopf("?","Woher kommt die Zahl?",1) + `<div class="panel ordner"><div class="t">Verknüpfungen bearbeiten</div>
+    ${[["Steuer_2024.xlsx","Fehler: Quelle nicht gefunden",1],["SuSa_Dez_final.xlsx","Fehler: Quelle nicht gefunden",1],["Anlagen_v2 (alt).xlsx","Warnung: unbekannt",1],["Hebesätze.xlsx","OK",0]]
+      .map(([n,s,r])=>`<div class="datei ${r?'rot':''}" style="height:120px"><span class="ic">X</span><span>${n}<br><small style="font-size:24px;color:${r?'#c00':'#1d6f42'}">${s}</small></span></div>`).join("")}
+    <div class="datei" style="color:#888;border:none">📁 Ordner „2024“ → umbenannt in „2024_alt“</div></div>`,
+  v_pfad: kopf("✓","Klick auf die Zahl",0) + code("Prüfpfad · Gewerbesteuer 2025",
+    `<span class="g">29.400 €</span>  Gewerbesteuer\n<span class="c">└─</span> Messbetrag 7.350 × Hebesatz 400 %\n   <span class="c">└─</span> Gewerbeertrag 210.000 × 3,5 %\n      <span class="c">├─</span> Gewinn 190.000  <span class="s">SuSa Konto 9999</span>\n      <span class="c">└─</span> Hinzurechnung 20.000  <span class="s">§ 8 GewStG</span>`,
+    `<span class="g">✓ eine Datenquelle</span> · keine Verknüpfung<br>jede Zahl zeigt, wo sie herkommt`),
+  v_ende: frage("Wie oft passiert dir <span style='color:var(--rot)'>#BEZUG!</span>?", null, "Schreib's in die Kommentare"),
+  k_staffel: schritt("✓","Staffel statt 30 % fest","Heute · Code") + code("latente_steuern.py",
+    `<span class="k">def</span> satz(jahr, hebesatz=<span class="s">400</span>):\n    kst = <span class="k">max</span>(<span class="s">15</span> - <span class="k">max</span>(jahr - <span class="s">2027</span>, <span class="s">0</span>), <span class="s">10</span>)\n    <span class="k">return</span> kst*<span class="s">1.055</span> + <span class="s">3.5</span>*hebesatz/<span class="s">100</span>`,
+    `2027 <span class="g">29,83 %</span> · 2028 <span class="g">28,77 %</span> · 2029 <span class="g">27,72 %</span><br>2030 <span class="g">26,66 %</span> · 2031 <span class="g">25,61 %</span> · 2032 <span class="g">24,55 %</span>`),
   ende: `<div class="marke">@maehrsteuern</div>
     <div class="gross" style="top:330px">Welche Nummer soll ich dir zeigen?</div>
     <div class="zahlen">${[5,4,3,2,1].map(n=>`<div>${n}</div>`).join("")}</div>
