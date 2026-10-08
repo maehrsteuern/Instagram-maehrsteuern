@@ -498,7 +498,8 @@
       "bilder": [
         "story_mo_frage.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 44
     },
     {
       "id": "16-reel-listen",
@@ -541,7 +542,8 @@
       "bilder": [
         "story_di_teaser_markenweg.png"
       ],
-      "status": "entwurf"
+      "status": "entwurf",
+      "issue": 44
     },
     {
       "id": "10-story-umfrage",
