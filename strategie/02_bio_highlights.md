@@ -15,6 +15,26 @@ Option für mehr Suchtreffer: `Loris | KI für Steuern`.
 ```
 Link: https://app.reclaim.ai/m/maehrsteuern/demo
 
+### Vorschlag 08.10.: Nutzen-Satz statt Leitspruch (noch nicht in der App)
+Anlass: 0 von 7 Profilbesuchen wurden zu Follows. Die Bio sagt, *wer* du bist, aber nicht, *was der Besucher davon hat*.
+Die erste Zeile entscheidet, und sie ist heute ein Motto.
+```
+📊 Steuerrückstellung & Co. ohne Excel-Chaos
+⚙️ Ich baue Tools, die für deine Steuerabteilung rechnen
+🎓 Diplom-Finanzwirt · KI-Manager (IHK)
+💬 DM „TOOL“ → 15-Min-Demo, kostenlos
+```
+- Zeile 1 = Nutzen + Suchbegriff („Steuerrückstellung“, „Excel“) für die Instagram-Suche.
+- Zeile 2 = wer profitiert (Steuerabteilung/Kanzlei) und was du tust.
+- Zeile 4 = konkreter Schritt mit Zeitangabe statt „gratis Demo“. Die Dauer an den Reclaim-Termin anpassen.
+- „Steuern × Code“ bleibt im Namensfeld bzw. im Markenauftritt und braucht in der Bio keine Zeile.
+- Prüfen nach 2 Wochen: Follows ÷ Profilbesuche im Tagesbericht (Ziel ≥ 10 %).
+
+### Highlight „Start 👋“ fehlt noch
+Die 3 Start-Storys (`assets/storys/start/start_1–3.png`) sind seit 30.09. online gewesen, das Highlight wurde nie angelegt.
+In der App: Profil → **+ Neu** → die 3 Storys vom 30.09. aus dem Archiv wählen → Titel „Start 👋“ →
+Titelbild `assets/highlights/hl_start.png` → als **erstes** Highlight ganz links.
+
 Warum „Code“ statt „KI“ im Leitspruch: KI und Steuern sagen gerade alle. Der Unterschied ist, dass hier Lösungen gebaut werden, die laufen.
 
 ## Kategorie
