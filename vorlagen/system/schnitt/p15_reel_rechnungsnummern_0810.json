@@ -1,0 +1,374 @@
+{
+ "ausgabe": "../../posts/15_2026-10-13_reel_rechnungsnummern/reel.mp4",
+ "fps": 30,
+ "quellen": {
+  "4a": {
+   "datei": "../../posts/15_2026-10-13_reel_rechnungsnummern/bausteine/4a.png"
+  },
+  "4b": {
+   "datei": "../../posts/15_2026-10-13_reel_rechnungsnummern/bausteine/4b.png"
+  },
+  "s_ende4": {
+   "datei": "../../posts/15_2026-10-13_reel_rechnungsnummern/bausteine/s_ende4.png"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "4a",
+   "dauer": 6.56,
+   "text": [
+    {
+     "wort": "Eine Rechnungsnummer",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.1,
+     "bis": 1.06
+    },
+    {
+     "wort": "doppelt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.06,
+     "bis": 1.7
+    },
+    {
+     "wort": "Der Prüfer findet sie",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.7,
+     "bis": 2.52
+    },
+    {
+     "wort": "in 2 Minuten.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.52,
+     "bis": 3.08
+    },
+    {
+     "wort": "Und du?",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.08,
+     "bis": 3.86
+    },
+    {
+     "wort": "In Excel heißt das",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.86,
+     "bis": 4.84
+    },
+    {
+     "wort": "sortieren, scrollen,",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.84,
+     "bis": 6.08
+    },
+    {
+     "wort": "hoffen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.08,
+     "bis": 6.64
+    },
+    {
+     "wort": "Doppelte Rechnungsnummer?",
+     "farbe": "rot",
+     "groesse": 118,
+     "y": 700,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.3,
+     "bis": 3.6
+    },
+    {
+     "wort": "Der Prüfer findet sie.",
+     "farbe": "weiss",
+     "groesse": 118,
+     "y": 850,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.8999999999999999,
+     "bis": 3.6
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    1000,
+    880
+   ],
+   "abdunkeln": 0.25
+  },
+  {
+   "quelle": "4b",
+   "dauer": 8.76,
+   "text": [
+    {
+     "wort": "hoffen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Mein Code prüft jede",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 1.12
+    },
+    {
+     "wort": "Nummer gegen alle",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.12,
+     "bis": 1.86
+    },
+    {
+     "wort": "anderen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.86,
+     "bis": 2.46
+    },
+    {
+     "wort": "Doppelt?",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.46,
+     "bis": 3.1
+    },
+    {
+     "wort": "Rot.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.1,
+     "bis": 3.58
+    },
+    {
+     "wort": "Lücke in der Folge?",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.58,
+     "bis": 4.94
+    },
+    {
+     "wort": "Auch rot.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.94,
+     "bis": 5.48
+    },
+    {
+     "wort": "Dauert eine Sekunde.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.48,
+     "bis": 6.44
+    },
+    {
+     "wort": "Und ich weiß es vor",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.44,
+     "bis": 7.4
+    },
+    {
+     "wort": "der Prüfung –",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 7.4,
+     "bis": 8.12
+    },
+    {
+     "wort": "nicht danach.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 8.12,
+     "bis": 8.84
+    },
+    {
+     "wort": "DOPPELT",
+     "farbe": "rot",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.38,
+     "bis": 3.98
+    },
+    {
+     "wort": "LÜCKE",
+     "farbe": "rot",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.5,
+     "bis": 5.1
+    },
+    {
+     "wort": "1 Sekunde ✓",
+     "farbe": "gruen",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.4,
+     "bis": 7.0
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ],
+   "rein": "whip"
+  },
+  {
+   "quelle": "s_ende4",
+   "dauer": 4.4,
+   "text": [
+    {
+     "wort": "nicht danach.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Nummer 4 aus meinem",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.84
+    },
+    {
+     "wort": "5-Dinge-Reel.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.84,
+     "bis": 2.06
+    },
+    {
+     "wort": "Speicher dir das für",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.06,
+     "bis": 3.02
+    },
+    {
+     "wort": "nächsten Abschluss.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.02,
+     "bis": 4.05
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  }
+ ],
+ "ton": [
+  {
+   "datei": "../../posts/15_2026-10-13_reel_rechnungsnummern/ton/stimme.flac",
+   "ab": 0,
+   "lautstaerke": 1.0,
+   "ein": 0.02,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/07_runway_minimal_tech.mp3",
+   "ab": 6.56,
+   "start": 0.4,
+   "lautstaerke": 0.1,
+   "ein": 0.8
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 1.62,
+   "start": 0.3,
+   "dauer": 4.8,
+   "lautstaerke": 0.2,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 8.94,
+   "start": 0,
+   "dauer": 0.6,
+   "lautstaerke": 0.3,
+   "ein": 0.05,
+   "aus": 0.3
+  }
+ ]
+}

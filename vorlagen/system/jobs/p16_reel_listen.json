@@ -1,0 +1,27 @@
+{
+ "ausgabe": "../../posts/16_2026-10-15_reel_listen",
+ "bilder": [
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/5a.png",
+   "bild": "5a"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/5b.png",
+   "bild": "5b"
+  },
+  {
+   "vorlage": "fuenf_dinge",
+   "datei": "bausteine/s_ende5.png",
+   "bild": "s_ende5"
+  },
+  {
+   "vorlage": "reel_titel",
+   "datei": "titelbild.png",
+   "saeule": "Nummer 5",
+   "titel": "Zwei Listen,\n*ein SVERWEIS* zu viel.",
+   "sub": "10.000 Zeilen in unter 1 Sekunde."
+  }
+ ]
+}

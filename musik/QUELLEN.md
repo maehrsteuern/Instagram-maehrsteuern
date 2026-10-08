@@ -16,3 +16,12 @@ Titel 01–04 aus dem Internet Archive, Lizenz CC0 (gemeinfrei) – frei nutzbar
 
 ## Bildmaterial (KI)
 - `vorlagen/hooks/bausteine/ki_*.mp4` – drei Runway-Videoclips (eigene KI-Generierung, 30.09.2026) für die Hook-Bibliothek.
+
+## Neue Titel 08.10.2026 (eigene KI-Generierung mit Runway, instrumental, Nutzung nach Runway-Nutzungsbedingungen)
+Alle mit Beat ab Sekunde 0, ohne Drop, für leise unter der Stimme (Lautstärke ~0,1). Einstieg je ca. −14 LUFS.
+- `07_runway_minimal_tech.mp3` ← „minimal tech, souverän“ (Task cddc6d4a-7e6a-4984-a76f-6115caa89418), 100 BPM, 95 s – Tool-/Lösungsteil
+- `08_runway_chill_house.mp3` ← „chill house, optimistisch“ (Task e92d8a14-8701-4179-b1f4-a20740d3c1b5), 118 BPM, 178 s
+- `09_runway_lofi_piano.mp3` ← „lo-fi piano“ (Task 8ba2f147-83b9-4c15-a4e2-40ad61b8ac10), 85 BPM, 99 s – persönlich/ruhig
+- `10_runway_spannung.mp3` ← „Spannung, Deadline“ (Task 5604688b-c925-40c7-9d43-6b757ee8a413), 90 BPM, 102 s – Schmerz-Teil (sehr leise) statt Musik nach Schema
+- `11_runway_future_garage.mp3` ← „future garage, modern“ (Task a254f902-1ea2-439e-80a5-9ccea1512b12), 130 BPM half-time, 96 s
+- `12_runway_pop_electronic.mp3` ← „pop electronic, positiv“ (Task c1ae6fef-a927-4e18-998d-b4edbe08b7b3), 110 BPM, 62 s

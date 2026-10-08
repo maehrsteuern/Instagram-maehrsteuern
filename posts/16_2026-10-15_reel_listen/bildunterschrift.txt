@@ -1,0 +1,11 @@
+SVERWEIS. Runterziehen. #NV. Nochmal runterziehen. 😮‍💨
+
+Zwei Listen abgleichen hat mich früher einen halben Nachmittag gekostet.
+Heute: drei Zeilen Code. Er legt beide Listen nebeneinander und sagt mir, was nur in einer steht. 10.000 Zeilen? Unter einer Sekunde.
+
+Das war Nummer 5 – die Serie ist durch.
+Welche Nummer war für dich die beste? 1 bis 5 in die Kommentare 👇
+
+Alle Zahlen im Video sind Beispieldaten.
+
+#steuern #excel #sverweis #python #automatisierung

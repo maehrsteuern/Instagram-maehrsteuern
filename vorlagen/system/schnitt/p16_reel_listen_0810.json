@@ -1,0 +1,351 @@
+{
+ "ausgabe": "../../posts/16_2026-10-15_reel_listen/reel.mp4",
+ "fps": 30,
+ "quellen": {
+  "5a": {
+   "datei": "../../posts/16_2026-10-15_reel_listen/bausteine/5a.png"
+  },
+  "5b": {
+   "datei": "../../posts/16_2026-10-15_reel_listen/bausteine/5b.png"
+  },
+  "s_ende5": {
+   "datei": "../../posts/16_2026-10-15_reel_listen/bausteine/s_ende5.png"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "5a",
+   "dauer": 4.12,
+   "text": [
+    {
+     "wort": "SVERWEIS,",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.1,
+     "bis": 1.38
+    },
+    {
+     "wort": "runterziehen,",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.38,
+     "bis": 2.14
+    },
+    {
+     "wort": "#NV-Fehler, nochmal",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.14,
+     "bis": 3.3
+    },
+    {
+     "wort": "runterziehen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.3,
+     "bis": 4.2
+    },
+    {
+     "wort": "SVERWEIS. #NV.",
+     "farbe": "rot",
+     "groesse": 118,
+     "y": 700,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.3,
+     "bis": 3.6
+    },
+    {
+     "wort": "Nochmal.",
+     "farbe": "weiss",
+     "groesse": 118,
+     "y": 850,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.8999999999999999,
+     "bis": 3.6
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    640,
+    960,
+    880
+   ],
+   "abdunkeln": 0.25
+  },
+  {
+   "quelle": "5a",
+   "dauer": 3.72,
+   "text": [
+    {
+     "wort": "runterziehen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Zwei Listen abgleichen",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 1.2
+    },
+    {
+     "wort": "hat mich früher einen",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.2,
+     "bis": 2.14
+    },
+    {
+     "wort": "halben Nachmittag",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.14,
+     "bis": 3.02
+    },
+    {
+     "wort": "gekostet.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.02,
+     "bis": 3.8
+    }
+   ],
+   "von": [
+    540,
+    930,
+    1010
+   ],
+   "nach": [
+    540,
+    960,
+    1080
+   ]
+  },
+  {
+   "quelle": "5b",
+   "dauer": 7.74,
+   "text": [
+    {
+     "wort": "gekostet.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Heute:",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.3
+    },
+    {
+     "wort": "drei Zeilen Code.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.3,
+     "bis": 1.52
+    },
+    {
+     "wort": "Er legt beide Listen",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.52,
+     "bis": 2.6
+    },
+    {
+     "wort": "nebeneinander und sagt",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.6,
+     "bis": 3.56
+    },
+    {
+     "wort": "mir, was nur in einer",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.56,
+     "bis": 4.6
+    },
+    {
+     "wort": "steht.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.6,
+     "bis": 5.18
+    },
+    {
+     "wort": "10.000 Zeilen?",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.18,
+     "bis": 6.24
+    },
+    {
+     "wort": "unter einer Sekunde.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.24,
+     "bis": 7.82
+    },
+    {
+     "wort": "< 1 Sekunde",
+     "farbe": "gruen",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.1,
+     "bis": 6.7
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ],
+   "rein": "whip"
+  },
+  {
+   "quelle": "s_ende5",
+   "dauer": 4.5,
+   "text": [
+    {
+     "wort": "unter einer Sekunde.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Das war Nummer 5 –",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 1.14
+    },
+    {
+     "wort": "die Serie ist durch.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.14,
+     "bis": 2.14
+    },
+    {
+     "wort": "Welche Nummer war für",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.14,
+     "bis": 3.28
+    },
+    {
+     "wort": "dich die beste?",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.28,
+     "bis": 4.15
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  }
+ ],
+ "ton": [
+  {
+   "datei": "../../posts/16_2026-10-15_reel_listen/ton/stimme.flac",
+   "ab": 0,
+   "lautstaerke": 1.0,
+   "ein": 0.02,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/08_runway_chill_house.mp3",
+   "ab": 7.84,
+   "start": 0.4,
+   "lautstaerke": 0.1,
+   "ein": 0.8
+  },
+  {
+   "datei": "../../musik/atmo/tippen_fehlerton.mp3",
+   "ab": 0.02,
+   "start": 0.8,
+   "dauer": 4.0,
+   "lautstaerke": 0.6,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 2.06,
+   "start": 0,
+   "dauer": 0.6,
+   "lautstaerke": 0.35,
+   "ein": 0.05,
+   "aus": 0.3
+  }
+ ]
+}

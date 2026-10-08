@@ -44,3 +44,7 @@ Wie oft hängt bei euch eine Verknüpfung noch an einer alten Datei? 👇
 ## Auswertung (macht Claude)
 Nach 3 und 7 Tagen: Reichweite pro Follower, Views, (Speichern + Teilen) / Reichweite – gegen die Autopilot-Reels
 (5 Dinge 04.10., Monatsbericht 06.10.). Erst nach 2–3 Edits-Reels entscheiden – ein einzelnes Reel ist kein Beweis.
+
+## Neu 08.10.: fertige Fassung mit Loris' Stimme
+`posts/06_2026-10-08_reel_split/reel.mp4` – Rohvideo (verlangsamt auf die Stimme), Stimme „Gleiche Aufgabe, zwei Wege …“, wörtliche Untertitel, Atmo + leise Musik. Einfach diese Datei in Edits importieren und planen (Schritte in `EDITS.md` dort).
+Wer lieber selbst schneidet: die reine Stimme liegt als `5_stimme.flac` (−18 LUFS) hier im Paket.

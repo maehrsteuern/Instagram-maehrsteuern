@@ -1,0 +1,271 @@
+{
+ "ausgabe": "../../posts/06_2026-10-08_reel_split/reel.mp4",
+ "fps": 30,
+ "quellen": {
+  "split": {
+   "video": "../../posts/02_2026-10-06_excel_fehler/edits_paket/1_split_rohvideo.mp4"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "split",
+   "dauer": 13.0,
+   "text": [
+    {
+     "wort": "Gleiche Aufgabe, zwei",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.1,
+     "bis": 1.62
+    },
+    {
+     "wort": "Wege.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.62,
+     "bis": 2.24
+    },
+    {
+     "wort": "Hebesatz von 400 auf",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.24,
+     "bis": 3.76
+    },
+    {
+     "wort": "450.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.76,
+     "bis": 4.58
+    },
+    {
+     "wort": "Oben Excel:",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.58,
+     "bis": 5.42
+    },
+    {
+     "wort": "Fehler.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.42,
+     "bis": 5.88
+    },
+    {
+     "wort": "Unten mein Tool:",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.88,
+     "bis": 6.74
+    },
+    {
+     "wort": "fertig.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.74,
+     "bis": 7.16
+    },
+    {
+     "wort": "Excel sucht noch die",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 7.16,
+     "bis": 8.12
+    },
+    {
+     "wort": "Quelle.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 8.12,
+     "bis": 8.68
+    },
+    {
+     "wort": "Das Tool hat längst",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 8.68,
+     "bis": 9.6
+    },
+    {
+     "wort": "gerechnet.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 9.6,
+     "bis": 10.26
+    },
+    {
+     "wort": "Eine Datenquelle,",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 10.26,
+     "bis": 11.34
+    },
+    {
+     "wort": "keine Verknüpfung.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 11.34,
+     "bis": 12.42
+    },
+    {
+     "wort": "Schreib „TOOL“ per",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 12.42,
+     "bis": 13.14
+    },
+    {
+     "wort": "Gleiche Aufgabe.",
+     "farbe": "weiss",
+     "groesse": 118,
+     "y": 700,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.3,
+     "bis": 3.6
+    },
+    {
+     "wort": "Zwei Wege.",
+     "farbe": "gelb",
+     "groesse": 118,
+     "y": 850,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.8999999999999999,
+     "bis": 3.6
+    },
+    {
+     "wort": "#BEZUG!",
+     "farbe": "rot",
+     "groesse": 104,
+     "y": 700,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.34,
+     "bis": 6.94
+    },
+    {
+     "wort": "fertig ✓",
+     "farbe": "gruen",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 6.66,
+     "bis": 8.26
+    }
+   ],
+   "tempo": 0.854
+  },
+  {
+   "quelle": "split",
+   "dauer": 2.2,
+   "text": [
+    {
+     "wort": "Schreib „TOOL“ per",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.14
+    },
+    {
+     "wort": "DM –",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.14,
+     "bis": 0.68
+    },
+    {
+     "wort": "ich zeig dir die Demo.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.68,
+     "bis": 1.85
+    }
+   ],
+   "ab": 11.1,
+   "tempo": 0,
+   "abdunkeln": 0.55
+  }
+ ],
+ "ton": [
+  {
+   "datei": "../../posts/06_2026-10-08_reel_split/ton/stimme.flac",
+   "ab": 0,
+   "lautstaerke": 1.0,
+   "ein": 0.02,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/07_runway_minimal_tech.mp3",
+   "ab": 5.8,
+   "start": 0.4,
+   "lautstaerke": 0.11,
+   "ein": 0.8
+  },
+  {
+   "datei": "../../musik/atmo/tippen_fehlerton.mp3",
+   "ab": 2.16,
+   "start": 0.8,
+   "dauer": 0.7,
+   "lautstaerke": 0.9,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 5.34,
+   "start": 0,
+   "dauer": 0.6,
+   "lautstaerke": 0.5,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 7.08,
+   "start": 0.3,
+   "dauer": 3.2,
+   "lautstaerke": 0.25,
+   "ein": 0.05,
+   "aus": 0.3
+  }
+ ]
+}

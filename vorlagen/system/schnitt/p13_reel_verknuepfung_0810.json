@@ -1,0 +1,423 @@
+{
+ "ausgabe": "../../posts/13_2026-10-11_reel_verknuepfung/reel.mp4",
+ "fps": 30,
+ "quellen": {
+  "v_hook": {
+   "datei": "../../posts/13_2026-10-11_reel_verknuepfung/bausteine/v_hook.png"
+  },
+  "v_dialog": {
+   "datei": "../../posts/13_2026-10-11_reel_verknuepfung/bausteine/v_dialog.png"
+  },
+  "v_pfad": {
+   "datei": "../../posts/13_2026-10-11_reel_verknuepfung/bausteine/v_pfad.png"
+  },
+  "v_ende": {
+   "datei": "../../posts/13_2026-10-11_reel_verknuepfung/bausteine/v_ende.png"
+  }
+ },
+ "szenen": [
+  {
+   "quelle": "v_hook",
+   "dauer": 5.64,
+   "text": [
+    {
+     "wort": "Kennst du das?",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.1,
+     "bis": 1.06
+    },
+    {
+     "wort": "Zwei Tage vor Abgabe,",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.06,
+     "bis": 2.56
+    },
+    {
+     "wort": "du öffnest die",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.56,
+     "bis": 3.06
+    },
+    {
+     "wort": "Steuerberechnung und",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.06,
+     "bis": 3.88
+    },
+    {
+     "wort": "überall steht #BEZUG!",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.88,
+     "bis": 5.72
+    },
+    {
+     "wort": "#BEZUG!",
+     "farbe": "rot",
+     "groesse": 118,
+     "y": 700,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.3,
+     "bis": 3.6
+    },
+    {
+     "wort": "2 Tage vor Abgabe.",
+     "farbe": "weiss",
+     "groesse": 118,
+     "y": 850,
+     "x": 470,
+     "breite": 820,
+     "ab": 0.8999999999999999,
+     "bis": 3.6
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    580,
+    930,
+    1000
+   ],
+   "abdunkeln": 0.25
+  },
+  {
+   "quelle": "v_dialog",
+   "dauer": 4.74,
+   "text": [
+    {
+     "wort": "überall steht #BEZUG!",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Bei mir hing eine",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.8
+    },
+    {
+     "wort": "Verknüpfung noch an",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.8,
+     "bis": 1.62
+    },
+    {
+     "wort": "der Datei vom Vorjahr.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.62,
+     "bis": 2.94
+    },
+    {
+     "wort": "Irgendwer hatte den",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.94,
+     "bis": 3.74
+    },
+    {
+     "wort": "Ordner umbenannt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.74,
+     "bis": 4.82
+    },
+    {
+     "wort": "umbenannt.",
+     "farbe": "rot",
+     "groesse": 104,
+     "y": 1180,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.86,
+     "bis": 4.46
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  },
+  {
+   "quelle": "v_dialog",
+   "dauer": 5.94,
+   "text": [
+    {
+     "wort": "Ordner umbenannt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Ich habe einen ganzen",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.98
+    },
+    {
+     "wort": "Abend gesucht, welche",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.98,
+     "bis": 2.12
+    },
+    {
+     "wort": "Zahl woher kommt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.12,
+     "bis": 3.36
+    },
+    {
+     "wort": "Das war der Moment, wo",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 3.36,
+     "bis": 4.16
+    },
+    {
+     "wort": "ich gesagt habe, das",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 4.16,
+     "bis": 5.06
+    },
+    {
+     "wort": "muss anders gehen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 5.06,
+     "bis": 6.02
+    }
+   ],
+   "von": [
+    540,
+    930,
+    1010
+   ],
+   "nach": [
+    540,
+    960,
+    1080
+   ]
+  },
+  {
+   "quelle": "v_pfad",
+   "dauer": 2.64,
+   "text": [
+    {
+     "wort": "muss anders gehen.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Heute klicke ich auf",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.84
+    },
+    {
+     "wort": "eine Zahl und sehe",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.84,
+     "bis": 1.5
+    },
+    {
+     "wort": "sofort, wo sie",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.5,
+     "bis": 2.08
+    },
+    {
+     "wort": "herkommt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 2.08,
+     "bis": 2.72
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ],
+   "rein": "whip"
+  },
+  {
+   "quelle": "v_ende",
+   "dauer": 2.92,
+   "text": [
+    {
+     "wort": "herkommt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "bis": 0.08
+    },
+    {
+     "wort": "Wie oft passiert dir",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.08,
+     "bis": 0.9
+    },
+    {
+     "wort": "das?",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 0.9,
+     "bis": 1.44
+    },
+    {
+     "wort": "Schreib's mir in die",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.44,
+     "bis": 1.96
+    },
+    {
+     "wort": "Kommentare.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.96,
+     "bis": 2.57
+    }
+   ],
+   "von": [
+    540,
+    960,
+    1080
+   ],
+   "nach": [
+    540,
+    930,
+    1010
+   ]
+  }
+ ],
+ "ton": [
+  {
+   "datei": "../../posts/13_2026-10-11_reel_verknuepfung/ton/stimme.flac",
+   "ab": 0,
+   "lautstaerke": 1.0,
+   "ein": 0.02,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/08_runway_chill_house.mp3",
+   "ab": 16.32,
+   "start": 0.4,
+   "lautstaerke": 0.1,
+   "ein": 0.8
+  },
+  {
+   "datei": "../../musik/atmo/uhr_ticken.mp3",
+   "ab": 0.02,
+   "start": 0.3,
+   "dauer": 11.0,
+   "lautstaerke": 0.22,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/atmo/fehlerton.mp3",
+   "ab": 4.44,
+   "start": 0,
+   "dauer": 0.6,
+   "lautstaerke": 0.4,
+   "ein": 0.05,
+   "aus": 0.3
+  },
+  {
+   "datei": "../../musik/10_runway_spannung.mp3",
+   "ab": 5.64,
+   "start": 0,
+   "dauer": 11.4,
+   "lautstaerke": 0.06,
+   "ein": 0.05,
+   "aus": 0.3
+  }
+ ]
+}
