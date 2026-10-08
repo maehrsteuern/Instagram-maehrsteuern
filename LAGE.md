@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 08.10. 14:30 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 08.10. 14:55 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `06-reel-split` am **Do 08.10. 19:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -145,6 +145,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Do 08.10.2026**
+- 14:55 ✍️ Split-Reel in Edits geplant (Do 08.10. 19:30) ([`c90e7bb`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c90e7bb0f50dfe1d7d148cb9fe5f45e83073ea1f))
+  - `LAGE.html`, `automatik/plan.json`
 - 14:30 ✍️ Reel Nr. 2 Zeile: Einstieg „Jutta hat schon wieder …“ wieder drin ([`a41e46c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/a41e46c5119a4b5bbd1b7de8d949e786cd365b45))
   - `LAGE.html`, `automatik/plan.json`, `posts/12_2026-10-09_reel_zeile`, `vorlagen/system/schnitt/p12_reel_zeile_0810.json`, `vorlagen/system/schnitt/reels_0810_bauen.py`
 - 11:20 ✍️ Reels mit Loris' Stimme fertig: 8 Reels, ab heute täglich 19:30 (Edits, manuell) ([`eadde9e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/eadde9ec7f24e21028ced687f424ad20eedf2851))
