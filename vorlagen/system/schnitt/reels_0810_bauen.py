@@ -42,8 +42,8 @@ REELS = {
         atmo=[("tippen_fehlerton.mp3", 4.10, 0.8, 0.8, 0.8), ("fehlerton.mp3", 19.20, 0, 0.6, 0.35)]),
     "p12_reel_zeile": dict(
         datei="08.10.2026 10.42.mp3", ordner="posts/12_2026-10-09_reel_zeile",
-        raus=[(0.0, 1.42), (17.72, 19.40)],  # „Jutta hat schon wieder“ (Name raus), Versprecher „Zellen dazu kommen oder“
-        korr={"eine": "Eine", "Bezugfehler.": "#BEZUG!-Fehler.", "so#1": "summier", "mir": "", "300": "300", "Zeilen.": "Zeilen –",
+        raus=[(17.72, 19.40)],  # Versprecher „Zellen dazu kommen oder“ („Jutta“ bleibt – erfundene Person, Wunsch Loris 08.10.)
+        korr={"Bezugfehler.": "#BEZUG!-Fehler.", "so#1": "summier", "mir": "", "300": "300", "Zeilen.": "Zeilen –",
               "2": "2", "5": "5-Dinge-Reel.", "-Dinger": "", "-Real.": "", "wird": "willst", "es#2": "du", "so#2": "", "nächstes": "Nächstes"},
         hook=[("Zeile eingefügt.", "weiss"), ("Summe weg.", "rot")],
         szenen=[(0, "2a", {"von": [540, 960, 1080], "nach": [560, 1000, 900]}), (4.88, "2a", {"von": [540, 930, 1010], "nach": [540, 960, 1080]}),

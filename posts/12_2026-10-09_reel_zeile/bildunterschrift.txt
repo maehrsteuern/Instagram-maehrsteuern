@@ -1,4 +1,4 @@
-Eine Zeile eingefügt – und die Summe ist weg. #BEZUG! 😤
+Jutta hat schon wieder eine Zeile eingefügt – und die Summe ist weg. #BEZUG! 😤
 
 In Excel hängt die Summe an festen Zellen. Fügst du am Rand was ein, rechnet sie am neuen Posten vorbei. Oder sie bricht ganz.
 

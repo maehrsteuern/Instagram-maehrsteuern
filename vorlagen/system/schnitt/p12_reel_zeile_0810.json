@@ -15,16 +15,25 @@
  "szenen": [
   {
    "quelle": "2a",
-   "dauer": 2.86,
+   "dauer": 4.18,
    "text": [
     {
-     "wort": "Eine Zeile eingefügt",
+     "wort": "Jutta hat schon wieder",
      "groesse": 62,
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 0.1,
-     "bis": 1.14
+     "ab": 0.0,
+     "bis": 1.42
+    },
+    {
+     "wort": "eine Zeile eingefügt",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.42,
+     "bis": 2.46
     },
     {
      "wort": "und die Summe ist weg.",
@@ -32,8 +41,8 @@
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 1.14,
-     "bis": 2.22
+     "ab": 2.46,
+     "bis": 3.54
     },
     {
      "wort": "#BEZUG!-Fehler.",
@@ -41,8 +50,8 @@
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 2.22,
-     "bis": 2.94
+     "ab": 3.54,
+     "bis": 4.26
     },
     {
      "wort": "Zeile eingefügt.",
@@ -52,7 +61,7 @@
      "x": 470,
      "breite": 820,
      "ab": 0.3,
-     "bis": 2.86
+     "bis": 3.6
     },
     {
      "wort": "Summe weg.",
@@ -62,7 +71,7 @@
      "x": 470,
      "breite": 820,
      "ab": 0.8999999999999999,
-     "bis": 2.86
+     "bis": 3.6
     },
     {
      "wort": "#BEZUG!",
@@ -71,8 +80,8 @@
      "y": 1180,
      "x": 470,
      "breite": 780,
-     "ab": 2.14,
-     "bis": 2.86
+     "ab": 3.46,
+     "bis": 4.18
     }
    ],
    "von": [
@@ -352,14 +361,14 @@
   },
   {
    "datei": "../../musik/12_runway_pop_electronic.mp3",
-   "ab": 9.5,
+   "ab": 10.82,
    "start": 0.4,
    "lautstaerke": 0.1,
    "ein": 0.8
   },
   {
    "datei": "../../musik/atmo/tippen_fehlerton.mp3",
-   "ab": 0.02,
+   "ab": 1.34,
    "start": 0.8,
    "dauer": 0.6,
    "lautstaerke": 0.8,
@@ -368,7 +377,7 @@
   },
   {
    "datei": "../../musik/atmo/fehlerton.mp3",
-   "ab": 2.14,
+   "ab": 3.46,
    "start": 0,
    "dauer": 0.6,
    "lautstaerke": 0.45,
