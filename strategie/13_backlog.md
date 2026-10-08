@@ -29,6 +29,21 @@ Stand 03.10.2026. Bewertung und Freigabe durch Loris, Umsetzung durch Claude.
 - **Einmalige Erinnerungen:** `automatik/erinnerungen.json` → „Braucht dich“ in LAGE.md + Termin im Autopilot-Kalender (Art `erinnerung`, „frei“)
 
 
+## 🔧 Content-Fabrik für 2 Beiträge pro Tag (08.10.)
+**Problem:** Die Fabrik baut höchstens 4 Beiträge pro Lauf an 2 Tagen, also 8 pro Woche. Der Testmonat braucht 14 Feed-Beiträge pro Woche.
+**Lösung (Loris hat zugestimmt):**
+- ✅ **Zeitplan:** 3 Läufe pro Woche, **Mo, Mi, Fr 08:47** (umgestellt am 08.10.; vorher Mo/Do).
+- ⏳ **Prompt** (nur im Chat der Routine „Instagram Content-Fabrik (in Session)“ änderbar). Punkt 2 dort ersetzen:
+  > Leere Slots von übermorgen bis +7 Tage füllen, **höchstens 6 Feed-Beiträge pro Lauf** (Teaser-/Frage-Storys zählen nicht).
+  > Slots: 12:15 und 19:30 (Feed), Storys 12:45 und 19:35. Reihenfolge der Slots und Formate nach `strategie/15_plan_2_pro_tag.md`,
+  > sobald es die Datei gibt. Bis dahin: mittags Karussell, abends Reel.
+  > Stimm-Reels nur mit Sprachnachricht (sonst `wartet_auf_sprachnachricht`). Pro Beitrag `"stimme": true/false` und `"hook": "fall"|"zahl"` setzen.
+  > Lieber ein Slot leer als ein schwacher Beitrag.
+
+  Punkt 5 (Commit) ersetzen: Autor „Loris M.“ per `--author`, Committer = signierende Identität aus git config, Co-Authored-By-Zeile für Claude.
+- **Rechnung:** 3 × 6 = 18 Plätze für 14 Beiträge. Das lässt Puffer für Slots, die bewusst leer bleiben, und für Loris' manuelle Reels.
+- **Engpass ist nicht die Fabrik, sondern die Freigabe.** 14 Freigaben pro Woche heißt 2 pro Tag. Freigabe-Issues deshalb bündeln (ein Issue je Lauf statt je Beitrag), wenn das zu viel wird.
+
 ## ⏸️ Zurückgestellt bis ca. 15 Beiträge
 Vorher fehlen die Daten, um daraus etwas Belastbares abzuleiten.
 - **#4 Rückmeldung an die Content-Fabrik** – 48 h nach jedem Beitrag Speichern/Teilen pro Reichweite bewerten, Ergebnis in `strategie/was_funktioniert.md`, die Fabrik liest es mit

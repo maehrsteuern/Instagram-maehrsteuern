@@ -24,7 +24,12 @@ OUT.mkdir(parents=True, exist_ok=True)
 basis = sorted(p for p in OUT.glob("basis_*.json") if p.stem.split("_")[1] < d["abgerufen"])
 if basis:
     v = json.loads(basis[-1].read_text())
-(OUT / f"basis_{d['abgerufen']}.json").write_text(json.dumps(d, ensure_ascii=False))
+# Läuft der Bericht mehrmals am Tag: aktive Zeiten aus dem früheren Abruf behalten, wenn der neue keine liefert
+_bf = OUT / f"basis_{d['abgerufen']}.json"
+if _bf.exists() and not any((d.get("online_follower") or {}).values()):
+    _alt = json.loads(_bf.read_text()).get("online_follower") or {}
+    if any(_alt.values()): d["online_follower"] = _alt
+_bf.write_text(json.dumps(d, ensure_ascii=False))
 tag = d["abgerufen"]
 plan = json.loads((ROOT / "automatik/plan.json").read_text())["eintraege"]
 
@@ -44,7 +49,7 @@ def quote(a, b):
 k, kv = d["konto"], v.get("konto", {})
 fol, fol_v = k["followers_count"], kv.get("followers_count")
 tw = d["tageswerte_reichweite"]
-tage = sorted(tw)[-14:]
+tage = sorted(t for t in tw if t < tag)[-14:]  # nur abgeschlossene Tage; ein Abruf am Nachmittag enthält schon den laufenden Tag
 gestern = tage[-1] if tage else None
 r_gestern = tw.get(gestern)
 r_vortag = tw.get(tage[-2]) if len(tage) > 1 else None
@@ -74,6 +79,14 @@ def alter_h(ts):
     t = datetime.strptime(ts[:19], "%Y-%m-%dT%H:%M:%S").replace(tzinfo=timezone.utc)
     return max(0.0, (bezug - t).total_seconds() / 3600)
 
+def nf_anteil(b):
+    """Nicht-Follower-Anteil an der Reichweite eines Beitrags, falls Instagram die Aufteilung liefert."""
+    r = b.get("reach_aufgeteilt") or {}
+    a = r.get("aufgeteilt") if isinstance(r, dict) else None
+    if not a: return None
+    nf_, f_ = a.get("NON_FOLLOWER", 0), a.get("FOLLOWER", 0)
+    return nf_ / (nf_ + f_) if nf_ + f_ else None
+
 def laenge_s(b):
     """Reel-Länge in s: zuerst 'laenge_s' aus plan.json, sonst ffprobe auf das Video im Beitragsordner."""
     e = plan_link.get(b.get("permalink"))
@@ -102,9 +115,41 @@ for b in bt:
         saved=b.get("saved"), shares=b.get("shares"), profil=b.get("profile_visits"), follows=b.get("follows"),
         sehdauer=(b.get("ig_reels_avg_watch_time") or 0) / 1000 or None, skip=b.get("reels_skip_rate"),
         alter_h=round(alter_h(b["timestamp"]), 1), laenge=laenge_s(b) if typ == "Reel" else None,
+        stimme=(plan_link.get(b.get("permalink")) or {}).get("stimme"), hook=(plan_link.get(b.get("permalink")) or {}).get("hook"),
+        slot="12:15" if int(ortszeit(b["timestamp"])[-5:-3]) < 15 else "19:30", nf_reach=nf_anteil(b),
         v_views=p.get("views"), v_reach=p.get("reach"), v_saved=p.get("saved"), v_shares=p.get("shares"), v_comments=p.get("comments")))
 
 storys = [s for s in d.get("storys_aktiv", []) if s.get("views") is not None]
+
+# Testmonat: Format × Slot × Stimme (nur Beiträge ab REIF_H; Urteil erst ab n ≥ 3)
+MIN_N = 3
+def _ja(x): return "ja" if x is True else ("nein" if x is False else "?")
+def gruppen_tabelle():
+    gr = {}
+    for z in zeilen:
+        if z["alter_h"] < 48 or z["typ"] not in ("Reel", "Karussell"): continue
+        gr.setdefault((z["typ"], z["slot"], _ja(z["stimme"])), []).append(z)
+    alle = [z for l in gr.values() for z in l]
+    schnitt = (sum(z["reach"] or 0 for z in alle) / len(alle)) if alle else None
+    out = []
+    for (typ, slot, st_), l in sorted(gr.items()):
+        n = len(l); r = summe(l, "reach")
+        nfs = [z["nf_reach"] for z in l if z["nf_reach"] is not None]
+        skips = [z["skip"] for z in l if z["skip"] is not None]
+        prof = summe(l, "profil")
+        zeile = dict(format=typ, slot=slot, stimme=st_, n=n,
+            reichweite=r / n if n else None,
+            nicht_follower=sum(nfs) / len(nfs) if nfs else None,
+            speichern=quote(summe(l, "saved"), r), teilen=quote(summe(l, "shares"), r),
+            skip=sum(skips) / len(skips) if skips else None,
+            follows_profil=quote(summe(l, "follows"), prof) if prof else None)
+        if n < MIN_N or not schnitt:
+            zeile["urteil"] = "zu wenig Daten"
+        else:
+            v = zeile["reichweite"] / schnitt
+            zeile["urteil"] = "über Schnitt" if v >= 1.15 else ("unter Schnitt" if v <= .85 else "im Schnitt")
+        out.append(zeile)
+    return out
 
 # Methoden-Check: (Methode, Kennzahl, Wert-Text, Ziel, Status)
 def st(wert, ziel, knapp=None):
@@ -121,7 +166,7 @@ jung = [z for z in zeilen if z["alter_h"] < REIF_H]
 def zu_frueh(typen):
     """Hinweis auf noch zu junge Beiträge der Typen, z. B. 'Karussell 13 h'."""
     j = [z for z in jung if z["typ"] in typen]
-    return ", ".join(f'{z["typ"]} {z["alter_h"]:.0f} h' for z in j)
+    return ", ".join(f'{z["typ"]} {int(z["alter_h"])} h' for z in j)
 
 def check(methode, kennzahl, typen, wert_f, fmt, ziel_txt, bewerte, braucht=None):
     """Bewertet nur reife Beiträge (≥ REIF_H) der Typen; wert_f(liste) -> Quote. Liefert (Methode, Kennzahl, Ist, Ziel, Status, n)."""
@@ -136,11 +181,16 @@ def check(methode, kennzahl, typen, wert_f, fmt, ziel_txt, bewerte, braucht=None
 def summe(liste, feld):
     return sum(z[feld] or 0 for z in liste)
 
+testmonat = gruppen_tabelle()
 s_reach = max((s.get("reach") or 0 for s in storys), default=None)
 s_repl = sum(s.get("replies") or 0 for s in storys) if storys else None
 profil = sum(z["profil"] or 0 for z in zeilen); follows = sum(z["follows"] or 0 for z in zeilen)
-online = d.get("online_follower", {})
-on = next((online[t] for t in sorted(online, reverse=True) if online[t]), {})
+# Aktive Zeiten: Instagram liefert sie nicht bei jedem Abruf – dann den letzten Abruf mit Werten nehmen
+on = {}
+for f in [None] + sorted(OUT.glob("basis_*.json"), reverse=True):
+    online = d.get("online_follower", {}) if f is None else json.loads(f.read_text()).get("online_follower", {})
+    on = next((online[t] for t in sorted(online, reverse=True) if online[t]), {})
+    if on: break
 on_cest = {(int(h) + 9) % 24: n for h, n in on.items()}
 on_1930 = quote(on_cest.get(19), max(on_cest.values())) if on_cest else None
 
@@ -222,7 +272,7 @@ def reel_zelle(z):
     return zelle
 
 reihen = "".join(
-    f'<tr><td><b>{html.escape(z["name"])}</b><br><span class="m">{z["typ"]} · {z["zeit"]} · {z["alter_h"]:.0f} h</span></td>'
+    f'<tr><td><b>{html.escape(z["name"])}</b><br><span class="m">{z["typ"]} · {z["zeit"]} · {int(z["alter_h"])} h</span></td>'
     f'<td>{zahl(z["views"])}{delta(z["views"], z["v_views"])}</td><td>{zahl(z["reach"])}{delta(z["reach"], z["v_reach"])}</td>'
     f'<td>{zahl(z["likes"])}</td><td>{zahl(z["comments"])}{delta(z["comments"], z["v_comments"])}</td>'
     f'<td>{zahl(z["saved"])}{delta(z["saved"], z["v_saved"])}</td><td>{zahl(z["shares"])}{delta(z["shares"], z["v_shares"])}</td>'
@@ -236,6 +286,13 @@ s_reihen = "".join(
 m_reihen = "".join(
     f'<tr><td class="st">{s}</td><td><b>{html.escape(a)}</b><br><span class="m">{html.escape(b)}</span></td><td class="w">{html.escape(c)}</td><td class="m">{html.escape(z)}</td><td class="m">{"" if n is None else n}</td></tr>'
     for a, b, c, z, s, n in methoden)
+def _p(x, n=0): return "–" if x is None else pct(x, n)
+t_reihen = "".join(
+    f'<tr><td><b>{t["format"]}</b></td><td>{t["slot"]}</td><td>{t["stimme"]}</td><td>{t["n"]}</td>'
+    f'<td>{zahl(t["reichweite"])}</td><td>{_p(t["nicht_follower"])}</td><td>{_p(t["speichern"],1)}</td><td>{_p(t["teilen"],1)}</td>'
+    f'<td>{"–" if t["skip"] is None else f"{t[chr(115)+chr(107)+chr(105)+chr(112)]:.0f} %"}</td><td>{_p(t["follows_profil"])}</td>'
+    f'<td class="{"m" if t["urteil"] == "zu wenig Daten" else "w"}">{t["urteil"]}</td></tr>'
+    for t in testmonat) or '<tr><td colspan="11" class="m">noch keine Beiträge ab 48 h</td></tr>'
 h_reihen = "".join(
     f'<tr><td class="w">{_zeit(e)[11:]}</td><td>{html.escape(e["typ"])}</td><td><b>{html.escape(e["id"])}</b></td>'
     f'<td class="{"warn" if e["status"] != "freigegeben" and e["status"] != "veroeffentlicht" else "m"}">{STATUS_TXT.get(e["status"], e["status"])}</td></tr>'
@@ -259,7 +316,7 @@ td{{padding:10px 8px;border-bottom:1px solid #18261f;vertical-align:top}}
 td .d{{font-size:13px;margin-left:5px}}
 .m{{color:#8FA398;font-size:14px}} .st{{font-size:24px;width:40px}} .w{{font-weight:600;white-space:nowrap}}
 .bv{{fill:#C9D6CE;font-size:14px;font-family:"IBM Plex Mono",monospace}} .bl{{fill:#8FA398;font-size:13px;font-family:"IBM Plex Sans",sans-serif}}
-.leg{{color:#8FA398;font-size:14px;margin-top:10px}} .warn{{color:#E8C468;font-size:14px}}
+.leg{{color:#8FA398;font-size:14px;margin-top:10px}} .warn{{color:#E8C468;font-size:14px}} table.klein{{font-size:15px}} table.klein td,table.klein th{{padding:8px 6px}}
 </style></head><body>
 <div class="kick">@maehrsteuern · Tagesbericht</div><h1>{titel_tag}</h1>
 <div class="kacheln">
@@ -276,6 +333,9 @@ td .d{{font-size:13px;margin-left:5px}}
 <h2>Greifen unsere Methoden?</h2>
 <table><tr><th></th><th>Methode · Kennzahl</th><th>Ist</th><th>Ziel</th><th>n</th></tr>{m_reihen}</table>
 <div class="leg">✅ greift · ⚠️ knapp · ❌ greift (noch) nicht · ⏳ zu früh / keine Daten · bewertet werden nur Beiträge ab {REIF_H} h, n = Anzahl Beiträge</div>
+<h2>Testmonat: Format × Slot × Stimme</h2>
+<table class="klein"><tr><th>Format</th><th>Slot</th><th>Stimme</th><th>n</th><th>Ø Erreicht</th><th>Nicht-Foll.</th><th>Speich.÷Err.</th><th>Teilen÷Err.</th><th>Skip</th><th>Follows÷Profil</th><th>Urteil</th></tr>{t_reihen}</table>
+<div class="leg">nur Beiträge ab 48 h · Urteil (Ø Erreicht gegen Schnitt aller Gruppen) erst ab n ≥ {MIN_N} · Stimme ? = nicht im Plan · Nicht-Follower je Beitrag nur, wenn Instagram die Aufteilung liefert</div>
 <h2>Heute geplant</h2>
 <table><tr><th>Zeit</th><th>Art</th><th>Beitrag</th><th>Status</th></tr>{h_reihen}</table>
 </body></html>"""
@@ -288,7 +348,7 @@ html_f.write_text(seite)
     nicht_follower_quote=nf_quote, link_klicks=links, beitraege=zeilen, storys=storys,
     methoden=[dict(methode=a, kennzahl=b, ist=c, ziel=z, status=s, n=n) for a, b, c, z, s, n in methoden],
     heute_online=[f'{_zeit(e)[11:]} {e["typ"]} {e["id"]} – {STATUS_TXT.get(e["status"], e["status"])}' for e in heute_online],
-    fehler=fehler, reif_ab_h=REIF_H),
+    fehler=fehler, reif_ab_h=REIF_H, testmonat=testmonat),
     ensure_ascii=False, indent=1, default=str))
 
 js = f"""const {{createRequire}}=require('module');const {{execSync}}=require('child_process');

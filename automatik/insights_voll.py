@@ -53,6 +53,12 @@ def media_insights(m):
                 werte[d["name"]] = wert(d)
         except (RuntimeError, KeyError, TypeError):
             werte.setdefault("_fehlt", []).append(metrik)
+    # Reichweite nach Follower/Nicht-Follower (für den Testmonat); liefert Instagram das nicht, nur vermerken
+    try:
+        for d in get(f"{m['id']}/insights", metric="reach", breakdown="follow_type", metric_type="total_value")["data"]:
+            werte["reach_aufgeteilt"] = wert(d)
+    except (RuntimeError, KeyError, TypeError):
+        werte.setdefault("_fehlt", []).append("reach_aufgeteilt")
     try:
         werte["kommentare_text"] = [
             {"text": c.get("text"), "zeit": c.get("timestamp"), "von_mir": c.get("username") == konto.get("username"),

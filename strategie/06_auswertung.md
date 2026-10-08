@@ -137,7 +137,13 @@ Tiefpunkt 01–05 Uhr: 10–33 online.
 | 7 | Folge-Liste ausmisten (Ziel < 150) | wirkt als Fachprofil stärker | du |
 | 8 | **Keine Eigen-Pushes mit Zweitkonten, keine gekaufte Reichweite mehr** | Instagram kann die Reichweite drosseln, und die Auswertung wird verfälscht | du |
 
+## 8 · Stand 08.10. (Tagesbericht mit 48-h-Regel)
+- **Sehdauer-Anteil:** Beide Stimm-Reels werden im Schnitt nur zu **23 %** gesehen (Monatsbericht 7,0 s von 30 s, 5 Dinge 9,6 s von 41 s). Der Ausstieg kommt nach dem ersten Drittel, unabhängig von der Länge. Ziel ≥ 40 %: Reels kürzer als 20 s oder die Pointe früher bringen.
+- **Story-Fragen:** In 24 h 3 Storys mit 0 Antworten, 25–48 Tipps weiter. Freitext-Antworten sind zu viel Aufwand. Ab 14.10. kommen Ja/Nein-Fragen per Emoji-Schnellreaktion (siehe 09-story-quiz).
+- **Methoden-Check:** Frische Beiträge (< 48 h) werden nicht mehr bewertet. Das ❌ bei „Wer schickt das an wen?“ am 08.10. war ein Messfehler (Karussell 12 h alt).
+
 ## Was die API (noch) nicht liefert
 - **Kommentartexte:** Die Schnittstelle lieferte trotz Kommentaren leere Listen. Vermutlich fehlt die Berechtigung „Kommentare verwalten“ im Zugriffsschlüssel. Das ist für die Auswertung nicht wichtig.
+- **Nicht-Follower-Anteil je Beitrag:** wird ab 09.10. abgefragt (`reach_aufgeteilt`). Liefert Instagram ihn nicht, bleibt die Spalte im Testmonat leer.
 - **Profilbesuche und neue Follower pro Reel** gibt Instagram nur für Storys und Feed-Beiträge heraus. Für die Karussells ab 06.10. haben wir diese Werte dann.
 - **Zielgruppe der erreichten und interagierenden Konten:** Dafür sind es noch zu wenige. Die Werte kommen automatisch, sobald genug Daten da sind.
