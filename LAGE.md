@@ -2,7 +2,7 @@
 
 _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 09.10. 15:47 Uhr._
 
-**Als Nächstes online:** 🎬 Reel `12-reel-zeile` am **Fr 09.10. 19:30 Uhr** – ✋ manuell (postest du in der App)
+**Als Nächstes online:** 📱 Story `08-story-heute` am **Sa 10.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
@@ -53,7 +53,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Fr 09.10. 19:30 | 🎬 Reel `12-reel-zeile` | ✋ manuell (postest du in der App) | Serie Nummer 2: Zeile eingefügt, Summe weg. Vorgezogen vom 12.10. (08.10., Reels laufen gut → täglich 19:30). Einstieg „Jutta hat schon wieder …“ bleibt drin (erfundene Person, Wunsch Loris 08.10.). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. |
 | Sa 10.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | ✋ manuell (postest du in der App) | Stimm-Reel „Der Steuersatz, der ab 2028 falsch ist“ ersetzt das stumme Wissens-Reel (08.10.). Tag nach dem Karussell latente Steuern („gestern ins Karussell“). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | So 11.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
