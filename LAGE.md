@@ -72,12 +72,12 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Do 15.10. 19:30 | 🎬 Reel `16-reel-listen` | ✋ manuell (postest du in der App) | Serie Nummer 5: zwei Listen, SVERWEIS. Vorgezogen vom 22.10. – Serie damit durch. · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. |
 | Fr 16.10. 12:15 | 📱 Story `03-story-aufloesung` | 🟢 freigegeben (geht automatisch online) |  |
 | Fr 16.10. 19:30 | 🎬 Reel `04-reel-mein-weg` | ✋ manuell (postest du in der App) | Mein Weg rückwärts (Variante B, Loris hat den Text am 08.10. eingesprochen). Vorgezogen vom 27.10. KI-LABEL in Edits/Instagram einschalten (Karte 2 + 3 KI), Hinweis steht in der Bildunterschrift. Variante-A-Dateien: *_variante_a.* · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. |
+| Fr 16.10. 19:35 | 📱 Story `04-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #44](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/44) |
 
 ## 🗓️ Danach
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Fr 16.10. 19:35 | 📱 Story `04-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #44](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/44) |
 | Do 22.10. 12:15 | 📱 Story `10-story-umfrage` | 🟢 freigegeben (geht automatisch online) | Aus der Bibliothek: Umfrage E-Rechnung als Einstieg · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
 | Fr 23.10. 19:30 | 🖼️ Karussell `10-e-rechnung` | 🟢 freigegeben (geht automatisch online) | Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG) · 06.10.: auf Fr 23.10. geschoben (Reel-Takt alle 2 Tage). · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
 | Fr 23.10. 19:35 | 📱 Story `10-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
