@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Do 08.10. 19:35 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 09.10. 07:05 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `05-latente-steuern` am **Fr 09.10. 12:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -138,6 +138,10 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 ## 📜 Protokoll – jede Änderung
 
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
+
+**Fr 09.10.2026**
+- 07:05 📡 Radar 2026-10-09: 8 Beiträge, 0 DM-Entwürfe ([`0c9c6fc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0c9c6fc3bc9e991c600d222579b7668cf1aba5c4))
+  - `automatik/interaktion`
 
 **Do 08.10.2026**
 - 19:35 🤖 Autopilot: 06-story-teaser veroeffentlicht ([`7cfed5a`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/7cfed5abd434681ce018f0a123c80eb0491cf57b))
