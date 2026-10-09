@@ -326,8 +326,11 @@
       "bilder": [
         "story_do_teaser.png"
       ],
-      "status": "freigegeben",
-      "issue": 12
+      "status": "veroeffentlicht",
+      "issue": 12,
+      "media_id": "18118287707058425",
+      "link": "https://www.instagram.com/stories/maehrsteuern/4004067818916764813",
+      "veroeffentlicht_am": "2026-10-09 12:35"
     },
     {
       "id": "12-reel-zeile",
