@@ -1,8 +1,8 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 09.10. 11:15 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 09.10. 12:31 Uhr._
 
-**Als Nächstes online:** 🖼️ Karussell `05-latente-steuern` am **Fr 09.10. 12:30 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 📱 Story `05-story-teaser` am **Fr 09.10. 12:35 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
@@ -53,7 +53,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Fr 09.10. 12:30 | 🖼️ Karussell `05-latente-steuern` | 🟢 freigegeben (geht automatisch online) | Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Fr 09.10. 12:35 | 📱 Story `05-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Fr 09.10. 19:30 | 🎬 Reel `12-reel-zeile` | ✋ manuell (postest du in der App) | Serie Nummer 2: Zeile eingefügt, Summe weg. Vorgezogen vom 12.10. (08.10., Reels laufen gut → täglich 19:30). Einstieg „Jutta hat schon wieder …“ bleibt drin (erfundene Person, Wunsch Loris 08.10.). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. |
 | Sa 10.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
@@ -87,6 +86,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
+- Fr 09.10. 12:30 · 🖼️ Karussell `05-latente-steuern` · [ansehen](https://www.instagram.com/p/DeRTLb4EYwd/) (online 2026-10-09 12:31)
 - Do 08.10. 19:35 · 📱 Story `06-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4003554454352185254) (online 2026-10-08 19:35)
 - Mi 07.10. 19:35 · 📱 Story `02-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4002829658245043420) (online 2026-10-07 19:35)
 - Mi 07.10. 19:30 · 🖼️ Karussell `02-excel-fehler` · [ansehen](https://www.instagram.com/p/DeM5u1vGLsR/) (online 2026-10-07 19:32)
@@ -96,7 +96,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Mo 05.10. 12:15 · 📱 Story `02-story-umfrage` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4001158648931891388) (online 2026-10-05 12:15)
 - So 04.10. 19:35 · 📱 Story `01-story-teaser-5dinge` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4000661016565086455) (online 2026-10-04 19:46)
 - So 04.10. 19:30 · 🎬 Reel `01-reel-5dinge` · [ansehen](https://www.instagram.com/reel/DeFLK53ALSs/) (online 2026-10-04 19:30)
-- Sa 03.10. 12:15 · 📱 Story `08-story-tipp` · [ansehen](https://www.instagram.com/stories/maehrsteuern/3999709094836161880) (online 2026-10-03 12:15)
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
@@ -138,6 +137,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Fr 09.10.2026**
+- 12:31 🤖 Autopilot: 05-latente-steuern veroeffentlicht ([`afefee6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/afefee6abd0848ee8dd8f942b12ce1abb8428d36))
+  - Plan: `05-latente-steuern` status: freigegeben → veroeffentlicht; `05-latente-steuern` online: https://www.instagram.com/p/DeRTLb4EYwd/
 - 11:15 🤖 Autopilot: Dateien fuer 05-latente-steuern vorbereitet ([`7e99d1f`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/7e99d1f35b6ee4e5bace79c97ba157adf8023f33))
   - `posts/05_2026-10-08_latente_steuern`
 - 08:48 📈 Statistik 2026-10-09 ([`177eda4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/177eda42043631c50f2998d39d777203aafded82))
