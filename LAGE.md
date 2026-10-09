@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 09.10. 07:05 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 09.10. 08:48 Uhr._
 
 **Als Nächstes online:** 🖼️ Karussell `05-latente-steuern` am **Fr 09.10. 12:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -47,7 +47,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - ✋ **Von Hand posten** `16-reel-listen` (Do 15.10. 19:30) – Serie Nummer 5: zwei Listen, SVERWEIS. Vorgezogen vom 22.10. – Serie damit durch. · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.
 - ✋ **Von Hand posten** `04-reel-mein-weg` (Fr 16.10. 19:30) – Mein Weg rückwärts (Variante B, Loris hat den Text am 08.10. eingesprochen). Vorgezogen vom 27.10. KI-LABEL in Edits/Instagram einschalten (Karte 2 + 3 KI), Hinweis steht in der Bildunterschrift. Variante-A-Dateien: *_variante_a.* · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.
 - ⏳ **Wartet auf sprachnachricht** `17-reel-kommentare` (Sa 24.10. 19:30) – Thema aus den Kommentaren der Serie (wird nach Auswertung bis ca. 20.10. festgelegt). Reel-Takt alle 2 Tage (06.10.). Upload über Edits: Claude baut das Reel komplett fertig (mit Musik, Untertiteln) und schickt es im Chat, Loris lädt es über Edits hoch und plant/postet selbst – der Autopilot postet NICHT (Status nach dem Schnitt: manuell). Sprechtext in posts/sprechtexte.md.
-- ⏰ **🎬 Split-Reel in Edits bauen + auf 19:30 planen (Edits-Test)** (Do 08.10. 09:00) – Anleitung: Google Doc „Edits-Anleitung Split-Reel (Do 08.10.)“ im Drive-Ordner „Maehrsteuern audios“. Dateien kamen per Claude-Chat (auch im Repo: posts/02_2026-10-06_excel_fehler/edits_paket/). Bildunterschrift aus der Textdatei kopieren (im Doc sind die Emojis kaputt). Danach Claude Bescheid geben. Der Autopilot postet dieses Reel NICHT.
 - ⏰ **💳 ManyChat-Trial endet Fr 16.10. – entscheiden** (Mi 14.10. 18:00) – Entscheidung Loris: weiter (Kosten?) oder kündigen. Grundlage: ManyChat gesendet/Klicks und Demos aus den Wochenberichten KW 40 + 41.
 
 ## ⏭️ Nächste 7 Tage
@@ -101,22 +100,22 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
-**356 Follower** · 5 Beiträge im Profil (Abruf 2026-10-08) · **-2** seit 2026-10-07 ⚠️
-Reichweite pro Tag: 05.10. **262** · 06.10. **220** · 07.10. **136** · 08.10. **11**
+**358 Follower** · 6 Beiträge im Profil (Abruf 2026-10-09) · **+2** seit 2026-10-08
+Reichweite pro Tag: 05.10. **262** · 06.10. **220** · 07.10. **136** · 08.10. **211**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| Mi 07.10. 19:35 | 50 | 40 | 0 | 1 | 0 |
-| Mi 07.10. 23:02 | 32 | 25 | 0 | 2 | 0 |
-| Do 08.10. 07:20 | 24 | 18 | 0 | 1 | 0 |
+| Do 08.10. 19:35 | 35 | 25 | 0 | 0 | 0 |
+| Do 08.10. 19:58 | 34 | 20 | 0 | 1 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Mi 07.10. 19:32 [5 Excel-Fehler, die fast jede Steuerrück](https://www.instagram.com/p/DeM5u1vGLsR/) | 137 | 49 | 2 | 0 | 2 | 0 |
-| Di 06.10. 19:30 [Zwei Stunden. Jeden Monat. Nur Copy-Past](https://www.instagram.com/reel/DeKUuvPgA1W/) | 355 (+31) | 277 | 10 | 2 | 9 | 8 |
-| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 889 (+5) | 665 | 12 | 10 | 14 | 12 |
-| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 342 (+10) | 126 | 9 | 2 | 2 | 16 |
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 316 (+13) | 185 | 10 | 2 | 4 | 7 |
+| Do 08.10. 19:30 [Gleiche Aufgabe, zwei Wege: Hebesatz von](https://www.instagram.com/reel/DePeYymNG2K/) | 246 | 186 | 6 | 0 | 8 | 0 |
+| Mi 07.10. 19:32 [5 Excel-Fehler, die fast jede Steuerrück](https://www.instagram.com/p/DeM5u1vGLsR/) | 173 (+36) | 64 | 3 | 0 | 2 | 0 |
+| Di 06.10. 19:30 [Zwei Stunden. Jeden Monat. Nur Copy-Past](https://www.instagram.com/reel/DeKUuvPgA1W/) | 369 (+14) | 278 | 11 | 2 | 10 | 8 |
+| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 906 (+17) | 668 | 13 | 10 | 15 | 12 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 347 (+5) | 128 | 10 | 2 | 2 | 16 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 321 (+5) | 186 | 10 | 2 | 4 | 7 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -139,6 +138,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Fr 09.10.2026**
+- 08:48 📈 Statistik 2026-10-09 ([`177eda4`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/177eda42043631c50f2998d39d777203aafded82))
+  - `automatik/statistik`
 - 07:05 📡 Radar 2026-10-09: 8 Beiträge, 0 DM-Entwürfe ([`0c9c6fc`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0c9c6fc3bc9e991c600d222579b7668cf1aba5c4))
   - `automatik/interaktion`
 
