@@ -397,6 +397,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 - 00:13 ✍️ LAGE.md vom Ziel-Branch übernommen (wird nach dem Merge automatisch neu erzeugt) ([`5c7f63c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5c7f63cd3015f373ddca653ec4c90f4b63605c28))
 - 00:13 🔀 Merge claude/instagram in Bibliothek-Branch: Konflikte gelöst ([`978f730`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/978f730edd04156b2f0426f0b2e68001f153f180))
 
+<details><summary>Älter als 7 Tage</summary>
+
 **Sa 03.10.2026**
 - 19:52 🔀 Merge: Radar drosselfest, Wochenbericht geprüft, Fristen in Lage + Kalender ([`01b05e7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/01b05e73e2d2ae3c6aef2f8e5390e6d4ea2defbe))
 - 16:35 📡 Radar drosselfest, Wochenbericht geprüft, Fristen in Lage + Kalender ([`2598e31`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2598e310de3f079372f545e40dbf050c5415fe85))
@@ -473,8 +475,6 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - `automatik/interaktion.json`
 - 00:29 📡 Radar: Excel/DATEV-Konten ergänzt ([`c824346`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c824346653277cd05bbe1e04ac265fe73417cfd1))
   - `automatik/interaktion.json`
-
-<details><summary>Älter als 7 Tage</summary>
 
 **Fr 02.10.2026**
 - 21:05 💼 LinkedIn-Pakete: 02-excel-fehler, 05-latente-steuern, 03-gewst-hinzurechnung ([`5214c46`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5214c460db8ac7cc9206d8649a67b97413765715))
