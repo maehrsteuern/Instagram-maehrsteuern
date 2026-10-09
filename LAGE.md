@@ -1,8 +1,8 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 09.10. 12:32 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Fr 09.10. 12:35 Uhr._
 
-**Als Nächstes online:** 📱 Story `05-story-teaser` am **Fr 09.10. 12:35 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 🎬 Reel `12-reel-zeile` am **Fr 09.10. 19:30 Uhr** – ✋ manuell (postest du in der App)
 
 ## 📝 Gerade in Arbeit
 
@@ -53,7 +53,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Fr 09.10. 12:35 | 📱 Story `05-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #12](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/12) |
 | Fr 09.10. 19:30 | 🎬 Reel `12-reel-zeile` | ✋ manuell (postest du in der App) | Serie Nummer 2: Zeile eingefügt, Summe weg. Vorgezogen vom 12.10. (08.10., Reels laufen gut → täglich 19:30). Einstieg „Jutta hat schon wieder …“ bleibt drin (erfundene Person, Wunsch Loris 08.10.). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. |
 | Sa 10.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | ✋ manuell (postest du in der App) | Stimm-Reel „Der Steuersatz, der ab 2028 falsch ist“ ersetzt das stumme Wissens-Reel (08.10.). Tag nach dem Karussell latente Steuern („gestern ins Karussell“). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner. · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
@@ -86,6 +85,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
+- Fr 09.10. 12:35 · 📱 Story `05-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4004067818916764813) (online 2026-10-09 12:35)
 - Fr 09.10. 12:30 · 🖼️ Karussell `05-latente-steuern` · [ansehen](https://www.instagram.com/p/DeRTLb4EYwd/) (online 2026-10-09 12:31)
 - Do 08.10. 19:35 · 📱 Story `06-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4003554454352185254) (online 2026-10-08 19:35)
 - Mi 07.10. 19:35 · 📱 Story `02-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4002829658245043420) (online 2026-10-07 19:35)
@@ -95,7 +95,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Di 06.10. 19:30 · 🎬 Reel `11-reel-monatsbericht` · [ansehen](https://www.instagram.com/reel/DeKUuvPgA1W/) (online 2026-10-06 19:30)
 - Mo 05.10. 12:15 · 📱 Story `02-story-umfrage` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4001158648931891388) (online 2026-10-05 12:15)
 - So 04.10. 19:35 · 📱 Story `01-story-teaser-5dinge` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4000661016565086455) (online 2026-10-04 19:46)
-- So 04.10. 19:30 · 🎬 Reel `01-reel-5dinge` · [ansehen](https://www.instagram.com/reel/DeFLK53ALSs/) (online 2026-10-04 19:30)
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
@@ -137,6 +136,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Fr 09.10.2026**
+- 12:35 🤖 Autopilot: 05-story-teaser veroeffentlicht ([`ff09f34`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ff09f3462a5439fd1a77b18400d1e643ba27b88f))
+  - Plan: `05-story-teaser` status: freigegeben → veroeffentlicht; `05-story-teaser` online: https://www.instagram.com/stories/maehrsteuern/4004067818916764813
 - 12:32 🤖 Autopilot: Dateien fuer 05-story-teaser vorbereitet ([`606887a`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/606887a622f73b7997e3b21789fe055ca873777f))
   - `posts/05_2026-10-08_latente_steuern`
 - 12:31 🤖 Autopilot: 05-latente-steuern veroeffentlicht ([`afefee6`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/afefee6abd0848ee8dd8f942b12ce1abb8428d36))
