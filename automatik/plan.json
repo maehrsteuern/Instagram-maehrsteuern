@@ -309,11 +309,14 @@
         "folie_07.png"
       ],
       "text": "bildunterschrift.txt",
-      "status": "freigegeben",
+      "status": "veroeffentlicht",
       "hinweis": "Rechtsstand: KSt-Staffel 2028–2032 laut Investitionssofortprogramm 2025, § 274 Abs. 2 HGB – bitte fachlich gegenlesen",
       "issue": 12,
       "stimme": false,
-      "hook": "zahl"
+      "hook": "zahl",
+      "media_id": "17883309489625827",
+      "link": "https://www.instagram.com/p/DeRTLb4EYwd/",
+      "veroeffentlicht_am": "2026-10-09 12:31"
     },
     {
       "id": "05-story-teaser",
