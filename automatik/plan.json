@@ -331,8 +331,11 @@
       "bilder": [
         "story_fr_heute.png"
       ],
-      "status": "freigegeben",
-      "issue": 15
+      "status": "veroeffentlicht",
+      "issue": 15,
+      "media_id": "18424201942152835",
+      "link": "https://www.instagram.com/stories/maehrsteuern/4004782529098566867",
+      "veroeffentlicht_am": "2026-10-10 12:15"
     },
     {
       "id": "08-reel-kst-staffel",
