@@ -345,11 +345,14 @@
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "freigegeben",
+      "status": "veroeffentlicht",
       "hinweis": "10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. Stimm-Reel „Der Steuersatz, der ab 2028 falsch ist“ (Aufnahme 08.10.), Tag nach dem Karussell latente Steuern („gestern ins Karussell“ stimmt).",
       "issue": 15,
       "stimme": true,
-      "hook": "zahl"
+      "hook": "zahl",
+      "media_id": "18111753380332641",
+      "link": "https://www.instagram.com/reel/DeUn6ezCm7O/",
+      "veroeffentlicht_am": "2026-10-10 19:30"
     },
     {
       "id": "08-story-rueckblick",
