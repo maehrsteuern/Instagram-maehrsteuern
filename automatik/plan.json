@@ -334,20 +334,20 @@
     },
     {
       "id": "12-reel-zeile",
-      "zeit": "2026-10-10 19:30",
+      "zeit": "2026-10-10 09:30",
       "typ": "reel",
       "ordner": "posts/12_2026-10-09_reel_zeile",
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "manuell",
-      "hinweis": "10.10.: Fr 09.10. nicht gepostet (Schnitt bei 16 s klang wie „300 oder Zeilen“) → neu geschnitten (harte Kanten am Pegel, „Egal ob 3 oder 300 Zeilen.“), heute 19:30; alle folgenden Reels +1 Tag. · Serie Nummer 2: Zeile eingefügt, Summe weg. Vorgezogen vom 12.10. (08.10., Reels laufen gut → täglich 19:30). Einstieg „Jutta hat schon wieder …“ bleibt drin (erfundene Person, Wunsch Loris 08.10.). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
+      "status": "veroeffentlicht",
+      "hinweis": "10.10.: von Loris als TEST-REEL (Trial, nur Nicht-Follower) in der App hochgeladen – nicht im Follower-Takt. Neu geschnitten (Kanten „300|Zeilen“ am Pegel). Link nachtragen. · Serie Nummer 2: Zeile eingefügt, Summe weg. Vorgezogen vom 12.10. (08.10., Reels laufen gut → täglich 19:30). Einstieg „Jutta hat schon wieder …“ bleibt drin (erfundene Person, Wunsch Loris 08.10.). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
       "stimme": true,
       "hook": "fall"
     },
     {
       "id": "08-story-heute",
-      "zeit": "2026-10-11 12:15",
+      "zeit": "2026-10-10 12:15",
       "typ": "story",
       "ordner": "posts/08_2026-10-09_reel_kst_staffel",
       "bilder": [
@@ -358,17 +358,41 @@
     },
     {
       "id": "08-reel-kst-staffel",
-      "zeit": "2026-10-11 19:30",
+      "zeit": "2026-10-10 19:30",
       "typ": "reel",
       "ordner": "posts/08_2026-10-09_reel_kst_staffel",
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "manuell",
-      "hinweis": "10.10.: +1 Tag (So 11.10.), „gestern“ aus „Den Rechenweg habe ich gestern ins Karussell gepackt“ geschnitten (Karussell lief Fr 09.10.). · Stimm-Reel „Der Steuersatz, der ab 2028 falsch ist“ ersetzt das stumme Wissens-Reel (08.10.). Tag nach dem Karussell latente Steuern („gestern ins Karussell“). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
+      "status": "freigegeben",
+      "hinweis": "10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. Stimm-Reel „Der Steuersatz, der ab 2028 falsch ist“ (Aufnahme 08.10.), Tag nach dem Karussell latente Steuern („gestern ins Karussell“ stimmt).",
       "issue": 15,
       "stimme": true,
       "hook": "zahl"
+    },
+    {
+      "id": "08-story-rueckblick",
+      "zeit": "2026-10-11 12:15",
+      "typ": "story",
+      "ordner": "posts/08_2026-10-09_reel_kst_staffel",
+      "bilder": [
+        "story_sa_rueckblick.png"
+      ],
+      "status": "freigegeben",
+      "issue": 15
+    },
+    {
+      "id": "13-reel-verknuepfung",
+      "zeit": "2026-10-11 19:30",
+      "typ": "reel",
+      "ordner": "posts/13_2026-10-11_reel_verknuepfung",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "freigegeben",
+      "hinweis": "10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. #BEZUG! zwei Tage vor Abgabe – Verknüpfung auf die alte Datei. Vorgezogen vom 16.10.",
+      "stimme": true,
+      "hook": "fall"
     },
     {
       "id": "03-story-quiz",
@@ -381,26 +405,15 @@
       "status": "freigegeben"
     },
     {
-      "id": "08-story-rueckblick",
-      "zeit": "2026-10-12 18:00",
-      "typ": "story",
-      "ordner": "posts/08_2026-10-09_reel_kst_staffel",
-      "bilder": [
-        "story_sa_rueckblick.png"
-      ],
-      "status": "freigegeben",
-      "issue": 15
-    },
-    {
-      "id": "13-reel-verknuepfung",
+      "id": "14-reel-versionen",
       "zeit": "2026-10-12 19:30",
       "typ": "reel",
-      "ordner": "posts/13_2026-10-11_reel_verknuepfung",
+      "ordner": "posts/14_2026-10-12_reel_versionen",
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "manuell",
-      "hinweis": "#BEZUG! zwei Tage vor Abgabe – Verknüpfung auf die alte Datei. Vorgezogen vom 16.10. · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
+      "status": "freigegeben",
+      "hinweis": "10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. Serie Nummer 3: final_final_v3. Vorgezogen vom 18.10.",
       "stimme": true,
       "hook": "fall"
     },
@@ -434,15 +447,15 @@
       "status": "freigegeben"
     },
     {
-      "id": "14-reel-versionen",
+      "id": "15-reel-rechnungsnummern",
       "zeit": "2026-10-13 19:30",
       "typ": "reel",
-      "ordner": "posts/14_2026-10-12_reel_versionen",
+      "ordner": "posts/15_2026-10-13_reel_rechnungsnummern",
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "manuell",
-      "hinweis": "Serie Nummer 3: final_final_v3. Vorgezogen vom 18.10. · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
+      "status": "freigegeben",
+      "hinweis": "10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. Serie Nummer 4: doppelte Rechnungsnummer. Vorgezogen vom 20.10.",
       "stimme": true,
       "hook": "fall"
     },
@@ -459,16 +472,16 @@
       "issue": 35
     },
     {
-      "id": "15-reel-rechnungsnummern",
+      "id": "07-reel-hinzurechnung",
       "zeit": "2026-10-14 19:30",
       "typ": "reel",
-      "ordner": "posts/15_2026-10-13_reel_rechnungsnummern",
-      "video": "reel.mp4",
-      "titelbild": "titelbild.png",
-      "text": "bildunterschrift.txt",
-      "status": "manuell",
-      "hinweis": "Serie Nummer 4: doppelte Rechnungsnummer. Vorgezogen vom 20.10. · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
-      "stimme": true,
+      "ordner": "posts/03_2026-10-13_gewst_hinzurechnung",
+      "video": "reel_hinzurechnung.mp4",
+      "text": "bildunterschrift_reel.txt",
+      "status": "freigegeben",
+      "hinweis": "Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot",
+      "issue": 14,
+      "stimme": false,
       "hook": "fall"
     },
     {
@@ -515,16 +528,27 @@
       "issue": 35
     },
     {
-      "id": "07-reel-hinzurechnung",
+      "id": "04-story-frage",
+      "zeit": "2026-10-15 18:00",
+      "typ": "story",
+      "ordner": "posts/04_2026-10-20_reel_mein_weg",
+      "bilder": [
+        "story_mo_frage.png"
+      ],
+      "status": "freigegeben",
+      "issue": 44
+    },
+    {
+      "id": "16-reel-listen",
       "zeit": "2026-10-15 19:30",
       "typ": "reel",
-      "ordner": "posts/03_2026-10-13_gewst_hinzurechnung",
-      "video": "reel_hinzurechnung.mp4",
-      "text": "bildunterschrift_reel.txt",
+      "ordner": "posts/16_2026-10-15_reel_listen",
+      "video": "reel.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
       "status": "freigegeben",
-      "hinweis": "Begleit-Reel zum Karussell vom 13.10. (12,8 s, echte Programm-Aufnahme, ohne Stimme) – neuer Mittwochs-Reel-Slot",
-      "issue": 14,
-      "stimme": false,
+      "hinweis": "10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. Serie Nummer 5: zwei Listen, SVERWEIS. Vorgezogen vom 22.10. – Serie damit durch.",
+      "stimme": true,
       "hook": "fall"
     },
     {
@@ -538,46 +562,22 @@
       "status": "freigegeben"
     },
     {
-      "id": "04-story-frage",
-      "zeit": "2026-10-16 18:00",
-      "typ": "story",
-      "ordner": "posts/04_2026-10-20_reel_mein_weg",
-      "bilder": [
-        "story_mo_frage.png"
-      ],
-      "status": "freigegeben",
-      "issue": 44
-    },
-    {
-      "id": "16-reel-listen",
+      "id": "04-reel-mein-weg",
       "zeit": "2026-10-16 19:30",
       "typ": "reel",
-      "ordner": "posts/16_2026-10-15_reel_listen",
-      "video": "reel.mp4",
-      "titelbild": "titelbild.png",
-      "text": "bildunterschrift.txt",
-      "status": "manuell",
-      "hinweis": "Serie Nummer 5: zwei Listen, SVERWEIS. Vorgezogen vom 22.10. – Serie damit durch. · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
-      "stimme": true,
-      "hook": "fall"
-    },
-    {
-      "id": "04-reel-mein-weg",
-      "zeit": "2026-10-17 19:30",
-      "typ": "reel",
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
       "video": "reel.mp4",
       "titelbild": "titelbild.png",
       "text": "bildunterschrift.txt",
-      "status": "manuell",
-      "hinweis": "Mein Weg rückwärts (Variante B, Loris hat den Text am 08.10. eingesprochen). Vorgezogen vom 27.10. KI-LABEL in Edits/Instagram einschalten (Karte 2 + 3 KI), Hinweis steht in der Bildunterschrift. Variante-A-Dateien: *_variante_a.* · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
+      "status": "freigegeben",
+      "hinweis": "10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. Mein Weg rückwärts (Variante B, Loris hat den Text am 08.10. eingesprochen). Vorgezogen vom 27.10. KI-LABEL in Edits/Instagram einschalten (Karte 2 + 3 KI), Hinweis steht in der Bildunterschrift. Variante-A-Dateien: *_variante_a.* KI-LABEL: geht nicht per API → nach dem Posten in der App setzen (Beitrag → ⋯ → Bearbeiten → KI-Label).",
       "ki_label": true,
       "stimme": true,
       "hook": "fall"
     },
     {
       "id": "04-story-teaser",
-      "zeit": "2026-10-17 19:35",
+      "zeit": "2026-10-16 19:35",
       "typ": "story",
       "ordner": "posts/04_2026-10-20_reel_mein_weg",
       "bilder": [
