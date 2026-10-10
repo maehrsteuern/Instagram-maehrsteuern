@@ -373,6 +373,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 - 07:03 📡 Radar 2026-10-05: 8 Beiträge, 0 DM-Entwürfe ([`c7af627`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c7af627103cd7673c90dbc18c53d97522c1b2062))
   - `automatik/interaktion`
 
+<details><summary>Älter als 7 Tage</summary>
+
 **So 04.10.2026**
 - 21:28 📈 Statistik 2026-10-04 ([`1e9ea9e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/1e9ea9ea7c92280cb4d24c0b8a6636c28d6fa5fb))
   - `automatik/statistik`
@@ -413,8 +415,6 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
   - `.claude/skills/lage/SKILL.md`, `.github/workflows`, `CLAUDE.md`, `LAGE.html`, `README.md`, `automatik/lage.py`, `…`
 - 00:13 ✍️ LAGE.md vom Ziel-Branch übernommen (wird nach dem Merge automatisch neu erzeugt) ([`5c7f63c`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5c7f63cd3015f373ddca653ec4c90f4b63605c28))
 - 00:13 🔀 Merge claude/instagram in Bibliothek-Branch: Konflikte gelöst ([`978f730`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/978f730edd04156b2f0426f0b2e68001f153f180))
-
-<details><summary>Älter als 7 Tage</summary>
 
 **Sa 03.10.2026**
 - 19:52 🔀 Merge: Radar drosselfest, Wochenbericht geprüft, Fristen in Lage + Kalender ([`01b05e7`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/01b05e73e2d2ae3c6aef2f8e5390e6d4ea2defbe))
