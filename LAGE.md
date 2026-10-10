@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 08:49 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 09:10 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `12-reel-zeile` am **Sa 10.10. 19:30 Uhr** – ✋ manuell (postest du in der App)
 
@@ -137,6 +137,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 10.10.2026**
+- 09:10 ✍️ Reel Nr. 2 neu geschnitten (300|Zeilen), heute 19:30 – alle Folge-Reels +1 Tag ([`0ea2834`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/0ea283465021259909da6e7e4b591b1f10eca388))
+  - Plan: `12-reel-zeile` zeit: 2026-10-09 19:30 → 2026-10-10 19:30; `08-story-heute` zeit: 2026-10-10 12:15 → 2026-10-11 12:15; `08-reel-kst-staffel` zeit: 2026-10-10 19:30 → 2026-10-11 19:30; `08-story-rueckblick` zeit: 2026-10-11 12:15 → 2026-10-12 18:00; `13-reel-verknuepfung` zeit: 2026-10-11 19:30 → 2026-10-12 19:30; `14-reel-versionen` zeit: 2026-10-12 19:30 → 2026-10-13 19:30; `15-reel-rechnungsnummern` zeit: 2026-10-13 19:30 → 2026-10-14 19:30; `07-reel-hinzurechnung` zeit: 2026-10-14 19:30 → 2026-10-15 19:30; `04-story-frage` zeit: 2026-10-15 18:00 → 2026-10-16 18:00; `16-reel-listen` zeit: 2026-10-15 19:30 → 2026-10-16 19:30; `04-reel-mein-weg` zeit: 2026-10-16 19:30 → 2026-10-17 19:30; `04-story-teaser` zeit: 2026-10-16 19:35 → 2026-10-17 19:35
 - 08:49 📈 Statistik 2026-10-10 ([`5fd657b`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/5fd657b3c7b3798ffd911c6e243dc193a231de35))
   - `automatik/statistik`
 - 07:04 📡 Radar 2026-10-10: 8 Beiträge, 0 DM-Entwürfe ([`f626328`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/f626328688858f48feed9c8023210206cf3929a6))
