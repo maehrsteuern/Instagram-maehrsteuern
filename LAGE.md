@@ -1,8 +1,8 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 11:46 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 12:15 Uhr._
 
-**Als Nächstes online:** 📱 Story `08-story-heute` am **Sa 10.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
+**Als Nächstes online:** 🎬 Reel `08-reel-kst-staffel` am **Sa 10.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
 ## 📝 Gerade in Arbeit
 
@@ -42,7 +42,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Sa 10.10. 12:15 | 📱 Story `08-story-heute` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | Sa 10.10. 19:30 | 🎬 Reel `08-reel-kst-staffel` | 🟢 freigegeben (geht automatisch online) | 10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. Stimm-Reel „Der Steuersatz, der ab 2028 falsch ist“ (Aufnahme 08.10.), Tag nach dem Karussell latente Steuern („gestern ins Karussell“ stimmt). · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | So 11.10. 12:15 | 📱 Story `08-story-rueckblick` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #15](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/15) |
 | So 11.10. 19:30 | 🎬 Reel `13-reel-verknuepfung` | 🟢 freigegeben (geht automatisch online) | 10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. #BEZUG! zwei Tage vor Abgabe – Verknüpfung auf die alte Datei. Vorgezogen vom 16.10. |
@@ -75,6 +74,7 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 
 ## ✅ Zuletzt veröffentlicht (Autopilot)
 
+- Sa 10.10. 12:15 · 📱 Story `08-story-heute` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4004782529098566867) (online 2026-10-10 12:15)
 - Sa 10.10. 09:30 · 🎬 Reel `12-reel-zeile` · [ansehen](https://www.instagram.com/reel/DeTiK24NyJt/)
 - Fr 09.10. 12:35 · 📱 Story `05-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4004067818916764813) (online 2026-10-09 12:35)
 - Fr 09.10. 12:30 · 🖼️ Karussell `05-latente-steuern` · [ansehen](https://www.instagram.com/p/DeRTLb4EYwd/) (online 2026-10-09 12:31)
@@ -84,7 +84,6 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 - Mi 07.10. 12:15 · 📱 Story `05-story-frage` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4002608197877985940) (online 2026-10-07 12:15)
 - Di 06.10. 19:35 · 📱 Story `11-story-teaser` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4002104878277412503) (online 2026-10-06 19:35)
 - Di 06.10. 19:30 · 🎬 Reel `11-reel-monatsbericht` · [ansehen](https://www.instagram.com/reel/DeKUuvPgA1W/) (online 2026-10-06 19:30)
-- Mo 05.10. 12:15 · 📱 Story `02-story-umfrage` · [ansehen](https://www.instagram.com/stories/maehrsteuern/4001158648931891388) (online 2026-10-05 12:15)
 
 ## 📈 Zahlen (täglich ca. 08:45)
 
@@ -127,6 +126,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 10.10.2026**
+- 12:15 🤖 Autopilot: 08-story-heute veroeffentlicht ([`b09078d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b09078d60f4514c2962e5a6ddedfb6400e3659b0))
+  - Plan: `08-story-heute` status: freigegeben → veroeffentlicht; `08-story-heute` online: https://www.instagram.com/stories/maehrsteuern/4004782529098566867
 - 11:46 🔀 Merge pull request #50 from maehrsteuern/claude/focused-shannon-hrtyy7 ([`fa67d29`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/fa67d290f19e81882a67906341bed9da92828103))
 - 11:46 ✍️ Rückstellung-Karussell freigegeben, Ampel-Reel auf Sa 17.10., Link Test-Reel Nr. 2 ([`b4fc245`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/b4fc2454d57236226eb562bfb593be78620711b4))
   - Plan: `12-reel-zeile` online: https://www.instagram.com/reel/DeTiK24NyJt/; `09-story-quiz` status: entwurf → freigegeben; `09-story-aufloesung` status: entwurf → freigegeben; `09-rueckstellung` status: entwurf → freigegeben; `09-story-teaser` status: entwurf → freigegeben; `01-reel-ampel` status: pause → freigegeben; `01-reel-ampel` zeit: 2026-10-04 19:30 → 2026-10-17 19:30; `01-story-teaser` status: pause → freigegeben; `01-story-teaser` zeit: 2026-10-04 19:35 → 2026-10-17 19:35
