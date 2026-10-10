@@ -120,18 +120,6 @@
       "veroeffentlicht_am": "2026-10-03 12:15"
     },
     {
-      "id": "01-reel-ampel",
-      "zeit": "2026-10-04 19:30",
-      "typ": "reel",
-      "ordner": "posts/01_2026-10-04_reel_ampel",
-      "video": "reel_stimme.mp4",
-      "titelbild": "titelbild.png",
-      "text": "bildunterschrift.txt",
-      "status": "pause",
-      "hinweis": "Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“.",
-      "issue": 7
-    },
-    {
       "id": "01-reel-5dinge",
       "zeit": "2026-10-04 19:30",
       "typ": "reel",
@@ -146,17 +134,6 @@
       "veroeffentlicht_am": "2026-10-04 19:30",
       "stimme": true,
       "hook": "zahl"
-    },
-    {
-      "id": "01-story-teaser",
-      "zeit": "2026-10-04 19:35",
-      "typ": "story",
-      "ordner": "posts/01_2026-10-04_reel_ampel",
-      "bilder": [
-        "story_so_teaser.png"
-      ],
-      "status": "pause",
-      "hinweis": "04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“."
     },
     {
       "id": "01-story-teaser-5dinge",
@@ -343,7 +320,8 @@
       "status": "veroeffentlicht",
       "hinweis": "10.10.: von Loris als TEST-REEL (Trial, nur Nicht-Follower) in der App hochgeladen – nicht im Follower-Takt. Neu geschnitten (Kanten „300|Zeilen“ am Pegel). Link nachtragen. · Serie Nummer 2: Zeile eingefügt, Summe weg. Vorgezogen vom 12.10. (08.10., Reels laufen gut → täglich 19:30). Einstieg „Jutta hat schon wieder …“ bleibt drin (erfundene Person, Wunsch Loris 08.10.). · Upload über Edits (08.10.): Loris lädt reel.mp4 + titelbild.png in Edits, Bildunterschrift aus bildunterschrift.txt, plant dort auf die Planzeit – der Autopilot postet NICHT. Stimme Loris (Aufnahme 08.10.), wörtliche Untertitel, Musik Runway (musik/QUELLEN.md). Anleitung: EDITS.md im Ordner.",
       "stimme": true,
-      "hook": "fall"
+      "hook": "fall",
+      "link": "https://www.instagram.com/reel/DeTiK24NyJt/"
     },
     {
       "id": "08-story-heute",
@@ -467,8 +445,8 @@
       "bilder": [
         "story_mi_quiz.png"
       ],
-      "status": "entwurf",
-      "hinweis": "Ja/Nein zum Antippen (08.10.): Antwort per Emoji-Schnellreaktion 👏 = Ja · 😮 = Nein – ein Tipp statt Tippen. Besser noch: in der App zusätzlich Quiz-Sticker Ja/Nein setzen (richtig: Ja). Aus der Bibliothek, Einstieg zum Rückstellungs-Karussell",
+      "status": "freigegeben",
+      "hinweis": "10.10.: Go von Loris (Rückstellungskarussell). Ja/Nein zum Antippen (08.10.): Antwort per Emoji-Schnellreaktion 👏 = Ja · 😮 = Nein – ein Tipp statt Tippen. Besser noch: in der App zusätzlich Quiz-Sticker Ja/Nein setzen (richtig: Ja). Aus der Bibliothek, Einstieg zum Rückstellungs-Karussell",
       "issue": 35
     },
     {
@@ -492,8 +470,9 @@
       "bilder": [
         "story_do_aufloesung.png"
       ],
-      "status": "entwurf",
-      "issue": 35
+      "status": "freigegeben",
+      "issue": 35,
+      "hinweis": "10.10.: Go von Loris (Rückstellungskarussell)."
     },
     {
       "id": "09-rueckstellung",
@@ -510,8 +489,8 @@
         "folie_07.png"
       ],
       "text": "bildunterschrift.txt",
-      "status": "entwurf",
-      "hinweis": "Aus der Bibliothek (gegengelesen 05.10., Demo-Zahlen 1 Mio. €, Hebesatz 400 %)",
+      "status": "freigegeben",
+      "hinweis": "10.10.: Go von Loris (Rückstellungskarussell). Aus der Bibliothek (gegengelesen 05.10., Demo-Zahlen 1 Mio. €, Hebesatz 400 %)",
       "issue": 35,
       "stimme": false,
       "hook": "zahl"
@@ -524,8 +503,9 @@
       "bilder": [
         "story_do_teaser.png"
       ],
-      "status": "entwurf",
-      "issue": 35
+      "status": "freigegeben",
+      "issue": 35,
+      "hinweis": "10.10.: Go von Loris (Rückstellungskarussell)."
     },
     {
       "id": "04-story-frage",
@@ -585,6 +565,29 @@
       ],
       "status": "freigegeben",
       "issue": 44
+    },
+    {
+      "id": "01-reel-ampel",
+      "zeit": "2026-10-17 19:30",
+      "typ": "reel",
+      "ordner": "posts/01_2026-10-04_reel_ampel",
+      "video": "reel_stimme.mp4",
+      "titelbild": "titelbild.png",
+      "text": "bildunterschrift.txt",
+      "status": "freigegeben",
+      "hinweis": "10.10.: auf Sa 17.10. 19:30 eingeplant (Loris), Autopilot postet reel_stimme.mp4 (26 s, −17,9 LUFS). · Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“.",
+      "issue": 7
+    },
+    {
+      "id": "01-story-teaser",
+      "zeit": "2026-10-17 19:35",
+      "typ": "story",
+      "ordner": "posts/01_2026-10-04_reel_ampel",
+      "bilder": [
+        "story_so_teaser.png"
+      ],
+      "status": "freigegeben",
+      "hinweis": "10.10.: mit dem Ampel-Reel auf Sa 17.10. · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“."
     },
     {
       "id": "10-story-umfrage",
