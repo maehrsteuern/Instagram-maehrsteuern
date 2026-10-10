@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 09:32 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 11:01 Uhr._
 
 **Als Nächstes online:** 📱 Story `08-story-heute` am **Sa 10.10. 12:15 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -129,6 +129,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 10.10.2026**
+- 11:01 🤖 Autopilot: Dateien fuer 08-story-heute vorbereitet ([`c6d602e`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/c6d602e6110a14075d724525a984fbb33a6e4053))
+  - `posts/08_2026-10-09_reel_kst_staffel`
 - 09:32 🔀 Merge pull request #49 from maehrsteuern/claude/focused-shannon-hrtyy7 ([`4ab6262`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/4ab6262832d5f81f384cee0ebf256e8d5713f65d))
 - 09:32 ✍️ Reels wieder im Original-Takt und per Autopilot (ab Sa 10.10. Steuersatz) ([`2070594`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/2070594b5722f05e345dae6a175ac839d2590c13))
   - Plan: `12-reel-zeile` status: manuell → veroeffentlicht; `12-reel-zeile` zeit: 2026-10-10 19:30 → 2026-10-10 09:30; `08-story-heute` zeit: 2026-10-11 12:15 → 2026-10-10 12:15; `08-reel-kst-staffel` status: manuell → freigegeben; `08-reel-kst-staffel` zeit: 2026-10-11 19:30 → 2026-10-10 19:30; `08-story-rueckblick` zeit: 2026-10-12 18:00 → 2026-10-11 12:15; `13-reel-verknuepfung` status: manuell → freigegeben; `13-reel-verknuepfung` zeit: 2026-10-12 19:30 → 2026-10-11 19:30; `14-reel-versionen` status: manuell → freigegeben; `14-reel-versionen` zeit: 2026-10-13 19:30 → 2026-10-12 19:30; `15-reel-rechnungsnummern` status: manuell → freigegeben; `15-reel-rechnungsnummern` zeit: 2026-10-14 19:30 → 2026-10-13 19:30; `07-reel-hinzurechnung` zeit: 2026-10-15 19:30 → 2026-10-14 19:30; `04-story-frage` zeit: 2026-10-16 18:00 → 2026-10-15 18:00; `16-reel-listen` status: manuell → freigegeben; `16-reel-listen` zeit: 2026-10-16 19:30 → 2026-10-15 19:30; `04-reel-mein-weg` status: manuell → freigegeben; `04-reel-mein-weg` zeit: 2026-10-17 19:30 → 2026-10-16 19:30; `04-story-teaser` zeit: 2026-10-17 19:35 → 2026-10-16 19:35
