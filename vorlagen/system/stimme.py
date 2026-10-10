@@ -4,7 +4,7 @@
     woerter = aufbereiten("aufnahmen/x.mp3", woerter_json, "posts/…/ton/stimme.flac", raus=[(0.0, 1.42)], text="Eine Zeile …")
 
 woerter_json = Wortliste aus faster-whisper ([wort, start, ende, wahrscheinlichkeit], Sekunden in der Originaldatei).
-raus = Zeitbereiche (Original) die wegfallen. Pausen zwischen Wörtern werden auf höchstens PAUSE s gekürzt (Raumton bleibt).
+raus = Zeitbereiche (Original) die wegfallen – Kanten exakt setzen (Pegel prüfen), sie werden ohne Rand geschnitten. Pausen zwischen Wörtern werden auf höchstens PAUSE s gekürzt (Raumton bleibt).
 text = gegengelesener Wortlaut (String oder Liste), gleich viele Wörter wie die behaltenen Whisper-Wörter (ersetzt deren Schreibweise).
 Gibt die Wörter mit neuen Zeiten zurück (Sekunden in der fertigen Datei). Feste Verstärkung statt loudnorm (kein Pumpen).
 """
@@ -14,6 +14,7 @@ import imageio_ffmpeg
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 PAUSE, VOR, NACH = 0.30, 0.10, 0.16  # max. Pause, Luft vor dem ersten / nach dem letzten Wort eines Blocks
+HART_LUECKE = 0.14  # Stille nach einem harten Schnitt (raus-Kante mitten im Redefluss)
 ZIEL_LUFS = -18.0
 
 
@@ -31,7 +32,8 @@ def aufbereiten(quelle, woerter, ziel, raus=(), text=None):
     # Blöcke: Wörter mit kurzer Lücke bleiben zusammen, sonst neuer Block (Lücke wird gekürzt / Ausgeschnittenes fällt weg)
     bloecke = []
     for i, w in enumerate(behalten):
-        geschnitten = i and any(behalten[i - 1][2] <= a < w[1] or behalten[i - 1][2] < b <= w[1] for a, b in raus)
+        mitte = lambda x: (x[1] + x[2]) / 2
+        geschnitten = i and any(mitte(behalten[i - 1]) < a and b <= mitte(w) for a, b in raus)  # Schnitt liegt zwischen den Wörtern
         if bloecke and not geschnitten and w[1] - bloecke[-1][-1][2] <= PAUSE:
             bloecke[-1].append(w)
         else:
@@ -39,11 +41,18 @@ def aufbereiten(quelle, woerter, ziel, raus=(), text=None):
     stuecke, ergebnis, t = [], [], 0.0
     for blk in bloecke:
         a, b = max(blk[0][1] - VOR, 0), blk[-1][2] + NACH
+        # Schnittkanten aus raus sind hart: nichts aus dem Ausgeschnittenen mitnehmen (sonst hört man Wortreste, z. B. „300 Ze… oder Zeilen“)
+        a = max([a] + [y for x, y in raus if y <= mitte(blk[0])])
+        hart = [x for x, y in raus if x >= mitte(blk[-1])]
+        if hart and min(hart) - blk[-1][2] < PAUSE:  # Schnitt mitten im Redefluss: genau bis zur Kante, danach kurz Luft
+            b, luecke = min(hart), HART_LUECKE  # sonst verschmelzen die Wörter („300|Zeilen“ → „teilen“)
+        else:
+            luecke = 0
         if stuecke: a = max(a, stuecke[-1][1])  # nie überlappen
         for w in blk: ergebnis.append([w[0], round(t + w[1] - a, 3), round(t + w[2] - a, 3)])
-        stuecke.append((a, b)); t += b - a
-    teile = [f"[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.012,afade=t=out:st={b - a - 0.02:.3f}:d=0.02[t{i}]"
-             for i, (a, b) in enumerate(stuecke)]
+        stuecke.append((a, b, luecke)); t += b - a + luecke
+    teile = [f"[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.004,afade=t=out:st={b - a - 0.02:.3f}:d=0.02,apad=pad_dur={l:.3f}[t{i}]"
+             for i, (a, b, l) in enumerate(stuecke)]
     kette = ";".join(teile) + ";" + "".join(f"[t{i}]" for i in range(len(stuecke))) + f"concat=n={len(stuecke)}:v=0:a=1,"
     kette += "highpass=f=80,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=1"
     ziel = Path(ziel); ziel.parent.mkdir(parents=True, exist_ok=True)

@@ -1,4 +1,4 @@
-# Edits: `16-reel-listen` – Do 15.10., 19:30 Uhr
+# Edits: `16-reel-listen` – Fr 16.10., 19:30 Uhr
 
 Fertig geschnitten (Stimme, wörtliche Untertitel, Musik). In Edits nur noch hochladen und planen – der Autopilot postet das **nicht**.
 
@@ -7,5 +7,5 @@ Fertig geschnitten (Stimme, wörtliche Untertitel, Musik). In Edits nur noch hoc
 3. Teilen → Instagram (Reel) → Titelbild: `titelbild.png`.
 4. Bildunterschrift: Inhalt von `bildunterschrift.txt` einfügen.
 5. KI-Label: nicht nötig (keine KI-Bilder/-Personen; Musik ist KI-generiert, aber nicht realistisch-täuschend).
-6. Erweiterte Einstellungen → **„Diesen Beitrag planen“: Do 15.10., 19:30**.
+6. Erweiterte Einstellungen → **„Diesen Beitrag planen“: Fr 16.10., 19:30**.
 7. Claude kurz Bescheid geben → Plan auf „veröffentlicht“.

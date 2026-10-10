@@ -32,6 +32,7 @@ REELS = {
         atmo=[("tippen_fehlerton.mp3", 3.56, 0.8, 0.7, 0.9), ("fehlerton.mp3", 7.20, 0, 0.6, 0.5), ("uhr_ticken.mp3", 9.84, 0.3, 3.2, 0.25)]),
     "p08_reel_kst_staffel": dict(
         datei="08.10.2026 10.39.mp3", ordner="posts/08_2026-10-09_reel_kst_staffel",
+        raus=[(24.81, 25.12)],  # „gestern“ raus – Reel läuft 2 Tage nach dem Karussell (Kanten am Pegel gemessen, 10.10.)
         korr={"Zeile.": "Zelle.", "30": "30", "eingedippt,": "eingetippt,", "Körperschutzsteuer": "Körperschaftsteuer", "am": "um",
               "rechten": "Rechenweg", "Weg": "", "willst,": "willst:", "Tool.": "„TOOL“."},
         hook=[("30 % fest", "weiss"), ("eingetippt?", "gelb")],
@@ -42,8 +43,8 @@ REELS = {
         atmo=[("tippen_fehlerton.mp3", 4.10, 0.8, 0.8, 0.8), ("fehlerton.mp3", 19.20, 0, 0.6, 0.35)]),
     "p12_reel_zeile": dict(
         datei="08.10.2026 10.42.mp3", ordner="posts/12_2026-10-09_reel_zeile",
-        raus=[(17.72, 19.40)],  # Versprecher „Zellen dazu kommen oder“ („Jutta“ bleibt – erfundene Person, Wunsch Loris 08.10.)
-        korr={"Bezugfehler.": "#BEZUG!-Fehler.", "so#1": "summier", "mir": "", "300": "300", "Zeilen.": "Zeilen –",
+        raus=[(17.94, 19.475)],  # Versprecher „Zellen dazukommen oder“ – Kanten am Pegel gemessen (Ende „300“ / Anfang „Zeilen“) („Jutta“ bleibt – erfundene Person, Wunsch Loris 08.10.)
+        korr={"Bezugfehler.": "#BEZUG!-Fehler.", "so#1": "summier", "mir": "", "300": "300", "oder#1": "oder|", "Zeilen.": "Zeilen.",
               "2": "2", "5": "5-Dinge-Reel.", "-Dinger": "", "-Real.": "", "wird": "willst", "es#2": "du", "so#2": "", "nächstes": "Nächstes"},
         hook=[("Zeile eingefügt.", "weiss"), ("Summe weg.", "rot")],
         szenen=[(0, "2a", {"von": [540, 960, 1080], "nach": [560, 1000, 900]}), (4.88, "2a", {"von": [540, 930, 1010], "nach": [540, 960, 1080]}),
@@ -126,11 +127,11 @@ def zeilen(woerter):
     out, akt = [], []
     for w in tok:
         text = " ".join(x[0] for x in akt + [w])
-        if akt and (len(text) > MAX_ZEICHEN or akt[-1][0][-1] in ".?!:–"):
+        if akt and (len(text) > MAX_ZEICHEN or akt[-1][0][-1] in ".?!:–|"):
             out.append(akt); akt = []
         akt.append(w)
     if akt: out.append(akt)
-    return [(" ".join(x[0] for x in z), z[0][1], z[-1][2]) for z in out]
+    return [(" ".join(x[0] for x in z).replace("|", ""), z[0][1], z[-1][2]) for z in out]  # "|" am Wort = Zeilenumbruch erzwingen
 
 
 def neue_zeit(t_orig, orig, neu):
