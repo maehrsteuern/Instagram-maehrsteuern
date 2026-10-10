@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 15:05 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 18:15 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `08-reel-kst-staffel` am **Sa 10.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -127,6 +127,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 10.10.2026**
+- 18:15 🤖 Autopilot: Dateien fuer 08-reel-kst-staffel vorbereitet ([`bbd22ff`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/bbd22ff491314c97dec0ea9880c4e3bac0c461a8))
+  - `posts/08_2026-10-09_reel_kst_staffel`
 - 15:05 📈 Statistik 2026-10-10 ([`57d1b40`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/57d1b404960569c6724f844949ada2ac15ebffe5))
   - `automatik/statistik`
 - 13:16 💼 LinkedIn-Pakete: 09-rueckstellung ([`10b1b91`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/10b1b91681b38af05562d6c99af8a85325d7c99e))
