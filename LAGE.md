@@ -60,12 +60,12 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 | Fr 16.10. 19:30 | 🎬 Reel `04-reel-mein-weg` | 🟢 freigegeben (geht automatisch online) | 10.10.: Autopilot postet (Loris: Edits bringt kaum Reichweite) – Status freigegeben. Mein Weg rückwärts (Variante B, Loris hat den Text am 08.10. eingesprochen). Vorgezogen vom 27.10. KI-LABEL in Edits/Instagram einschalten (Karte 2 + 3 KI), Hinweis steht in der Bildunterschrift. Variante-A-Dateien: *_variante_a.* KI-LABEL: geht nicht per API → nach dem Posten in der App setzen (Beitrag → ⋯ → Bearbeiten → KI-Label). |
 | Fr 16.10. 19:35 | 📱 Story `04-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #44](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/44) |
 | Sa 17.10. 19:30 | 🎬 Reel `01-reel-ampel` | 🟢 freigegeben (geht automatisch online) | 10.10.: auf Sa 17.10. 19:30 eingeplant (Loris), Autopilot postet reel_stimme.mp4 (26 s, −17,9 LUFS). · Loris erzählt (Sprachnachricht): 2 Tage vor Frist, #BEZUG!/#NAME?/#WERT! → Lösung mit Code, echte Programm-Aufnahme; Untertitel wörtlich, Musik ganz leise, CTA TOOL per DM, 26 s · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. · [Freigabe #7](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/7) |
+| Sa 17.10. 19:35 | 📱 Story `01-story-teaser` | 🟢 freigegeben (geht automatisch online) | 10.10.: mit dem Ampel-Reel auf Sa 17.10. · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. |
 
 ## 🗓️ Danach
 
 | Wann | Was | Status | Hinweis |
 |---|---|---|---|
-| Sa 17.10. 19:35 | 📱 Story `01-story-teaser` | 🟢 freigegeben (geht automatisch online) | 10.10.: mit dem Ampel-Reel auf Sa 17.10. · 04.10.: Go zurückgenommen (Loris) – ersetzt durch Reel „5 Dinge, die mit Code besser gehen als mit Excel“. |
 | Do 22.10. 12:15 | 📱 Story `10-story-umfrage` | 🟢 freigegeben (geht automatisch online) | Aus der Bibliothek: Umfrage E-Rechnung als Einstieg · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
 | Fr 23.10. 19:30 | 🖼️ Karussell `10-e-rechnung` | 🟢 freigegeben (geht automatisch online) | Aus der Bibliothek (gegengelesen 05.10., Rechtsstand Okt. 2026: § 27 Abs. 38 UStG) · 06.10.: auf Fr 23.10. geschoben (Reel-Takt alle 2 Tage). · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
 | Fr 23.10. 19:35 | 📱 Story `10-story-teaser` | 🟢 freigegeben (geht automatisch online) |  · [Freigabe #31](https://github.com/maehrsteuern/Instagram-maehrsteuern/issues/31) |
