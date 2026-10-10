@@ -1,6 +1,6 @@
 # 🧭 Lage – maehrsteuern auf Instagram
 
-_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 13:16 Uhr._
+_Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Notizen: `automatik/lage_notizen.md`). Stand: letzte Änderung Sa 10.10. 15:05 Uhr._
 
 **Als Nächstes online:** 🎬 Reel `08-reel-kst-staffel` am **Sa 10.10. 19:30 Uhr** – 🟢 freigegeben (geht automatisch online)
 
@@ -88,22 +88,23 @@ _Automatisch erzeugt von `automatik/lage.py` – nicht von Hand bearbeiten (Noti
 ## 📈 Zahlen (täglich ca. 08:45)
 
 **359 Follower** · 7 Beiträge im Profil (Abruf 2026-10-10) · **+1** seit 2026-10-09
-Reichweite pro Tag: 06.10. **220** · 07.10. **136** · 08.10. **216** · 09.10. **66**
+Reichweite pro Tag: 07.10. **136** · 08.10. **216** · 09.10. **66** · 10.10. **140**
 
 | Story (letzte 24 h) | Aufrufe | Erreicht | Antworten | Profilbesuche | Follows |
 |---|---|---|---|---|---|
-| Fr 09.10. 12:35 | 33 | 29 | 0 | 0 | 0 |
-| Fr 09.10. 12:54 | 34 | 26 | 0 | 0 | 0 |
+| Sa 10.10. 12:15 | 15 | 10 | 0 | 0 | 0 |
+| Sa 10.10. 15:02 | 0 | 0 | 0 | 0 | 0 |
 
 | Beitrag (letzte 14 Tage) | Aufrufe | Erreicht | Likes | Komm. | Gespeichert | Geteilt |
 |---|---|---|---|---|---|---|
-| Fr 09.10. 12:31 [Hör auf, 30 % fest einzutippen. 📉](https://www.instagram.com/p/DeRTLb4EYwd/) | 112 (+40) | 43 | 6 | 0 | 6 | 84 |
-| Do 08.10. 19:30 [Gleiche Aufgabe, zwei Wege: Hebesatz von](https://www.instagram.com/reel/DePeYymNG2K/) | 286 (+11) | 222 | 7 | 0 | 8 | 25 |
-| Mi 07.10. 19:32 [5 Excel-Fehler, die fast jede Steuerrück](https://www.instagram.com/p/DeM5u1vGLsR/) | 186 (+6) | 73 | 5 | 0 | 4 | 0 |
-| Di 06.10. 19:30 [Zwei Stunden. Jeden Monat. Nur Copy-Past](https://www.instagram.com/reel/DeKUuvPgA1W/) | 375 (+1) | 284 | 11 | 2 | 10 | 8 |
-| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 915 (+4) | 674 | 13 | 10 | 15 | 16 |
-| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 354 (+3) | 132 | 10 | 2 | 2 | 17 |
-| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 326 (+0) | 187 | 10 | 2 | 4 | 7 |
+| Sa 10.10. 09:23 [Jutta hat schon wieder eine Zeile eingef](https://www.instagram.com/reel/DeTiK24NyJt/) | 142 | 122 | 6 | 0 | 4 | 0 |
+| Fr 09.10. 12:31 [Hör auf, 30 % fest einzutippen. 📉](https://www.instagram.com/p/DeRTLb4EYwd/) | 126 (+54) | 48 | 6 | 1 | 6 | 84 |
+| Do 08.10. 19:30 [Gleiche Aufgabe, zwei Wege: Hebesatz von](https://www.instagram.com/reel/DePeYymNG2K/) | 294 (+19) | 224 | 7 | 0 | 8 | 25 |
+| Mi 07.10. 19:32 [5 Excel-Fehler, die fast jede Steuerrück](https://www.instagram.com/p/DeM5u1vGLsR/) | 189 (+9) | 75 | 5 | 0 | 4 | 0 |
+| Di 06.10. 19:30 [Zwei Stunden. Jeden Monat. Nur Copy-Past](https://www.instagram.com/reel/DeKUuvPgA1W/) | 377 (+3) | 286 | 11 | 2 | 10 | 8 |
+| So 04.10. 19:30 [5 Dinge, die ich aus Excel rausgeschmiss](https://www.instagram.com/reel/DeFLK53ALSs/) | 918 (+7) | 678 | 13 | 10 | 15 | 16 |
+| Do 01.10. 18:30 [Neu hier? Dann kurz zu mir 👋](https://www.instagram.com/p/Dd9V5HAAhcL/) | 358 (+7) | 133 | 10 | 2 | 2 | 17 |
+| Di 29.09. 15:42 [Steuern × Code. ⚡](https://www.instagram.com/reel/Dd34F9RtucT/) | 329 (+3) | 190 | 10 | 2 | 4 | 7 |
 
 Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 
@@ -126,6 +127,8 @@ Rohdaten: `automatik/statistik/`, Auswertung: `strategie/06_auswertung.md`
 🤖 Autopilot · ✅ Freigabe · 📈 Statistik · 🎵 Musik · 🔀 Merge · ✍️ von Hand / Claude
 
 **Sa 10.10.2026**
+- 15:05 📈 Statistik 2026-10-10 ([`57d1b40`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/57d1b404960569c6724f844949ada2ac15ebffe5))
+  - `automatik/statistik`
 - 13:16 💼 LinkedIn-Pakete: 09-rueckstellung ([`10b1b91`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/10b1b91681b38af05562d6c99af8a85325d7c99e))
   - `posts/09_2026-10-15_rueckstellung`
 - 13:15 📡 Radar 2026-10-10: 8 Beiträge, 0 DM-Entwürfe ([`ecdf71d`](https://github.com/maehrsteuern/Instagram-maehrsteuern/commit/ecdf71d080677edf09128a606ebd01b3323139b5))
