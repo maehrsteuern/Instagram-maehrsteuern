@@ -32,7 +32,6 @@ REELS = {
         atmo=[("tippen_fehlerton.mp3", 3.56, 0.8, 0.7, 0.9), ("fehlerton.mp3", 7.20, 0, 0.6, 0.5), ("uhr_ticken.mp3", 9.84, 0.3, 3.2, 0.25)]),
     "p08_reel_kst_staffel": dict(
         datei="08.10.2026 10.39.mp3", ordner="posts/08_2026-10-09_reel_kst_staffel",
-        raus=[(24.81, 25.12)],  # „gestern“ raus – Reel läuft 2 Tage nach dem Karussell (Kanten am Pegel gemessen, 10.10.)
         korr={"Zeile.": "Zelle.", "30": "30", "eingedippt,": "eingetippt,", "Körperschutzsteuer": "Körperschaftsteuer", "am": "um",
               "rechten": "Rechenweg", "Weg": "", "willst,": "willst:", "Tool.": "„TOOL“."},
         hook=[("30 % fest", "weiss"), ("eingetippt?", "gelb")],

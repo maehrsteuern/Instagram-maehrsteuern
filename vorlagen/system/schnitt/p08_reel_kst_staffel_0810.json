@@ -357,7 +357,7 @@
   },
   {
    "quelle": "karte_ende",
-   "dauer": 5.25,
+   "dauer": 5.42,
    "text": [
     {
      "wort": "selbst erkennt.",
@@ -374,16 +374,25 @@
      "x": 470,
      "breite": 780,
      "ab": 0.08,
-     "bis": 1.11
+     "bis": 0.98
     },
     {
-     "wort": "ins Karussell gepackt.",
+     "wort": "gestern ins Karussell",
      "groesse": 62,
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 1.11,
-     "bis": 2.39
+     "ab": 0.98,
+     "bis": 1.84
+    },
+    {
+     "wort": "gepackt.",
+     "groesse": 62,
+     "y": 1330,
+     "x": 470,
+     "breite": 780,
+     "ab": 1.84,
+     "bis": 2.56
     },
     {
      "wort": "Und wenn du das Tool",
@@ -391,8 +400,8 @@
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 2.39,
-     "bis": 3.27
+     "ab": 2.56,
+     "bis": 3.44
     },
     {
      "wort": "sehen willst:",
@@ -400,8 +409,8 @@
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 3.27,
-     "bis": 4.01
+     "ab": 3.44,
+     "bis": 4.18
     },
     {
      "wort": "schreib mir „TOOL“.",
@@ -409,8 +418,8 @@
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 4.01,
-     "bis": 4.9
+     "ab": 4.18,
+     "bis": 5.07
     }
    ],
    "von": [
