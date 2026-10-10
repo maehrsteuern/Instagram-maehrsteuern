@@ -185,7 +185,7 @@
   },
   {
    "quelle": "2b",
-   "dauer": 7.14,
+   "dauer": 7.165,
    "text": [
     {
      "wort": "Oder sie bricht ganz.",
@@ -241,22 +241,22 @@
      "bis": 4.32
     },
     {
-     "wort": "Egal ob 3 oder 300",
+     "wort": "Egal ob 3 oder",
      "groesse": 62,
      "y": 1330,
      "x": 470,
      "breite": 780,
      "ab": 4.32,
-     "bis": 5.72
+     "bis": 5.14
     },
     {
-     "wort": "Zeilen –",
+     "wort": "300 Zeilen.",
      "groesse": 62,
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 5.72,
-     "bis": 6.36
+     "ab": 5.14,
+     "bis": 6.38
     },
     {
      "wort": "Die Summe stimmt.",
@@ -264,8 +264,8 @@
      "y": 1330,
      "x": 470,
      "breite": 780,
-     "ab": 6.36,
-     "bis": 7.22
+     "ab": 6.38,
+     "bis": 7.25
     },
     {
      "wort": "✓ stimmt",
@@ -274,8 +274,8 @@
      "y": 1180,
      "x": 470,
      "breite": 780,
-     "ab": 6.28,
-     "bis": 7.14
+     "ab": 6.3,
+     "bis": 7.17
     }
    ],
    "von": [
@@ -292,7 +292,7 @@
   },
   {
    "quelle": "s_ende2",
-   "dauer": 4.7,
+   "dauer": 4.695,
    "text": [
     {
      "wort": "Die Summe stimmt.",
